@@ -75,7 +75,10 @@ Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le
 }
 """
 
-    url = f"[https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=](https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=){api_key}"
+    host = "https://" + "generativelanguage.googleapis.com"
+    endpoint = "/v1beta/models/gemini-3.6-flash:generateContent"
+    url = f"{host}{endpoint}?key={api_key}"
+
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [
