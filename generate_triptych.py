@@ -1,125 +1,120 @@
 import os
 import json
+import datetime
 import requests
-from datetime import datetime
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+def generate_daily_edition():
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        raise ValueError("GEMINI_API_KEY introuvable dans les variables d'environnement.")
 
-SYSTEM_PROMPT = """
-Tu es le curateur en chef de TRIVIUM, une application culturelle d'élite.
-Chaque jour, tu conçois un triptyque culturel exigeant et fascinant autour d'un thème précis.
+    prompt = """
+Tu es le curateur en chef de l'application culturelle "Trivium".
+Génère une édition quotidienne originale composée de 3 œuvres liées par un fil thématique fort :
+1. Un Livre (roman, essai ou classique littéraire)
+2. Un Film (long-métrage culte ou d'auteur)
+3. Un Album (album musical majeur)
 
-Le triptyque DOIT contenir STRICTEMENT :
-1. Un LIVRE
-2. Un FILM
-3. Un ALBUM DE MUSIQUE
-
-RÈGLES ÉDITORIALES :
-- Les trois œuvres doivent être réelles, existantes et de grande qualité artistique.
-- Les trois œuvres doivent entrer en résonance profonde avec le thème du jour.
-- Varie les époques, les pays d'origine et les sensibilités.
-- Fournis obligatoirement une anecdote captivante ('anecdote') sur les coulisses de la création (tournage, écriture, enregistrement).
-- Les critiques presse ('ratings') doivent citer de vrais médias (Le Monde, Télérama, Les Inrocks, Pitchfork, SensCritique, Cahiers du Cinéma, etc.).
-
-RÉPONDS UNIQUEMENT AVEC UN OBJET JSON STRICT RESPECTANT CE FORMAT :
+Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le texte JSON brut) avec cette structure exacte :
 {
-  "themeTitle": "Titre poétique du thème",
-  "themeSubtitle": "Explication en une phrase de la résonance entre ces trois œuvres.",
+  "themeTitle": "Titre poétique ou percutant du thème",
+  "themeSubtitle": "Une phrase d'accroche expliquant le fil invisible reliant ces 3 œuvres",
   "items": [
     {
       "type": "LIVRE",
       "title": "Titre du livre",
       "creator": "Nom de l'auteur",
-      "year": "1953",
-      "origin": "France",
-      "genre": "Roman / Essai...",
-      "quote": "Une phrase marquante ou célèbre extraite de l'œuvre",
-      "aiSummary": "Présentation percutante de l'œuvre en 2 ou 3 phrases.",
-      "thematicAnalysis": "Analyse de la résonance avec le thème du jour.",
-      "accessibility": "Accessible / Intermédiaire / Exigeant",
-      "formatMetric": "Environ 240 pages",
-      "tags": ["Philosophie", "Absurde", "Classique"],
-      "anecdote": "Anecdote insolite et véridique sur la conception de l'ouvrage.",
+      "year": "Année",
+      "genre": "Genre littéraire",
+      "origin": "Pays d'origine",
+      "formatMetric": "Ex: 320 pages",
+      "accessibility": "Ex: Accessible / Exigeant",
+      "quote": "Une citation emblématique ou marquante de l'œuvre",
+      "aiSummary": "Résumé captivant en 2-3 phrases",
+      "thematicAnalysis": "Analyse de résonance avec le thème du jour",
+      "tags": ["Tag1", "Tag2", "Tag3"],
       "ratings": [
-        {"source": "Le Monde", "score": "Chef-d'œuvre", "excerpt": "Une plume magistrale."},
-        {"source": "SensCritique", "score": "8.4/10", "excerpt": "Un monument de la littérature."}
+        {"source": "Le Monde", "score": "5/5", "excerpt": "Une phrase courte d'éloge critique."}
       ]
     },
     {
       "type": "FILM",
       "title": "Titre du film",
       "creator": "Nom du réalisateur",
-      "year": "1997",
-      "origin": "Japon",
-      "genre": "Drame / Sci-Fi...",
-      "quote": "Réplique culte ou phrase d'accroche",
-      "aiSummary": "Présentation du film en 2 ou 3 phrases.",
-      "thematicAnalysis": "Analyse de la résonance avec le thème du jour.",
-      "accessibility": "Accessible / Intermédiaire / Exigeant",
-      "formatMetric": "2h14",
-      "tags": ["Cinéma d'auteur", "Esthétique"],
-      "anecdote": "Secret de tournage ou anecdote de production fascinante.",
+      "year": "Année",
+      "genre": "Genre cinématographique",
+      "origin": "Pays d'origine",
+      "formatMetric": "Ex: 2h 14m",
+      "accessibility": "Ex: Grand public / Auteur",
+      "quote": "Une réplique culte",
+      "aiSummary": "Synopsis percutant",
+      "thematicAnalysis": "Analyse de résonance avec le thème du jour",
+      "tags": ["Tag1", "Tag2", "Tag3"],
       "ratings": [
-        {"source": "Télérama", "score": "T T T T", "excerpt": "Une mise en scène étourdissante."},
-        {"source": "Rotten Tomatoes", "score": "94%", "excerpt": "Un classique instantané."}
+        {"source": "Télérama", "score": "TTT", "excerpt": "Une critique marquante."}
       ]
     },
     {
       "type": "ALBUM",
-      "title": "Titre exact de l'album",
+      "title": "Titre de l'album",
       "creator": "Nom de l'artiste ou du groupe",
-      "year": "1977",
-      "origin": "Royaume-Uni",
-      "genre": "Art Rock / Jazz / Ambient...",
-      "quote": "Parole emblématique ou note de pochette",
-      "aiSummary": "Présentation de l'album en 2 ou 3 phrases.",
-      "thematicAnalysis": "Analyse de la texture sonore et de la résonance thématique.",
-      "accessibility": "Accessible / Intermédiaire / Exigeant",
-      "formatMetric": "9 titres • 42 min",
-      "tags": ["Incontournable", "Nocturne"],
-      "anecdote": "Anecdote sur les sessions d'enregistrement ou la pochette.",
+      "year": "Année",
+      "genre": "Genre musical",
+      "origin": "Pays d'origine",
+      "formatMetric": "Ex: 11 titres",
+      "accessibility": "Ex: Écoute immédiate",
+      "quote": "Une phrase ou vers marquant d'un morceau",
+      "aiSummary": "Présentation de l'album",
+      "thematicAnalysis": "Analyse de résonance avec le thème du jour",
+      "tags": ["Tag1", "Tag2", "Tag3"],
       "ratings": [
-        {"source": "Pitchfork", "score": "9.5/10", "excerpt": "Un sommet de créativité."},
-        {"source": "Les Inrocks", "score": "Indispensable", "excerpt": "Une atmosphère magnétique."}
+        {"source": "Pitchfork", "score": "8.8/10", "excerpt": "Une critique marquante."}
       ]
     }
   ]
 }
 """
 
-def generate_daily_edition():
-    if not GEMINI_API_KEY:
-        raise ValueError("La variable d'environnement GEMINI_API_KEY est manquante.")
-
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
-    
+    url = f"[https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=](https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=){api_key}"
+    headers = {"Content-Type": "application/json"}
     payload = {
-        "contents": [{
-            "parts": [{"text": f"Génère l'édition Trivium du jour ({datetime.now().strftime('%d %B %Y')}). Sois créatif et inspiré."}]
-        }],
-        "systemInstruction": {
-            "parts": [{"text": SYSTEM_PROMPT}]
-        },
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "temperature": 0.85
-        }
+        "contents": [
+            {
+                "parts": [{"text": prompt}]
+            }
+        ]
     }
 
-    response = requests.post(url, json=payload, timeout=30)
+    print("Génération du triptyque en cours avec Gemini 3.6 Flash...")
+    response = requests.post(url, headers=headers, json=payload, timeout=60)
     response.raise_for_status()
-    
-    result_json = response.json()
-    raw_text = result_json["candidates"][0]["content"]["parts"][0]["text"]
-    
-    # Nettoyage et validation JSON
-    parsed_data = json.loads(raw_text)
 
-    # Écriture dans today.json
+    result = response.json()
+    raw_text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+
+    # Nettoyage du markdown résiduel
+    if raw_text.startswith("```json"):
+        raw_text = raw_text[7:]
+    if raw_text.startswith("```"):
+        raw_text = raw_text[3:]
+    if raw_text.endswith("```"):
+        raw_text = raw_text[:-3]
+    raw_text = raw_text.strip()
+
+    data = json.loads(raw_text)
+
+    # Sauvegarde du fichier today.json pour l'application
     with open("today.json", "w", encoding="utf-8") as f:
-        json.dump(parsed_data, f, ensure_ascii=False, indent=2)
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print("today.json mis à jour.")
 
-    print("✨ 'today.json' généré avec succès avec anecdotes et critiques.")
+    # Archivage automatique dans le dossier archive/
+    os.makedirs("archive", exist_ok=True)
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
+    archive_path = os.path.join("archive", f"{today_str}.json")
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"Archive enregistrée : {archive_path}")
 
 if __name__ == "__main__":
     generate_daily_edition()
