@@ -2,8 +2,9 @@ name: generate
 
 on:
   schedule:
+    # Exécution automatique chaque jour à 05h00 UTC
     - cron: '0 5 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Déclenchement manuel
 
 permissions:
   contents: write
@@ -15,6 +16,9 @@ jobs:
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Installer Python
         uses: actions/setup-python@v5
@@ -32,10 +36,11 @@ jobs:
         run: |
           python generate_triptych.py
 
-      - name: Publier les fichiers
+      - name: Synchroniser et publier
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add today.json archive/
           git commit -m "✨ Édition du jour : $(date +'%Y-%m-%d')" || exit 0
-          git push origin HEAD:main --force
+          git pull --rebase origin main
+          git push origin HEAD:main
