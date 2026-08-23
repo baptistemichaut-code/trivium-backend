@@ -1,79 +1,133 @@
 {
-  "themeTitle": "La Géométrie des Villes Fantômes",
-  "themeSubtitle": "Trois dérives mélancoliques au cœur de métropoles hyperconnectées où la solitude devient un art de vivre.",
+  "themeTitle": "L'Architecture du Temps Suspendu",
+  "themeSubtitle": "Trois pèlerinages artistiques où l'attente et le vide se métamorphosent en espaces de révélation intérieure.",
   "items": [
     {
       "type": "LIVRE",
-      "title": "Un homme qui dort",
-      "creator": "Georges Perec",
-      "year": "1967",
-      "genre": "Roman existentialiste",
-      "origin": "France",
-      "formatMetric": "160 pages",
-      "accessibility": "Exigeant mais immersif",
-      "quote": "Tu n'as rien appris, sinon que la solitude n'apprend rien, que le silence n'apprend rien.",
-      "aiSummary": "Un étudiant parisien de vingt-cinq ans décide brusquement de cesser de vivre activement et de rompre avec le cours ordinaire des choses. Rédigé entièrement à la deuxième personne du singulier, le récit dissèque avec une précision chirurgicale son effacement progressif au sein de la capitale.",
-      "thematicAnalysis": "Perec métamorphose Paris en un labyrinthe d'indifférence où le protagoniste s'annule volontairement. C'est l'acte fondateur de la solitude moderne comme refus poétique et radical du spectacle social.",
+      "title": "Le Désert des Tartares",
+      "creator": "Dino Buzzati",
+      "year": "1940",
+      "genre": "Roman philosophique",
+      "origin": "Italie",
+      "formatMetric": "250 pages",
+      "accessibility": "Accessible",
+      "quote": "Mais plus le temps passe, plus la jeunesse s'éloigne, et l'attente devient une habitude qui dévore la vie sans qu'on s'en aperçoive.",
+      "aiSummary": "Le jeune lieutenant Giovanni Drogo est affecté au fort Bastiani, une citadelle isolée face à un désert d'où l'on attend l'invasion d'un ennemi mythique. Rongé par l'espoir d'un destin héroïque qui ne vient jamais, Drogo voit toute sa vie s'évaporer au rythme des gardes monotones.",
+      "thematicAnalysis": "Chez Buzzati, la citadelle devient la métaphore spatiale d'un temps figé. L'œuvre illustre magnifiquement comment l'obsession d'un événement futur idéalise l'attente tout en anéantissant la réalité du présent.",
+      "anecdote": "Buzzati travaillait aux séances de nuit du journal Corriere della Sera durant la rédaction de son livre. C'est le sentiment d'engourdissement professionnel et de voir sa jeunesse s'échapper au milieu d'une routine immuable qui lui a inspiré l'atmosphère du Fort Bastiani.",
       "tags": [
-        "Mélancolie",
-        "Paris",
-        "Isolation"
+        "Attente",
+        "Existentialisme",
+        "Mélancolie"
       ],
       "ratings": [
         {
-          "source": "Le Monde",
+          "source": "Le Figaro Littéraire",
           "score": "5/5",
-          "excerpt": "Une dissection fascinante et clinique de l'ennui existentialiste."
+          "excerpt": "Un chef-d'œuvre universel sur le piège des illusions et l'irréversibilité du temps."
+        }
+      ],
+      "platformLinks": [
+        {
+          "name": "Les Libraires",
+          "category": "Acheter en librairie indépendante",
+          "urlString": "https://www.leslibraires.fr",
+          "iconName": "books.vertical.fill"
         }
       ]
     },
     {
       "type": "FILM",
-      "title": "Lost in Translation",
-      "creator": "Sofia Coppola",
-      "year": "2003",
-      "genre": "Comédie dramatique contemplative",
-      "origin": "États-Unis / Japon",
-      "formatMetric": "1h 42m",
-      "accessibility": "Grand public exigeant",
-      "quote": "Plus vous savez qui vous êtes et ce que vous voulez, moins vous laissez les choses vous perturber.",
-      "aiSummary": "À Tokyo, un acteur américain vieillissant venus tourner une pub et une jeune diplômée délaissée par son mari croisent leurs solitudes dans le luxe ouaté d'un hôtel. Entre décalage horaire et errances nocturnes, une intimité suspendue naît au milieu du chaos urbain.",
-      "thematicAnalysis": "Sofia Coppola sublime le néon tokyoïte pour en faire un océan de distance. La rencontre entre les deux personnages offre un répit fugitif face au vertige de l'incommunicabilité contemporaine.",
+      "title": "Stalker",
+      "creator": "Andreï Tarkovski",
+      "year": "1979",
+      "genre": "Science-Fiction poétique",
+      "origin": "URSS",
+      "formatMetric": "2h 42m",
+      "accessibility": "Exigeant",
+      "quote": "Que leurs vœux se réalisent, qu'ils y croient, et qu'ils rient de leurs passions.",
+      "aiSummary": "Dans un monde dystopique, un guide clandestin emmène un écrivain et un scientifique au cœur de la Zone, un territoire interdite et mystérieuse où les lois physiques sont abolies. En son centre se trouve une chambre réputée exaucer les désirs les plus profonds.",
+      "thematicAnalysis": "Tarkovski utilise de longs plans-séquences contemplatifs pour matérialiser la suspension du temps. La Zone n'est pas un lieu géographique mais un miroir intérieur où le déplacement physique devient une méditation spirituelle.",
+      "anecdote": "Le film a dû être tourné deux fois intégralement : après un an de tournage éprouvant en Estonie, le négatif original fut accidentellement détruit lors du développement du film à Moscou. Tarkovski reconstruisit entièrement son scénario avec un budget famélique.",
       "tags": [
-        "Tokyo",
-        "Insomnie",
-        "Éphémère"
+        "Contemplatif",
+        "Mysticisme",
+        "Poésie Visual"
       ],
       "ratings": [
         {
-          "source": "Télérama",
-          "score": "TTT",
-          "excerpt": "Une comédie nocturne d'une délicatesse absolue sur l'art des correspondances discrètes."
+          "source": "Cahiers du Cinéma",
+          "score": "5/5",
+          "excerpt": "Une expérience sensorielle et spirituelle inégalée dans l'histoire du septième art."
+        }
+      ],
+      "platformLinks": [
+        {
+          "name": "Allociné",
+          "category": "Séances & Streaming",
+          "urlString": "https://www.allocine.fr",
+          "iconName": "film.fill"
         }
       ]
     },
     {
       "type": "ALBUM",
-      "title": "Untrue",
-      "creator": "Burial",
-      "year": "2007",
-      "genre": "Dubstep / Ambient nocturne",
+      "title": "Ambient 1: Music for Airports",
+      "creator": "Brian Eno",
+      "year": "1978",
+      "genre": "Ambient",
       "origin": "Royaume-Uni",
-      "formatMetric": "13 titres",
-      "accessibility": "Écoute immersive",
-      "quote": "Des fragments de voix soul brisés qui murmurent dans la pluie battante du sud de Londres.",
-      "aiSummary": "Composé dans le secret des nuits londoniennes, cet album séminal façonne une musique électronique hantée par les crépitements de vinyles, les rythmes syncopés et les voix fantomatiques. Il saisit l'atmosphère mélancolique d'un retour chez soi au petit matin.",
-      "thematicAnalysis": "Untrue constitue la bande-son ultime de la métropole déserte. Ses échos mélodiques résonnent comme les spectres bienveillants d'une humanité cherchant de la chaleur dans la froideur des mégapoles.",
+      "formatMetric": "4 titres",
+      "accessibility": "Écoute immédiate",
+      "quote": "La musique ambient doit être capable d'accommoder tous les niveaux d'attention sans en imposer aucun.",
+      "aiSummary": "Manifeste fondateur de la musique Ambient, cet album est constitué de boucles de piano minimalistes et de textures vocales éthérées. Conçu à l'origine pour adoucir le stress des espaces de transit, l'album redéfinit la relation entre le son et l'architecture.",
+      "thematicAnalysis": "Eno sculpte une musique du vide et du ralentissement, parfaitement adaptée aux lieux de passage comme les aéroports où le temps s'étire. Les répétitions subtiles arrêtent le sentiment d'urgence pour plonger l'auditeur dans une sérénité immobile.",
+      "anecdote": "L'idée est née à l'aéroport de Cologne par une belle matinée d'été : agacé par la musique d'ambiance tonitruante et inadaptée de la salle d'embarquement, Eno s'est demandé quelle création sonore pourrait apaiser l'angoisse de l'attente sans encombrer la pensée.",
       "tags": [
-        "Londres",
-        "Dubstep",
-        "Nuit"
+        "Minimalisme",
+        "Sérénité",
+        "Avant-Garde"
       ],
       "ratings": [
         {
           "source": "Pitchfork",
-          "score": "9.0/10",
-          "excerpt": "Le chef-d'œuvre incontesté de la musique nocturne et urbaine du XXIe siècle."
+          "score": "9.2/10",
+          "excerpt": "Un chef-d'œuvre de retenue qui a transformé à jamais notre conception du silence et du son."
+        }
+      ],
+      "platformLinks": [
+        {
+          "name": "Apple Music",
+          "category": "Écouter l'album",
+          "urlString": "https://music.apple.com",
+          "iconName": "music.note"
+        }
+      ],
+      "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ee/71/42/ee71425d-6bc9-3df8-c90b-8539f59144ab/00724386649553.rgb.jpg/600x600bb.jpg",
+      "tracks": [
+        {
+          "trackNumber": 1,
+          "title": "1/1",
+          "duration": "17:21",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/24/c4/f5/24c4f540-5a9e-4d3c-24f8-6a622417dec7/mzaf_16193309359931078587.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 2,
+          "title": "2/1",
+          "duration": "8:54",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/af/4c/f2af4c2a-f4e9-e273-4cec-c8ef409ef434/mzaf_4106234552629282677.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 3,
+          "title": "1/2",
+          "duration": "12:07",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/bb/4c/01bb4ca6-709c-40ea-52e9-3894cb37d29a/mzaf_4619408540893641576.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 4,
+          "title": "2/2",
+          "duration": "9:38",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/73/20/41/732041be-aefb-7b2f-0339-66d4a8e79ca3/mzaf_16133218731474062777.plus.aac.p.m4a"
         }
       ]
     }
