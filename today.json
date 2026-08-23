@@ -1,190 +1,79 @@
 {
-  "themeTitle": "La Poétique des Silencieux Abîmes",
-  "themeSubtitle": "Un livre, un film et un album qui scrutent l'épaisseur de la terre et la résonance des structures pour en révéler l'empreinte invisible sur l'âme humaine.",
-  "heroImageURL": null,
+  "themeTitle": "La Géométrie des Villes Fantômes",
+  "themeSubtitle": "Trois dérives mélancoliques au cœur de métropoles hyperconnectées où la solitude devient un art de vivre.",
   "items": [
     {
       "type": "LIVRE",
-      "title": "La Centrale",
-      "creator": "Élisabeth Filhol",
-      "year": "2010",
-      "genre": "Roman contemporain",
-      "formatMetric": "144 pages",
-      "accessibility": "Équilibrée",
-      "tags": [
-        "Industrie",
-        "Invisibilité",
-        "Corps"
-      ],
-      "quote": "C'est l'histoire d'un corps plongé dans une architecture invisible, soumis aux lois d'un invisible dont on mesure chaque millisievert.",
+      "title": "Un homme qui dort",
+      "creator": "Georges Perec",
+      "year": "1967",
+      "genre": "Roman existentialiste",
       "origin": "France",
-      "imageURL": null,
-      "previewURL": null,
-      "tracks": null,
-      "aiSummary": "Suivant le quotidien précaire de prestataires du nucléaire, ce roman décrit l'immersion physique de travailleurs au cœur des réacteurs. Filhol transforme la routine d'un site atomique en un poème de tension corporelle et de silence minéral.",
-      "thematicAnalysis": "Dans ce triptyque, 'La Centrale' apporte la dimension clinique et humaine du choc entre la chair et l'infrastructure colossale. L'écriture millimétrée saisit la manière dont le vide et les radiations invisibles façonnent le système nerveux des hommes.",
+      "formatMetric": "160 pages",
+      "accessibility": "Exigeant mais immersif",
+      "quote": "Tu n'as rien appris, sinon que la solitude n'apprend rien, que le silence n'apprend rien.",
+      "aiSummary": "Un étudiant parisien de vingt-cinq ans décide brusquement de cesser de vivre activement et de rompre avec le cours ordinaire des choses. Rédigé entièrement à la deuxième personne du singulier, le récit dissèque avec une précision chirurgicale son effacement progressif au sein de la capitale.",
+      "thematicAnalysis": "Perec métamorphose Paris en un labyrinthe d'indifférence où le protagoniste s'annule volontairement. C'est l'acte fondateur de la solitude moderne comme refus poétique et radical du spectacle social.",
+      "tags": [
+        "Mélancolie",
+        "Paris",
+        "Isolation"
+      ],
       "ratings": [
         {
-          "source": "Le Monde des Livres",
-          "score": "Remarquable",
-          "excerpt": "Une prose tendue comme un câble haute tension, où le monde du travail prend des airs de rituel antique.",
-          "badgeColorName": "orange",
-          "iconName": "quote.bubble.fill"
-        },
-        {
-          "source": "Télérama",
-          "score": "TTT",
-          "excerpt": "Un roman choc qui ausculte avec une précision d'orfèvre la précarité des corps face au géant industriel.",
-          "badgeColorName": "orange",
-          "iconName": "star.fill"
-        },
-        {
-          "source": "Babelio",
-          "score": "4.1/5",
-          "excerpt": "Un style incisif et poétique qui rend compte d'une réalité sociale méconnue avec une intensité rare.",
-          "badgeColorName": "orange",
-          "iconName": "star.fill"
-        }
-      ],
-      "platformLinks": [
-        {
-          "name": "Fnac",
-          "category": "Livre papier (Broché / Poche)",
-          "urlString": "[https://www.fnac.com/SearchResult/ResultList.aspx?Search=](https://www.fnac.com/SearchResult/ResultList.aspx?Search=)La%20Centrale%20%C3%89lisabeth%20Filhol",
-          "iconName": "book.closed.fill"
-        },
-        {
-          "name": "Kindle",
-          "category": "Édition numérique E-book",
-          "urlString": "[https://www.amazon.fr/s?k=](https://www.amazon.fr/s?k=)La%20Centrale%20%C3%89lisabeth%20Filhol&i=digital-text",
-          "iconName": "ipad.and.arrow.forward"
-        },
-        {
-          "name": "Audible",
-          "category": "Livre audio narré",
-          "urlString": "[https://www.audible.fr/search?keywords=](https://www.audible.fr/search?keywords=)La%20Centrale%20%C3%89lisabeth%20Filhol",
-          "iconName": "headphones"
+          "source": "Le Monde",
+          "score": "5/5",
+          "excerpt": "Une dissection fascinante et clinique de l'ennui existentialiste."
         }
       ]
     },
     {
       "type": "FILM",
-      "title": "Il Buco",
-      "creator": "Michelangelo Frammartino",
-      "year": "2021",
-      "genre": "Drame contemplatif",
-      "formatMetric": "1 h 33",
-      "accessibility": "Exigeante",
+      "title": "Lost in Translation",
+      "creator": "Sofia Coppola",
+      "year": "2003",
+      "genre": "Comédie dramatique contemplative",
+      "origin": "États-Unis / Japon",
+      "formatMetric": "1h 42m",
+      "accessibility": "Grand public exigeant",
+      "quote": "Plus vous savez qui vous êtes et ce que vous voulez, moins vous laissez les choses vous perturber.",
+      "aiSummary": "À Tokyo, un acteur américain vieillissant venus tourner une pub et une jeune diplômée délaissée par son mari croisent leurs solitudes dans le luxe ouaté d'un hôtel. Entre décalage horaire et errances nocturnes, une intimité suspendue naît au milieu du chaos urbain.",
+      "thematicAnalysis": "Sofia Coppola sublime le néon tokyoïte pour en faire un océan de distance. La rencontre entre les deux personnages offre un répit fugitif face au vertige de l'incommunicabilité contemporaine.",
       "tags": [
-        "Spéléologie",
-        "Nature",
-        "Silence"
+        "Tokyo",
+        "Insomnie",
+        "Éphémère"
       ],
-      "quote": "Descendre sous terre, c'est désapprendre la vitesse pour réapprendre l'écho.",
-      "origin": "Italie",
-      "imageURL": null,
-      "previewURL": null,
-      "tracks": null,
-      "aiSummary": "En 1961, de jeunes spéléologues italiens explorent l'abîme du Bifurto, l'une des grottes les plus profondes du monde. Pendant ce temps, sur le plateau vertigineux de Calabre, la vie d'un vieux berger s'éteint doucement au rythme du paysage.",
-      "thematicAnalysis": "Frammartino abandonne le dialogue pour composer une symphonie visuelle du monde souterrain. 'Il Buco' s'articule directement avec le thème en faisant du vide abyssal un espace de méditation géologique et d'écho primordial.",
       "ratings": [
         {
-          "source": "Cahiers du Cinéma",
-          "score": "Chef-d'œuvre",
-          "excerpt": "Une expérience sensorielle pure où la caméra devient un instrument d'auscultation des profondeurs terrestres.",
-          "badgeColorName": "blue",
-          "iconName": "quote.bubble.fill"
-        },
-        {
-          "source": "Positif",
-          "score": "Incontournable",
-          "excerpt": "Un poème cinématographique d'une beauté plastique souveraine, qui touche au sacré sans jamais pécher par affectation.",
-          "badgeColorName": "blue",
-          "iconName": "star.fill"
-        },
-        {
-          "source": "SensCritique",
-          "score": "7.8/10",
-          "excerpt": "Une immersion quasi mystique dans les entrailles de la Terre, sublimée par une gestion exceptionnelle de la lumière naturelle.",
-          "badgeColorName": "blue",
-          "iconName": "star.fill"
-        }
-      ],
-      "platformLinks": [
-        {
-          "name": "Où regarder en streaming",
-          "category": "Netflix, Prime, Disney+...",
-          "urlString": "[https://www.justwatch.com/fr/recherche?q=](https://www.justwatch.com/fr/recherche?q=)Il%20Buco",
-          "iconName": "play.tv.fill"
-        },
-        {
-          "name": "Apple TV",
-          "category": "Location & Achat 4K",
-          "urlString": "[https://tv.apple.com/fr/search?term=](https://tv.apple.com/fr/search?term=)Il%20Buco",
-          "iconName": "apple.logo"
-        },
-        {
-          "name": "Canal+ VOD",
-          "category": "Location & myCANAL",
-          "urlString": "[https://vod.canalplus.com/recherche/](https://vod.canalplus.com/recherche/)Il%20Buco",
-          "iconName": "film.fill"
+          "source": "Télérama",
+          "score": "TTT",
+          "excerpt": "Une comédie nocturne d'une délicatesse absolue sur l'art des correspondances discrètes."
         }
       ]
     },
     {
       "type": "ALBUM",
-      "title": "The Sacrificial Code",
-      "creator": "Kali Malone",
-      "year": "2019",
-      "genre": "Drone / Musique minimale",
-      "formatMetric": "10 titres • 1 h 52",
-      "accessibility": "Exigeante",
+      "title": "Untrue",
+      "creator": "Burial",
+      "year": "2007",
+      "genre": "Dubstep / Ambient nocturne",
+      "origin": "Royaume-Uni",
+      "formatMetric": "13 titres",
+      "accessibility": "Écoute immersive",
+      "quote": "Des fragments de voix soul brisés qui murmurent dans la pluie battante du sud de Londres.",
+      "aiSummary": "Composé dans le secret des nuits londoniennes, cet album séminal façonne une musique électronique hantée par les crépitements de vinyles, les rythmes syncopés et les voix fantomatiques. Il saisit l'atmosphère mélancolique d'un retour chez soi au petit matin.",
+      "thematicAnalysis": "Untrue constitue la bande-son ultime de la métropole déserte. Ses échos mélodiques résonnent comme les spectres bienveillants d'une humanité cherchant de la chaleur dans la froideur des mégapoles.",
       "tags": [
-        "Orgue",
-        "Espace",
-        "Harmonie"
+        "Londres",
+        "Dubstep",
+        "Nuit"
       ],
-      "quote": "L'orgue déserté de toute emphase romantique devient la mesure de la pierre et du vide.",
-      "origin": "Suède",
-      "imageURL": null,
-      "previewURL": null,
-      "tracks": [],
-      "aiSummary": "Enregistré sur plusieurs orgues d'église ajustés avec une rigueur acoustique absolue, cet album étire les timbres et les harmoniques jusqu'à l'hypnose. Kali Malone y dépouille l'instrument de toute théâtralité pour révéler l'architecture sonore des lieux.",
-      "thematicAnalysis": "Clôturant le triptyque, 'The Sacrificial Code' offre la bande-son idéale de cette exploration du volume et de l'abîme. L'immobilité apparente des pièces fait vibrer l'espace acoustique, répondant au silence minéral du film et à la tension contenue du livre.",
       "ratings": [
         {
           "source": "Pitchfork",
-          "score": "8.2/10",
-          "excerpt": "Un chef-d'œuvre de retenue compositionnelle qui redéfinit la relation spatiale entre l'auditeur et l'orgue.",
-          "badgeColorName": "red",
-          "iconName": "music.note"
-        },
-        {
-          "source": "Les Inrockuptibles",
-          "score": "5/5",
-          "excerpt": "Une monumentale étude sur le temps suspendu et la résonance physique des lieux sacrés.",
-          "badgeColorName": "red",
-          "iconName": "quote.bubble.fill"
-        }
-      ],
-      "platformLinks": [
-        {
-          "name": "Spotify",
-          "category": "Écouter l'album",
-          "urlString": "[https://open.spotify.com/search/](https://open.spotify.com/search/)The%20Sacrificial%20Code%20Kali%20Malone/albums",
-          "iconName": "music.note"
-        },
-        {
-          "name": "Apple Music",
-          "category": "Streaming Lossless",
-          "urlString": "[https://music.apple.com/fr/search?term=](https://music.apple.com/fr/search?term=)The%20Sacrificial%20Code%20Kali%20Malone",
-          "iconName": "apple.logo"
-        },
-        {
-          "name": "Deezer",
-          "category": "Streaming Hi-Fi",
-          "urlString": "[https://www.deezer.com/search/](https://www.deezer.com/search/)The%20Sacrificial%20Code%20Kali%20Malone/album",
-          "iconName": "play.circle.fill"
+          "score": "9.0/10",
+          "excerpt": "Le chef-d'œuvre incontesté de la musique nocturne et urbaine du XXIe siècle."
         }
       ]
     }
