@@ -1,282 +1,728 @@
 {
-  "themeTitle": "Cartographies de la mémoire et du vide",
-  "themeSubtitle": "Trois odyssées de la solitude moderne où la géographie urbaine devient le miroir mélancolique d'âmes en quête de repères disparus.",
-  "items": [
-    {
-      "type": "LIVRE",
-      "title": "Austerlitz",
-      "creator": "W.G. Sebald",
-      "year": "2001",
-      "genre": "Roman / Essai littéraire",
-      "origin": "Allemagne",
-      "formatMetric": "450 pages",
-      "accessibility": "Exigeant",
-      "quote": "C'est dans les espaces vides de la mémoire que finissent par se réfugier nos histoires les plus vraies.",
-      "aiSummary": "Un narrateur rencontre régulièrement un historien de l'architecture nommé Jacques Austerlitz, qui tente de reconstituer le puzzle de son enfance effacée par la Shoah. À travers des pérégrinations dans les gares et monuments d'Europe, le récit entremêle photographies réelles et prose poétique.",
-      "thematicAnalysis": "Sebald transforme les bâtiments bruxellois, londoniens ou parisiens en labyrinthes de la mémoire brisée, illustrant comment les pierres de la ville gardent l'empreinte des traumatismes invisibles.",
-      "anecdote": "Sebald insérait lui-même dans son manuscrit des photographies en noir et blanc chinées dans des marchés aux puces sans jamais indiquer qui ou quoi elles représentaient exactement.",
-      "tags": [
-        "Littérature",
-        "Mémoire",
-        "Architecture"
-      ],
-      "ratings": [
-        {
-          "source": "Le Monde des Livres",
-          "score": "5/5",
-          "excerpt": "Une prose hypnotique d'une densité exceptionnelle qui réinvente le roman moderne. Sebald réussit à matérialiser la vertigineuse géographie de l'oubli avec une précision clinique.",
-          "iconName": "newspaper.fill"
-        },
-        {
-          "source": "Télérama",
-          "score": "TTTT",
-          "excerpt": "Un chef-d'œuvre poignant sur les traces du passé effacé. L'entrelacement fascinant des images et du texte produit une expérience de lecture inoubliable.",
-          "iconName": "star.fill"
-        },
-        {
-          "source": "Libération",
-          "score": "Coup de cœur",
-          "excerpt": "Une exploration vertigineuse du traumatisme collectif à travers l'architecture européenne. Ce livre confirme l'impact politique et poétique majeur de Sebald.",
-          "iconName": "quote.bubble.fill"
-        },
-        {
-          "source": "The Guardian",
-          "score": "5/5",
-          "excerpt": "Une méditation sublime et mélancolique sur le temps qui passe. La prose de Sebald possède la mélodie poignante d'un requiem moderne.",
-          "iconName": "star.fill"
-        }
-      ],
-      "platformLinks": [
-        {
-          "name": "Les Libraires",
-          "category": "Acheter en librairie indépendante",
-          "urlString": "https://www.leslibraires.fr/recherche/?q=Austerlitz%20W.G.%20Sebald",
-          "iconName": "books.vertical.fill"
-        },
-        {
-          "name": "Fnac",
-          "category": "Acheter en format papier ou ebook",
-          "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Austerlitz%20W.G.%20Sebald",
-          "iconName": "book.closed.fill"
-        },
-        {
-          "name": "Audible",
-          "category": "Écouter le livre audio",
-          "urlString": "https://www.audible.fr/search?keywords=Austerlitz%20W.G.%20Sebald",
-          "iconName": "headphones"
-        }
-      ]
-    },
-    {
-      "type": "FILM",
-      "title": "Paris, Texas",
-      "creator": "Wim Wenders",
-      "year": "1984",
-      "genre": "Drame / Road Movie",
-      "origin": "Allemagne / États-Unis",
-      "formatMetric": "2h 27m",
-      "accessibility": "Grand public",
-      "quote": "Je vous connaissais. Je me souviens de vous.",
-      "aiSummary": "Un homme amnésique réapparaît du désert du Texas et tente de renouer avec son fils avant de partir à la recherche de son épouse disparue dans l'immensité américaine. Un voyage esthétique bouleversant au cœur de la rupture sentimentale et de la reconquête de soi.",
-      "thematicAnalysis": "Wenders filme les déserts immenses et les néons urbains de Houston comme des projections matérielles du vide affectif et du désir de rédemption du protagoniste.",
-      "anecdote": "Ry Cooder a composé la bande originale légendaire au slide guitar en improvisant directement devant les images projetées du film dans un studio plongé dans l'obscurité.",
-      "tags": [
-        "Cinéma",
-        "Mise en scène",
-        "Road Movie"
-      ],
-      "ratings": [
-        {
-          "source": "Cahiers du Cinéma",
-          "score": "5/5",
-          "excerpt": "Wenders invente une grammaire visuelle magistrale où la lumière de Robby Müller poétise le vide. Le cadre devient le révélateur ultime des sentiments intérieurs.",
-          "iconName": "film.fill"
-        },
-        {
-          "source": "Télérama",
-          "score": "TTTT",
-          "excerpt": "La prestation déchirante de Harry Dean Stanton insuffle une humanité bouleversante à cette errance. La séquence du peep-show demeure l'une des plus grandes scènes du cinéma mondial.",
-          "iconName": "star.fill"
-        },
-        {
-          "source": "Les Inrockuptibles",
-          "score": "5/5",
-          "excerpt": "Un road-movie mélancolique devenu culte, porté par une partition musicale légendaire. Le film capte à la perfection le sentiment d'aliénation moderne.",
-          "iconName": "newspaper.fill"
-        },
-        {
-          "source": "Le Monde",
-          "score": "5/5",
-          "excerpt": "Une Palme d'Or incontestée qui allie le mythe de l'Ouest américain à la modernité européenne. Une œuvre sublimée par un final d'une puissance émotionnelle rare.",
-          "iconName": "quote.bubble.fill"
-        }
-      ],
-      "platformLinks": [
-        {
-          "name": "JustWatch",
-          "category": "Où voir en streaming / VOD légale",
-          "urlString": "https://www.justwatch.com/fr/recherche?q=Paris%2C%20Texas",
-          "iconName": "tv.fill"
-        },
-        {
-          "name": "Allociné",
-          "category": "Fiche film & séances cinéma",
-          "urlString": "https://www.allocine.fr/recherche/?q=Paris%2C%20Texas",
-          "iconName": "film.fill"
-        },
-        {
-          "name": "Canal+ VOD",
-          "category": "Location & achat numérique",
-          "urlString": "https://www.canalplus.com/recherche?q=Paris%2C%20Texas",
-          "iconName": "play.tv.fill"
-        }
-      ]
-    },
-    {
-      "type": "ALBUM",
-      "title": "Untrue",
-      "creator": "Burial",
-      "year": "2007",
-      "genre": "Dubstep / Ambient / Électronique",
-      "origin": "Royaume-Uni",
-      "formatMetric": "13 titres",
-      "accessibility": "Accessible",
-      "quote": "It’s about when you’re walking home late at night, and the city turns into a ghost town.",
-      "aiSummary": "Chef-d'œuvre de l'électronique du XXIe siècle, cet album capture le spleen des nuits pluvieuses londoniennes entre crépitements de vinyle, voix soul pitchées et rythmiques garage brisées. Une immersion captivante dans le paysage sonore de la solitude urbaine.",
-      "thematicAnalysis": "Untrue résonne avec la marche solitaire dans la métropole endormie, transformant les bruits de pluie et d'arrêts de bus en prières profanes pour les insomniaques.",
-      "anecdote": "William Bevan (Burial) a produit l'intégralité de cet album d'une complexité folle sur un logiciel très sommaire (Sound Forge) sans utiliser aucun séquenceur ni grille de tempo.",
-      "tags": [
-        "Musique",
-        "Production",
-        "Spleen"
-      ],
-      "ratings": [
-        {
-          "source": "Pitchfork",
-          "score": "9.0/10",
-          "excerpt": "Une autopsie nocturne fascinante de la musique club post-rave. La production texturée crée un univers immersif totalement inédit dans l'histoire de la musique électronique.",
-          "iconName": "music.note"
-        },
-        {
-          "source": "Rolling Stone",
-          "score": "4.5/5",
-          "excerpt": "Burial façonne une épopée sonore mélancolique d'une beauté saisissante. Cet album réinvente la soul moderne à travers des bribes vocales hantées et déchirantes.",
-          "iconName": "star.fill"
-        },
-        {
-          "source": "Les Inrockuptibles",
-          "score": "Indispensable",
-          "excerpt": "Un disque révolutionnaire qui saisit au plus près le vertige contemporain des grandes villes. Chaque morceau résonne comme un souvenir capturé au creux de la nuit.",
-          "iconName": "quote.bubble.fill"
-        },
-        {
-          "source": "The Guardian",
-          "score": "5/5",
-          "excerpt": "L'album électronique le plus important des années 2000. Une atmosphère cinématographique inoubliable portée par un sens du rythme d'une poésie absolue.",
-          "iconName": "newspaper.fill"
-        }
-      ],
-      "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9d/0f/1c/9d0f1c2b-2fae-d8ac-3920-ce9ec5bc85b5/7982.jpg/600x600bb.jpg",
-      "tracks": [
-        {
-          "trackNumber": 1,
-          "title": "Untitled",
-          "duration": "0:46",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/55/b4/1a/55b41a89-855a-3881-8cad-c31fe0745de7/mzaf_11093208903019226887.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 2,
-          "title": "Archangel",
-          "duration": "3:58",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ef/6e/fa/ef6efa09-ae7e-aec6-2eb2-6bd11b22703c/mzaf_18137613516381741140.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 3,
-          "title": "Near Dark",
-          "duration": "3:54",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ee/d0/aa/eed0aa90-5d6b-5bd6-f74f-1f0261352e76/mzaf_18072601168640031081.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 4,
-          "title": "Ghost Hardware",
-          "duration": "4:53",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/da/48/09/da480905-ebeb-e27d-dd4f-011e67e781df/mzaf_8713858222517735597.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 5,
-          "title": "Endorphin",
-          "duration": "2:57",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/87/90/74/87907431-bd6b-b483-9bc6-a5559eb1fdb0/mzaf_14817226116876738079.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 6,
-          "title": "Etched Headplate",
-          "duration": "5:59",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/aa/cf/8b/aacf8be4-dd1c-a392-ec2b-437bbba67aa9/mzaf_2572052652452232285.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 7,
-          "title": "In McDonalds",
-          "duration": "2:06",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/22/ae/d922aed7-8910-ea7b-313e-552b3d37d852/mzaf_3422907529831341804.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 8,
-          "title": "Untrue",
-          "duration": "6:16",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/69/32/69/69326959-b3ee-0519-607c-8d22baaf1a69/mzaf_12397789698658597996.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 9,
-          "title": "Shell of Light",
-          "duration": "4:40",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9a/8e/74/9a8e7496-2090-bc79-c49c-23fba4b5c572/mzaf_3386698126576186116.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 10,
-          "title": "Dog Shelter",
-          "duration": "2:59",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e1/4f/94/e14f94ce-7ca9-038c-f4a1-dc7aeb949f7c/mzaf_12950366800693193370.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 11,
-          "title": "Homeless",
-          "duration": "5:20",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/1b/88/631b880b-b67a-002d-4351-fc942396e6ed/mzaf_9845942233058312994.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 12,
-          "title": "Uk",
-          "duration": "1:40",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/42/94/4742941d-92be-419b-5348-d078d453001d/mzaf_14808914605777872566.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 13,
-          "title": "Raver",
-          "duration": "4:59",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/32/44/b632442b-db99-87ad-90c5-a89996179107/mzaf_670378989722533146.plus.aac.p.m4a"
-        }
-      ],
-      "platformLinks": [
-        {
-          "name": "Spotify",
-          "category": "Écouter sur Spotify",
-          "urlString": "https://open.spotify.com/search/Untrue%20Burial",
-          "iconName": "waveform"
-        },
-        {
-          "name": "Apple Music",
-          "category": "Écouter sur Apple Music",
-          "urlString": "https://music.apple.com/us/album/untrue/893175779?uo=4",
-          "iconName": "music.note"
-        },
-        {
-          "name": "Deezer",
-          "category": "Écouter sur Deezer",
-          "urlString": "https://www.deezer.com/search/Untrue%20Burial",
-          "iconName": "play.circle.fill"
-        }
-      ]
-    }
-  ]
+  "accessible": {
+    "themeTitle": "La Dystopie et les Parallèles Modernes",
+    "themeSubtitle": "Quand la culture populaire interroge notre rapport au pouvoir et à la technologie.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "1984",
+        "creator": "George Orwell",
+        "year": "1949",
+        "genre": "Dystopie / Science-Fiction",
+        "origin": "Royaume-Uni",
+        "formatMetric": "384 pages",
+        "accessibility": "Populaire & Immédiat",
+        "quote": "Big Brother vous regarde.",
+        "aiSummary": "Dans un monde totalitaire verrouillé par la surveillance permanente, Winston Smith tente de préserver sa liberté intellectuelle et amoureuse face au Parti ultime.",
+        "thematicAnalysis": "Orwell dissèque la manipulation du langage et l'anéantissement de la vie privée, instaurant un miroir d'avertissement féroce face aux abus autoritaires modernes.",
+        "anecdote": "Le roman a été écrit alors qu'Orwell luttait contre la tuberculose sur l'île isolée de Jura en Écosse, dans des conditions matérielles extrêmement rudes.",
+        "tags": [
+          "Culte",
+          "Surveillance",
+          "Totalitarisme"
+        ],
+        "ratings": [
+          {
+            "source": "Le Figaro Littéraire",
+            "score": "5/5",
+            "excerpt": "Un chef-d'œuvre prophétique inégalé qui résonne encore aujourd'hui.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "Le Monde",
+            "score": "5/5",
+            "excerpt": "L'acte fondateur de la dystopie moderne.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "excerpt": "Une lecture vertigineuse et incontournable.",
+            "iconName": "star.fill"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairie indépendante",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=1984%20George%20Orwell",
+            "iconName": "books.vertical.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Format papier & ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984%20George%20Orwell",
+            "iconName": "book.closed.fill"
+          },
+          {
+            "name": "Audible",
+            "category": "Livre audio",
+            "urlString": "https://www.audible.fr/search?keywords=1984%20George%20Orwell",
+            "iconName": "headphones"
+          }
+        ]
+      },
+      {
+        "type": "FILM",
+        "title": "Blade Runner",
+        "creator": "Ridley Scott",
+        "year": "1982",
+        "genre": "Science-Fiction / Neo-Noir",
+        "origin": "États-Unis",
+        "formatMetric": "1h 57m",
+        "accessibility": "Culte & Grand Public",
+        "quote": "Tous ces moments se perdront dans l'oubli, comme des larmes dans la pluie.",
+        "aiSummary": "À Los Angeles en 2019, un ancien policier est chargé de traquer des androïdes synthétiques rebelles en quête d'humanité et de longévité.",
+        "thematicAnalysis": "Ridley Scott sublime le roman de Philip K. Dick dans une esthétique néo-noire poisseuse, questionnant la frontière poreuse entre conscience humaine et vie artificielle.",
+        "anecdote": "La célèbre tirade finale de Rutger Hauer ('Tears in rain') a été en grande partie réécrite et improvisée par l'acteur lui-même la veille du tournage.",
+        "tags": [
+          "Cyberpunk",
+          "Scolyté",
+          "Visuel"
+        ],
+        "ratings": [
+          {
+            "source": "Première",
+            "score": "5/5",
+            "excerpt": "Un sommet visuel et thématique du cinéma mondial.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "4/5",
+            "excerpt": "Une atmosphère immersive fascinante.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "excerpt": "Le film matrice de toute la SF moderne.",
+            "iconName": "film.fill"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Où voir en streaming / VOD",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Blade%20Runner",
+            "iconName": "tv.fill"
+          },
+          {
+            "name": "Allociné",
+            "category": "Fiche & séances",
+            "urlString": "https://www.allocine.fr/recherche/?q=Blade%20Runner",
+            "iconName": "film.fill"
+          },
+          {
+            "name": "Canal+ VOD",
+            "category": "Location / Achat",
+            "urlString": "https://www.canalplus.com/recherche?q=Blade%20Runner",
+            "iconName": "play.tv.fill"
+          }
+        ]
+      },
+      {
+        "type": "ALBUM",
+        "title": "The Dark Side of the Moon",
+        "creator": "Pink Floyd",
+        "year": "1973",
+        "genre": "Rock Progressif",
+        "origin": "Royaume-Uni",
+        "formatMetric": "10 titres",
+        "accessibility": "Écoute Immédiate",
+        "quote": "There is no dark side in the moon, really. Matter of fact, it's all dark.",
+        "aiSummary": "Un voyage conceptuel sonore à travers la folie, le temps, l'argent et la mortalité, marqué par des productions révolutionnaires.",
+        "thematicAnalysis": "L'album explore les pressions psychologiques de la vie moderne, alliant synthétiseurs novateurs, bruitages du quotidien et mélodies universelles.",
+        "anecdote": "Les voix parlées en arrière-plan sont des réponses spontanées du personnel des studios Abbey Road à des cartes posées sur une table avec des questions existentialistes.",
+        "tags": [
+          "Monument",
+          "Psychédélique",
+          "Concept"
+        ],
+        "ratings": [
+          {
+            "source": "Rolling Stone",
+            "score": "5/5",
+            "excerpt": "Le chef-d'œuvre absolu du rock progressif.",
+            "iconName": "music.note"
+          },
+          {
+            "source": "Pitchfork",
+            "score": "10/10",
+            "excerpt": "Une perfection technique au service d'une émotion brute.",
+            "iconName": "music.note"
+          },
+          {
+            "source": "Q Magazine",
+            "score": "5/5",
+            "excerpt": "Un album emblématique qui transcende les générations.",
+            "iconName": "music.note"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/54/d0/62/54d06230-1196-0bd0-93b3-1bd3eef2b43d/cover_-.jpg/600x600bb.jpg",
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Eclipse",
+            "duration": "3:28",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/d0/72/8fd072cb-33a5-7d2f-e07b-57c3f6c56b17/mzaf_4109419127039493519.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Mirror",
+            "duration": "3:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/12/b9/e412b90c-58ae-82e3-177a-c759daa235e9/mzaf_15237875496945978788.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Iljido",
+            "duration": "3:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/da/a0/2adaa034-eaff-f483-75bd-efcaadc2fd26/mzaf_17460350461865147188.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Moon Movie",
+            "duration": "3:38",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/bf/57/79bf5782-3267-05a6-9f1a-e648415ca161/mzaf_3779374774565150604.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Snow",
+            "duration": "3:24",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/ff/73/e6ff73c0-5522-45fd-1b7f-ad72cda84bb2/mzaf_4822830383156239578.plus.aac.p.m4a"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "Spotify",
+            "category": "Écouter sur Spotify",
+            "urlString": "https://open.spotify.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "iconName": "waveform"
+          },
+          {
+            "name": "Apple Music",
+            "category": "Écouter sur Apple Music",
+            "urlString": "https://music.apple.com/us/album/dark-side-of-the-moon-ep/1499069229?uo=4",
+            "iconName": "music.note"
+          },
+          {
+            "name": "Deezer",
+            "category": "Écouter sur Deezer",
+            "urlString": "https://www.deezer.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "iconName": "play.circle.fill"
+          }
+        ]
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "Les Labyrinthes de la Mémoire",
+    "themeSubtitle": "Déconstruire le réel pour explorer les fractures du souvenir et de l'identité.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Kafka sur le rivage",
+        "creator": "Haruki Murakami",
+        "year": "2002",
+        "genre": "Réalisme Magique",
+        "origin": "Japon",
+        "formatMetric": "640 pages",
+        "accessibility": "Équilibre & Réflexion",
+        "quote": "Parfois, le destin ressemble à une petite tempête de sable qui déplace sa trajectoire sans cesse.",
+        "aiSummary": "Deux destinées croisées : un adolescent en fuite frappé d'une malédiction et un vieillard amnésique capable de parler aux chats.",
+        "thematicAnalysis": "Murakami tresse mythe œdipien et mysticisme urbain dans une poétique fluide où le rêve et le réel s'interpénètrent sans couture.",
+        "anecdote": "Murakami a écrit le livre sans savoir à l'avance comment les deux intrigues parallèles se rejoindraient, faisant confiance à son propre inconscient.",
+        "tags": [
+          "Poétique",
+          "Japon",
+          "Onirisme"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde",
+            "score": "4.5/5",
+            "excerpt": "Une immersion captivante dans le mystère intérieur.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "excerpt": "Un roman hypnotique à la beauté envoûtante.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "The Guardian",
+            "score": "4/5",
+            "excerpt": "Murakami à son meilleur sommet d'imagination.",
+            "iconName": "star.fill"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairie indépendante",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "iconName": "books.vertical.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Format papier & ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "iconName": "book.closed.fill"
+          },
+          {
+            "name": "Audible",
+            "category": "Livre audio",
+            "urlString": "https://www.audible.fr/search?keywords=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "iconName": "headphones"
+          }
+        ]
+      },
+      {
+        "type": "FILM",
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "creator": "Michel Gondry",
+        "year": "2004",
+        "genre": "Romance / SF Indépendante",
+        "origin": "États-Unis",
+        "formatMetric": "1h 48m",
+        "accessibility": "Ciné d'Auteur Accessible",
+        "quote": "Vous pouvez effacer quelqu'un de votre esprit. Le sortir de votre cœur est une autre histoire.",
+        "aiSummary": "Après une rupture douloureuse, un homme décide d'effacer médicalement son ex-compagne de sa mémoire, avant d'essayer de lutter en plein processus.",
+        "thematicAnalysis": "Porté par le scénario inventif de Charlie Kaufman, le film explore la valeur des chagrins d'amour à travers une déconstruction visuelle ingénieuse.",
+        "anecdote": "Michel Gondry a refusé le recours aux effets numériques pour les scènes d'effacement de mémoire, privilégiant les illusions d'optique en plateau et les éclairages physiques.",
+        "tags": [
+          "Invention",
+          "Mélancolie",
+          "Inventif"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "excerpt": "Une pure féerie poétique et mélancolique.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Positif",
+            "score": "4/5",
+            "excerpt": "L'accord parfait entre le génie visuel et l'émotion.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "excerpt": "Un chef-d'œuvre d'inventivité scénaristique.",
+            "iconName": "film.fill"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Où voir en streaming / VOD",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Eternal%20Sunshine%20of%20the%20Spotless%20Mind",
+            "iconName": "tv.fill"
+          },
+          {
+            "name": "Allociné",
+            "category": "Fiche & séances",
+            "urlString": "https://www.allocine.fr/recherche/?q=Eternal%20Sunshine%20of%20the%20Spotless%20Mind",
+            "iconName": "film.fill"
+          },
+          {
+            "name": "Canal+ VOD",
+            "category": "Location / Achat",
+            "urlString": "https://www.canalplus.com/recherche?q=Eternal%20Sunshine%20of%20the%20Spotless%20Mind",
+            "iconName": "play.tv.fill"
+          }
+        ]
+      },
+      {
+        "type": "ALBUM",
+        "title": "In Rainbows",
+        "creator": "Radiohead",
+        "year": "2007",
+        "genre": "Art Rock / Indie",
+        "origin": "Royaume-Uni",
+        "formatMetric": "10 titres",
+        "accessibility": "Reconnu & Exigeant",
+        "quote": "You are all I need / You're all I need / I'm in the middle of your picture.",
+        "aiSummary": "Un album chaleureux, intime et organique, alliant sonorités électroniques délicates et textures acoustiques envoûtantes.",
+        "thematicAnalysis": "Radiohead délaisse ici l'angoisse froide pour une vulnérabilité plus organique, capturant l'éphémère des sentiments humains.",
+        "anecdote": "Cet album a marqué l'histoire de la musique en sortant en prix libre sur Internet ('Pay what you want'), bousculant totalement l'industrie du disque.",
+        "tags": [
+          "Indie",
+          "Subtil",
+          "Innovant"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.3/10",
+            "excerpt": "L'aboutissement sonore ultime du groupe anglais.",
+            "iconName": "music.note"
+          },
+          {
+            "source": "NME",
+            "score": "5/5",
+            "excerpt": "Une œuvre lumineuse et profondément humaine.",
+            "iconName": "music.note"
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "excerpt": "Somptueux de bout en bout.",
+            "iconName": "music.note"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "15 Step",
+            "duration": "3:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/72/85/af728523-8048-4a8b-9e13-e8f4f64e9d69/mzaf_8205306206851675436.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Bodysnatchers",
+            "duration": "4:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/07/ed/9207eda5-8f35-1a27-65e2-bf271fee8e6d/mzaf_15407763232352401876.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Nude",
+            "duration": "4:15",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/11/2a/9b/112a9bdd-e778-feba-b80a-b599772545e0/mzaf_18162962909797141261.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Weird Fishes / Arpeggi",
+            "duration": "5:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/2e/48/d8/2e48d83b-0dd4-5336-ba90-a08a14771bc3/mzaf_6995897912540104374.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "All I Need",
+            "duration": "3:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/26/e3/3226e3ba-b5e0-700d-3866-88842c2d15b8/mzaf_2819321088474335323.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Faust Arp",
+            "duration": "2:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cb/40/17/cb401722-5996-d200-7081-cc18c0673ea2/mzaf_1923661186614476707.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Reckoner",
+            "duration": "4:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/44/2f/59442fce-aab1-6d11-58a2-204588e61dcd/mzaf_8481954243559181948.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "House of Cards",
+            "duration": "5:28",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/c8/67/49c8676d-ee26-77b6-a0e5-1134e91af4a1/mzaf_10511908633822741203.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Jigsaw Falling Into Place",
+            "duration": "4:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/1c/68/7a1c6810-0a1e-bca7-d3af-e9984fbd938b/mzaf_10305004532975521267.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Videotape",
+            "duration": "4:39",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/9f/7e/ac9f7eb6-0a30-5c2a-c571-82392d356592/mzaf_8676348198965838362.plus.aac.p.m4a"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "Spotify",
+            "category": "Écouter sur Spotify",
+            "urlString": "https://open.spotify.com/search/In%20Rainbows%20Radiohead",
+            "iconName": "waveform"
+          },
+          {
+            "name": "Apple Music",
+            "category": "Écouter sur Apple Music",
+            "urlString": "https://music.apple.com/us/album/in-rainbows/1109714933?uo=4",
+            "iconName": "music.note"
+          },
+          {
+            "name": "Deezer",
+            "category": "Écouter sur Deezer",
+            "urlString": "https://www.deezer.com/search/In%20Rainbows%20Radiohead",
+            "iconName": "play.circle.fill"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "Les Ruines du Sens et l'Espace du Silence",
+    "themeSubtitle": "Exploration des lisières de la forme, de la mémoire fragmentée et du temps étiré.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "La Vie mode d'emploi",
+        "creator": "Georges Perec",
+        "year": "1978",
+        "genre": "Littérature Exigeante / Oulipo",
+        "origin": "France",
+        "formatMetric": "600 pages",
+        "accessibility": "Pointu & Complexe",
+        "quote": "L'art de la puzzle-manie commence avec des pièces en bois, découpées selon un plan bien arrêté.",
+        "aiSummary": "La description exhaustive et mathématique de la vie des habitants d'un immeuble parisien, figés à un instant T précis.",
+        "thematicAnalysis": "Régie par des contraintes oulipiennes rigoureuses, l'œuvre compose une mosaïque monumentale sur l'accumulation, la perte et le néant.",
+        "anecdote": "Perec a utilisé un problème d'échecs (le polygraphisme du cavalier) pour déterminer l'ordre exact de visite de chaque pièce de l'immeuble.",
+        "tags": [
+          "Oulipo",
+          "Puzzle",
+          "Expérimental"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde",
+            "score": "5/5",
+            "excerpt": "Un monument de la littérature du XXe siècle.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "Libération",
+            "score": "5/5",
+            "excerpt": "Une prouesse formelle au vertige absolu.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "The NY Review of Books",
+            "score": "5/5",
+            "excerpt": "Un univers entier condensé dans un immeuble.",
+            "iconName": "star.fill"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairie indépendante",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
+            "iconName": "books.vertical.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Format papier & ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
+            "iconName": "book.closed.fill"
+          },
+          {
+            "name": "Audible",
+            "category": "Livre audio",
+            "urlString": "https://www.audible.fr/search?keywords=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
+            "iconName": "headphones"
+          }
+        ]
+      },
+      {
+        "type": "FILM",
+        "title": "Stalker",
+        "creator": "Andrei Tarkovski",
+        "year": "1979",
+        "genre": "Cinéma d'Auteur / Métaphysique",
+        "origin": "URSS",
+        "formatMetric": "2h 42m",
+        "accessibility": "Art & Essai Exigeant",
+        "quote": "Ici, tout est plus compliqué. La Zone demande le respect, sinon elle vous punit.",
+        "aiSummary": "Un guide emmène un écrivain et un professeur au cœur d'une zone interdite où se trouverait une chambre exauçant les désirs secrets.",
+        "thematicAnalysis": "Un poème cinématographique d'une lenteur hypnotique, méditant sur la foi, l'art et les désirs les plus obscurs de la conscience humaine.",
+        "anecdote": "Une première version entière du film tournée sur un an a été définitivement perdue en laboratoire suite à une erreur de développement de la pellicule.",
+        "tags": [
+          "Métaphysique",
+          "Poétique",
+          "Lenteur"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "excerpt": "Une expérience spirituelle autant que cinématographique.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Positif",
+            "score": "5/5",
+            "excerpt": "La quintessence du cinéma poétique soviétique.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "excerpt": "Une œuvre envoûtante qui transforme le spectateur.",
+            "iconName": "film.fill"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Où voir en streaming / VOD",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Stalker",
+            "iconName": "tv.fill"
+          },
+          {
+            "name": "Allociné",
+            "category": "Fiche & séances",
+            "urlString": "https://www.allocine.fr/recherche/?q=Stalker",
+            "iconName": "film.fill"
+          },
+          {
+            "name": "Canal+ VOD",
+            "category": "Location / Achat",
+            "urlString": "https://www.canalplus.com/recherche?q=Stalker",
+            "iconName": "play.tv.fill"
+          }
+        ]
+      },
+      {
+        "type": "ALBUM",
+        "title": "Untrue",
+        "creator": "Burial",
+        "year": "2007",
+        "genre": "Future Garage / Ambient Dub",
+        "origin": "Royaume-Uni",
+        "formatMetric": "13 titres",
+        "accessibility": "Niche & Atmosphérique",
+        "quote": "It's about when you fall in love, or when you're just holding hands on the night bus.",
+        "aiSummary": "Une errance nocturne dans un Londres fantomatique, composée de crépitements de vinyle, de basses sous-marines et de voix hachées.",
+        "thematicAnalysis": "Burial réinvente l'hantologie sonore : une nostalgie pour un futur qui n'a jamais eu lieu, capturant le spleen des métropoles contemporaines.",
+        "anecdote": "William Bevan (Burial) a produit l'album dans l'anonymat le plus total sur le logiciel élémentaire Sound Forge, sans utiliser de séquenceur classique.",
+        "tags": [
+          "Hantologie",
+          "Nocturne",
+          "Dubstep"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.0/10",
+            "excerpt": "L'album de musique électronique le plus important de sa décennie.",
+            "iconName": "music.note"
+          },
+          {
+            "source": "The Wire",
+            "score": "5/5",
+            "excerpt": "Une élégie urbaine d'une puissance émotionnelle rare.",
+            "iconName": "music.note"
+          },
+          {
+            "source": "Resident Advisor",
+            "score": "4.8/5",
+            "excerpt": "Un chef-d'œuvre de mélancolie électronique.",
+            "iconName": "music.note"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9d/0f/1c/9d0f1c2b-2fae-d8ac-3920-ce9ec5bc85b5/7982.jpg/600x600bb.jpg",
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Untitled",
+            "duration": "0:46",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/55/b4/1a/55b41a89-855a-3881-8cad-c31fe0745de7/mzaf_11093208903019226887.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Archangel",
+            "duration": "3:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ef/6e/fa/ef6efa09-ae7e-aec6-2eb2-6bd11b22703c/mzaf_18137613516381741140.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Near Dark",
+            "duration": "3:54",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ee/d0/aa/eed0aa90-5d6b-5bd6-f74f-1f0261352e76/mzaf_18072601168640031081.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Ghost Hardware",
+            "duration": "4:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/da/48/09/da480905-ebeb-e27d-dd4f-011e67e781df/mzaf_8713858222517735597.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Endorphin",
+            "duration": "2:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/87/90/74/87907431-bd6b-b483-9bc6-a5559eb1fdb0/mzaf_14817226116876738079.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Etched Headplate",
+            "duration": "5:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/aa/cf/8b/aacf8be4-dd1c-a392-ec2b-437bbba67aa9/mzaf_2572052652452232285.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "In McDonalds",
+            "duration": "2:06",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/22/ae/d922aed7-8910-ea7b-313e-552b3d37d852/mzaf_3422907529831341804.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Untrue",
+            "duration": "6:16",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/69/32/69/69326959-b3ee-0519-607c-8d22baaf1a69/mzaf_12397789698658597996.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Shell of Light",
+            "duration": "4:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9a/8e/74/9a8e7496-2090-bc79-c49c-23fba4b5c572/mzaf_3386698126576186116.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Dog Shelter",
+            "duration": "2:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e1/4f/94/e14f94ce-7ca9-038c-f4a1-dc7aeb949f7c/mzaf_12950366800693193370.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Homeless",
+            "duration": "5:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/1b/88/631b880b-b67a-002d-4351-fc942396e6ed/mzaf_9845942233058312994.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Uk",
+            "duration": "1:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/42/94/4742941d-92be-419b-5348-d078d453001d/mzaf_14808914605777872566.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Raver",
+            "duration": "4:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/32/44/b632442b-db99-87ad-90c5-a89996179107/mzaf_670378989722533146.plus.aac.p.m4a"
+          }
+        ],
+        "platformLinks": [
+          {
+            "name": "Spotify",
+            "category": "Écouter sur Spotify",
+            "urlString": "https://open.spotify.com/search/Untrue%20Burial",
+            "iconName": "waveform"
+          },
+          {
+            "name": "Apple Music",
+            "category": "Écouter sur Apple Music",
+            "urlString": "https://music.apple.com/us/album/untrue/893175779?uo=4",
+            "iconName": "music.note"
+          },
+          {
+            "name": "Deezer",
+            "category": "Écouter sur Deezer",
+            "urlString": "https://www.deezer.com/search/Untrue%20Burial",
+            "iconName": "play.circle.fill"
+          }
+        ]
+      }
+    ]
+  }
 }
