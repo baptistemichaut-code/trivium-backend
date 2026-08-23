@@ -4,8 +4,78 @@ import datetime
 import urllib.parse
 import requests
 
+def build_book_links(title, author):
+    q = urllib.parse.quote(f"{title} {author}")
+    return [
+        {
+            "name": "Les Libraires",
+            "category": "Acheter en librairie indépendante",
+            "urlString": f"https://www.leslibraires.fr/recherche/?q={q}",
+            "iconName": "books.vertical.fill"
+        },
+        {
+            "name": "Fnac",
+            "category": "Acheter en format papier ou ebook",
+            "urlString": f"https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search={q}",
+            "iconName": "book.closed.fill"
+        },
+        {
+            "name": "Audible",
+            "category": "Écouter le livre audio",
+            "urlString": f"https://www.audible.fr/search?keywords={q}",
+            "iconName": "headphones"
+        }
+    ]
+
+def build_movie_links(title, director):
+    q = urllib.parse.quote(f"{title}")
+    return [
+        {
+            "name": "JustWatch",
+            "category": "Où voir en streaming / VOD légale",
+            "urlString": f"https://www.justwatch.com/fr/recherche?q={q}",
+            "iconName": "tv.fill"
+        },
+        {
+            "name": "Allociné",
+            "category": "Fiche film & séances cinéma",
+            "urlString": f"https://www.allocine.fr/recherche/?q={q}",
+            "iconName": "film.fill"
+        },
+        {
+            "name": "Canal+ VOD",
+            "category": "Location & achat numérique",
+            "urlString": f"https://www.canalplus.com/recherche?q={q}",
+            "iconName": "play.tv.fill"
+        }
+    ]
+
+def build_album_links(title, artist, direct_apple_url=None):
+    q = urllib.parse.quote(f"{title} {artist}")
+    apple_url = direct_apple_url if direct_apple_url else f"https://music.apple.com/fr/search?term={q}"
+    return [
+        {
+            "name": "Spotify",
+            "category": "Écouter sur Spotify",
+            "urlString": f"https://open.spotify.com/search/{q}",
+            "iconName": "waveform"
+        },
+        {
+            "name": "Apple Music",
+            "category": "Écouter sur Apple Music",
+            "urlString": apple_url,
+            "iconName": "music.note"
+        },
+        {
+            "name": "Deezer",
+            "category": "Écouter sur Deezer",
+            "urlString": f"https://www.deezer.com/search/{q}",
+            "iconName": "play.circle.fill"
+        }
+    ]
+
 def fetch_album_metadata(title, artist):
-    """Récupère la pochette HD et les extraits audio de 30s via l'API iTunes."""
+    """Récupère la pochette HD, le lien Apple Music et les extraits audio de 30s."""
     try:
         query = urllib.parse.quote(f"{title} {artist}")
         search_url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=1"
@@ -13,9 +83,9 @@ def fetch_album_metadata(title, artist):
         if res.get("resultCount", 0) > 0:
             album = res["results"][0]
             collection_id = album["collectionId"]
+            direct_url = album.get("collectionViewUrl")
             artwork = album.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
 
-            # Récupération des pistes avec extraits audio
             lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&limit=15"
             lookup_res = requests.get(lookup_url, timeout=10).json()
             tracks = []
@@ -31,13 +101,13 @@ def fetch_album_metadata(title, artist):
                         "previewURL": item.get("previewUrl")
                     })
 
-            return artwork, tracks
+            return artwork, tracks, direct_url
     except Exception as e:
-        print(f"Info: Erreur enrichissement album ({e})")
-    return None, None
+        print(f"Info: Métadonnées album indisponibles ({e})")
+    return None, None, None
 
 def fetch_movie_artwork(title, director):
-    """Récupère l'affiche du film en haute définition."""
+    """Récupère l'affiche HD du film via iTunes."""
     try:
         query = urllib.parse.quote(f"{title} {director}")
         search_url = f"https://itunes.apple.com/search?term={query}&entity=movie&limit=1"
@@ -46,7 +116,7 @@ def fetch_movie_artwork(title, director):
             movie = res["results"][0]
             return movie.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
     except Exception as e:
-        print(f"Info: Erreur enrichissement film ({e})")
+        print(f"Info: Affiche film indisponible ({e})")
     return None
 
 def fetch_book_artwork(title, author):
@@ -61,7 +131,7 @@ def fetch_book_artwork(title, author):
             if thumb:
                 return thumb.replace("http://", "https://")
     except Exception as e:
-        print(f"Info: Erreur enrichissement livre ({e})")
+        print(f"Info: Couverture livre indisponible ({e})")
     return None
 
 def generate_daily_edition():
@@ -70,78 +140,79 @@ def generate_daily_edition():
         raise ValueError("GEMINI_API_KEY introuvable.")
 
     prompt = """
-Tu es le curateur en chef de l'application culturelle de prestige "Trivium".
-Génère une édition quotidienne originale composée de 3 œuvres majeures reliées par un fil conducteur thématique, philosophique ou esthétique puissant :
-1. Un Livre (roman marquant, essai ou chef-d'œuvre littéraire)
-2. Un Film (long-métrage culte, primé ou d'auteur)
-3. Un Album (album musical emblématique, tous genres confondus)
+Tu es le curateur en chef de l'application culturelle "Trivium".
+Génère une édition quotidienne originale composée de 3 œuvres majeures reliées par un fil conducteur thématique puissant :
+1. Un Livre (roman, essai ou chef-d'œuvre littéraire)
+2. Un Film (long-métrage culte ou d'auteur)
+3. Un Album (album musical marquant)
 
-Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le texte JSON brut) respectant cette structure exacte :
+REVUE DE PRESSE PLURIELLE OBLIGATOIRE :
+Pour chaque œuvre, fournis obligatoirement 3 ou 4 critiques issues de médias reconnus (ex: Le Monde, Télérama, Libération, Les Inrockuptibles, Cahiers du Cinéma, Pitchfork, Rolling Stone, The Guardian, etc.).
+Chaque critique doit comporter le nom du média, la note et une analyse concise (2 phrases) mettant en avant un angle différent (style littéraire, mise en scène, audace sonore, portée politique...).
+
+Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le texte JSON brut) avec cette structure :
 {
-  "themeTitle": "Titre poétique ou percutant du thème",
-  "themeSubtitle": "Une phrase d'accroche expliquant le fil invisible reliant ces 3 œuvres",
+  "themeTitle": "Titre poétique du thème",
+  "themeSubtitle": "Phrase d'accroche expliquant le lien subtil entre ces 3 œuvres",
   "items": [
     {
       "type": "LIVRE",
       "title": "Titre exact",
-      "creator": "Auteur",
+      "creator": "Nom de l'auteur",
       "year": "Année",
-      "genre": "Genre",
+      "genre": "Genre littéraire",
       "origin": "Pays d'origine",
       "formatMetric": "Ex: 280 pages",
       "accessibility": "Accessible / Exigeant",
-      "quote": "Une citation marquante et authentique",
+      "quote": "Une citation marquante",
       "aiSummary": "Résumé captivant en 2-3 phrases",
-      "thematicAnalysis": "Analyse approfondie de résonance avec le thème du jour",
-      "anecdote": "Une anecdote méconnue et passionnante sur l'écriture ou la publication",
-      "tags": ["Tag1", "Tag2", "Tag3"],
+      "thematicAnalysis": "Analyse de résonance avec le thème du jour",
+      "anecdote": "Une anecdote méconnue sur la genèse de l'ouvrage",
+      "tags": ["Littérature", "Style", "Thème"],
       "ratings": [
-        {"source": "Le Monde", "score": "5/5", "excerpt": "Une phrase courte d'éloge critique."}
-      ],
-      "platformLinks": [
-        {"name": "Les Libraires", "category": "Acheter en librairie indépendante", "urlString": "[https://www.leslibraires.fr](https://www.leslibraires.fr)", "iconName": "books.vertical.fill"}
+        {"source": "Le Monde des Livres", "score": "5/5", "excerpt": "Une critique élogieuse sur la densité de l'intrigue.", "iconName": "newspaper.fill"},
+        {"source": "Télérama", "score": "TTT", "excerpt": "Un regard sur la sensibilité de la prose.", "iconName": "star.fill"},
+        {"source": "Libération", "score": "Coup de cœur", "excerpt": "Une analyse de la portée contemporaine du texte.", "iconName": "quote.bubble.fill"}
       ]
     },
     {
       "type": "FILM",
       "title": "Titre exact",
-      "creator": "Réalisateur",
+      "creator": "Nom du réalisateur",
       "year": "Année",
-      "genre": "Genre",
+      "genre": "Genre cinématographique",
       "origin": "Pays d'origine",
-      "formatMetric": "Ex: 1h 45m",
+      "formatMetric": "Ex: 2h 05m",
       "accessibility": "Grand public / Auteur",
       "quote": "Une réplique culte",
       "aiSummary": "Synopsis percutant",
       "thematicAnalysis": "Analyse de résonance avec le thème du jour",
-      "anecdote": "Une anecdote insolite sur le tournage ou la réception du film",
-      "tags": ["Tag1", "Tag2", "Tag3"],
+      "anecdote": "Une anecdote marquante sur le tournage ou la réception du film",
+      "tags": ["Cinéma", "Mise en scène", "Atmosphère"],
       "ratings": [
-        {"source": "Télérama", "score": "TTT", "excerpt": "Une critique marquante."}
-      ],
-      "platformLinks": [
-        {"name": "Allociné", "category": "Séances & Streaming", "urlString": "[https://www.allocine.fr](https://www.allocine.fr)", "iconName": "film.fill"}
+        {"source": "Cahiers du Cinéma", "score": "5/5", "excerpt": "Un éloge du montage et du travail de mise en scène.", "iconName": "film.fill"},
+        {"source": "Télérama", "score": "TTTT", "excerpt": "Une analyse du jeu d'acteur et de la justesse du récit.", "iconName": "star.fill"},
+        {"source": "Les Inrockuptibles", "score": "4.5/5", "excerpt": "Une mise en valeur de la signature esthétique.", "iconName": "newspaper.fill"}
       ]
     },
     {
       "type": "ALBUM",
       "title": "Titre exact de l'album",
-      "creator": "Nom exact de l'artiste",
+      "creator": "Nom de l'artiste ou groupe",
       "year": "Année",
-      "genre": "Genre",
+      "genre": "Genre musical",
       "origin": "Pays d'origine",
-      "formatMetric": "Ex: 10 titres",
+      "formatMetric": "Ex: 11 titres",
       "accessibility": "Écoute immédiate / Expérimental",
-      "quote": "Une phrase ou vers marquant",
+      "quote": "Une phrase ou vers emblématique",
       "aiSummary": "Présentation de l'album",
       "thematicAnalysis": "Analyse de résonance avec le thème du jour",
-      "anecdote": "Une anecdote sur l'enregistrement ou la création sonore",
-      "tags": ["Tag1", "Tag2", "Tag3"],
+      "anecdote": "Une anecdote insolite sur la production en studio",
+      "tags": ["Musique", "Production", "Ambiance"],
       "ratings": [
-        {"source": "Pitchfork", "score": "8.8/10", "excerpt": "Une critique marquante."}
-      ],
-      "platformLinks": [
-        {"name": "Apple Music", "category": "Écouter l'album", "urlString": "[https://music.apple.com](https://music.apple.com)", "iconName": "music.note"}
+        {"source": "Pitchfork", "score": "9.0/10", "excerpt": "Une autopsie méticuleuse de la production sonore.", "iconName": "music.note"},
+        {"source": "Rolling Stone", "score": "4.5/5", "excerpt": "Un hommage à la cohérence et à la puissance des morceaux.", "iconName": "star.fill"},
+        {"source": "Les Inrockuptibles", "score": "Indispensable", "excerpt": "Une célébration de l'inventivité musicale du disque.", "iconName": "quote.bubble.fill"}
       ]
     }
   ]
@@ -155,7 +226,7 @@ Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le
     headers = {"Content-Type": "application/json"}
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
-    print("Génération du triptyque avec Gemini 3.6 Flash...")
+    print("Génération du triptyque complet avec Gemini 3.6 Flash...")
     response = requests.post(url, headers=headers, json=payload, timeout=60)
     response.raise_for_status()
 
@@ -172,31 +243,36 @@ Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le
 
     data = json.loads(raw_text)
 
-    # Enrichissement multimédia automatique
+    # Enrichissement dynamique : plateformes, jaquettes et extraits
     for item in data.get("items", []):
         media_type = item.get("type", "").upper()
         title = item.get("title", "")
         creator = item.get("creator", "")
 
-        if media_type == "ALBUM":
-            artwork, tracks = fetch_album_metadata(title, creator)
+        if media_type == "LIVRE":
+            artwork = fetch_book_artwork(title, creator)
             if artwork:
                 item["imageURL"] = artwork
-            if tracks:
-                item["tracks"] = tracks
+            item["platformLinks"] = build_book_links(title, creator)
+
         elif media_type == "FILM":
             artwork = fetch_movie_artwork(title, creator)
             if artwork:
                 item["imageURL"] = artwork
-        elif media_type == "LIVRE":
-            artwork = fetch_book_artwork(title, creator)
+            item["platformLinks"] = build_movie_links(title, creator)
+
+        elif media_type == "ALBUM":
+            artwork, tracks, direct_apple_url = fetch_album_metadata(title, creator)
             if artwork:
                 item["imageURL"] = artwork
+            if tracks:
+                item["tracks"] = tracks
+            item["platformLinks"] = build_album_links(title, creator, direct_apple_url)
 
-    # Sauvegarde de l'édition du jour
+    # Enregistrement
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print("today.json enrichi et mis à jour.")
+    print("today.json mis à jour avec les liens de streaming/achat.")
 
     # Archivage
     os.makedirs("archive", exist_ok=True)
