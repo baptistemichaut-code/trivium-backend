@@ -2,7 +2,7 @@ name: generate
 
 on:
   schedule:
-    # Déclenchement automatique chaque jour à 05h00 UTC (07h00 heure de Paris)
+    # Déclenchement automatique chaque jour à 05h00 UTC
     - cron: '0 5 * * *'
   workflow_dispatch: # Déclenchement manuel
 
@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le dépôt
+      - name: Récupérer le dépôt sur la branche main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Installer Python
         uses: actions/setup-python@v5
@@ -31,19 +31,17 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install requests
 
-      - name: Exécuter le script
+      - name: Exécuter le script de génération
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: |
           python generate_triptych.py
 
-      - name: Enregistrer et publier le triptyque
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git add today.json archive/
-          git commit -m "✨ Édition du jour : $(date +'%Y-%m-%d')" || exit 0
-          git pull --rebase origin main
-          git push origin main
+      - name: Publier automatiquement le triptyque
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "✨ Édition du jour : Auto-generation"
+          file_pattern: "today.json archive/*.json"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
