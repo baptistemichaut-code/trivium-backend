@@ -4,7 +4,7 @@ on:
   schedule:
     # Exécution automatique chaque jour à 04h00 UTC (06h00 heure de Paris)
     - cron: '0 4 * * *'
-  workflow_dispatch: # Permet de déclencher l'action manuellement depuis GitHub
+  workflow_dispatch: # Déclenchement manuel
 
 jobs:
   generate:
@@ -23,12 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-generativeai requests
+          pip install -r requirements.txt
 
       - name: Run generation script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python generate.py
+        run: python generate_triptych.py
 
       - name: Commit and push daily edition
         run: |
