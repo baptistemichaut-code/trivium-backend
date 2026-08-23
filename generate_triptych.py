@@ -1,8 +1,39 @@
 import os
+import glob
 import json
 import datetime
 import urllib.parse
 import requests
+
+def get_previously_used_titles():
+    """Scanne le dossier archive/ pour extraire toutes les œuvres déjà proposées."""
+    used = set()
+    files = glob.glob("archive/*.json")
+    if os.path.exists("today.json"):
+        files.append("today.json")
+
+    for fpath in files:
+        try:
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                # Cas multi-niveaux
+                for tier in ["accessible", "intermediate", "expert"]:
+                    if tier in data and "items" in data[tier]:
+                        for item in data[tier]["items"]:
+                            t = item.get("title", "").strip()
+                            c = item.get("creator", "").strip()
+                            if t:
+                                used.add(f"« {t} » par {c}" if c else f"« {t} »")
+                # Cas triptyque simple (rétrocompatibilité)
+                if "items" in data:
+                    for item in data["items"]:
+                        t = item.get("title", "").strip()
+                        c = item.get("creator", "").strip()
+                        if t:
+                            used.add(f"« {t} » par {c}" if c else f"« {t} »")
+        except Exception:
+            continue
+    return sorted(list(used))
 
 def build_book_links(title, author):
     q = urllib.parse.quote(f"{title} {author}")
@@ -116,47 +147,67 @@ def generate_daily_edition():
     if not api_key:
         raise ValueError("GEMINI_API_KEY manquant.")
 
-    prompt = """
-Tu es le directeur éditorial de l'application culturelle "Trivium".
-Chaque jour, tu crées 3 éditions thématiques distinctes selon 3 niveaux d'accessibilité culturelle :
+    used_titles = get_previously_used_titles()
+    exclusion_block = ""
+    if used_titles:
+        exclusion_list = "\n".join([f"- {t}" for t in used_titles[-80:]])
+        exclusion_block = f"""
+LISTE D'EXCLUSION STRICTE (ŒUVRES ET ARTISTES DÉJÀ PROPOSÉS - INTERDICTION ABSOLUE DE LES RÉPÉTER) :
+{exclusion_list}
+"""
 
-1. "accessible" (POP CULTURE & GRANDS CLASSIQUES) : Des œuvres cultes, grand public de grande qualité, immédiates d'accès (ex: Stephen King, Tarantino, Daft Punk, Pink Floyd, Blade Runner, Orwell, etc.).
-2. "intermediate" (CURIEUX & ÉQUILIBRE) : Des œuvres de grande renommée critique, ciné d'auteur accessible, romans modernes marquants, musique indépendante reconnue (ex: Murakami, Bong Joon-ho, Radiohead, Coen, etc.).
-3. "expert" (MAXI NERD & NICHE) : Des œuvres pointues, expérimentales, cinéma underground / art et essai, littérature exigeante, musique d'avant-garde / ambient / jazz modal (ex: Perec, Tarkovski, Burial, Béla Tarr, etc.).
+    prompt = f"""
+Tu es le directeur éditorial de l'application culturelle de prestige "Trivium".
+Aujourd'hui, crée 3 éditions thématiques TOTALEMENT INÉDITES et ORIGINALES selon 3 profils d'accessibilité culturelle distincts.
 
-Pour chaque niveau, trouve un fil thématique propre et 3 œuvres (1 Livre, 1 Film, 1 Album) avec :
-- Une revue de presse de 3 médias reconnus (note + courte phrase d'analyse).
-- Une anecdote passionnante ("anecdote").
-- Une citation marquante.
+{exclusion_block}
 
-Renvoie UNIQUEMENT un objet JSON valide brut (sans markdown ```json) avec la structure exacte suivante :
-{
-  "accessible": {
+DIRECTIVES DE NIVEAUX :
+1. "accessible" (POP CULTURE & GRANDS CLASSIQUES) :
+   - Œuvres cultes, mondialement renommées, grand public de très haute volée (ex: Stephen King, Tarantino, Daft Punk, Pink Floyd, Agatha Christie, Denis Villeneuve, etc.).
+   - Accessibilité immédiate et narrativement captivante.
+
+2. "intermediate" (CURIEUX & ÉQUILIBRE) :
+   - Œuvres majeures du cinéma d'auteur accessible, pépites littéraires contemporaines ou classiques modernes, albums cultes de rock indé / trip-hop / soul / jazz (ex: Haruki Murakami, Wong Kar-wai, Radiohead, Coen, Patti Smith, etc.).
+
+3. "expert" (MAXI NERD & NICHE) :
+   - Œuvres pointues, expérimentales, cinéma d'art et essai / underground, littérature exigeante ou philosophique, musiques d'avant-garde / ambient / post-rock / jazz modal (ex: Béla Tarr, Perec, Tarkovski, Steve Reich, Godard, Talk Talk, etc.).
+
+Pour chaque niveau :
+- Définis un fil invisible thématique poétique et fort reliant le Livre, le Film et l'Album.
+- Fournis obligatoirement 3 critiques de presse avec leur note et leur courte analyse pour chaque œuvre.
+- Rédige une anecdote véridique et passionnante ("anecdote").
+- Rédige une citation emblématique ("quote").
+- Rédige le regard de Trivium ("aiSummary") et l'analyse de résonance ("thematicAnalysis").
+
+Renvoie UNIQUEMENT un objet JSON valide brut (sans balises markdown ```json) avec cette structure exacte :
+{{
+  "accessible": {{
     "themeTitle": "Titre du thème accessible",
-    "themeSubtitle": "Phrase d'accroche",
+    "themeSubtitle": "Phrase d'accroche poétique",
     "items": [
-      {
+      {{
         "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "Année", "genre": "Genre",
-        "origin": "Pays", "formatMetric": "350 pages", "accessibility": "Populaire & Immédiat",
+        "origin": "Pays", "formatMetric": "340 pages", "accessibility": "Populaire & Immédiat",
         "quote": "Citation", "aiSummary": "Résumé", "thematicAnalysis": "Analyse", "anecdote": "Anecdote",
         "tags": ["Tag1", "Tag2"],
-        "ratings": [{"source": "Le Figaro Littéraire", "score": "5/5", "excerpt": "Critique.", "iconName": "star.fill"}]
-      },
-      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "2h 00m", "accessibility": "Culte & Grand Public", "quote": "Réplique", "aiSummary": "Synopsis", "thematicAnalysis": "Analyse", "anecdote": "Anecdote", "tags": ["Tag1", "Tag2"], "ratings": [{"source": "Première", "score": "4/5", "excerpt": "Critique.", "iconName": "film.fill"}] },
-      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "10 titres", "accessibility": "Écoute Immédiate", "quote": "Paroles", "aiSummary": "Présentation", "thematicAnalysis": "Analyse", "anecdote": "Anecdote", "tags": ["Tag1", "Tag2"], "ratings": [{"source": "Rolling Stone", "score": "5/5", "excerpt": "Critique.", "iconName": "music.note"}] }
+        "ratings": [{{"source": "Le Figaro Littéraire", "score": "5/5", "excerpt": "Critique.", "iconName": "newspaper.fill"}}]
+      }},
+      {{ "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "2h 10m", "accessibility": "Culte & Grand Public", "quote": "Réplique", "aiSummary": "Synopsis", "thematicAnalysis": "Analyse", "anecdote": "Anecdote", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Première", "score": "5/5", "excerpt": "Critique.", "iconName": "film.fill"}}] }},
+      {{ "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "10 titres", "accessibility": "Écoute Immédiate", "quote": "Paroles", "aiSummary": "Présentation", "thematicAnalysis": "Analyse", "anecdote": "Anecdote", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Rolling Stone", "score": "5/5", "excerpt": "Critique.", "iconName": "star.fill"}}] }}
     ]
-  },
-  "intermediate": {
+  }},
+  "intermediate": {{
     "themeTitle": "Titre du thème intermédiaire",
     "themeSubtitle": "Phrase d'accroche",
     "items": [ ... 1 LIVRE, 1 FILM, 1 ALBUM ... ]
-  },
-  "expert": {
+  }},
+  "expert": {{
     "themeTitle": "Titre du thème expert",
     "themeSubtitle": "Phrase d'accroche",
     "items": [ ... 1 LIVRE, 1 FILM, 1 ALBUM ... ]
-  }
-}
+  }}
+}}
 """
 
     host = "https://" + "generativelanguage.googleapis.com"
@@ -164,9 +215,15 @@ Renvoie UNIQUEMENT un objet JSON valide brut (sans markdown ```json) avec la str
     url = f"{host}{endpoint}?key={api_key}"
 
     headers = {"Content-Type": "application/json"}
-    payload = {"contents": [{"parts": [{"text": prompt}]}]}
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 1.0,
+            "topP": 0.95
+        }
+    }
 
-    print("Génération des 3 triptyques (Accessible, Intermédiaire, Expert)...")
+    print(f"Génération du triptyque ({len(used_titles)} œuvres exclues pour éviter les doublons)...")
     response = requests.post(url, headers=headers, json=payload, timeout=90)
     response.raise_for_status()
 
@@ -181,20 +238,21 @@ Renvoie UNIQUEMENT un objet JSON valide brut (sans markdown ```json) avec la str
 
     data = json.loads(raw_text)
 
-    # Enrichissement des 3 niveaux
+    # Enrichissement automatique des 9 œuvres
     for tier in ["accessible", "intermediate", "expert"]:
         if tier in data:
             enrich_triptych(data[tier])
 
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print("today.json multi-niveaux enregistré.")
+    print("today.json enrichi et mis à jour.")
 
     os.makedirs("archive", exist_ok=True)
     today_str = datetime.date.today().strftime("%Y-%m-%d")
     archive_path = os.path.join("archive", f"{today_str}.json")
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"Archive enregistrée : {archive_path}")
 
 if __name__ == "__main__":
     generate_daily_edition()
