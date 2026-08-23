@@ -7,7 +7,7 @@ import requests
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 GEMINI_MODEL = "gemini-3.6-flash"
 
-# MARK: - 1. Génération IA (Gemini 3.6 Flash exclusif)
+# MARK: - 1. Génération IA avec Comparaison de Critiques
 
 def generate_with_gemini(today_str):
     if not GEMINI_API_KEY:
@@ -19,6 +19,8 @@ def generate_with_gemini(today_str):
     
     Génère un triptyque culturel inédit pour aujourd'hui (1 Livre, 1 Film, 1 Album) uni par un thème subtil et original.
     Évite impérativement les clichés évidents (Burial, Perec, Camus, Radiohead, Blade Runner, etc.).
+    
+    IMPORTANT : Pour chaque œuvre, fournis 2 à 3 revues de presse distinctes issues de médias de référence pour permettre une comparaison critique (ex : Le Monde, Télérama, Les Inrocks, Cahiers du Cinéma, Pitchfork, Babelio, SensCritique, The Guardian).
     
     Format JSON strict obligatoire (sans texte d'introduction ni balises markdown) :
     {{
@@ -44,11 +46,25 @@ def generate_with_gemini(today_str):
           "thematicAnalysis": "Analyse critique et justification argumentée de sa place dans le triptyque.",
           "ratings": [
             {{
-              "source": "Revue littéraire",
-              "score": "Note ou mention",
-              "excerpt": "Citation textuelle d'un critique",
+              "source": "Le Monde des Livres",
+              "score": "Incontournable",
+              "excerpt": "Extrait critique",
               "badgeColorName": "orange",
               "iconName": "quote.bubble.fill"
+            }},
+            {{
+              "source": "Télérama",
+              "score": "TTT",
+              "excerpt": "Extrait critique",
+              "badgeColorName": "orange",
+              "iconName": "star.fill"
+            }},
+            {{
+              "source": "Babelio",
+              "score": "4.3/5",
+              "excerpt": "Avis des lecteurs",
+              "badgeColorName": "orange",
+              "iconName": "star.fill"
             }}
           ],
           "platformLinks": []
@@ -71,11 +87,25 @@ def generate_with_gemini(today_str):
           "thematicAnalysis": "Analyse de la mise en scène et justification argumentée de sa place dans le triptyque.",
           "ratings": [
             {{
-              "source": "Revue cinéma",
-              "score": "Note ou mention",
-              "excerpt": "Citation textuelle d'un critique",
+              "source": "Cahiers du Cinéma",
+              "score": "Chef-d'œuvre",
+              "excerpt": "Extrait critique",
               "badgeColorName": "blue",
               "iconName": "quote.bubble.fill"
+            }},
+            {{
+              "source": "Positif",
+              "score": "Remarquable",
+              "excerpt": "Extrait critique",
+              "badgeColorName": "blue",
+              "iconName": "star.fill"
+            }},
+            {{
+              "source": "SensCritique",
+              "score": "7.9/10",
+              "excerpt": "Synthèse critique",
+              "badgeColorName": "blue",
+              "iconName": "star.fill"
             }}
           ],
           "platformLinks": []
@@ -98,11 +128,18 @@ def generate_with_gemini(today_str):
           "thematicAnalysis": "Analyse sonore et justification argumentée de sa place dans le triptyque.",
           "ratings": [
             {{
-              "source": "Média musical",
-              "score": "Note ou mention",
-              "excerpt": "Citation textuelle d'un critique",
+              "source": "Pitchfork",
+              "score": "8.7/10",
+              "excerpt": "Extrait critique",
               "badgeColorName": "red",
               "iconName": "music.note"
+            }},
+            {{
+              "source": "Les Inrockuptibles",
+              "score": "5/5",
+              "excerpt": "Extrait critique",
+              "badgeColorName": "red",
+              "iconName": "quote.bubble.fill"
             }}
           ],
           "platformLinks": []
