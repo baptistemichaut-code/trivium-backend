@@ -1,72 +1,52 @@
 import os
 import json
+import datetime
 import urllib.parse
-import urllib.request
-import urllib.error
-from datetime import datetime
-import zoneinfo
+import requests
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+GEMINI_MODEL = "gemini-3.6-flash"
 
-paris_tz = zoneinfo.ZoneInfo("Europe/Paris")
-now_paris = datetime.now(paris_tz)
-date_seed = now_paris.strftime("%Y-%m-%d")
+# MARK: - 1. Génération IA (Gemini 3.6 Flash exclusif)
 
-def http_get_json(url, headers=None):
-    custom_headers = {"User-Agent": "TriviumBot/1.0 (contact@trivium.app)"}
-    if headers:
-        custom_headers.update(headers)
-    req = urllib.request.Request(url, headers=custom_headers)
-    try:
-        with urllib.request.urlopen(req, timeout=10) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except Exception:
-        return None
+def generate_with_gemini(today_str):
+    if not GEMINI_API_KEY:
+        raise ValueError("La variable GEMINI_API_KEY est introuvable ou vide.")
 
-def fetch_gemini_triptych():
-    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={GEMINI_API_KEY}"
-    
     prompt = f"""
-    Tu es le grand conservateur culturel de Trivium.
-    Date de référence : {date_seed}.
+    Tu es le conservateur culturel en chef de Trivium.
+    Date du jour : {today_str}.
     
-    Génère l'édition officielle pour aujourd'hui : 1 Livre, 1 Film et 1 Album unis par un thème subtil et original.
+    Génère un triptyque culturel inédit pour aujourd'hui (1 Livre, 1 Film, 1 Album) uni par un thème subtil et original.
+    Évite impérativement les clichés évidents (Burial, Perec, Camus, Radiohead, Blade Runner, etc.).
     
-    RÈGLES D'OR :
-    1. Évite les clichés évidents d'IA (Burial, Perec, Camus, Radiohead, Blade Runner).
-    2. Varie les époques et les origines géographiques.
-    3. Pour chaque œuvre :
-       - 'aiSummary' : Court synopsis (2-3 phrases).
-       - 'thematicAnalysis' : Grande analyse unifiée (style/mise en scène + résonance dans le triptyque).
-       - 'ratings' : 2 revues de presse réputées avec note et extrait marquant.
-
-    Format JSON strict :
+    Format JSON strict obligatoire (sans texte d'introduction ni balises markdown) :
     {{
-      "themeTitle": "Titre du thème",
-      "themeSubtitle": "Accroche expliquant la résonance entre ces 3 œuvres",
+      "themeTitle": "Titre éditorial du thème",
+      "themeSubtitle": "Accroche synthétique expliquant la résonance entre ces 3 œuvres",
       "heroImageURL": null,
       "items": [
         {{
           "type": "LIVRE",
-          "title": "Titre exact",
-          "creator": "Nom auteur",
+          "title": "Titre exact de l'œuvre",
+          "creator": "Nom de l'auteur",
           "year": "Année",
-          "genre": "Genre",
-          "formatMetric": "280 pages",
+          "genre": "Genre littéraire",
+          "formatMetric": "Ex: 240 pages",
           "accessibility": "Accessible ou Équilibrée ou Exigeante",
-          "tags": ["Tag1", "Tag2"],
-          "quote": "Extrait emblématique",
+          "tags": ["Thème1", "Thème2"],
+          "quote": "Extrait marquant",
           "origin": "Pays d'origine",
           "imageURL": null,
           "previewURL": null,
           "tracks": null,
-          "aiSummary": "Court résumé",
-          "thematicAnalysis": "Analyse critique et lien thématique unifié",
+          "aiSummary": "Court synopsis percutant (2-3 phrases).",
+          "thematicAnalysis": "Analyse critique et justification argumentée de sa place dans le triptyque.",
           "ratings": [
             {{
               "source": "Revue littéraire",
-              "score": "Incontournable",
-              "excerpt": "Citation critique",
+              "score": "Note ou mention",
+              "excerpt": "Citation textuelle d'un critique",
               "badgeColorName": "orange",
               "iconName": "quote.bubble.fill"
             }}
@@ -75,25 +55,25 @@ def fetch_gemini_triptych():
         }},
         {{
           "type": "FILM",
-          "title": "Titre exact",
-          "creator": "Nom réalisateur",
+          "title": "Titre exact du film",
+          "creator": "Nom du réalisateur",
           "year": "Année",
-          "genre": "Genre",
-          "formatMetric": "1 h 52",
+          "genre": "Genre cinématographique",
+          "formatMetric": "Ex: 1 h 54",
           "accessibility": "Accessible ou Équilibrée ou Exigeante",
-          "tags": ["Tag1", "Tag2"],
+          "tags": ["Thème1", "Thème2"],
           "quote": "Réplique culte",
           "origin": "Pays d'origine",
           "imageURL": null,
           "previewURL": null,
           "tracks": null,
-          "aiSummary": "Court synopsis",
-          "thematicAnalysis": "Analyse de la mise en scène et lien thématique",
+          "aiSummary": "Court synopsis cinématographique (2-3 phrases).",
+          "thematicAnalysis": "Analyse de la mise en scène et justification argumentée de sa place dans le triptyque.",
           "ratings": [
             {{
-              "source": "Cahiers du Cinéma",
-              "score": "Chef-d'œuvre",
-              "excerpt": "Citation critique",
+              "source": "Revue cinéma",
+              "score": "Note ou mention",
+              "excerpt": "Citation textuelle d'un critique",
               "badgeColorName": "blue",
               "iconName": "quote.bubble.fill"
             }}
@@ -102,25 +82,25 @@ def fetch_gemini_triptych():
         }},
         {{
           "type": "ALBUM",
-          "title": "Titre exact",
-          "creator": "Nom artiste",
+          "title": "Titre exact de l'album",
+          "creator": "Nom de l'artiste",
           "year": "Année",
-          "genre": "Genre",
-          "formatMetric": "10 titres • 44 min",
+          "genre": "Genre musical",
+          "formatMetric": "Ex: 10 titres • 44 min",
           "accessibility": "Accessible ou Équilibrée ou Exigeante",
-          "tags": ["Tag1", "Tag2"],
-          "quote": "Ambiance sonore",
+          "tags": ["Thème1", "Thème2"],
+          "quote": "Phrase d'ambiance sonore",
           "origin": "Pays d'origine",
           "imageURL": null,
           "previewURL": null,
           "tracks": null,
-          "aiSummary": "Présentation album",
-          "thematicAnalysis": "Analyse sonore et lien thématique",
+          "aiSummary": "Présentation de l'album (2-3 phrases).",
+          "thematicAnalysis": "Analyse sonore et justification argumentée de sa place dans le triptyque.",
           "ratings": [
             {{
-              "source": "Pitchfork",
-              "score": "8.8/10",
-              "excerpt": "Citation critique",
+              "source": "Média musical",
+              "score": "Note ou mention",
+              "excerpt": "Citation textuelle d'un critique",
               "badgeColorName": "red",
               "iconName": "music.note"
             }}
@@ -130,156 +110,183 @@ def fetch_gemini_triptych():
       ]
     }}
     """
-    
-    body = {
+
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}"
+    payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"response_mime_type": "application/json", "temperature": 0.85, "topP": 0.95}
+        "generationConfig": {
+            "response_mime_type": "application/json",
+            "temperature": 0.85
+        }
     }
-    
-    req = urllib.request.Request(
-        endpoint,
-        data=json.dumps(body).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST"
-    )
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        res = json.loads(resp.read().decode("utf-8"))
-        raw_json = res["candidates"][0]["content"]["parts"][0]["text"].strip()
-        if raw_json.startswith("```"):
-            raw_json = raw_json.split("\n", 1)[1].rsplit("\n", 1)[0].strip()
-        return json.loads(raw_json)
 
-def enrich_movie(title):
-    query = urllib.parse.quote(title)
-    url_apple = f"[https://itunes.apple.com/search?term=](https://itunes.apple.com/search?term=){query}&media=movie&entity=movie&limit=1&country=FR"
-    data = http_get_json(url_apple)
-    if data:
-        results = data.get("results", [])
-        if results and results[0].get("artworkUrl100"):
-            return results[0]["artworkUrl100"].replace("100x100bb", "600x900bb")
+    res = requests.post(url, json=payload, timeout=60)
+    if res.status_code != 200:
+        raise RuntimeError(f"Erreur API Gemini ({res.status_code}) : {res.text}")
 
-    url_wiki = f"[https://fr.wikipedia.org/api/rest_v1/page/summary/](https://fr.wikipedia.org/api/rest_v1/page/summary/){query}"
-    data_wiki = http_get_json(url_wiki)
-    if data_wiki:
-        if data_wiki.get("thumbnail") and data_wiki["thumbnail"].get("source"):
-            return data_wiki["thumbnail"]["source"]
-        if data_wiki.get("originalimage") and data_wiki["originalimage"].get("source"):
-            return data_wiki["originalimage"]["source"]
+    data = res.json()
+    raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
-    return None
+    if raw_text.startswith("```json"):
+        raw_text = raw_text[7:]
+    if raw_text.startswith("```"):
+        raw_text = raw_text[3:]
+    if raw_text.endswith("```"):
+        raw_text = raw_text[:-3]
 
-def enrich_book(title, author):
-    clean_query = urllib.parse.quote(f"{title} {author}")
-    
-    url_google = f"[https://www.googleapis.com/books/v1/volumes?q=](https://www.googleapis.com/books/v1/volumes?q=){clean_query}&maxResults=1"
-    data_google = http_get_json(url_google)
-    if data_google:
-        items = data_google.get("items", [])
-        if items:
-            image_links = items[0].get("volumeInfo", {}).get("imageLinks", {})
-            img = image_links.get("thumbnail") or image_links.get("smallThumbnail")
-            if img:
-                return img.replace("http://", "https://").replace("&edge=curl", "")
+    return json.loads(raw_text.strip())
 
-    url_openlib = f"[https://openlibrary.org/search.json?q=](https://openlibrary.org/search.json?q=){clean_query}&limit=1"
-    data_open = http_get_json(url_openlib)
-    if data_open:
-        docs = data_open.get("docs", [])
-        if docs and docs[0].get("cover_i"):
-            return f"[https://covers.openlibrary.org/b/id/](https://covers.openlibrary.org/b/id/){docs[0]['cover_i']}-L.jpg?default=false"
+# MARK: - 2. Visuels Films (Apple -> Repli Wikipédia)
 
-    url_wiki = f"[https://fr.wikipedia.org/api/rest_v1/page/summary/](https://fr.wikipedia.org/api/rest_v1/page/summary/){urllib.parse.quote(title)}"
-    data_wiki = http_get_json(url_wiki)
-    if data_wiki and data_wiki.get("thumbnail") and data_wiki["thumbnail"].get("source"):
-        return data_wiki["thumbnail"]["source"]
+def fetch_movie_poster(title):
+    try:
+        encoded = urllib.parse.quote(title)
+        url = f"[https://itunes.apple.com/search?term=](https://itunes.apple.com/search?term=){encoded}&media=movie&entity=movie&limit=1&country=FR"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            results = res.json().get("results", [])
+            if results and results[0].get("artworkUrl100"):
+                return results[0]["artworkUrl100"].replace("100x100bb", "600x900bb")
+    except Exception:
+        pass
+
+    try:
+        encoded = urllib.parse.quote(title)
+        wiki_url = f"[https://fr.wikipedia.org/api/rest_v1/page/summary/](https://fr.wikipedia.org/api/rest_v1/page/summary/){encoded}"
+        res = requests.get(wiki_url, headers={"User-Agent": "TriviumApp/1.0"}, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            if data.get("thumbnail") and data["thumbnail"].get("source"):
+                return data["thumbnail"]["source"]
+            if data.get("originalimage") and data["originalimage"].get("source"):
+                return data["originalimage"]["source"]
+    except Exception:
+        pass
 
     return None
 
-def enrich_album(title, artist):
-    query = urllib.parse.quote(f"{title} {artist}")
-    url = f"[https://itunes.apple.com/search?term=](https://itunes.apple.com/search?term=){query}&media=music&entity=album&limit=1&country=FR"
-    cover, preview, tracks, apple_url = None, None, [], None
-    data = http_get_json(url)
-    if data:
-        results = data.get("results", [])
-        if results:
-            album = results[0]
-            collection_id = album.get("collectionId")
-            apple_url = album.get("collectionViewUrl")
-            cover = album.get("artworkUrl100", "").replace("100x100bb", "600x600bb")
-            
-            if collection_id:
+# MARK: - 3. Visuels Livres (Google Books -> Repli Open Library)
+
+def fetch_book_cover(title, author):
+    try:
+        query = urllib.parse.quote(f"intitle:{title} inauthor:{author}")
+        url = f"[https://www.googleapis.com/books/v1/volumes?q=](https://www.googleapis.com/books/v1/volumes?q=){query}&maxResults=1"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            items = res.json().get("items", [])
+            if items:
+                image_links = items[0].get("volumeInfo", {}).get("imageLinks", {})
+                img = image_links.get("thumbnail") or image_links.get("smallThumbnail")
+                if img:
+                    img = img.replace("http://", "https://")
+                    if "&edge=curl" in img:
+                        img = img.replace("&edge=curl", "")
+                    return img
+    except Exception:
+        pass
+
+    try:
+        query = urllib.parse.quote(f"{title} {author}")
+        url = f"[https://openlibrary.org/search.json?q=](https://openlibrary.org/search.json?q=){query}&limit=1"
+        res = requests.get(url, headers={"User-Agent": "TriviumApp/1.0"}, timeout=10)
+        if res.status_code == 200:
+            docs = res.json().get("docs", [])
+            if docs and docs[0].get("cover_i"):
+                return f"[https://covers.openlibrary.org/b/id/](https://covers.openlibrary.org/b/id/){docs[0]['cover_i']}-L.jpg?default=false"
+    except Exception:
+        pass
+
+    return None
+
+# MARK: - 4. Visuels & Pistes Albums (Apple Music)
+
+def fetch_itunes_album(title, artist):
+    try:
+        query = urllib.parse.quote(f"{title} {artist}")
+        url = f"[https://itunes.apple.com/search?term=](https://itunes.apple.com/search?term=){query}&media=music&entity=album&limit=1&country=FR"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            results = res.json().get("results", [])
+            if results:
+                album = results[0]
+                collection_id = album.get("collectionId")
+                cover = album.get("artworkUrl100", "").replace("100x100bb", "600x600bb")
+                apple_url = album.get("collectionViewUrl")
+
                 lookup_url = f"[https://itunes.apple.com/lookup?id=](https://itunes.apple.com/lookup?id=){collection_id}&entity=song&country=FR"
-                lookup_data = http_get_json(lookup_url)
-                if lookup_data:
-                    for item in lookup_data.get("results", []):
+                lookup_res = requests.get(lookup_url, timeout=10)
+                tracks = []
+                first_preview = None
+                if lookup_res.status_code == 200:
+                    for item in lookup_res.json().get("results", []):
                         if item.get("wrapperType") == "track":
-                            if not preview:
-                                preview = item.get("previewUrl")
-                            ms = item.get("trackTimeMillis", 0)
-                            sec = (ms // 1000) % 60
-                            dur = f"{ms // 60000}:{sec:02d}"
+                            millis = item.get("trackTimeMillis", 0)
+                            secs = millis // 1000
+                            duration = f"{secs // 60}:{secs % 60:02d}"
+                            if not first_preview:
+                                first_preview = item.get("previewUrl")
                             tracks.append({
                                 "trackNumber": item.get("trackNumber", len(tracks) + 1),
                                 "title": item.get("trackName", "Piste"),
-                                "duration": dur,
+                                "duration": duration,
                                 "previewURL": item.get("previewUrl")
                             })
-    return cover, preview, tracks, apple_url
+                tracks.sort(key=lambda x: x["trackNumber"])
+                return cover, first_preview, tracks, apple_url
+    except Exception:
+        pass
+    return None, None, [], None
 
-def build_links(item, apple_music_url=None):
-    title = item["title"]
-    creator = item["creator"]
-    t = item["type"].upper()
-    enc_tc = urllib.parse.quote(f"{title} {creator}")
-    enc_t = urllib.parse.quote(title)
-    
-    if t == "ALBUM":
-        return [
-            {"name": "Spotify", "category": "Écouter l'album", "urlString": f"[https://open.spotify.com/search/](https://open.spotify.com/search/){enc_tc}/albums", "iconName": "music.note"},
-            {"name": "Apple Music", "category": "Streaming Lossless", "urlString": apple_music_url or f"[https://music.apple.com/fr/search?term=](https://music.apple.com/fr/search?term=){enc_tc}", "iconName": "apple.logo"},
-            {"name": "Deezer", "category": "Streaming Hi-Fi", "urlString": f"[https://www.deezer.com/search/](https://www.deezer.com/search/){enc_tc}/album", "iconName": "play.circle.fill"}
-        ]
-    elif t == "FILM":
-        return [
-            {"name": "Où regarder en streaming", "category": "Netflix, Prime, Disney+...", "urlString": f"[https://www.justwatch.com/fr/recherche?q=](https://www.justwatch.com/fr/recherche?q=){enc_t}", "iconName": "play.tv.fill"},
-            {"name": "Apple TV", "category": "Location & Achat 4K", "urlString": f"[https://tv.apple.com/fr/search?term=](https://tv.apple.com/fr/search?term=){enc_t}", "iconName": "apple.logo"},
-            {"name": "Canal+ VOD", "category": "Location & myCANAL", "urlString": f"[https://vod.canalplus.com/recherche/](https://vod.canalplus.com/recherche/){enc_t}", "iconName": "film.fill"}
-        ]
-    else:
-        return [
-            {"name": "Fnac", "category": "Livre papier (Broché / Poche)", "urlString": f"[https://www.fnac.com/SearchResult/ResultList.aspx?Search=](https://www.fnac.com/SearchResult/ResultList.aspx?Search=){enc_tc}", "iconName": "book.closed.fill"},
-            {"name": "Kindle", "category": "Édition numérique E-book", "urlString": f"[https://www.amazon.fr/s?k=](https://www.amazon.fr/s?k=){enc_tc}&i=digital-text", "iconName": "ipad.and.arrow.forward"},
-            {"name": "Audible", "category": "Livre audio narré", "urlString": f"[https://www.audible.fr/search?keywords=](https://www.audible.fr/search?keywords=){enc_tc}", "iconName": "headphones"}
-        ]
+# MARK: - Exécution Principale
 
 def main():
-    print(f"Génération pour le {date_seed}...")
-    triptych = fetch_gemini_triptych()
-    
+    today_date = datetime.date.today()
+    today_str = today_date.strftime("%Y-%m-%d")
+    print(f"Génération de l'édition : {today_str} via {GEMINI_MODEL}")
+
+    triptych = generate_with_gemini(today_str)
+
     for item in triptych.get("items", []):
-        t = item["type"].upper()
-        if t == "FILM":
-            item["imageURL"] = enrich_movie(item["title"])
-            item["platformLinks"] = build_links(item)
-        elif t == "ALBUM":
-            cover, preview, tracks, apple_url = enrich_album(item["title"], item["creator"])
+        media_type = item.get("type", "").upper()
+        title = item.get("title", "")
+        creator = item.get("creator", "")
+        encoded_query = urllib.parse.quote(f"{title} {creator}")
+
+        if media_type == "ALBUM":
+            cover, preview, tracks, apple_url = fetch_itunes_album(title, creator)
             item["imageURL"] = cover
             item["previewURL"] = preview
             item["tracks"] = tracks
-            item["platformLinks"] = build_links(item, apple_url)
-        elif t == "LIVRE":
-            item["imageURL"] = enrich_book(item["title"], item["creator"])
-            item["platformLinks"] = build_links(item)
+            item["platformLinks"] = [
+                {"name": "Spotify", "category": "Écouter l'album", "urlString": f"[https://open.spotify.com/search/](https://open.spotify.com/search/){encoded_query}/albums", "iconName": "music.note"},
+                {"name": "Apple Music", "category": "Streaming Lossless", "urlString": apple_url or f"[https://music.apple.com/fr/search?term=](https://music.apple.com/fr/search?term=){encoded_query}", "iconName": "apple.logo"},
+                {"name": "Deezer", "category": "Streaming Hi-Fi", "urlString": f"[https://www.deezer.com/search/](https://www.deezer.com/search/){encoded_query}/album", "iconName": "play.circle.fill"}
+            ]
+        elif media_type == "FILM":
+            item["imageURL"] = fetch_movie_poster(title)
+            movie_enc = urllib.parse.quote(title)
+            item["platformLinks"] = [
+                {"name": "Où regarder en streaming", "category": "Netflix, Prime, Disney+...", "urlString": f"[https://www.justwatch.com/fr/recherche?q=](https://www.justwatch.com/fr/recherche?q=){movie_enc}", "iconName": "play.tv.fill"},
+                {"name": "Apple TV", "category": "Location & Achat 4K", "urlString": f"[https://tv.apple.com/fr/search?term=](https://tv.apple.com/fr/search?term=){movie_enc}", "iconName": "apple.logo"},
+                {"name": "Canal+ VOD", "category": "Location & myCANAL", "urlString": f"[https://vod.canalplus.com/recherche/](https://vod.canalplus.com/recherche/){movie_enc}", "iconName": "film.fill"}
+            ]
+        elif media_type == "LIVRE":
+            item["imageURL"] = fetch_book_cover(title, creator)
+            item["platformLinks"] = [
+                {"name": "Fnac", "category": "Livre papier (Broché / Poche)", "urlString": f"[https://www.fnac.com/SearchResult/ResultList.aspx?Search=](https://www.fnac.com/SearchResult/ResultList.aspx?Search=){encoded_query}", "iconName": "book.closed.fill"},
+                {"name": "Kindle", "category": "Édition numérique E-book", "urlString": f"[https://www.amazon.fr/s?k=](https://www.amazon.fr/s?k=){encoded_query}&i=digital-text", "iconName": "ipad.and.arrow.forward"},
+                {"name": "Audible", "category": "Livre audio narré", "urlString": f"[https://www.audible.fr/search?keywords=](https://www.audible.fr/search?keywords=){encoded_query}", "iconName": "headphones"}
+            ]
 
+    os.makedirs("archive", exist_ok=True)
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(triptych, f, ensure_ascii=False, indent=2)
 
-    os.makedirs("archive", exist_ok=True)
-    with open(f"archive/{date_seed}.json", "w", encoding="utf-8") as f:
+    archive_path = f"archive/{today_str}.json"
+    with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(triptych, f, ensure_ascii=False, indent=2)
 
-    print("today.json généré avec succès !")
+    print("Génération réussie et sauvegardée.")
 
 if __name__ == "__main__":
     main()
