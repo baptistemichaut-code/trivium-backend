@@ -1,39 +1,42 @@
-name: generate
+name: Génération Quotidienne Trivium
 
 on:
   schedule:
-    # Exécution automatique chaque jour à 05h00 UTC
-    - cron: '0 5 * * *'
-  workflow_dispatch: # Déclenchement manuel
-
-permissions:
-  contents: write
+    # Déclenchement automatique chaque nuit à 04:00 UTC (06:00 heure de Paris)
+    - cron: '0 4 * * *'
+  # Permet également de lancer la génération manuellement depuis GitHub
+  workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le dépôt
+      - name: Récupération du code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Installer Python
-        uses: actions/setup-python@v5
+      - name: Configuration de Python
+        uses: setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Installer les dépendances
+      - name: Installation des dépendances
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install -r requirements.txt
 
-      - name: Exécuter le script
+      - name: Exécution du script de génération
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_triptych.py
+
+      - name: Commit et Push de la nouvelle édition
         run: |
+          git config --global user.name 'Trivium Bot'
+          git config --global user.email 'bot@trivium.app'
+          git add today.json
+          git commit -m "✨ Mise à jour de l'édition du $(date +'%Y-%m-%d')" || exit 0
+          git push
           python generate_triptych.py
 
       - name: Synchroniser et publier
