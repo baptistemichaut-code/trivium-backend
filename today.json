@@ -1,133 +1,280 @@
 {
-  "themeTitle": "L'Architecture du Temps Suspendu",
-  "themeSubtitle": "Trois pèlerinages artistiques où l'attente et le vide se métamorphosent en espaces de révélation intérieure.",
+  "themeTitle": "Cartographies de la mémoire et du vide",
+  "themeSubtitle": "Trois odyssées de la solitude moderne où la géographie urbaine devient le miroir mélancolique d'âmes en quête de repères disparus.",
   "items": [
     {
       "type": "LIVRE",
-      "title": "Le Désert des Tartares",
-      "creator": "Dino Buzzati",
-      "year": "1940",
-      "genre": "Roman philosophique",
-      "origin": "Italie",
-      "formatMetric": "250 pages",
-      "accessibility": "Accessible",
-      "quote": "Mais plus le temps passe, plus la jeunesse s'éloigne, et l'attente devient une habitude qui dévore la vie sans qu'on s'en aperçoive.",
-      "aiSummary": "Le jeune lieutenant Giovanni Drogo est affecté au fort Bastiani, une citadelle isolée face à un désert d'où l'on attend l'invasion d'un ennemi mythique. Rongé par l'espoir d'un destin héroïque qui ne vient jamais, Drogo voit toute sa vie s'évaporer au rythme des gardes monotones.",
-      "thematicAnalysis": "Chez Buzzati, la citadelle devient la métaphore spatiale d'un temps figé. L'œuvre illustre magnifiquement comment l'obsession d'un événement futur idéalise l'attente tout en anéantissant la réalité du présent.",
-      "anecdote": "Buzzati travaillait aux séances de nuit du journal Corriere della Sera durant la rédaction de son livre. C'est le sentiment d'engourdissement professionnel et de voir sa jeunesse s'échapper au milieu d'une routine immuable qui lui a inspiré l'atmosphère du Fort Bastiani.",
+      "title": "Austerlitz",
+      "creator": "W.G. Sebald",
+      "year": "2001",
+      "genre": "Roman / Essai littéraire",
+      "origin": "Allemagne",
+      "formatMetric": "450 pages",
+      "accessibility": "Exigeant",
+      "quote": "C'est dans les espaces vides de la mémoire que finissent par se réfugier nos histoires les plus vraies.",
+      "aiSummary": "Un narrateur rencontre régulièrement un historien de l'architecture nommé Jacques Austerlitz, qui tente de reconstituer le puzzle de son enfance effacée par la Shoah. À travers des pérégrinations dans les gares et monuments d'Europe, le récit entremêle photographies réelles et prose poétique.",
+      "thematicAnalysis": "Sebald transforme les bâtiments bruxellois, londoniens ou parisiens en labyrinthes de la mémoire brisée, illustrant comment les pierres de la ville gardent l'empreinte des traumatismes invisibles.",
+      "anecdote": "Sebald insérait lui-même dans son manuscrit des photographies en noir et blanc chinées dans des marchés aux puces sans jamais indiquer qui ou quoi elles représentaient exactement.",
       "tags": [
-        "Attente",
-        "Existentialisme",
-        "Mélancolie"
+        "Littérature",
+        "Mémoire",
+        "Architecture"
       ],
       "ratings": [
         {
-          "source": "Le Figaro Littéraire",
+          "source": "Le Monde des Livres",
           "score": "5/5",
-          "excerpt": "Un chef-d'œuvre universel sur le piège des illusions et l'irréversibilité du temps."
+          "excerpt": "Une prose hypnotique d'une densité exceptionnelle qui réinvente le roman moderne. Sebald réussit à matérialiser la vertigineuse géographie de l'oubli avec une précision clinique.",
+          "iconName": "newspaper.fill"
+        },
+        {
+          "source": "Télérama",
+          "score": "TTTT",
+          "excerpt": "Un chef-d'œuvre poignant sur les traces du passé effacé. L'entrelacement fascinant des images et du texte produit une expérience de lecture inoubliable.",
+          "iconName": "star.fill"
+        },
+        {
+          "source": "Libération",
+          "score": "Coup de cœur",
+          "excerpt": "Une exploration vertigineuse du traumatisme collectif à travers l'architecture européenne. Ce livre confirme l'impact politique et poétique majeur de Sebald.",
+          "iconName": "quote.bubble.fill"
+        },
+        {
+          "source": "The Guardian",
+          "score": "5/5",
+          "excerpt": "Une méditation sublime et mélancolique sur le temps qui passe. La prose de Sebald possède la mélodie poignante d'un requiem moderne.",
+          "iconName": "star.fill"
         }
       ],
       "platformLinks": [
         {
           "name": "Les Libraires",
           "category": "Acheter en librairie indépendante",
-          "urlString": "https://www.leslibraires.fr",
+          "urlString": "https://www.leslibraires.fr/recherche/?q=Austerlitz%20W.G.%20Sebald",
           "iconName": "books.vertical.fill"
+        },
+        {
+          "name": "Fnac",
+          "category": "Acheter en format papier ou ebook",
+          "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Austerlitz%20W.G.%20Sebald",
+          "iconName": "book.closed.fill"
+        },
+        {
+          "name": "Audible",
+          "category": "Écouter le livre audio",
+          "urlString": "https://www.audible.fr/search?keywords=Austerlitz%20W.G.%20Sebald",
+          "iconName": "headphones"
         }
       ]
     },
     {
       "type": "FILM",
-      "title": "Stalker",
-      "creator": "Andreï Tarkovski",
-      "year": "1979",
-      "genre": "Science-Fiction poétique",
-      "origin": "URSS",
-      "formatMetric": "2h 42m",
-      "accessibility": "Exigeant",
-      "quote": "Que leurs vœux se réalisent, qu'ils y croient, et qu'ils rient de leurs passions.",
-      "aiSummary": "Dans un monde dystopique, un guide clandestin emmène un écrivain et un scientifique au cœur de la Zone, un territoire interdite et mystérieuse où les lois physiques sont abolies. En son centre se trouve une chambre réputée exaucer les désirs les plus profonds.",
-      "thematicAnalysis": "Tarkovski utilise de longs plans-séquences contemplatifs pour matérialiser la suspension du temps. La Zone n'est pas un lieu géographique mais un miroir intérieur où le déplacement physique devient une méditation spirituelle.",
-      "anecdote": "Le film a dû être tourné deux fois intégralement : après un an de tournage éprouvant en Estonie, le négatif original fut accidentellement détruit lors du développement du film à Moscou. Tarkovski reconstruisit entièrement son scénario avec un budget famélique.",
+      "title": "Paris, Texas",
+      "creator": "Wim Wenders",
+      "year": "1984",
+      "genre": "Drame / Road Movie",
+      "origin": "Allemagne / États-Unis",
+      "formatMetric": "2h 27m",
+      "accessibility": "Grand public",
+      "quote": "Je vous connaissais. Je me souviens de vous.",
+      "aiSummary": "Un homme amnésique réapparaît du désert du Texas et tente de renouer avec son fils avant de partir à la recherche de son épouse disparue dans l'immensité américaine. Un voyage esthétique bouleversant au cœur de la rupture sentimentale et de la reconquête de soi.",
+      "thematicAnalysis": "Wenders filme les déserts immenses et les néons urbains de Houston comme des projections matérielles du vide affectif et du désir de rédemption du protagoniste.",
+      "anecdote": "Ry Cooder a composé la bande originale légendaire au slide guitar en improvisant directement devant les images projetées du film dans un studio plongé dans l'obscurité.",
       "tags": [
-        "Contemplatif",
-        "Mysticisme",
-        "Poésie Visual"
+        "Cinéma",
+        "Mise en scène",
+        "Road Movie"
       ],
       "ratings": [
         {
           "source": "Cahiers du Cinéma",
           "score": "5/5",
-          "excerpt": "Une expérience sensorielle et spirituelle inégalée dans l'histoire du septième art."
+          "excerpt": "Wenders invente une grammaire visuelle magistrale où la lumière de Robby Müller poétise le vide. Le cadre devient le révélateur ultime des sentiments intérieurs.",
+          "iconName": "film.fill"
+        },
+        {
+          "source": "Télérama",
+          "score": "TTTT",
+          "excerpt": "La prestation déchirante de Harry Dean Stanton insuffle une humanité bouleversante à cette errance. La séquence du peep-show demeure l'une des plus grandes scènes du cinéma mondial.",
+          "iconName": "star.fill"
+        },
+        {
+          "source": "Les Inrockuptibles",
+          "score": "5/5",
+          "excerpt": "Un road-movie mélancolique devenu culte, porté par une partition musicale légendaire. Le film capte à la perfection le sentiment d'aliénation moderne.",
+          "iconName": "newspaper.fill"
+        },
+        {
+          "source": "Le Monde",
+          "score": "5/5",
+          "excerpt": "Une Palme d'Or incontestée qui allie le mythe de l'Ouest américain à la modernité européenne. Une œuvre sublimée par un final d'une puissance émotionnelle rare.",
+          "iconName": "quote.bubble.fill"
         }
       ],
       "platformLinks": [
         {
+          "name": "JustWatch",
+          "category": "Où voir en streaming / VOD légale",
+          "urlString": "https://www.justwatch.com/fr/recherche?q=Paris%2C%20Texas",
+          "iconName": "tv.fill"
+        },
+        {
           "name": "Allociné",
-          "category": "Séances & Streaming",
-          "urlString": "https://www.allocine.fr",
+          "category": "Fiche film & séances cinéma",
+          "urlString": "https://www.allocine.fr/recherche/?q=Paris%2C%20Texas",
           "iconName": "film.fill"
+        },
+        {
+          "name": "Canal+ VOD",
+          "category": "Location & achat numérique",
+          "urlString": "https://www.canalplus.com/recherche?q=Paris%2C%20Texas",
+          "iconName": "play.tv.fill"
         }
       ]
     },
     {
       "type": "ALBUM",
-      "title": "Ambient 1: Music for Airports",
-      "creator": "Brian Eno",
-      "year": "1978",
-      "genre": "Ambient",
+      "title": "Untrue",
+      "creator": "Burial",
+      "year": "2007",
+      "genre": "Dubstep / Ambient / Électronique",
       "origin": "Royaume-Uni",
-      "formatMetric": "4 titres",
-      "accessibility": "Écoute immédiate",
-      "quote": "La musique ambient doit être capable d'accommoder tous les niveaux d'attention sans en imposer aucun.",
-      "aiSummary": "Manifeste fondateur de la musique Ambient, cet album est constitué de boucles de piano minimalistes et de textures vocales éthérées. Conçu à l'origine pour adoucir le stress des espaces de transit, l'album redéfinit la relation entre le son et l'architecture.",
-      "thematicAnalysis": "Eno sculpte une musique du vide et du ralentissement, parfaitement adaptée aux lieux de passage comme les aéroports où le temps s'étire. Les répétitions subtiles arrêtent le sentiment d'urgence pour plonger l'auditeur dans une sérénité immobile.",
-      "anecdote": "L'idée est née à l'aéroport de Cologne par une belle matinée d'été : agacé par la musique d'ambiance tonitruante et inadaptée de la salle d'embarquement, Eno s'est demandé quelle création sonore pourrait apaiser l'angoisse de l'attente sans encombrer la pensée.",
+      "formatMetric": "13 titres",
+      "accessibility": "Accessible",
+      "quote": "It’s about when you’re walking home late at night, and the city turns into a ghost town.",
+      "aiSummary": "Chef-d'œuvre de l'électronique du XXIe siècle, cet album capture le spleen des nuits pluvieuses londoniennes entre crépitements de vinyle, voix soul pitchées et rythmiques garage brisées. Une immersion captivante dans le paysage sonore de la solitude urbaine.",
+      "thematicAnalysis": "Untrue résonne avec la marche solitaire dans la métropole endormie, transformant les bruits de pluie et d'arrêts de bus en prières profanes pour les insomniaques.",
+      "anecdote": "William Bevan (Burial) a produit l'intégralité de cet album d'une complexité folle sur un logiciel très sommaire (Sound Forge) sans utiliser aucun séquenceur ni grille de tempo.",
       "tags": [
-        "Minimalisme",
-        "Sérénité",
-        "Avant-Garde"
+        "Musique",
+        "Production",
+        "Spleen"
       ],
       "ratings": [
         {
           "source": "Pitchfork",
-          "score": "9.2/10",
-          "excerpt": "Un chef-d'œuvre de retenue qui a transformé à jamais notre conception du silence et du son."
+          "score": "9.0/10",
+          "excerpt": "Une autopsie nocturne fascinante de la musique club post-rave. La production texturée crée un univers immersif totalement inédit dans l'histoire de la musique électronique.",
+          "iconName": "music.note"
+        },
+        {
+          "source": "Rolling Stone",
+          "score": "4.5/5",
+          "excerpt": "Burial façonne une épopée sonore mélancolique d'une beauté saisissante. Cet album réinvente la soul moderne à travers des bribes vocales hantées et déchirantes.",
+          "iconName": "star.fill"
+        },
+        {
+          "source": "Les Inrockuptibles",
+          "score": "Indispensable",
+          "excerpt": "Un disque révolutionnaire qui saisit au plus près le vertige contemporain des grandes villes. Chaque morceau résonne comme un souvenir capturé au creux de la nuit.",
+          "iconName": "quote.bubble.fill"
+        },
+        {
+          "source": "The Guardian",
+          "score": "5/5",
+          "excerpt": "L'album électronique le plus important des années 2000. Une atmosphère cinématographique inoubliable portée par un sens du rythme d'une poésie absolue.",
+          "iconName": "newspaper.fill"
+        }
+      ],
+      "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9d/0f/1c/9d0f1c2b-2fae-d8ac-3920-ce9ec5bc85b5/7982.jpg/600x600bb.jpg",
+      "tracks": [
+        {
+          "trackNumber": 1,
+          "title": "Untitled",
+          "duration": "0:46",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/55/b4/1a/55b41a89-855a-3881-8cad-c31fe0745de7/mzaf_11093208903019226887.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 2,
+          "title": "Archangel",
+          "duration": "3:58",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ef/6e/fa/ef6efa09-ae7e-aec6-2eb2-6bd11b22703c/mzaf_18137613516381741140.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 3,
+          "title": "Near Dark",
+          "duration": "3:54",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ee/d0/aa/eed0aa90-5d6b-5bd6-f74f-1f0261352e76/mzaf_18072601168640031081.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 4,
+          "title": "Ghost Hardware",
+          "duration": "4:53",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/da/48/09/da480905-ebeb-e27d-dd4f-011e67e781df/mzaf_8713858222517735597.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 5,
+          "title": "Endorphin",
+          "duration": "2:57",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/87/90/74/87907431-bd6b-b483-9bc6-a5559eb1fdb0/mzaf_14817226116876738079.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 6,
+          "title": "Etched Headplate",
+          "duration": "5:59",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/aa/cf/8b/aacf8be4-dd1c-a392-ec2b-437bbba67aa9/mzaf_2572052652452232285.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 7,
+          "title": "In McDonalds",
+          "duration": "2:06",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/22/ae/d922aed7-8910-ea7b-313e-552b3d37d852/mzaf_3422907529831341804.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 8,
+          "title": "Untrue",
+          "duration": "6:16",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/69/32/69/69326959-b3ee-0519-607c-8d22baaf1a69/mzaf_12397789698658597996.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 9,
+          "title": "Shell of Light",
+          "duration": "4:40",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9a/8e/74/9a8e7496-2090-bc79-c49c-23fba4b5c572/mzaf_3386698126576186116.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 10,
+          "title": "Dog Shelter",
+          "duration": "2:59",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e1/4f/94/e14f94ce-7ca9-038c-f4a1-dc7aeb949f7c/mzaf_12950366800693193370.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 11,
+          "title": "Homeless",
+          "duration": "5:20",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/1b/88/631b880b-b67a-002d-4351-fc942396e6ed/mzaf_9845942233058312994.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 12,
+          "title": "Uk",
+          "duration": "1:40",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/42/94/4742941d-92be-419b-5348-d078d453001d/mzaf_14808914605777872566.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 13,
+          "title": "Raver",
+          "duration": "4:59",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/32/44/b632442b-db99-87ad-90c5-a89996179107/mzaf_670378989722533146.plus.aac.p.m4a"
         }
       ],
       "platformLinks": [
         {
+          "name": "Spotify",
+          "category": "Écouter sur Spotify",
+          "urlString": "https://open.spotify.com/search/Untrue%20Burial",
+          "iconName": "waveform"
+        },
+        {
           "name": "Apple Music",
-          "category": "Écouter l'album",
-          "urlString": "https://music.apple.com",
+          "category": "Écouter sur Apple Music",
+          "urlString": "https://music.apple.com/us/album/untrue/893175779?uo=4",
           "iconName": "music.note"
-        }
-      ],
-      "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ee/71/42/ee71425d-6bc9-3df8-c90b-8539f59144ab/00724386649553.rgb.jpg/600x600bb.jpg",
-      "tracks": [
-        {
-          "trackNumber": 1,
-          "title": "1/1",
-          "duration": "17:21",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/24/c4/f5/24c4f540-5a9e-4d3c-24f8-6a622417dec7/mzaf_16193309359931078587.plus.aac.p.m4a"
         },
         {
-          "trackNumber": 2,
-          "title": "2/1",
-          "duration": "8:54",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/af/4c/f2af4c2a-f4e9-e273-4cec-c8ef409ef434/mzaf_4106234552629282677.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 3,
-          "title": "1/2",
-          "duration": "12:07",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/bb/4c/01bb4ca6-709c-40ea-52e9-3894cb37d29a/mzaf_4619408540893641576.plus.aac.p.m4a"
-        },
-        {
-          "trackNumber": 4,
-          "title": "2/2",
-          "duration": "9:38",
-          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/73/20/41/732041be-aefb-7b2f-0339-66d4a8e79ca3/mzaf_16133218731474062777.plus.aac.p.m4a"
+          "name": "Deezer",
+          "category": "Écouter sur Deezer",
+          "urlString": "https://www.deezer.com/search/Untrue%20Burial",
+          "iconName": "play.circle.fill"
         }
       ]
     }
