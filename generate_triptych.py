@@ -12,8 +12,11 @@ now_paris = datetime.now(paris_tz)
 date_seed = now_paris.strftime("%Y-%m-%d")
 
 def http_get_json(url, headers=None):
-    req = urllib.request.Request(url, headers=headers or {"User-Agent": "TriviumBot/1.0"})
-    with urllib.request.urlopen(req) as response:
+    custom_headers = {"User-Agent": "TriviumBot/1.0 (contact@trivium.app)"}
+    if headers:
+        custom_headers.update(headers)
+    req = urllib.request.Request(url, headers=custom_headers)
+    with urllib.request.urlopen(req, timeout=8) as response:
         return json.loads(response.read().decode("utf-8"))
 
 def fetch_gemini_triptych():
@@ -135,22 +138,79 @@ def fetch_gemini_triptych():
         headers={"Content-Type": "application/json"},
         method="POST"
     )
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=60) as resp:
         res = json.loads(resp.read().decode("utf-8"))
         raw_json = res["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(raw_json)
 
+# MARK: - Cascade Résolution Visuelle (Films)
+
 def enrich_movie(title):
+    # 1. Essai Apple iTunes Search
     query = urllib.parse.quote(title)
-    url = f"https://itunes.apple.com/search?term={query}&media=movie&entity=movie&limit=1&country=FR"
+    url_apple = f"https://itunes.apple.com/search?term={query}&media=movie&entity=movie&limit=1&country=FR"
     try:
-        data = http_get_json(url)
+        data = http_get_json(url_apple)
         results = data.get("results", [])
         if results and results[0].get("artworkUrl100"):
             return results[0]["artworkUrl100"].replace("100x100bb", "600x900bb")
     except Exception:
         pass
+
+    # 2. Secours : Wikipédia API (Français)
+    url_wiki = f"https://fr.wikipedia.org/api/rest_v1/page/summary/{query}"
+    try:
+        data = http_get_json(url_wiki)
+        if data.get("thumbnail") and data["thumbnail"].get("source"):
+            return data["thumbnail"]["source"]
+        if data.get("originalimage") and data["originalimage"].get("source"):
+            return data["originalimage"]["source"]
+    except Exception:
+        pass
+
     return None
+
+# MARK: - Cascade Résolution Visuelle (Livres)
+
+def enrich_book(title, author):
+    clean_query = urllib.parse.quote(f"{title} {author}")
+    
+    # 1. Essai Google Books API (Public)
+    url_google = f"https://www.googleapis.com/books/v1/volumes?q={clean_query}&maxResults=1"
+    try:
+        data = http_get_json(url_google)
+        items = data.get("items", [])
+        if items:
+            image_links = items[0].get("volumeInfo", {}).get("imageLinks", {})
+            img = image_links.get("thumbnail") or image_links.get("smallThumbnail")
+            if img:
+                # Force le HTTPS et retire les limites de taille
+                return img.replace("http://", "https://").replace("&edge=curl", "")
+    except Exception:
+        pass
+
+    # 2. Secours : Open Library
+    url_openlib = f"https://openlibrary.org/search.json?q={clean_query}&limit=1"
+    try:
+        data = http_get_json(url_openlib)
+        docs = data.get("docs", [])
+        if docs and docs[0].get("cover_i"):
+            return f"https://covers.openlibrary.org/b/id/{docs[0]['cover_i']}-L.jpg?default=false"
+    except Exception:
+        pass
+
+    # 3. Secours : Wikipédia API
+    url_wiki = f"https://fr.wikipedia.org/api/rest_v1/page/summary/{urllib.parse.quote(title)}"
+    try:
+        data = http_get_json(url_wiki)
+        if data.get("thumbnail") and data["thumbnail"].get("source"):
+            return data["thumbnail"]["source"]
+    except Exception:
+        pass
+
+    return None
+
+# MARK: - Résolution Musique (iTunes)
 
 def enrich_album(title, artist):
     query = urllib.parse.quote(f"{title} {artist}")
@@ -184,18 +244,6 @@ def enrich_album(title, artist):
     except Exception:
         pass
     return cover, preview, tracks, apple_url
-
-def enrich_book(title, author):
-    query = urllib.parse.quote(f"{title} {author}")
-    url = f"https://openlibrary.org/search.json?q={query}&limit=1"
-    try:
-        data = http_get_json(url)
-        docs = data.get("docs", [])
-        if docs and docs[0].get("cover_i"):
-            return f"https://covers.openlibrary.org/b/id/{docs[0]['cover_i']}-M.jpg?default=false"
-    except Exception:
-        pass
-    return None
 
 def build_links(item, apple_music_url=None):
     title = item["title"]
@@ -249,7 +297,7 @@ def main():
     with open(f"archive/{date_seed}.json", "w", encoding="utf-8") as f:
         json.dump(triptych, f, ensure_ascii=False, indent=2)
 
-    print("today.json généré avec succès !")
+    print("today.json généré avec succès avec résolution en cascade !")
 
 if __name__ == "__main__":
     main()
