@@ -2,9 +2,8 @@ name: generate
 
 on:
   schedule:
-    # Déclenchement quotidien automatique à 05h00 UTC
     - cron: '0 5 * * *'
-  workflow_dispatch: # Déclenchement manuel
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,9 +15,6 @@ jobs:
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 0
 
       - name: Installer Python
         uses: actions/setup-python@v5
@@ -36,10 +32,10 @@ jobs:
         run: |
           python generate_triptych.py
 
-      - name: Publier automatiquement le triptyque
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "✨ Édition du jour : Auto-generation"
-          file_pattern: "today.json archive/*.json"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+      - name: Publier les fichiers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add today.json archive/
+          git commit -m "✨ Édition du jour : $(date +'%Y-%m-%d')" || exit 0
+          git push origin HEAD:main --force
