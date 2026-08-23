@@ -1,0 +1,254 @@
+{
+  "themeTitle": "L'Éternel Retour des Ombres",
+  "themeSubtitle": "Trois déclinaisons magistrales sur la disparition, le vertige du temps suspendu et les fantômes de la mémoire.",
+  "heroImageURL": null,
+  "items": [
+    {
+      "type": "LIVRE",
+      "title": "L'Invention de Morel",
+      "creator": "Adolfo Bioy Casares",
+      "year": "1940",
+      "genre": "Littérature fantastique",
+      "formatMetric": "160 pages",
+      "accessibility": "Équilibrée",
+      "tags": [
+        "Illusion",
+        "Île déserte",
+        "Mémoire",
+        "Immortabilité"
+      ],
+      "quote": "Mon sentiment qu'il s'agit d'une illusion s'assortit d'une certitude plus profonde : nous sommes tous des images enregistrées.",
+      "origin": "Argentine",
+      "imageURL": null,
+      "previewURL": null,
+      "tracks": null,
+      "aiSummary": "Un fugitif politique trouve refuge sur une île réputée inhabitée et maudite. Il y découvre un groupe de bourgeois élégants qui semblent ignorant sa présence et rejouent inlassablement les mêmes scènes de vacances. Il réalise peu à peu qu'il fait face à un enregistrement holographique parfait, conçu pour immortaliser leur présence au prix de leur vie.",
+      "thematicAnalysis": "Bioy Casares bâtit une mécanique spéculative d'une rigueur géométrique fascinante. En explorant le désir d'éternité à travers une technologie spectrale, le roman inaugure le thème central du triptyque : l'impossibilité de saisir le réel face aux enregistrements qui nous survivent. La prose, concise et clinique, renforce la tragédie de ce huis clos insulaire.",
+      "ratings": [
+        {
+          "source": "Le Monde des Livres",
+          "score": "Incontournable",
+          "excerpt": "Une mécanique fantastique d'une élégance absolue qui préfigure avec un demi-siècle d'avance nos vertiges virtuels.",
+          "badgeColorName": "orange",
+          "iconName": "quote.bubble.fill"
+        },
+        {
+          "source": "The New York Times",
+          "score": "Chef-d'œuvre",
+          "excerpt": "Un roman parfait dont la précision formelle n'enlève rien à l'immense mélancolie de son propos.",
+          "badgeColorName": "orange",
+          "iconName": "star.fill"
+        }
+      ],
+      "platformLinks": [
+        {
+          "name": "Fnac",
+          "category": "Livre papier (Broché / Poche)",
+          "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=L%27Invention%20de%20Morel%20Adolfo%20Bioy%20Casares",
+          "iconName": "book.closed.fill"
+        },
+        {
+          "name": "Kindle",
+          "category": "Édition numérique E-book",
+          "urlString": "https://www.amazon.fr/s?k=L%27Invention%20de%20Morel%20Adolfo%20Bioy%20Casares&i=digital-text",
+          "iconName": "ipad.and.arrow.forward"
+        },
+        {
+          "name": "Audible",
+          "category": "Livre audio narré",
+          "urlString": "https://www.audible.fr/search?keywords=L%27Invention%20de%20Morel%20Adolfo%20Bioy%20Casares",
+          "iconName": "headphones"
+        }
+      ]
+    },
+    {
+      "type": "FILM",
+      "title": "Pique-nique à Hanging Rock",
+      "creator": "Peter Weir",
+      "year": "1975",
+      "genre": "Drame mystérieux",
+      "formatMetric": "1 h 55",
+      "accessibility": "Accessible",
+      "tags": [
+        "Disparition",
+        "Nature hypnotique",
+        "Temps suspendu",
+        "Australie"
+      ],
+      "quote": "Ce que nous voyons et ce que nous semblons être ne sont qu'un rêve dans un rêve.",
+      "origin": "Australie",
+      "imageURL": null,
+      "previewURL": null,
+      "tracks": null,
+      "aiSummary": "Le jour de la Saint-Valentin 1900, des pensionnaires d'un collège puritain partent en excursion au pied de Hanging Rock, un sanctuaire rocheux millénaire. Trois jeunes filles et leur professeure s'y s'aventurent avant de disparaître mystérieusement. Cet événement inexplicable vient briser l'ordre rigide et la psyché de la communauté victorienne.",
+      "thematicAnalysis": "Peter Weir signe un chef-d'œuvre impressionniste où la disparition devient une expérience purement plastique et sensorielle. Par une image solaire aux flous cotonneux et une bande-son lancinante, le film suspend le cours du temps et dissout la frontière entre réalité et mirage. Tout comme dans le roman de Bioy Casares, le paysage devient une entité dévorante qui absorbe les vivants.",
+      "ratings": [
+        {
+          "source": "Cahiers du Cinéma",
+          "score": "Chef-d'œuvre",
+          "excerpt": "Weir transforme l'absence en une matière poétique et incandescente d'une beauté vénéneuse.",
+          "badgeColorName": "blue",
+          "iconName": "quote.bubble.fill"
+        },
+        {
+          "source": "Sight & Sound",
+          "score": "Incontournable",
+          "excerpt": "Un opéra visuel envoûtant où la nature ancienne pulvérise les certitudes de la civilisation.",
+          "badgeColorName": "blue",
+          "iconName": "star.fill"
+        }
+      ],
+      "platformLinks": [
+        {
+          "name": "Où regarder en streaming",
+          "category": "Netflix, Prime, Disney+...",
+          "urlString": "https://www.justwatch.com/fr/recherche?q=Pique-nique%20%C3%A0%20Hanging%20Rock",
+          "iconName": "play.tv.fill"
+        },
+        {
+          "name": "Apple TV",
+          "category": "Location & Achat 4K",
+          "urlString": "https://tv.apple.com/fr/search?term=Pique-nique%20%C3%A0%20Hanging%20Rock",
+          "iconName": "apple.logo"
+        },
+        {
+          "name": "Canal+ VOD",
+          "category": "Location & myCANAL",
+          "urlString": "https://vod.canalplus.com/recherche/Pique-nique%20%C3%A0%20Hanging%20Rock",
+          "iconName": "film.fill"
+        }
+      ]
+    },
+    {
+      "type": "ALBUM",
+      "title": "Sakura",
+      "creator": "Susumu Yokota",
+      "year": "2000",
+      "genre": "Ambient / Electronica",
+      "formatMetric": "10 titres • 48 min",
+      "accessibility": "Accessible",
+      "tags": [
+        "Boucles",
+        "Sérénité",
+        "Japon",
+        "Éphémère"
+      ],
+      "quote": "Une tapisserie sonore où les motifs traditionnels japonais flottent dans un espace-temps infini.",
+      "origin": "Japon",
+      "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/39/43/843943be-3850-b1b4-8e55-6695abab850a/cover.jpg/600x600bb.jpg",
+      "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/af/84/1aaf84ed-5575-a399-075e-28522b414770/mzaf_7564571824302292549.plus.aac.p.m4a",
+      "tracks": [
+        {
+          "trackNumber": 1,
+          "title": "Saku (2025 Remaster)",
+          "duration": "5:43",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/af/84/1aaf84ed-5575-a399-075e-28522b414770/mzaf_7564571824302292549.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 2,
+          "title": "Tobiume (2025 Remaster)",
+          "duration": "4:37",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/84/e4/0a84e4b6-e5b0-ac47-887d-755be6ee2026/mzaf_11483585317728750578.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 3,
+          "title": "Uchu Tanjyo (2025 Remaster)",
+          "duration": "3:11",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/11/6e/f4116e08-4ff1-9827-0ed6-535e89978dcb/mzaf_11941541844038727564.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 4,
+          "title": "Hagoromo (2025 Remaster)",
+          "duration": "3:50",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/55/14/ca551422-e03f-c8f9-4e41-dfbca83d3487/mzaf_6654402552444107835.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 5,
+          "title": "Genshi (2025 Remaster)",
+          "duration": "4:55",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/08/73/04087348-563e-9be2-243f-29103f1498d1/mzaf_9945708576591794929.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 6,
+          "title": "Gekkoh (2025 Remaster)",
+          "duration": "4:57",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/6d/ae/446dae1d-509f-0846-bd76-5bc25e486123/mzaf_14625810294241096488.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 7,
+          "title": "Hisen (2025 Remaster)",
+          "duration": "3:46",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/96/f7/5896f7b3-e5c8-06d5-4fc2-4ed09ea6f8cd/mzaf_9309887596541795100.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 8,
+          "title": "Azukiiro no Kaori (2025 Remaster)",
+          "duration": "2:36",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/d6/04/a1d60417-144a-d56d-6aed-a9bf6ebb99d5/mzaf_9532053345290469132.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 9,
+          "title": "Kodomotachi (2025 Remaster)",
+          "duration": "4:05",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/ea/6b/deea6b98-4ab7-09f3-a0bd-f54366565741/mzaf_16919119374402521611.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 10,
+          "title": "Naminote (2025 Remaster)",
+          "duration": "5:41",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/cd/a4/fccda41e-4113-225e-63d1-72029c5df528/mzaf_2198433198356737387.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 11,
+          "title": "Shinsen (2025 Remaster)",
+          "duration": "4:31",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/bd/08/c6bd08f8-7b8a-93c4-977f-40069b017c11/mzaf_15340819712301618024.plus.aac.p.m4a"
+        },
+        {
+          "trackNumber": 12,
+          "title": "Kirakiraboshi (2025 Remaster)",
+          "duration": "1:55",
+          "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/dc/8c/cadc8ca7-337d-74e3-0869-59788e478463/mzaf_3024477644046829276.plus.aac.p.m4a"
+        }
+      ],
+      "aiSummary": "Édité au tournant du siècle, 'Sakura' demeure un sommet mondial de la musique ambient. Susumu Yokota y tisse des boucles délicates en échantillonnant des guitares lointaines, des instruments traditionnels comme le koto et des lignes de basse feutrées. L'album capte la poésie de la fleur de cerisier : une beauté radieuse mais condamnée à s'évanouir.",
+      "thematicAnalysis": "Dans 'Sakura', la boucle musicale se fait l'écho sonore de l'éternel retour. Yokota ne cherche pas la répétition monotone, mais plutôt la création d'un espace méditatif où le temps semble s'immobiliser. L'album clôt le triptyque en traduisant en fréquences éthérées ce sentiment d'impermanence et de présence spectrale partagé par la littérature de Bioy Casares et le cinéma de Peter Weir.",
+      "ratings": [
+        {
+          "source": "Pitchfork",
+          "score": "8.8/10",
+          "excerpt": "Un chef-d'œuvre d'ambient organique qui capture le passage du temps avec une délicatesse poignante.",
+          "badgeColorName": "red",
+          "iconName": "music.note"
+        },
+        {
+          "source": "Les Inrockuptibles",
+          "score": "Incontournable",
+          "excerpt": "Sous les doigts de Yokota, la musique électronique atteint une pureté poétique universelle.",
+          "badgeColorName": "red",
+          "iconName": "star.fill"
+        }
+      ],
+      "platformLinks": [
+        {
+          "name": "Spotify",
+          "category": "Écouter l'album",
+          "urlString": "https://open.spotify.com/search/Sakura%20Susumu%20Yokota/albums",
+          "iconName": "music.note"
+        },
+        {
+          "name": "Apple Music",
+          "category": "Streaming Lossless",
+          "urlString": "https://music.apple.com/fr/album/sakura-2025-remaster/1833283420?uo=4",
+          "iconName": "apple.logo"
+        },
+        {
+          "name": "Deezer",
+          "category": "Streaming Hi-Fi",
+          "urlString": "https://www.deezer.com/search/Sakura%20Susumu%20Yokota/album",
+          "iconName": "play.circle.fill"
+        }
+      ]
+    }
+  ]
+}
