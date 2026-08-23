@@ -2,9 +2,9 @@ name: generate
 
 on:
   schedule:
-    # Déclenchement automatique chaque matin à 5h00 UTC
+    # Déclenchement automatique chaque jour à 05h00 UTC (07h00 heure de Paris)
     - cron: '0 5 * * *'
-  workflow_dispatch: # Permet le lancement manuel depuis l'onglet Actions
+  workflow_dispatch: # Déclenchement manuel
 
 permissions:
   contents: write
@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Installer Python
         uses: actions/setup-python@v5
@@ -39,8 +40,9 @@ jobs:
 
       - name: Enregistrer et publier le triptyque
         run: |
-          git config --global user.name "Trivium Bot"
-          git config --global user.email "bot@trivium.app"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
           git add today.json archive/
           git commit -m "✨ Édition du jour : $(date +'%Y-%m-%d')" || exit 0
           git pull --rebase origin main
