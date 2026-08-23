@@ -4,7 +4,7 @@ on:
   schedule:
     # Déclenchement quotidien automatique à 05h00 UTC
     - cron: '0 5 * * *'
-  workflow_dispatch: # Permet le déclenchement manuel
+  workflow_dispatch: # Déclenchement manuel
 
 permissions:
   contents: write
