@@ -92,7 +92,6 @@ Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le
     result = response.json()
     raw_text = result["candidates"][0]["content"]["parts"][0]["text"].strip()
 
-    # Nettoyage du markdown résiduel
     if raw_text.startswith("```json"):
         raw_text = raw_text[7:]
     if raw_text.startswith("```"):
@@ -103,12 +102,12 @@ Renvoie UNIQUEMENT un objet JSON valide (sans balises markdown ```json, juste le
 
     data = json.loads(raw_text)
 
-    # Sauvegarde du fichier today.json pour l'application
+    # Mise à jour du fichier today.json
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print("today.json mis à jour.")
 
-    # Archivage automatique dans le dossier archive/
+    # Archivage quotidien
     os.makedirs("archive", exist_ok=True)
     today_str = datetime.date.today().strftime("%Y-%m-%d")
     archive_path = os.path.join("archive", f"{today_str}.json")
