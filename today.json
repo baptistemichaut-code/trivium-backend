@@ -1,43 +1,44 @@
 {
   "accessible": {
-    "themeTitle": "La Dystopie et les Parallèles Modernes",
-    "themeSubtitle": "Quand la culture populaire interroge notre rapport au pouvoir et à la technologie.",
+    "themeTitle": "Les Mosaïques du Temps et de la Mémoire",
+    "themeSubtitle": "Quand le passé se recompose pour réenchanter et troubler notre vision du présent.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "1984",
-        "creator": "George Orwell",
-        "year": "1949",
-        "genre": "Dystopie / Science-Fiction",
-        "origin": "Royaume-Uni",
+        "title": "Shutter Island",
+        "creator": "Dennis Lehane",
+        "year": "2003",
+        "genre": "Thriller Psychologique",
+        "origin": "États-Unis",
         "formatMetric": "384 pages",
-        "accessibility": "Populaire & Immédiat",
-        "quote": "Big Brother vous regarde.",
-        "aiSummary": "Dans un monde totalitaire verrouillé par la surveillance permanente, Winston Smith tente de préserver sa liberté intellectuelle et amoureuse face au Parti ultime.",
-        "thematicAnalysis": "Orwell dissèque la manipulation du langage et l'anéantissement de la vie privée, instaurant un miroir d'avertissement féroce face aux abus autoritaires modernes.",
-        "anecdote": "Le roman a été écrit alors qu'Orwell luttait contre la tuberculose sur l'île isolée de Jura en Écosse, dans des conditions matérielles extrêmement rudes.",
+        "accessibility": "Suspense Immédiat & Captivant",
+        "quote": "Lequel serait le pire ? Vivre comme un monstre, ou mourir en homme de bien ?",
+        "aiSummary": "1954. Le marshal Teddy Daniels et son coéquipier débarquent sur l'île d'Ashecliffe, un hôpital psychiatrique de haute sécurité, pour enquêter sur la disparition mystérieuse d'une patiente. Au fil d'une tempête dévastatrice, les certitudes s'effritent et la réalité se dérobe sous un labyrinthe de traumatismes secrets.",
+        "thematicAnalysis": "Lehane manipule les miroirs de la mémoire blessée. Le livre explore comment la psyché fabrique des fictions protectrices pour échapper à la tragédie, érigeant la culpabilité en une forteresse mentale inexpugnable.",
+        "anecdote": "Pour créer l'atmosphère oppressante du roman, Dennis Lehane s'est inspiré de ses propres souvenirs d'enfance lorsqu'il visitait l'île de Long Island au large de Boston durant le grand blizzard de 1978.",
         "tags": [
-          "Culte",
-          "Surveillance",
-          "Totalitarisme"
+          "Mémoire",
+          "Psychologie",
+          "Labyrinthe",
+          "Huis Clos"
         ],
         "ratings": [
           {
             "source": "Le Figaro Littéraire",
             "score": "5/5",
-            "excerpt": "Un chef-d'œuvre prophétique inégalé qui résonne encore aujourd'hui.",
-            "iconName": "star.fill"
+            "excerpt": "Un chef-d'œuvre de tension où chaque page réorganise la perception du lecteur.",
+            "iconName": "newspaper.fill"
           },
           {
-            "source": "Le Monde",
-            "score": "5/5",
-            "excerpt": "L'acte fondateur de la dystopie moderne.",
-            "iconName": "star.fill"
+            "source": "The New York Times",
+            "score": "4.5/5",
+            "excerpt": "Un thriller machiavélique d'une puissance narrative rare, impossible à reposer.",
+            "iconName": "book.fill"
           },
           {
             "source": "Télérama",
-            "score": "5/5",
-            "excerpt": "Une lecture vertigineuse et incontournable.",
+            "score": "4/5",
+            "excerpt": "Une mécanique d'horloger suisse au service d'un drame humain déchirant.",
             "iconName": "star.fill"
           }
         ],
@@ -45,170 +46,220 @@
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=1984%20George%20Orwell",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Shutter%20Island%20Dennis%20Lehane",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984%20George%20Orwell",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Shutter%20Island%20Dennis%20Lehane",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=1984%20George%20Orwell",
+            "urlString": "https://www.audible.fr/search?keywords=Shutter%20Island%20Dennis%20Lehane",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Blade Runner",
-        "creator": "Ridley Scott",
-        "year": "1982",
-        "genre": "Science-Fiction / Neo-Noir",
-        "origin": "États-Unis",
-        "formatMetric": "1h 57m",
-        "accessibility": "Culte & Grand Public",
-        "quote": "Tous ces moments se perdront dans l'oubli, comme des larmes dans la pluie.",
-        "aiSummary": "À Los Angeles en 2019, un ancien policier est chargé de traquer des androïdes synthétiques rebelles en quête d'humanité et de longévité.",
-        "thematicAnalysis": "Ridley Scott sublime le roman de Philip K. Dick dans une esthétique néo-noire poisseuse, questionnant la frontière poreuse entre conscience humaine et vie artificielle.",
-        "anecdote": "La célèbre tirade finale de Rutger Hauer ('Tears in rain') a été en grande partie réécrite et improvisée par l'acteur lui-même la veille du tournage.",
+        "title": "Premier Contact",
+        "creator": "Denis Villeneuve",
+        "year": "2016",
+        "genre": "Science-Fiction Poétique",
+        "origin": "États-Unis / Canada",
+        "formatMetric": "1h 56m",
+        "accessibility": "Émotion & Grand Spectacle Intelligent",
+        "quote": "Si vous pouviez voir votre vie du début à la fin, en changeriez-vous le moindre détail ?",
+        "aiSummary": "Lorsque douze vaisseaux extraterrestres mystérieux se posent sur Terre, une linguiste endeuillée est recrutée par l'armée pour déchiffrer leur langage. En apprenant leur écriture circulaire, elle découvre que leur perception du temps est totalement affranchie de la linéarité.",
+        "thematicAnalysis": "Villeneuve transforme le film d'invasion alien en un poème intime sur l'acceptation du destin. La mémoire n'y est plus un souvenir immobile mais une prescience lumineuse qui redéfinit l'amour maternal et le deuil.",
+        "anecdote": "Les symboles logogrammes utilisés par les extraterrestres ont été conçus par le designer Patrice Vermette avec l'aide d'analystes de la linguistique et d'un artiste peintre, créant un abécédaire complet de plus de 100 motifs distincts.",
         "tags": [
-          "Cyberpunk",
-          "Scolyté",
-          "Visuel"
+          "Langage",
+          "Temps",
+          "Émotion",
+          "Futur"
         ],
         "ratings": [
           {
             "source": "Première",
             "score": "5/5",
-            "excerpt": "Un sommet visuel et thématique du cinéma mondial.",
+            "excerpt": "Un coup de maître intime et monumental qui renouvelle magistralement la science-fiction.",
             "iconName": "film.fill"
           },
           {
-            "source": "Cahiers du Cinéma",
+            "source": "Les Cahiers du Cinéma",
             "score": "4/5",
-            "excerpt": "Une atmosphère immersive fascinante.",
-            "iconName": "film.fill"
+            "excerpt": "Une recherche visuelle et sonore fascinante autour du motif de la boucle temporelle.",
+            "iconName": "newspaper.fill"
           },
           {
-            "source": "Les Inrockuptibles",
+            "source": "Rolling Stone",
             "score": "5/5",
-            "excerpt": "Le film matrice de toute la SF moderne.",
-            "iconName": "film.fill"
+            "excerpt": "Bouleversant, splendide et vertigineux. Denis Villeneuve au sommet de son art.",
+            "iconName": "star.fill"
           }
         ],
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Blade%20Runner",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Premier%20Contact",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Blade%20Runner",
+            "urlString": "https://www.allocine.fr/recherche/?q=Premier%20Contact",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Blade%20Runner",
+            "urlString": "https://www.canalplus.com/recherche?q=Premier%20Contact",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "genre": "Rock Progressif",
-        "origin": "Royaume-Uni",
-        "formatMetric": "10 titres",
-        "accessibility": "Écoute Immédiate",
-        "quote": "There is no dark side in the moon, really. Matter of fact, it's all dark.",
-        "aiSummary": "Un voyage conceptuel sonore à travers la folie, le temps, l'argent et la mortalité, marqué par des productions révolutionnaires.",
-        "thematicAnalysis": "L'album explore les pressions psychologiques de la vie moderne, alliant synthétiseurs novateurs, bruitages du quotidien et mélodies universelles.",
-        "anecdote": "Les voix parlées en arrière-plan sont des réponses spontanées du personnel des studios Abbey Road à des cartes posées sur une table avec des questions existentialistes.",
+        "title": "Random Access Memories",
+        "creator": "Daft Punk",
+        "year": "2013",
+        "genre": "French Touch / Disco-Funk",
+        "origin": "France",
+        "formatMetric": "13 titres",
+        "accessibility": "Pop Culte & Universelle",
+        "quote": "Give life back to music.",
+        "aiSummary": "Dernier testament studio du duo casqué, cet album monumental est une odyssée analogique célébrant l'âge d'or des studios californiens des années 70-80. Entourés de légendes comme Giorgio Moroder ou Nile Rodgers, ils redonnent de l'âme humaine aux machines.",
+        "thematicAnalysis": "L'album fonctionne comme une arche de Noé sonore où les souvenirs synthétiques et les bandes magnétiques rejouent le passé pour ressusciter l'innocence perdue de la musique populaire.",
+        "anecdote": "Pour le titre 'Giorgio by Moroder', les Daft Punk ont enregistré la voix du pionnier de la synth-pop avec trois microphones d'époques différentes (des années 60 à aujourd'hui) afin d'adapter la texture vocale au moment de sa vie qu'il racontait.",
         "tags": [
-          "Monument",
-          "Psychédélique",
-          "Concept"
+          "Nostalgie",
+          "Groove",
+          "Synthétiseurs",
+          "Légende"
         ],
         "ratings": [
           {
-            "source": "Rolling Stone",
-            "score": "5/5",
-            "excerpt": "Le chef-d'œuvre absolu du rock progressif.",
-            "iconName": "music.note"
-          },
-          {
             "source": "Pitchfork",
-            "score": "10/10",
-            "excerpt": "Une perfection technique au service d'une émotion brute.",
-            "iconName": "music.note"
+            "score": "4.8/5",
+            "excerpt": "Un enregistrement somptueux et méticuleux qui célèbre la joie de la création musicale.",
+            "iconName": "star.fill"
           },
           {
-            "source": "Q Magazine",
+            "source": "Les Inrockuptibles",
             "score": "5/5",
-            "excerpt": "Un album emblématique qui transcende les générations.",
+            "excerpt": "Une cathédrale de pop intemporelle orchestrée par deux artisans d'exception.",
+            "iconName": "newspaper.fill"
+          },
+          {
+            "source": "NME",
+            "score": "5/5",
+            "excerpt": "L'un des disques les plus ambitieux et gratifiants du XXIe siècle.",
             "iconName": "music.note"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/54/d0/62/54d06230-1196-0bd0-93b3-1bd3eef2b43d/cover_-.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Eclipse",
-            "duration": "3:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/d0/72/8fd072cb-33a5-7d2f-e07b-57c3f6c56b17/mzaf_4109419127039493519.plus.aac.p.m4a"
+            "title": "Give Life Back to Music",
+            "duration": "4:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ce/15/b1/ce15b154-2b27-9d65-4d12-7736f3e029c2/mzaf_15463046040604482889.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Mirror",
-            "duration": "3:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/12/b9/e412b90c-58ae-82e3-177a-c759daa235e9/mzaf_15237875496945978788.plus.aac.p.m4a"
+            "title": "The Game of Love",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f3/11/1e/f3111e28-8777-de11-ce9a-b68cbbd482e5/mzaf_9503836792087302865.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Iljido",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/da/a0/2adaa034-eaff-f483-75bd-efcaadc2fd26/mzaf_17460350461865147188.plus.aac.p.m4a"
+            "title": "Giorgio by Moroder",
+            "duration": "9:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/88/e4/40/88e440e7-8baa-6cc0-acbe-ceaa7f240a51/mzaf_1985242177805063708.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Moon Movie",
-            "duration": "3:38",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/bf/57/79bf5782-3267-05a6-9f1a-e648415ca161/mzaf_3779374774565150604.plus.aac.p.m4a"
+            "title": "Within",
+            "duration": "3:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/56/90/11/56901128-5f5e-67ff-f760-2cf14e00b04c/mzaf_4629559715078327006.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Snow",
-            "duration": "3:24",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/ff/73/e6ff73c0-5522-45fd-1b7f-ad72cda84bb2/mzaf_4822830383156239578.plus.aac.p.m4a"
+            "title": "Instant Crush",
+            "duration": "5:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1a/3b/90/1a3b90d2-b984-b042-1822-e19f388524e0/mzaf_7080651603608009369.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Lose Yourself to Dance",
+            "duration": "5:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/20/4d/92204d1e-e9d5-0062-36e9-3671d508f34c/mzaf_12660190147806239384.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Touch",
+            "duration": "8:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/5e/9c/23/5e9c23a8-51d4-3158-63a9-3c17c17e1aad/mzaf_5833810091814140078.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Get Lucky",
+            "duration": "6:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/d3/1e/d4d31eb4-7405-b806-8346-3c52ad5b4cf4/mzaf_8095545455942962509.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Beyond",
+            "duration": "4:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/81/bf/80/81bf80c3-6edf-2231-7f38-4e10f81ef4b0/mzaf_13454620304668252238.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Motherboard",
+            "duration": "5:41",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ad/fa/a3/adfaa33c-7b60-1a59-233d-e398492977c9/mzaf_6457343133066990041.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Fragments of Time",
+            "duration": "4:39",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/ae/f9/b6aef99e-356b-aa20-a4cd-80bc16836ab6/mzaf_269882820879606569.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Doin' it Right",
+            "duration": "4:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9b/0a/bf/9b0abf51-0e93-8770-f270-7dfda1afa1a2/mzaf_9717678664204193733.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Contact",
+            "duration": "6:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/12/2c/10/122c10fd-7f36-f4a2-5543-ae8e5dd357c6/mzaf_5198969030385154956.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "urlString": "https://open.spotify.com/search/Random%20Access%20Memories%20Daft%20Punk",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/us/album/dark-side-of-the-moon-ep/1499069229?uo=4",
+            "urlString": "https://music.apple.com/us/album/random-access-memories/617154241?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "urlString": "https://www.deezer.com/search/Random%20Access%20Memories%20Daft%20Punk",
             "iconName": "play.circle.fill"
           }
         ]
@@ -216,44 +267,45 @@
     ]
   },
   "intermediate": {
-    "themeTitle": "Les Labyrinthes de la Mémoire",
-    "themeSubtitle": "Déconstruire le réel pour explorer les fractures du souvenir et de l'identité.",
+    "themeTitle": "L'Arpenteur des Horizons Suspendus",
+    "themeSubtitle": "Voyage au cœur de l'attente, de la mélancolie des grands espaces et du désir d'ailleurs.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Kafka sur le rivage",
-        "creator": "Haruki Murakami",
-        "year": "2002",
-        "genre": "Réalisme Magique",
-        "origin": "Japon",
-        "formatMetric": "640 pages",
-        "accessibility": "Équilibre & Réflexion",
-        "quote": "Parfois, le destin ressemble à une petite tempête de sable qui déplace sa trajectoire sans cesse.",
-        "aiSummary": "Deux destinées croisées : un adolescent en fuite frappé d'une malédiction et un vieillard amnésique capable de parler aux chats.",
-        "thematicAnalysis": "Murakami tresse mythe œdipien et mysticisme urbain dans une poétique fluide où le rêve et le réel s'interpénètrent sans couture.",
-        "anecdote": "Murakami a écrit le livre sans savoir à l'avance comment les deux intrigues parallèles se rejoindraient, faisant confiance à son propre inconscient.",
+        "title": "Le Désert des Tartares",
+        "creator": "Dino Buzzati",
+        "year": "1940",
+        "genre": "Roman Existentiel",
+        "origin": "Italie",
+        "formatMetric": "256 pages",
+        "accessibility": "Élégance Classique & Profondeur",
+        "quote": "Mais toi, tu ne te doutais pas alors combien la route était courte.",
+        "aiSummary": "Le jeune lieutenant Giovanni Drogo est affecté au fort Bastiani, une citadelle isolée face à un désert d'où est censée venir l'invasion des Tartares. Les jours, les mois et les décennies s'écoulent dans une attente hypnotique d'un destin glorieux qui se dérobe sans cesse.",
+        "thematicAnalysis": "Buzzati offre une métaphore saisissante du temps qui s'enfuie silencieusement. Le roman saisit la beauté tragique des vies vouées à une attente idéale, où le paysage aride devient le reflet du vide existentiel.",
+        "anecdote": "Dino Buzzati a écrit ce chef-d'œuvre alors qu'il travaillait de nuit à la rédaction du Corriere della Sera à Milan, ressentant le poids d'une routine professionnelle interminable qu'il transposa dans la garnison du fort.",
         "tags": [
-          "Poétique",
-          "Japon",
-          "Onirisme"
+          "Attente",
+          "Temps",
+          "Destin",
+          "Solitude"
         ],
         "ratings": [
           {
             "source": "Le Monde",
-            "score": "4.5/5",
-            "excerpt": "Une immersion captivante dans le mystère intérieur.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "Télérama",
             "score": "5/5",
-            "excerpt": "Un roman hypnotique à la beauté envoûtante.",
-            "iconName": "star.fill"
+            "excerpt": "Un chef-d'œuvre de la littérature européenne sur le mirage du destin.",
+            "iconName": "newspaper.fill"
           },
           {
-            "source": "The Guardian",
-            "score": "4/5",
-            "excerpt": "Murakami à son meilleur sommet d'imagination.",
+            "source": "Le Masque et la Plume",
+            "score": "5/5",
+            "excerpt": "Une prose envoûtante d'une clarté limpide qui résonne en nous pour toujours.",
+            "iconName": "book.fill"
+          },
+          {
+            "source": "Magazine Littéraire",
+            "score": "4.5/5",
+            "excerpt": "Une fable mélancolique magistrale sur la fuite inexorable des années.",
             "iconName": "star.fill"
           }
         ],
@@ -261,200 +313,196 @@
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20D%C3%A9sert%20des%20Tartares%20Dino%20Buzzati",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20D%C3%A9sert%20des%20Tartares%20Dino%20Buzzati",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.audible.fr/search?keywords=Le%20D%C3%A9sert%20des%20Tartares%20Dino%20Buzzati",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Eternal Sunshine of the Spotless Mind",
-        "creator": "Michel Gondry",
-        "year": "2004",
-        "genre": "Romance / SF Indépendante",
-        "origin": "États-Unis",
-        "formatMetric": "1h 48m",
-        "accessibility": "Ciné d'Auteur Accessible",
-        "quote": "Vous pouvez effacer quelqu'un de votre esprit. Le sortir de votre cœur est une autre histoire.",
-        "aiSummary": "Après une rupture douloureuse, un homme décide d'effacer médicalement son ex-compagne de sa mémoire, avant d'essayer de lutter en plein processus.",
-        "thematicAnalysis": "Porté par le scénario inventif de Charlie Kaufman, le film explore la valeur des chagrins d'amour à travers une déconstruction visuelle ingénieuse.",
-        "anecdote": "Michel Gondry a refusé le recours aux effets numériques pour les scènes d'effacement de mémoire, privilégiant les illusions d'optique en plateau et les éclairages physiques.",
+        "title": "Paris, Texas",
+        "creator": "Wim Wenders",
+        "year": "1984",
+        "genre": "Road Movie / Drame",
+        "origin": "Allemagne / États-Unis",
+        "formatMetric": "2h 27m",
+        "accessibility": "Beauté Contemplative & Touchante",
+        "quote": "Je te connaissais. Je te connaissais de mémoire.",
+        "aiSummary": "Un homme amnésique réapparaît du désert brûlant du Texas après des années de disparition. Recueilli par son frère, il réapprend à parler et entreprend un voyage émotionnel à travers les routes américaines pour retrouver son fils et la femme qu'il a aimée.",
+        "thematicAnalysis": "Wenders sublime le paysage américain en une carte des plaies sentimentales. À travers la guitare lancinante de Ry Cooder et les couleurs crépusculaires, le film montre la difficile reconstruction des liens perdus.",
+        "anecdote": "La célèbre scène finale du peep-show a été tournée sans que Nastassja Kinski et Harry Dean Stanton ne se voient réellement à travers le miroir sans tain pendant la majeure partie des répétitions pour intensifier la charge émotionnelle de leurs retrouvailles.",
         "tags": [
-          "Invention",
+          "Road Trip",
+          "Réconciliation",
           "Mélancolie",
-          "Inventif"
+          "Désert"
         ],
         "ratings": [
           {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "excerpt": "Une pure féerie poétique et mélancolique.",
-            "iconName": "film.fill"
-          },
-          {
             "source": "Positif",
-            "score": "4/5",
-            "excerpt": "L'accord parfait entre le génie visuel et l'émotion.",
+            "score": "5/5",
+            "excerpt": "Palme d'Or incontestable. Une poésie visuelle d'une grâce absolue.",
             "iconName": "film.fill"
           },
           {
-            "source": "Télérama",
+            "source": "Studio Magazine",
             "score": "5/5",
-            "excerpt": "Un chef-d'œuvre d'inventivité scénaristique.",
-            "iconName": "film.fill"
+            "excerpt": "Harry Dean Stanton est prodigieux dans ce voyage au bout de l'amour abandonné.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "Critikat",
+            "score": "4.5/5",
+            "excerpt": "L'un des plus beaux drames du cinéma moderne sur le pardon et la rédemption.",
+            "iconName": "newspaper.fill"
           }
         ],
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Eternal%20Sunshine%20of%20the%20Spotless%20Mind",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Paris%2C%20Texas",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Eternal%20Sunshine%20of%20the%20Spotless%20Mind",
+            "urlString": "https://www.allocine.fr/recherche/?q=Paris%2C%20Texas",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Eternal%20Sunshine%20of%20the%20Spotless%20Mind",
+            "urlString": "https://www.canalplus.com/recherche?q=Paris%2C%20Texas",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "In Rainbows",
-        "creator": "Radiohead",
-        "year": "2007",
-        "genre": "Art Rock / Indie",
+        "title": "Blue Lines",
+        "creator": "Massive Attack",
+        "year": "1991",
+        "genre": "Trip-Hop / Soul Nocturne",
         "origin": "Royaume-Uni",
-        "formatMetric": "10 titres",
-        "accessibility": "Reconnu & Exigeant",
-        "quote": "You are all I need / You're all I need / I'm in the middle of your picture.",
-        "aiSummary": "Un album chaleureux, intime et organique, alliant sonorités électroniques délicates et textures acoustiques envoûtantes.",
-        "thematicAnalysis": "Radiohead délaisse ici l'angoisse froide pour une vulnérabilité plus organique, capturant l'éphémère des sentiments humains.",
-        "anecdote": "Cet album a marqué l'histoire de la musique en sortant en prix libre sur Internet ('Pay what you want'), bousculant totalement l'industrie du disque.",
+        "formatMetric": "9 titres",
+        "accessibility": "Groove Nocturne & Enveloppant",
+        "quote": "Love, love is a verb, love is a doing word.",
+        "aiSummary": "Pionnier du son 'Bristol', cet album fondateur fusionne avec une élégance inédite le hip-hop, le reggae dub, le jazz et la soul cinématographique. Un disque urbain nocturne porté par la voix envoûtante de Shara Nelson et les apparitions de Horace Andy.",
+        "thematicAnalysis": "Blue Lines capture la brume des villes endormies et le désir d'évasion. C'est une cartographie sonore des errances nocturnes où la chaleur des basses contrebalance la solitude des métropoles modernes.",
+        "anecdote": "Pendant la première guerre du Golfe au moment de la sortie de l'album, le groupe a dû temporairement couper le mot 'Attack' de son nom sur la pochette sous la pression de la BBC et des radios britanniques pour éviter d'être censuré.",
         "tags": [
-          "Indie",
-          "Subtil",
-          "Innovant"
+          "Trip-Hop",
+          "Nuit",
+          "Chill",
+          "Fondateur"
         ],
         "ratings": [
           {
-            "source": "Pitchfork",
-            "score": "9.3/10",
-            "excerpt": "L'aboutissement sonore ultime du groupe anglais.",
-            "iconName": "music.note"
-          },
-          {
             "source": "NME",
             "score": "5/5",
-            "excerpt": "Une œuvre lumineuse et profondément humaine.",
+            "excerpt": "L'album qui a redéfini la musique britannique des années 90 en inventant le trip-hop.",
             "iconName": "music.note"
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
-            "excerpt": "Somptueux de bout en bout.",
-            "iconName": "music.note"
+            "excerpt": "Un chef-d'œuvre de sensualité sombre et de grooves urbains inoubliables.",
+            "iconName": "newspaper.fill"
+          },
+          {
+            "source": "Q Magazine",
+            "score": "4.5/5",
+            "excerpt": "Une fusion sonore révolutionnaire et intimiste d'une intemporalité folle.",
+            "iconName": "star.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e5/f7/c0/e5f7c07d-2182-e732-8ad6-be03814fe93c/13UABIM04453.rgb.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "15 Step",
-            "duration": "3:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/72/85/af728523-8048-4a8b-9e13-e8f4f64e9d69/mzaf_8205306206851675436.plus.aac.p.m4a"
+            "title": "Safe From Harm (feat. Shara Nelson) [2012 Mix/Master]",
+            "duration": "5:19",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9d/88/82/9d88823d-f00b-90eb-6ea9-d8778a0206f5/mzaf_2302062545294028574.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Bodysnatchers",
-            "duration": "4:02",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/07/ed/9207eda5-8f35-1a27-65e2-bf271fee8e6d/mzaf_15407763232352401876.plus.aac.p.m4a"
+            "title": "One Love (feat. Horace Andy) [2012 Mix/Master]",
+            "duration": "4:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/02/19/af/0219aff1-0715-eb4c-6d7b-0e40cd278e90/mzaf_14850730936325769970.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Nude",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/11/2a/9b/112a9bdd-e778-feba-b80a-b599772545e0/mzaf_18162962909797141261.plus.aac.p.m4a"
+            "title": "Blue Lines (feat. Tricky) [2012 Mix/Master]",
+            "duration": "4:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d8/2f/8b/d82f8bdf-54b5-f0f5-5617-c4d7adc6e9bc/mzaf_10461587387786477818.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Weird Fishes / Arpeggi",
-            "duration": "5:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/2e/48/d8/2e48d83b-0dd4-5336-ba90-a08a14771bc3/mzaf_6995897912540104374.plus.aac.p.m4a"
+            "title": "Be Thankful For What You've Got (feat. Tony Bryan) [2012 Mix/Master]",
+            "duration": "4:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8a/81/ba/8a81ba35-5f74-7081-958e-ce02cacae719/mzaf_8283974455362094132.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "All I Need",
-            "duration": "3:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/26/e3/3226e3ba-b5e0-700d-3866-88842c2d15b8/mzaf_2819321088474335323.plus.aac.p.m4a"
+            "title": "Five Man Army (feat. Horace Andy & Tricky) [2012 Mix/Master]",
+            "duration": "6:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/17/94/50/179450a7-fcf9-0feb-4e96-0316a765e79e/mzaf_16251037639596709854.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Faust Arp",
-            "duration": "2:09",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cb/40/17/cb401722-5996-d200-7081-cc18c0673ea2/mzaf_1923661186614476707.plus.aac.p.m4a"
+            "title": "Unfinished Sympathy (feat. Shara Nelson) [2012 Mix/Master]",
+            "duration": "5:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/28/6b/72/286b72c8-e388-c791-b75e-1bcaed1ebac2/mzaf_12512470290971497615.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Reckoner",
-            "duration": "4:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/44/2f/59442fce-aab1-6d11-58a2-204588e61dcd/mzaf_8481954243559181948.plus.aac.p.m4a"
+            "title": "Daydreaming (feat. Shara Nelson & Tricky) [2012 Mix/Master]",
+            "duration": "4:14",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/79/9f/cf799f4e-c465-f668-d8f7-cb4ba6d0971c/mzaf_13676257704728150006.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "House of Cards",
-            "duration": "5:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/c8/67/49c8676d-ee26-77b6-a0e5-1134e91af4a1/mzaf_10511908633822741203.plus.aac.p.m4a"
+            "title": "Lately (feat. Shara Nelson) [2012 Mix/Master]",
+            "duration": "4:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f9/be/39/f9be3912-6f74-b9fa-6249-1f17e9b93835/mzaf_10829834816471830748.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Jigsaw Falling Into Place",
-            "duration": "4:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/1c/68/7a1c6810-0a1e-bca7-d3af-e9984fbd938b/mzaf_10305004532975521267.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Videotape",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/9f/7e/ac9f7eb6-0a30-5c2a-c571-82392d356592/mzaf_8676348198965838362.plus.aac.p.m4a"
+            "title": "Hymn Of The Big Wheel (feat. Horace Andy) [2012 Mix/Master]",
+            "duration": "6:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/6d/80/336d8039-ab7d-ff0d-b942-7c33b7bdb92f/mzaf_14230041608353997906.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/In%20Rainbows%20Radiohead",
+            "urlString": "https://open.spotify.com/search/Blue%20Lines%20Massive%20Attack",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/us/album/in-rainbows/1109714933?uo=4",
+            "urlString": "https://music.apple.com/us/album/blue-lines-2012-mix-master/715864097?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/In%20Rainbows%20Radiohead",
+            "urlString": "https://www.deezer.com/search/Blue%20Lines%20Massive%20Attack",
             "iconName": "play.circle.fill"
           }
         ]
@@ -462,44 +510,45 @@
     ]
   },
   "expert": {
-    "themeTitle": "Les Ruines du Sens et l'Espace du Silence",
-    "themeSubtitle": "Exploration des lisières de la forme, de la mémoire fragmentée et du temps étiré.",
+    "themeTitle": "Vertiges de la Répétition et Géométries du Silence",
+    "themeSubtitle": "Une immersion dans les architectures obsessionnelles et l'épuration formelle.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "La Vie mode d'emploi",
-        "creator": "Georges Perec",
-        "year": "1978",
-        "genre": "Littérature Exigeante / Oulipo",
-        "origin": "France",
-        "formatMetric": "600 pages",
-        "accessibility": "Pointu & Complexe",
-        "quote": "L'art de la puzzle-manie commence avec des pièces en bois, découpées selon un plan bien arrêté.",
-        "aiSummary": "La description exhaustive et mathématique de la vie des habitants d'un immeuble parisien, figés à un instant T précis.",
-        "thematicAnalysis": "Régie par des contraintes oulipiennes rigoureuses, l'œuvre compose une mosaïque monumentale sur l'accumulation, la perte et le néant.",
-        "anecdote": "Perec a utilisé un problème d'échecs (le polygraphisme du cavalier) pour déterminer l'ordre exact de visite de chaque pièce de l'immeuble.",
+        "title": "Le Naufragé",
+        "creator": "Thomas Bernhard",
+        "year": "1983",
+        "genre": "Littérature Obsessionnelle",
+        "origin": "Autriche",
+        "formatMetric": "192 pages",
+        "accessibility": "Exigence Formelle & Monologue Radical",
+        "quote": "Glenn Gould a rendu notre ami Wertheimer fou et l'a détruit.",
+        "aiSummary": "Trois virtuoses du piano étudient sous la direction de Horowitz à Salzbourg. L'un d'eux n'est autre que Glenn Gould. Face au génie absolu de Gould jouant les Variations Goldberg, les deux autres sombrent : l'un abandonne la musique, l'autre s'enfonce dans une démence suicidaire.",
+        "thematicAnalysis": "Bernhard construit un monologue circulaire implacable en forme d'invective musicale. L'œuvre questionne la paralysie causée par la quête de perfection esthétique et la destruction psychique face au sublime absolu.",
+        "anecdote": "Thomas Bernhard, qui avait lui-même suivi une formation rigoureuse de chanteur lyrique et de musicien au Mozarteum de Salzbourg avant d'abandonner, insérait la structure rythmique de la musique classique directement dans la ponctuation de sa prose sans aucun paragraphe.",
         "tags": [
-          "Oulipo",
-          "Puzzle",
-          "Expérimental"
+          "Musique",
+          "Obsession",
+          "Génie",
+          "Monologue"
         ],
         "ratings": [
           {
-            "source": "Le Monde",
+            "source": "Artpress",
             "score": "5/5",
-            "excerpt": "Un monument de la littérature du XXe siècle.",
-            "iconName": "star.fill"
+            "excerpt": "Une virtuose spirale verbale qui repousse les limites de la prose contemporaine.",
+            "iconName": "newspaper.fill"
           },
           {
-            "source": "Libération",
+            "source": "Transfuge",
             "score": "5/5",
-            "excerpt": "Une prouesse formelle au vertige absolu.",
-            "iconName": "star.fill"
+            "excerpt": "Un choc littéraire d'une férocité et d'une rigueur musicale hypnotiques.",
+            "iconName": "book.fill"
           },
           {
-            "source": "The NY Review of Books",
-            "score": "5/5",
-            "excerpt": "Un univers entier condensé dans un immeuble.",
+            "source": "Études Littéraires",
+            "score": "4.5/5",
+            "excerpt": "Une méditation corrosive sur l'impossibilité de dépasser la perfection d'autrui.",
             "iconName": "star.fill"
           }
         ],
@@ -507,218 +556,226 @@
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Naufrag%C3%A9%20Thomas%20Bernhard",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Naufrag%C3%A9%20Thomas%20Bernhard",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
+            "urlString": "https://www.audible.fr/search?keywords=Le%20Naufrag%C3%A9%20Thomas%20Bernhard",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Stalker",
-        "creator": "Andrei Tarkovski",
-        "year": "1979",
-        "genre": "Cinéma d'Auteur / Métaphysique",
-        "origin": "URSS",
-        "formatMetric": "2h 42m",
-        "accessibility": "Art & Essai Exigeant",
-        "quote": "Ici, tout est plus compliqué. La Zone demande le respect, sinon elle vous punit.",
-        "aiSummary": "Un guide emmène un écrivain et un professeur au cœur d'une zone interdite où se trouverait une chambre exauçant les désirs secrets.",
-        "thematicAnalysis": "Un poème cinématographique d'une lenteur hypnotique, méditant sur la foi, l'art et les désirs les plus obscurs de la conscience humaine.",
-        "anecdote": "Une première version entière du film tournée sur un an a été définitivement perdue en laboratoire suite à une erreur de développement de la pellicule.",
+        "title": "L'Année dernière à Marienbad",
+        "creator": "Alain Resnais",
+        "year": "1961",
+        "genre": "Avant-Garde / Nouveau Roman",
+        "origin": "France / Italie",
+        "formatMetric": "1h 34m",
+        "accessibility": "Labyrinthe Esthétique & Conceptuel",
+        "quote": "Un passe-temps, une illusion, une hésitation entre la mémoire et l'oubli.",
+        "aiSummary": "Dans un hôtel baroque majestueux aux jardins à la française rigides, un homme tente de convaincre une femme qu'ils se sont déjà rencontrés et aimés l'année précédente à Marienbad. Elle affirme ne pas se souvenir de lui. S'agit-il d'un rêve, d'un mensonge ou d'un piège mental ?",
+        "thematicAnalysis": "Sur un scénario d'Alain Robbe-Grillet, Resnais invente un cinéma pur, libéré de la chronologie narrative. Le film devient une architecture d'ombres et de marbre où la mémoire géométrise le désir humain.",
+        "anecdote": "Le jeu de cartes et d'allumettes auquel joue l'énigmatique personnage M (connu sous le nom de 'Jeu de Nim') est devenu un phénomène de société à la sortie du film, provoquant de passionnés débats mathématiques dans la presse parisienne.",
         "tags": [
-          "Métaphysique",
-          "Poétique",
-          "Lenteur"
+          "Avant-Garde",
+          "Baroque",
+          "Labyrinthe",
+          "Mémoire"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
-            "excerpt": "Une expérience spirituelle autant que cinématographique.",
+            "excerpt": "Un monument de modernité qui réinvente les lois de l'espace et du temps cinématographiques.",
             "iconName": "film.fill"
           },
           {
-            "source": "Positif",
+            "source": "Sight & Sound",
             "score": "5/5",
-            "excerpt": "La quintessence du cinéma poétique soviétique.",
-            "iconName": "film.fill"
+            "excerpt": "Une expérience visuelle envoûtante, l'un des sommets formels du XXe siècle.",
+            "iconName": "star.fill"
           },
           {
-            "source": "Télérama",
-            "score": "5/5",
-            "excerpt": "Une œuvre envoûtante qui transforme le spectateur.",
-            "iconName": "film.fill"
+            "source": "Senses of Cinema",
+            "score": "4.5/5",
+            "excerpt": "Un poème géométrique inégalé sur les vertiges de la mémoire subjective.",
+            "iconName": "newspaper.fill"
           }
         ],
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Stalker",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Stalker",
+            "urlString": "https://www.allocine.fr/recherche/?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Stalker",
+            "urlString": "https://www.canalplus.com/recherche?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Untrue",
-        "creator": "Burial",
-        "year": "2007",
-        "genre": "Future Garage / Ambient Dub",
-        "origin": "Royaume-Uni",
-        "formatMetric": "13 titres",
-        "accessibility": "Niche & Atmosphérique",
-        "quote": "It's about when you fall in love, or when you're just holding hands on the night bus.",
-        "aiSummary": "Une errance nocturne dans un Londres fantomatique, composée de crépitements de vinyle, de basses sous-marines et de voix hachées.",
-        "thematicAnalysis": "Burial réinvente l'hantologie sonore : une nostalgie pour un futur qui n'a jamais eu lieu, capturant le spleen des métropoles contemporaines.",
-        "anecdote": "William Bevan (Burial) a produit l'album dans l'anonymat le plus total sur le logiciel élémentaire Sound Forge, sans utiliser de séquenceur classique.",
+        "title": "Music for 18 Musicians",
+        "creator": "Steve Reich",
+        "year": "1978",
+        "genre": "Minimalisme / Musique Contemporaine",
+        "origin": "États-Unis",
+        "formatMetric": "11 mouvements",
+        "accessibility": "Transe Mathématique & Expérimentale",
+        "quote": "L'expérience de la musique comme un processus graduel et parfaitement perceptible.",
+        "aiSummary": "Basée sur un cycle de 11 accords répétés et décalés progressivement par des marimbas, pianos, violons et voix féminines, cette pièce maîtresse du minimalisme américain crée un champ vibratoire immersif en constante mutation microscopique.",
+        "thematicAnalysis": "Reich transforme la répétition stricts en une transe extatique. La musique devient un organisme vivant où l'auditeur perd la notion du temps chronologique pour entrer dans une méditation purement acoustique.",
+        "anecdote": "Contrairement aux orchestres classiques traditionnels, la pièce est interprétée sans chef d'orchestre : les changements de section sont signalés à l'oreille par le vibraphone qui joue une note d'appel spécifique pour guider l'ensemble du groupe.",
         "tags": [
-          "Hantologie",
-          "Nocturne",
-          "Dubstep"
+          "Minimalisme",
+          "Transe",
+          "Pionnier",
+          "Hypnotique"
         ],
         "ratings": [
           {
-            "source": "Pitchfork",
-            "score": "9.0/10",
-            "excerpt": "L'album de musique électronique le plus important de sa décennie.",
-            "iconName": "music.note"
+            "source": "Gramophone",
+            "score": "5/5",
+            "excerpt": "Un chef-d'œuvre incontestable de la musique américaine du XXe siècle.",
+            "iconName": "star.fill"
           },
           {
             "source": "The Wire",
             "score": "5/5",
-            "excerpt": "Une élégie urbaine d'une puissance émotionnelle rare.",
+            "excerpt": "Une écoute hypnotique qui dissout la frontière entre précision mathématique et extase sonore.",
             "iconName": "music.note"
           },
           {
-            "source": "Resident Advisor",
-            "score": "4.8/5",
-            "excerpt": "Un chef-d'œuvre de mélancolie électronique.",
-            "iconName": "music.note"
+            "source": "Pitchfork",
+            "score": "5/5",
+            "excerpt": "Une réalisation stupéfiante de beauté physique et intellectuelle.",
+            "iconName": "newspaper.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9d/0f/1c/9d0f1c2b-2fae-d8ac-3920-ce9ec5bc85b5/7982.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ee/b6/d8/eeb6d89e-db8f-31a1-3311-cc62d51283a9/dj.ywsbbtvb.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Untitled",
-            "duration": "0:46",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/55/b4/1a/55b41a89-855a-3881-8cad-c31fe0745de7/mzaf_11093208903019226887.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: I. Pulses",
+            "duration": "5:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/e9/83/78e983e5-f2bd-6ded-b07e-6a02a9e97af6/mzaf_7643455627402227728.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Archangel",
+            "title": "Music for 18 Musicians: II. Section I",
             "duration": "3:58",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ef/6e/fa/ef6efa09-ae7e-aec6-2eb2-6bd11b22703c/mzaf_18137613516381741140.plus.aac.p.m4a"
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/c8/17/dac817e3-8b5d-a6bf-5641-747b5d7206fc/mzaf_3299936287838154795.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Near Dark",
-            "duration": "3:54",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ee/d0/aa/eed0aa90-5d6b-5bd6-f74f-1f0261352e76/mzaf_18072601168640031081.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: III. Section II",
+            "duration": "5:13",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/8e/a6/7f8ea6e8-bd64-ae3e-da9d-4dc36bc66fc2/mzaf_11346347852692763455.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Ghost Hardware",
-            "duration": "4:53",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/da/48/09/da480905-ebeb-e27d-dd4f-011e67e781df/mzaf_8713858222517735597.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: IV. Section IIIA",
+            "duration": "3:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/a9/cd/f6a9cd99-dd84-f22a-6b84-dd1987a072fe/mzaf_553040432102396169.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Endorphin",
-            "duration": "2:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/87/90/74/87907431-bd6b-b483-9bc6-a5559eb1fdb0/mzaf_14817226116876738079.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: V. Section IIIB",
+            "duration": "3:45",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/16/32/82163268-fd52-a536-baf8-87f453d39e04/mzaf_3466662994674862693.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Etched Headplate",
-            "duration": "5:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/aa/cf/8b/aacf8be4-dd1c-a392-ec2b-437bbba67aa9/mzaf_2572052652452232285.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: VI. Section IV",
+            "duration": "6:36",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/b7/80/0bb78003-31c2-b566-5819-a16d0f1585b4/mzaf_2358082028024560672.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "In McDonalds",
-            "duration": "2:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/22/ae/d922aed7-8910-ea7b-313e-552b3d37d852/mzaf_3422907529831341804.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: VII. Section V",
+            "duration": "6:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/a6/5c/15a65cd4-9f43-b3bd-041b-f8e41cbf184e/mzaf_16388918482969479955.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Untrue",
-            "duration": "6:16",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/69/32/69/69326959-b3ee-0519-607c-8d22baaf1a69/mzaf_12397789698658597996.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: VIII. Section VI",
+            "duration": "4:54",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/83/02/888302a1-3a90-91f2-171a-dbdb4d9b34a6/mzaf_7347030115249891009.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Shell of Light",
-            "duration": "4:40",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9a/8e/74/9a8e7496-2090-bc79-c49c-23fba4b5c572/mzaf_3386698126576186116.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: IX. Section VII",
+            "duration": "4:19",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/67/68/1f676871-fb6f-a5b6-da9d-cce801fb193a/mzaf_7814520547444951671.plus.aac.p.m4a"
           },
           {
             "trackNumber": 10,
-            "title": "Dog Shelter",
-            "duration": "2:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e1/4f/94/e14f94ce-7ca9-038c-f4a1-dc7aeb949f7c/mzaf_12950366800693193370.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: X. Section VIII",
+            "duration": "3:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/f6/18/60f618a0-412a-f3a9-427d-4acdc8f1ab4b/mzaf_9895986703862838594.plus.aac.p.m4a"
           },
           {
             "trackNumber": 11,
-            "title": "Homeless",
-            "duration": "5:20",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/1b/88/631b880b-b67a-002d-4351-fc942396e6ed/mzaf_9845942233058312994.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: XI. Section IX",
+            "duration": "5:23",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/db/ee/f6dbee97-634f-fb10-5aa7-91151ee3bd18/mzaf_13644639181920525706.plus.aac.p.m4a"
           },
           {
             "trackNumber": 12,
-            "title": "Uk",
-            "duration": "1:40",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/42/94/4742941d-92be-419b-5348-d078d453001d/mzaf_14808914605777872566.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: XII. Section X",
+            "duration": "1:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/42/7a/cb427aca-54ef-7517-80d0-c3565285e373/mzaf_9696879856019854317.plus.aac.p.m4a"
           },
           {
             "trackNumber": 13,
-            "title": "Raver",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/32/44/b632442b-db99-87ad-90c5-a89996179107/mzaf_670378989722533146.plus.aac.p.m4a"
+            "title": "Music for 18 Musicians: XIII. Section XI",
+            "duration": "5:44",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/e3/29/08e3296d-211b-758a-2a84-7c30558d773e/mzaf_15549704235298573707.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 14,
+            "title": "Music for 18 Musicians: XIV. Pulses",
+            "duration": "6:10",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/59/39/c0593982-159f-6932-b373-40662e30f152/mzaf_7182086017027325344.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Untrue%20Burial",
+            "urlString": "https://open.spotify.com/search/Music%20for%2018%20Musicians%20Steve%20Reich",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/us/album/untrue/893175779?uo=4",
+            "urlString": "https://music.apple.com/us/album/music-for-18-musicians/79577274?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Untrue%20Burial",
+            "urlString": "https://www.deezer.com/search/Music%20for%2018%20Musicians%20Steve%20Reich",
             "iconName": "play.circle.fill"
           }
         ]
