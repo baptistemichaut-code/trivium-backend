@@ -1,154 +1,189 @@
 {
-  "themeTitle": "Cartographies de l'absence habitée",
-  "themeSubtitle": "Trois œuvres magistrales où la pierre, l'architecture et la résonance acoustique deviennent les derniers gardiens de deuils suspendus.",
+  "themeTitle": "La Poétique des Silencieux Abîmes",
+  "themeSubtitle": "Un livre, un film et un album qui scrutent l'épaisseur de la terre et la résonance des structures pour en révéler l'empreinte invisible sur l'âme humaine.",
   "heroImageURL": null,
   "items": [
     {
       "type": "LIVRE",
-      "title": "La Pluie jaune",
-      "creator": "Julio Llamazares",
-      "year": "1988",
-      "genre": "Roman",
-      "formatMetric": "192 pages",
+      "title": "La Centrale",
+      "creator": "Élisabeth Filhol",
+      "year": "2010",
+      "genre": "Roman contemporain",
+      "formatMetric": "144 pages",
       "accessibility": "Équilibrée",
       "tags": [
-        "Mémoire",
-        "Ruines",
-        "Solitude"
+        "Industrie",
+        "Invisibilité",
+        "Corps"
       ],
-      "quote": "La rouille et l'oubli commençaient à s'emparer des maisons abandonnées.",
-      "origin": "Espagne",
+      "quote": "C'est l'histoire d'un corps plongé dans une architecture invisible, soumis aux lois d'un invisible dont on mesure chaque millisievert.",
+      "origin": "France",
       "imageURL": null,
       "previewURL": null,
       "tracks": null,
-      "aiSummary": "Dernier habitant d'Ainielle, village déserteur des Pyrénées aragonaises, Andrés contemple la lente décomposition de son univers. Entre hallucinations intimes et paysages minéraux, il attend la mort alors que le temps recouvre tout d'une poussière dorée.",
-      "thematicAnalysis": "Dans ce roman incantatoire, Llamazares transforme la géographie montagnarde en réceptacle de la disparition ultime. Le village en ruine cesse d'être un simple décor pour devenir l'extension physique du deuil de son narrateur, absorbant sa mémoire jusqu'à la pétrification.",
+      "aiSummary": "Suivant le quotidien précaire de prestataires du nucléaire, ce roman décrit l'immersion physique de travailleurs au cœur des réacteurs. Filhol transforme la routine d'un site atomique en un poème de tension corporelle et de silence minéral.",
+      "thematicAnalysis": "Dans ce triptyque, 'La Centrale' apporte la dimension clinique et humaine du choc entre la chair et l'infrastructure colossale. L'écriture millimétrée saisit la manière dont le vide et les radiations invisibles façonnent le système nerveux des hommes.",
       "ratings": [
         {
-          "source": "Le Figaro Littéraire",
-          "score": "Incontournable",
-          "excerpt": "Une élégie universelle d'une beauté minérale et poignante.",
+          "source": "Le Monde des Livres",
+          "score": "Remarquable",
+          "excerpt": "Une prose tendue comme un câble haute tension, où le monde du travail prend des airs de rituel antique.",
           "badgeColorName": "orange",
           "iconName": "quote.bubble.fill"
+        },
+        {
+          "source": "Télérama",
+          "score": "TTT",
+          "excerpt": "Un roman choc qui ausculte avec une précision d'orfèvre la précarité des corps face au géant industriel.",
+          "badgeColorName": "orange",
+          "iconName": "star.fill"
+        },
+        {
+          "source": "Babelio",
+          "score": "4.1/5",
+          "excerpt": "Un style incisif et poétique qui rend compte d'une réalité sociale méconnue avec une intensité rare.",
+          "badgeColorName": "orange",
+          "iconName": "star.fill"
         }
       ],
       "platformLinks": [
         {
           "name": "Fnac",
           "category": "Livre papier (Broché / Poche)",
-          "urlString": "[https://www.fnac.com/SearchResult/ResultList.aspx?Search=](https://www.fnac.com/SearchResult/ResultList.aspx?Search=)La%20Pluie%20jaune%20Julio%20Llamazares",
+          "urlString": "[https://www.fnac.com/SearchResult/ResultList.aspx?Search=](https://www.fnac.com/SearchResult/ResultList.aspx?Search=)La%20Centrale%20%C3%89lisabeth%20Filhol",
           "iconName": "book.closed.fill"
         },
         {
           "name": "Kindle",
           "category": "Édition numérique E-book",
-          "urlString": "[https://www.amazon.fr/s?k=](https://www.amazon.fr/s?k=)La%20Pluie%20jaune%20Julio%20Llamazares&i=digital-text",
+          "urlString": "[https://www.amazon.fr/s?k=](https://www.amazon.fr/s?k=)La%20Centrale%20%C3%89lisabeth%20Filhol&i=digital-text",
           "iconName": "ipad.and.arrow.forward"
         },
         {
           "name": "Audible",
           "category": "Livre audio narré",
-          "urlString": "[https://www.audible.fr/search?keywords=](https://www.audible.fr/search?keywords=)La%20Pluie%20jaune%20Julio%20Llamazares",
+          "urlString": "[https://www.audible.fr/search?keywords=](https://www.audible.fr/search?keywords=)La%20Centrale%20%C3%89lisabeth%20Filhol",
           "iconName": "headphones"
         }
       ]
     },
     {
       "type": "FILM",
-      "title": "Columbus",
-      "creator": "Kogonada",
-      "year": "2017",
+      "title": "Il Buco",
+      "creator": "Michelangelo Frammartino",
+      "year": "2021",
       "genre": "Drame contemplatif",
-      "formatMetric": "1 h 44",
-      "accessibility": "Accessible",
+      "formatMetric": "1 h 33",
+      "accessibility": "Exigeante",
       "tags": [
-        "Architecture",
-        "Épuré",
-        "Mélancolie"
+        "Spéléologie",
+        "Nature",
+        "Silence"
       ],
-      "quote": "L'architecture a cette capacité singulière d'absorber la souffrance de ceux qui la contemplated.",
-      "origin": "États-Unis",
+      "quote": "Descendre sous terre, c'est désapprendre la vitesse pour réapprendre l'écho.",
+      "origin": "Italie",
       "imageURL": null,
       "previewURL": null,
       "tracks": null,
-      "aiSummary": "À Columbus, cité de l'Indiana célèbre pour ses monuments modernistes, le fils d'un érudit mourant croise une jeune femme retenue par ses devoirs familiaux. Leurs déambulations au pied des édifices d'Eero Saarinen ou I.M. Pei révèlent leurs failles cachées.",
-      "thematicAnalysis": "Kogonada utilise la rigueur géométrique du modernisme américain non pas comme une abstraction froide, mais comme une structure apaisante pour les âmes désemparées. Le cadre fixe transforme le béton, le verre et le vide en espaces cathartiques capables d'accueillir la stase émotionnelle des personnages.",
+      "aiSummary": "En 1961, de jeunes spéléologues italiens explorent l'abîme du Bifurto, l'une des grottes les plus profondes du monde. Pendant ce temps, sur le plateau vertigineux de Calabre, la vie d'un vieux berger s'éteint doucement au rythme du paysage.",
+      "thematicAnalysis": "Frammartino abandonne le dialogue pour composer une symphonie visuelle du monde souterrain. 'Il Buco' s'articule directement avec le thème en faisant du vide abyssal un espace de méditation géologique et d'écho primordial.",
       "ratings": [
         {
           "source": "Cahiers du Cinéma",
-          "score": "4.5/5",
-          "excerpt": "Un premier film d'une grâce souveraine sur l'art de soigner les plaies par la forme.",
+          "score": "Chef-d'œuvre",
+          "excerpt": "Une expérience sensorielle pure où la caméra devient un instrument d'auscultation des profondeurs terrestres.",
           "badgeColorName": "blue",
           "iconName": "quote.bubble.fill"
+        },
+        {
+          "source": "Positif",
+          "score": "Incontournable",
+          "excerpt": "Un poème cinématographique d'une beauté plastique souveraine, qui touche au sacré sans jamais pécher par affectation.",
+          "badgeColorName": "blue",
+          "iconName": "star.fill"
+        },
+        {
+          "source": "SensCritique",
+          "score": "7.8/10",
+          "excerpt": "Une immersion quasi mystique dans les entrailles de la Terre, sublimée par une gestion exceptionnelle de la lumière naturelle.",
+          "badgeColorName": "blue",
+          "iconName": "star.fill"
         }
       ],
       "platformLinks": [
         {
           "name": "Où regarder en streaming",
           "category": "Netflix, Prime, Disney+...",
-          "urlString": "[https://www.justwatch.com/fr/recherche?q=](https://www.justwatch.com/fr/recherche?q=)Columbus",
+          "urlString": "[https://www.justwatch.com/fr/recherche?q=](https://www.justwatch.com/fr/recherche?q=)Il%20Buco",
           "iconName": "play.tv.fill"
         },
         {
           "name": "Apple TV",
           "category": "Location & Achat 4K",
-          "urlString": "[https://tv.apple.com/fr/search?term=](https://tv.apple.com/fr/search?term=)Columbus",
+          "urlString": "[https://tv.apple.com/fr/search?term=](https://tv.apple.com/fr/search?term=)Il%20Buco",
           "iconName": "apple.logo"
         },
         {
           "name": "Canal+ VOD",
           "category": "Location & myCANAL",
-          "urlString": "[https://vod.canalplus.com/recherche/](https://vod.canalplus.com/recherche/)Columbus",
+          "urlString": "[https://vod.canalplus.com/recherche/](https://vod.canalplus.com/recherche/)Il%20Buco",
           "iconName": "film.fill"
         }
       ]
     },
     {
       "type": "ALBUM",
-      "title": "Englabörn",
-      "creator": "Jóhann Jóhannsson",
-      "year": "2002",
-      "genre": "Néo-classique / Ambient",
-      "formatMetric": "16 titres • 48 min",
-      "accessibility": "Équilibrée",
+      "title": "The Sacrificial Code",
+      "creator": "Kali Malone",
+      "year": "2019",
+      "genre": "Drone / Musique minimale",
+      "formatMetric": "10 titres • 1 h 52",
+      "accessibility": "Exigeante",
       "tags": [
-        "Quatuor à cordes",
-        "Traitement numérique",
-        "Espace"
+        "Orgue",
+        "Espace",
+        "Harmonie"
       ],
-      "quote": "Une lévitation de cordes retenues par le fil ténu de fréquences électroniques.",
-      "origin": "Islande",
+      "quote": "L'orgue déserté de toute emphase romantique devient la mesure de la pierre et du vide.",
+      "origin": "Suède",
       "imageURL": null,
       "previewURL": null,
       "tracks": [],
-      "aiSummary": "Conçu originellement pour accompagner une pièce de théâtre islandaise, cet album fondateur associe quatuor à cordes, piano et micro-traitements numériques. Jóhannsson y sculpte des miniatures harmoniques d'une sobriété poignante.",
-      "thematicAnalysis": "L'album opère une véritable métamorphose spatiale de la musique : chaque instrument semble résonner dans une pièce vide dont on percevrait l'écho et l'usure. Le travail de fermentation numérique appliqué aux cordes matérialise l'érosion des souvenirs et la persistance des spectres sonores.",
+      "aiSummary": "Enregistré sur plusieurs orgues d'église ajustés avec une rigueur acoustique absolue, cet album étire les timbres et les harmoniques jusqu'à l'hypnose. Kali Malone y dépouille l'instrument de toute théâtralité pour révéler l'architecture sonore des lieux.",
+      "thematicAnalysis": "Clôturant le triptyque, 'The Sacrificial Code' offre la bande-son idéale de cette exploration du volume et de l'abîme. L'immobilité apparente des pièces fait vibrer l'espace acoustique, répondant au silence minéral du film et à la tension contenue du livre.",
       "ratings": [
         {
           "source": "Pitchfork",
-          "score": "8.9/10",
-          "excerpt": "Une œuvre d'une retenue dévastatrice, où l'électronique distille le chagrin pur.",
+          "score": "8.2/10",
+          "excerpt": "Un chef-d'œuvre de retenue compositionnelle qui redéfinit la relation spatiale entre l'auditeur et l'orgue.",
           "badgeColorName": "red",
           "iconName": "music.note"
+        },
+        {
+          "source": "Les Inrockuptibles",
+          "score": "5/5",
+          "excerpt": "Une monumentale étude sur le temps suspendu et la résonance physique des lieux sacrés.",
+          "badgeColorName": "red",
+          "iconName": "quote.bubble.fill"
         }
       ],
       "platformLinks": [
         {
           "name": "Spotify",
           "category": "Écouter l'album",
-          "urlString": "[https://open.spotify.com/search/](https://open.spotify.com/search/)Englab%C3%B6rn%20J%C3%B3hann%20J%C3%B3hannsson/albums",
+          "urlString": "[https://open.spotify.com/search/](https://open.spotify.com/search/)The%20Sacrificial%20Code%20Kali%20Malone/albums",
           "iconName": "music.note"
         },
         {
           "name": "Apple Music",
           "category": "Streaming Lossless",
-          "urlString": "[https://music.apple.com/fr/search?term=](https://music.apple.com/fr/search?term=)Englab%C3%B6rn%20J%C3%B3hann%20J%C3%B3hannsson",
+          "urlString": "[https://music.apple.com/fr/search?term=](https://music.apple.com/fr/search?term=)The%20Sacrificial%20Code%20Kali%20Malone",
           "iconName": "apple.logo"
         },
         {
           "name": "Deezer",
           "category": "Streaming Hi-Fi",
-          "urlString": "[https://www.deezer.com/search/](https://www.deezer.com/search/)Englab%C3%B6rn%20J%C3%B3hann%20J%C3%B3hannsson/album",
+          "urlString": "[https://www.deezer.com/search/](https://www.deezer.com/search/)The%20Sacrificial%20Code%20Kali%20Malone/album",
           "iconName": "play.circle.fill"
         }
       ]
