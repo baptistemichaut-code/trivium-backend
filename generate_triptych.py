@@ -13,29 +13,61 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Enrichisseurs d'Artworks & Métadonnées Réelles
+# MARK: - Recherche de Couverture Google Books Robuste (Multi-Niveaux)
 
 def fetch_book_metadata(title: str, author: str):
-    query = urllib.parse.quote(f"intitle:{title} inauthor:{author}")
-    url = f"https://www.googleapis.com/books/v1/volumes?q={query}&maxResults=1"
-    image_url, page_count, published_year = None, None, None
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
-        with urllib.request.urlopen(req, timeout=8) as response:
-            data = json.loads(response.read().decode())
-            if "items" in data and len(data["items"]) > 0:
-                info = data["items"][0].get("volumeInfo", {})
-                images = info.get("imageLinks", {})
-                image_url = images.get("thumbnail") or images.get("smallThumbnail")
-                if image_url:
-                    image_url = image_url.replace("http://", "https://")
-                page_count = info.get("pageCount")
-                pub_date = info.get("publishedDate", "")
-                if len(pub_date) >= 4:
-                    published_year = pub_date[:4]
-    except Exception:
-        pass
+    """Recherche la jaquette avec replis automatiques pour garantir un visuel."""
+    queries = [
+        f"intitle:{title} inauthor:{author}",
+        f"{title} {author}",
+        f"{title}"
+    ]
+    
+    image_url = None
+    page_count = None
+    published_year = None
+
+    for q in queries:
+        encoded_q = urllib.parse.quote(q)
+        url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=3&printType=books"
+        try:
+            req = urllib.request.Request(
+                url,
+                headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}
+            )
+            with urllib.request.urlopen(req, timeout=6) as response:
+                data = json.loads(response.read().decode())
+                items = data.get("items", [])
+                for item in items:
+                    info = item.get("volumeInfo", {})
+                    images = info.get("imageLinks", {})
+                    
+                    found_img = images.get("extraLarge") or images.get("large") or images.get("medium") or images.get("thumbnail") or images.get("smallThumbnail")
+                    if found_img:
+                        image_url = found_img.replace("http://", "https://")
+                        # Forcer un affichage plus net si le paramètre zoom est présent
+                        if "&zoom=" in image_url:
+                            image_url = image_url.replace("&zoom=5", "&zoom=1").replace("&zoom=0", "&zoom=1")
+                    
+                    if not page_count and info.get("pageCount"):
+                        page_count = info.get("pageCount")
+                    
+                    if not published_year:
+                        pub_date = info.get("publishedDate", "")
+                        if len(pub_date) >= 4:
+                            published_year = pub_date[:4]
+
+                    if image_url:
+                        break
+        except Exception:
+            continue
+
+        if image_url:
+            break
+
     return image_url, page_count, published_year
+
+# MARK: - Enrichisseur Apple Music
 
 def fetch_album_metadata(album_title: str, artist: str):
     query = urllib.parse.quote(f"{album_title} {artist}")
@@ -76,8 +108,9 @@ def fetch_album_metadata(album_title: str, artist: str):
             pass
     return image_url, tracks
 
+# MARK: - Liens Directs & Utiles (Sans Letterboxd ni Babelio)
+
 def build_safe_platform_links(item_type: str, title: str, creator: str):
-    """Génère uniquement les liens fiables (JustWatch, Letterboxd, Apple TV)."""
     encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
     encoded_title = urllib.parse.quote(title.strip())
     
@@ -85,20 +118,14 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
     if t == "FILM":
         return [
             {
-                "name": "JustWatch (Streaming & VOD)",
-                "category": "Disponibilité légale",
+                "name": "JustWatch",
+                "category": "Disponibilité légale & Streaming",
                 "urlString": f"https://www.justwatch.com/fr/recherche?q={encoded_query}",
                 "iconName": "play.tv.fill"
             },
             {
-                "name": "Letterboxd",
-                "category": "Fiche & Critiques",
-                "urlString": f"https://letterboxd.com/search/{encoded_query}/",
-                "iconName": "film.fill"
-            },
-            {
                 "name": "Apple TV",
-                "category": "Location & Achat",
+                "category": "Location & Achat VOD",
                 "urlString": f"https://tv.apple.com/fr/search?term={encoded_title}",
                 "iconName": "apple.logo"
             }
@@ -112,14 +139,8 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
                 "iconName": "book.fill"
             },
             {
-                "name": "Babelio",
-                "category": "Critiques & Extraits",
-                "urlString": f"https://www.babelio.com/recherche.php?Recherche={encoded_title}",
-                "iconName": "quote.bubble.fill"
-            },
-            {
                 "name": "Fnac",
-                "category": "Achat livre",
+                "category": "Achat livre & Ebook",
                 "urlString": f"https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search={encoded_query}",
                 "iconName": "bag.fill"
             }
@@ -128,7 +149,7 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
         return [
             {
                 "name": "Apple Music",
-                "category": "Écoute intégrale",
+                "category": "Écoute intégrale & Lossless",
                 "urlString": f"https://music.apple.com/fr/search?term={encoded_query}",
                 "iconName": "apple.logo"
             },
@@ -137,47 +158,48 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
                 "category": "Streaming audio",
                 "urlString": f"https://open.spotify.com/search/{encoded_query}",
                 "iconName": "waveform"
-            },
-            {
-                "name": "Discogs",
-                "category": "Édition vinyle & CD",
-                "urlString": f"https://www.discogs.com/fr/search/?q={encoded_query}&type=release",
-                "iconName": "opticaldisc.fill"
             }
         ]
 
-SYSTEM_PROMPT = """Tu es le curateur en chef de TRIVIUM, une application de recommandation culturelle quotidienne.
+# MARK: - Prompt Éditorial
 
-Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE reliant 3 profils :
+SYSTEM_PROMPT = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
+
+Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE FORTE reliant 3 profils :
 1. "accessible" (Pop Culture)
 2. "intermediate" (Curieux)
 3. "expert" (Initié)
 
 Chaque profil doit contenir EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
 
+RÈGLE STRICTE POUR LA REVUE DE PRESSE :
+Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") provenant de 3 MÉDIAS DISTINCTS et reconnus (exemples : Le Monde, Télérama, Les Inrockuptibles, Libération, Cahiers du Cinéma, Pitchfork, The Guardian, Rolling Stone...).
+
 Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 {
   "accessible": {
     "themeTitle": "Titre du thème",
-    "themeSubtitle": "Sous-titre explicatif",
+    "themeSubtitle": "Sous-titre poétique expliquant le fil invisible reliant les 3 œuvres",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Titre",
-        "creator": "Auteur",
+        "title": "Titre exact",
+        "creator": "Nom de l'auteur",
         "year": "1997",
         "origin": "France",
         "genre": "Genre",
         "accessibility": "Pop Culture",
         "formatMetric": "320 pages",
-        "quote": "Citation clé",
-        "anecdote": "Anecdote surprenante",
+        "quote": "Citation clé marquante",
+        "anecdote": "Anecdote surprenante sur la genèse",
         "tags": ["Tag1", "Tag2"],
         "ratings": [
-          {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Critique"}
+          {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Une œuvre magistrale."},
+          {"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Un regard bouleversant."},
+          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une densité rare."}
         ],
-        "aiSummary": "Résumé en 2 phrases.",
-        "thematicAnalysis": "Analyse du lien avec le thème."
+        "aiSummary": "Résumé captivant en 2 phrases.",
+        "thematicAnalysis": "Analyse du lien profond avec la thématique du triptyque."
       }
     ]
   },
@@ -193,7 +215,7 @@ def generate_daily_edition():
         system_instruction=SYSTEM_PROMPT
     )
 
-    response = model.generate_content("Génère le triptyque culturel du jour pour les 3 profils.")
+    response = model.generate_content("Génère le triptyque culturel du jour pour les 3 profils avec 3 critiques de médias différents par œuvre.")
     data = json.loads(response.text)
 
     for tier in ["accessible", "intermediate", "expert"]:
@@ -220,7 +242,7 @@ def generate_daily_edition():
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print("✅ today.json mis à jour avec succès.")
+    print("✅ today.json généré avec succès avec 3 revues de presse par œuvre et couvertures optimisées.")
 
 if __name__ == "__main__":
     generate_daily_edition()
