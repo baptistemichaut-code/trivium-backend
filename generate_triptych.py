@@ -3,28 +3,22 @@ import json
 import urllib.parse
 import urllib.request
 from datetime import datetime
-from google import genai
-from google.genai import types
+import google.generativeai as genai
 
-# MARK: - Configuration & Client API
+# MARK: - Configuration API
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
-    raise ValueError("La variable d'environnement GEMINI_API_KEY est manquante.")
+    raise ValueError("GEMINI_API_KEY manquante dans les secrets GitHub.")
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+genai.configure(api_key=GEMINI_API_KEY)
 
 # MARK: - Enrichisseurs d'Artworks & Métadonnées Réelles
 
 def fetch_book_metadata(title: str, author: str):
-    """Récupère la couverture officielle et les infos précises sur Google Books."""
     query = urllib.parse.quote(f"intitle:{title} inauthor:{author}")
     url = f"https://www.googleapis.com/books/v1/volumes?q={query}&maxResults=1"
-    
-    image_url = None
-    page_count = None
-    published_year = None
-    
+    image_url, page_count, published_year = None, None, None
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
         with urllib.request.urlopen(req, timeout=8) as response:
@@ -39,21 +33,14 @@ def fetch_book_metadata(title: str, author: str):
                 pub_date = info.get("publishedDate", "")
                 if len(pub_date) >= 4:
                     published_year = pub_date[:4]
-    except Exception as e:
-        print(f"[GoogleBooks] Info : Couverture non trouvée pour '{title}' ({e})")
-        
+    except Exception:
+        pass
     return image_url, page_count, published_year
 
-
 def fetch_album_metadata(album_title: str, artist: str):
-    """Récupère la pochette HD (600x600), la liste des titres et extraits 30s sur iTunes/Apple Music."""
     query = urllib.parse.quote(f"{album_title} {artist}")
     url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=1&country=fr"
-    
-    image_url = None
-    collection_id = None
-    tracks = []
-    
+    image_url, collection_id, tracks = None, None, []
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
         with urllib.request.urlopen(req, timeout=8) as response:
@@ -64,9 +51,9 @@ def fetch_album_metadata(album_title: str, artist: str):
                 if raw_art:
                     image_url = raw_art.replace("100x100bb", "600x600bb")
                 collection_id = item.get("collectionId")
-    except Exception as e:
-        print(f"[AppleMusic] Erreur recherche album '{album_title}' : {e}")
-        
+    except Exception:
+        pass
+
     if collection_id:
         lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&country=fr"
         try:
@@ -79,22 +66,18 @@ def fetch_album_metadata(album_title: str, artist: str):
                         millis = r.get("trackTimeMillis", 0)
                         seconds = (millis // 1000) % 60
                         minutes = (millis // (1000 * 60))
-                        dur_str = f"{minutes}:{seconds:02d}"
-                        
                         tracks.append({
                             "trackNumber": r.get("trackNumber", len(tracks) + 1),
                             "title": r.get("trackName", "Piste inconnue"),
-                            "duration": dur_str,
+                            "duration": f"{minutes}:{seconds:02d}",
                             "previewURL": r.get("previewUrl")
                         })
-        except Exception as e:
-            print(f"[AppleMusic] Erreur récupération pistes pour '{album_title}' : {e}")
-            
+        except Exception:
+            pass
     return image_url, tracks
 
-
 def build_safe_platform_links(item_type: str, title: str, creator: str):
-    """Construit des URLs universelles fiables sans AlloCiné ni Canal VOD."""
+    """Génère uniquement les liens fiables (sans AlloCiné ni Canal VOD)."""
     encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
     encoded_title = urllib.parse.quote(title.strip())
     
@@ -163,52 +146,39 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
             }
         ]
 
+SYSTEM_PROMPT = """Tu es le curateur en chef de TRIVIUM, une application de recommandation culturelle quotidienne.
 
-# MARK: - Prompt Système & Génération
+Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE reliant 3 profils :
+1. "accessible" (Pop Culture)
+2. "intermediate" (Curieux)
+3. "expert" (Initié)
 
-SYSTEM_PROMPT = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
+Chaque profil doit contenir EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
 
-Ta mission est de concevoir l'édition du jour : UNE THÉMATIQUE COMMUNE FORTE et COHÉRENTE reliant 3 profils distincts :
-1. "accessible" (Pop Culture) : Grands classiques incontournables, chefs-d'œuvre grand public, pop culture majeure.
-2. "intermediate" (Curieux) : Cinéma d'auteur accessible, pépites littéraires, albums cultes.
-3. "expert" (Initié) : Avant-garde, art et essai, expérimentations et raretés exigeantes.
-
-Chaque profil doit contenir EXACTEMENT 3 œuvres reliées par la thématique du jour :
-- 1 LIVRE
-- 1 FILM
-- 1 ALBUM
-
-RÈGLES ÉDITORIALES STRICTES :
-1. Les œuvres recommandées doivent être RÉELLES et EXISTANTES.
-2. Pour chaque œuvre, fournis une citation réelle ("quote"), une anecdote surprenante ("anecdote"), des notes de presse réalistes ("ratings") et une analyse croisée captivante ("thematicAnalysis").
-3. Réponds STRICTEMENT sous la forme d'un objet JSON valide au format ci-dessous, sans texte autour.
-
-Format JSON attendu :
+Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 {
   "accessible": {
     "themeTitle": "Titre du thème",
-    "themeSubtitle": "Sous-titre poétique expliquant le fil invisible reliant les 3 œuvres",
+    "themeSubtitle": "Sous-titre explicatif",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Titre exact",
-        "creator": "Nom de l'auteur",
+        "title": "Titre",
+        "creator": "Auteur",
         "year": "1997",
         "origin": "France",
         "genre": "Genre",
         "accessibility": "Pop Culture",
         "formatMetric": "320 pages",
-        "quote": "Une citation clé marquante de l'œuvre",
-        "anecdote": "Une anecdote fascinante sur la création de l'œuvre",
-        "tags": ["Philosophie", "Société", "Classique"],
+        "quote": "Citation clé",
+        "anecdote": "Anecdote surprenante",
+        "tags": ["Tag1", "Tag2"],
         "ratings": [
-          {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre absolu."},
-          {"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Une écriture magistrale."}
+          {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Critique"}
         ],
-        "aiSummary": "Résumé captivant de l'œuvre en 2 phrases.",
-        "thematicAnalysis": "Explication de comment cette œuvre illustre parfaitement le thème du triptyque."
-      },
-      ... (FILM et ALBUM)
+        "aiSummary": "Résumé en 2 phrases.",
+        "thematicAnalysis": "Analyse du lien avec le thème."
+      }
     ]
   },
   "intermediate": { ... },
@@ -217,57 +187,40 @@ Format JSON attendu :
 """
 
 def generate_daily_edition():
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"🚀 Génération de l'édition Trivium pour le {today_str}...")
-
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents="Génère le triptyque culturel du jour reliant 1 Livre, 1 Film et 1 Album pour les 3 profils.",
-        config=types.GenerateContentConfig(
-            system_instruction=SYSTEM_PROMPT,
-            response_mime_type="application/json",
-            temperature=0.7
-        )
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        generation_config={"response_mime_type": "application/json", "temperature": 0.7},
+        system_instruction=SYSTEM_PROMPT
     )
 
+    response = model.generate_content("Génère le triptyque culturel du jour pour les 3 profils.")
     data = json.loads(response.text)
 
-    # Post-traitement et enrichissement automatique
     for tier in ["accessible", "intermediate", "expert"]:
         if tier not in data:
             continue
-        
         for item in data[tier].get("items", []):
             item_type = item.get("type", "").upper()
             title = item.get("title", "")
             creator = item.get("creator", "")
 
-            # 1. Liens sécurisés (JustWatch, Letterboxd, Apple TV)
             item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
 
-            # 2. Enrichissements Google Books & Apple Music
             if item_type == "LIVRE":
                 img, pages, pub_year = fetch_book_metadata(title, creator)
-                if img:
-                    item["imageURL"] = img
-                if pages and not item.get("formatMetric"):
-                    item["formatMetric"] = f"{pages} pages"
-                if pub_year:
-                    item["year"] = pub_year
+                if img: item["imageURL"] = img
+                if pages and not item.get("formatMetric"): item["formatMetric"] = f"{pages} pages"
+                if pub_year: item["year"] = pub_year
 
             elif item_type == "ALBUM":
                 img, tracks = fetch_album_metadata(title, creator)
-                if img:
-                    item["imageURL"] = img
-                if tracks:
-                    item["tracks"] = tracks
+                if img: item["imageURL"] = img
+                if tracks: item["tracks"] = tracks
 
-    # Enregistrement dans today.json
-    output_filename = "today.json"
-    with open(output_filename, "w", encoding="utf-8") as f:
+    with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition enregistrée avec succès dans {output_filename} !")
+    print("✅ today.json mis à jour sans liens morts.")
 
 if __name__ == "__main__":
     generate_daily_edition()
