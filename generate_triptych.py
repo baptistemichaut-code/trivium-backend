@@ -4,7 +4,13 @@ import json
 import time
 import datetime
 import urllib.parse
+import re
 import requests
+
+def clean_str(s):
+    if not s:
+        return ""
+    return re.sub(r'[^a-zA-Z0-9\s]', '', s).lower().strip()
 
 def get_previously_used_titles():
     """Scanne et extrait 100 % des œuvres et artistes déjà parus dans les archives."""
@@ -63,58 +69,92 @@ def build_album_links(title, artist, direct_apple_url=None):
     ]
 
 def fetch_album_metadata(title, artist):
-    """Recherche ciblée Apple Music avec vérification croisée artiste/album."""
+    """Recherche ultra-précise avec système de score pour éviter les faux albums."""
     try:
-        clean_title = title.split("(")[0].split("-")[0].strip()
-        query = urllib.parse.quote(f"{clean_title} {artist}")
-        
-        for country in ["FR", "US"]:
-            search_url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=10&country={country}"
+        raw_clean_title = re.sub(r'[\(\[].*?[\)\]]', '', title).strip()
+        norm_title = clean_str(raw_clean_title)
+        norm_artist = clean_str(artist)
+
+        query = urllib.parse.quote(f"{raw_clean_title} {artist}")
+
+        for country in ["FR", "US", "GB"]:
+            search_url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=15&country={country}"
             res = requests.get(search_url, timeout=10).json()
             results = res.get("results", [])
             if not results:
                 continue
 
-            target_album = None
-            # Recherche du meilleur résultat concordant
+            best_album = None
+            best_score = -1
+
             for alb in results:
-                alb_name = alb.get("collectionName", "").lower()
-                art_name = alb.get("artistName", "").lower()
-                if (artist.lower() in art_name or art_name in artist.lower()) and \
-                   (clean_title.lower() in alb_name or alb_name in clean_title.lower()):
-                    target_album = alb
-                    break
+                alb_name = clean_str(alb.get("collectionName", ""))
+                art_name = clean_str(alb.get("artistName", ""))
 
-            if not target_album:
-                for alb in results:
-                    if artist.lower() in alb.get("artistName", "").lower():
-                        target_album = alb
-                        break
+                score = 0
+                # Correspondance artiste
+                if norm_artist in art_name or art_name in norm_artist:
+                    score += 50
 
-            if not target_album:
-                target_album = results[0]
+                # Correspondance titre
+                if norm_title == alb_name:
+                    score += 100
+                elif norm_title in alb_name:
+                    score += 65
+                elif alb_name in norm_title:
+                    score += 45
+                else:
+                    title_words = set(norm_title.split())
+                    alb_words = set(alb_name.split())
+                    common = title_words.intersection(alb_words)
+                    if len(title_words) > 0:
+                        score += int((len(common) / len(title_words)) * 50)
 
-            if target_album:
-                collection_id = target_album.get("collectionId")
-                direct_url = target_album.get("collectionViewUrl")
-                artwork = target_album.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
+                # Pénalité stricte sur les reprises ou karaoké
+                if "tribute" in alb_name or "karaoke" in alb_name:
+                    score -= 80
 
-                # Récupération des pistes réelles
-                lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&limit=30&country={country}"
+                if score > best_score and score >= 65:
+                    best_score = score
+                    best_album = alb
+
+            if best_album:
+                collection_id = best_album.get("collectionId")
+                direct_url = best_album.get("collectionViewUrl")
+                artwork = best_album.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
+
+                # Récupération de la tracklist avec gestion multi-disques
+                lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&limit=50&country={country}"
                 lookup_res = requests.get(lookup_url, timeout=10).json()
-                tracks = []
+
+                raw_tracks = []
                 for item in lookup_res.get("results", []):
                     if item.get("wrapperType") == "track":
+                        disc_num = item.get("discNumber", 1)
+                        track_num = item.get("trackNumber", 1)
                         millis = item.get("trackTimeMillis", 0)
                         mins = millis // 60000
                         secs = (millis % 60000) // 1000
-                        tracks.append({
-                            "trackNumber": item.get("trackNumber", len(tracks) + 1),
+                        raw_tracks.append({
+                            "disc": disc_num,
+                            "trackNumber": track_num,
                             "title": item.get("trackName", "Piste"),
                             "duration": f"{mins}:{secs:02d}",
                             "previewURL": item.get("previewUrl")
                         })
-                tracks.sort(key=lambda x: x["trackNumber"])
+
+                # Tri dans l'ordre réel de l'œuvre (disque puis piste)
+                raw_tracks.sort(key=lambda x: (x["disc"], x["trackNumber"]))
+
+                tracks = []
+                for idx, t in enumerate(raw_tracks, start=1):
+                    tracks.append({
+                        "trackNumber": idx,
+                        "title": t["title"],
+                        "duration": t["duration"],
+                        "previewURL": t["previewURL"]
+                    })
+
                 return artwork, tracks, direct_url
     except Exception as e:
         print(f"Erreur iTunes ({title}): {e}")
@@ -144,8 +184,7 @@ def fetch_book_artwork(title, author):
     try:
         clean_title = title.split(":")[0].split("(")[0].strip()
         query = urllib.parse.quote(f"{clean_title} {author}")
-        
-        # 1. Google Books (requête élargie)
+
         search_url = f"https://www.googleapis.com/books/v1/volumes?q={query}&maxResults=5&printType=books"
         res = requests.get(search_url, timeout=10).json()
         if "items" in res and len(res["items"]) > 0:
@@ -157,7 +196,6 @@ def fetch_book_artwork(title, author):
                     thumb = thumb.replace("http://", "https://").replace("&edge=curl", "")
                     return thumb
 
-        # 2. Fallback OpenLibrary Covers
         ol_query = urllib.parse.quote(f"{clean_title} {author}")
         ol_url = f"https://openlibrary.org/search.json?q={ol_query}&limit=1"
         ol_res = requests.get(ol_url, timeout=10).json()
