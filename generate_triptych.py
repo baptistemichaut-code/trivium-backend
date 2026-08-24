@@ -15,10 +15,9 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Nettoyeurs de Titres & Encodage d'URL Sécurisé
+# MARK: - Nettoyeurs de Titres & Encodage d'URL
 
 def clean_search_title(title: str) -> str:
-    """Supprime les parenthèses, crochets et sous-titres superflus."""
     t = re.sub(r"\(.*?\)", "", title)
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
@@ -26,7 +25,6 @@ def clean_search_title(title: str) -> str:
     return t.strip()
 
 def safe_url_encode(text: str) -> str:
-    """Encode strictement tous les caractères spéciaux (y compris les slashes) pour éviter les 404."""
     return urllib.parse.quote(text.strip(), safe="")
 
 # MARK: - Gestion de l'Historique & Déduplication
@@ -58,16 +56,14 @@ def load_history_exclusions():
 
     return list(used_themes), list(used_titles)
 
-# MARK: - Enrichisseur Livres Multi-Sources
+# MARK: - Enrichisseur Livres
 
 def fetch_book_metadata(title: str, author: str):
     image_url = None
     page_count = None
-    published_year = None
-
     clean_t = clean_search_title(title)
 
-    # 1. Apple Books / iTunes Ebook
+    # 1. Apple Books
     try:
         q_apple = safe_url_encode(f"{clean_t} {author}")
         apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=1"
@@ -78,9 +74,6 @@ def fetch_book_metadata(title: str, author: str):
                 raw_art = data["results"][0].get("artworkUrl100", "")
                 if raw_art:
                     image_url = raw_art.replace("100x100bb", "800x800bb")
-                pub = data["results"][0].get("releaseDate", "")
-                if len(pub) >= 4:
-                    published_year = pub[:4]
     except Exception:
         pass
 
@@ -111,8 +104,6 @@ def fetch_book_metadata(title: str, author: str):
 
                         if not page_count and info.get("pageCount"):
                             page_count = info.get("pageCount")
-                        if not published_year and len(info.get("publishedDate", "")) >= 4:
-                            published_year = info.get("publishedDate", "")[:4]
 
                         if image_url:
                             break
@@ -121,7 +112,7 @@ def fetch_book_metadata(title: str, author: str):
             if image_url:
                 break
 
-    # 3. OpenLibrary Covers
+    # 3. OpenLibrary
     if not image_url:
         try:
             q_ol = safe_url_encode(f"{clean_t} {author}")
@@ -133,12 +124,10 @@ def fetch_book_metadata(title: str, author: str):
                 if docs and "cover_i" in docs[0]:
                     cover_id = docs[0]["cover_i"]
                     image_url = f"https://covers.openlibrary.org/b/id/{cover_id}-L.jpg"
-                if docs and not published_year and "first_publish_year" in docs[0]:
-                    published_year = str(docs[0]["first_publish_year"])
         except Exception:
             pass
 
-    return image_url, page_count, published_year
+    return image_url, page_count
 
 # MARK: - Enrichisseur Films
 
@@ -210,7 +199,7 @@ def fetch_album_metadata(album_title: str, artist: str):
 
     return image_url, tracks, direct_url
 
-# MARK: - Liens Plateformes Sécurisés
+# MARK: - Liens Plateformes Utiles (Apple Music Direct & Deezer)
 
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
@@ -259,12 +248,6 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
                 "iconName": "apple.logo"
             },
             {
-                "name": "Spotify",
-                "category": "Streaming audio",
-                "urlString": f"https://open.spotify.com/search/{encoded_search}",
-                "iconName": "waveform"
-            },
-            {
                 "name": "Deezer",
                 "category": "Streaming audio & HiFi",
                 "urlString": f"https://www.deezer.com/search/{encoded_search}",
@@ -272,52 +255,55 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             }
         ]
 
-# MARK: - Prompt Éditorial
+# MARK: - Prompt Éditorial Calibré & 100% Français
 
 def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
     prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
-Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE FORTE reliant 3 profils :
-1. "accessible" (Pop Culture)
-2. "intermediate" (Curieux)
-3. "expert" (Initié)
+LANGUE STRICTE : L'intégralité du texte généré (thèmes, résumés, genres, anecdotes, citations et revues de presse) DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
 
-Chaque profil doit contenir EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
+CALIBRATION TRÈS STRICTE DES 3 PROFILS CULTURELS :
+1. "accessible" (Pop Culture) : UNIQUEMENT de grands classiques universels et monuments populaires connus de tous (ex. musique : Queen, Daft Punk, Michael Jackson, The Beatles, Nirvana, Pink Floyd, Adele, Miles Davis ; ciné : Star Wars, Inception, Le Parrain, Miyazaki ; livres : 1984, Le Petit Prince, Hemingway, Stephen King). AUCUN artiste indé confidentiel dans ce profil.
+2. "intermediate" (Curieux) : Cinéma d'auteur accessible, pépites indie folk / rock acclamées (ex. Sufjan Stevens, Radiohead, Nick Drake, Arcade Fire), littérature contemporaine brillante.
+3. "expert" (Initié) : Avant-garde, expérimentations sonores, art et essai exigeant, raretés underground.
 
-RÈGLE D'UNICITÉ ET D'ORIGINALITÉ ABSOLUE :
-Trivium renouvelle continuellement sa bibliothèque. Tu as L'INTERDICTION FORMELLE de réutiliser un thème ou une œuvre déjà parus dans les éditions précédentes.
+Chaque profil contient EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
+Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE de l'œuvre (ex. 1952 pour Le Vieil Homme et la Mer).
+
+RÈGLE D'UNICITÉ :
+Interdiction de réutiliser des thèmes ou œuvres passés.
 """
     if excluded_themes:
-        prompt += f"\nTHÈMES DÉJÀ TRAITÉS À BANNIR :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
+        prompt += f"\nTHÈMES BANNIS :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
     if excluded_titles:
-        prompt += f"\nŒUVRES DÉJÀ RECOMMANDÉES À BANNIR :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
+        prompt += f"\nŒUVRES BANNNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
 
     prompt += """
-RÈGLE STRICTE POUR LA REVUE DE PRESSE :
-Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") provenant de 3 MÉDIAS DISTINCTS et reconnus (exemples : Le Monde, Télérama, Les Inrockuptibles, Libération, Cahiers du Cinéma, Pitchfork, Rolling Stone, The Guardian...).
+REVUE DE PRESSE :
+Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") issues de 3 médias reconnus francophones ou internationaux traduits (Le Monde, Télérama, Les Inrocks, Libération, Cahiers du Cinéma, Rolling Stone, Pitchfork...).
 
-Réponds STRICTEMENT sous la forme d'un objet JSON valide :
+Format JSON attendu :
 {
   "accessible": {
     "themeTitle": "Titre du thème inédit",
-    "themeSubtitle": "Sous-titre poétique expliquant le fil invisible reliant les 3 œuvres",
+    "themeSubtitle": "Sous-titre expliquant le fil invisible reliant les 3 œuvres",
     "items": [
       {
         "type": "LIVRE",
         "title": "Titre exact",
         "creator": "Nom de l'auteur",
-        "year": "1997",
-        "origin": "France",
-        "genre": "Genre",
+        "year": "1952",
+        "origin": "États-Unis",
+        "genre": "Roman / Aventure",
         "accessibility": "Pop Culture",
-        "formatMetric": "320 pages",
+        "formatMetric": "128 pages",
         "quote": "Citation clé marquante",
         "anecdote": "Anecdote surprenante sur la genèse de l'œuvre",
-        "tags": ["Tag1", "Tag2"],
+        "tags": ["Classique", "Courage"],
         "ratings": [
           {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Une œuvre magistrale."},
-          {"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Un regard bouleversant."},
-          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une écriture d'une grande finesse."}
+          {"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Un récit universel et poignant."},
+          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une écriture épurée à son sommet."}
         ],
         "aiSummary": "Résumé captivant en 2 phrases.",
         "thematicAnalysis": "Analyse du lien profond avec la thématique du triptyque."
@@ -347,7 +333,7 @@ def generate_daily_edition():
         system_instruction=system_prompt
     )
 
-    response = model.generate_content("Génère un triptyque 100% inédit et original pour aujourd'hui avec 3 revues de presse distinctes par œuvre.")
+    response = model.generate_content("Génère un triptyque 100% inédit et calibré en français avec 3 revues de presse distinctes par œuvre.")
     data = json.loads(response.text)
 
     for tier in ["accessible", "intermediate", "expert"]:
@@ -360,10 +346,9 @@ def generate_daily_edition():
 
             if item_type == "LIVRE":
                 item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
-                img, pages, pub_year = fetch_book_metadata(title, creator)
+                img, pages = fetch_book_metadata(title, creator)
                 if img: item["imageURL"] = img
                 if pages and not item.get("formatMetric"): item["formatMetric"] = f"{pages} pages"
-                if pub_year: item["year"] = pub_year
 
             elif item_type == "FILM":
                 item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
@@ -383,7 +368,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition générée et archivée dans {archive_path}.")
+    print(f"✅ Édition enregistrée dans today.json et {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
