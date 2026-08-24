@@ -3,12 +3,15 @@ import json
 import urllib.parse
 import urllib.request
 from datetime import datetime
+import google.generativeai as genai
 
 # MARK: - Configuration API
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY manquante dans les secrets GitHub.")
+
+genai.configure(api_key=GEMINI_API_KEY)
 
 # MARK: - Enrichisseurs d'Artworks & Métadonnées Réelles
 
@@ -74,7 +77,7 @@ def fetch_album_metadata(album_title: str, artist: str):
     return image_url, tracks
 
 def build_safe_platform_links(item_type: str, title: str, creator: str):
-    """Génère uniquement les liens fiables (sans AlloCiné ni Canal VOD)."""
+    """Génère uniquement des liens fiables (JustWatch, Letterboxd, Apple TV)."""
     encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
     encoded_title = urllib.parse.quote(title.strip())
     
@@ -184,38 +187,14 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 """
 
 def generate_daily_edition():
-    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
-    
-    payload = {
-        "contents": [
-            {
-                "parts": [
-                    {"text": "Génère le triptyque culturel du jour pour les 3 profils."}
-                ]
-            }
-        ],
-        "systemInstruction": {
-            "parts": [
-                {"text": SYSTEM_PROMPT}
-            ]
-        },
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "temperature": 0.7
-        }
-    }
-
-    req = urllib.request.Request(
-        endpoint,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"}
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash-latest",
+        generation_config={"response_mime_type": "application/json", "temperature": 0.7},
+        system_instruction=SYSTEM_PROMPT
     )
 
-    with urllib.request.urlopen(req, timeout=30) as response:
-        res_json = json.loads(response.read().decode())
-
-    raw_text = res_json["candidates"][0]["content"]["parts"][0]["text"]
-    data = json.loads(raw_text)
+    response = model.generate_content("Génère le triptyque culturel du jour pour les 3 profils.")
+    data = json.loads(response.text)
 
     for tier in ["accessible", "intermediate", "expert"]:
         if tier not in data:
@@ -241,7 +220,7 @@ def generate_daily_edition():
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print("✅ today.json mis à jour sans aucune dépendance externe.")
+    print("✅ today.json mis à jour avec succès.")
 
 if __name__ == "__main__":
     generate_daily_edition()
