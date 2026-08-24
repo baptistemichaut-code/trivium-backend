@@ -18,7 +18,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 # MARK: - Utilitaires de Normalisation & Recherche
 
 def clean_search_title(title: str) -> str:
-    """Supprime parenthèses, crochets et sous-titres parasites."""
+    """Supprime les parenthèses, crochets et sous-titres superflus."""
     t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
@@ -26,7 +26,7 @@ def clean_search_title(title: str) -> str:
     return t.strip()
 
 def normalize_text(text: str) -> str:
-    """Minuscules et suppression des caractères spéciaux pour comparer les titres."""
+    """Minuscules et suppression des caractères spéciaux pour comparaison."""
     t = text.lower()
     t = re.sub(r"[^\w\s]", "", t)
     return " ".join(t.split())
@@ -63,7 +63,7 @@ def load_history_exclusions():
 
     return list(used_themes), list(used_titles)
 
-# MARK: - Enrichisseur Livres Multi-Sources
+# MARK: - Enrichisseurs Médias
 
 def fetch_book_metadata(title: str, author: str):
     image_url = None
@@ -127,8 +127,6 @@ def fetch_book_metadata(title: str, author: str):
 
     return image_url, page_count
 
-# MARK: - Enrichisseur Films avec Vérification de Titre
-
 def fetch_film_metadata(title: str, director: str):
     clean_t = clean_search_title(title)
     norm_target = normalize_text(clean_t)
@@ -142,8 +140,7 @@ def fetch_film_metadata(title: str, director: str):
                 req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
                 with urllib.request.urlopen(req, timeout=5) as response:
                     data = json.loads(response.read().decode())
-                    results = data.get("results", [])
-                    for item in results:
+                    for item in data.get("results", []):
                         name = normalize_text(item.get("trackName", ""))
                         if norm_target in name or name in norm_target:
                             raw_art = item.get("artworkUrl100", "")
@@ -154,22 +151,15 @@ def fetch_film_metadata(title: str, director: str):
 
     return None
 
-# MARK: - Enrichisseur Albums Précis (Correspondance Stricte & Multi-Pays)
-
 def fetch_album_metadata(album_title: str, artist: str):
     clean_t = clean_search_title(album_title)
     clean_a = clean_search_title(artist)
     norm_title = normalize_text(clean_t)
     norm_artist = normalize_text(clean_a)
 
-    queries = [
-        f"{clean_t} {clean_a}",
-        clean_t
-    ]
-
+    queries = [f"{clean_t} {clean_a}", clean_t]
     best_match = None
 
-    # Recherche multi-pays (FR puis US puis GB pour les labels indés/initiés)
     for country in ["fr", "us", "gb"]:
         if best_match:
             break
@@ -182,14 +172,12 @@ def fetch_album_metadata(album_title: str, artist: str):
                     data = json.loads(response.read().decode())
                     results = data.get("results", [])
                     
-                    # 1. Correspondance exacte ou forte sur le titre de l'album
                     for item in results:
                         col_name = normalize_text(item.get("collectionName", ""))
                         if norm_title in col_name or col_name in norm_title:
                             best_match = item
                             break
                     
-                    # 2. Correspondance par mots-clés distinctifs
                     if not best_match:
                         title_words = [w for w in norm_title.split() if len(w) > 2]
                         for item in results:
@@ -198,7 +186,6 @@ def fetch_album_metadata(album_title: str, artist: str):
                                 best_match = item
                                 break
 
-                    # 3. Repli si artiste reconnu et titre partiel
                     if not best_match:
                         for item in results:
                             art_name = normalize_text(item.get("artistName", ""))
@@ -220,7 +207,6 @@ def fetch_album_metadata(album_title: str, artist: str):
     direct_url = best_match.get("collectionViewUrl")
     tracks = []
 
-    # Récupération des pistes audio officielles
     if collection_id:
         for country in ["fr", "us"]:
             lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&country={country}"
@@ -246,8 +232,6 @@ def fetch_album_metadata(album_title: str, artist: str):
 
     return image_url, tracks, direct_url
 
-# MARK: - Liens Plateformes Utiles
-
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
     encoded_search = safe_url_encode(f"{clean_t} {creator}".strip())
@@ -270,8 +254,6 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             {"name": "Apple Music", "category": "Écoute intégrale & Lossless", "urlString": apple_link, "iconName": "apple.logo"},
             {"name": "Deezer", "category": "Streaming audio & HiFi", "urlString": f"https://www.deezer.com/search/{encoded_search}", "iconName": "music.note"}
         ]
-
-# MARK: - Sanitizer / Garant de Structure Anti-Crash
 
 def sanitize_and_fill_defaults(data: dict) -> dict:
     sanitized = {}
@@ -326,16 +308,14 @@ def sanitize_and_fill_defaults(data: dict) -> dict:
 
     return sanitized
 
-# MARK: - Prompt Éditorial
-
 def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
     prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
 LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
 
-CALIBRATION TRÈS STRICTE DES 3 PROFILS CULTURELS :
-1. "accessible" (Pop Culture) : Monuments culturels et chefs-d'œuvre universellement connus (musique : Pink Floyd, Daft Punk, Queen, The Beatles ; cinéma : Miyazaki, Star Wars, Le Parrain ; littérature : Alice au pays des merveilles, 1984, Stephen King).
-2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
+CALIBRATION DES 3 PROFILS CULTURELS :
+1. "accessible" (Pop Culture) : Monuments culturels et chefs-d'œuvre universels (musique : Pink Floyd, Daft Punk, Queen, The Beatles ; cinéma : Miyazaki, Star Wars, Le Parrain ; littérature : Alice au pays des merveilles, 1984, Stephen King).
+2. "intermediate" (Curieux) : Pépites indé, cinéma d'auteur marquant, albums cultes alternatifs.
 3. "expert" (Initié) : Avant-garde, expérimentations pointues (ex. Xiu Xiu, Faust, cinéma underground), littérature exigeante.
 
 Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE.
@@ -384,11 +364,11 @@ Format JSON attendu :
 """
     return prompt
 
-# MARK: - Fonction Principale
+# MARK: - Fonction Principale (gemini-3.6-flash)
 
 def generate_daily_edition():
     today_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"🚀 Génération de l'édition du {today_str}...")
+    print(f"🚀 Génération de l'édition du {today_str} avec gemini-3.6-flash...")
 
     os.makedirs("archive", exist_ok=True)
     past_themes, past_titles = load_history_exclusions()
@@ -404,10 +384,8 @@ def generate_daily_edition():
     response = model.generate_content("Génère un triptyque 100% inédit et calibré en français.")
     raw_data = json.loads(response.text)
 
-    # 1. Structure sécurisée
     data = sanitize_and_fill_defaults(raw_data)
 
-    # 2. Enrichissement avec correspondances strictes
     for tier in ["accessible", "intermediate", "expert"]:
         for item in data[tier]["items"]:
             item_type = item["type"]
@@ -431,7 +409,6 @@ def generate_daily_edition():
                 if img: item["imageURL"] = img
                 if tracks: item["tracks"] = tracks
 
-    # 3. Sauvegarde
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -439,7 +416,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition du jour générée avec correspondances vérifiées et archivée dans {archive_path}.")
+    print(f"✅ Édition du jour générée et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
