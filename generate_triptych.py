@@ -5,7 +5,25 @@ import time
 import datetime
 import urllib.parse
 import re
+import random
+import difflib
 import requests
+
+# Thèmes d'inspiration aléatoires pour forcer l'IA à varier ses angles
+THEME_SEEDS = [
+    "La paranoïa et le doute du réel",
+    "La solitude dans les mégalopoles modernes",
+    "Les métamorphoses du corps et de l'esprit",
+    "L'odyssée spatiale et le silence cosmique",
+    "Les désillusions du rêve américain",
+    "L'héritage, les secrets de famille et le temps",
+    "Les contre-cultures et la révolte brute",
+    "La mélancolie poétique et le spleen urbain",
+    "Les machines conscientes et le techno-fantastique",
+    "Les voyages initiatiques au bout du monde",
+    "Le jazz nocturne, le polar et la fumée",
+    "L'art de la fugue et les labyrinthes mentaux"
+]
 
 def clean_str(s):
     if not s:
@@ -13,7 +31,7 @@ def clean_str(s):
     return re.sub(r'[^a-zA-Z0-9\s]', '', s).lower().strip()
 
 def get_previously_used_titles():
-    """Scanne et extrait 100 % des œuvres et artistes déjà parus dans les archives."""
+    """Scanne 100 % des œuvres et artistes parus dans toutes les archives."""
     used = set()
     files = glob.glob("archive/*.json")
     if os.path.exists("today.json"):
@@ -26,19 +44,12 @@ def get_previously_used_titles():
                 for tier in ["accessible", "intermediate", "expert"]:
                     if tier in data and "items" in data[tier]:
                         for item in data[tier]["items"]:
-                            t = item.get("title", "").strip()
-                            c = item.get("creator", "").strip()
+                            t = clean_str(item.get("title", ""))
                             if t:
-                                used.add(f"« {t} » par {c}" if c else f"« {t} »")
-                if "items" in data:
-                    for item in data["items"]:
-                        t = item.get("title", "").strip()
-                        c = item.get("creator", "").strip()
-                        if t:
-                            used.add(f"« {t} » par {c}" if c else f"« {t} »")
+                                used.add(t)
         except Exception:
             continue
-    return sorted(list(used))
+    return used
 
 def build_book_links(title, author):
     clean_t = title.split(":")[0].strip()
@@ -69,62 +80,54 @@ def build_album_links(title, artist, direct_apple_url=None):
     ]
 
 def fetch_album_metadata(title, artist):
-    """Recherche ultra-précise avec système de score pour éviter les faux albums."""
+    """Recherche d'album avec score de similarité textuelle."""
     try:
-        raw_clean_title = re.sub(r'[\(\[].*?[\)\]]', '', title).strip()
-        norm_title = clean_str(raw_clean_title)
+        # Retrait des mentions d'édition (Remaster, Deluxe, Anniversary...)
+        clean_target = re.sub(r'[\(\[].*?[\)\]]', '', title).strip()
+        norm_target = clean_str(clean_target)
         norm_artist = clean_str(artist)
 
-        query = urllib.parse.quote(f"{raw_clean_title} {artist}")
+        query = urllib.parse.quote(f"{clean_target} {artist}")
 
         for country in ["FR", "US", "GB"]:
-            search_url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=15&country={country}"
+            search_url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=25&country={country}"
             res = requests.get(search_url, timeout=10).json()
             results = res.get("results", [])
             if not results:
                 continue
 
             best_album = None
-            best_score = -1
+            best_score = 0.0
 
             for alb in results:
-                alb_name = clean_str(alb.get("collectionName", ""))
-                art_name = clean_str(alb.get("artistName", ""))
+                alb_raw = alb.get("collectionName", "")
+                alb_clean = re.sub(r'[\(\[].*?[\)\]]', '', alb_raw).strip()
+                norm_alb = clean_str(alb_clean)
+                norm_art = clean_str(alb.get("artistName", ""))
 
-                score = 0
-                # Correspondance artiste
-                if norm_artist in art_name or art_name in norm_artist:
-                    score += 50
+                # Vérification de l'artiste
+                artist_match = (norm_artist in norm_art or norm_art in norm_artist)
+                if not artist_match:
+                    continue
 
-                # Correspondance titre
-                if norm_title == alb_name:
-                    score += 100
-                elif norm_title in alb_name:
-                    score += 65
-                elif alb_name in norm_title:
-                    score += 45
-                else:
-                    title_words = set(norm_title.split())
-                    alb_words = set(alb_name.split())
-                    common = title_words.intersection(alb_words)
-                    if len(title_words) > 0:
-                        score += int((len(common) / len(title_words)) * 50)
+                # Calcul du ratio de ressemblance
+                ratio = difflib.SequenceMatcher(None, norm_target, norm_alb).ratio()
 
-                # Pénalité stricte sur les reprises ou karaoké
-                if "tribute" in alb_name or "karaoke" in alb_name:
-                    score -= 80
+                # Pénalisation des albums de reprises
+                if "tribute" in norm_alb or "karaoke" in norm_alb:
+                    ratio -= 0.5
 
-                if score > best_score and score >= 65:
-                    best_score = score
+                if ratio > best_score:
+                    best_score = ratio
                     best_album = alb
 
-            if best_album:
+            if best_album and best_score >= 0.40:
                 collection_id = best_album.get("collectionId")
                 direct_url = best_album.get("collectionViewUrl")
                 artwork = best_album.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
 
-                # Récupération de la tracklist avec gestion multi-disques
-                lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&limit=50&country={country}"
+                # Récupération de la tracklist ordonnée
+                lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&limit=60&country={country}"
                 lookup_res = requests.get(lookup_url, timeout=10).json()
 
                 raw_tracks = []
@@ -143,7 +146,7 @@ def fetch_album_metadata(title, artist):
                             "previewURL": item.get("previewUrl")
                         })
 
-                # Tri dans l'ordre réel de l'œuvre (disque puis piste)
+                # Tri séquentiel (disque, puis piste)
                 raw_tracks.sort(key=lambda x: (x["disc"], x["trackNumber"]))
 
                 tracks = []
@@ -161,7 +164,6 @@ def fetch_album_metadata(title, artist):
     return None, None, None
 
 def fetch_movie_artwork(title, director):
-    """Recherche d'affiche de film sur iTunes Store."""
     try:
         clean_title = title.split("(")[0].strip()
         query = urllib.parse.quote(clean_title)
@@ -180,7 +182,6 @@ def fetch_movie_artwork(title, director):
     return None
 
 def fetch_book_artwork(title, author):
-    """Recherche de couverture : Google Books puis fallback OpenLibrary."""
     try:
         clean_title = title.split(":")[0].split("(")[0].strip()
         query = urllib.parse.quote(f"{clean_title} {author}")
@@ -193,8 +194,7 @@ def fetch_book_artwork(title, author):
                 imgs = vol.get("imageLinks", {})
                 thumb = imgs.get("extraLarge") or imgs.get("large") or imgs.get("medium") or imgs.get("thumbnail") or imgs.get("smallThumbnail")
                 if thumb:
-                    thumb = thumb.replace("http://", "https://").replace("&edge=curl", "")
-                    return thumb
+                    return thumb.replace("http://", "https://").replace("&edge=curl", "")
 
         ol_query = urllib.parse.quote(f"{clean_title} {author}")
         ol_url = f"https://openlibrary.org/search.json?q={ol_query}&limit=1"
@@ -238,59 +238,60 @@ def generate_daily_edition():
     if not api_key:
         raise ValueError("GEMINI_API_KEY manquant.")
 
-    used_titles = get_previously_used_titles()
-    exclusion_block = ""
-    if used_titles:
-        exclusion_list = "\n".join([f"- {t}" for t in used_titles])
-        exclusion_block = f"""
-LISTE D'EXCLUSION STRICTE (TOUTES CES ŒUVRES ONT DÉJÀ ÉTÉ PROPOSÉES, INTERDICTION FORMELLE DE LES RÉPÉTER) :
-{exclusion_list}
+    used_titles_set = get_previously_used_titles()
+    random_seed_theme = random.choice(THEME_SEEDS)
+
+    exclusion_list_text = "\n".join([f"- {t.title()}" for t in sorted(list(used_titles_set))])
+    exclusion_block = f"""
+LISTE D'EXCLUSION STRICTE (ŒUVRES DÉJÀ PARUES — INTERDICTION ABSOLUE DE LES PROPOSER À NOUVEAU) :
+{exclusion_list_text}
 """
 
     prompt = f"""
-Tu es le directeur éditorial de l'application culturelle de prestige "Trivium".
-Crée aujourd'hui 3 éditions thématiques TOTALEMENT INÉDITES selon 3 niveaux de curiosité culturelle :
-1. "accessible" (Pop culture, grands classiques, œuvres cultes et accessibles).
+Tu es le directeur éditorial de la prestigieuse application culturelle "Trivium".
+Aujourd'hui, explore un triptyque original guidé par cette inspiration : « {random_seed_theme} ».
+
+Crée 3 éditions thématiques INÉDITES selon 3 niveaux de sensibilité culturelle :
+1. "accessible" (Pop culture, chefs-d'œuvre cultes et universels).
 2. "intermediate" (Cinéma d'auteur accessible, pépites littéraires, albums cultes reconnus).
-3. "expert" (Maxi nerd, underground, avant-garde, cinéma d'art et essai, littérature exigeante).
+3. "expert" (Underground, avant-garde, cinéma d'art et essai, littérature exigeante).
 
 {exclusion_block}
 
-EXIGENCE CRITIQUE STRICTE & FACTUELLE (REVUES DE PRESSE VÉRIFIÉES) :
-Pour chaque œuvre sélectionnée, fournis impérativement 3 critiques AUTHENTIQUES issues de médias reconnus :
-- LIVRES : citer de vraies revues parmi *Le Monde des Livres*, *Télérama*, *Libération*, *Babelio*, *Le Figaro Littéraire*, *Lire Magazine*.
-- FILMS : citer les vraies notes avec leur système de notation réel parmi *Télérama* (notations réelles : T, TT, TTT, TTTT), *Cahiers du Cinéma*, *Allociné Presse* (/5), *SensCritique* (/10), *Rotten Tomatoes* (%).
-- ALBUMS : citer la note exacte parmi *Pitchfork* (note réelle à un chiffre après la virgule, ex: 8.4/10), *Rolling Stone* (/5), *Les Inrockuptibles*, *The Guardian*, *AllMusic*.
-- AUCUNE INVENTION : chaque extrait ("excerpt") doit fidèlement synthétiser la position critique réelle du média lors de sa parution.
+RÈGLES CRITIQUES STRICTES :
+Pour chaque œuvre, fournis 3 critiques authentiques issues de vrais médias :
+- LIVRES : revues parmi *Le Monde des Livres*, *Télérama*, *Libération*, *Babelio*, *Le Figaro Littéraire*, *Lire Magazine*.
+- FILMS : notes réelles parmi *Télérama* (notations T, TT, TTT, TTTT), *Cahiers du Cinéma*, *Allociné Presse* (/5), *SensCritique* (/10), *Rotten Tomatoes* (%).
+- ALBUMS : notes réelles parmi *Pitchfork* (/10 avec un chiffre après la virgule), *Rolling Stone* (/5), *Les Inrockuptibles*, *AllMusic*.
 
-Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```json) respectant scrupuleusement ce schéma :
+Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage ```json) suivant cette structure :
 {{
   "accessible": {{
-    "themeTitle": "Titre du thème accessible",
+    "themeTitle": "Titre du thème",
     "themeSubtitle": "Phrase d'accroche",
     "items": [
       {{
         "type": "LIVRE", "title": "Titre exact", "creator": "Auteur", "year": "Année", "genre": "Genre",
         "origin": "Pays", "formatMetric": "340 pages", "accessibility": "Populaire & Immédiat",
-        "quote": "Citation authentique", "aiSummary": "Résumé captivant", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique",
+        "quote": "Citation authentique", "aiSummary": "Résumé", "thematicAnalysis": "Analyse", "anecdote": "Anecdote véridique",
         "tags": ["Tag1", "Tag2"],
         "ratings": [
-          {{"source": "Le Figaro Littéraire", "score": "5/5", "excerpt": "Synthèse critique.", "iconName": "newspaper.fill"}},
-          {{"source": "Babelio", "score": "4.4/5", "excerpt": "Consensus des lecteurs.", "iconName": "star.fill"}},
-          {{"source": "Télérama", "score": "TTT", "excerpt": "Regard sur le style.", "iconName": "quote.bubble.fill"}}
+          {{"source": "Le Monde", "score": "Indispensable", "excerpt": "Synthèse critique.", "iconName": "newspaper.fill"}},
+          {{"source": "Babelio", "score": "4.4/5", "excerpt": "Avis critique.", "iconName": "star.fill"}},
+          {{"source": "Télérama", "score": "TTT", "excerpt": "Regard critique.", "iconName": "quote.bubble.fill"}}
         ]
       }},
-      {{ "type": "FILM", "title": "Titre exact", "creator": "Réalisateur", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "2h 05m", "accessibility": "Culte & Grand Public", "quote": "Réplique culte", "aiSummary": "Synopsis", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Télérama", "score": "TTTT", "excerpt": "Synthèse critique.", "iconName": "film.fill"}}, {{"source": "Cahiers du Cinéma", "score": "5/5", "excerpt": "Mise en scène.", "iconName": "star.fill"}}, {{"source": "Première", "score": "4/5", "excerpt": "Jeu d'acteur.", "iconName": "newspaper.fill"}}] }},
-      {{ "type": "ALBUM", "title": "Titre exact", "creator": "Artiste", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "10 titres", "accessibility": "Écoute Immédiate", "quote": "Citation", "aiSummary": "Présentation", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Pitchfork", "score": "8.8/10", "excerpt": "Synthèse du test.", "iconName": "music.note"}}, {{"source": "Rolling Stone", "score": "5/5", "excerpt": "Puissance des morceaux.", "iconName": "star.fill"}}, {{"source": "Les Inrockuptibles", "score": "Indispensable", "excerpt": "Inventivité.", "iconName": "quote.bubble.fill"}}] }}
+      {{ "type": "FILM", "title": "Titre exact", "creator": "Réalisateur", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "2h 05m", "accessibility": "Culte & Grand Public", "quote": "Réplique culte", "aiSummary": "Synopsis", "thematicAnalysis": "Analyse", "anecdote": "Anecdote", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Télérama", "score": "TTTT", "excerpt": "Synthèse.", "iconName": "film.fill"}}, {{"source": "Cahiers du Cinéma", "score": "5/5", "excerpt": "Mise en scène.", "iconName": "star.fill"}}, {{"source": "Première", "score": "4/5", "excerpt": "Jeu d'acteur.", "iconName": "newspaper.fill"}}] }},
+      {{ "type": "ALBUM", "title": "Titre exact", "creator": "Artiste", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "10 titres", "accessibility": "Écoute Immédiate", "quote": "Citation", "aiSummary": "Présentation", "thematicAnalysis": "Analyse", "anecdote": "Anecdote", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Pitchfork", "score": "8.8/10", "excerpt": "Synthèse.", "iconName": "music.note"}}, {{"source": "Rolling Stone", "score": "5/5", "excerpt": "Avis.", "iconName": "star.fill"}}, {{"source": "Les Inrockuptibles", "score": "Indispensable", "excerpt": "Avis.", "iconName": "quote.bubble.fill"}}] }}
     ]
   }},
   "intermediate": {{
-    "themeTitle": "Titre du thème intermédiaire",
+    "themeTitle": "Titre intermédiaire",
     "themeSubtitle": "Phrase d'accroche",
     "items": [ ... 1 LIVRE, 1 FILM, 1 ALBUM ... ]
   }},
   "expert": {{
-    "themeTitle": "Titre du thème expert",
+    "themeTitle": "Titre expert",
     "themeSubtitle": "Phrase d'accroche",
     "items": [ ... 1 LIVRE, 1 FILM, 1 ALBUM ... ]
   }}
@@ -305,42 +306,54 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.7,
+            "temperature": 0.85,
             "topP": 0.95
         }
     }
 
     max_retries = 3
-    response = None
+    data = None
     for attempt in range(1, max_retries + 1):
-        print(f"Tentative de génération {attempt}/{max_retries}...")
+        print(f"Tentative de génération {attempt}/{max_retries} (Inspiration : {random_seed_theme})...")
         response = requests.post(url, headers=headers, json=payload, timeout=90)
-        if response.status_code == 200:
+        if response.status_code == 429:
+            time.sleep(15 * attempt)
+            continue
+        response.raise_for_status()
+
+        result = response.json()
+        candidate = result.get("candidates", [{}])[0]
+        parts = candidate.get("content", {}).get("parts", [])
+        raw_text = "".join([part.get("text", "") for part in parts if "text" in part]).strip()
+
+        if raw_text.startswith("```json"):
+            raw_text = raw_text[7:]
+        if raw_text.startswith("```"):
+            raw_text = raw_text[3:]
+        if raw_text.endswith("```"):
+            raw_text = raw_text[:-3]
+        raw_text = raw_text.strip()
+
+        parsed = json.loads(raw_text)
+
+        # Vérification anti-doublons par le code Python
+        has_duplicates = False
+        for tier in ["accessible", "intermediate", "expert"]:
+            if tier in parsed:
+                for it in parsed[tier].get("items", []):
+                    if clean_str(it.get("title", "")) in used_titles_set:
+                        print(f"Doublon détecté par le filtre : {it.get('title')}. Relance d'une nouvelle génération...")
+                        has_duplicates = True
+                        break
+            if has_duplicates:
+                break
+
+        if not has_duplicates:
+            data = parsed
             break
-        elif response.status_code == 429:
-            wait_time = 15 * attempt
-            print(f"Quota temporaire atteint (429). Pause de {wait_time}s...")
-            time.sleep(wait_time)
-        else:
-            print(f"Erreur API: {response.text}")
-            response.raise_for_status()
 
-    response.raise_for_status()
-
-    result = response.json()
-    candidate = result.get("candidates", [{}])[0]
-    parts = candidate.get("content", {}).get("parts", [])
-    raw_text = "".join([part.get("text", "") for part in parts if "text" in part]).strip()
-
-    if raw_text.startswith("```json"):
-        raw_text = raw_text[7:]
-    if raw_text.startswith("```"):
-        raw_text = raw_text[3:]
-    if raw_text.endswith("```"):
-        raw_text = raw_text[:-3]
-    raw_text = raw_text.strip()
-
-    data = json.loads(raw_text)
+    if not data:
+        data = parsed  # Fallback si persistance après les 3 essais
 
     for tier in ["accessible", "intermediate", "expert"]:
         if tier in data:
