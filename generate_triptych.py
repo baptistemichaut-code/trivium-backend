@@ -1,4 +1,5 @@
 import os
+import re
 import glob
 import json
 import urllib.parse
@@ -14,10 +15,19 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
+# MARK: - Nettoyeur de Titres pour les Recherches
+
+def clean_search_title(title: str) -> str:
+    """Nettoie les parenthèses, tomes et sous-titres pour maximiser les résultats de recherche."""
+    t = re.sub(r"\(.*?\)", "", title)
+    t = re.sub(r"\[.*?\]", "", t)
+    if ":" in t:
+        t = t.split(":")[0]
+    return t.strip()
+
 # MARK: - Gestion de l'Historique & Déduplication Absolue
 
 def load_history_exclusions():
-    """Lit toutes les archives pour interdire la répétition d'œuvres ou de thèmes."""
     used_themes = set()
     used_titles = set()
     
@@ -44,59 +54,76 @@ def load_history_exclusions():
 
     return list(used_themes), list(used_titles)
 
-# MARK: - Enrichisseur Livres (Google Books + OpenLibrary Fallback)
+# MARK: - Enrichisseur Livres Multi-Sources (Apple Books + Google Books + OpenLibrary)
 
 def fetch_book_metadata(title: str, author: str):
     image_url = None
     page_count = None
     published_year = None
 
-    queries = [
-        f"{title} {author}",
-        f"intitle:{title} inauthor:{author}",
-        title
-    ]
+    clean_t = clean_search_title(title)
 
-    for q in queries:
-        encoded_q = urllib.parse.quote(q)
-        url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=3&printType=books"
-        try:
-            req = urllib.request.Request(
-                url,
-                headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}
-            )
-            with urllib.request.urlopen(req, timeout=6) as response:
-                data = json.loads(response.read().decode())
-                for item in data.get("items", []):
-                    info = item.get("volumeInfo", {})
-                    images = info.get("imageLinks", {})
-                    img = images.get("extraLarge") or images.get("large") or images.get("medium") or images.get("thumbnail") or images.get("smallThumbnail")
-                    
-                    if img:
-                        secure_img = img.replace("http://", "https://")
-                        if "&edge=curl" in secure_img:
-                            secure_img = secure_img.replace("&edge=curl", "")
-                        image_url = secure_img
+    # 1. Source Principale : Apple Books / iTunes Ebook (HD & Infaillible sur GitHub Actions)
+    try:
+        q_apple = urllib.parse.quote(f"{clean_t} {author}")
+        apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=1"
+        req = urllib.request.Request(apple_url, headers={"User-Agent": "TriviumApp/2.1"})
+        with urllib.request.urlopen(req, timeout=5) as response:
+            data = json.loads(response.read().decode())
+            if data.get("resultCount", 0) > 0:
+                raw_art = data["results"][0].get("artworkUrl100", "")
+                if raw_art:
+                    image_url = raw_art.replace("100x100bb", "800x800bb")
+                pub = data["results"][0].get("releaseDate", "")
+                if len(pub) >= 4:
+                    published_year = pub[:4]
+    except Exception:
+        pass
 
-                    if not page_count and info.get("pageCount"):
-                        page_count = info.get("pageCount")
-                    if not published_year and len(info.get("publishedDate", "")) >= 4:
-                        published_year = info.get("publishedDate", "")[:4]
+    # 2. Source Secondaire : Google Books
+    if not image_url:
+        queries = [
+            f"intitle:{clean_t} inauthor:{author}",
+            f"{clean_t} {author}",
+            clean_t
+        ]
+        for q in queries:
+            encoded_q = urllib.parse.quote(q)
+            url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=2&printType=books"
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req, timeout=5) as response:
+                    data = json.loads(response.read().decode())
+                    for item in data.get("items", []):
+                        info = item.get("volumeInfo", {})
+                        images = info.get("imageLinks", {})
+                        img = images.get("extraLarge") or images.get("large") or images.get("medium") or images.get("thumbnail") or images.get("smallThumbnail")
+                        
+                        if img:
+                            secure_img = img.replace("http://", "https://")
+                            if "&edge=curl" in secure_img:
+                                secure_img = secure_img.replace("&edge=curl", "")
+                            image_url = secure_img
 
-                    if image_url:
-                        break
-        except Exception:
-            pass
+                        if not page_count and info.get("pageCount"):
+                            page_count = info.get("pageCount")
+                        if not published_year and len(info.get("publishedDate", "")) >= 4:
+                            published_year = info.get("publishedDate", "")[:4]
 
-        if image_url:
-            break
+                        if image_url:
+                            break
+            except Exception:
+                pass
+            if image_url:
+                break
 
+    # 3. Source de Repli : OpenLibrary Covers
     if not image_url:
         try:
-            q_ol = urllib.parse.quote(f"{title} {author}")
+            q_ol = urllib.parse.quote(f"{clean_t} {author}")
             ol_url = f"https://openlibrary.org/search.json?q={q_ol}&limit=1"
             req = urllib.request.Request(ol_url, headers={"User-Agent": "TriviumApp/2.1"})
-            with urllib.request.urlopen(req, timeout=6) as response:
+            with urllib.request.urlopen(req, timeout=5) as response:
                 ol_data = json.loads(response.read().decode())
                 docs = ol_data.get("docs", [])
                 if docs and "cover_i" in docs[0]:
@@ -109,33 +136,36 @@ def fetch_book_metadata(title: str, author: str):
 
     return image_url, page_count, published_year
 
-# MARK: - Enrichisseur Films (iTunes Movie Search)
+# MARK: - Enrichisseur Films (iTunes Movie Search Robuste)
 
 def fetch_film_metadata(title: str, director: str):
     image_url = None
-    queries = [f"{title} {director}", title]
+    clean_t = clean_search_title(title)
+    queries = [clean_t, f"{clean_t} {director}"]
 
     for q in queries:
         encoded_q = urllib.parse.quote(q)
-        url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=1&country=fr"
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
-            with urllib.request.urlopen(req, timeout=6) as response:
-                data = json.loads(response.read().decode())
-                if data.get("resultCount", 0) > 0:
-                    raw_art = data["results"][0].get("artworkUrl100", "")
-                    if raw_art:
-                        image_url = raw_art.replace("100x100bb", "1000x1000bb")
-                        break
-        except Exception:
-            pass
+        for country in ["fr", "us"]:
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=1&country={country}"
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
+                with urllib.request.urlopen(req, timeout=5) as response:
+                    data = json.loads(response.read().decode())
+                    if data.get("resultCount", 0) > 0:
+                        raw_art = data["results"][0].get("artworkUrl100", "")
+                        if raw_art:
+                            image_url = raw_art.replace("100x100bb", "1000x1000bb")
+                            return image_url
+            except Exception:
+                pass
 
     return image_url
 
 # MARK: - Enrichisseur Albums (Apple Music)
 
 def fetch_album_metadata(album_title: str, artist: str):
-    query = urllib.parse.quote(f"{album_title} {artist}")
+    clean_t = clean_search_title(album_title)
+    query = urllib.parse.quote(f"{clean_t} {artist}")
     url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=1&country=fr"
     image_url, collection_id, tracks = None, None, []
     try:
@@ -226,7 +256,7 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
             }
         ]
 
-# MARK: - Prompt Éditorial Dynamique avec Blacklist
+# MARK: - Prompt Éditorial
 
 def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
     prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
@@ -238,13 +268,13 @@ Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE FORT
 
 Chaque profil doit contenir EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
 
-RÈGLE D'UNICITÉ ET D'ORIGINALITÉ ABSOLUE (TRÈS STRICT) :
+RÈGLE D'UNICITÉ ET D'ORIGINALITÉ ABSOLUE :
 Trivium renouvelle continuellement sa bibliothèque. Tu as L'INTERDICTION FORMELLE de réutiliser un thème ou une œuvre déjà parus dans les éditions précédentes.
 """
     if excluded_themes:
-        prompt += f"\nTHÈMES DÉJÀ TRAITÉS À BANNIR STRICTEMENT :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
+        prompt += f"\nTHÈMES DÉJÀ TRAITÉS À BANNIR :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
     if excluded_titles:
-        prompt += f"\nŒUVRES DÉJÀ RECOMMANDÉES À BANNIR STRICTEMENT :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
+        prompt += f"\nŒUVRES DÉJÀ RECOMMANDÉES À BANNIR :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
 
     prompt += """
 RÈGLE STRICTE POUR LA REVUE DE PRESSE :
@@ -284,7 +314,7 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 """
     return prompt
 
-# MARK: - Fonction Principale de Génération
+# MARK: - Fonction Principale
 
 def generate_daily_edition():
     today_str = datetime.now().strftime("%Y-%m-%d")
@@ -292,7 +322,6 @@ def generate_daily_edition():
 
     os.makedirs("archive", exist_ok=True)
     past_themes, past_titles = load_history_exclusions()
-    print(f"📚 Historique chargé : {len(past_themes)} thèmes et {len(past_titles)} œuvres bannis pour garantir la nouveauté.")
 
     system_prompt = build_system_prompt(past_themes, past_titles)
 
@@ -330,16 +359,14 @@ def generate_daily_edition():
                 if img: item["imageURL"] = img
                 if tracks: item["tracks"] = tracks
 
-    # 1. Mise à jour de l'édition courante
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    # 2. Sauvegarde dans l'archive permanente
     archive_path = f"archive/{today_str}.json"
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition du jour enregistrée dans today.json et archivée dans {archive_path}.")
+    print(f"✅ Édition générée avec jaquettes HD livres/films/albums et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
