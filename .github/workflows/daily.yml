@@ -2,15 +2,16 @@ name: Generate Daily Triptych
 
 on:
   schedule:
-    # Exécution automatique chaque jour à 04h00 UTC (06h00 heure de Paris)
-    - cron: '0 4 * * *'
-  workflow_dispatch: # Déclenchement manuel
+    # 02h17 UTC = 04h17 heure de Paris
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
@@ -23,7 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install requests
 
       - name: Run generation script
         env:
@@ -34,6 +36,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add today.json
-          git commit -m "Update daily triptych [skip ci]" || exit 0
-          git push
+          git add today.json archive/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generate daily triptych [skip ci]" && git push)
