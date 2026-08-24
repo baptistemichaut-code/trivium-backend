@@ -1,181 +1,645 @@
 {
   "accessible": {
-    "themeTitle": "L'Emprise de la Dystopie",
-    "themeSubtitle": "Quand le pouvoir façonne le réel",
+    "themeTitle": "L'Odyssée du Cosmos",
+    "themeSubtitle": "Quand l'humanité contemple l'immensité de l'espace pour questionner son propre avenir",
     "items": [
       {
         "type": "LIVRE",
-        "title": "1984",
-        "creator": "George Orwell",
-        "year": "1949",
-        "origin": "Royaume-Uni",
-        "genre": "Dystopie sociopolitique",
+        "title": "Dune",
+        "creator": "Frank Herbert",
+        "year": "1965",
+        "origin": "États-Unis",
+        "genre": "Science-Fiction",
         "accessibility": "Pop Culture",
-        "formatMetric": "328 pages",
-        "quote": "La liberté est la liberté de dire que deux et deux font quatre.",
-        "anecdote": "George Orwell a écrit le roman affaibli par la tuberculose dans une ferme isolée de l'île de Jura en Écosse, tapant lui-même le manuscrit final sur une machine à écrire fatiguée.",
+        "formatMetric": "688 pages",
+        "quote": "Je ne dois pas avoir peur. La peur est le tueur d'esprit.",
+        "anecdote": "Frank Herbert a trouvé l'inspiration pour la planète Arrakis en observant la stabilisation des dunes de sable par le service forestier de Florence, dans l'Oregon.",
         "tags": [
-          "Dystopie",
-          "Totalitarisme",
-          "Classique"
+          "Science-Fiction",
+          "Messie",
+          "Écologie"
         ],
         "ratings": [
           {
-            "source": "Le Figaro Littéraire",
+            "source": "Le Monde",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un avertissement prophétique majeur d'une puissance intacte."
-          },
-          {
-            "source": "The Guardian",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "L'un des romans les plus terrifiants et indispensables du XXe siècle."
+            "excerpt": "La cathédrale absolue de la science-fiction moderne."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une œuvre monumentale qui continue de façonner notre perception du pouvoir."
+            "excerpt": "Une fresque politique et écologique visionnaire."
+          },
+          {
+            "source": "The Guardian",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre à la hauteur du Seigneur des Anneaux."
           }
         ],
-        "aiSummary": "Dans une société sous surveillance totale dirigée par Big Brother, Winston Smith tente de préserver une parcelle de vérité et de liberté. Ce roman visionnaire sonde les mécanismes de la manipulation de la pensée et la destruction du langage.",
-        "thematicAnalysis": "Orwell met en scène la réduction ultime de l'individu par la manipulation idéologique, démontrant comment le contrôle absolu du langage et du passé annihile la capacité même de résister.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/99/e0/01/99e0015c-4cc8-fc9e-87a5-839709de8bf5/9782818708293-001-x.jpeg/800x800bb.jpg",
+        "aiSummary": "Sur la planète aride d'Arrakis, le jeune Paul Atréides se retrouve au cœur d'une lutte de pouvoir sanglante pour le contrôle de l'Épice, la substance la plus précieuse de l'univers. Confronté à son propre destin messianique, il devra guider le peuple Fremen dans une guerre planétaire.",
+        "thematicAnalysis": "Ce roman inaugure le triptyque spatial en posant les bases de la fascination humaine pour les mondes lointains et les enjeux écologiques fondamentaux.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/3c/6c/3d/3c6c3d98-2583-3f82-6b12-c9f76235dfd7/9782221139202.jpg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=1984+George+Orwell",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Dune+Frank+Herbert",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984+George+Orwell",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Dune+Frank+Herbert",
             "iconName": "bag.fill"
           }
         ],
         "tracks": []
-      }
-    ]
-  },
-  "intermediate": {
-    "themeTitle": "La Poétique du Désir Inassouvi",
-    "themeSubtitle": "L'élégance sublime des amours suspendues",
-    "items": [
+      },
       {
         "type": "FILM",
-        "title": "In the Mood for Love",
-        "creator": "Wong Kar-wai",
-        "year": "2000",
-        "origin": "Hong Kong",
-        "genre": "Drame romantique",
-        "accessibility": "Curieux",
-        "formatMetric": "1h 38m",
-        "quote": "C'était un moment embarrassant. Elle gardait la tête basse pour lui donner une chance de s'approcher.",
-        "anecdote": "Le film a été tourné sans scénario préétabli, Wong Kar-wai improvisant les scènes au fil des mois avec ses acteurs dans une recherche obsessionnelle de couleurs et de textures.",
+        "title": "2001 : L'Odyssée de l'espace",
+        "creator": "Stanley Kubrick",
+        "year": "1968",
+        "origin": "Royaume-Uni / États-Unis",
+        "genre": "Science-Fiction",
+        "accessibility": "Pop Culture",
+        "formatMetric": "2h 29m",
+        "quote": "Je suis désolé, Dave. J'ai bien peur de ne pas pouvoir faire cela.",
+        "anecdote": "Kubrick a fait appel aux ingénieurs de la NASA pour imaginer les interfaces du vaisseau Discovery One et rendre le voyage spatial d'une précision scientifique absolue.",
         "tags": [
-          "Romantisme",
-          "Cinéma d'auteur",
-          "Esthétique"
+          "Chef-d'œuvre",
+          "Cosmos",
+          "IA"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "La quintessence pure du désir retenu et de la grâce cinématographique."
+            "excerpt": "Une expérience sensorielle et métaphysique inégalée."
           },
           {
             "source": "Rotten Tomatoes",
             "score": "92%",
-            "iconName": "percent",
-            "excerpt": "Un chef-d'œuvre visuel et émotionnel d'une élégance inouïe."
+            "iconName": "star.fill",
+            "excerpt": "Un monument visuel qui a redéfini les contours du cinéma."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une valse poignante sur l'amour impossible et la mélancolie des regrets."
+            "excerpt": "Une odyssée poétique d'une ambition monumentale."
           }
         ],
-        "aiSummary": "Dans le Hong Kong étouffant des années 1960, deux voisins découvrent simultanément l'infidélité de leurs conjoints respectifs. En rejouant les gestes de la trahison pour la comprendre, ils nouent un lien tacite d'une délicatesse déchirante.",
-        "thematicAnalysis": "Wong Kar-wai sublime l'absence et la retenue, transformant le cadrage, les robes qipao et les ralentis musicaux en de puissants réceptacles d'une passion refoulée mais impérissable.",
+        "aiSummary": "Un monolithe noir mystérieux guide l'évolution humaine depuis la préhistoire jusqu'à la conquête spatiale. Lors d'une mission vers Jupiter, l'équipage se heurte à la paranoïa de l'intelligence artificielle HAL 9000.",
+        "thematicAnalysis": "Le film matérialise le passage de la fable spatiale littéraire à l'expérience visuelle pure, confrontant l'intelligence humaine à sa créature et à l'infini.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=In+the+Mood+for+Love+Wong+Kar-wai",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=2001+Stanley+Kubrick",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=In+the+Mood+for+Love",
+            "urlString": "https://tv.apple.com/fr/search?term=2001",
             "iconName": "apple.logo"
           }
         ],
         "tracks": []
-      }
-    ]
-  },
-  "expert": {
-    "themeTitle": "L'Anatomie du Temps Domestique",
-    "themeSubtitle": "La décomposition silencieuse du quotidien",
-    "items": [
+      },
       {
-        "type": "FILM",
-        "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
-        "creator": "Chantal Akerman",
-        "year": "1975",
-        "origin": "Belgique",
-        "genre": "Cinéma avant-garde",
-        "accessibility": "Initié",
-        "formatMetric": "3h 21m",
-        "quote": "Rien n'est plus terrifiant que le dérèglement imperceptible d'une routine parfaite.",
-        "anecdote": "Réalisé par Chantal Akerman alors qu'elle n'avait que 25 ans avec une équipe quasi exclusivement féminine, le film a été élu meilleur film de tous les temps par la revue Sight & Sound en 2022.",
+        "type": "ALBUM",
+        "title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+        "creator": "David Bowie",
+        "year": "1972",
+        "origin": "Royaume-Uni",
+        "genre": "Glam Rock",
+        "accessibility": "Pop Culture",
+        "formatMetric": "38 minutes, 11 titres",
+        "quote": "There's a starman waiting in the sky, he'd like to come and meet us.",
+        "anecdote": "Bowie a créé le personnage de Ziggy en fusionnant le rockeur extraterrestre avec les mimiques du mime Lindsay Kemp et l'esthétique du théâtre Kabuki.",
         "tags": [
-          "Avant-garde",
-          "Féminisme",
-          "Minimalisme"
+          "Rock",
+          "Concept",
+          "Glam"
         ],
         "ratings": [
           {
-            "source": "Sight & Sound",
+            "source": "Rolling Stone",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "L'un des albums conceptuels les plus parfaits de l'histoire du rock."
+          },
+          {
+            "source": "Pitchfork",
             "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Un monument d'une rigueur formelle et politique absolue."
+            "excerpt": "Une réinvention absolue de la mythologie rock."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience cinématographique radicale, hypnotique et révolutionnaire."
-          },
-          {
-            "source": "Pitchfork",
-            "score": "9.5/10",
-            "iconName": "star.fill",
-            "excerpt": "Une dissection sonore et visuelle inégalée de l'aliénation ordinaire."
+            "excerpt": "Un hymne cosmique et incandescent."
           }
         ],
-        "aiSummary": "Sur une durée de trois jours, le film retrace dans un temps étiré la routine ultra-rigide d'une veuve bruxelloise entre tâches ménagères et prostitution occasionnelle. Jusqu'au moment où un détail infime vient enrayer la mécanique parfaite.",
-        "thematicAnalysis": "Chantal Akerman invente une grammaire filmique de la durée brute où le plan fixe transforme l'espace domestique en une arène politique, révélant la violence enfouie dans la répétition des gestes conditionnés.",
+        "aiSummary": "David Bowie incarne Ziggy Stardust, un extraterrestre androgyne venu sauver une Terre condamnée en devenant une rockstar messianique. Cet album culte enchaîne les tubes entre théâtralité glam et mélodies intemporelles.",
+        "thematicAnalysis": "Cet album clôt la trilogie pop en transformant le thème de l'espace en une métaphore spectaculaire de la métamorphose et du salut par la musique.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5f/fa/56/5ffa56c2-ea1f-7a17-6bad-192ff9b6476d/825646124206.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/the-rise-and-fall-of-ziggy-stardust-and-the/1039796877?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/The+Rise+and+Fall+of+Ziggy+Stardust+and+the+Spiders+from+Mars+David+Bowie",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Five Years (2012 Remaster)",
+            "duration": "4:43",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/0d/d7/9a0dd737-a348-76bc-63fc-7b9631c49140/mzaf_8387461032515024854.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Soul Love (2012 Remaster)",
+            "duration": "3:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/3e/a2/3b3ea2d0-448a-6791-fd41-e57c366bdad6/mzaf_17765191153382775043.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Moonage Daydream (2012 Remaster)",
+            "duration": "4:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/b1/bf/39b1bf0c-8b3b-fbe3-a303-e69e8ee46918/mzaf_1281832628817630618.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Starman (2012 Remaster)",
+            "duration": "4:14",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/22/a3/af22a300-39a6-71fd-2933-b09ab5b896cb/mzaf_1685297233127594181.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "It Ain't Easy (2012 Remaster)",
+            "duration": "2:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/11/cc/72/11cc7223-c6d5-d20a-835f-a81a19528f29/mzaf_4916792598885872100.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Lady Stardust (2012 Remaster)",
+            "duration": "3:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/73/8d/94738d06-5633-b5dc-9a51-d324a64d45de/mzaf_12132613984387838103.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Star (2012 Remaster)",
+            "duration": "2:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/47/2c/3b472c14-d861-4452-a9cb-ef7e2395e4cb/mzaf_7720196399104605017.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Hang on to Yourself (2012 Remaster)",
+            "duration": "2:39",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/e0/63/7ee06334-8e19-f0bc-090f-4eb0a913c814/mzaf_7491307762655647783.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Ziggy Stardust (2012 Remaster)",
+            "duration": "3:13",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/ec/07/aaec07bf-f18e-3177-a197-414b5438010f/mzaf_7317737316865701540.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Suffragette City (2012 Remaster)",
+            "duration": "3:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/52/de/1e52de24-314f-1cf7-e247-130d50ac9ef0/mzaf_15773259290634523924.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Rock 'n' Roll Suicide (2012 Remaster)",
+            "duration": "2:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/61/d0/9a61d0bf-8cde-5813-a349-00e0b204d75e/mzaf_8903607175054850279.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "Les Labyrinthes de la Mémoire",
+    "themeSubtitle": "Quand le souvenir reconstruit la réalité à travers les dédales de l'esprit",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Kafka sur la plage",
+        "creator": "Haruki Murakami",
+        "year": "2002",
+        "origin": "Japon",
+        "genre": "Réalisme Magique",
+        "accessibility": "Curieux",
+        "formatMetric": "640 pages",
+        "quote": "La mémoire réchauffe le corps de l'intérieur. Mais en même temps, elle le déchire.",
+        "anecdote": "Murakami a écrit le livre sans plan préconçu, se laissant porter par les associations d'idées inconscientes tout en écoutant du jazz et de la musique classique.",
+        "tags": [
+          "Mémoire",
+          "Quête",
+          "Onirisme"
+        ],
+        "ratings": [
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un roman vertigineux qui envoûte le lecteur de bout en bout."
+          },
+          {
+            "source": "The New York Times",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une exploration magistrale du subconscient et des traumatismes passés."
+          },
+          {
+            "source": "Le Figaro Littéraire",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une symphonie onirique d'une délicatesse rare."
+          }
+        ],
+        "aiSummary": "Le jeune Kafka Tamura fuit sa maison pour échapper à une malédiction œdipienne, tandis que Nakata, un vieil homme amnésique qui parle aux chats, entreprend un voyage parallèle. Leurs destins s'entremêlent dans un monde où le réel glisse sans cesse vers le rêve.",
+        "thematicAnalysis": "Le roman lance ce triptyque en explorant comment la mémoire refoulée façonne l'identité à travers des symboles oniriques et mystérieux.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/19/e7/af/19e7afa1-e3e5-eec1-b7f6-8566a00f3d85/9782714498885.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Kafka+sur+la+plage+Haruki+Murakami",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Kafka+sur+la+plage+Haruki+Murakami",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "creator": "Michel Gondry",
+        "year": "2004",
+        "origin": "États-Unis",
+        "genre": "Drame / Romance / SF",
+        "accessibility": "Curieux",
+        "formatMetric": "1h 48m",
+        "quote": "Vous pouvez effacer quelqu'un de votre esprit. Le sortir de votre cœur est une autre histoire.",
+        "anecdote": "Pour créer les effets visuels du cerveau de Joel sans images de synthèse, Gondry a utilisé des illusions d'optique en direct sur le plateau et des décors à échelles modifiées.",
+        "tags": [
+          "Amour",
+          "Souvenir",
+          "Inventif"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une invention visuelle permanente au service de l'émotion."
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "92%",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre de romantisme déstructuré et d'imagination."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un puzzle sentimental brillant et bouleversant."
+          }
+        ],
+        "aiSummary": "Après une rupture douloureuse, Joel découvre que son ex-petite amie Clementine a fait effacer tous ses souvenirs de leur relation. Il décide de subir le même procédé, mais en revoyant défiler ses souvenirs en cours d'effacement, il tente désespérément d'en préserver la trace.",
+        "thematicAnalysis": "Ce film traduit visuellement la décomposition de la mémoire amoureuse et la volonté tragique de préserver l'empreinte de l'autre.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Jeanne+Dielman%2C+23%2C+quai+du+Commerce%2C+1080+Bruxelles+Chantal+Akerman",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Eternal+Sunshine+of+the+Spotless+Mind+Michel+Gondry",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Jeanne+Dielman%2C+23%2C+quai+du+Commerce%2C+1080+Bruxelles",
+            "urlString": "https://tv.apple.com/fr/search?term=Eternal+Sunshine+of+the+Spotless+Mind",
             "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Dummy",
+        "creator": "Portishead",
+        "year": "1994",
+        "origin": "Royaume-Uni",
+        "genre": "Trip-Hop",
+        "accessibility": "Curieux",
+        "formatMetric": "49 minutes, 11 titres",
+        "quote": "Give me a reason to love you, give me a reason to be a woman.",
+        "anecdote": "Pour obtenir un son vintage et mélancolique, le groupe enregistrait des sons sur vinyle avant de piétiner les disques pour ajouter des craquements authentiques.",
+        "tags": [
+          "Mélancolie",
+          "Cinématique",
+          "Culte"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.5/10",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre atmosphérique d'une mélancolie envoûtante."
+          },
+          {
+            "source": "NME",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le disque fondateur d'une époque et d'un son inimitables."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une plongée magnifique dans les ombres de l'âme."
+          }
+        ],
+        "aiSummary": "Chef-d'œuvre du trip-hop, Dummy fusionne beats au ralenti, samples de films noirs et la voix déchirante de Beth Gibbons. L'album distille une ambiance nocturne où la nostalgie et les fantômes du passé affleurent à chaque mesure.",
+        "thematicAnalysis": "L'album clôt le parcours en offrant la bande-son idéale de la réminiscence, où la musique devient le réceptacle des traumatismes et de la mélancolie.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c1/71/93/c1719342-df7d-e9c5-c87c-53dae5afb289/00042282855329.rgb.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/dummy/1440653096?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Dummy+Portishead",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Mysterons",
+            "duration": "5:05",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/92/39/8f/92398f7d-f6a4-2d22-c356-54f780eb1ee0/mzaf_12489366547507857942.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Sour Times",
+            "duration": "4:12",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/20/5b/d9/205bd979-1a89-a48c-fe0b-a77233853020/mzaf_1292816338754784371.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Strangers",
+            "duration": "3:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1b/28/db/1b28db9a-a67a-5499-c9f6-8c2532eb2f16/mzaf_13653158980900625730.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "It Could Be Sweet",
+            "duration": "4:17",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/d0/d6/d9d0d616-3579-4386-767e-da16aaaeaf5c/mzaf_9468935976318633670.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Wandering Star",
+            "duration": "4:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/13/14/76/131476cc-aafa-0040-0bde-b191a34a3026/mzaf_9761746535304514170.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "It's a Fire",
+            "duration": "3:46",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/59/ad/e2/59ade21f-ef9a-e32b-34ea-454fce994eed/mzaf_902879244988904131.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Numb",
+            "duration": "3:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/c9/8f/27c98fea-6e32-1b62-059d-a2cb154cd346/mzaf_4563462901116754586.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Roads",
+            "duration": "5:03",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/53/d1/b8/53d1b804-aba5-68ed-4fb5-ce9514b970c8/mzaf_1949279649016114866.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Pedestal",
+            "duration": "3:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/34/73/63/34736389-0a19-988d-417e-5fc739d630d5/mzaf_13134652268141240035.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Biscuit",
+            "duration": "5:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/73/a0/44/73a044f4-5410-33f4-bb7a-4e683d85fb32/mzaf_11909222305215845434.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Glory Box",
+            "duration": "5:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e9/12/99/e91299a5-115b-85d5-c6a5-7d7ffca699cf/mzaf_16022543165233599469.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "La Dissolution du Récit",
+    "themeSubtitle": "Déconstruire les formes traditionnelles pour atteindre la substance pure de la création",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "La Jalousie",
+        "creator": "Alain Robbe-Grillet",
+        "year": "1957",
+        "origin": "France",
+        "genre": "Nouveau Roman",
+        "accessibility": "Initié",
+        "formatMetric": "224 pages",
+        "quote": "Maintenant la voix de A... s'est tue. Mais le bruit de la chenille écrasée continue de vibrer.",
+        "anecdote": "Le titre joue sur un double sens strict : l'émotion passionnelle et le store à lames jalousie à travers lequel un observateur invisible scrute chaque geste.",
+        "tags": [
+          "Nouveau Roman",
+          "Avant-Garde",
+          "Objectivisme"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le manifeste le plus pur et le plus rigoureux du Nouveau Roman."
+          },
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience de lecture exigeante qui réinvente le regard."
+          },
+          {
+            "source": "The Times Literary Supplement",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une prouesse littéraire où l'absence devient présence."
+          }
+        ],
+        "aiSummary": "Dans une plantation bananière, un narrateur jamais nommé observe de manière obsessionnelle et clinique les faits et gestes de sa femme A... et de leur voisin Franck. Le récit refuse toute psychologie pour ne proposer qu'une géométrie stricte des objets et des regards.",
+        "thematicAnalysis": "Ce roman ouvre le triptyque exigeant en supprimant l'intrigue classique au profit d'une observation clinique et déstructurée de l'espace.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/93/aa/5f/93aa5fe7-9b0f-20fa-e381-f328fa4348f9/9782707324146.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=La+Jalousie+Alain+Robbe-Grillet",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La+Jalousie+Alain+Robbe-Grillet",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Le Tango de Satan",
+        "creator": "Béla Tarr",
+        "year": "1994",
+        "origin": "Hongrie",
+        "genre": "Drame Expérimental",
+        "accessibility": "Initié",
+        "formatMetric": "7h 12m",
+        "quote": "En ce cas, nous attendons. Nous attendons que quelque chose se passe.",
+        "anecdote": "Le film est composé d'à peine 150 plans-séquences sur plus de sept heures, le réalisateur attendant parfois des jours la pluie diluvienne parfaite pour tourner.",
+        "tags": [
+          "Plan-Séquence",
+          "Radical",
+          "Hypnotique"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre titanique et fondatrice du cinéma contemporain."
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "97%",
+            "iconName": "star.fill",
+            "excerpt": "Un tour de force visuel d'une beauté dévastatrice."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un voyage temporel hypnotique hors du temps commercial."
+          }
+        ],
+        "aiSummary": "Dans une ferme collective délabrée de Hongrie après la chute du communisme, les habitants croupissent dans la boue et l'alcoolisme. Le retour d'Irimiás, un faux prophète charismatique qu'on croyait mort, va sceller leur destin dans une danse macabre.",
+        "thematicAnalysis": "Cette œuvre étire la temporalité cinématographique jusqu'à l'extrême, incarnant la dissolution du temps narratif traditionnel dans une expérience hypnotique.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Le+Tango+de+Satan+B%C3%A9la+Tarr",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Le+Tango+de+Satan",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Trout Mask Replica",
+        "creator": "Captain Beefheart & His Magic Band",
+        "year": "1969",
+        "origin": "États-Unis",
+        "genre": "Avant-Rock / Blues Expérimental",
+        "accessibility": "Initié",
+        "formatMetric": "78 minutes, 28 titres",
+        "quote": "Fast and bulbous! That's right, The Mascara Snake!",
+        "anecdote": "Captain Beefheart a enfermé ses musiciens dans une maison pendant huit mois d'embargo quasi-total pour répéter 14 heures par jour jusqu'à la perfection des structures atonales.",
+        "tags": [
+          "Avant-Garde",
+          "Polyrythmie",
+          "Radical"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre de déconstruction musicale absolue."
+          },
+          {
+            "source": "Rolling Stone",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une explosion d'avant-garde qui a pulvérisé les règles du rock."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le chaos organisé le plus brillant et fascinant jamais enregistré."
+          }
+        ],
+        "aiSummary": "Produit par Frank Zappa, cet album double est une déconstruction radicale du blues, du jazz et du rock. Entre rythmes asymétriques, guitares discordantes et voix gutturales, l'album crée une forme d'art sonore totalement inédite et imprévisible.",
+        "thematicAnalysis": "Cet album parachève le thème expert en déstructurant l'harmonie et le rythme musical, prouvant que de la ruine des structures naît une liberté esthétique totale.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/search?term=Trout+Mask+Replica+Captain+Beefheart+%26+His+Magic+Band",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Trout+Mask+Replica+Captain+Beefheart+%26+His+Magic+Band",
+            "iconName": "music.note"
           }
         ],
         "tracks": []
