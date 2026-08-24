@@ -15,10 +15,10 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Utilitaires de Normalisation & Recherche
+# MARK: - Utilitaires de Recherche & Normalisation
 
 def clean_search_title(title: str) -> str:
-    """Supprime les parenthèses, crochets et sous-titres superflus."""
+    """Nettoie parenthèses, crochets et sous-titres superflus."""
     t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
@@ -34,7 +34,7 @@ def normalize_text(text: str) -> str:
 def safe_url_encode(text: str) -> str:
     return urllib.parse.quote_plus(str(text).strip())
 
-# MARK: - Gestion de l'Historique & Déduplication
+# MARK: - Gestion de l'Historique & Déduplication Absolue
 
 def load_history_exclusions():
     used_themes = set()
@@ -255,11 +255,14 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             {"name": "Deezer", "category": "Streaming audio & HiFi", "urlString": f"https://www.deezer.com/search/{encoded_search}", "iconName": "music.note"}
         ]
 
+# MARK: - Sanitizer / Garant de Structure Complète (9 Œuvres)
+
 def sanitize_and_fill_defaults(data: dict) -> dict:
     sanitized = {}
     tiers = ["accessible", "intermediate", "expert"]
     default_theme = {"themeTitle": "Édition du jour", "themeSubtitle": "Trois œuvres reliées par un fil invisible", "items": []}
 
+    total_items = 0
     for tier in tiers:
         t_data = data.get(tier, default_theme)
         if not isinstance(t_data, dict):
@@ -282,7 +285,9 @@ def sanitize_and_fill_defaults(data: dict) -> dict:
                 "year": str(item.get("year") or "2000"),
                 "origin": str(item.get("origin") or "France"),
                 "genre": str(item.get("genre") or "Culture"),
-                "accessibility": str(item.get("accessibility") or "Pop Culture"),
+                "accessibility": str(item.get("accessibility") or (
+                    "Pop Culture" if tier == "accessible" else ("Curieux" if tier == "intermediate" else "Initié")
+                )),
                 "formatMetric": str(item.get("formatMetric") or ""),
                 "quote": str(item.get("quote") or ""),
                 "anecdote": str(item.get("anecdote") or ""),
@@ -305,21 +310,33 @@ def sanitize_and_fill_defaults(data: dict) -> dict:
                     })
 
             sanitized[tier]["items"].append(s_item)
+            total_items += 1
 
+    print(f"📊 Nombre total d'œuvres structurées : {total_items}/9 (accessible: {len(sanitized['accessible']['items'])}, intermediate: {len(sanitized['intermediate']['items'])}, expert: {len(sanitized['expert']['items'])})")
     return sanitized
+
+# MARK: - Prompt Éditorial Strict (9 Œuvres Complètes)
 
 def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
     prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
-LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
+LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE (citations et critiques traduites si besoin).
 
-CALIBRATION DES 3 PROFILS CULTURELS :
-1. "accessible" (Pop Culture) : Monuments culturels et chefs-d'œuvre universels (musique : Pink Floyd, Daft Punk, Queen, The Beatles ; cinéma : Miyazaki, Star Wars, Le Parrain ; littérature : Alice au pays des merveilles, 1984, Stephen King).
-2. "intermediate" (Curieux) : Pépites indé, cinéma d'auteur marquant, albums cultes alternatifs.
-3. "expert" (Initié) : Avant-garde, expérimentations pointues (ex. Xiu Xiu, Faust, cinéma underground), littérature exigeante.
+RÈGLE ABSOLUE SUR LE VOLUME (TRÈS STRICT) :
+Tu DOIS générer EXACTEMENT 9 ŒUVRES AU TOTAL réparties ainsi :
+- Profil "accessible" (Pop Culture) : EXACTEMENT 3 œuvres (1 LIVRE, 1 FILM, 1 ALBUM).
+- Profil "intermediate" (Curieux) : EXACTEMENT 3 œuvres (1 LIVRE, 1 FILM, 1 ALBUM).
+- Profil "expert" (Initié) : EXACTEMENT 3 œuvres (1 LIVRE, 1 FILM, 1 ALBUM).
+Chaque profil possède son propre thème ou sous-thème reliant harmonieusement ses 3 œuvres.
 
-Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE.
-Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") avec les barèmes authentiques de chaque média (Pitchfork sur 10, Télérama sur 5, Rotten Tomatoes en %, etc.).
+CALIBRATION DES 3 PROFILS :
+1. "accessible" (Pop Culture) : Grands classiques universels et monuments populaires (musique : Pink Floyd, Daft Punk, Queen, The Beatles ; cinéma : Miyazaki, Star Wars, Le Parrain ; littérature : Alice au pays des merveilles, 1984, Stephen King).
+2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
+3. "expert" (Initié) : Avant-garde, expérimentations, cinéma d'art et essai exigeant.
+
+RÈGLE DES CRITIQUES & BARÈMES :
+Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") de 3 médias distincts avec leurs barèmes réels (Pitchfork sur 10, Télérama sur 5, Rotten Tomatoes en %, etc.).
+Pour "year", indique l'année de création originale de l'œuvre.
 
 RÈGLE D'UNICITÉ :
 Interdiction de réutiliser des thèmes ou œuvres passés.
@@ -330,11 +347,11 @@ Interdiction de réutiliser des thèmes ou œuvres passés.
         prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
 
     prompt += """
-Format JSON attendu :
+FORMAT JSON STRICT ATTENDU (AVEC TOUTES LES 9 ŒUVRES) :
 {
   "accessible": {
-    "themeTitle": "Titre du thème",
-    "themeSubtitle": "Sous-titre poétique",
+    "themeTitle": "Titre du thème Pop Culture",
+    "themeSubtitle": "Sous-titre poétique reliant les 3 œuvres",
     "items": [
       {
         "type": "LIVRE",
@@ -345,8 +362,8 @@ Format JSON attendu :
         "genre": "Littérature fantastique",
         "accessibility": "Pop Culture",
         "formatMetric": "192 pages",
-        "quote": "Citation clé",
-        "anecdote": "Une anecdote captivante",
+        "quote": "Citation clé marquante",
+        "anecdote": "Une anecdote captivante sur la genèse",
         "tags": ["Classique", "Merveilleux"],
         "ratings": [
           {"source": "Le Figaro Littéraire", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre intemporel."},
@@ -355,11 +372,67 @@ Format JSON attendu :
         ],
         "aiSummary": "Résumé en 2 phrases.",
         "thematicAnalysis": "Analyse du lien avec le thème."
+      },
+      {
+        "type": "FILM",
+        "title": "Titre du film",
+        "creator": "Nom du réalisateur",
+        "year": "2001",
+        "origin": "Japon",
+        "genre": "Animation / Fantastique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "2h 05m",
+        "quote": "Citation clé",
+        "anecdote": "Anecdote de tournage",
+        "tags": ["Animation", "Chef-d'œuvre"],
+        "ratings": [
+          {"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Un sommet du cinéma mondial."},
+          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Un voyage initiatique inoubliable."},
+          {"source": "Rotten Tomatoes", "score": "97%", "iconName": "star.fill", "excerpt": "Une merveille absolue de poésie visuelle."}
+        ],
+        "aiSummary": "Résumé captivant du film.",
+        "thematicAnalysis": "Lien avec le thème."
+      },
+      {
+        "type": "ALBUM",
+        "title": "Titre de l'album",
+        "creator": "Nom de l'artiste",
+        "year": "1973",
+        "origin": "Royaume-Uni",
+        "genre": "Rock Psychédélique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "42 minutes, 10 titres",
+        "quote": "Parole ou citation clé",
+        "anecdote": "Anecdote d'enregistrement",
+        "tags": ["Rock", "Culte"],
+        "ratings": [
+          {"source": "Rolling Stone", "score": "5/5", "iconName": "star.fill", "excerpt": "Le monument ultime du rock conceptuel."},
+          {"source": "Pitchfork", "score": "9.3/10", "iconName": "star.fill", "excerpt": "Une perfection formelle inégalée."},
+          {"source": "Les Inrockuptibles", "score": "5/5", "iconName": "star.fill", "excerpt": "Un album d'une puissance intacte."}
+        ],
+        "aiSummary": "Résumé de l'œuvre musicale.",
+        "thematicAnalysis": "Lien avec le triptyque."
       }
     ]
   },
-  "intermediate": { ... },
-  "expert": { ... }
+  "intermediate": {
+    "themeTitle": "Titre du thème Curieux",
+    "themeSubtitle": "Sous-titre poétique reliant les 3 œuvres",
+    "items": [
+      { "type": "LIVRE", ... },
+      { "type": "FILM", ... },
+      { "type": "ALBUM", ... }
+    ]
+  },
+  "expert": {
+    "themeTitle": "Titre du thème Initié",
+    "themeSubtitle": "Sous-titre poétique reliant les 3 œuvres",
+    "items": [
+      { "type": "LIVRE", ... },
+      { "type": "FILM", ... },
+      { "type": "ALBUM", ... }
+    ]
+  }
 }
 """
     return prompt
@@ -381,7 +454,7 @@ def generate_daily_edition():
         system_instruction=system_prompt
     )
 
-    response = model.generate_content("Génère un triptyque 100% inédit et calibré en français.")
+    response = model.generate_content("Génère l'édition complète du jour : 3 profils contenant chacun EXACTEMENT 3 œuvres (Livre, Film, Album), soit 9 œuvres au total.")
     raw_data = json.loads(response.text)
 
     data = sanitize_and_fill_defaults(raw_data)
@@ -416,7 +489,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition du jour générée et archivée dans {archive_path}.")
+    print(f"✅ 9 œuvres enrichies et archivées avec succès dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
