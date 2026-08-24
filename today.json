@@ -1,772 +1,686 @@
 {
   "accessible": {
-    "themeTitle": "La Mémoire des Murs",
-    "themeSubtitle": "Comment nos édifices et espaces urbains absorbent, gardent et révèlent les fêlures invisibles de ceux qui les traversent.",
+    "themeTitle": "La Marge du Monde",
+    "themeSubtitle": "Quand le territoire physique devient le miroir de nos quêtes d'évasion et d'identité.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "L'Ombre du vent",
-        "creator": "Carlos Ruiz Zafón",
-        "year": "2019",
-        "origin": "Espagne",
-        "genre": "Roman mystère",
+        "title": "La Carte et le Territoire",
+        "creator": "Michel Houellebecq",
+        "year": "2022",
+        "origin": "France",
+        "genre": "Roman contemporain",
         "accessibility": "Pop Culture",
-        "formatMetric": "576 pages",
-        "quote": "Chaque livre, chaque tome que tu vois a une âme. L'âme de celui qui l'a écrit, et l'âme de ceux qui l'ont lu.",
-        "anecdote": "Carlos Ruiz Zafón a lui-même composé une bande originale au piano pour accompagner la lecture de son livre, illustrant musicalement les ruelles sombres de Barcelone.",
+        "formatMetric": "432 pages",
+        "quote": "La représentation du monde est plus intéressante que le monde lui-même.",
+        "anecdote": "Michel Houellebecq s'est mis en scène dans le roman sous les traits d'un écrivain solitaire avant d'orchestrer sa propre fin fictive particulièrement macabre.",
         "tags": [
-          "Barcelone",
-          "Bibliothèque",
-          "Mystère"
+          "Art Moderne",
+          "Satire",
+          "Prix Goncourt"
         ],
         "ratings": [
           {
-            "source": "Le Figaro",
+            "source": "Le Monde",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un roman gothique et lumineux qui transforme la ville de Barcelone en labyrinthe sacré."
+            "excerpt": "Une satire mélancolique et brillante de notre société contemporaine."
           },
           {
             "source": "Télérama",
             "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Une déclaration d'amour captivante aux livres et à la mémoire des lieux."
-          },
-          {
-            "source": "El País",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de narration où l'architecture urbaine devient un personnage à part entière."
-          }
-        ],
-        "aiSummary": "Dans la Barcelone des années 1940, le jeune Daniel découvre le 'Cimetière des Livres Oubliés' et un ouvrage maudit signé Julián Carax. Cette découverte le plonge dans un réseau de secrets enfouis au cœur des vieux palais catalans.",
-        "thematicAnalysis": "Zafón utilise la géographie gothique de Barcelone pour matérialiser les traumatismes de la guerre civile. Les bâtiments ne sont pas de simples décors mais des coffres-forts mémoriels qui refusent d'oublier le passé.",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Ombre%20du%20vent%20Carlos%20Ruiz%20Zaf%C3%B3n",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Ombre%20du%20vent%20Carlos%20Ruiz%20Zaf%C3%B3n",
-            "iconName": "bag.fill"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/ab/ea/b4/abeab40b-8c4f-e26a-7486-3e8784c38af4/9782330129255.jpg/800x800bb.jpg"
-      },
-      {
-        "type": "FILM",
-        "title": "Parasite",
-        "creator": "Bong Joon-ho",
-        "year": "2019",
-        "origin": "Corée du Sud",
-        "genre": "Thriller social",
-        "accessibility": "Pop Culture",
-        "formatMetric": "2h 12m",
-        "quote": "Tu sais quel genre de plan ne rate jamais ? Aucun plan. Parce que si tu n'as pas de plan, rien ne peut aller de travers.",
-        "anecdote": "La luxueuse demeure de la famille Park n'existait pas : elle a été entièrement construite sur un terrain vague en suivant des critères stricts de perspective théâtrale imposés par le réalisateur.",
-        "tags": [
-          "Architecture",
-          "Lutte de classes",
-          "Thriller"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une leçon magistrale de mise en scène où l'espace dicte la tragédie humaine."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Virtuose, féroce et cruellement drôle. Un sommet du cinéma contemporain."
-          },
-          {
-            "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un opéra social où la verticalité des décors raconte la fracture du monde."
-          }
-        ],
-        "aiSummary": "Une famille au chômage s'infiltre méthodiquement dans le quotidien d'une riche dynastie en occupant tour à tour tous les postes de leur demeure ultra-moderne. Une coexistence pacifique jusqu'à ce qu'un secret révélé dans les fondations ne fasse tout basculer.",
-        "thematicAnalysis": "Le film transforme la maison contemporaine en métaphore spatiale de la lutte des classes. Entre le semi-subsol des pauvres et les lignes épurées des riches, l'architecture piège les corps et accumule une violence sociale prête à exploser.",
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Parasite%20Bong%20Joon-ho",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Parasite",
-            "iconName": "apple.logo"
-          }
-        ]
-      },
-      {
-        "type": "ALBUM",
-        "title": "The Wall",
-        "creator": "Pink Floyd",
-        "year": "1979",
-        "origin": "Royaume-Uni",
-        "genre": "Rock progressif",
-        "accessibility": "Pop Culture",
-        "formatMetric": "81 minutes (23 titres)",
-        "quote": "All in all it was all just bricks in the wall.",
-        "anecdote": "L'idée du mur est venue à Roger Waters après avoir ressenti un tel détachement envers son public lors d'un concert à Montréal qu'il a eu le désir physique d'élever une barrière de briques sur scène.",
-        "tags": [
-          "Opéra Rock",
-          "Isolement",
-          "Concept"
-        ],
-        "ratings": [
-          {
-            "source": "Rolling Stone",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Le monument ultime du rock conceptuel, déchirant et grandiose."
-          },
-          {
-            "source": "Pitchfork",
-            "score": "9.0/10",
-            "iconName": "star.fill",
-            "excerpt": "Une cathédrale sonore consacrée aux névroses et au repli sur soi."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un opéra visuel et auditif qui n'a rien perdu de sa charge prophétique."
-          }
-        ],
-        "aiSummary": "Traumatisé par la guerre, le système scolaire et les échecs sentimentaux, le rockeur Pink se construit un mur mental pour se couper du reste du monde. Cet album retrace brique par brique l'édification de son enfermement psychique.",
-        "thematicAnalysis": "L'architecture s'incarne ici sous sa forme la plus brutale et psychologique : le mur comme protection devenue prison. La musique traduit le processus où la pierre mentale étouffe la sensibilité humaine.",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/search?term=The%20Wall%20Pink%20Floyd",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Spotify",
-            "category": "Streaming audio",
-            "urlString": "https://open.spotify.com/search/The%20Wall%20Pink%20Floyd",
-            "iconName": "waveform"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "In the Flesh?",
-            "duration": "3:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9e/00/ce/9e00ce3f-e24b-c933-2906-57c9c6adbe64/mzaf_8206572726959166944.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "The Thin Ice",
-            "duration": "2:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/0e/d6/ee0ed6b1-9b7b-2315-f352-0a484e2ffc7a/mzaf_6534653370309112636.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Another Brick In the Wall, Pt. 1",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/0a/b2/7f0ab2de-c58f-ab90-aaa7-69e76ea1614e/mzaf_13903338154361109472.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "The Happiest Days of Our Lives",
-            "duration": "1:51",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6a/94/bc/6a94bcd6-8a5a-c7cb-d633-e1152dfcdd34/mzaf_17081166823592607777.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Another Brick In the Wall, Pt. 2",
-            "duration": "3:58",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f8/a2/cd/f8a2cd4a-2af9-f34f-3684-89e3304c102c/mzaf_376000686139681175.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Mother",
-            "duration": "5:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/fa/a1/0afaa116-5108-ebf2-f2b3-9d7e0afa9075/mzaf_6396232943440433611.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Goodbye Blue Sky",
-            "duration": "2:47",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/6b/90/cd6b902b-58d6-92e3-23b8-73806ead85c4/mzaf_15564784983603777155.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Empty Spaces",
-            "duration": "2:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f1/a2/39/f1a239f0-19f3-9138-f3da-27ec91af1c73/mzaf_17079476583582930162.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Young Lust",
-            "duration": "3:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/74/a1/61/74a1613a-0538-afd8-d425-b7e3a2d87815/mzaf_15083185785106020855.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "One of My Turns",
-            "duration": "3:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/63/c6/b5/63c6b591-b046-38c1-79a3-cffa63239875/mzaf_16319769771609696767.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Don't Leave Me Now",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/41/35/3b41359c-ec27-06f7-139d-3bf1f5f2f47b/mzaf_14306272745913211721.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Another Brick In the Wall, Pt. 3",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0b/48/c6/0b48c6b4-f3a3-7158-ad4e-cfb3b71cc5aa/mzaf_10533122211583635152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Goodbye Cruel World",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/f8/31/cff831d2-a0f5-b767-72d2-da5b7e193a15/mzaf_10120418368130687063.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 1,
-            "title": "Hey You",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/fd/c8/b9fdc82e-07a0-56b7-40d2-ca30540b1516/mzaf_18128670058523403289.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Is There Anybody Out There?",
-            "duration": "2:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/37/99/6f379960-0ba0-5be6-ba71-701616aa1053/mzaf_14770994261006181754.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Nobody Home",
-            "duration": "3:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/44/7b/b1447b54-a08e-9219-4f27-08cf827f77b3/mzaf_15898104863874072273.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Vera",
-            "duration": "1:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/40/d4/1e/40d41ef9-208b-2269-15d6-36342f192dfc/mzaf_12749720877812999437.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Bring the Boys Back Home",
-            "duration": "1:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/13/ed/f113ed1f-a553-8d58-8217-9973b54e1693/mzaf_1006567261111392294.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Comfortably Numb",
-            "duration": "6:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fe/44/11/fe441140-ff52-28ef-d7c4-d87b3084d959/mzaf_9494577035851753023.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "The Show Must Go On",
-            "duration": "1:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/4a/f8/574af864-88a4-16d4-c64e-d9857adc8b9a/mzaf_12375970921451753152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "In the Flesh",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1f/77/03/1f7703d5-4adf-b207-69a1-92e2523a14b7/mzaf_8141171389362838363.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Run Like Hell",
-            "duration": "4:23",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/58/03/cf/5803cfbc-f27f-a1ef-a55b-dd4bc0993dbc/mzaf_14125362445130198402.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Waiting for the Worms",
-            "duration": "3:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/85/71/8f857136-3285-d9c2-18f3-9fc11c99b5b2/mzaf_18212995088536362482.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Stop",
-            "duration": "0:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/b3/23/7eb32303-9966-9fff-e74b-d812db4afe06/mzaf_872179588633858960.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "The Trial",
-            "duration": "5:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/8a/4e/be8a4eb9-fc0b-3695-d8c8-d7a86fcb410a/mzaf_16711526069530791059.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Outside the Wall",
-            "duration": "1:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/b4/45/1db445f0-5657-189d-07de-c0794b7bcd2f/mzaf_13560913112561824223.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "intermediate": {
-    "themeTitle": "La Mémoire des Murs",
-    "themeSubtitle": "Comment nos édifices et espaces urbains absorbent, gardent et révèlent les fêlures invisibles de ceux qui les traversent.",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "La Vie mode d'emploi",
-        "creator": "Georges Perec",
-        "year": "2011",
-        "origin": "France",
-        "genre": "Roman Oulipien",
-        "accessibility": "Curieux",
-        "formatMetric": "600 pages",
-        "quote": "Regardez de toutes vos forces, regardez toujours. L'art de vivre est une question de regard.",
-        "anecdote": "Perec a utilisé la grille d'un échiquier de 10x10 et le problème mathématique du 'cavalier' pour déterminer l'ordre exact d'exploration des pièces de l'immeuble.",
-        "tags": [
-          "Oulipo",
-          "Immeuble",
-          "Labyrinthe"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un vertige romanesque inégalé qui réinvente la littérature de fond en comble."
-          },
-          {
-            "source": "Libération",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une somme encyclopédique hilarante et poignante sur la condition humaine."
-          },
-          {
-            "source": "Le Nouvel Observateur",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un monument de patience et de poésie découpé comme un puzzle géant."
-          }
-        ],
-        "aiSummary": "Au 11 rue Simon-Crubellier à Paris, la façade d'un immeuble est soulevée comme une maison de poupée. Le roman décrit pièce par pièce, objet par objet, les histoires croisées de ses habitants au cours d'un même instant.",
-        "thematicAnalysis": "Perec fait de la structure même de l'immeuble le réceptacle des vécus effacés. Les murs retiennent la poussière, les obsessions et les drames minuscules d'une communauté fragmentée.",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Vie%20mode%20d%27emploi%20Georges%20Perec",
-            "iconName": "bag.fill"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/06/c1/8c/06c18c32-cee9-74f2-7473-1f58153c041b/9782213674063-X.jpg/800x800bb.jpg"
-      },
-      {
-        "type": "FILM",
-        "title": "Playtime",
-        "creator": "Jacques Tati",
-        "year": "1967",
-        "origin": "France",
-        "genre": "Comédie burlesque",
-        "accessibility": "Curieux",
-        "formatMetric": "2h 04m",
-        "quote": "Dans ce monde de verre et d'acier, le silence est le bruit le plus assourdissant.",
-        "anecdote": "Pour ce film, Tati a fait construire une véritable ville en béton, verre et acier aux portes de Paris, surnommée 'Tativille', ce qui a entraîné sa ruine financière.",
-        "tags": [
-          "Modernisme",
-          "Verre",
-          "Choregraphie"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre absolu du cinéma mondial, où l'espace devient pure musique."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une satire sublime de la modernité urbaine portée par un sens du détail génial."
-          },
-          {
-            "source": "The Guardian",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une expérience visuelle révolutionnaire qui réapprend au spectateur à regarder le monde."
-          }
-        ],
-        "aiSummary": "Dans un Paris ultra-moderne fait de gratte-ciel identiques et de surfaces vitrées, Monsieur Hulot tente de retrouver un contact tout en errant dans un labyrinthe urbain aux côtés de touristes américaines.",
-        "thematicAnalysis": "Tati interroge la déshumanisation par l'architecture moderne. Les murs de verre, censés offrir la transparence, deviennent des miroirs déformants où l'homme perd son orientation et son identité.",
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Playtime%20Jacques%20Tati",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Playtime",
-            "iconName": "apple.logo"
-          }
-        ]
-      },
-      {
-        "type": "ALBUM",
-        "title": "The Suburbs",
-        "creator": "Arcade Fire",
-        "year": "2010",
-        "origin": "Canada",
-        "genre": "Indie Rock",
-        "accessibility": "Curieux",
-        "formatMetric": "64 minutes (16 titres)",
-        "quote": "If I could have it back, all the time that we lost, I'd give it right back to you.",
-        "anecdote": "Win et William Butler ont écrit cet album en replongeant dans les cassettes vidéo de leur enfance passée dans les banlieues pavillonnaires modulaires de Houston.",
-        "tags": [
-          "Banlieue",
-          "Nostalgie",
-          "Rock Indé"
-        ],
-        "ratings": [
-          {
-            "source": "Pitchfork",
-            "score": "8.6/10",
-            "iconName": "star.fill",
-            "excerpt": "Une méditation vibrante sur la jeunesse, l'étalement urbain et le temps qui passe."
-          },
-          {
-            "source": "NME",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un disque majeur qui capte à la perfection l'angoisse des cités-dortoirs."
+            "excerpt": "Un roman captivant sur la création artistique et la solitude."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une symphonie pop lumineuse aux accents de nostalgie universelle."
+            "excerpt": "Houellebecq au sommet de son art poétique et désabusé."
           }
         ],
-        "aiSummary": "À travers 16 morceaux poignants, le groupe canadien explore la beauté mélancolique et l'ennui des zones résidentielles périphériques, entre jeunesse enfuie et bétonisation galopante.",
-        "thematicAnalysis": "L'album sonde la mémoire inscrite dans l'architecture répétitive des banlieues. Ces espaces standardisés deviennent le décor paradoxal de nos émois intimes les plus irremplaçables.",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/search?term=The%20Suburbs%20Arcade%20Fire",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Spotify",
-            "category": "Streaming audio",
-            "urlString": "https://open.spotify.com/search/The%20Suburbs%20Arcade%20Fire",
-            "iconName": "waveform"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ea/9f/1a/ea9f1ab0-4cac-c925-590d-14461f676912/886446576510.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "The Suburbs",
-            "duration": "5:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/c9/16/01c91671-0b00-9a35-57ea-17b8a72eba38/mzaf_1371304302885385649.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Ready to Start",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/7c/85/a17c8533-a2a7-ac52-1167-20a6f5011582/mzaf_17176954077072049357.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Modern Man",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3a/e8/88/3ae888b1-e2f9-4164-051f-6fe06e6dd655/mzaf_5920979770804081791.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Rococo",
-            "duration": "3:56",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/98/3b/88/983b88d0-14f5-6ecd-cf5a-84d6ec5d8236/mzaf_6824524544385263880.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Empty Room",
-            "duration": "2:51",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ff/2e/91/ff2e91ff-75df-c10c-ce98-1dd7b7ff7b2e/mzaf_14702377278197117526.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "City With No Children",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/91/94/97/919497c5-3033-da2b-b447-3397455d9dca/mzaf_17498192456969674461.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Half Light I",
-            "duration": "4:13",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/55/e2/28/55e2282b-60c4-b442-1c2e-74f1fee39c59/mzaf_283836148708712127.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Half Light II (No Celebration)",
-            "duration": "4:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/95/59/b7/9559b778-2a3d-68ea-d044-f04f0de1d0e7/mzaf_17243939129308837456.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Suburban War",
-            "duration": "4:45",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/06/fa/e2/06fae273-a8a6-102e-4a19-d441d35d46af/mzaf_375370281996704041.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Month of May",
-            "duration": "3:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/b2/da/3eb2dae1-49a6-bab1-8764-edc363570cf3/mzaf_13948703258919941372.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Wasted Hours",
-            "duration": "3:20",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/bc/fb/c8bcfbf2-d082-2c60-ea1c-48e8e1ca65d3/mzaf_1352258318708432922.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Deep Blue",
-            "duration": "4:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/43/6c/ed/436cedbc-1000-8e04-bb2a-da19e7812bcf/mzaf_5655000930493237407.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "We Used to Wait",
-            "duration": "5:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/94/b0/9d/94b09dc8-239c-731f-ad64-6adceda6ee57/mzaf_901263687058126520.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 14,
-            "title": "Sprawl I (Flatland)",
-            "duration": "2:54",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/a3/1b/c3a31bc0-a37d-9d43-7228-7cd30c72130b/mzaf_1532348930813674976.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 15,
-            "title": "Sprawl II (Mountains Beyond Mountains)",
-            "duration": "5:25",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a2/79/87/a279879a-fdee-fac5-1a5d-ac427c1f2b60/mzaf_6587091618139194706.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 16,
-            "title": "The Suburbs (Continued)",
-            "duration": "1:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/a4/b0/70a4b0d3-6eb1-8cf5-29e5-541fdc59ecb1/mzaf_8839074664413586363.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "expert": {
-    "themeTitle": "La Mémoire des Murs",
-    "themeSubtitle": "Comment nos édifices et espaces urbains absorbent, gardent et révèlent les fêlures invisibles de ceux qui les traversent.",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "Austerlitz",
-        "creator": "W.G. Sebald",
-        "year": "2017",
-        "origin": "Allemagne",
-        "genre": "Récit mémoires",
-        "accessibility": "Initié",
-        "formatMetric": "416 pages",
-        "quote": "Il me semblait que les lieux gardent l'empreinte des événements qui s'y sont déroulés et qu'ils en conservent le souvenir.",
-        "anecdote": "Le livre combine texte et photographies d'archives sans légende, laissant au lecteur la tâche de décoder les indices visuels disséminés au fil du récit.",
-        "tags": [
-          "Histoire",
-          "Architecture",
-          "Trauma"
-        ],
-        "ratings": [
-          {
-            "source": "The New York Times",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une méditation poignante et inoubliable sur l'Histoire et la perte."
-          },
-          {
-            "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de mélancolie européenne où l'architecture porte le poids du siècle."
-          },
-          {
-            "source": "The Guardian",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "L'un des livres les plus bouleversants écrites sur la mémoire de la Shoah."
-          }
-        ],
-        "aiSummary": "Jacques Austerlitz, historien de l'architecture, retrace son identité oubliée à travers l'étude des gares, des fortifications et des monuments européens, découvrant peu à peu son passé d'enfant juif déporté.",
-        "thematicAnalysis": "Sebald montre comment l'architecture monumentale du XIXe et XXe siècle sert de masque collectivement dressé sur les horreurs de la guerre. Les bâtiments sont des sépultures muettes que seule la mémoire poétique peut déchiffrer.",
+        "aiSummary": "Jed Martin devient un artiste mondialement célèbre en photographiant des cartes routières Michelin avant de peindre des métiers. Un voyage lucide et mélancolique sur la valeur des choses et la fin d'un monde.",
+        "thematicAnalysis": "La carte schématique supplante le réel et redéfinit la valeur du territoire, illustrant la quête de repères dans un monde déshumanisé.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Austerlitz%20W.G.%20Sebald",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Carte%20et%20le%20Territoire%20Michel%20Houellebecq",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Austerlitz%20W.G.%20Sebald",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Carte%20et%20le%20Territoire%20Michel%20Houellebecq",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/55/e8/11/55e81112-e361-7f14-265f-a33fcfccbeed/9782330091668.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/97/84/ff/9784ff79-9671-7755-8efc-4c2737990719/9782080297259.jpg/800x800bb.jpg"
       },
       {
         "type": "FILM",
-        "title": "L'Année dernière à Marienbad",
-        "creator": "Alain Resnais",
-        "year": "1961",
-        "origin": "France",
-        "genre": "Avant-garde",
-        "accessibility": "Initié",
-        "formatMetric": "1h 34m",
-        "quote": "Autour de moi, il y avait les statues, les marbres, les miroirs, les architectures répétées...",
-        "anecdote": "Le film a été tourné dans trois châteaux différents en Bavière (Nymphenburg, Schleissheim et Amalienburg), raccordés de façon à créer un palais labyrinthique impossible.",
+        "title": "The Truman Show",
+        "creator": "Peter Weir",
+        "year": "1998",
+        "origin": "États-Unis",
+        "genre": "Anticipation / Comédie dramatique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "1h 43m",
+        "quote": "Au cas où on ne se reverrait pas : bonjour, bonsoir et bonne nuit !",
+        "anecdote": "Le dôme géant de la ville artificielle de Seahaven a été inspiré par l'architecture utopique et surréaliste de la ville idéale de Seaside en Floride.",
         "tags": [
-          "Baroque",
-          "Labyrinthe",
-          "Temps"
+          "Télé-réalité",
+          "Utopie",
+          "Illusion"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
-            "score": "5/5",
+            "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Une étape fondamentale de l'histoire du cinéma, pure sculpture temporelle."
+            "excerpt": "Une parabole féroce et prémonitoire sur l'enfermement médiatique."
           },
           {
-            "source": "Positif",
+            "source": "Variety",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un labyrinthe esthétique somptueux d'où l'on ne veut plus jamais sortir."
+            "excerpt": "Jim Carrey livre une performance remarquable d'une profondeur inattendue."
           },
           {
-            "source": "Télérama",
-            "score": "5/5",
+            "source": "Rolling Stone",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience visuelle et poétique hypnotique sur les méandres du souvenir."
+            "excerpt": "Un chef-d'œuvre de satire visionnaire d'une immense force émotionnelle."
           }
         ],
-        "aiSummary": "Dans un hôtel baroque grandiose, un homme tente de convaincre une femme qu'ils se sont déjà rencontrés l'année précédente à Marienbad. Elle affirme ne pas se souvenir de lui tandis que les miroirs et les couloirs déforment la réalité.",
-        "thematicAnalysis": "Resnais utilise la géométrie stricte et monumentale du grand hôtel baroque comme un piège psychique. L'architecture immobile pétrifie le temps et matérialise l'impossibilité de fixer le souvenir.",
+        "aiSummary": "Truman Burbank mène une vie paisible sans savoir qu'il est la vedette à son insu d'une émission de télé-réalité mondiale. Sa prise de conscience le pousse à chercher les limites physiques de son univers.",
+        "thematicAnalysis": "Le film explore la frontière brutale entre une cartographie factice entièrement sous contrôle et le monde réel inaccessible.",
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad%20Alain%20Resnais",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=The%20Truman%20Show%20Peter%20Weir",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
+            "urlString": "https://tv.apple.com/fr/search?term=The%20Truman%20Show",
             "iconName": "apple.logo"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Disintegration Loops",
-        "creator": "William Basinski",
-        "year": "2002",
-        "origin": "États-Unis",
-        "genre": "Ambient / Musique spectrale",
-        "accessibility": "Initié",
-        "formatMetric": "283 minutes (4 volumes)",
-        "quote": "L'érosion du son est le reflet direct du temps qui efface nos constructions.",
-        "anecdote": "Basinski numérisait ses vieilles bandes magnétiques lorsque la magnétite s'est mise à se détacher physiquement sous ses yeux, le 11 septembre 2001, depuis son toit à Brooklyn.",
+        "title": "Ambient 1: Music for Airports",
+        "creator": "Brian Eno",
+        "year": "1978",
+        "origin": "Royaume-Uni",
+        "genre": "Ambient / Musique expérimentale",
+        "accessibility": "Pop Culture",
+        "formatMetric": "4 pistes / 48 min",
+        "quote": "La musique d'ambiance doit pouvoir être aussi négligeable qu'elle est intéressante.",
+        "anecdote": "Brian Eno a conçu cet album après avoir été exaspéré par la musique stressante et inadaptée lors d'une longue escale à l'aéroport de Cologne-Bonn.",
         "tags": [
-          "Ambient",
-          "Désintégration",
-          "Avant-Garde"
+          "Pionnier",
+          "Minimalisme",
+          "Espace"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
             "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre d'ambient minimale, élégie poignante sur la disparition du monde physique."
+            "excerpt": "Un monument fondamental qui a redéfini notre rapport à l'espace sonore."
           },
           {
-            "source": "Tiny Mix Tapes",
+            "source": "The Guardian",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'une des œuvres d'art les plus marquantes et dévastatrices du XXIe siècle."
+            "excerpt": "Une expérience immersive qui transforme l'architecture en musique."
           },
           {
-            "source": "Resident Advisor",
-            "score": "4.8/5",
+            "source": "Rolling Stone",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une méditation sonore sublime sur le déclin et l'impermanence de toute chose."
+            "excerpt": "L'album ultime pour apaiser l'esprit et redessiner les contours du réel."
           }
         ],
-        "aiSummary": "Un projet ambient monumental composé de boucles sonores enregistrées sur des bandes magnétiques en train de se décomposer physiquement à chaque passage sur les têtes de lecture.",
-        "thematicAnalysis": "L'œuvre capture la ruine matérielle à l'échelle microscopique. La dégradation du ruban sonore fait écho à l'effondrement des structures urbaines, transformant la matière en un réquiem à la fois tragique et sublime.",
+        "aiSummary": "Premier opus fondateur du genre ambient, ce disque rassemble des nappes de piano et de synthétiseurs répétitives. Il modifie la perception spatiale des lieux de transit en un havre contemplatif.",
+        "thematicAnalysis": "Eno cartographie sonorement un lieu d'anxiété collective pour transformer la géographie physique des aéroports en un territoire d'apaisement.",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/search?term=The%20Disintegration%20Loops%20William%20Basinski",
+            "urlString": "https://music.apple.com/fr/album/ambient-1-music-for-airports/724435863?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Spotify",
             "category": "Streaming audio",
-            "urlString": "https://open.spotify.com/search/The%20Disintegration%20Loops%20William%20Basinski",
+            "urlString": "https://open.spotify.com/search/Ambient%201%20Brian%20Eno",
             "iconName": "waveform"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Ambient%201%20Brian%20Eno",
+            "iconName": "music.note"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/3e/ea/08/3eea0811-b27e-6e92-9d2a-561bfce9107c/cover.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ee/71/42/ee71425d-6bc9-3df8-c90b-8539f59144ab/00724386649553.rgb.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Dlp 1.1",
-            "duration": "63:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b3/3c/e6/b33ce619-dc9d-c4b7-ba17-813db2a2bb17/mzaf_14559693761581485228.plus.aac.p.m4a"
+            "title": "1/1",
+            "duration": "17:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/24/c4/f5/24c4f540-5a9e-4d3c-24f8-6a622417dec7/mzaf_16193309359931078587.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Dlp 2.1",
-            "duration": "10:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/a4/c7/c3a4c7a9-279c-8f8b-7ed3-09da0bc90db4/mzaf_7369710717981805827.plus.aac.p.m4a"
+            "title": "2/1",
+            "duration": "8:54",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/af/4c/f2af4c2a-f4e9-e273-4cec-c8ef409ef434/mzaf_4106234552629282677.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "1/2",
+            "duration": "12:07",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/bb/4c/01bb4ca6-709c-40ea-52e9-3894cb37d29a/mzaf_4619408540893641576.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "2/2",
+            "duration": "9:38",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/73/20/41/732041be-aefb-7b2f-0339-66d4a8e79ca3/mzaf_16133218731474062777.plus.aac.p.m4a"
           }
         ]
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "Géographies Invisibles",
+    "themeSubtitle": "Naviguer dans les labyrinthes de l'esprit à travers des lieux imaginaires ou métamorphosés.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Les Villes invisibles",
+        "creator": "Italo Calvino",
+        "year": "2020",
+        "origin": "Italie",
+        "genre": "Conte philosophique",
+        "accessibility": "Curieux",
+        "formatMetric": "192 pages",
+        "quote": "Les villes, comme les rêves, sont faites de désirs et de peurs.",
+        "anecdote": "Calvino a élaboré la structure de son récit à partir de combinatoires mathématiques complexes inspirées de ses travaux avec l'Oulipo.",
+        "tags": [
+          "Oulipo",
+          "Poésie",
+          "Labyrinthe"
+        ],
+        "ratings": [
+          {
+            "source": "Le Figaro Littéraire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un joyau de la littérature mondiale d'une inventivité poétique inépuisable."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une méditation sublime sur le temps, la mémoire et l'architecture."
+          },
+          {
+            "source": "The New York Times",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre fascinante qui réinvente complètement la géographie imaginaire."
+          }
+        ],
+        "aiSummary": "Marco Polo décrit à l'empereur Kublai Khan cinquante-cinq cités fantastiques aux architectures impossibles. Toutes ces descriptions métaphoriques composent en réalité le portrait fragmenté d'une seule ville : Venise.",
+        "thematicAnalysis": "Le récit démontre que toute cartographie urbaine est la projection des obsessions, des désirs et de l'architecture mentale de l'être humain.",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Les%20Villes%20invisibles%20Italo%20Calvino",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Les%20Villes%20invisibles%20Italo%20Calvino",
+            "iconName": "bag.fill"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/b8/35/bb/b835bb88-3b6d-1eef-f8ff-21410c6a2af3/9782072883507.jpg/800x800bb.jpg"
+      },
+      {
+        "type": "FILM",
+        "title": "Stalker",
+        "creator": "Andrei Tarkovsky",
+        "year": "1979",
+        "origin": "URSS",
+        "genre": "Science-Fiction philosophique",
+        "accessibility": "Curieux",
+        "formatMetric": "2h 42m",
+        "quote": "Que leurs vœux se réalisent, qu'ils y croient, et qu'ils rient de leurs passions.",
+        "anecdote": "La première version du film fut entièrement détruite à la suite d'une erreur de développement en laboratoire, obligeant Tarkovsky à tourner à nouveau la totalité du long-métrage.",
+        "tags": [
+          "La Zone",
+          "Mystique",
+          "Contemplation"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience cinématographique ultime d'une beauté plastique absolue."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un voyage intérieur et métaphysique hypnotique à travers les ruines."
+          },
+          {
+            "source": "Sight & Sound",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un sommet absolu du cinéma mondial sur la foi et l'art."
+          }
+        ],
+        "aiSummary": "Un passeur nommé Stalker guide un écrivain et un scientifique à travers 'La Zone', un territoire mystérieux aux lois physiques instables où se trouverait une chambre capable d'exaucer les désirs profonds.",
+        "thematicAnalysis": "La Zone constitue une géographie vivante et mouvante dont les pièges invisibles reflètent les dilemmes moraux et spirituels des visiteurs.",
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Stalker%20Andrei%20Tarkovsky",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Stalker",
+            "iconName": "apple.logo"
+          }
+        ]
+      },
+      {
+        "type": "ALBUM",
+        "title": "Geogaddi",
+        "creator": "Boards of Canada",
+        "year": "2002",
+        "origin": "Écosse",
+        "genre": "IDM / Electronica",
+        "accessibility": "Curieux",
+        "formatMetric": "23 pistes / 66 min",
+        "quote": "Un voyage sonore envoûtant dans la nostalgie et la psychédélie ésotérique.",
+        "anecdote": "La durée exacte du disque est de 66 minutes et 6 secondes, un clin d'œil numérologique sciemment orchestré par le duo écossais.",
+        "tags": [
+          "Nostalgie",
+          "Esotérique",
+          "Passe-Partout"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.3/10",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre sombre et mystérieux d'architectures sonores complexes."
+          },
+          {
+            "source": "NME",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une immersion troublante dans les recoins secrets de l'enfance et de la nature."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une cartographie psychédélique d'une précision fascinante."
+          }
+        ],
+        "aiSummary": "Construit autour de synthétiseurs vintage et d'échantillons vocaux déformés, cet album distille une atmosphère pastorale et énigmatique. Il invite à une exploration de la mémoire et des mythes païens.",
+        "thematicAnalysis": "Boards of Canada dessine une psychogéographie auditive hantée, où chaque fréquence semble cartographier des paysages ruraux disparus.",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/geogaddi/281208446?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Spotify",
+            "category": "Streaming audio",
+            "urlString": "https://open.spotify.com/search/Geogaddi%20Boards%20of%20Canada",
+            "iconName": "waveform"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Geogaddi%20Boards%20of%20Canada",
+            "iconName": "music.note"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2e/77/7c/2e777c13-60e3-c231-8be0-b0d43dc91598/mzi.yseuvnlj.jpg/600x600bb.jpg",
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Ready Let's Go",
+            "duration": "0:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/08/8b/6a/088b6afa-cdcc-45a6-e05e-e40985ae962a/mzaf_16665727230938058105.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Music Is Math",
+            "duration": "5:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9a/4c/63/9a4c6345-e1f9-a1bd-d436-60b521afab36/mzaf_15929486305414415845.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Beware the Friendly Stranger",
+            "duration": "0:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5d/7c/42/5d7c4298-aa26-0de0-0745-8fc712465c7d/mzaf_15023177098007788463.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Gyroscope",
+            "duration": "3:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9a/d6/7b/9ad67b40-13d8-a961-c79b-bcba4fcedb81/mzaf_14855186323058112795.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Dandelion",
+            "duration": "1:15",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e1/8a/10/e18a108a-07d6-27d3-de46-b752a30c723f/mzaf_2794803409626132257.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Sunshine Recorder",
+            "duration": "6:12",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/02/5a/6e025ad9-091e-b7ff-1e7b-74308b41a10b/mzaf_811055485711166439.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "In the Annexe",
+            "duration": "1:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/eb/23/92/eb2392b6-3651-b8b1-1723-7b07b2aec5d6/mzaf_15234329337975143933.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Julie and Candy",
+            "duration": "5:30",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6a/f8/2c/6af82c6a-6440-24a0-fab4-eb8a082abb3b/mzaf_9756122301506520468.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "The Smallest Weird Number",
+            "duration": "1:17",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/80/3e/15/803e1585-3604-454e-2327-22c88fd56778/mzaf_16722149310363004307.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "1969",
+            "duration": "4:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/67/be/1d67be8f-90d0-7fe5-a1a0-007216bc519a/mzaf_1808849044529603444.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Energy Warning",
+            "duration": "0:35",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/e8/68/60e86801-cfaa-a934-c1c0-d01c2187ea4a/mzaf_17044780386412980587.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "The Beach at Redpoint",
+            "duration": "4:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3e/13/1b/3e131b88-df90-36c5-3cbf-24d8dbb81872/mzaf_15531911884625236044.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Opening the Mouth",
+            "duration": "1:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/b4/ee/ecb4ee3c-2e51-b42e-08dd-0fb36c3592dd/mzaf_18420020729562876010.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 14,
+            "title": "Alpha and Omega",
+            "duration": "7:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/36/71/7b/36717b76-f9b2-0211-8014-83bc70e95605/mzaf_2026873432918684448.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 15,
+            "title": "I Saw Drones",
+            "duration": "0:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7e/7d/5e/7e7d5e06-aae9-86c9-6525-c8deb97e2e4d/mzaf_14676454256900125354.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 16,
+            "title": "The Devil Is In the Details",
+            "duration": "3:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2a/ff/e6/2affe69d-f18d-4df5-d156-22a9f95c7861/mzaf_10172451988649537680.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 17,
+            "title": "A Is to B As B Is to C",
+            "duration": "1:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/bd/eb/7fbdebba-e74a-9eab-c329-3ff1c8835a90/mzaf_5442911239925303459.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 18,
+            "title": "Over the Horizon Radar",
+            "duration": "1:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/9f/82/e69f8264-3623-46cd-c019-2c6f43ced7cf/mzaf_12620879758591462961.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 19,
+            "title": "Dawn Chorus",
+            "duration": "3:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/56/6f/a7/566fa7b2-b214-1ff7-dc12-ae3290f8a6c5/mzaf_17668196616494516360.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 20,
+            "title": "Diving Station",
+            "duration": "1:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/bd/e8/f0bde800-bc69-0429-93ed-319298a43d88/mzaf_10991887148657069425.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 21,
+            "title": "You Could Feel the Sky",
+            "duration": "5:14",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/85/34/7b/85347b52-b1b4-12c7-6dc4-285fb8061ad9/mzaf_2853033017075176583.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 22,
+            "title": "Corsair",
+            "duration": "2:52",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cb/52/a6/cb52a6e6-66d9-b236-28a8-570c3d93d117/mzaf_3119023560468132204.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 23,
+            "title": "Magic Window",
+            "duration": "1:46",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/94/f0/3f94f0fc-820d-ffcf-f3e0-48961aff2c26/mzaf_7360250060512274827.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "Topographies de l'Inaccessible",
+    "themeSubtitle": "Explorer les territoires extrêmes où le langage et la forme frôlent leur propre dissolution.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Atlas d'un homme inquiet",
+        "creator": "Christoph Ransmayr",
+        "year": "2015",
+        "origin": "Autriche",
+        "genre": "Récit de voyage / Littérature philosophique",
+        "accessibility": "Initié",
+        "formatMetric": "448 pages",
+        "quote": "J'ai vu... et c'est ainsi que commence chaque récit de mon périple.",
+        "anecdote": "Christoph Ransmayr a réellement parcouru la terre pendant des décennies, écrivant chaque fragment sur le vif au cours d'expéditions polaires ou désertiques.",
+        "tags": [
+          "Voyage",
+          "Fragment",
+          "Cosmogonie"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un monument de la littérature germanophone contemporaine."
+          },
+          {
+            "source": "Libération",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une prose incandescente qui réinvente avec brio le récit de voyage."
+          },
+          {
+            "source": "Neue Zürcher Zeitung",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une cosmogonie poétique d'une puissance plastique rare."
+          }
+        ],
+        "aiSummary": "Soixante-dix vignettes contemplatives commençant toutes par les mots 'J'ai vu' composent cet atlas poétique du globe. L'auteur y consigne des épiphanies éphémères vécues aux quatre coins du monde sauvage.",
+        "thematicAnalysis": "L'atlas ne cherche pas à mesurer la Terre mais à immortaliser la rencontre entre la conscience humaine et la majesté brute des espaces incalculables.",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Atlas%20d%27un%20homme%20inquiet%20Christoph%20Ransmayr",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Atlas%20d%27un%20homme%20inquiet%20Christoph%20Ransmayr",
+            "iconName": "bag.fill"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/b3/27/89/b32789c6-278b-04b7-0e56-076489d9c201/9782226343857-X.jpg/800x800bb.jpg"
+      },
+      {
+        "type": "FILM",
+        "title": "L'Avventura",
+        "creator": "Michelangelo Antonioni",
+        "year": "1960",
+        "origin": "Italie",
+        "genre": "Drame existentialiste",
+        "accessibility": "Initié",
+        "formatMetric": "2h 23m",
+        "quote": "Auparavant, il suffisait d'un sentiment... Maintenant, tout doit être expliqué.",
+        "anecdote": "Sifflé lors de sa première projection au Festival de Cannes par un public dérouté, le film obtiendra le Prix du Jury quelques jours plus tard, marquant l'histoire du cinéma.",
+        "tags": [
+          "Espace",
+          "Modernité",
+          "Disparition"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "La naissance du cinéma moderne à travers la géométrie des sentiments."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre d'une modernité absolue sur le vide et l'incommunicabilité."
+          },
+          {
+            "source": "The Guardian",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une étude visuelle sublime de l'aliénation dans le paysage méditerranéen."
+          }
+        ],
+        "aiSummary": "Lors d'une croisière sur une île volcanique aride, une jeune femme disparaît mystérieusement. Alors que ses proches s'organisent pour la chercher, sa présence s'efface au profit du vide existentiel de ses compagnons.",
+        "thematicAnalysis": "Antonioni érige le paysage insulaire escarpé en un espace de dérive où la recherche géographique s'abîme dans le néant des sentiments.",
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Avventura%20Michelangelo%20Antonioni",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=L%27Avventura",
+            "iconName": "apple.logo"
+          }
+        ]
+      },
+      {
+        "type": "ALBUM",
+        "title": "E2-E4",
+        "creator": "Manuel Göttsching",
+        "year": "1984",
+        "origin": "Allemagne",
+        "genre": "Krautrock / Minimalisme",
+        "accessibility": "Initié",
+        "formatMetric": "2 pistes / 58 min",
+        "quote": "Un seul motif hypnotique qui a tracé une nouvelle voie pour la musique moderne.",
+        "anecdote": "Manuel Göttsching a enregistré cet album légendaire en une seule prise improvisée fin 1981 pour avoir de la musique à écouter dans son Walkman pendant ses voyages.",
+        "tags": [
+          "Minimalisme",
+          "Krautrock",
+          "Échiquier"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "Le chaînon manquant fondamental entre le krautrock et la techno moderne."
+          },
+          {
+            "source": "Resident Advisor",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une cartographie rythmique répétitive d'une élégance immortelle."
+          },
+          {
+            "source": "Wire Magazine",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre monumentale qui a tracé de nouvelles routes sonores."
+          }
+        ],
+        "aiSummary": "Intitulé d'après le premier coup classique d'une partie d'échecs, cet album consiste en deux pièces basées sur une pulsation minimale et des envolées de guitare subtiles étirées sur près d'une heure.",
+        "thematicAnalysis": "L'album se déploie comme un échiquier sonore abstrait dont les micro-variations géométriques cartographient le temps pur.",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/e2-e4-mixed-tracks/1585980285?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Spotify",
+            "category": "Streaming audio",
+            "urlString": "https://open.spotify.com/search/E2-E4%20Manuel%20G%C3%B6ttsching",
+            "iconName": "waveform"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/E2-E4%20Manuel%20G%C3%B6ttsching",
+            "iconName": "music.note"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/9a/58/739a58f3-4be3-a51b-5c94-a30b06577946/4260017594442_3000.jpg/600x600bb.jpg"
       }
     ]
   }
