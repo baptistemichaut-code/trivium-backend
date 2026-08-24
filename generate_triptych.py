@@ -9,7 +9,10 @@ import random
 import difflib
 import requests
 
-# Thèmes d'inspiration aléatoires pour forcer l'IA à varier ses angles
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+}
+
 THEME_SEEDS = [
     "La paranoïa et le doute du réel",
     "La solitude dans les mégalopoles modernes",
@@ -22,7 +25,13 @@ THEME_SEEDS = [
     "Les machines conscientes et le techno-fantastique",
     "Les voyages initiatiques au bout du monde",
     "Le jazz nocturne, le polar et la fumée",
-    "L'art de la fugue et les labyrinthes mentaux"
+    "L'art de la fugue et les labyrinthes mentaux",
+    "L'illusion du progrès et l'utopie brisée",
+    "L'obsession de la création et la folie artistique",
+    "Les rituels oubliés et le mysticisme païen",
+    "L'intimité à l'épreuve de l'Histoire",
+    "La beauté du chaos et la dérive urbaine",
+    "L'enfance, les songes et la perte de l'innocence"
 ]
 
 def clean_str(s):
@@ -30,9 +39,10 @@ def clean_str(s):
         return ""
     return re.sub(r'[^a-zA-Z0-9\s]', '', s).lower().strip()
 
-def get_previously_used_titles():
-    """Scanne 100 % des œuvres et artistes parus dans toutes les archives."""
-    used = set()
+def get_archived_history():
+    """Scanne et extrait 100 % des œuvres et de tous les thèmes parus."""
+    used_titles = set()
+    used_themes = set()
     files = glob.glob("archive/*.json")
     if os.path.exists("today.json"):
         files.append("today.json")
@@ -42,14 +52,22 @@ def get_previously_used_titles():
             with open(fpath, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 for tier in ["accessible", "intermediate", "expert"]:
-                    if tier in data and "items" in data[tier]:
-                        for item in data[tier]["items"]:
+                    if tier in data:
+                        t_title = data[tier].get("themeTitle", "")
+                        if t_title:
+                            used_themes.add(clean_str(t_title))
+                        for item in data[tier].get("items", []):
                             t = clean_str(item.get("title", ""))
                             if t:
-                                used.add(t)
+                                used_titles.add(t)
+                if "items" in data:
+                    for item in data["items"]:
+                        t = clean_str(item.get("title", ""))
+                        if t:
+                            used_titles.add(t)
         except Exception:
             continue
-    return used
+    return used_titles, used_themes
 
 def build_book_links(title, author):
     clean_t = title.split(":")[0].strip()
@@ -80,18 +98,15 @@ def build_album_links(title, artist, direct_apple_url=None):
     ]
 
 def fetch_album_metadata(title, artist):
-    """Recherche d'album avec score de similarité textuelle."""
     try:
-        # Retrait des mentions d'édition (Remaster, Deluxe, Anniversary...)
         clean_target = re.sub(r'[\(\[].*?[\)\]]', '', title).strip()
         norm_target = clean_str(clean_target)
         norm_artist = clean_str(artist)
-
         query = urllib.parse.quote(f"{clean_target} {artist}")
 
         for country in ["FR", "US", "GB"]:
             search_url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=25&country={country}"
-            res = requests.get(search_url, timeout=10).json()
+            res = requests.get(search_url, headers=HEADERS, timeout=12).json()
             results = res.get("results", [])
             if not results:
                 continue
@@ -105,15 +120,10 @@ def fetch_album_metadata(title, artist):
                 norm_alb = clean_str(alb_clean)
                 norm_art = clean_str(alb.get("artistName", ""))
 
-                # Vérification de l'artiste
-                artist_match = (norm_artist in norm_art or norm_art in norm_artist)
-                if not artist_match:
+                if not (norm_artist in norm_art or norm_art in norm_artist):
                     continue
 
-                # Calcul du ratio de ressemblance
                 ratio = difflib.SequenceMatcher(None, norm_target, norm_alb).ratio()
-
-                # Pénalisation des albums de reprises
                 if "tribute" in norm_alb or "karaoke" in norm_alb:
                     ratio -= 0.5
 
@@ -121,14 +131,13 @@ def fetch_album_metadata(title, artist):
                     best_score = ratio
                     best_album = alb
 
-            if best_album and best_score >= 0.40:
+            if best_album and best_score >= 0.35:
                 collection_id = best_album.get("collectionId")
                 direct_url = best_album.get("collectionViewUrl")
                 artwork = best_album.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
 
-                # Récupération de la tracklist ordonnée
                 lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&limit=60&country={country}"
-                lookup_res = requests.get(lookup_url, timeout=10).json()
+                lookup_res = requests.get(lookup_url, headers=HEADERS, timeout=12).json()
 
                 raw_tracks = []
                 for item in lookup_res.get("results", []):
@@ -146,9 +155,7 @@ def fetch_album_metadata(title, artist):
                             "previewURL": item.get("previewUrl")
                         })
 
-                # Tri séquentiel (disque, puis piste)
                 raw_tracks.sort(key=lambda x: (x["disc"], x["trackNumber"]))
-
                 tracks = []
                 for idx, t in enumerate(raw_tracks, start=1):
                     tracks.append({
@@ -166,17 +173,23 @@ def fetch_album_metadata(title, artist):
 def fetch_movie_artwork(title, director):
     try:
         clean_title = title.split("(")[0].strip()
-        query = urllib.parse.quote(clean_title)
-        for country in ["FR", "US"]:
-            search_url = f"https://itunes.apple.com/search?term={query}&entity=movie&limit=5&country={country}"
-            res = requests.get(search_url, timeout=10).json()
-            results = res.get("results", [])
-            if results:
-                for movie in results:
-                    name = movie.get("trackName", "").lower()
-                    if clean_title.lower() in name or name in clean_title.lower():
-                        return movie.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
-                return results[0].get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
+        queries = [
+            urllib.parse.quote(f"{clean_title} {director}"),
+            urllib.parse.quote(clean_title)
+        ]
+
+        for q in queries:
+            for country in ["FR", "US"]:
+                search_url = f"https://itunes.apple.com/search?term={q}&entity=movie&limit=10&country={country}"
+                res = requests.get(search_url, headers=HEADERS, timeout=12).json()
+                results = res.get("results", [])
+                if results:
+                    norm_target = clean_str(clean_title)
+                    for movie in results:
+                        name = clean_str(movie.get("trackName", ""))
+                        if norm_target in name or name in norm_target:
+                            return movie.get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
+                    return results[0].get("artworkUrl100", "").replace("100x100bb.jpg", "600x600bb.jpg")
     except Exception as e:
         print(f"Erreur Film ({title}): {e}")
     return None
@@ -187,7 +200,7 @@ def fetch_book_artwork(title, author):
         query = urllib.parse.quote(f"{clean_title} {author}")
 
         search_url = f"https://www.googleapis.com/books/v1/volumes?q={query}&maxResults=5&printType=books"
-        res = requests.get(search_url, timeout=10).json()
+        res = requests.get(search_url, headers=HEADERS, timeout=12).json()
         if "items" in res and len(res["items"]) > 0:
             for it in res["items"]:
                 vol = it.get("volumeInfo", {})
@@ -198,7 +211,7 @@ def fetch_book_artwork(title, author):
 
         ol_query = urllib.parse.quote(f"{clean_title} {author}")
         ol_url = f"https://openlibrary.org/search.json?q={ol_query}&limit=1"
-        ol_res = requests.get(ol_url, timeout=10).json()
+        ol_res = requests.get(ol_url, headers=HEADERS, timeout=12).json()
         docs = ol_res.get("docs", [])
         if docs and "cover_i" in docs[0]:
             cover_id = docs[0]["cover_i"]
@@ -233,28 +246,83 @@ def enrich_triptych(triptych_dict):
                 item["tracks"] = tracks
             item["platformLinks"] = build_album_links(title, creator, direct_apple)
 
+def validate_payload_uniqueness(parsed, used_titles_set, used_themes_set):
+    """Vérifie l'absence absolue de doublons dans l'historique et entre les 3 niveaux."""
+    current_titles = []
+    current_themes = []
+
+    for tier in ["accessible", "intermediate", "expert"]:
+        if tier not in parsed:
+            return False, f"Niveau {tier} manquant."
+
+        t_title = parsed[tier].get("themeTitle", "").strip()
+        if not t_title:
+            return False, f"Thème manquant pour {tier}."
+
+        norm_theme = clean_str(t_title)
+
+        # 1. Vérification du thème contre l'historique
+        for past_theme in used_themes_set:
+            if difflib.SequenceMatcher(None, norm_theme, past_theme).ratio() > 0.70:
+                return False, f"Thème déjà traité dans les archives : « {t_title} »."
+
+        # 2. Vérification d'unicité entre les 3 thèmes du jour
+        for existing in current_themes:
+            if difflib.SequenceMatcher(None, norm_theme, existing).ratio() > 0.60:
+                return False, f"Thèmes trop proches dans la même édition : « {t_title} »."
+        current_themes.append(norm_theme)
+
+        items = parsed[tier].get("items", [])
+        if len(items) != 3:
+            return False, f"{tier} ne contient pas exactement 3 œuvres."
+
+        for item in items:
+            raw_title = item.get("title", "").strip()
+            norm_title = clean_str(raw_title)
+
+            # 3. Vérification de l'œuvre contre l'historique
+            if norm_title in used_titles_set:
+                return False, f"Œuvre déjà recommandée dans le passé : « {raw_title} »."
+
+            # 4. Vérification d'unicité parmi les 9 œuvres du jour
+            if norm_title in current_titles:
+                return False, f"Œuvre en doublon dans la même journée : « {raw_title} »."
+            current_titles.append(norm_title)
+
+    return True, "Validé"
+
 def generate_daily_edition():
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY manquant.")
 
-    used_titles_set = get_previously_used_titles()
+    used_titles_set, used_themes_set = get_archived_history()
     random_seed_theme = random.choice(THEME_SEEDS)
 
-    exclusion_list_text = "\n".join([f"- {t.title()}" for t in sorted(list(used_titles_set))])
+    exclusion_titles_text = "\n".join([f"- {t.title()}" for t in sorted(list(used_titles_set))])
+    exclusion_themes_text = "\n".join([f"- {t.title()}" for t in sorted(list(used_themes_set))])
+
     exclusion_block = f"""
-LISTE D'EXCLUSION STRICTE (ŒUVRES DÉJÀ PARUES — INTERDICTION ABSOLUE DE LES PROPOSER À NOUVEAU) :
-{exclusion_list_text}
+LISTE D'EXCLUSION STRICTE (TOUTES CES ŒUVRES ET THÈMES SONT DÉJÀ PARUS — INTERDICTION ABSOLUE DE LES RÉPÉTER) :
+
+[THÈMES DÉJÀ TRAITÉS] :
+{exclusion_themes_text}
+
+[ŒUVRES DÉJÀ PARUES] :
+{exclusion_titles_text}
 """
 
     prompt = f"""
-Tu es le directeur éditorial de la prestigieuse application culturelle "Trivium".
-Aujourd'hui, explore un triptyque original guidé par cette inspiration : « {random_seed_theme} ».
+Tu es le directeur éditorial de l'application culturelle "Trivium".
+Aujourd'hui, crée une édition entièrement inédite guidée par cet angle : « {random_seed_theme} ».
 
-Crée 3 éditions thématiques INÉDITES selon 3 niveaux de sensibilité culturelle :
-1. "accessible" (Pop culture, chefs-d'œuvre cultes et universels).
-2. "intermediate" (Cinéma d'auteur accessible, pépites littéraires, albums cultes reconnus).
-3. "expert" (Underground, avant-garde, cinéma d'art et essai, littérature exigeante).
+CONSIGNES STRICTES D'UNICITÉ :
+1. Crée 3 thèmes DISTINCTS pour chaque niveau :
+   - "accessible" (Pop culture, chefs-d'œuvre cultes et universels).
+   - "intermediate" (Cinéma d'auteur accessible, pépites littéraires, albums cultes reconnus).
+   - "expert" (Underground, avant-garde, cinéma d'art et essai, littérature exigeante).
+2. Toutes les œuvres (9 au total : 3 livres, 3 films, 3 albums) doivent être UNIQUES et ABSOLUMENT SANS AUCUN DOUBLON entre les 3 niveaux.
+3. Aucune œuvre ni aucun thème listé dans la liste d'exclusion ci-dessous ne doit être proposé.
 
 {exclusion_block}
 
@@ -267,7 +335,7 @@ Pour chaque œuvre, fournis 3 critiques authentiques issues de vrais médias :
 Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage ```json) suivant cette structure :
 {{
   "accessible": {{
-    "themeTitle": "Titre du thème",
+    "themeTitle": "Titre du thème accessible inédit",
     "themeSubtitle": "Phrase d'accroche",
     "items": [
       {{
@@ -286,12 +354,12 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage ```json) sui
     ]
   }},
   "intermediate": {{
-    "themeTitle": "Titre intermédiaire",
+    "themeTitle": "Titre du thème intermédiaire inédit",
     "themeSubtitle": "Phrase d'accroche",
     "items": [ ... 1 LIVRE, 1 FILM, 1 ALBUM ... ]
   }},
   "expert": {{
-    "themeTitle": "Titre expert",
+    "themeTitle": "Titre du thème expert inédit",
     "themeSubtitle": "Phrase d'accroche",
     "items": [ ... 1 LIVRE, 1 FILM, 1 ALBUM ... ]
   }}
@@ -306,12 +374,12 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage ```json) sui
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.85,
+            "temperature": 0.88,
             "topP": 0.95
         }
     }
 
-    max_retries = 3
+    max_retries = 4
     data = None
     for attempt in range(1, max_retries + 1):
         print(f"Tentative de génération {attempt}/{max_retries} (Inspiration : {random_seed_theme})...")
@@ -334,26 +402,20 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage ```json) sui
             raw_text = raw_text[:-3]
         raw_text = raw_text.strip()
 
-        parsed = json.loads(raw_text)
-
-        # Vérification anti-doublons par le code Python
-        has_duplicates = False
-        for tier in ["accessible", "intermediate", "expert"]:
-            if tier in parsed:
-                for it in parsed[tier].get("items", []):
-                    if clean_str(it.get("title", "")) in used_titles_set:
-                        print(f"Doublon détecté par le filtre : {it.get('title')}. Relance d'une nouvelle génération...")
-                        has_duplicates = True
-                        break
-            if has_duplicates:
+        try:
+            parsed = json.loads(raw_text)
+            is_valid, reason = validate_payload_uniqueness(parsed, used_titles_set, used_themes_set)
+            if is_valid:
+                print("Triptyque validé : zéro doublon détecté.")
+                data = parsed
                 break
-
-        if not has_duplicates:
-            data = parsed
-            break
+            else:
+                print(f"Génération rejetée ({reason}). Nouvelle tentative...")
+        except Exception as e:
+            print(f"Erreur JSON : {e}")
 
     if not data:
-        data = parsed  # Fallback si persistance après les 3 essais
+        data = parsed  # Fallback si persistance après les tentatives
 
     for tier in ["accessible", "intermediate", "expert"]:
         if tier in data:
