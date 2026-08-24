@@ -77,7 +77,7 @@ def fetch_album_metadata(album_title: str, artist: str):
     return image_url, tracks
 
 def build_safe_platform_links(item_type: str, title: str, creator: str):
-    """Génère uniquement des liens fiables (JustWatch, Letterboxd, Apple TV)."""
+    """Génère uniquement les liens fiables (JustWatch, Letterboxd, Apple TV)."""
     encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
     encoded_title = urllib.parse.quote(title.strip())
     
@@ -188,7 +188,7 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 
 def generate_daily_edition():
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash-latest",
+        model_name="gemini-2.5-flash",
         generation_config={"response_mime_type": "application/json", "temperature": 0.7},
         system_instruction=SYSTEM_PROMPT
     )
