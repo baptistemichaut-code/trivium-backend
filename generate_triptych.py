@@ -18,14 +18,14 @@ genai.configure(api_key=GEMINI_API_KEY)
 # MARK: - Nettoyeur de Titres pour les Recherches
 
 def clean_search_title(title: str) -> str:
-    """Nettoie les parenthèses, tomes et sous-titres pour maximiser les résultats de recherche."""
+    """Nettoie les parenthèses, tomes et sous-titres pour maximiser les résultats."""
     t = re.sub(r"\(.*?\)", "", title)
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
         t = t.split(":")[0]
     return t.strip()
 
-# MARK: - Gestion de l'Historique & Déduplication Absolue
+# MARK: - Gestion de l'Historique & Déduplication
 
 def load_history_exclusions():
     used_themes = set()
@@ -54,7 +54,7 @@ def load_history_exclusions():
 
     return list(used_themes), list(used_titles)
 
-# MARK: - Enrichisseur Livres Multi-Sources (Apple Books + Google Books + OpenLibrary)
+# MARK: - Enrichisseur Livres Multi-Sources
 
 def fetch_book_metadata(title: str, author: str):
     image_url = None
@@ -63,7 +63,7 @@ def fetch_book_metadata(title: str, author: str):
 
     clean_t = clean_search_title(title)
 
-    # 1. Source Principale : Apple Books / iTunes Ebook (HD & Infaillible sur GitHub Actions)
+    # 1. Apple Books / iTunes Ebook
     try:
         q_apple = urllib.parse.quote(f"{clean_t} {author}")
         apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=1"
@@ -80,7 +80,7 @@ def fetch_book_metadata(title: str, author: str):
     except Exception:
         pass
 
-    # 2. Source Secondaire : Google Books
+    # 2. Google Books
     if not image_url:
         queries = [
             f"intitle:{clean_t} inauthor:{author}",
@@ -117,7 +117,7 @@ def fetch_book_metadata(title: str, author: str):
             if image_url:
                 break
 
-    # 3. Source de Repli : OpenLibrary Covers
+    # 3. OpenLibrary Covers
     if not image_url:
         try:
             q_ol = urllib.parse.quote(f"{clean_t} {author}")
@@ -136,7 +136,7 @@ def fetch_book_metadata(title: str, author: str):
 
     return image_url, page_count, published_year
 
-# MARK: - Enrichisseur Films (iTunes Movie Search Robuste)
+# MARK: - Enrichisseur Films
 
 def fetch_film_metadata(title: str, director: str):
     image_url = None
@@ -161,13 +161,14 @@ def fetch_film_metadata(title: str, director: str):
 
     return image_url
 
-# MARK: - Enrichisseur Albums (Apple Music)
+# MARK: - Enrichisseur Albums (Apple Music, Jaquette, Pistes & URL directe)
 
 def fetch_album_metadata(album_title: str, artist: str):
     clean_t = clean_search_title(album_title)
     query = urllib.parse.quote(f"{clean_t} {artist}")
     url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=1&country=fr"
-    image_url, collection_id, tracks = None, None, []
+    image_url, collection_id, tracks, direct_url = None, None, [], None
+
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
         with urllib.request.urlopen(req, timeout=8) as response:
@@ -178,6 +179,7 @@ def fetch_album_metadata(album_title: str, artist: str):
                 if raw_art:
                     image_url = raw_art.replace("100x100bb", "600x600bb")
                 collection_id = item.get("collectionId")
+                direct_url = item.get("collectionViewUrl")
     except Exception:
         pass
 
@@ -201,13 +203,15 @@ def fetch_album_metadata(album_title: str, artist: str):
                         })
         except Exception:
             pass
-    return image_url, tracks
 
-# MARK: - Liens Plateformes Utiles
+    return image_url, tracks, direct_url
 
-def build_safe_platform_links(item_type: str, title: str, creator: str):
-    encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
-    encoded_title = urllib.parse.quote(title.strip())
+# MARK: - Liens Plateformes Utiles (Apple Music Direct, Spotify & Deezer)
+
+def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
+    clean_t = clean_search_title(title)
+    encoded_query = urllib.parse.quote(f"{clean_t} {creator}".strip())
+    encoded_title = urllib.parse.quote(clean_t.strip())
     
     t = item_type.upper()
     if t == "FILM":
@@ -241,11 +245,12 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
             }
         ]
     else:  # ALBUM
+        apple_link = direct_apple_url if direct_apple_url else f"https://music.apple.com/fr/search?term={encoded_query}"
         return [
             {
                 "name": "Apple Music",
                 "category": "Écoute intégrale & Lossless",
-                "urlString": f"https://music.apple.com/fr/search?term={encoded_query}",
+                "urlString": apple_link,
                 "iconName": "apple.logo"
             },
             {
@@ -253,6 +258,12 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
                 "category": "Streaming audio",
                 "urlString": f"https://open.spotify.com/search/{encoded_query}",
                 "iconName": "waveform"
+            },
+            {
+                "name": "Deezer",
+                "category": "Streaming audio & HiFi",
+                "urlString": f"https://www.deezer.com/search/{encoded_query}",
+                "iconName": "music.note"
             }
         ]
 
@@ -342,20 +353,21 @@ def generate_daily_edition():
             title = item.get("title", "")
             creator = item.get("creator", "")
 
-            item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
-
             if item_type == "LIVRE":
+                item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
                 img, pages, pub_year = fetch_book_metadata(title, creator)
                 if img: item["imageURL"] = img
                 if pages and not item.get("formatMetric"): item["formatMetric"] = f"{pages} pages"
                 if pub_year: item["year"] = pub_year
 
             elif item_type == "FILM":
+                item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
                 img = fetch_film_metadata(title, creator)
                 if img: item["imageURL"] = img
 
             elif item_type == "ALBUM":
-                img, tracks = fetch_album_metadata(title, creator)
+                img, tracks, direct_url = fetch_album_metadata(title, creator)
+                item["platformLinks"] = build_safe_platform_links(item_type, title, creator, direct_apple_url=direct_url)
                 if img: item["imageURL"] = img
                 if tracks: item["tracks"] = tracks
 
@@ -366,7 +378,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition générée avec jaquettes HD livres/films/albums et archivée dans {archive_path}.")
+    print(f"✅ Édition générée (Apple Music direct, Spotify, Deezer intégrés) et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
