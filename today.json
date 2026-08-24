@@ -1,747 +1,181 @@
 {
   "accessible": {
-    "themeTitle": "Traverser les Miroirs",
-    "themeSubtitle": "L'évasion poétique au-delà de la réalité quotidienne",
+    "themeTitle": "L'Emprise de la Dystopie",
+    "themeSubtitle": "Quand le pouvoir façonne le réel",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Alice au pays des merveilles",
-        "creator": "Lewis Carroll",
-        "year": "1865",
+        "title": "1984",
+        "creator": "George Orwell",
+        "year": "1949",
         "origin": "Royaume-Uni",
-        "genre": "Littérature fantastique",
+        "genre": "Dystopie sociopolitique",
         "accessibility": "Pop Culture",
-        "formatMetric": "192 pages",
-        "quote": "C'est une drôle de chose que de s' rapetisser et de s'agrandir sans cesse.",
-        "anecdote": "Lewis Carroll était un mathématicien renommé qui a inventé ce récit pour distraire les trois filles de son doyen lors d'une promenade en barque sur la Thames.",
+        "formatMetric": "328 pages",
+        "quote": "La liberté est la liberté de dire que deux et deux font quatre.",
+        "anecdote": "George Orwell a écrit le roman affaibli par la tuberculose dans une ferme isolée de l'île de Jura en Écosse, tapant lui-même le manuscrit final sur une machine à écrire fatiguée.",
         "tags": [
-          "Classique",
-          "Imaginaire",
-          "Absurde"
+          "Dystopie",
+          "Totalitarisme",
+          "Classique"
         ],
         "ratings": [
           {
             "source": "Le Figaro Littéraire",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre absolu de la littérature universelle."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une fantaisie vertigineuse et immortelle."
-          },
-          {
-            "source": "Babelio",
-            "score": "4.4/5",
-            "iconName": "star.fill",
-            "excerpt": "Une plongée fascinante dans la logique des rêves."
-          }
-        ],
-        "aiSummary": "En suivant un lapin blanc pressé, la jeune Alice bascule dans un monde souterrain régit par une logique absurde et des créatures excentriques. Ce voyage initiatique déconstruit les règles du monde adulte à travers un langage ludique et brillant.",
-        "thematicAnalysis": "Ce roman incarne la traversée ultime du miroir, où les repères du réel s'effondrent pour laisser place à la pure poésie du fantastique.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/64/e5/f1/64e5f161-189e-bae0-7875-f36607b0675f/0b386c0c-5553-40de-bd79-0c806234ff02_cover_image.png/800x800bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Alice%20au%20pays%20des%20merveilles%20Lewis%20Carroll",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Alice%20au%20pays%20des%20merveilles%20Lewis%20Carroll",
-            "iconName": "bag.fill"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "FILM",
-        "title": "Le Voyage de Chihiro",
-        "creator": "Hayao Miyazaki",
-        "year": "2001",
-        "origin": "Japon",
-        "genre": "Animation / Fantastique",
-        "accessibility": "Pop Culture",
-        "formatMetric": "2h 05m",
-        "quote": "Rien de ce qui arrive n'est jamais oublié, même si tu ne peux pas t'en souvenir.",
-        "anecdote": "Miyazaki a entièrement dessiné les story-boards à la main sans scénario écrit au préalable, laissant le récit évoluer naturellement pendant le dessin.",
-        "tags": [
-          "Animation",
-          "Mythologie",
-          "Chefs-d'œuvre"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un enchantement visuel et métaphysique de chaque instant."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre somptueuse sur le passage à l'âge adulte."
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "97%",
-            "iconName": "star.fill",
-            "excerpt": "Un classique instantané de l'animation mondiale."
-          }
-        ],
-        "aiSummary": "Prise au piège dans un monde d'esprits après que ses parents ont été transformés en porcs, la jeune Chihiro doit travailler dans les bains publics de la sorcière Yubaba. Elle devra faire preuve de courage pour retrouver son identité et sauver sa famille.",
-        "thematicAnalysis": "Le film transforme une traversée involontaire du miroir en une quête d'autonomie et de reconnexion avec les traditions et la nature.",
-        "imageURL": null,
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Le%20Voyage%20de%20Chihiro%20Hayao%20Miyazaki",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Le%20Voyage%20de%20Chihiro",
-            "iconName": "apple.logo"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "ALBUM",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "origin": "Royaume-Uni",
-        "genre": "Rock Psychédélique",
-        "accessibility": "Pop Culture",
-        "formatMetric": "42 minutes, 10 titres",
-        "quote": "And then one day you find ten years have got behind you.",
-        "anecdote": "Les voix parlées en arrière-plan sont des extraits d'interviews impromptues menées par le groupe avec des employés des studios Abbey Road, y compris le gardien.",
-        "tags": [
-          "Culte",
-          "Rock Progressif",
-          "Légende"
-        ],
-        "ratings": [
-          {
-            "source": "Rolling Stone",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "L'un des albums les plus parfaits de l'histoire du rock."
-          },
-          {
-            "source": "Pitchfork",
-            "score": "9.3/10",
-            "iconName": "star.fill",
-            "excerpt": "Un monument sonore d'une ambition démesurée."
-          },
-          {
-            "source": "Music Story",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une expérience d'écoute totale et transcendance."
-          }
-        ],
-        "aiSummary": "Cet album conceptuel explore la folie, le temps, l'argent et la mort à travers des arrangements sonores novateurs et des nappes de synthétiseurs hypnotiques. Il reste l'un des jalons les plus influents de l'histoire de la musique moderne.",
-        "thematicAnalysis": "Une exploration auditive qui emmène l'auditeur de l'autre côté de la conscience humaine, au-delà du visible et de la raison quotidienne.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/the-wall/1065975633?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
-            "iconName": "music.note"
-          }
-        ],
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "In the Flesh?",
-            "duration": "3:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9e/00/ce/9e00ce3f-e24b-c933-2906-57c9c6adbe64/mzaf_8206572726959166944.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "The Thin Ice",
-            "duration": "2:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/0e/d6/ee0ed6b1-9b7b-2315-f352-0a484e2ffc7a/mzaf_6534653370309112636.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Another Brick In the Wall, Pt. 1",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/0a/b2/7f0ab2de-c58f-ab90-aaa7-69e76ea1614e/mzaf_13903338154361109472.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "The Happiest Days of Our Lives",
-            "duration": "1:51",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6a/94/bc/6a94bcd6-8a5a-c7cb-d633-e1152dfcdd34/mzaf_17081166823592607777.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Another Brick In the Wall, Pt. 2",
-            "duration": "3:58",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f8/a2/cd/f8a2cd4a-2af9-f34f-3684-89e3304c102c/mzaf_376000686139681175.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Mother",
-            "duration": "5:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/fa/a1/0afaa116-5108-ebf2-f2b3-9d7e0afa9075/mzaf_6396232943440433611.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Goodbye Blue Sky",
-            "duration": "2:47",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/6b/90/cd6b902b-58d6-92e3-23b8-73806ead85c4/mzaf_15564784983603777155.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Empty Spaces",
-            "duration": "2:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f1/a2/39/f1a239f0-19f3-9138-f3da-27ec91af1c73/mzaf_17079476583582930162.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Young Lust",
-            "duration": "3:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/74/a1/61/74a1613a-0538-afd8-d425-b7e3a2d87815/mzaf_15083185785106020855.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "One of My Turns",
-            "duration": "3:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/63/c6/b5/63c6b591-b046-38c1-79a3-cffa63239875/mzaf_16319769771609696767.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Don't Leave Me Now",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/41/35/3b41359c-ec27-06f7-139d-3bf1f5f2f47b/mzaf_14306272745913211721.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Another Brick In the Wall, Pt. 3",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0b/48/c6/0b48c6b4-f3a3-7158-ad4e-cfb3b71cc5aa/mzaf_10533122211583635152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Goodbye Cruel World",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/f8/31/cff831d2-a0f5-b767-72d2-da5b7e193a15/mzaf_10120418368130687063.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 1,
-            "title": "Hey You",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/fd/c8/b9fdc82e-07a0-56b7-40d2-ca30540b1516/mzaf_18128670058523403289.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Is There Anybody Out There?",
-            "duration": "2:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/37/99/6f379960-0ba0-5be6-ba71-701616aa1053/mzaf_14770994261006181754.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Nobody Home",
-            "duration": "3:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/44/7b/b1447b54-a08e-9219-4f27-08cf827f77b3/mzaf_15898104863874072273.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Vera",
-            "duration": "1:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/40/d4/1e/40d41ef9-208b-2269-15d6-36342f192dfc/mzaf_12749720877812999437.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Bring the Boys Back Home",
-            "duration": "1:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/13/ed/f113ed1f-a553-8d58-8217-9973b54e1693/mzaf_1006567261111392294.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Comfortably Numb",
-            "duration": "6:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fe/44/11/fe441140-ff52-28ef-d7c4-d87b3084d959/mzaf_9494577035851753023.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "The Show Must Go On",
-            "duration": "1:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/4a/f8/574af864-88a4-16d4-c64e-d9857adc8b9a/mzaf_12375970921451753152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "In the Flesh",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1f/77/03/1f7703d5-4adf-b207-69a1-92e2523a14b7/mzaf_8141171389362838363.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Run Like Hell",
-            "duration": "4:23",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/58/03/cf/5803cfbc-f27f-a1ef-a55b-dd4bc0993dbc/mzaf_14125362445130198402.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Waiting for the Worms",
-            "duration": "3:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/85/71/8f857136-3285-d9c2-18f3-9fc11c99b5b2/mzaf_18212995088536362482.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Stop",
-            "duration": "0:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/b3/23/7eb32303-9966-9fff-e74b-d812db4afe06/mzaf_872179588633858960.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "The Trial",
-            "duration": "5:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/8a/4e/be8a4eb9-fc0b-3695-d8c8-d7a86fcb410a/mzaf_16711526069530791059.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Outside the Wall",
-            "duration": "1:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/b4/45/1db445f0-5657-189d-07de-c0794b7bcd2f/mzaf_13560913112561824223.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "intermediate": {
-    "themeTitle": "La Mélancolie des Villes Fantômes",
-    "themeSubtitle": "Errances poétiques au cœur d'espaces désertés et de mémoires effacées",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "Les Villes invisibles",
-        "creator": "Italo Calvino",
-        "year": "1972",
-        "origin": "Italie",
-        "genre": "Conte philosophique",
-        "accessibility": "Curieux",
-        "formatMetric": "168 pages",
-        "quote": "Les villes, comme les rêves, sont faites de désirs et de peurs.",
-        "anecdote": "Le livre est structuré selon une rigueur mathématique stricte inspirée par le groupe littéraire OULIPO, articulant 55 descriptions de villes imaginaires.",
-        "tags": [
-          "Postmodernisme",
-          "Architecture",
-          "Poétique"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde des Livres",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une méditation sublime sur l'espace et l'imaginaire."
-          },
-          {
-            "source": "Télérama",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un joyau d'ingénuosité et de grâce littéraire."
-          },
-          {
-            "source": "Kirkus Reviews",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre éblouissante sur le désir et la mémoire."
-          }
-        ],
-        "aiSummary": "Marco Polo raconte à l'empereur Kublai Khan cinquante-cinq villes extraordinaires qu'il a visitées dans l'empire. À travers ces descriptions poétiques, Calvino compose une allégorie fascinante sur la nature de l'urbanisme et de l'âme humaine.",
-        "thematicAnalysis": "Calvino capture la mélancolie urbaine en révélant la fragilité des cités humaines et les fantômes de mémoire qu'elles abritent.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/b8/35/bb/b835bb88-3b6d-1eef-f8ff-21410c6a2af3/9782072883507.jpg/800x800bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Les%20Villes%20invisibles%20Italo%20Calvino",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Les%20Villes%20invisibles%20Italo%20Calvino",
-            "iconName": "bag.fill"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "FILM",
-        "title": "Paris, Texas",
-        "creator": "Wim Wenders",
-        "year": "1984",
-        "origin": "Allemagne / États-Unis",
-        "genre": "Drame / Road Movie",
-        "accessibility": "Curieux",
-        "formatMetric": "2h 27m",
-        "quote": "I used to know this family...",
-        "anecdote": "La musique légendaire à la guitare slide de Ry Cooder a été enregistrée en improvisation directe devant les images du film projetées dans le studio.",
-        "tags": [
-          "Palme d'Or",
-          "Road Movie",
-          "Contemplatif"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une splendeur visuelle servie par une mélancolie infinie."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Le chef-d'œuvre absolu de Wim Wenders."
-          },
-          {
-            "source": "Empire",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un drame bouleversant sur l'isolement et le pardon."
-          }
-        ],
-        "aiSummary": "Un homme amnésique réapparaît du désert du Texas après quatre ans d'absence et tente de renouer avec son jeune fils et son épouse disparue. Leur trajectoire traverse des paysages américains désolés gravés de solitude.",
-        "thematicAnalysis": "Ce road movie explore l'immensité vide des décors américains comme le miroir de la solitude de personnages en quête de réparation.",
-        "imageURL": null,
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Paris%2C%20Texas%20Wim%20Wenders",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Paris%2C%20Texas",
-            "iconName": "apple.logo"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "ALBUM",
-        "title": "Untrue",
-        "creator": "Burial",
-        "year": "2007",
-        "origin": "Royaume-Uni",
-        "genre": "Dubstep / Ambient",
-        "accessibility": "Curieux",
-        "formatMetric": "50 minutes, 13 titres",
-        "quote": "It's about when you're walking home late at night in London in the rain.",
-        "anecdote": "William Bevan (Burial) a produit cet album culte entièrement sur le logiciel Sound Forge sans utiliser de séquenceur classique ni d'alignement temporel automatique.",
-        "tags": [
-          "Nocturne",
-          "Électronique",
-          "Culte"
-        ],
-        "ratings": [
-          {
-            "source": "Pitchfork",
-            "score": "9.0/10",
-            "iconName": "star.fill",
-            "excerpt": "Le chef-d'œuvre de la musique électronique des années 2000."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une immersion crépusculaire et bouleversante."
-          },
-          {
-            "source": "Resident Advisor",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un monument de mélancolie et d'innovation rythmique."
-          }
-        ],
-        "aiSummary": "Marqué par des sons de pluie, des crépitements de vinyle et des samples de voix R&B hachés, cet album capture l'atmosphère nocturne et désenchantée des rues de Londres. C'est une œuvre fondamentale de la musique électronique moderne.",
-        "thematicAnalysis": "Un portrait sonore poignant des espaces urbains nocturnes et déserts, résonnant des échos d'une jeunesse mélancolique.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d3/05/10/d3051051-937f-e7c4-636e-7e1950d60a7b/5024545486520.png/600x600bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/untrue/1056902908?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Untrue%20Burial",
-            "iconName": "music.note"
-          }
-        ],
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Untitled",
-            "duration": "0:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c7/34/bc/c734bce4-bbe4-cfea-bbf1-e7210107cd1b/mzaf_6978245255794965431.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Archangel",
-            "duration": "4:00",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/4a/4e/eb4a4e30-2eea-45eb-82c8-196e04bb9f1b/mzaf_14445404194350280558.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Near Dark",
-            "duration": "3:56",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/d6/2c/6bd62c3e-bd79-1684-d5da-d493e93f782a/mzaf_2940695367981810938.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Ghost Hardware",
-            "duration": "4:55",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/83/88/50/8388505c-9a37-f5f5-cbee-5c239979b836/mzaf_18070933849808140382.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Endorphin",
-            "duration": "2:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/a4/1f/32a41f52-3c4d-0d73-4b9b-5499f7af43dd/mzaf_3455066683769537185.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Etched Headplate",
-            "duration": "6:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/39/2a/24392a51-2f75-ffc8-08e0-9ad44a03286d/mzaf_17912408937548901523.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "In McDonalds",
-            "duration": "2:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/97/84/1697845d-d47c-cf31-d65c-24b9c741fbca/mzaf_4290146884410528734.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Untrue",
-            "duration": "6:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/2f/da/0a2fdadb-f708-ff7b-0f78-7eb31464d434/mzaf_12554970205513415094.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Shell of Light",
-            "duration": "4:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/1a/84/fa1a84d6-cd6d-7c2a-2893-c240d5b061dc/mzaf_5968605937481531629.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Dog Shelter",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/4e/ee/934eee43-cfa1-6459-9ef0-2fcdbaa6ca79/mzaf_52806888402312650.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Homeless",
-            "duration": "5:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/18/72/7a/18727a21-75c7-0d32-4b17-a1950432ffa5/mzaf_3815225615373388241.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "UK",
-            "duration": "1:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/c3/f4/5ec3f42f-c68f-749b-3164-343c65a13bf0/mzaf_15183943598924545354.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Raver",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/23/d7/a123d73a-99d4-35e3-0b0c-98ea0c457bea/mzaf_8036385620354622979.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "expert": {
-    "themeTitle": "Les Labyrinthes de la Déconstruction",
-    "themeSubtitle": "L'art de la fragmentation narrative et des architectures expérimentales",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "Le Festin nu",
-        "creator": "William S. Burroughs",
-        "year": "1959",
-        "origin": "États-Unis",
-        "genre": "Roman expérimental",
-        "accessibility": "Initiations",
-        "formatMetric": "320 pages",
-        "quote": "Le langage est un virus venu de l'espace.",
-        "anecdote": "Le roman a été conçu en découpant et en assemblant aléatoirement des notes manuscrites selon la technique novatrice du 'cut-up'.",
-        "tags": [
-          "Avant-garde",
-          "Beat Generation",
-          "Subversif"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une bombe littéraire qui a brisé tous les tabous."
+            "excerpt": "Un avertissement prophétique majeur d'une puissance intacte."
           },
           {
             "source": "The Guardian",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un texte d'une puissance brute et d'une audace folle."
+            "excerpt": "L'un des romans les plus terrifiants et indispensables du XXe siècle."
           },
           {
-            "source": "Les Inrockuptibles",
-            "score": "4.5/5",
+            "source": "Télérama",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience de lecture radicale et hallucinogène."
+            "excerpt": "Une œuvre monumentale qui continue de façonner notre perception du pouvoir."
           }
         ],
-        "aiSummary": "Voyage hallucinatoire à travers une ville cauchemardesque nommée la Zone Intermédiaire, ce livre déconstruit la structure narrative classique pour exposer les mécanismes de contrôle politiques et biologiques subis par le corps humain.",
-        "thematicAnalysis": "Burroughs pulvérise le récit traditionnel pour créer un labyrinthe d'images fragmentées où le sens naît du chaos.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/7b/5f/ab/7b5fabd9-ebf1-8fff-0047-bcf0afcca566/9782267052640.jpg/800x800bb.jpg",
+        "aiSummary": "Dans une société sous surveillance totale dirigée par Big Brother, Winston Smith tente de préserver une parcelle de vérité et de liberté. Ce roman visionnaire sonde les mécanismes de la manipulation de la pensée et la destruction du langage.",
+        "thematicAnalysis": "Orwell met en scène la réduction ultime de l'individu par la manipulation idéologique, démontrant comment le contrôle absolu du langage et du passé annihile la capacité même de résister.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/99/e0/01/99e0015c-4cc8-fc9e-87a5-839709de8bf5/9782818708293-001-x.jpeg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Festin%20nu%20William%20S.%20Burroughs",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=1984+George+Orwell",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Festin%20nu%20William%20S.%20Burroughs",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984+George+Orwell",
             "iconName": "bag.fill"
           }
         ],
         "tracks": []
-      },
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "La Poétique du Désir Inassouvi",
+    "themeSubtitle": "L'élégance sublime des amours suspendues",
+    "items": [
       {
         "type": "FILM",
-        "title": "Oncle Boonmee, celui qui se souvient de ses vies antérieures",
-        "creator": "Apichatpong Weerasethakul",
-        "year": "2010",
-        "origin": "Thaïlande",
-        "genre": "Cinéma d'art et essai",
-        "accessibility": "Initiations",
-        "formatMetric": "1h 53m",
-        "quote": "Les esprits ne sont pas attachés à des lieux, mais à des personnes.",
-        "anecdote": "Le film a remporté la Palme d'Or au Festival de Cannes 2010 sous la présidence de Tim Burton, surpris par sa poésie radicale.",
+        "title": "In the Mood for Love",
+        "creator": "Wong Kar-wai",
+        "year": "2000",
+        "origin": "Hong Kong",
+        "genre": "Drame romantique",
+        "accessibility": "Curieux",
+        "formatMetric": "1h 38m",
+        "quote": "C'était un moment embarrassant. Elle gardait la tête basse pour lui donner une chance de s'approcher.",
+        "anecdote": "Le film a été tourné sans scénario préétabli, Wong Kar-wai improvisant les scènes au fil des mois avec ses acteurs dans une recherche obsessionnelle de couleurs et de textures.",
         "tags": [
-          "Palme d'Or",
-          "Mystique",
-          "Expérimental"
+          "Romantisme",
+          "Cinéma d'auteur",
+          "Esthétique"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un pur chef-d'œuvre de liberté cinématographique."
+            "excerpt": "La quintessence pure du désir retenu et de la grâce cinématographique."
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "92%",
+            "iconName": "percent",
+            "excerpt": "Un chef-d'œuvre visuel et émotionnel d'une élégance inouïe."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience sensorielle unique au monde."
-          },
-          {
-            "source": "Slant Magazine",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un poème cinématographique d'une beauté mystique."
+            "excerpt": "Une valse poignante sur l'amour impossible et la mélancolie des regrets."
           }
         ],
-        "aiSummary": "Atteint d'une insuffisance rénale aiguë, Boonmee passe ses derniers jours dans la jungle thaïlandaise entouré des fantômes de son épouse décédée et de son fils disparu apparu sous forme d'esprit de la forêt.",
-        "thematicAnalysis": "Le réalisateur déconstruit les limites temporelles et matérielles du cinéma pour offrir une méditation fluide sur la transmigration des âmes.",
+        "aiSummary": "Dans le Hong Kong étouffant des années 1960, deux voisins découvrent simultanément l'infidélité de leurs conjoints respectifs. En rejouant les gestes de la trahison pour la comprendre, ils nouent un lien tacite d'une délicatesse déchirante.",
+        "thematicAnalysis": "Wong Kar-wai sublime l'absence et la retenue, transformant le cadrage, les robes qipao et les ralentis musicaux en de puissants réceptacles d'une passion refoulée mais impérissable.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Oncle%20Boonmee%2C%20celui%20qui%20se%20souvient%20de%20ses%20vies%20ant%C3%A9rieures%20Apichatpong%20Weerasethakul",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=In+the+Mood+for+Love+Wong+Kar-wai",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Oncle%20Boonmee%2C%20celui%20qui%20se%20souvient%20de%20ses%20vies%20ant%C3%A9rieures",
+            "urlString": "https://tv.apple.com/fr/search?term=In+the+Mood+for+Love",
             "iconName": "apple.logo"
           }
         ],
         "tracks": []
-      },
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "L'Anatomie du Temps Domestique",
+    "themeSubtitle": "La décomposition silencieuse du quotidien",
+    "items": [
       {
-        "type": "ALBUM",
-        "title": "Girl with Basket of Fruit",
-        "creator": "Xiu Xiu",
-        "year": "2019",
-        "origin": "États-Unis",
-        "genre": "Avant-garde / Noise",
-        "accessibility": "Initiations",
-        "formatMetric": "37 minutes, 9 titres",
-        "quote": "Am I evil or am I just crying?",
-        "anecdote": "L'album intègre des sonorités de percussions rituelles africaines mixées à des larsens et à la voix convulsive de Jamie Stewart.",
+        "type": "FILM",
+        "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+        "creator": "Chantal Akerman",
+        "year": "1975",
+        "origin": "Belgique",
+        "genre": "Cinéma avant-garde",
+        "accessibility": "Initié",
+        "formatMetric": "3h 21m",
+        "quote": "Rien n'est plus terrifiant que le dérèglement imperceptible d'une routine parfaite.",
+        "anecdote": "Réalisé par Chantal Akerman alors qu'elle n'avait que 25 ans avec une équipe quasi exclusivement féminine, le film a été élu meilleur film de tous les temps par la revue Sight & Sound en 2022.",
         "tags": [
-          "Expérimental",
-          "Industrial",
-          "Radical"
+          "Avant-garde",
+          "Féminisme",
+          "Minimalisme"
         ],
         "ratings": [
           {
-            "source": "Pitchfork",
-            "score": "8.2/10",
+            "source": "Sight & Sound",
+            "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Une œuvre d'une intensité cathartique Terrifiante."
+            "excerpt": "Un monument d'une rigueur formelle et politique absolue."
           },
           {
-            "source": "The Needle Drop",
-            "score": "9/10",
-            "iconName": "star.fill",
-            "excerpt": "L'un des albums les plus audacieux de la musique moderne."
-          },
-          {
-            "source": "Tiny Mix Tapes",
+            "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une déconstruction sonore sans concession."
+            "excerpt": "Une expérience cinématographique radicale, hypnotique et révolutionnaire."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "9.5/10",
+            "iconName": "star.fill",
+            "excerpt": "Une dissection sonore et visuelle inégalée de l'aliénation ordinaire."
           }
         ],
-        "aiSummary": "Cet album d'une violence poétique inouïe combine percussions déstructurées, motifs d'avant-garde et vocaux hystériques pour aborder le traumatisme et le mysticisme. C'est une expérience auditive confrontationnelle et fascinante.",
-        "thematicAnalysis": "Un exemple extrême de déconstruction sonore où le rythme et l'harmonie sont brisés pour exprimer l'état brut des émotions.",
+        "aiSummary": "Sur une durée de trois jours, le film retrace dans un temps étiré la routine ultra-rigide d'une veuve bruxelloise entre tâches ménagères et prostitution occasionnelle. Jusqu'au moment où un détail infime vient enrayer la mécanique parfaite.",
+        "thematicAnalysis": "Chantal Akerman invente une grammaire filmique de la durée brute où le plan fixe transforme l'espace domestique en une arène politique, révélant la violence enfouie dans la répétition des gestes conditionnés.",
         "imageURL": null,
         "platformLinks": [
           {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/search?term=Girl%20with%20Basket%20of%20Fruit%20Xiu%20Xiu",
-            "iconName": "apple.logo"
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Jeanne+Dielman%2C+23%2C+quai+du+Commerce%2C+1080+Bruxelles+Chantal+Akerman",
+            "iconName": "play.tv.fill"
           },
           {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Girl%20with%20Basket%20of%20Fruit%20Xiu%20Xiu",
-            "iconName": "music.note"
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Jeanne+Dielman%2C+23%2C+quai+du+Commerce%2C+1080+Bruxelles",
+            "iconName": "apple.logo"
           }
         ],
         "tracks": []
