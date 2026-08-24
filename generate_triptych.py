@@ -1,4 +1,5 @@
 import os
+import glob
 import json
 import urllib.parse
 import urllib.request
@@ -13,15 +14,43 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
+# MARK: - Gestion de l'Historique & Déduplication Absolue
+
+def load_history_exclusions():
+    """Lit toutes les archives pour interdire la répétition d'œuvres ou de thèmes."""
+    used_themes = set()
+    used_titles = set()
+    
+    archive_dir = "archive"
+    if os.path.exists(archive_dir):
+        for filepath in glob.glob(f"{archive_dir}/*.json"):
+            try:
+                with open(filepath, "r", encoding="utf-8") as f:
+                    past_data = json.load(f)
+                    for tier in ["accessible", "intermediate", "expert"]:
+                        if tier in past_data:
+                            theme = past_data[tier].get("themeTitle")
+                            if theme:
+                                used_themes.add(theme.strip())
+                            for item in past_data[tier].get("items", []):
+                                title = item.get("title")
+                                creator = item.get("creator")
+                                if title and creator:
+                                    used_titles.add(f"{title.strip()} ({creator.strip()})")
+                                elif title:
+                                    used_titles.add(title.strip())
+            except Exception:
+                pass
+
+    return list(used_themes), list(used_titles)
+
 # MARK: - Enrichisseur Livres (Google Books + OpenLibrary Fallback)
 
 def fetch_book_metadata(title: str, author: str):
-    """Récupère la couverture via Google Books puis OpenLibrary si nécessaire."""
     image_url = None
     page_count = None
     published_year = None
 
-    # 1. Tentative Google Books
     queries = [
         f"{title} {author}",
         f"intitle:{title} inauthor:{author}",
@@ -62,7 +91,6 @@ def fetch_book_metadata(title: str, author: str):
         if image_url:
             break
 
-    # 2. Repli OpenLibrary si Google Books n'a pas renvoyé d'image
     if not image_url:
         try:
             q_ol = urllib.parse.quote(f"{title} {author}")
@@ -81,10 +109,9 @@ def fetch_book_metadata(title: str, author: str):
 
     return image_url, page_count, published_year
 
-# MARK: - Enrichisseur Films (Affiches HD officielles iTunes Movies)
+# MARK: - Enrichisseur Films (iTunes Movie Search)
 
 def fetch_film_metadata(title: str, director: str):
-    """Récupère l'affiche HD officielle du film sur iTunes Movie Search."""
     image_url = None
     queries = [f"{title} {director}", title]
 
@@ -105,7 +132,7 @@ def fetch_film_metadata(title: str, director: str):
 
     return image_url
 
-# MARK: - Enrichisseur Albums (Pochettes HD 600x600 & Pistes Apple Music)
+# MARK: - Enrichisseur Albums (Apple Music)
 
 def fetch_album_metadata(album_title: str, artist: str):
     query = urllib.parse.quote(f"{album_title} {artist}")
@@ -146,7 +173,7 @@ def fetch_album_metadata(album_title: str, artist: str):
             pass
     return image_url, tracks
 
-# MARK: - Liens Directs Utiles (Sans Letterboxd ni Babelio)
+# MARK: - Liens Plateformes Utiles
 
 def build_safe_platform_links(item_type: str, title: str, creator: str):
     encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
@@ -199,9 +226,10 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
             }
         ]
 
-# MARK: - Prompt Éditorial & IA
+# MARK: - Prompt Éditorial Dynamique avec Blacklist
 
-SYSTEM_PROMPT = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
+def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
+    prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
 Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE FORTE reliant 3 profils :
 1. "accessible" (Pop Culture)
@@ -210,13 +238,22 @@ Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE FORT
 
 Chaque profil doit contenir EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
 
+RÈGLE D'UNICITÉ ET D'ORIGINALITÉ ABSOLUE (TRÈS STRICT) :
+Trivium renouvelle continuellement sa bibliothèque. Tu as L'INTERDICTION FORMELLE de réutiliser un thème ou une œuvre déjà parus dans les éditions précédentes.
+"""
+    if excluded_themes:
+        prompt += f"\nTHÈMES DÉJÀ TRAITÉS À BANNIR STRICTEMENT :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
+    if excluded_titles:
+        prompt += f"\nŒUVRES DÉJÀ RECOMMANDÉES À BANNIR STRICTEMENT :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
+
+    prompt += """
 RÈGLE STRICTE POUR LA REVUE DE PRESSE :
 Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") provenant de 3 MÉDIAS DISTINCTS et reconnus (exemples : Le Monde, Télérama, Les Inrockuptibles, Libération, Cahiers du Cinéma, Pitchfork, Rolling Stone, The Guardian...).
 
 Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 {
   "accessible": {
-    "themeTitle": "Titre du thème",
+    "themeTitle": "Titre du thème inédit",
     "themeSubtitle": "Sous-titre poétique expliquant le fil invisible reliant les 3 œuvres",
     "items": [
       {
@@ -245,18 +282,27 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
   "expert": { ... }
 }
 """
+    return prompt
+
+# MARK: - Fonction Principale de Génération
 
 def generate_daily_edition():
     today_str = datetime.now().strftime("%Y-%m-%d")
     print(f"🚀 Génération de l'édition du {today_str}...")
 
+    os.makedirs("archive", exist_ok=True)
+    past_themes, past_titles = load_history_exclusions()
+    print(f"📚 Historique chargé : {len(past_themes)} thèmes et {len(past_titles)} œuvres bannis pour garantir la nouveauté.")
+
+    system_prompt = build_system_prompt(past_themes, past_titles)
+
     model = genai.GenerativeModel(
         model_name="gemini-3.6-flash",
-        generation_config={"response_mime_type": "application/json", "temperature": 0.7},
-        system_instruction=SYSTEM_PROMPT
+        generation_config={"response_mime_type": "application/json", "temperature": 0.8},
+        system_instruction=system_prompt
     )
 
-    response = model.generate_content("Génère le triptyque culturel du jour pour les 3 profils avec 3 critiques de médias différents par œuvre.")
+    response = model.generate_content("Génère un triptyque 100% inédit et original pour aujourd'hui avec 3 revues de presse distinctes par œuvre.")
     data = json.loads(response.text)
 
     for tier in ["accessible", "intermediate", "expert"]:
@@ -267,35 +313,33 @@ def generate_daily_edition():
             title = item.get("title", "")
             creator = item.get("creator", "")
 
-            # Liens plateformes nettoyés
             item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
 
-            # Enrichissement médias réels
             if item_type == "LIVRE":
                 img, pages, pub_year = fetch_book_metadata(title, creator)
-                if img:
-                    item["imageURL"] = img
-                if pages and not item.get("formatMetric"):
-                    item["formatMetric"] = f"{pages} pages"
-                if pub_year:
-                    item["year"] = pub_year
+                if img: item["imageURL"] = img
+                if pages and not item.get("formatMetric"): item["formatMetric"] = f"{pages} pages"
+                if pub_year: item["year"] = pub_year
 
             elif item_type == "FILM":
                 img = fetch_film_metadata(title, creator)
-                if img:
-                    item["imageURL"] = img
+                if img: item["imageURL"] = img
 
             elif item_type == "ALBUM":
                 img, tracks = fetch_album_metadata(title, creator)
-                if img:
-                    item["imageURL"] = img
-                if tracks:
-                    item["tracks"] = tracks
+                if img: item["imageURL"] = img
+                if tracks: item["tracks"] = tracks
 
+    # 1. Mise à jour de l'édition courante
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print("✅ today.json généré avec succès (images livres, affiches films et pochettes albums intégrées).")
+    # 2. Sauvegarde dans l'archive permanente
+    archive_path = f"archive/{today_str}.json"
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Édition du jour enregistrée dans today.json et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
