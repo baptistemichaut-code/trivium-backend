@@ -15,17 +15,24 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Nettoyeurs de Titres & Encodage d'URL
+# MARK: - Utilitaires de Normalisation & Recherche
 
 def clean_search_title(title: str) -> str:
+    """Supprime parenthèses, crochets et sous-titres parasites."""
     t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
         t = t.split(":")[0]
     return t.strip()
 
+def normalize_text(text: str) -> str:
+    """Minuscules et suppression des caractères spéciaux pour comparer les titres."""
+    t = text.lower()
+    t = re.sub(r"[^\w\s]", "", t)
+    return " ".join(t.split())
+
 def safe_url_encode(text: str) -> str:
-    return urllib.parse.quote(str(text).strip(), safe="")
+    return urllib.parse.quote_plus(str(text).strip())
 
 # MARK: - Gestion de l'Historique & Déduplication
 
@@ -56,31 +63,34 @@ def load_history_exclusions():
 
     return list(used_themes), list(used_titles)
 
-# MARK: - Enrichisseurs Médias
+# MARK: - Enrichisseur Livres Multi-Sources
 
 def fetch_book_metadata(title: str, author: str):
     image_url = None
     page_count = None
     clean_t = clean_search_title(title)
 
+    # 1. Apple Books
     try:
         q_apple = safe_url_encode(f"{clean_t} {author}")
-        apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=1"
+        apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=3"
         req = urllib.request.Request(apple_url, headers={"User-Agent": "TriviumApp/2.1"})
         with urllib.request.urlopen(req, timeout=5) as response:
             data = json.loads(response.read().decode())
-            if data.get("resultCount", 0) > 0:
-                raw_art = data["results"][0].get("artworkUrl100", "")
+            for item in data.get("results", []):
+                raw_art = item.get("artworkUrl100", "")
                 if raw_art:
                     image_url = raw_art.replace("100x100bb", "800x800bb")
+                    break
     except Exception:
         pass
 
+    # 2. Google Books
     if not image_url:
         queries = [f"intitle:{clean_t} inauthor:{author}", f"{clean_t} {author}", clean_t]
         for q in queries:
             encoded_q = safe_url_encode(q)
-            url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=2&printType=books"
+            url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=3&printType=books"
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
                 with urllib.request.urlopen(req, timeout=5) as response:
@@ -100,71 +110,143 @@ def fetch_book_metadata(title: str, author: str):
             if image_url:
                 break
 
+    # 3. OpenLibrary
+    if not image_url:
+        try:
+            q_ol = safe_url_encode(f"{clean_t} {author}")
+            ol_url = f"https://openlibrary.org/search.json?q={q_ol}&limit=1"
+            req = urllib.request.Request(ol_url, headers={"User-Agent": "TriviumApp/2.1"})
+            with urllib.request.urlopen(req, timeout=5) as response:
+                ol_data = json.loads(response.read().decode())
+                docs = ol_data.get("docs", [])
+                if docs and "cover_i" in docs[0]:
+                    cover_id = docs[0]["cover_i"]
+                    image_url = f"https://covers.openlibrary.org/b/id/{cover_id}-L.jpg"
+        except Exception:
+            pass
+
     return image_url, page_count
 
+# MARK: - Enrichisseur Films avec Vérification de Titre
+
 def fetch_film_metadata(title: str, director: str):
-    image_url = None
     clean_t = clean_search_title(title)
+    norm_target = normalize_text(clean_t)
     queries = [clean_t, f"{clean_t} {director}"]
 
-    for q in queries:
-        encoded_q = safe_url_encode(q)
-        for country in ["fr", "us"]:
-            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=1&country={country}"
+    for country in ["fr", "us"]:
+        for q in queries:
+            encoded_q = safe_url_encode(q)
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=5&country={country}"
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
                 with urllib.request.urlopen(req, timeout=5) as response:
                     data = json.loads(response.read().decode())
-                    if data.get("resultCount", 0) > 0:
-                        raw_art = data["results"][0].get("artworkUrl100", "")
-                        if raw_art:
-                            return raw_art.replace("100x100bb", "1000x1000bb")
+                    results = data.get("results", [])
+                    for item in results:
+                        name = normalize_text(item.get("trackName", ""))
+                        if norm_target in name or name in norm_target:
+                            raw_art = item.get("artworkUrl100", "")
+                            if raw_art:
+                                return raw_art.replace("100x100bb", "1000x1000bb")
             except Exception:
                 pass
 
-    return image_url
+    return None
+
+# MARK: - Enrichisseur Albums Précis (Correspondance Stricte & Multi-Pays)
 
 def fetch_album_metadata(album_title: str, artist: str):
     clean_t = clean_search_title(album_title)
-    query = safe_url_encode(f"{clean_t} {artist}")
-    url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=1&country=fr"
-    image_url, collection_id, tracks, direct_url = None, None, [], None
+    clean_a = clean_search_title(artist)
+    norm_title = normalize_text(clean_t)
+    norm_artist = normalize_text(clean_a)
 
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
-        with urllib.request.urlopen(req, timeout=8) as response:
-            data = json.loads(response.read().decode())
-            if data.get("resultCount", 0) > 0:
-                item = data["results"][0]
-                raw_art = item.get("artworkUrl100", "")
-                if raw_art:
-                    image_url = raw_art.replace("100x100bb", "600x600bb")
-                collection_id = item.get("collectionId")
-                direct_url = item.get("collectionViewUrl")
-    except Exception:
-        pass
+    queries = [
+        f"{clean_t} {clean_a}",
+        clean_t
+    ]
 
+    best_match = None
+
+    # Recherche multi-pays (FR puis US puis GB pour les labels indés/initiés)
+    for country in ["fr", "us", "gb"]:
+        if best_match:
+            break
+        for q in queries:
+            encoded_q = safe_url_encode(q)
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&limit=10&country={country}"
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
+                with urllib.request.urlopen(req, timeout=6) as response:
+                    data = json.loads(response.read().decode())
+                    results = data.get("results", [])
+                    
+                    # 1. Correspondance exacte ou forte sur le titre de l'album
+                    for item in results:
+                        col_name = normalize_text(item.get("collectionName", ""))
+                        if norm_title in col_name or col_name in norm_title:
+                            best_match = item
+                            break
+                    
+                    # 2. Correspondance par mots-clés distinctifs
+                    if not best_match:
+                        title_words = [w for w in norm_title.split() if len(w) > 2]
+                        for item in results:
+                            col_name = normalize_text(item.get("collectionName", ""))
+                            if title_words and all(w in col_name for w in title_words):
+                                best_match = item
+                                break
+
+                    # 3. Repli si artiste reconnu et titre partiel
+                    if not best_match:
+                        for item in results:
+                            art_name = normalize_text(item.get("artistName", ""))
+                            col_name = normalize_text(item.get("collectionName", ""))
+                            if (norm_artist in art_name or art_name in norm_artist) and any(w in col_name for w in norm_title.split() if len(w) > 3):
+                                best_match = item
+                                break
+            except Exception:
+                pass
+            if best_match:
+                break
+
+    if not best_match:
+        return None, [], None
+
+    raw_art = best_match.get("artworkUrl100", "")
+    image_url = raw_art.replace("100x100bb", "600x600bb") if raw_art else None
+    collection_id = best_match.get("collectionId")
+    direct_url = best_match.get("collectionViewUrl")
+    tracks = []
+
+    # Récupération des pistes audio officielles
     if collection_id:
-        lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&country=fr"
-        try:
-            req = urllib.request.Request(lookup_url, headers={"User-Agent": "TriviumApp/2.1"})
-            with urllib.request.urlopen(req, timeout=8) as response:
-                song_data = json.loads(response.read().decode())
-                for r in song_data.get("results", []):
-                    if r.get("wrapperType") == "track":
-                        millis = r.get("trackTimeMillis", 0)
-                        seconds = (millis // 1000) % 60
-                        minutes = (millis // (1000 * 60))
-                        tracks.append({
-                            "trackNumber": r.get("trackNumber", len(tracks) + 1),
-                            "title": r.get("trackName", "Piste"),
-                            "duration": f"{minutes}:{seconds:02d}",
-                            "previewURL": r.get("previewUrl")
-                        })
-        except Exception:
-            pass
+        for country in ["fr", "us"]:
+            lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&country={country}"
+            try:
+                req = urllib.request.Request(lookup_url, headers={"User-Agent": "TriviumApp/2.1"})
+                with urllib.request.urlopen(req, timeout=6) as response:
+                    song_data = json.loads(response.read().decode())
+                    for r in song_data.get("results", []):
+                        if r.get("wrapperType") == "track":
+                            millis = r.get("trackTimeMillis", 0)
+                            seconds = (millis // 1000) % 60
+                            minutes = (millis // (1000 * 60))
+                            tracks.append({
+                                "trackNumber": r.get("trackNumber", len(tracks) + 1),
+                                "title": r.get("trackName", "Piste"),
+                                "duration": f"{minutes}:{seconds:02d}",
+                                "previewURL": r.get("previewUrl")
+                            })
+                if tracks:
+                    break
+            except Exception:
+                pass
 
     return image_url, tracks, direct_url
+
+# MARK: - Liens Plateformes Utiles
 
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
@@ -192,7 +274,6 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
 # MARK: - Sanitizer / Garant de Structure Anti-Crash
 
 def sanitize_and_fill_defaults(data: dict) -> dict:
-    """Garantit qu'aucune clé attendue par Swift n'est manquante ou nulle."""
     sanitized = {}
     tiers = ["accessible", "intermediate", "expert"]
     default_theme = {"themeTitle": "Édition du jour", "themeSubtitle": "Trois œuvres reliées par un fil invisible", "items": []}
@@ -253,13 +334,12 @@ def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
 LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
 
 CALIBRATION TRÈS STRICTE DES 3 PROFILS CULTURELS :
-1. "accessible" (Pop Culture) : Monuments culturels et chefs-d'œuvre universellement connus (ex. musique : Queen, Daft Punk, The Beatles, Pink Floyd, Nirvana ; cinéma : Le Parrain, Interstellar, Alien ; livres : Le Petit Prince, 1984, Stephen King).
+1. "accessible" (Pop Culture) : Monuments culturels et chefs-d'œuvre universellement connus (musique : Pink Floyd, Daft Punk, Queen, The Beatles ; cinéma : Miyazaki, Star Wars, Le Parrain ; littérature : Alice au pays des merveilles, 1984, Stephen King).
 2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
-3. "expert" (Initié) : Avant-garde, expérimentations, cinéma d'art et essai exigeant.
+3. "expert" (Initié) : Avant-garde, expérimentations pointues (ex. Xiu Xiu, Faust, cinéma underground), littérature exigeante.
 
-Chaque profil contient EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
 Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE.
-Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") de 3 médias distincts avec leurs barèmes réels (Pitchfork sur 10, Télérama sur 5, etc.).
+Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") avec les barèmes authentiques de chaque média (Pitchfork sur 10, Télérama sur 5, Rotten Tomatoes en %, etc.).
 
 RÈGLE D'UNICITÉ :
 Interdiction de réutiliser des thèmes ou œuvres passés.
@@ -270,7 +350,7 @@ Interdiction de réutiliser des thèmes ou œuvres passés.
         prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
 
     prompt += """
-Format JSON STRICT à renvoyer :
+Format JSON attendu :
 {
   "accessible": {
     "themeTitle": "Titre du thème",
@@ -278,20 +358,20 @@ Format JSON STRICT à renvoyer :
     "items": [
       {
         "type": "LIVRE",
-        "title": "Titre",
-        "creator": "Auteur",
-        "year": "1952",
-        "origin": "États-Unis",
-        "genre": "Roman",
+        "title": "Titre exact",
+        "creator": "Nom de l'auteur",
+        "year": "1865",
+        "origin": "Royaume-Uni",
+        "genre": "Littérature fantastique",
         "accessibility": "Pop Culture",
-        "formatMetric": "128 pages",
+        "formatMetric": "192 pages",
         "quote": "Citation clé",
         "anecdote": "Une anecdote captivante",
-        "tags": ["Classique"],
+        "tags": ["Classique", "Merveilleux"],
         "ratings": [
-          {"source": "Le Monde des Livres", "score": "5/5", "iconName": "star.fill", "excerpt": "Chef-d'œuvre."},
-          {"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Poignant."},
-          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Brillant."}
+          {"source": "Le Figaro Littéraire", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre intemporel."},
+          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Une folie littéraire sublime."},
+          {"source": "The Guardian", "score": "5/5", "iconName": "star.fill", "excerpt": "Une œuvre fondatrice."}
         ],
         "aiSummary": "Résumé en 2 phrases.",
         "thematicAnalysis": "Analyse du lien avec le thème."
@@ -324,10 +404,10 @@ def generate_daily_edition():
     response = model.generate_content("Génère un triptyque 100% inédit et calibré en français.")
     raw_data = json.loads(response.text)
 
-    # 1. Sécurisation & Remplissage automatique des champs obligatoires
+    # 1. Structure sécurisée
     data = sanitize_and_fill_defaults(raw_data)
 
-    # 2. Enrichissement des médias
+    # 2. Enrichissement avec correspondances strictes
     for tier in ["accessible", "intermediate", "expert"]:
         for item in data[tier]["items"]:
             item_type = item["type"]
@@ -351,7 +431,7 @@ def generate_daily_edition():
                 if img: item["imageURL"] = img
                 if tracks: item["tracks"] = tracks
 
-    # 3. Enregistrement sécurisé
+    # 3. Sauvegarde
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -359,7 +439,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition validée et enregistrée sans aucune clé manquante.")
+    print(f"✅ Édition du jour générée avec correspondances vérifiées et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
