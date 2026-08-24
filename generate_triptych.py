@@ -255,55 +255,69 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             }
         ]
 
-# MARK: - Prompt Éditorial Calibré & 100% Français
+# MARK: - Prompt Éditorial avec Barèmes Critiques Authentiques
 
 def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
     prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
-LANGUE STRICTE : L'intégralité du texte généré (thèmes, résumés, genres, anecdotes, citations et revues de presse) DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
+LANGUE STRICTE : L'intégralité du contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE (y compris les citations et extraits de presse traduits si la source originale est étrangère).
 
 CALIBRATION TRÈS STRICTE DES 3 PROFILS CULTURELS :
-1. "accessible" (Pop Culture) : UNIQUEMENT de grands classiques universels et monuments populaires connus de tous (ex. musique : Queen, Daft Punk, Michael Jackson, The Beatles, Nirvana, Pink Floyd, Adele, Miles Davis ; ciné : Star Wars, Inception, Le Parrain, Miyazaki ; livres : 1984, Le Petit Prince, Hemingway, Stephen King). AUCUN artiste indé confidentiel dans ce profil.
-2. "intermediate" (Curieux) : Cinéma d'auteur accessible, pépites indie folk / rock acclamées (ex. Sufjan Stevens, Radiohead, Nick Drake, Arcade Fire), littérature contemporaine brillante.
-3. "expert" (Initié) : Avant-garde, expérimentations sonores, art et essai exigeant, raretés underground.
+1. "accessible" (Pop Culture) : UNIQUEMENT des monuments culturels et chefs-d'œuvre universellement connus (ex. musique : Queen, Daft Punk, The Beatles, Pink Floyd, Nirvana, Michael Jackson ; cinéma : Le Parrain, Interstellar, Alien, Le Seigneur des Anneaux ; littérature : Le Petit Prince, 1984, Stephen King).
+2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs (Radiohead, Sufjan Stevens, Arcade Fire), littérature contemporaine forte.
+3. "expert" (Initié) : Avant-garde, expérimentations pointues, cinéma d'art et essai exigeant, raretés littéraires et musicales.
 
-Chaque profil contient EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
-Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE de l'œuvre (ex. 1952 pour Le Vieil Homme et la Mer).
+Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE de l'œuvre.
+
+RÈGLE D'EXACTITUDE CRITIQUE & DES BARÈMES DE PRESSE (STRICT) :
+Pour CHAQUE œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") de 3 sources distinctes, en respectant impérativement leurs barèmes authentiques et leur réception historique réelle :
+
+1. MUSIQUE :
+   - Pitchfork : Note SUR 10 obligatoire (ex. "9.3/10", "10/10", "8.5/10").
+   - Rolling Stone / AllMusic / The Guardian / NME : Note SUR 5 (ex. "5/5", "4.5/5", "4/5").
+   - Les Inrockuptibles / Télérama : Note SUR 5 ou appréciation officielle.
+
+2. CINÉMA :
+   - Télérama / Première / Positif / Les Inrockuptibles / Le Monde : Note SUR 5 (ex. "5/5", "4/5", "3/5").
+   - Cahiers du Cinéma : Respecter l'avis réel historique des Cahiers (s'ils ont détesté un blockbuster hollywoodien, attribuer une note réaliste comme "1/5" ou "2/5" plutôt qu'un 5/5 automatique).
+   - Rotten Tomatoes : Score en POURCENTAGE (ex. "94%").
+   - Metacritic : Score SUR 100 (ex. "88/100").
+
+3. LITTÉRATURE :
+   - Le Monde des Livres / Le Figaro / Libération / Télérama / The New York Times : Note SUR 5 représentative ou barème officiel ("5/5", "4.5/5").
+   - Pour les œuvres classiques parues avant la création du média, l'extrait doit refléter l'analyse rétrospective ou patrimoniale réelle du journal.
 
 RÈGLE D'UNICITÉ :
-Interdiction de réutiliser des thèmes ou œuvres passés.
+Interdiction formelle de réutiliser un thème ou une œuvre passés.
 """
     if excluded_themes:
         prompt += f"\nTHÈMES BANNIS :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
     if excluded_titles:
-        prompt += f"\nŒUVRES BANNNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
+        prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
 
     prompt += """
-REVUE DE PRESSE :
-Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") issues de 3 médias reconnus francophones ou internationaux traduits (Le Monde, Télérama, Les Inrocks, Libération, Cahiers du Cinéma, Rolling Stone, Pitchfork...).
-
 Format JSON attendu :
 {
   "accessible": {
     "themeTitle": "Titre du thème inédit",
-    "themeSubtitle": "Sous-titre expliquant le fil invisible reliant les 3 œuvres",
+    "themeSubtitle": "Sous-titre poétique expliquant le fil invisible reliant les 3 œuvres",
     "items": [
       {
         "type": "LIVRE",
         "title": "Titre exact",
         "creator": "Nom de l'auteur",
-        "year": "1952",
-        "origin": "États-Unis",
-        "genre": "Roman / Aventure",
+        "year": "1949",
+        "origin": "Royaume-Uni",
+        "genre": "Roman / Dystopie",
         "accessibility": "Pop Culture",
-        "formatMetric": "128 pages",
+        "formatMetric": "328 pages",
         "quote": "Citation clé marquante",
         "anecdote": "Anecdote surprenante sur la genèse de l'œuvre",
-        "tags": ["Classique", "Courage"],
+        "tags": ["Dystopie", "Totalitarisme", "Classique"],
         "ratings": [
-          {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Une œuvre magistrale."},
-          {"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Un récit universel et poignant."},
-          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une écriture épurée à son sommet."}
+          {"source": "Le Monde des Livres", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre prophétique absolu du XXe siècle."},
+          {"source": "The Times", "score": "5/5", "iconName": "star.fill", "excerpt": "Une mise en garde magistrale qui traverse les époques."},
+          {"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une analyse glaçante de la manipulation du langage."}
         ],
         "aiSummary": "Résumé captivant en 2 phrases.",
         "thematicAnalysis": "Analyse du lien profond avec la thématique du triptyque."
@@ -329,11 +343,11 @@ def generate_daily_edition():
 
     model = genai.GenerativeModel(
         model_name="gemini-3.6-flash",
-        generation_config={"response_mime_type": "application/json", "temperature": 0.8},
+        generation_config={"response_mime_type": "application/json", "temperature": 0.75},
         system_instruction=system_prompt
     )
 
-    response = model.generate_content("Génère un triptyque 100% inédit et calibré en français avec 3 revues de presse distinctes par œuvre.")
+    response = model.generate_content("Génère un triptyque 100% inédit et calibré en français avec les barèmes de notation authentiques pour chaque média.")
     data = json.loads(response.text)
 
     for tier in ["accessible", "intermediate", "expert"]:
@@ -368,7 +382,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition enregistrée dans today.json et {archive_path}.")
+    print(f"✅ Édition enregistrée avec barèmes stricts et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
