@@ -1,668 +1,740 @@
 {
   "accessible": {
-    "themeTitle": "L'Anatomie du Silence",
-    "themeSubtitle": "Quand la retenue et le vide révèlent l'intensité des sentiments et du monde",
+    "themeTitle": "La Fureur de Vivre",
+    "themeSubtitle": "Trois œuvres immortelles où la passion et la quête de liberté bravent le destin.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Le Vieux Homme et la Mer",
-        "creator": "Ernest Hemingway",
-        "year": "2018",
-        "origin": "États-Unis",
-        "genre": "Roman / Épopée lacunaire",
+        "title": "1984",
+        "creator": "George Orwell",
+        "year": "1949",
+        "origin": "Royaume-Uni",
+        "genre": "Roman / Dystopie",
         "accessibility": "Pop Culture",
-        "formatMetric": "128 pages",
-        "quote": "L'homme n'est pas fait pour être vaincu. Un homme peut être détruit, mais pas vaincu.",
-        "anecdote": "Hemingway a écrit ce chef-d'œuvre en seulement huit semaines à Cuba, affirmant qu'il s'agissait du meilleur texte qu'il écrirait de toute sa vie.",
+        "formatMetric": "328 pages",
+        "quote": "Tant qu’ils ne seront pas devenus conscients, ils ne se révolteront jamais.",
+        "anecdote": "Orwell a rédigé le manuscrit final isolé sur la sauvage île de Jura en Écosse, en luttant contre les accès sévères de la tuberculose qui allait l'emporter peu après.",
         "tags": [
-          "Résilience",
-          "Océan",
-          "Économie de mots"
+          "Dystopie",
+          "Liberté",
+          "Culte"
         ],
         "ratings": [
           {
             "source": "Le Monde",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une épuration stylistique inégalée où chaque silence entre les mots pèse son poids de tragédie."
+            "excerpt": "Un chef-d'œuvre absolu qui continue de façonner notre vision de la liberté."
           },
           {
             "source": "Télérama",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "La confrontation ultime entre l'homme et la nature, portée par une écriture au scalpel."
-          },
-          {
-            "source": "The New York Times",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un classique instantané d'une simplicité biblique et d'une force dévastatrice."
+            "excerpt": "Une prophétie effrayante portée par une puissance littéraire intacte."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le roman ultime sur le contrôle social et l'insoumission."
           }
         ],
-        "aiSummary": "Au large de Cuba, un vieux pêcheur chevronné mais poisseux engage un combat homérique contre un marlin gigantesque. Seul face à l'immensité de l'eau, il médite sur la dignité, la solitude et le respect du vivant.",
-        "thematicAnalysis": "Hemingway illustre la théorie de l'iceberg : sept huitièmes de l'histoire sont sous l'eau. Le silence de l'océan devient le miroir du stoïcisme humain.",
+        "aiSummary": "Dans un monde dystopique écrasé par la surveillance permanente de Big Brother, Winston Smith tente de préserver son autonomie de pensée. Sa rencontre avec Julia l'entraîne dans une rébellion intime et clandestine contre le régime.",
+        "thematicAnalysis": "Ce roman incarne la lutte fondamentale de l'esprit humain désireux d'exister et d'aimer face à un système totalitaire concu pour annihiler l'individu.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Vieux%20Homme%20et%20la%20Mer%20Ernest%20Hemingway",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=1984%20George%20Orwell",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Vieux%20Homme%20et%20la%20Mer%20Ernest%20Hemingway",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984%20George%20Orwell",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d5/ad/37/d5ad374a-927c-c620-2991-79f1ce19c51e/9782072762093.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/99/e0/01/99e0015c-4cc8-fc9e-87a5-839709de8bf5/9782818708293-001-x.jpeg/800x800bb.jpg"
       },
       {
         "type": "FILM",
-        "title": "Sans un bruit",
-        "creator": "John Krasinski",
-        "year": "2018",
+        "title": "Gladiator",
+        "creator": "Ridley Scott",
+        "year": "2000",
         "origin": "États-Unis",
-        "genre": "Horreur / Thriller sensoriel",
+        "genre": "Péplum / Action",
         "accessibility": "Pop Culture",
-        "formatMetric": "1h30",
-        "quote": "Si ils vous entendent, ils vous chassent.",
-        "anecdote": "Le film ne comporte que très peu de lignes de dialogue ; la langue des signes américaine y est largement utilisée grâce à l'actrice sourde Millicent Simmonds.",
+        "formatMetric": "2h 35m",
+        "quote": "Ce que nous faisons dans la vie résonne dans l'éternité.",
+        "anecdote": "L'acteur Oliver Reed est décédé pendant le tournage à Malte, obligeant la production à créer l'une des premières doublures numériques majeures du cinéma.",
         "tags": [
-          "Tension",
-          "Survie",
-          "Langue des signes"
+          "Péplum",
+          "Vengeance",
+          "Héroïsme"
         ],
         "ratings": [
           {
-            "source": "Première",
+            "source": "Cahiers du Cinéma",
             "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Un exercice de style redoutable qui fait du moindre bruit un ennemi mortel."
+            "excerpt": "Un souffle mythologique d'une puissance visuelle impressionnante."
           },
           {
-            "source": "Les Cahiers du Cinéma",
-            "score": "3.5/5",
+            "source": "Le Figaro",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une réflexion ludique et tendue sur le pouvoir du son au cinéma."
+            "excerpt": "Un spectacle monumental qui a ressuscité le genre du péplum avec maestria."
           },
           {
-            "source": "Rolling Stone",
+            "source": "Télérama",
             "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Un thriller horrifique brillant qui transforme le silence en une arme de pure terreur."
+            "excerpt": "Russell Crowe incarne la fureur et la dignité avec une force mémorable."
           }
         ],
-        "aiSummary": "Dans un monde post-apocalyptique envahi par d'aveugles créatures extraterrestres à l'ouïe surdéveloppée, une famille doit vivre dans un silence absolu pour survivre. Le moindre choc vocal ou matériel déclenche une attaque fatale.",
-        "thematicAnalysis": "Le film réinvente le cinéma populaire en substituant au bruitage agressif la tension vertigineuse du son ambiant et de la retenue.",
+        "aiSummary": "Trahi par l'ambitieux Commode après le meurtre de sa famille, le général romain Maximus est réduit en esclavage et devient gladiateur. Sa quête de justice dans l'arène va ébranler les fondations mêmes de l'Empire.",
+        "thematicAnalysis": "Ridley Scott dépeint la résilience héroïque d'un homme qui transforme son deuil et sa déchéance en un combat universel pour la liberté et l'honneur.",
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Sans%20un%20bruit%20John%20Krasinski",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Gladiator%20Ridley%20Scott",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Sans%20un%20bruit",
+            "urlString": "https://tv.apple.com/fr/search?term=Gladiator",
             "iconName": "apple.logo"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Carrie & Lowell",
-        "creator": "Sufjan Stevens",
-        "year": "2015",
+        "title": "Born to Run",
+        "creator": "Bruce Springsteen",
+        "year": "1975",
         "origin": "États-Unis",
-        "genre": "Folk intime",
+        "genre": "Heartland Rock",
         "accessibility": "Pop Culture",
-        "formatMetric": "11 titres, 44 min",
-        "quote": "We're all gonna die.",
-        "anecdote": "L'album a été enregistré en grande partie sur un ordinateur portable dans une chambre d'hôtel, capturant parfois le bruit de fond de la climatisation.",
+        "formatMetric": "8 titres",
+        "quote": "Tramps like us, baby, we were born to run.",
+        "anecdote": "Bruce Springsteen a passé plus de six mois à perfectionner la seule chanson-titre, obsédé par l'idée d'obtenir le son d'opéra rock grandiose qu'il entendait dans sa tête.",
         "tags": [
-          "Deuil",
-          "Acoustique",
-          "Mélancolie"
+          "Rock",
+          "Évasion",
+          "Monument"
         ],
         "ratings": [
           {
-            "source": "Pitchfork",
-            "score": "9.3/10",
+            "source": "Rolling Stone",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de vulnérabilité où le souffle et les silences murmurent le deuil."
+            "excerpt": "L'album américain ultime sur la jeunesse et l'échappée belle."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un opéra rock lyrique et grandiose, vibrant d'une urgence vitale."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'un des albums les plus bouleversants du XXIe siècle, d'une pureté acoustique totale."
-          },
-          {
-            "source": "The Guardian",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une méditation sublime sur le pardon et la mémoire familiale."
+            "excerpt": "Une décharge d'énergie romantique au souffle inépuisable."
           }
         ],
-        "aiSummary": "Après la mort de sa mère bipolaire et absente, Sufjan Stevens compose une série d'esquisses folk d'une nudité désarmante. La guitare égrenée et la voix murmurée affrontent la béance du vide laissé par la disparue.",
-        "thematicAnalysis": "Le silence s'immisce ici dans les résonances d'instruments non filtrés, transformant l'absence maternelle en espace de grâce.",
+        "aiSummary": "Troisième album du Boss, *Born to Run* est un hymne cinématographique aux ruelles prolétaires, aux ruées nocturnes et aux espoirs d'évasion. Entre envolées de saxophones et guitares rageuses, l'album scelle le mythe du rock américain.",
+        "thematicAnalysis": "Ce disque capture l'élan désespéré et magnifique d'une jeunesse prête à tout brûler pour échapper au destin tout tracé d'un quotidien étouffant.",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/carrie-lowell-live/1227779973?uo=4",
+            "urlString": "https://music.apple.com/fr/album/born-to-run/310730204?uo=4",
             "iconName": "apple.logo"
-          },
-          {
-            "name": "Spotify",
-            "category": "Streaming audio",
-            "urlString": "https://open.spotify.com/search/Carrie%20%26%20Lowell%20Sufjan%20Stevens",
-            "iconName": "waveform"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Carrie%20%26%20Lowell%20Sufjan%20Stevens",
+            "urlString": "https://www.deezer.com/search/Born%20to%20Run%20Bruce%20Springsteen",
             "iconName": "music.note"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music91/v4/6b/20/6a/6b206ac1-e1b5-316d-334d-59df7b727fb6/656605613666.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/02/f7/0a02f7a1-ca2a-c0d7-7192-50314971721f/884977157031.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Redford (For Yia-Yia and Pappou) [Live]",
-            "duration": "3:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/34/94/0a/34940ab9-64ab-1efb-75d1-97d421c02767/mzaf_18047528949732078490.plus.aac.p.m4a"
+            "title": "Thunder Road",
+            "duration": "4:49",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/50/f8/73/50f87350-f4ea-0c0e-29fe-414250dbe921/mzaf_10874294733181406437.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Death with Dignity (Live)",
-            "duration": "4:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bb/06/f9/bb06f947-95f8-22f7-81d1-4f5b89f6a778/mzaf_14958755179979342058.plus.aac.p.m4a"
+            "title": "Tenth Avenue Freeze-Out",
+            "duration": "3:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/73/d8/57/73d857d3-7795-38e5-970a-b71364ece700/mzaf_6384113238720606061.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Should Have Known Better (Live)",
-            "duration": "6:04",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/d9/1e/acd91e63-0993-50e1-b2cd-c53555ce9a3c/mzaf_10045665122974758861.plus.aac.p.m4a"
+            "title": "Night",
+            "duration": "3:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/86/91/57/86915712-aff1-75c1-21a7-c351ec7b045b/mzaf_11198797217499344289.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "All of Me Wants All of You (Live)",
-            "duration": "6:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b4/be/30/b4be3094-35c9-088b-4b70-26e2d0faf806/mzaf_4297061975362552879.plus.aac.p.m4a"
+            "title": "Backstreets",
+            "duration": "6:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b5/1d/44/b51d4446-82c2-2b03-14e1-8661acdb6739/mzaf_17373544808725237563.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "John My Beloved (Live)",
-            "duration": "5:49",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/a3/e5/c0a3e53f-3319-973b-c1e7-5661068f3d08/mzaf_16640766715788605640.plus.aac.p.m4a"
+            "title": "Born to Run",
+            "duration": "4:29",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/fa/74/c0fa74e3-d6e0-e921-a3d7-f3510642e384/mzaf_13658789004299075799.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "The Only Thing (Live)",
-            "duration": "5:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/75/49/e3/7549e32b-3de6-d1c6-d9ac-55e92db1ed99/mzaf_137361249388034140.plus.aac.p.m4a"
+            "title": "She's the One",
+            "duration": "4:30",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/9a/40/fb9a4064-d427-845c-c7fa-76a45d6480fb/mzaf_13214157385162555611.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Fourth of July (Live)",
-            "duration": "6:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/eb/18/92/eb1892d1-387b-a995-0591-5b294ebcd1eb/mzaf_10877922786498389397.plus.aac.p.m4a"
+            "title": "Meeting Across the River",
+            "duration": "3:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/8b/81/338b8183-f5dc-5744-d005-c2c44ce2f5df/mzaf_5721957081814608383.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "No Shade in the Shadow of the Cross (Live)",
-            "duration": "3:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7e/51/f5/7e51f564-262f-35bb-6655-b105f74f816d/mzaf_11550221107124218890.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Carrie & Lowell (Live)",
-            "duration": "4:38",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/55/f6/80/55f6807c-1f63-d5e4-8a2e-ab5c314c7a41/mzaf_3769824377714208351.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Drawn to the Blood (Live)",
-            "duration": "4:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c9/5f/c6/c95fc645-9584-7d10-f6db-958038534064/mzaf_1051702495451704327.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Eugene (Live)",
-            "duration": "2:52",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/e1/65/3fe165ab-d7ff-d2b0-f543-6c0a3087d669/mzaf_8625027583823672519.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Vesuvius (Live)",
-            "duration": "8:13",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/7f/90/217f90f8-6e49-d311-f694-ac3862fe5cc2/mzaf_4695924349169051285.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Futile Devices (Live)",
-            "duration": "3:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4c/bf/8c/4cbf8cf7-dd4d-ac8e-4473-0a08a39a42cd/mzaf_14835510092380657691.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 14,
-            "title": "Blue Bucket of Gold (Live)",
-            "duration": "5:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d2/fd/17/d2fd1755-9cf7-a4ca-af01-de70f69264fb/mzaf_12325679177087846748.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 15,
-            "title": "Blue Bucket Outro (Live)",
-            "duration": "12:45",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e6/f2/0d/e6f20d46-08ca-d7a2-fc6c-585ffb9841e4/mzaf_14379947560960854136.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 16,
-            "title": "Hotline Bling (Encore) [feat. Gallant] [Live]",
-            "duration": "4:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4a/1b/87/4a1b8776-2c06-c5ad-08f4-20a6fed72a23/mzaf_17494744850002157188.plus.aac.p.m4a"
+            "title": "Jungleland",
+            "duration": "9:33",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c5/57/7f/c5577fb2-0216-b93f-1c23-1e7400465206/mzaf_7081282549680441249.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
   "intermediate": {
-    "themeTitle": "L'Anatomie du Silence",
-    "themeSubtitle": "Explorer les failles créées par l'absence de mots et la résonance du vide",
+    "themeTitle": "Les Labyrinthes de l'Intimité",
+    "themeSubtitle": "Trois œuvres poignantes sur l'isolement moderne et la beauté fugitive des reconnexions.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "L'Éloge de l'ombre",
-        "creator": "Jun'ichirō Tanizaki",
-        "year": "2019",
-        "origin": "Japon",
-        "genre": "Essai esthétique",
+        "title": "L'Attrape-cœurs",
+        "creator": "J.D. Salinger",
+        "year": "1951",
+        "origin": "États-Unis",
+        "genre": "Roman d'apprentissage",
         "accessibility": "Curieux",
-        "formatMetric": "110 pages",
-        "quote": "La beauté ne gît pas dans les objets eux-mêmes, mais dans les motifs des ombres, le jeu de la lumière et du sombre.",
-        "anecdote": "Écrit au moment où le Japon s'occidentalisait à grande vitesse, cet essai défend l'usage traditionnel du bois, de la lueur des bougies et de la pénombre contre la lumière électrique crue.",
+        "formatMetric": "250 pages",
+        "quote": "C'est la vérité, je ne sais pas trop ce que ça veut dire, mais c'est comme ça.",
+        "anecdote": "Salinger a conservé les premiers chapitres de ce roman dans sa poche pendant qu'il participait au débarquement en Normandie en 1944.",
         "tags": [
-          "Esthétique",
-          "Japon",
-          "Minimalisme"
+          "Adolescence",
+          "Mélancolie",
+          "Incontournable"
         ],
         "ratings": [
           {
             "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un joyau de méditation sur l'art de laisser le mystère reposer dans les coins d'ombre."
-          },
-          {
-            "source": "Libération",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une leçon de regard indispensable pour qui veut saisir la délicatesse de la culture japonaise."
+            "excerpt": "Une voix inoubliable sur la beauté fragile et les tourments de la jeunesse."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'ombre et le silence y sont célébrés comme les véritables berceaux de l'imaginaire."
+            "excerpt": "Un chef-d'œuvre de sincérité et d'ironie amère face au monde adulte."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le roman fondamental sur le sentiment d'aliénation moderne."
           }
         ],
-        "aiSummary": "Tanizaki explore l'art d'habiter le monde en révérant le sombre, la patine du temps et la retenue. De l'architecture au théâtre Nô en passant par la céramique, il montre comment la pénombre donne leur relief aux êtres.",
-        "thematicAnalysis": "Le silence visuel — l'ombre — est pensé comme la condition sine qua non pour apercevoir la vraie beauté, loin du tumulte brillant de la modernité.",
+        "aiSummary": "Exclu de son lycée, l'adolescent Holden Caulfield erre pendant trois jours dans un New York hivernal. À travers son regard corrosif et vulnérable, il exprime son rejet de l'hypocrisie des adultes et son désir de protéger l'innocence.",
+        "thematicAnalysis": "L'œuvre explore avec une justesse intemporelle la fracture entre le monde intérieur d'un individu en quête de vérité et la rigidité de la société.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27%C3%89loge%20de%20l%27ombre%20Jun%27ichir%C5%8D%20Tanizaki",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Attrape-c%C5%93urs%20J.D.%20Salinger",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27%C3%89loge%20de%20l%27ombre%20Jun%27ichir%C5%8D%20Tanizaki",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Attrape-c%C5%93urs%20J.D.%20Salinger",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/d4/f0/1d/d4f01d77-7175-81ed-a2ed-b5fd8ee1409c/9782072839221.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/52/08/94/520894fa-5f0a-f1d9-3862-9e996bc7fe85/9782511026953.jpg/800x800bb.jpg"
       },
       {
         "type": "FILM",
-        "title": "Drive My Car",
-        "creator": "Ryūsuke Hamaguchi",
-        "year": "2021",
-        "origin": "Japon",
-        "genre": "Drame intimiste",
+        "title": "Lost in Translation",
+        "creator": "Sofia Coppola",
+        "year": "2003",
+        "origin": "États-Unis",
+        "genre": "Comédie dramatique",
         "accessibility": "Curieux",
-        "formatMetric": "2h59",
-        "quote": "Ceux qui survincent doivent continuer à penser aux morts.",
-        "anecdote": "Le film adapte une nouvelle de Haruki Murakami en insérant de longues séquences du texte d'Anton Tchekhov *Uncle Vanya*, dit en plusieurs langues dont la langue des signes coréenne.",
+        "formatMetric": "1h 42m",
+        "quote": "Plus vous savez qui vous êtes et ce que vous voulez, moins vous laissez les choses vous perturber.",
+        "anecdote": "Sofia Coppola a écrit le rôle spécialement pour Bill Murray et l'a traqué pendant des mois sans savoir s'il se présenterait véritablement sur le plateau à Tokyo.",
         "tags": [
-          "Deuil",
-          "Théâtre",
-          "Trajet"
+          "Solitude",
+          "Tokyo",
+          "Poétique"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
-            "score": "5/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une traversée fluide de trois heures où les temps morts deviennent les moments les plus fertiles."
+            "excerpt": "Une œuvre délicate et nocturne d'une grâce mélancolique étincelante."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un film d'une grâce inouïe sur la parole qui se délivre lentement au sein de l'habitacle."
+            "excerpt": "La rencontre miraculeuse de deux âmes égarées dans le vertige urbain."
           },
           {
-            "source": "Positif",
-            "score": "4.5/5",
+            "source": "Libération",
+            "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Hamaguchi sculpte le temps et l'écoute mutuelle avec une précision scénaristique éblouissante."
+            "excerpt": "Un film suspendu qui capture avec une immense finesse le décalage horaire et intime."
           }
         ],
-        "aiSummary": "Un metteur en scène de théâtre hanté par la mort brutale de sa femme accepte de monter une pièce à Hiroshima. Pendant ses trajets en voiture avec une jeune chauffeuse taciturne, un dialogue profond émerge de leurs silences partagés.",
-        "thematicAnalysis": "La voiture devient un sanctuaire où les non-dits trouvent enfin la voie d'une guérison feutrée.",
+        "aiSummary": "Bob, un acteur américain sur le retour, et Charlotte, une jeune femme délaissée par son mari, se croisent dans le bar d'un grand hôtel tokyoïte. Ensemble, ils apprivoisent l'insomnie et tissent un lien d'une tendresse inoubliable.",
+        "thematicAnalysis": "Sofia Coppola met en scène l'isolement urbain pour mieux révéler la beauté des parenthèses humaines qui éclairent nos existences.",
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Drive%20My%20Car%20Ry%C5%ABsuke%20Hamaguchi",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Lost%20in%20Translation%20Sofia%20Coppola",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Drive%20My%20Car",
+            "urlString": "https://tv.apple.com/fr/search?term=Lost%20in%20Translation",
             "iconName": "apple.logo"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Spirit of Eden",
-        "creator": "Talk Talk",
-        "year": "1988",
+        "title": "OK Computer",
+        "creator": "Radiohead",
+        "year": "1997",
         "origin": "Royaume-Uni",
-        "genre": "Post-rock / Art-rock",
+        "genre": "Art Rock",
         "accessibility": "Curieux",
-        "formatMetric": "6 titres, 41 min",
-        "quote": "Before you leap take a look at the way wind blows.",
-        "anecdote": "Mark Hollis a enregistré cet album dans l'obscurité totale d'un studio sans horloge, improviseurs et musiciens jouant pendant des mois pour n'en garder que quelques secondes de respiration.",
+        "formatMetric": "12 titres",
+        "quote": "Fitter, happier, more productive...",
+        "anecdote": "L'album a été enregistré en grande partie dans un manoir historique du XVe siècle appartenu à la comédienne Jane Seymour, conférant une réverbération naturelle unique aux morceaux.",
         "tags": [
-          "Post-rock",
-          "Improvisation",
-          "Révélation"
+          "Art Rock",
+          "Aliénation",
+          "Visionnaire"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "10/10",
-            "iconName": "star.fill",
-            "excerpt": "L'acte de naissance du post-rock : un album bâti sur l'art d'écouter les espaces entre les notes."
-          },
-          {
-            "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une rupture esthétique radicale, métamorphosant un groupe synth-pop en poètes du vide."
+            "excerpt": "Un sommet d'une intuition prophétique sur les dérives du monde numérique."
           },
           {
             "source": "Rolling Stone",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une œuvre spirituelle et organique d'une beauté d'un autre monde."
+            "excerpt": "Le chef-d'œuvre définitif du rock alternatif des années 1990."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un disque saisissant d'une beauté tragique et visionnaire."
           }
         ],
-        "aiSummary": "Rupture fracassante avec la pop des années 80, cet album privilégie le silence à la surenchère sonore. Trompettes feutrées, orgue d'église et silences suspendus composent une fresque contemplative monumentale.",
-        "thematicAnalysis": "Cet opus pose le principe que la musique ne commence vraiment qu'au moment où l'instrument accepte de s'éteindre.",
+        "aiSummary": "Monument de la musique moderne, *OK Computer* capture l'angoisse de l'aube du nouveau millénaire face à la mondialisation et la technologie. Radiohead y déploie des textures guitaristiques et électroniques d'une complexité somptueuse.",
+        "thematicAnalysis": "Le groupe exprime le vertige d'une humanité prise au piège des rouages automatisés et de l'isolement technologique.",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/spirit-of-eden/701395363?uo=4",
+            "urlString": "https://music.apple.com/fr/album/ok-computer/1097861387?uo=4",
             "iconName": "apple.logo"
-          },
-          {
-            "name": "Spotify",
-            "category": "Streaming audio",
-            "urlString": "https://open.spotify.com/search/Spirit%20of%20Eden%20Talk%20Talk",
-            "iconName": "waveform"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Spirit%20of%20Eden%20Talk%20Talk",
+            "urlString": "https://www.deezer.com/search/OK%20Computer%20Radiohead",
             "iconName": "music.note"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/36/84/e8/3684e84e-5b87-f5d3-3e93-500c9807aefd/724385712951.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "The Rainbow",
-            "duration": "9:09",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/bd/a3/cebda387-8749-7145-55f5-27bf9a2729f2/mzaf_9593722915514728764.plus.aac.p.m4a"
+            "title": "Airbag",
+            "duration": "4:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/df/b0/bedfb055-c0be-4fc5-0626-fe763667c47c/mzaf_796757830115551221.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Eden",
-            "duration": "6:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/6e/2b/606e2b6e-7325-b2cd-cc46-7075b96a8407/mzaf_5526497764175437775.plus.aac.p.m4a"
+            "title": "Paranoid Android",
+            "duration": "6:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/22/d6/7022d661-b3e0-9c64-5e18-dd6edaaa53d2/mzaf_12758650973786995732.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Desire",
-            "duration": "6:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c7/0d/0a/c70d0a70-78a9-7bcc-cccb-b51cc2d93e27/mzaf_12839749715811466020.plus.aac.p.m4a"
+            "title": "Subterranean Homesick Alien",
+            "duration": "4:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/54/3f/ef543f99-1764-147b-ceb6-7e55ae9c6532/mzaf_5965456906361221510.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Inheritance",
-            "duration": "5:23",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/6e/bf/226ebf99-0b2f-6a12-6080-85dccb7a809f/mzaf_11157054685012473718.plus.aac.p.m4a"
+            "title": "Exit Music (For a Film)",
+            "duration": "4:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7a/0d/da/7a0ddafc-b83b-bc77-2f34-db75caca92c1/mzaf_9668535207056622280.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "I Believe In You",
-            "duration": "6:10",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f0/b6/63/f0b663e9-9666-3006-229a-da798e8b751e/mzaf_14507725107419956176.plus.aac.p.m4a"
+            "title": "Let Down",
+            "duration": "4:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/66/13/3c/66133c2c-59a6-f17b-0b88-7f61e1edc181/mzaf_12936594904953407247.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Wealth",
-            "duration": "6:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/33/53/a1335330-cbb8-ebaf-9e3d-9e26e7ebef92/mzaf_8904453891882250652.plus.aac.p.m4a"
+            "title": "Karma Police",
+            "duration": "4:24",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/d7/8b/95d78bf8-aa46-9d40-ce93-0652918bc68f/mzaf_12066288776609103708.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Fitter Happier",
+            "duration": "1:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/64/b6/cd/64b6cd1c-d34a-964e-a865-33aab903d0f8/mzaf_13414360376847120372.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Electioneering",
+            "duration": "3:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/03/93/64/039364b9-45f8-61ef-8401-48e924bdc756/mzaf_10716685903999219088.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Climbing Up the Walls",
+            "duration": "4:45",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fa/6f/e3/fa6fe319-595c-0be8-e119-40508f7ee374/mzaf_6422518418551646344.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "No Surprises",
+            "duration": "3:49",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/02/b7/ef02b776-f887-f1f0-acfb-e7d9776ba503/mzaf_2515606267255808294.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Lucky",
+            "duration": "4:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/97/ef/2f97ef48-6a08-806c-5edd-386fd3e6fa9e/mzaf_16840656227165538105.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "The Tourist",
+            "duration": "5:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b6/b5/f6/b6b5f6a1-0813-38b0-e444-4f06f082739c/mzaf_16880295430908667853.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
   "expert": {
-    "themeTitle": "L'Anatomie du Silence",
-    "themeSubtitle": "L'ascétisme radical et la suspension du temps comme sommet de l'expérience esthétique",
+    "themeTitle": "La Déconstruction des Formes",
+    "themeSubtitle": "Trois jalons d'avant-garde qui réinventent le langage, le temps et la matière sonore.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "L'Espace littéraire",
-        "creator": "Maurice Blanchot",
-        "year": "2015",
-        "origin": "France",
-        "genre": "Philosophie / Théorie littéraire",
+        "title": "L'Innommable",
+        "creator": "Samuel Beckett",
+        "year": "1953",
+        "origin": "France / Irlande",
+        "genre": "Roman d'avant-garde",
         "accessibility": "Initié",
-        "formatMetric": "340 pages",
-        "quote": "Écrire, c'est se livrer à la fascination de l'absence de temps.",
-        "anecdote": "Blanchot menait une existence quasi fantomatique, refusant quasi toute apparition publique ou photographie, appliquant leffacement théorisé dans ses écrits à sa propre vie.",
+        "formatMetric": "200 pages",
+        "quote": "Il faut continuer, je ne peux pas continuer, je vais continuer.",
+        "anecdote": "Beckett a choisi de rédiger ce livre directement en français plutôt que dans sa langue maternelle anglaise pour dépouiller son style de tout ornement artificiel.",
         "tags": [
-          "Absence",
-          "Ontologie",
-          "Solitude"
+          "Existentialisme",
+          "Minimalisme",
+          "Radical"
         ],
         "ratings": [
           {
             "source": "Le Monde",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un monument d'exigence intellectuelle sur l'abîme du langage et la neutralité de la nuit."
-          },
-          {
-            "source": "Critique",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "La définition suprême du travail d'écriture comme disparition de l'auteur au profit du vide."
-          },
-          {
-            "source": "Artpress",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une réflexion vertigineuse qui transforme la solitude de l'écrivain en expérience métaphysique."
-          }
-        ],
-        "aiSummary": "Blanchot questionne la nature même de l'acte d'écrire, le définissant non pas comme une expression de soi mais comme une plongée dans l'espace impersonnel du silence originel où les mots perdent leur pouvoir désignatif.",
-        "thematicAnalysis": "Le livre explore le silence non comme simple absence de bruit, but comme le cœur vibrant et terrifiant du poème absolu.",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Espace%20litt%C3%A9raire%20Maurice%20Blanchot",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Espace%20litt%C3%A9raire%20Maurice%20Blanchot",
-            "iconName": "bag.fill"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/95/e1/54/95e15405-ff26-dbce-caa0-bc233613bf8e/9782852296923.jpg/800x800bb.jpg"
-      },
-      {
-        "type": "FILM",
-        "title": "Le Cheval de Turin",
-        "creator": "Béla Tarr",
-        "year": "2011",
-        "origin": "Hongrie",
-        "genre": "Drame existentialiste",
-        "accessibility": "Initié",
-        "formatMetric": "2h26",
-        "quote": "Tout est en train de s'éteindre.",
-        "anecdote": "Composé de seulement 30 plans-séquences hypnotiques en noir et blanc, le film a été annoncé par Béla Tarr comme sa toute dernière œuvre cinématographique.",
-        "tags": [
-          "Apocalypse feutrée",
-          "Plan-séquence",
-          "Monotonie"
-        ],
-        "ratings": [
-          {
-            "source": "Les Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une expérience cinématographique ultime, d'une rigueur formelle époustouflante."
+            "excerpt": "Un sommet d'audace formelle qui repousse les frontières de la prose."
           },
           {
             "source": "Télérama",
-            "score": "5/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "La fin du monde enregistrée dans la répétition obstinée des gestes du quotidien."
+            "excerpt": "Une plongée vertigineuse aux limites de la voix narrative et du néant."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre testamentaire d'une beauté sombre et inexorable."
+            "excerpt": "L'épuration absolue et radicale de l'art romanesque."
           }
         ],
-        "aiSummary": "Dans une ferme isolée balayée par un vent incessant, un vieux cocher et sa fille accomplissent chaque jour les mêmes tâches rudimentaires tandis que le monde s'éteint autour d'eux : l'eau du puits tarit, le feu s'éteint et la lumière s'efface.",
-        "thematicAnalysis": "Le film pousse la lenteur et le silence dramatique jusqu'à la sensation pure de l'anéantissement de l'univers.",
+        "aiSummary": "Sans corps identifiable ni repère temporel, une voix monologue sans fin pour tenter de cerner son propre être. Dans cette ultime partie de sa trilogie, Beckett pousse le langage littéraire dans ses retranchements les plus absolus.",
+        "thematicAnalysis": "Une exploration sans concession de l'acte de création, où la parole persiste obstinément malgré la dissolution de toutes les certitudes narratives.",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Innommable%20Samuel%20Beckett",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Innommable%20Samuel%20Beckett",
+            "iconName": "bag.fill"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication69/v4/8c/ea/f2/8ceaf27c-94e0-8358-7fcc-ae1a1c9258cd/9782707325549.jpg/800x800bb.jpg"
+      },
+      {
+        "type": "FILM",
+        "title": "L'Année dernière à Marienbad",
+        "creator": "Alain Resnais",
+        "year": "1961",
+        "origin": "France",
+        "genre": "Avant-garde / Drame",
+        "accessibility": "Initié",
+        "formatMetric": "1h 34m",
+        "quote": "Marienbad, où nous nous sommes rencontrés l'année dernière...",
+        "anecdote": "Le découpage écrit par l'écrivain Alain Robbe-Grillet était si millimétré que le réalisateur Alain Resnais l'a suivi presque exactement au plan près.",
+        "tags": [
+          "Labyrinthe",
+          "Onirique",
+          "Rupture"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une révolution esthétique majeure qui réinvente l'espace et le temps cinématographiques."
+          },
+          {
+            "source": "Le Monde",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un poème visuel d'une rigueur formelle et d'une beauté hypnotiques."
+          },
+          {
+            "source": "Positif",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un dédale envoûtant sur les trompe-l'œil de la mémoire et du désir."
+          }
+        ],
+        "aiSummary": "Dans un hôtel monumental aux jardins géométriques, un homme tente d'interpeller une femme en lui affirmant qu'ils ont eu une liaison l'année précédente. La mémoire se dissout dans une architecture baroque aux miroirs trompeurs.",
+        "thematicAnalysis": "Resnais déconstruit le récit linéaire pour matérialiser les trompe-l'œil du souvenir et l'architecture mouvante de la mémoire humaine.",
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Le%20Cheval%20de%20Turin%20B%C3%A9la%20Tarr",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad%20Alain%20Resnais",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Le%20Cheval%20de%20Turin",
+            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
             "iconName": "apple.logo"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Disintegration Loops",
-        "creator": "William Basinski",
-        "year": "2002",
+        "title": "Trout Mask Replica",
+        "creator": "Captain Beefheart & His Magic Band",
+        "year": "1969",
         "origin": "États-Unis",
-        "genre": "Ambient / Musique spectrale",
+        "genre": "Avant-Garde / Experimental Rock",
         "accessibility": "Initié",
-        "formatMetric": "4 volumes, 63 min (Vol 1)",
-        "quote": "Ces bandes magnétiques s'effritaient devant moi, transformant le passé en poussière sonore.",
-        "anecdote": "Alors qu'il numérisait d'anciennes bandes magnétiques chez lui à Brooklyn le 11 septembre 2001, Basinski a vu la matière même de la bande se détruire en boucle pendant que les tours du WTC s'effondraient à sa fenêtre.",
+        "formatMetric": "28 titres",
+        "quote": "A squid eating dough in the polyethylene bag is fast and bulbous.",
+        "anecdote": "Frank Zappa a produit cet album après que Beefheart a contraint ses musiciens à vivre et répéter en reclusion quasi totale pendant huit mois dans un pavillon californien.",
         "tags": [
-          "Désintégration",
-          "Bande magnétique",
-          "Mémoire"
+          "Expérimental",
+          "Free Blues",
+          "Radical"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "10/10",
-            "iconName": "star.fill",
-            "excerpt": "L'un des témoignages artistiques les plus déchirants et captivants sur le passage du temps."
-          },
-          {
-            "source": "Resident Advisor",
-            "score": "4.8/5",
-            "iconName": "star.fill",
-            "excerpt": "Une élégie monumentale où la musique s'assassine elle-même pour céder la place au silence."
-          },
-          {
-            "source": "The Wire",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre minimaliste absolu, capturant la décomposition physique du son."
+            "excerpt": "Un chef-d'œuvre d'anarchie sonore scrupuleusement composée."
+          },
+          {
+            "source": "Rolling Stone",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un maelström d'une audace inouïe qui a redéfini les possibilités du rock."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "L'album le plus énigmatique et fascinant de l'histoire du rock expérimental."
           }
         ],
-        "aiSummary": "Basinski fait tourner en boucle de vieilles cassettes pastorales dont la ferrite se détache au fur et à mesure des passages sur la tête de lecture. La mélodie initiale s'érode jusqu'à devenir un souffle troué de silence.",
-        "thematicAnalysis": "Le silence n'est pas ici une pause dans la musique, mais la destination inéluctable vers laquelle chaque note se décompose irrémédiablement.",
+        "aiSummary": "Album d'une radicalité légendaire, *Trout Mask Replica* fusionne free jazz, blues déconstruit et poésie dadaïste. Ses polyrythmies complexes et ses structures atonales cassent tous les repères habituels de la musique populaire.",
+        "thematicAnalysis": "Une œuvre phare qui fait éclater les conventions esthétiques établies pour fonder un nouveau vocabulaire musical totalement libre et affranchi.",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/the-disintegration-loops-remastered/908005350?uo=4",
+            "urlString": "https://music.apple.com/fr/album/safe-as-milk/290334563?uo=4",
             "iconName": "apple.logo"
-          },
-          {
-            "name": "Spotify",
-            "category": "Streaming audio",
-            "urlString": "https://open.spotify.com/search/The%20Disintegration%20Loops%20William%20Basinski",
-            "iconName": "waveform"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/The%20Disintegration%20Loops%20William%20Basinski",
+            "urlString": "https://www.deezer.com/search/Trout%20Mask%20Replica%20Captain%20Beefheart%20%26%20His%20Magic%20Band",
             "iconName": "music.note"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/3e/ea/08/3eea0811-b27e-6e92-9d2a-561bfce9107c/cover.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/3e/aa/59/3eaa5989-cc54-abed-b6b3-56956353834a/dj.eypesrwn.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Dlp 1.1",
-            "duration": "63:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b3/3c/e6/b33ce619-dc9d-c4b7-ba17-813db2a2bb17/mzaf_14559693761581485228.plus.aac.p.m4a"
+            "title": "Sure 'Nuff 'n' Yes, I Do",
+            "duration": "2:14",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e8/22/b3/e822b31f-7b2e-45e3-e245-e4343c4f2668/mzaf_506347355893995999.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Dlp 2.1",
-            "duration": "10:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/a4/c7/c3a4c7a9-279c-8f8b-7ed3-09da0bc90db4/mzaf_7369710717981805827.plus.aac.p.m4a"
+            "title": "Zig Zag Wanderer",
+            "duration": "2:38",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/61/d0/7a61d09d-855e-51d9-6307-b5d647866f83/mzaf_9456913458813425999.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Call On Me",
+            "duration": "2:36",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/48/33/f64833ba-fa84-fa27-bbe9-4a4d739d9b78/mzaf_16901645870253932287.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Dropout Boogie",
+            "duration": "2:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a4/e1/59/a4e1592a-f18c-65fc-2241-9d657dd92788/mzaf_14719932559761869527.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "I'm Glad",
+            "duration": "3:30",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/64/a2/4264a296-b028-b0da-17a4-fbd1961a5950/mzaf_16995888360221133357.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Electricity",
+            "duration": "3:06",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/0d/b4/270db4f1-d220-8783-46c1-1a9753ab9574/mzaf_3502894137578768820.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Yellow Brick Road",
+            "duration": "2:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6c/60/f3/6c60f327-a4be-5f8d-b067-4df50ad3123e/mzaf_17553156710418501075.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Abba Zaba",
+            "duration": "2:43",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5a/64/8c/5a648c6a-77c5-69cf-c5a2-9f3409f93bee/mzaf_2158272604009873142.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Plastic Factory",
+            "duration": "3:07",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/9e/ac/829eac37-f3fb-749f-d59c-4e2eceaa0d00/mzaf_10453160616861092774.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Where There's Woman",
+            "duration": "2:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/15/c4/7d/15c47da4-f10f-1e23-e4d2-27a26521a682/mzaf_10650367342038851290.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Grown So Ugly",
+            "duration": "2:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/52/aa/7b/52aa7b2f-21d9-28ad-3634-5cf15a7026ca/mzaf_3626615415779584282.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Autumn's Child",
+            "duration": "4:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/df/fb/1edffbd5-7564-076b-8dcf-60c6a5798bee/mzaf_13487708110478315421.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Safe As Milk (Take 5)",
+            "duration": "4:13",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3b/f8/b7/3bf8b76d-cac7-7f79-e4e7-e39879609f0b/mzaf_5397254181167155933.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 14,
+            "title": "On Tomorrow (Instrumental)",
+            "duration": "6:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b6/42/e0/b642e0f5-51a8-5e83-c89f-cb1af8632328/mzaf_16488956067034401777.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 15,
+            "title": "Big Black Baby Shoes (Instrumental Version)",
+            "duration": "4:49",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/b2/05/0eb205b7-1a9c-79fd-159e-d396a51ba7ef/mzaf_16023724771773692432.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 16,
+            "title": "Flower Pot",
+            "duration": "3:54",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4f/d3/98/4fd39889-6c1e-14ff-425e-fe1c4138cdac/mzaf_16368558833001568899.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 17,
+            "title": "Dirty Blue Gene (Instrumental Version)",
+            "duration": "2:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/72/e7/55/72e75563-49b3-5078-5fde-79f8ecd91535/mzaf_6187166688166133219.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 18,
+            "title": "Trust Us (Take 9)",
+            "duration": "7:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/81/3c/e4813c59-26cf-a9cf-f5a1-79c4ab34b098/mzaf_16751721683483365558.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 19,
+            "title": "Korn Ring Finger",
+            "duration": "7:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/d1/36/add1369c-f5bf-15e0-a3e8-835e19a4fbbe/mzaf_16030324072573110262.plus.aac.p.m4a"
           }
         ]
       }
