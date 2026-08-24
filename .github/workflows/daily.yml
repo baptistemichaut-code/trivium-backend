@@ -2,7 +2,8 @@ name: Generate Daily Triptych
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    # 02:00 UTC = 04:00 en heure d'été (CEST) / 03:00 en heure d'hiver (CET)
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
