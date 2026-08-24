@@ -1,43 +1,43 @@
 {
   "accessible": {
-    "themeTitle": "L'Archi-Réel : Quand la réalité se dérobe",
-    "themeSubtitle": "Trois jalons majeurs de la pop culture auscultant les illusions de notre modernité.",
+    "themeTitle": "Simulacres et réalités synthétiques",
+    "themeSubtitle": "Quand l'illusion supplante le réel dans nos consciences modernes",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Fahrenheit 451",
-        "creator": "Ray Bradbury",
-        "year": "1953",
-        "genre": "Dystopie / Science-Fiction",
+        "title": "Les androïdes rêvent-ils de moutons électriques ?",
+        "creator": "Philip K. Dick",
+        "year": "1968",
+        "genre": "Science-Fiction / Dystopie",
         "origin": "États-Unis",
-        "formatMetric": "224 pages",
+        "formatMetric": "256 pages",
         "accessibility": "Populaire & Immédiat",
-        "quote": "Il faut que nous soyons tous pareils. Tout le monde n'est pas né libre et égal, comme le dit la Constitution, mais tout le monde est rendu égal.",
-        "aiSummary": "Dans une société futuriste où la possession de livres est un crime, Guy Montag est un pompier dont le travail consiste à brûler les ouvrages. Sa rencontre avec une jeune voisine excentrique va ébranler ses certitudes et le pousser à questionner l'ordre établi.",
-        "thematicAnalysis": "Ray Bradbury livre une critique prémonitoire de la société de consommation et du divertissement de masse, montrant comment le confort anesthésiant peut étouffer la pensée critique au profit du vide médiatique.",
-        "anecdote": "Bradbury a écrit le roman original sur des machines à écrire payantes situées dans le sous-sol de la bibliothèque de l'UCLA, insérant des pièces de 10 cents toutes les 30 minutes pour continuer à taper.",
+        "quote": "Vous préférez renoncer à votre humanité pour rester en vie ?",
+        "aiSummary": "Dans un San Francisco dévasté par la poussière radioactive, Rick Deckard chasse des androïdes rebelles indifférenciables des humains, tout en rêvant d'acquérir un véritable animal vivant pour remplacer son mouton de plastique.",
+        "thematicAnalysis": "Dick explore la porosité de nos empathies à travers le fétichisme de l'animal vivant et le doute existentiel. L'œuvre remet en question la frontière même de la condition humaine face au simulacre parfait.",
+        "anecdote": "Philip K. Dick est mort quelques mois seulement avant la sortie de Blade Runner, mais il a pu en visionner les 20 premières minutes d'effets spéciaux et en fut profondément ému.",
         "tags": [
           "Dystopie",
-          "Censure",
-          "Classique"
+          "Cyberpunk",
+          "Existentialisme"
         ],
         "ratings": [
           {
-            "source": "Le Figaro Littéraire",
-            "score": "5/5",
-            "excerpt": "Un pamphlet prophétique étincelant sur la brûlure et la sauvegarde de la culture.",
+            "source": "Le Monde des Livres",
+            "score": "Chef-d'œuvre",
+            "excerpt": "Un roman visionnaire qui questionne l'essence même de l'humanité face à la perfection de l'artifice.",
             "iconName": "newspaper.fill"
           },
           {
             "source": "Babelio",
-            "score": "4.3/5",
-            "excerpt": "Une fable poétique et terrifiante unanimement plébiscitée par les lecteurs.",
+            "score": "4.1/5",
+            "excerpt": "Une plongée mélancolique où la frontière entre l'homme et la machine s'efface inexorablement.",
             "iconName": "star.fill"
           },
           {
             "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Bradbury sublime la résistance par la mémoire littéraire dans un style incandescent.",
+            "score": "TTT",
+            "excerpt": "Un récit prophétique d'une grande profondeur philosophique mené à un rythme haletant.",
             "iconName": "quote.bubble.fill"
           }
         ],
@@ -45,58 +45,58 @@
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Fahrenheit%20451%20Ray%20Bradbury",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Les%20andro%C3%AFdes%20r%C3%AAvent-ils%20de%20moutons%20%C3%A9lectriques%20%3F%20Philip%20K.%20Dick",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Fahrenheit%20451%20Ray%20Bradbury",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Les%20andro%C3%AFdes%20r%C3%AAvent-ils%20de%20moutons%20%C3%A9lectriques%20%3F%20Philip%20K.%20Dick",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Fahrenheit%20451%20Ray%20Bradbury",
+            "urlString": "https://www.audible.fr/search?keywords=Les%20andro%C3%AFdes%20r%C3%AAvent-ils%20de%20moutons%20%C3%A9lectriques%20%3F%20Philip%20K.%20Dick",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "The Truman Show",
-        "creator": "Peter Weir",
-        "year": "1998",
-        "genre": "Comédie dramatique / Anticipation",
+        "title": "Inception",
+        "creator": "Christopher Nolan",
+        "year": "2010",
+        "genre": "Science-Fiction / Thriller",
         "origin": "États-Unis",
-        "formatMetric": "1h 43m",
+        "formatMetric": "2h 28m",
         "accessibility": "Culte & Grand Public",
-        "quote": "Au cas où on ne se revoirait pas : bonjour, bonsoir et bonne nuit !",
-        "aiSummary": "Truman Burbank mène une vie paisible dans une ville côtière idéale. Il ignore totalement que son existence entière est une émission de télé-réalité planétaire, filmée à son insu dans un studio géant.",
-        "thematicAnalysis": "Avant l'explosion de la télé-réalité moderne et des réseaux sociaux, le film de Peter Weir analyse le voyeurisme collectif et le désir d'émancipation face à une réalité préfabriquée.",
-        "anecdote": "Le dôme gigantesque abritant Seahaven a été inspiré par l'architecture réelle de la ville de Seaside en Floride, conçue selon les préceptes du Nouvel Urbanisme.",
+        "quote": "Un idée est comme un virus. Résistante. Hautement contagieuse.",
+        "aiSummary": "Dom Cobb est un voleur d'élite capable de s'infiltrer dans les rêves de ses cibles pour y dérober des secrets. On lui propose l'ultime mission : implanter une idée dans l'esprit d'un héritier milliardaire.",
+        "thematicAnalysis": "Nolan transforme la structure du rêve en un braquage d'architecte, explorant le deuil, la culpabilité et l'illusion du contrôle dans un labyrinthe visuel vertigineux.",
+        "anecdote": "La scène mythique du combat dans le couloir en apesanteur a été tournée sans aucun effet numérique, grâce à un décor rotatif géant construit dans un hangar d'aviation.",
         "tags": [
-          "Médias",
-          "Liberté",
-          "Chef-d'œuvre"
+          "Rêve",
+          "Virtuosité",
+          "Blockbuster"
         ],
         "ratings": [
           {
             "source": "Télérama",
             "score": "TTTT",
-            "excerpt": "Une satire magistrale de la société du spectacle doublée d'une fable métaphysique.",
+            "excerpt": "Une usine à rêves vertigineuse et un blockbuster cérébral d'une audace visuelle folle.",
             "iconName": "film.fill"
-          },
-          {
-            "source": "Allociné Presse",
-            "score": "4.6/5",
-            "excerpt": "Jim Carrey trouve le rôle de sa vie dans cette œuvre d'une grande prescience.",
-            "iconName": "star.fill"
           },
           {
             "source": "Cahiers du Cinéma",
             "score": "4/5",
-            "excerpt": "Une mise en scène d'une efficacité redoutable sur l'enfermement spectaculaire.",
+            "excerpt": "Nolan réussit l'exploit de transformer un labyrinthe psychique en spectacle populaire total.",
+            "iconName": "star.fill"
+          },
+          {
+            "source": "Allociné Presse",
+            "score": "4.5/5",
+            "excerpt": "Un monument du cinéma contemporain conjuguant brio scénaristique et virtuosité technique.",
             "iconName": "newspaper.fill"
           }
         ],
@@ -104,111 +104,159 @@
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=The%20Truman%20Show",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Inception",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=The%20Truman%20Show",
+            "urlString": "https://www.allocine.fr/recherche/?q=Inception",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=The%20Truman%20Show",
+            "urlString": "https://www.canalplus.com/recherche?q=Inception",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "genre": "Rock progressif",
-        "origin": "Royaume-Uni",
-        "formatMetric": "9 titres",
+        "title": "Random Access Memories",
+        "creator": "Daft Punk",
+        "year": "2013",
+        "genre": "French Touch / Disco-Funk",
+        "origin": "France",
+        "formatMetric": "13 titres",
         "accessibility": "Écoute Immédiate",
-        "quote": "And then one day you find ten years have got behind you. No one told you when to run, you missed the starting gun.",
-        "aiSummary": "Un voyage conceptuel à travers la condition humaine, abordant le temps qui passe, l'avidité financière, la maladie mentale et la mortalité via une production studio révolutionnaire pour son époque.",
-        "thematicAnalysis": "Pink Floyd transcende le rock psychédélique pour créer une œuvre d'une cohésion absolue, où synthétiseurs novateurs et bruitages concrets résonnent avec les angoisses universelles de l'homme moderne.",
-        "anecdote": "Les voix parlées entendues en arrière-plan tout au long du disque proviennent d'interviews de membres du personnel et de vigiles des studios Abbey Road, questionnés spontanément sur la mort et la folie.",
+        "quote": "Give life back to music.",
+        "aiSummary": "Le duo casqué abandonne les machines numériques pour enregistrer un testament disco-pop organique avec les plus grands musiciens de studio des années 70 et 80.",
+        "thematicAnalysis": "Une méditation nostalgique sur le pouvoir émotionnel de la musique analogique, fusionnant le savoir-faire humain et la mythologie robotique.",
+        "anecdote": "Pour obtenir le son de batterie parfait sur l'album, les ingénieurs du son ont testé des dizaines de microphones vintage originaux utilisés dans les sessions des albums de Michael Jackson.",
         "tags": [
-          "Psychédélique",
-          "Concept",
-          "Incontournable"
+          "Disco",
+          "Nostalgie",
+          "Analoge"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "9.3/10",
-            "excerpt": "Un monument d'ingénierie sonore qui continue d'inspirer des générations d'artistes.",
+            "score": "8.8/10",
+            "excerpt": "Une odyssée disco-futuriste somptueuse qui rend un hommage vibrant à l'art du studio.",
             "iconName": "music.note"
           },
           {
             "source": "Rolling Stone",
             "score": "5/5",
-            "excerpt": "L'un des albums le plus ambitieux, cohérent et influents de l'histoire du rock.",
+            "excerpt": "Un chef-d'œuvre ambitieux et intemporel qui redéfinit les contours de la musique pop.",
             "iconName": "star.fill"
           },
           {
-            "source": "AllMusic",
-            "score": "5/5",
-            "excerpt": "Une expérience d'écoute totale, alliant mélodies immortelles et expérimentations créatives.",
+            "source": "Les Inrockuptibles",
+            "score": "Indispensable",
+            "excerpt": "Une fresque musicale étincelante où l'émotion humaine sublime la perfection synthétique.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/54/d0/62/54d06230-1196-0bd0-93b3-1bd3eef2b43d/cover_-.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Eclipse",
-            "duration": "3:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/d0/72/8fd072cb-33a5-7d2f-e07b-57c3f6c56b17/mzaf_4109419127039493519.plus.aac.p.m4a"
+            "title": "Give Life Back to Music",
+            "duration": "4:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ce/15/b1/ce15b154-2b27-9d65-4d12-7736f3e029c2/mzaf_15463046040604482889.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Mirror",
-            "duration": "3:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/12/b9/e412b90c-58ae-82e3-177a-c759daa235e9/mzaf_15237875496945978788.plus.aac.p.m4a"
+            "title": "The Game of Love",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f3/11/1e/f3111e28-8777-de11-ce9a-b68cbbd482e5/mzaf_9503836792087302865.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Iljido",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/da/a0/2adaa034-eaff-f483-75bd-efcaadc2fd26/mzaf_17460350461865147188.plus.aac.p.m4a"
+            "title": "Giorgio by Moroder",
+            "duration": "9:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/88/e4/40/88e440e7-8baa-6cc0-acbe-ceaa7f240a51/mzaf_1985242177805063708.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Moon Movie",
-            "duration": "3:38",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/bf/57/79bf5782-3267-05a6-9f1a-e648415ca161/mzaf_3779374774565150604.plus.aac.p.m4a"
+            "title": "Within",
+            "duration": "3:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/56/90/11/56901128-5f5e-67ff-f760-2cf14e00b04c/mzaf_4629559715078327006.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Snow",
-            "duration": "3:24",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/ff/73/e6ff73c0-5522-45fd-1b7f-ad72cda84bb2/mzaf_4822830383156239578.plus.aac.p.m4a"
+            "title": "Instant Crush",
+            "duration": "5:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1a/3b/90/1a3b90d2-b984-b042-1822-e19f388524e0/mzaf_7080651603608009369.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Lose Yourself to Dance",
+            "duration": "5:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/20/4d/92204d1e-e9d5-0062-36e9-3671d508f34c/mzaf_12660190147806239384.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Touch",
+            "duration": "8:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/5e/9c/23/5e9c23a8-51d4-3158-63a9-3c17c17e1aad/mzaf_5833810091814140078.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Get Lucky",
+            "duration": "6:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/d3/1e/d4d31eb4-7405-b806-8346-3c52ad5b4cf4/mzaf_8095545455942962509.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Beyond",
+            "duration": "4:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/81/bf/80/81bf80c3-6edf-2231-7f38-4e10f81ef4b0/mzaf_13454620304668252238.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Motherboard",
+            "duration": "5:41",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ad/fa/a3/adfaa33c-7b60-1a59-233d-e398492977c9/mzaf_6457343133066990041.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Fragments of Time",
+            "duration": "4:39",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/ae/f9/b6aef99e-356b-aa20-a4cd-80bc16836ab6/mzaf_269882820879606569.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Doin' it Right",
+            "duration": "4:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9b/0a/bf/9b0abf51-0e93-8770-f270-7dfda1afa1a2/mzaf_9717678664204193733.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Contact",
+            "duration": "6:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/12/2c/10/122c10fd-7f36-f4a2-5543-ae8e5dd357c6/mzaf_5198969030385154956.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "urlString": "https://open.spotify.com/search/Random%20Access%20Memories%20Daft%20Punk",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/us/album/dark-side-of-the-moon-ep/1499069229?uo=4",
+            "urlString": "https://music.apple.com/us/album/random-access-memories/617154241?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "urlString": "https://www.deezer.com/search/Random%20Access%20Memories%20Daft%20Punk",
             "iconName": "play.circle.fill"
           }
         ]
@@ -216,44 +264,44 @@
     ]
   },
   "intermediate": {
-    "themeTitle": "Les Métamorphoses de l'Intime",
-    "themeSubtitle": "Des récits insulaires et mélancoliques sur la quête d'identité et la fêlure des sentiments.",
+    "themeTitle": "Solitudes modernes et désirs virtuels",
+    "themeSubtitle": "Les fêlures intimes de l'individu hyperconnecté",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Kafka sur le rivage",
-        "creator": "Haruki Murakami",
-        "year": "2002",
-        "genre": "Réalisme magique / Roman",
-        "origin": "Japon",
-        "formatMetric": "640 pages",
-        "accessibility": "Romanesque & Onirique",
-        "quote": "Parfois, le destin ressemble à une petite tempête de sable qui déplace sa trajectoire sans arrêt.",
-        "aiSummary": "Deux destins croisés : Kafka Tamura, un adolescent de quinze ans qui fuit la malédiction œdipienne portée par son père, et Nakata, un vieillard amnésique capable de converser avec les chats.",
-        "thematicAnalysis": "Murakami tresse un labyrinthe onirique où se mêlent tragédie grecque, références musicales et mythologie japonaise, explorant la perméabilité des frontières entre conscient et inconscient.",
-        "anecdote": "Le roman intègre de nombreuses références à la musique classique et au jazz, éléments qui constituent la signature sonore et l'inspiration permanente de l'auteur dans son processus d'écriture.",
+        "title": "L'Anomalie",
+        "creator": "Hervé Le Tellier",
+        "year": "2020",
+        "genre": "Roman / Anticipation",
+        "origin": "France",
+        "formatMetric": "336 pages",
+        "accessibility": "Littéraire & Captivant",
+        "quote": "Il y a une chose d'une évidence aveuglante : aucun de nous ne sait qui il est.",
+        "aiSummary": "En juin 2021, un vol Paris-New York atterrit avec à son bord des passagers identiques à ceux d'un même vol ayant atterri trois mois plus tôt. Les autorités doivent gérer ce doublement inexpliqué.",
+        "thematicAnalysis": "Mêlant la rigueur formelle de l'Oulipo au rythme du thriller, Le Tellier interroge notre singularité, nos renoncements et l'hypothèse d'une réalité simulée.",
+        "anecdote": "Le Tellier a glissé de nombreuses références croisées à ses camarades de l'Oulipo ainsi que des clins d'œil littéraires cachés à travers les prénoms et codes du récit.",
         "tags": [
-          "Réalisme Magique",
-          "Japon",
-          "Labyrinthe"
+          "Oulipo",
+          "Prix Goncourt",
+          "Dédoublement"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
-            "score": "Incomparable",
-            "excerpt": "Murakami tisse une féérie métaphysique d'une délicatesse narrative envoûtante.",
+            "score": "Incontournable",
+            "excerpt": "Un virtuose jeu de miroirs qui mêle Oulipo, roman noir et philosophie d'anticipation.",
             "iconName": "newspaper.fill"
           },
           {
             "source": "Télérama",
             "score": "TTT",
-            "excerpt": "Une traversée poétique majeure, guidée par la grâce du mystère et du symbole.",
+            "excerpt": "Un page-turner brillant et ludique qui interroge avec jubilation notre rapport à l'identité.",
             "iconName": "quote.bubble.fill"
           },
           {
             "source": "Babelio",
             "score": "4.2/5",
-            "excerpt": "Un roman immersif où le fantastique affleure avec une poésie bouleversante.",
+            "excerpt": "Une construction romanesque diabolique saluée par des lecteurs captivés de bout en bout.",
             "iconName": "star.fill"
           }
         ],
@@ -261,58 +309,58 @@
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Anomalie%20Herv%C3%A9%20Le%20Tellier",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Anomalie%20Herv%C3%A9%20Le%20Tellier",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.audible.fr/search?keywords=L%27Anomalie%20Herv%C3%A9%20Le%20Tellier",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "In the Mood for Love",
-        "creator": "Wong Kar-wai",
-        "year": "2000",
-        "genre": "Drame romantique",
-        "origin": "Hong Kong",
-        "formatMetric": "1h 38m",
-        "accessibility": "Esthétique & Émouvant",
-        "quote": "C'était un temps qui n'existe plus, un temps de retenue et de désir inavoué.",
-        "aiSummary": "À Hong Kong en 1962, M. Chow et Mme Chan emménagent le même jour dans des appartements voisins. Ils découvrent peu à peu que leurs conjoints respectifs ont une liaison ensemble, ce qui les rapproche inévitablement.",
-        "thematicAnalysis": "Une œuvre somptueuse sur la retenue et le chagrin, où la répétition des motifs visuels, la musique hypnotique de Shigeru Umebayashi et le ralenti capturent l'essence du regret amoureux.",
-        "anecdote": "Le tournage, qui a duré plus de 15 mois sans scénario écrit au préalable, reposait entièrement sur l'improvisation des acteurs Maggie Cheung et Tony Leung sous la direction intuitive du réalisateur.",
+        "title": "Her",
+        "creator": "Spike Jonze",
+        "year": "2013",
+        "genre": "Drame / Romance Futuriste",
+        "origin": "États-Unis",
+        "formatMetric": "2h 06m",
+        "accessibility": "Sensible & Mélancolique",
+        "quote": "Le cœur n'est pas une boîte qui se remplit, il s'agrandit à mesure que tu aimes.",
+        "aiSummary": "À Los Angeles dans un futur proche, Theodore Twombly, un homme solitaire en fin de mariage, tombe amoureux d'Samantha, un système d'exploitation doté d'une voix captivante et d'une conscience évolutive.",
+        "thematicAnalysis": "Spike Jonze signe une élégie délicate sur la recherche de connexion affective dans un monde feutré, hyperconnecté mais profondément désincarné.",
+        "anecdote": "La voix de l'IA a été entièrement réenregistrée par Scarlett Johansson en post-production, remplaçant l'actrice Samantha Morton qui avait pourtant joué toutes les scènes sur le plateau.",
         "tags": [
-          "Romantisme",
-          "Hong Kong",
-          "Sublime"
+          "Intelligence Artificielle",
+          "Romance",
+          "Mélancolie"
         ],
         "ratings": [
           {
             "source": "Télérama",
             "score": "TTTT",
-            "excerpt": "Un poème visuel d'une beauté affolante où chaque plan est imprégné de désir abstenu.",
+            "excerpt": "Une fable amoureuse d'une poésie déchirante sur la solitude contemporaine et l'amour virtuel.",
             "iconName": "film.fill"
           },
           {
             "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "excerpt": "La sublimation absolue du sentiment amoureux orchestrée par un plasticien d'exception.",
+            "score": "4/5",
+            "excerpt": "Spike Jonze orchestre avec une sensibilité rare la romance entre un homme et un algorithme.",
             "iconName": "star.fill"
           },
           {
             "source": "Allociné Presse",
             "score": "4.4/5",
-            "excerpt": "Un monument d'élégance mélancolique dont l'empreinte esthétique reste inégalée.",
+            "excerpt": "Un mélodrame d'anticipation magistral porté par la prestation bouleversante de Joaquin Phoenix.",
             "iconName": "newspaper.fill"
           }
         ],
@@ -320,159 +368,87 @@
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=In%20the%20Mood%20for%20Love",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Her",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=In%20the%20Mood%20for%20Love",
+            "urlString": "https://www.allocine.fr/recherche/?q=Her",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=In%20the%20Mood%20for%20Love",
+            "urlString": "https://www.canalplus.com/recherche?q=Her",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Untrue",
-        "creator": "Burial",
-        "year": "2007",
-        "genre": "Dubstep / Ambient / Electronic",
-        "origin": "Royaume-Uni",
-        "formatMetric": "13 titres",
-        "accessibility": "Immersif & Envoûtant",
-        "quote": "It's about when you're walking home alone at night, late, in the rain, and the city looks different.",
-        "aiSummary": "Conçu dans la nuit londonienne, cet album culte assemble des rythmes fêlés, des échantillons vocaux R&B manipulés et des bruits de pluie pour peindre la mélancolie des fins de soirée.",
-        "thematicAnalysis": "William Bevan (Burial) réinvente la bass music britannique en lui insufflant une charge spectrale, capturant l'isolement urbain et le désir de réconfort au sein de la métropole moderne.",
-        "anecdote": "L'album entier a été produit sur un logiciel de retouche audio rudimentaire (Sound Forge) sans séquenceur traditionnel ni synchronisation au tempo, privilégiant un feeling rythmique instinctif.",
+        "title": "Blonde",
+        "creator": "Frank Ocean",
+        "year": "2016",
+        "genre": "Avant-R&B / Soul Expérimentale",
+        "origin": "États-Unis",
+        "formatMetric": "17 titres",
+        "accessibility": "Intime & Épuré",
+        "quote": "I thought that I was dreaming when you said you loved me.",
+        "aiSummary": "Un album d'une intimité radicale dénué des structures pop classiques, où les guitares épurées, la voix piquée d'effets et la nostalgie adolescente composent un collage impressionniste.",
+        "thematicAnalysis": "Frank Ocean redéfinit la musique urbaine en faisant de la déconstruction instrumentale le miroir de la fluidité identitaire et des chagrins d'amour modernes.",
+        "anecdote": "Frank Ocean a publié cet album en indépendant au lendemain de la sortie de l'album vidéo *Endless*, se libérant ainsi de son contrat majeur à la surprise totale de son ancien label.",
         "tags": [
-          "Nocturne",
-          "Dubstep",
-          "Mélancolie"
+          "Avant-R&B",
+          "Minimalisme",
+          "Introspection"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
             "score": "9.0/10",
-            "excerpt": "Un chef-d'œuvre nocturne qui a durablement influencé le paysage de la musique électronique.",
+            "excerpt": "Un album intime et avant-gardiste qui déconstruit le R&B moderne avec un lyrisme poignant.",
             "iconName": "music.note"
           },
           {
-            "source": "The Guardian",
-            "score": "5/5",
-            "excerpt": "La bande-son poignante et fantomatique de la solitude urbaine du XXIe siècle.",
+            "source": "Rolling Stone",
+            "score": "4.5/5",
+            "excerpt": "Un chef-d'œuvre d'introspection atmosphérique et dépurée, au son d'une sincérité désarmante.",
             "iconName": "star.fill"
           },
           {
             "source": "Les Inrockuptibles",
-            "score": "Indispensable",
-            "excerpt": "Une cathédrale de crépitements et de voix hachées gravée à jamais dans les mémoires.",
+            "score": "Chef-d'œuvre",
+            "excerpt": "Une collection de miniatures pop minimalistes d'une beauté renversante et suspendue.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9d/0f/1c/9d0f1c2b-2fae-d8ac-3920-ce9ec5bc85b5/7982.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/68/f9/fe/68f9fec8-81b6-38b1-7e27-796c431436fa/814908025306.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Untitled",
-            "duration": "0:46",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/55/b4/1a/55b41a89-855a-3881-8cad-c31fe0745de7/mzaf_11093208903019226887.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Archangel",
-            "duration": "3:58",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ef/6e/fa/ef6efa09-ae7e-aec6-2eb2-6bd11b22703c/mzaf_18137613516381741140.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Near Dark",
-            "duration": "3:54",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ee/d0/aa/eed0aa90-5d6b-5bd6-f74f-1f0261352e76/mzaf_18072601168640031081.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Ghost Hardware",
-            "duration": "4:53",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/da/48/09/da480905-ebeb-e27d-dd4f-011e67e781df/mzaf_8713858222517735597.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Endorphin",
-            "duration": "2:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/87/90/74/87907431-bd6b-b483-9bc6-a5559eb1fdb0/mzaf_14817226116876738079.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Etched Headplate",
-            "duration": "5:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/aa/cf/8b/aacf8be4-dd1c-a392-ec2b-437bbba67aa9/mzaf_2572052652452232285.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "In McDonalds",
-            "duration": "2:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/22/ae/d922aed7-8910-ea7b-313e-552b3d37d852/mzaf_3422907529831341804.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Untrue",
-            "duration": "6:16",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/69/32/69/69326959-b3ee-0519-607c-8d22baaf1a69/mzaf_12397789698658597996.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Shell of Light",
-            "duration": "4:40",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9a/8e/74/9a8e7496-2090-bc79-c49c-23fba4b5c572/mzaf_3386698126576186116.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Dog Shelter",
-            "duration": "2:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e1/4f/94/e14f94ce-7ca9-038c-f4a1-dc7aeb949f7c/mzaf_12950366800693193370.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Homeless",
-            "duration": "5:20",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/1b/88/631b880b-b67a-002d-4351-fc942396e6ed/mzaf_9845942233058312994.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Uk",
-            "duration": "1:40",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/42/94/4742941d-92be-419b-5348-d078d453001d/mzaf_14808914605777872566.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Raver",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/32/44/b632442b-db99-87ad-90c5-a89996179107/mzaf_670378989722533146.plus.aac.p.m4a"
+            "title": "Ocean (feat. Jacquees)",
+            "duration": "3:39",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/18/d7/2b18d73e-f318-e745-7e4d-c8cbcfc83793/mzaf_5594006490844581895.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Untrue%20Burial",
+            "urlString": "https://open.spotify.com/search/Blonde%20Frank%20Ocean",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/us/album/untrue/893175779?uo=4",
+            "urlString": "https://music.apple.com/us/album/ocean-feat-jacquees-single/1341983089?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Untrue%20Burial",
+            "urlString": "https://www.deezer.com/search/Blonde%20Frank%20Ocean",
             "iconName": "play.circle.fill"
           }
         ]
@@ -480,44 +456,44 @@
     ]
   },
   "expert": {
-    "themeTitle": "Les Architectures du Vertige",
-    "themeSubtitle": "Explorations radicales de la décomposition, des structures impossibles et de la durée.",
+    "themeTitle": "Zones d'ombre et métaphysique du déclin",
+    "themeSubtitle": "Voyage au bord du gouffre contemplatif et politique",
     "items": [
       {
         "type": "LIVRE",
-        "title": "La Maison des feuilles",
-        "creator": "Mark Z. Danielewski",
-        "year": "2000",
-        "genre": "Littérature expérimentale / Roman",
-        "origin": "États-Unis",
-        "formatMetric": "752 pages",
-        "accessibility": "Exigeant & Exaltant",
-        "quote": "Ce livre n'est pas pour vous.",
-        "aiSummary": "L'histoire tourne autour d'un documentaire relatant l'exploration d'une maison dont les dimensions intérieures sont mystérieusement plus grandes que ses mensurations extérieures, révélant un labyrinthe infini.",
-        "thematicAnalysis": "Danielewski invente une littérature ergodique où la mise en page (notes de bas de page croisées, texte inversé, mots isolés) reflète la désorientation spatiale et la folie obsessionnelle des protagonistes.",
-        "anecdote": "L'auteur est le frère de la chanteuse Poe, dont l'album 'Haunted' a été conçu comme un compagnon musical direct du livre, partageant les mêmes enregistrements audio de leur père défunt.",
+        "title": "Le Tango de Satan",
+        "creator": "László Krasznahorkai",
+        "year": "1985",
+        "genre": "Littérature Exigeante / Roman Noir Métaphysique",
+        "origin": "Hongrie",
+        "formatMetric": "352 pages",
+        "accessibility": "Exigeant & Hypnotique",
+        "quote": "Alors ils comprirent qu'ils étaient pris au piège d'une illusion sans fin.",
+        "aiSummary": "Dans une coopérative agricole délabrée de Hongrie balayée par des pluies incessantes, l'annonce du retour d'Irimiás, un faux prophète charismatique qu'on croyait mort, suscite une fascination destructrice.",
+        "thematicAnalysis": "Construit selon les mouvements d'un tango (six pas en avant, six pas en arrière), ce roman à la prose fluviale dissèque le besoin aveugle de croyance et la décomposition du tissu social.",
+        "anecdote": "Susan Sontag déclarait à propos de Krasznahorkai qu'il était le maître hongrois contemporain de l'apocalypse, au même titre que Gogol et Melville.",
         "tags": [
-          "Avant-Garde",
-          "Labyrinthe",
-          "Ergodique"
+          "Littérature Européenne",
+          "Prose Fluviale",
+          "Apocalypse"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
-            "score": "Inclassable",
-            "excerpt": "Une expérience de lecture totale, un vertige typographique et narratif hallucinant.",
+            "score": "Magistral",
+            "excerpt": "Une fresque apocalyptique aux phrases sinueuses d'une densité poétique inouïe.",
             "iconName": "newspaper.fill"
           },
           {
-            "source": "Libération",
-            "score": "Vertigineux",
-            "excerpt": "Un objet littéraire mutant qui dynamite les conventions du roman contemporain.",
+            "source": "Télérama",
+            "score": "TTTT",
+            "excerpt": "Un monument littéraire d'une radicalité envoûtante sur la déchéance et l'espoir tragique.",
             "iconName": "quote.bubble.fill"
           },
           {
-            "source": "Babelio",
-            "score": "4.3/5",
-            "excerpt": "Une ingénierie narrative hors norme qui hante le lecteur bien après la fermeture du livre.",
+            "source": "Libération",
+            "score": "Sublime",
+            "excerpt": "Krasznahorkai sculpte la boue et l'attente dans une prose envoûtante d'une exigence absolue.",
             "iconName": "star.fill"
           }
         ],
@@ -525,58 +501,58 @@
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Maison%20des%20feuilles%20Mark%20Z.%20Danielewski",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Tango%20de%20Satan%20L%C3%A1szl%C3%B3%20Krasznahorkai",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Maison%20des%20feuilles%20Mark%20Z.%20Danielewski",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Tango%20de%20Satan%20L%C3%A1szl%C3%B3%20Krasznahorkai",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=La%20Maison%20des%20feuilles%20Mark%20Z.%20Danielewski",
+            "urlString": "https://www.audible.fr/search?keywords=Le%20Tango%20de%20Satan%20L%C3%A1szl%C3%B3%20Krasznahorkai",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
-        "creator": "Chantal Akerman",
-        "year": "1975",
-        "genre": "Avant-garde / Drame minimaliste",
-        "origin": "Belgique / France",
-        "formatMetric": "3h 21m",
-        "accessibility": "Radical & Hypnotique",
-        "quote": "Raconter le temps qui passe, c'est la seule façon de ne pas le laisser vous tuer.",
-        "aiSummary": "Sur trois jours, le film observe la routine domestique millimétrée d'une mère au foyer veuve qui se prostitue occasionnellement chez elle, jusqu'à ce que de micro-dérèglements perturbent l'ordre établi.",
-        "thematicAnalysis": "Akerman révolutionne le langage cinématographique en accordant une valeur temporelle et spatiale égale aux tâches ménagères et à la tragédie, érigeant la répétition en acte politique féministe.",
-        "anecdote": "Le magazine britannique Sight & Sound l'a élu 'Plus grand film de tous les temps' lors de son sondage décennal de 2022, consacrant pour la première fois une réalisation féminine.",
+        "title": "Stalker",
+        "creator": "Andrei Tarkovsky",
+        "year": "1979",
+        "genre": "Art et Essai / Science-Fiction Métaphysique",
+        "origin": "URSS",
+        "formatMetric": "2h 42m",
+        "accessibility": "Contemplatif & Exigeant",
+        "quote": "Que leurs désirs se réalisent, qu'ils y croient, et qu'ils rient de leurs passions.",
+        "aiSummary": "Un 'Stalker' guide un Écrivain désabusé et un Professeur sceptique à travers les pièges mortels de la Zone, un territoire mystérieux où se trouve une chambre capable d'exaucer le désir le plus intime.",
+        "thematicAnalysis": "Par ses plans-séquences étirés et sa texture visuelle d'une beauté poisseuse, Tarkovski orchestre une quête existentielle sur la foi, l'inconscient et la détresse spirituelle du monde moderne.",
+        "anecdote": "Le tournage a eu lieu près d'une centrale hydroélectrique et d'usines chimiques toxiques en Estonie, provoquant des pathologies graves chez plusieurs membres de l'équipe, dont Tarkovski lui-même.",
         "tags": [
-          "Minimalisme",
-          "Féministe",
-          "Révolutionnaire"
+          "Cinéma Soviétique",
+          "Métaphysique",
+          "Poésie Visuelle"
         ],
         "ratings": [
           {
             "source": "Télérama",
             "score": "TTTT",
-            "excerpt": "Un monument du cinéma moderne d'une rigueur formelle et politique absolue.",
+            "excerpt": "Une expérience métaphysique ultime, un chef-d'œuvre visuel et spirituel d'une beauté pure.",
             "iconName": "film.fill"
           },
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
-            "excerpt": "Une œuvre maîtresse qui réinvente radicalement notre perception du temps et du geste.",
+            "excerpt": "La quintessence du cinéma de Tarkovski, voyage hypnotique au cœur des désirs humains.",
             "iconName": "star.fill"
           },
           {
             "source": "SensCritique",
-            "score": "8.1/10",
-            "excerpt": "Un choc plastique et temporel d'une puissance hypnotique inégalée.",
+            "score": "8.6/10",
+            "excerpt": "Une œuvre exigeante et contemplative qui hante l'esprit bien après le visionnage.",
             "iconName": "newspaper.fill"
           }
         ],
@@ -584,93 +560,78 @@
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Jeanne%20Dielman%2C%2023%2C%20quai%20du%20Commerce%2C%201080%20Bruxelles",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Stalker",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Jeanne%20Dielman%2C%2023%2C%20quai%20du%20Commerce%2C%201080%20Bruxelles",
+            "urlString": "https://www.allocine.fr/recherche/?q=Stalker",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Jeanne%20Dielman%2C%2023%2C%20quai%20du%20Commerce%2C%201080%20Bruxelles",
+            "urlString": "https://www.canalplus.com/recherche?q=Stalker",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Disintegration Loops",
-        "creator": "William Basinski",
-        "year": "2002",
-        "genre": "Ambient / Avant-garde / Musique spectrale",
-        "origin": "États-Unis",
-        "formatMetric": "4 volumes",
-        "accessibility": "Contemplatif & Exigeant",
-        "quote": "The music was dying right in front of me, giving up its spirit into the digital domain.",
-        "aiSummary": "Alors qu'il numérisait de vieilles bandes magnétiques ambiantes des années 80, Basinski a constaté que la ferrite se désintégrait à chaque passage dans la tête de lecture, enregistrant la mort lente de ses propres boucles.",
-        "thematicAnalysis": "Un témoignage poignant sur l'entropie et la mémoire de la matière. L'œuvre prend une résonance historique particulière ayant été achevée le matin même des attentats du 11 septembre 2001 à New York.",
-        "anecdote": "La pochette du coffret représente une capture d'écran de la dernière heure du coucher de soleil sur la fumée du World Trade Center, filmée par Basinski depuis le toit de son appartement à Brooklyn.",
+        "title": "Lift Your Skinny Fists Like Antennas to Heaven",
+        "creator": "Godspeed You! Black Emperor",
+        "year": "2000",
+        "genre": "Post-Rock Expérimental / Avant-Garde",
+        "origin": "Canada",
+        "formatMetric": "4 mouvements (87 min)",
+        "accessibility": "Maxi Nerd & Radical",
+        "quote": "They don't sleep on the beach no more.",
+        "aiSummary": "Double album instrumental composé de quatre mouvements torrentiels où se croisent crescendos de guitares incandescentes, arrangements de cordes élégiaques et enregistrements de voix trouvées (field recordings).",
+        "thematicAnalysis": "Un manifeste musical anarchiste et crépusculaire qui capture l'angoisse de la fin du millénaire, oscillant entre le désespoir politique et l'émergence d'une grâce collective.",
+        "anecdote": "Le groupe montréalais refuse traditionnellement toute interview promotionnelle et n'apparaît sur aucune photo officielle de pochette, laissant la musique parler d'elle-même.",
         "tags": [
-          "Ambient",
-          "Entropie",
-          "Expérimental"
+          "Post-Rock",
+          "Instrumental",
+          "Anti-Capitalisme"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "10/10",
-            "excerpt": "Une méditation monumentale et d'une beauté tragique sur le passage du temps.",
+            "score": "9.0/10",
+            "excerpt": "Une symphonie post-rock cinématographique d'une intensité émotionnelle monumentale.",
             "iconName": "music.note"
           },
           {
             "source": "AllMusic",
-            "score": "4.5/5",
-            "excerpt": "Une œuvre conceptuelle poignante à la portée historique et sonore irréversible.",
+            "score": "5/5",
+            "excerpt": "Un double album d'une ampleur inégalée, mêlant field recordings et crescendos orageux.",
             "iconName": "star.fill"
           },
           {
             "source": "Les Inrockuptibles",
-            "score": "Indispensable",
-            "excerpt": "L'effritement physique du son métamorphosé en pur poème métaphysique.",
+            "score": "Sommet",
+            "excerpt": "Une œuvre d'art totale, manifeste instrumental contre le chaos du monde contemporain.",
             "iconName": "quote.bubble.fill"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/3e/ea/08/3eea0811-b27e-6e92-9d2a-561bfce9107c/cover.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Dlp 1.1",
-            "duration": "63:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b3/3c/e6/b33ce619-dc9d-c4b7-ba17-813db2a2bb17/mzaf_14559693761581485228.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Dlp 2.1",
-            "duration": "10:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/a4/c7/c3a4c7a9-279c-8f8b-7ed3-09da0bc90db4/mzaf_7369710717981805827.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/The%20Disintegration%20Loops%20William%20Basinski",
+            "urlString": "https://open.spotify.com/search/Lift%20Your%20Skinny%20Fists%20Like%20Antennas%20to%20Heaven%20Godspeed%20You%21%20Black%20Emperor",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/us/album/the-disintegration-loops-remastered/908005350?uo=4",
+            "urlString": "https://music.apple.com/fr/search?term=Lift%20Your%20Skinny%20Fists%20Like%20Antennas%20to%20Heaven%20Godspeed%20You%21%20Black%20Emperor",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/The%20Disintegration%20Loops%20William%20Basinski",
+            "urlString": "https://www.deezer.com/search/Lift%20Your%20Skinny%20Fists%20Like%20Antennas%20to%20Heaven%20Godspeed%20You%21%20Black%20Emperor",
             "iconName": "play.circle.fill"
           }
         ]
