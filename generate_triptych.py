@@ -15,15 +15,19 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Nettoyeur de Titres pour les Recherches
+# MARK: - Nettoyeurs de Titres & Encodage d'URL Sécurisé
 
 def clean_search_title(title: str) -> str:
-    """Nettoie les parenthèses, tomes et sous-titres pour maximiser les résultats."""
+    """Supprime les parenthèses, crochets et sous-titres superflus."""
     t = re.sub(r"\(.*?\)", "", title)
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
         t = t.split(":")[0]
     return t.strip()
+
+def safe_url_encode(text: str) -> str:
+    """Encode strictement tous les caractères spéciaux (y compris les slashes) pour éviter les 404."""
+    return urllib.parse.quote(text.strip(), safe="")
 
 # MARK: - Gestion de l'Historique & Déduplication
 
@@ -65,7 +69,7 @@ def fetch_book_metadata(title: str, author: str):
 
     # 1. Apple Books / iTunes Ebook
     try:
-        q_apple = urllib.parse.quote(f"{clean_t} {author}")
+        q_apple = safe_url_encode(f"{clean_t} {author}")
         apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=1"
         req = urllib.request.Request(apple_url, headers={"User-Agent": "TriviumApp/2.1"})
         with urllib.request.urlopen(req, timeout=5) as response:
@@ -88,7 +92,7 @@ def fetch_book_metadata(title: str, author: str):
             clean_t
         ]
         for q in queries:
-            encoded_q = urllib.parse.quote(q)
+            encoded_q = safe_url_encode(q)
             url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=2&printType=books"
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -120,7 +124,7 @@ def fetch_book_metadata(title: str, author: str):
     # 3. OpenLibrary Covers
     if not image_url:
         try:
-            q_ol = urllib.parse.quote(f"{clean_t} {author}")
+            q_ol = safe_url_encode(f"{clean_t} {author}")
             ol_url = f"https://openlibrary.org/search.json?q={q_ol}&limit=1"
             req = urllib.request.Request(ol_url, headers={"User-Agent": "TriviumApp/2.1"})
             with urllib.request.urlopen(req, timeout=5) as response:
@@ -144,7 +148,7 @@ def fetch_film_metadata(title: str, director: str):
     queries = [clean_t, f"{clean_t} {director}"]
 
     for q in queries:
-        encoded_q = urllib.parse.quote(q)
+        encoded_q = safe_url_encode(q)
         for country in ["fr", "us"]:
             url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=1&country={country}"
             try:
@@ -161,11 +165,11 @@ def fetch_film_metadata(title: str, director: str):
 
     return image_url
 
-# MARK: - Enrichisseur Albums (Apple Music, Jaquette, Pistes & URL directe)
+# MARK: - Enrichisseur Albums (Apple Music Direct URL, Jaquette & Pistes)
 
 def fetch_album_metadata(album_title: str, artist: str):
     clean_t = clean_search_title(album_title)
-    query = urllib.parse.quote(f"{clean_t} {artist}")
+    query = safe_url_encode(f"{clean_t} {artist}")
     url = f"https://itunes.apple.com/search?term={query}&entity=album&limit=1&country=fr"
     image_url, collection_id, tracks, direct_url = None, None, [], None
 
@@ -206,12 +210,13 @@ def fetch_album_metadata(album_title: str, artist: str):
 
     return image_url, tracks, direct_url
 
-# MARK: - Liens Plateformes Utiles (Apple Music Direct, Spotify & Deezer)
+# MARK: - Liens Plateformes Sécurisés
 
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
-    encoded_query = urllib.parse.quote(f"{clean_t} {creator}".strip())
-    encoded_title = urllib.parse.quote(clean_t.strip())
+    search_term = f"{clean_t} {creator}".strip()
+    encoded_search = safe_url_encode(search_term)
+    encoded_title = safe_url_encode(clean_t.strip())
     
     t = item_type.upper()
     if t == "FILM":
@@ -219,7 +224,7 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             {
                 "name": "JustWatch",
                 "category": "Disponibilité légale & Streaming",
-                "urlString": f"https://www.justwatch.com/fr/recherche?q={encoded_query}",
+                "urlString": f"https://www.justwatch.com/fr/recherche?q={encoded_search}",
                 "iconName": "play.tv.fill"
             },
             {
@@ -234,18 +239,18 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             {
                 "name": "Les Libraires",
                 "category": "Librairies indépendantes",
-                "urlString": f"https://www.leslibraires.fr/recherche/?q={encoded_query}",
+                "urlString": f"https://www.leslibraires.fr/recherche/?q={encoded_search}",
                 "iconName": "book.fill"
             },
             {
                 "name": "Fnac",
                 "category": "Achat livre & Ebook",
-                "urlString": f"https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search={encoded_query}",
+                "urlString": f"https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search={encoded_search}",
                 "iconName": "bag.fill"
             }
         ]
     else:  # ALBUM
-        apple_link = direct_apple_url if direct_apple_url else f"https://music.apple.com/fr/search?term={encoded_query}"
+        apple_link = direct_apple_url if direct_apple_url else f"https://music.apple.com/fr/search?term={encoded_search}"
         return [
             {
                 "name": "Apple Music",
@@ -256,13 +261,13 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             {
                 "name": "Spotify",
                 "category": "Streaming audio",
-                "urlString": f"https://open.spotify.com/search/{encoded_query}",
+                "urlString": f"https://open.spotify.com/search/{encoded_search}",
                 "iconName": "waveform"
             },
             {
                 "name": "Deezer",
                 "category": "Streaming audio & HiFi",
-                "urlString": f"https://www.deezer.com/search/{encoded_query}",
+                "urlString": f"https://www.deezer.com/search/{encoded_search}",
                 "iconName": "music.note"
             }
         ]
@@ -378,7 +383,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition générée (Apple Music direct, Spotify, Deezer intégrés) et archivée dans {archive_path}.")
+    print(f"✅ Édition générée et archivée dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
