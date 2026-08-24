@@ -1,263 +1,245 @@
 {
   "accessible": {
-    "themeTitle": "Les Réalités Synthétiques",
-    "themeSubtitle": "Quand le monde réel bascule dans l'illusion et la matrice",
+    "themeTitle": "Les Vertiges de l'Infini",
+    "themeSubtitle": "Quand la pop culture contemple la majesté et le silence assourdissant du vide sidéral.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Dune",
-        "creator": "Frank Herbert",
-        "year": "1965",
-        "genre": "Science-Fiction / Épopée",
-        "origin": "États-Unis",
-        "formatMetric": "680 pages",
+        "title": "2001 : L'Odyssée de l'espace",
+        "creator": "Arthur C. Clarke",
+        "year": "1968",
+        "genre": "Science-Fiction",
+        "origin": "Royaume-Uni",
+        "formatMetric": "280 pages",
         "accessibility": "Populaire & Immédiat",
-        "quote": "Je ne dois pas avoir peur. La peur est le tueur d'esprit.",
-        "aiSummary": "Sur Arrakis, planète désertique recélant l'Épice nécessaire aux voyages spatiaux, Paul Atréides se retrouve au cœur d'une lutte féodale et mystique pour le contrôle de l'univers.",
-        "thematicAnalysis": "Herbert interroge le messianisme, la manipulation politique et le contrôle des ressources dans un univers où le pouvoir repose sur le contrôle d'une substance altérant la conscience.",
-        "anecdote": "Frank Herbert a trouvé l'inspiration pour Dune en étudiant le suivi écologique des dunes de sable de Florence, dans l'Oregon, pour le ministère américain de l'Agriculture.",
+        "quote": "Mon Dieu, c'est plein d'étoiles !",
+        "aiSummary": "Lorsqu'un mystérieux monolithe noir est découvert sous la surface de la Lune, l'humanité s'élance vers Jupiter à bord du Discovery One, sous la surveillance de l'IA HAL 9000.",
+        "thematicAnalysis": "Arthur C. Clarke confronte la fragilité biologique de l'homme à l'éternité impassible du cosmos. Le roman transforme le silence spatial en une arène philosophique où l'intelligence artificielle et l'évolution métaphysique s'entrechoquent.",
+        "anecdote": "Le livre et le film de Stanley Kubrick ont été développés simultanément. Clarke reprenait quotidiennement ses notes d'écriture en fonction des ébauches visuelles du réalisateur.",
         "tags": [
-          "Messie",
-          "Écologie",
-          "Empire"
+          "Monolithe",
+          "HAL 9000",
+          "Exploration"
         ],
         "ratings": [
           {
+            "source": "Le Monde des Livres",
+            "score": "Chef-d'œuvre",
+            "excerpt": "Une méditation visionnaire sur la destinée humaine au-delà du berceau terrestre.",
+            "iconName": "newspaper.fill"
+          },
+          {
             "source": "Babelio",
             "score": "4.5/5",
-            "excerpt": "Une fresque cosmique intemporelle où la politique et l'écologie s'entrelacent avec génie.",
+            "excerpt": "L'écriture limpide et scientifique de Clarke rend l'immensité du cosmos presque palpable.",
             "iconName": "star.fill"
           },
           {
             "source": "Télérama",
-            "score": "TTT",
-            "excerpt": "Le chef-d'œuvre absolu de la science-fiction moderne, visionnaire et envoûtant.",
+            "score": "TTTT",
+            "excerpt": "Un roman devenu pilier absolu de la science-fiction moderne.",
             "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "Le Figaro Littéraire",
-            "score": "5/5",
-            "excerpt": "Un roman fondateur d'une densité psychologique et mythologique inégalée.",
-            "iconName": "newspaper.fill"
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+        "imageURL": "https://covers.openlibrary.org/b/id/11344400-L.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Dune%20Frank%20Herbert",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=2001%20Arthur%20C.%20Clarke",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Dune%20Frank%20Herbert",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=2001%20Arthur%20C.%20Clarke",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Dune%20Frank%20Herbert",
+            "urlString": "https://www.audible.fr/search?keywords=2001%20Arthur%20C.%20Clarke",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "The Matrix",
-        "creator": "Lana et Lilly Wachowski",
-        "year": "1999",
-        "genre": "Science-Fiction / Action",
+        "title": "Interstellar",
+        "creator": "Christopher Nolan",
+        "year": "2014",
+        "genre": "Science-Fiction / Drame",
         "origin": "États-Unis",
-        "formatMetric": "2h 16m",
+        "formatMetric": "2h 49m",
         "accessibility": "Culte & Grand Public",
-        "quote": "Prends la pilule rouge et tu restes au Pays des Merveilles, et je te montre jusqu'où va le terrier du lapin.",
-        "aiSummary": "Un hacker nommé Neo découvre que la réalité humaine n'est qu'une simulation informatique créée par des machines intelligentes pour asservir l'humanité.",
-        "thematicAnalysis": "Le film démocratise l'allégorie de la caverne de Platon et la critique baudrillardienne du simulacre à travers une esthétique cyberpunk révolutionnaire.",
-        "anecdote": "Les sœurs Wachowski ont exigé que les acteurs principaux lisent l'ouvrage 'Simulacres et Simulation' du philosophe Jean Baudrillard avant le début du tournage.",
+        "quote": "L'amour est la seule chose qui transcende le temps et l'espace.",
+        "aiSummary": "Alors que la Terre se meurt, un groupe d'explorateurs franchit un trou de ver près de Saturne pour dénicher un nouvel habitat pour l'humanité.",
+        "thematicAnalysis": "Nolan orchestre un contraste saisissant entre les équations d'astrophysique et la puissance des émotions humaines. L'immensité silencieuse de l'espace devient le révélateur ultime du lien intime qui unit un père à sa fille.",
+        "anecdote": "L'astrophysicien Kip Thorne a fourni les calculs théoriques pour modéliser le trou noir Gargantua, aboutissant à des découvertes scientifiques réelles publiées dans des revues de physique.",
         "tags": [
-          "Cyberpunk",
-          "Illusion",
-          "Philosophie"
+          "Trou Noir",
+          "Temps",
+          "Hans Zimmer"
         ],
         "ratings": [
           {
             "source": "Télérama",
-            "score": "TTT",
-            "excerpt": "Un monument visuel et métaphysique qui a redéfini le cinéma d'action du XXIe siècle.",
+            "score": "TTTT",
+            "excerpt": "Une odyssée spatiale poignante entre rigueur scientifique et émotion pure.",
             "iconName": "film.fill"
           },
           {
-            "source": "Cahiers du Cinéma",
-            "score": "4/5",
-            "excerpt": "Une œuvre visuellement inventive qui marie virtuosité des combats et réflexions existentialistes.",
-            "iconName": "star.fill"
+            "source": "Allociné Presse",
+            "score": "4.0/5",
+            "excerpt": "Un spectacle visuel et sonore étourdissant guidé par l'envolée musicale de Hans Zimmer.",
+            "iconName": "newspaper.fill"
           },
           {
-            "source": "Rotten Tomatoes",
-            "score": "83%",
-            "excerpt": "Un savant mélange de philosophie stimulante et de scènes d'action révolutionnaires.",
-            "iconName": "newspaper.fill"
+            "source": "SensCritique",
+            "score": "8.2/10",
+            "excerpt": "Une fresque spectaculaire et poignante sur le deuil, le temps et l'infini cosmique.",
+            "iconName": "star.fill"
           }
         ],
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=The%20Matrix",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Interstellar",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=The%20Matrix",
+            "urlString": "https://www.allocine.fr/recherche/?q=Interstellar",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=The%20Matrix",
+            "urlString": "https://www.canalplus.com/recherche?q=Interstellar",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Random Access Memories",
-        "creator": "Daft Punk",
-        "year": "2013",
-        "genre": "French Touch / Disco-Funk",
-        "origin": "France",
-        "formatMetric": "13 titres",
+        "title": "Space Oddity",
+        "creator": "David Bowie",
+        "year": "1969",
+        "genre": "Pop Rock / Folk Psychédélique",
+        "origin": "Royaume-Uni",
+        "formatMetric": "10 titres",
         "accessibility": "Écoute Immédiate",
-        "quote": "Give life back to music.",
-        "aiSummary": "Un voyage organique et méticuleux enregistré avec des musiciens de légende pour redonner une âme humaine à la musique électronique moderne.",
-        "thematicAnalysis": "L'album matérialise le désir de robots musiciens devenant humains par la réappropriation du son analogique et de la mémoire musicale des années 70-80.",
-        "anecdote": "Pour enregistrer la voix du producteur Giorgio Moroder sur 'Giorgio by Moroder', le duo a utilisé trois microphones d'époques différentes retraçant les étapes de sa vie.",
+        "quote": "Ground Control to Major Tom...",
+        "aiSummary": "Deuxième album studio de David Bowie, marqué par la ballade mythique de Major Tom, astronaute dérivant seul dans sa capsule spatiale.",
+        "thematicAnalysis": "Bowie capte la solitude existentielle de l'ère spatiale. La chanson-titre met en scène le détachement ultime d'un homme coupant les ponts avec le monde matériel pour s'abîmer dans la beauté muette des étoiles.",
+        "anecdote": "La BBC a diffusé le titre 'Space Oddity' lors de sa couverture en direct de l'atterrissage d'Apollo 11 sur la Lune en juillet 1969.",
         "tags": [
-          "Funk",
-          "Analogique",
-          "Légende"
+          "Major Tom",
+          "Psychédélique",
+          "Anées 60"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "8.8/10",
-            "excerpt": "A monument to the grandeur of disco and analog recording, executed with perfection.",
+            "score": "8.3/10",
+            "excerpt": "L'acte de naissance de la mythologie spatiale chez Bowie, teinté de folk mélancolique.",
             "iconName": "music.note"
           },
           {
-            "source": "Rolling Stone",
+            "source": "AllMusic",
             "score": "4.5/5",
-            "excerpt": "Un hommage flamboyant au funk et au disco porté par une production somptueuse.",
+            "excerpt": "Un classique folk-pop mélancolique porté par l'épopée inoubliable du Major Tom.",
             "iconName": "star.fill"
           },
           {
             "source": "Les Inrockuptibles",
             "score": "Indispensable",
-            "excerpt": "Un album magistral, d'une générosité sonore inouïe et d'une précision chirurgicale.",
+            "excerpt": "Une trajectoire pop fulgurante vers le grand silence cosmique.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/40/52/b1/4052b1a6-63cd-4527-531e-236f590cf981/190295410728.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Give Life Back to Music",
-            "duration": "4:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ce/15/b1/ce15b154-2b27-9d65-4d12-7736f3e029c2/mzaf_15463046040604482889.plus.aac.p.m4a"
+            "title": "Space Oddity (2019 Mix)",
+            "duration": "5:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/5e/8b/2e5e8bf6-12f6-028e-2e19-9b68c8f1db01/mzaf_14432231000261344504.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "The Game of Love",
-            "duration": "5:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f3/11/1e/f3111e28-8777-de11-ce9a-b68cbbd482e5/mzaf_9503836792087302865.plus.aac.p.m4a"
+            "title": "Unwashed and Somewhat Slightly Dazed (2019 Mix)",
+            "duration": "6:19",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/58/17/5a5817f8-4d8b-0b8b-70ed-96fb8ef659b7/mzaf_2663195305542489791.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Giorgio by Moroder",
-            "duration": "9:04",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/88/e4/40/88e440e7-8baa-6cc0-acbe-ceaa7f240a51/mzaf_1985242177805063708.plus.aac.p.m4a"
+            "title": "Letter to Hermione (2019 Mix)",
+            "duration": "2:33",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/0a/e1/da0ae186-9ee6-6684-ad9d-4853e665ed4b/mzaf_10582136234131799671.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Within",
-            "duration": "3:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/56/90/11/56901128-5f5e-67ff-f760-2cf14e00b04c/mzaf_4629559715078327006.plus.aac.p.m4a"
+            "title": "Cygnet Committee (2019 Mix)",
+            "duration": "9:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/df/41/7bdf4176-46a3-3f5f-e065-7c62ea56e77c/mzaf_10186314643963971192.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Instant Crush",
-            "duration": "5:37",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1a/3b/90/1a3b90d2-b984-b042-1822-e19f388524e0/mzaf_7080651603608009369.plus.aac.p.m4a"
+            "title": "Janine (2019 Mix)",
+            "duration": "3:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/cb/00/e3cb0045-ebbb-6306-fef8-603e0641e4cb/mzaf_7905086370908081570.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Lose Yourself to Dance",
-            "duration": "5:53",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/20/4d/92204d1e-e9d5-0062-36e9-3671d508f34c/mzaf_12660190147806239384.plus.aac.p.m4a"
+            "title": "An Occasional Dream (2019 Mix)",
+            "duration": "2:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/c4/44/36c444d7-350c-4cb7-c387-49ec1a27d403/mzaf_10565717424877278937.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Touch",
-            "duration": "8:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/5e/9c/23/5e9c23a8-51d4-3158-63a9-3c17c17e1aad/mzaf_5833810091814140078.plus.aac.p.m4a"
+            "title": "Wild Eyed Boy from Freecloud (2019 Mix)",
+            "duration": "4:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/96/11/a9961123-779e-f4e4-b6a8-ed096be2199f/mzaf_10453559846091145659.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Get Lucky",
-            "duration": "6:09",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/d3/1e/d4d31eb4-7405-b806-8346-3c52ad5b4cf4/mzaf_8095545455942962509.plus.aac.p.m4a"
+            "title": "Conversation Piece (2019 Mix)",
+            "duration": "3:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/50/ac/fa50ac5f-69ac-d998-9bfa-c292b32dcdc3/mzaf_10829724578325105576.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Beyond",
-            "duration": "4:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/81/bf/80/81bf80c3-6edf-2231-7f38-4e10f81ef4b0/mzaf_13454620304668252238.plus.aac.p.m4a"
+            "title": "God Knows I'm Good (2019 Mix)",
+            "duration": "3:17",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/bc/f1/4abcf1ed-bc85-416a-e354-4040dd3e69d4/mzaf_14197303882576300498.plus.aac.p.m4a"
           },
           {
             "trackNumber": 10,
-            "title": "Motherboard",
-            "duration": "5:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ad/fa/a3/adfaa33c-7b60-1a59-233d-e398492977c9/mzaf_6457343133066990041.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Fragments of Time",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/ae/f9/b6aef99e-356b-aa20-a4cd-80bc16836ab6/mzaf_269882820879606569.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Doin' it Right",
-            "duration": "4:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9b/0a/bf/9b0abf51-0e93-8770-f270-7dfda1afa1a2/mzaf_9717678664204193733.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Contact",
-            "duration": "6:21",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/12/2c/10/122c10fd-7f36-f4a2-5543-ae8e5dd357c6/mzaf_5198969030385154956.plus.aac.p.m4a"
+            "title": "Memory of a Free Festival (2019 Mix)",
+            "duration": "7:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/70/3c/48703cdb-049c-7133-faba-49ff10c191ac/mzaf_3986815113057976584.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Random%20Access%20Memories%20Daft%20Punk",
+            "urlString": "https://open.spotify.com/search/Space%20Oddity%20David%20Bowie",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/random-access-memories/617154241?uo=4",
+            "urlString": "https://music.apple.com/fr/album/space-oddity-2019-mix/1486212582?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Random%20Access%20Memories%20Daft%20Punk",
+            "urlString": "https://www.deezer.com/search/Space%20Oddity%20David%20Bowie",
             "iconName": "play.circle.fill"
           }
         ]
@@ -265,104 +247,104 @@
     ]
   },
   "intermediate": {
-    "themeTitle": "La Mélancolie des Mégapoles",
-    "themeSubtitle": "Errances urbaines, néons et solitudes croisées",
+    "themeTitle": "Les Échos du Silence",
+    "themeSubtitle": "Une traversée intime et mélancolique des profondeurs psychologiques de l'espace.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Kafka sur le rivage",
-        "creator": "Haruki Murakami",
-        "year": "2002",
-        "genre": "Réalisme magique",
-        "origin": "Japon",
-        "formatMetric": "640 pages",
-        "accessibility": "Exigeant mais accessible",
-        "quote": "Quand la tempête sera passée, tu ne te rappelleras pas comment tu as fait pour traverser.",
-        "aiSummary": "Les destins croisés de Kafka Tamura, un adolescent de 15 ans en fuite, et de Nakata, un vieil homme amnésique capable de parler aux chats.",
-        "thematicAnalysis": "Murakami tresse des ponts entre mythes de la Grèce antique et errance urbaine contemporaine, explorant l'inconscient collectif à travers une atmosphère onirique.",
-        "anecdote": "Haruki Murakami a écrit ce roman en écoutant continuellement le Trio des esprits d'Archiduc de Beethoven et des albums du saxophoniste John Coltrane.",
+        "title": "Solaris",
+        "creator": "Stanisław Lem",
+        "year": "1961",
+        "genre": "SF Philosophique",
+        "origin": "Pologne",
+        "formatMetric": "310 pages",
+        "accessibility": "Auteur & Exigeant",
+        "quote": "Nous n'avons pas besoin d'autres mondes. Nous avons besoin de miroirs.",
+        "aiSummary": "Arrivé sur la station scientifique en orbite autour de Solaris, le psychologue Kris Kelvin découvre que l'océan vivant de la planète matérialise les souvenirs traumatiques des chercheurs.",
+        "thematicAnalysis": "Lem inverse le mythe du voyage spatial : au lieu d'y trouver une réponse cosmique, l'humain s'y confronte au mutisme absolu d'une intelligence alien totale et à l'écho de ses propres hantises intérieures.",
+        "anecdote": "Stanisław Lem était très critique envers les adaptations cinématographiques de son œuvre, estimant que Tarkovski comme Soderbergh avaient trop centré l'histoire sur le drame amoureux aux dépens de l'inconnaissable.",
         "tags": [
-          "Onirisme",
-          "Quête",
-          "Destin"
+          "Océan Vivant",
+          "Mémoire",
+          "Incommunicabilité"
         ],
         "ratings": [
           {
-            "source": "Babelio",
-            "score": "4.2/5",
-            "excerpt": "Un voyage labyrinthique fascinant aux frontières troublantes du rêve et de la réalité.",
-            "iconName": "star.fill"
-          },
-          {
             "source": "Le Monde des Livres",
-            "score": "Incontournable",
-            "excerpt": "Un grand roman métaphysique où la musique, les mythes et la solitude s'entremêlent.",
+            "score": "Indispensable",
+            "excerpt": "Une œuvre d'une profondeur inouïe sur l'incommunicabilité cosmique et la culpabilité.",
             "iconName": "newspaper.fill"
           },
           {
+            "source": "Babelio",
+            "score": "4.3/5",
+            "excerpt": "Lem orchestre une rencontre poignante avec l'inconnaissable au milieu du vide.",
+            "iconName": "star.fill"
+          },
+          {
             "source": "Télérama",
-            "score": "TTT",
-            "excerpt": "Murakami orchestre une symphonie poétique d'une beauté captivante.",
+            "score": "TTTT",
+            "excerpt": "Un sommet de la SF métaphysique qui interroge nos fantômes intérieurs.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/4982600-L.jpg",
+        "imageURL": "https://covers.openlibrary.org/b/id/12313764-L.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Solaris%20Stanis%C5%82aw%20Lem",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Solaris%20Stanis%C5%82aw%20Lem",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
+            "urlString": "https://www.audible.fr/search?keywords=Solaris%20Stanis%C5%82aw%20Lem",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "In the Mood for Love",
-        "creator": "Wong Kar-wai",
-        "year": "2000",
-        "genre": "Drame romantique",
-        "origin": "Hong Kong",
-        "formatMetric": "1h 38m",
-        "accessibility": "Esthétique & Captivant",
-        "quote": "C'était une époque troublée, les souvenirs semblaient voilés de poussière.",
-        "aiSummary": "À Hong Kong en 1962, un homme et une femme découvrent que leurs conjoints respectifs ont une liaison ensemble et nouent un lien pudique et étouffé.",
-        "thematicAnalysis": "Une méditation sublime sur l'absence, le désir refoulé et la mémoire à travers une mise en scène au ralenti rythmée par les violons et le motif des cheongsams.",
-        "anecdote": "Wong Kar-wai a tourné sans scénario définitif pendant plus de 15 mois, accumulant des centaines d'heures de rushs retouchées au montage pendant des mois.",
+        "title": "Ad Astra",
+        "creator": "James Gray",
+        "year": "2019",
+        "genre": "Science-Fiction / Drame",
+        "origin": "États-Unis",
+        "formatMetric": "2h 03m",
+        "accessibility": "Auteur Accessible",
+        "quote": "Nous sommes tout ce que nous avons.",
+        "aiSummary": "L'astronaute Roy McBride voyage jusqu'aux confins du système solaire pour retrouver son père disparu, dont les recherches menacent toute vie sur Terre.",
+        "thematicAnalysis": "Sous des dehors de thriller cosmique, James Gray compose un poème visuel sur la solitude masculine et la recherche du père. L'espace vide y est filmé comme un désert intérieur assourdissant.",
+        "anecdote": "La direction de la photographie d'Hoyte van Hoytema a utilisé de véritables pellicules Kodak 35mm et des objectifs de la période Apollo pour donner un grain authentique aux scènes lunaires.",
         "tags": [
-          "Désir",
-          "Hong Kong",
-          "Mélancolie"
+          "Quête Paternelle",
+          "Neptune",
+          "Contemplatif"
         ],
         "ratings": [
           {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Un poème visuel envoûtant sur le temps perdu, le regret et le désir inassouvi.",
-            "iconName": "film.fill"
-          },
-          {
             "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "excerpt": "La quintessence du romantisme moderne et un sommet absolu d'élégance plastique.",
+            "score": "4/5",
+            "excerpt": "Une traversée mélancolique du système solaire d'une beauté plastique sublime.",
             "iconName": "star.fill"
           },
           {
-            "source": "SensCritique",
-            "score": "8.2/10",
-            "excerpt": "Chaque plan est une peinture somptueuse au service d'une passion étouffée.",
+            "source": "Télérama",
+            "score": "TTTT",
+            "excerpt": "James Gray transforme le film d'espace en une intime thérapie psychanalytique.",
+            "iconName": "film.fill"
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "83%",
+            "excerpt": "Un voyage visuellement majestueux au cœur de la solitude humaine.",
             "iconName": "newspaper.fill"
           }
         ],
@@ -370,159 +352,219 @@
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=In%20the%20Mood%20for%20Love",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Ad%20Astra",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=In%20the%20Mood%20for%20Love",
+            "urlString": "https://www.allocine.fr/recherche/?q=Ad%20Astra",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=In%20the%20Mood%20for%20Love",
+            "urlString": "https://www.canalplus.com/recherche?q=Ad%20Astra",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Untrue",
-        "creator": "Burial",
-        "year": "2007",
-        "genre": "Dubstep / Ambient / UK Garage",
+        "title": "Apollo: Atmospheres and Soundtracks",
+        "creator": "Brian Eno",
+        "year": "1983",
+        "genre": "Ambient / Space Music",
         "origin": "Royaume-Uni",
-        "formatMetric": "13 titres",
-        "accessibility": "Atmosphérique & Sombre",
-        "quote": "It's about when you're walking home alone in the rain.",
-        "aiSummary": "Un chef-d'œuvre de musique électronique urbaine composé de bruits de pluie, de craquements de vinyle et d'échantillons vocaux R&B découpés et réinventés.",
-        "thematicAnalysis": "Burial capture la nostalgie nocturne des métropoles britanniques désertes, inventant une musique fantomatique hantée par le souvenir de la culture rave.",
-        "anecdote": "William Bevan (Burial) a composé l'intégralité de l'album dans la pénombre sur un logiciel rudimentaire sans aucune grille de temps (Sound Forge).",
+        "formatMetric": "12 titres",
+        "accessibility": "Immersion Atmosphérique",
+        "quote": "La musique de la gravité zéro.",
+        "aiSummary": "Conçu pour accompagner le documentaire For All Mankind sur les missions Apollo, cet album pionnier offre une expérience sonore en apesanteur.",
+        "thematicAnalysis": "Eno mêle la fraîcheur du country-steel aux nappes synthétiques infinies, évoquant à la fois le mal du pays des astronautes et la sérénité glacée du paysage lunaire.",
+        "anecdote": "Brian Eno a voulu écrire cette musique après avoir constaté que les reportages télévisés sur la Lune utilisaient des musiques de couverture trop trépidantes et journalistiques.",
         "tags": [
-          "Nocturne",
-          "Dubstep",
-          "Fantômes"
+          "Ambient",
+          "Apesanteur",
+          "Apollo"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "9.0/10",
-            "excerpt": "The most important electronic album of the late 2000s, deeply moving and spectral.",
+            "score": "9.2/10",
+            "excerpt": "Un monument de la musique ambient recréant la magie et le vide de l'apesanteur.",
             "iconName": "music.note"
           },
           {
-            "source": "The Guardian",
+            "source": "AllMusic",
             "score": "5/5",
-            "excerpt": "A haunting masterpiece of night-time urban melancholia and fractured soul.",
+            "excerpt": "La bande-son définitive de la majesté cosmique et du calme absolu.",
             "iconName": "star.fill"
           },
           {
-            "source": "AllMusic",
+            "source": "Rolling Stone",
             "score": "4.5/5",
-            "excerpt": "An evocative sonic landscape built from crackles, rain, and nocturnal warmth.",
-            "iconName": "quote.bubble.fill"
+            "excerpt": "Une œuvre éthérée d'une sérénité absolue qui touche au sublime.",
+            "iconName": "newspaper.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d3/05/10/d3051051-937f-e7c4-636e-7e1950d60a7b/5024545486520.png/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/c9/d2/6d/c9d26d2b-6209-9f94-fe33-679f25f9305c/19UMGIM18493.rgb.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Untitled",
-            "duration": "0:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c7/34/bc/c734bce4-bbe4-cfea-bbf1-e7210107cd1b/mzaf_6978245255794965431.plus.aac.p.m4a"
+            "title": "Under Stars",
+            "duration": "4:29",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/3b/02/7e3b024a-3f36-1063-5efb-6f255cabc908/mzaf_5142316413861515913.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Archangel",
-            "duration": "4:00",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/4a/4e/eb4a4e30-2eea-45eb-82c8-196e04bb9f1b/mzaf_14445404194350280558.plus.aac.p.m4a"
+            "title": "The Secret Place",
+            "duration": "3:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/62/3f/ce/623fce0f-c851-b6ba-666b-911c6fc8fc3d/mzaf_8198074759403108165.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Near Dark",
-            "duration": "3:56",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/d6/2c/6bd62c3e-bd79-1684-d5da-d493e93f782a/mzaf_2940695367981810938.plus.aac.p.m4a"
+            "title": "Matta",
+            "duration": "4:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/4e/b3/914eb3be-df9d-b606-5ee7-bd0d09869653/mzaf_14978617925662374321.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Ghost Hardware",
-            "duration": "4:55",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/83/88/50/8388505c-9a37-f5f5-cbee-5c239979b836/mzaf_18070933849808140382.plus.aac.p.m4a"
+            "title": "Signals",
+            "duration": "2:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/89/e6/f3/89e6f395-7b6e-37e6-d9ae-9e11b9fe5d15/mzaf_10271489505600852613.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Endorphin",
-            "duration": "2:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/a4/1f/32a41f52-3c4d-0d73-4b9b-5499f7af43dd/mzaf_3455066683769537185.plus.aac.p.m4a"
+            "title": "An Ending (Ascent)",
+            "duration": "4:24",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d4/e5/5e/d4e55ec4-af35-2902-f602-19ed9fb193f5/mzaf_3889152625455199375.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Etched Headplate",
-            "duration": "6:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/39/2a/24392a51-2f75-ffc8-08e0-9ad44a03286d/mzaf_17912408937548901523.plus.aac.p.m4a"
+            "title": "Under Stars II",
+            "duration": "3:23",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bc/f5/46/bcf54610-1d01-5024-e5ef-e95c121acea8/mzaf_15698413032715606436.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "In McDonalds",
-            "duration": "2:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/97/84/1697845d-d47c-cf31-d65c-24b9c741fbca/mzaf_4290146884410528734.plus.aac.p.m4a"
+            "title": "Drift",
+            "duration": "3:05",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/ed/d7/1cedd712-f4e7-1226-bc29-9c6e5f7d72db/mzaf_18081081239439194704.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Untrue",
-            "duration": "6:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/2f/da/0a2fdadb-f708-ff7b-0f78-7eb31464d434/mzaf_12554970205513415094.plus.aac.p.m4a"
+            "title": "Silver Morning",
+            "duration": "2:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/61/0b/01/610b014a-f7aa-2815-e9fc-4306357b259a/mzaf_5463448712124673306.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Shell of Light",
-            "duration": "4:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/1a/84/fa1a84d6-cd6d-7c2a-2893-c240d5b061dc/mzaf_5968605937481531629.plus.aac.p.m4a"
+            "title": "Deep Blue Day",
+            "duration": "3:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/34/a2/1734a2b5-d0e3-9848-39c3-74672398de50/mzaf_1403787579962375814.plus.aac.p.m4a"
           },
           {
             "trackNumber": 10,
-            "title": "Dog Shelter",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/4e/ee/934eee43-cfa1-6459-9ef0-2fcdbaa6ca79/mzaf_52806888402312650.plus.aac.p.m4a"
+            "title": "Weightless",
+            "duration": "4:35",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6d/b8/09/6db8095d-268f-53f2-3ccc-b47b8934fcf4/mzaf_5267019664416444618.plus.aac.p.m4a"
           },
           {
             "trackNumber": 11,
-            "title": "Homeless",
-            "duration": "5:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/18/72/7a/18727a21-75c7-0d32-4b17-a1950432ffa5/mzaf_3815225615373388241.plus.aac.p.m4a"
+            "title": "Always Returning",
+            "duration": "4:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3a/f7/d8/3af7d80f-052a-0277-4b41-80a266ed2d67/mzaf_8904008633088910406.plus.aac.p.m4a"
           },
           {
             "trackNumber": 12,
-            "title": "UK",
-            "duration": "1:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/c3/f4/5ec3f42f-c68f-749b-3164-343c65a13bf0/mzaf_15183943598924545354.plus.aac.p.m4a"
+            "title": "Stars",
+            "duration": "8:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ca/bd/bb/cabdbbfd-eec1-b5fe-5ab9-0e70c94cb432/mzaf_3678000210640537588.plus.aac.p.m4a"
           },
           {
             "trackNumber": 13,
-            "title": "Raver",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/23/d7/a123d73a-99d4-35e3-0b0c-98ea0c457bea/mzaf_8036385620354622979.plus.aac.p.m4a"
+            "title": "The End of a Thin Cord (From \"For All Mankind\")",
+            "duration": "4:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f0/36/cf/f036cfff-bbb0-616a-2862-db88a11ba984/mzaf_9790101990794604454.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 14,
+            "title": "Capsule (From \"For All Mankind\")",
+            "duration": "3:13",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d5/ea/95/d5ea9547-6ca0-d6f4-3791-846835ef9a72/mzaf_5735185210375866380.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 15,
+            "title": "At the Foot of a Ladder (From \"For All Mankind\")",
+            "duration": "3:35",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c1/27/aa/c127aaac-0ca0-eda1-ad1e-0d4d5bb96f72/mzaf_8066065496239880618.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 16,
+            "title": "Waking Up (From \"For All Mankind\")",
+            "duration": "2:29",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/44/eb/94/44eb9404-8145-3007-9c44-b0dcab2be49a/mzaf_3352679676607607096.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 17,
+            "title": "Clear Desert Night (From \"For All Mankind\")",
+            "duration": "3:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a5/32/6ca532d5-5795-a550-c3da-1be94a029b58/mzaf_9869843944489231087.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 18,
+            "title": "Over the Canaries (From \"For All Mankind\")",
+            "duration": "4:41",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b8/de/40/b8de40e3-0661-bcbe-55ce-916434ba78db/mzaf_5833189436994005242.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 19,
+            "title": "Last Step from the Surface (From \"For All Mankind\")",
+            "duration": "3:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/da/6a/16/da6a16a2-2db4-8d1c-9fd9-3be6d088cc0c/mzaf_5752122197232330540.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 20,
+            "title": "Fine-grained (From \"For All Mankind\")",
+            "duration": "3:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/55/ba/28/55ba2819-aeba-0a93-5b0c-6df90cb71ff9/mzaf_1579966402734734620.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 21,
+            "title": "Under the Moon (From \"For All Mankind\")",
+            "duration": "3:10",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/f5/0b/9ff50bbf-c304-b7f0-4a34-e08295699fe0/mzaf_3388677143183556459.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 22,
+            "title": "Strange Quiet (From \"For All Mankind\")",
+            "duration": "4:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/80/19/a5/8019a525-5c5b-4866-c0b7-5ecc4df9fb63/mzaf_13505526014152102994.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 23,
+            "title": "Like I Was a Spectator (From \"For All Mankind\")",
+            "duration": "4:23",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0c/86/f0/0c86f0a5-5a07-68f6-971f-0fbdb51284b4/mzaf_2540644882487698432.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Untrue%20Burial",
+            "urlString": "https://open.spotify.com/search/Apollo%3A%20Atmospheres%20and%20Soundtracks%20Brian%20Eno",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/untrue/1056902908?uo=4",
+            "urlString": "https://music.apple.com/fr/album/apollo-atmospheres-and-soundtracks-extended-edition/1462265861?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Untrue%20Burial",
+            "urlString": "https://www.deezer.com/search/Apollo%3A%20Atmospheres%20and%20Soundtracks%20Brian%20Eno",
             "iconName": "play.circle.fill"
           }
         ]
@@ -530,246 +572,210 @@
     ]
   },
   "expert": {
-    "themeTitle": "L'Espace du Silence et la Déconstruction",
-    "themeSubtitle": "Formes radicales, quêtes spirituelles et structures fragmentées",
+    "themeTitle": "Le Vide Absolu et la Matière",
+    "themeSubtitle": "Avant-garde, abysses métaphysiques et poésie expérimentale des confins du monde.",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Marelle",
-        "creator": "Julio Cortázar",
-        "year": "1963",
-        "genre": "Roman expérimental",
-        "origin": "Argentine",
-        "formatMetric": "600 pages",
-        "accessibility": "Avant-garde exigeante",
-        "quote": "Au fond, qu'est-ce que la poésie, sinon une façon de regarder le monde sous un autre angle ?",
-        "aiSummary": "Un roman anti-traditionnel retraçant la vie de Horacio Oliveira entre Paris et Buenos Aires, que le lecteur peut lire de manière linéaire ou selon un ordre interchangeable de chapitres.",
-        "thematicAnalysis": "Cortázar déconstruit le roman bourgeois en proposant un 'livre-jeu' qui transforme le lecteur en co-créateur actif de l'œuvre et du sens existentialiste.",
-        "anecdote": "Cortázar appelait ce livre un 'anti-roman' et a inclus un 'tableau de conduite' au début de l'ouvrage proposant deux parcours de lecture distincts.",
+        "title": "Aniara",
+        "creator": "Harry Martinson",
+        "year": "1956",
+        "genre": "Épopée Poétique SF",
+        "origin": "Suède",
+        "formatMetric": "220 pages",
+        "accessibility": "Hauteur Littéraire",
+        "quote": "Il existe dans l'espace une solitude que la pensée humaine ne peut contenir.",
+        "aiSummary": "Rempli d'évacués fuissant une Terre dévastée, le vaisseau Aniara dévie irrémédiablement de sa trajectoire et s'enfonce pour toujours dans le vide intergalactique.",
+        "thematicAnalysis": "Ce chef-d'œuvre récompensé par le Prix Nobel de littérature est un poème symphonique en 103 chants. Il dresse le bilan d'une humanité confrontée à l'angoisse existentialiste de sa propre finitude face au silence éternel.",
+        "anecdote": "Martinson a écrit les premiers chants de l'œuvre à la suite d'une observation de la galaxie d'Andromède durant une nuit d'août 1953.",
         "tags": [
-          "Oulipo",
-          "Jazz",
-          "Déconstruction"
+          "Poésie",
+          "Prix Nobel",
+          "Dérive Cosmique"
         ],
         "ratings": [
           {
-            "source": "Babelio",
-            "score": "4.3/5",
-            "excerpt": "Une expérience littéraire vertigineuse et ludique qui révolutionne la forme romanesque.",
-            "iconName": "star.fill"
-          },
-          {
             "source": "Le Monde des Livres",
-            "score": "Chef-d'œuvre",
-            "excerpt": "Un monument de l'avant-garde latino-américaine d'une liberté formelle absolue.",
+            "score": "Magistral",
+            "excerpt": "Un poème symphonique d'une beauté terrifiante sur la dérive de la condition humaine.",
             "iconName": "newspaper.fill"
           },
           {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Un labyrinthe poétique et philosophique génial qui réinvente l'acte de lire.",
+            "source": "Libération",
+            "score": "Incontournable",
+            "excerpt": "Une tragédie cosmique d'une profondeur philosophique universelle.",
             "iconName": "quote.bubble.fill"
+          },
+          {
+            "source": "Babelio",
+            "score": "4.6/5",
+            "excerpt": "Une métaphore métaphysique dévastatrice d'une fulgurance poétique rare.",
+            "iconName": "star.fill"
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/1047466-L.jpg",
+        "imageURL": "https://covers.openlibrary.org/b/id/932446-L.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Marelle%20Julio%20Cort%C3%A1zar",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Aniara%20Harry%20Martinson",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Marelle%20Julio%20Cort%C3%A1zar",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Aniara%20Harry%20Martinson",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Marelle%20Julio%20Cort%C3%A1zar",
+            "urlString": "https://www.audible.fr/search?keywords=Aniara%20Harry%20Martinson",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Stalker",
-        "creator": "Andrei Tarkovski",
-        "year": "1979",
-        "genre": "Science-Fiction philosophique",
-        "origin": "Union Soviétique",
-        "formatMetric": "2h 42m",
-        "accessibility": "Art & Essai radical",
-        "quote": "La faiblesse est grande, la force est insignifiante. Quand l'homme naît, il est faible et flexible.",
-        "aiSummary": "Un passeur guidé par la foi conduit un Écrivain et un Professeur à travers 'La Zone', un territoire mystérieux abritant une chambre exauçant les désirs les plus intimes.",
-        "thematicAnalysis": "Tarkovski déploie un cinéma d'immersion contemplative et métaphysique où la Zone devient un miroir de l'âme humaine et de la crise de la foi moderne.",
-        "anecdote": "Le film a dû être entièrement retourné car la première pellicule Kodak utilisée lors des mois de tournage initiaux fut détruite lors du développement au laboratoire.",
+        "title": "Sur le globe d'argent",
+        "creator": "Andrzej Żuławski",
+        "year": "1988",
+        "genre": "SF Expérimentale / Art & Essai",
+        "origin": "Pologne",
+        "formatMetric": "2h 37m",
+        "accessibility": "Avant-Garde Radicale",
+        "quote": "Nous avons fui la Terre pour devenir des dieux cruels.",
+        "aiSummary": "Des astronautes s'écrasent sur une planète semblable à la Terre et posent les bases d'une nouvelle civilisation qui régresse rapidement vers un fondamentalisme tribal.",
+        "thematicAnalysis": "Fresque mystique et hystérique, le film examine la pulsion religieuse et la déchéance morale. L'espace inaccessible agit comme le théâtre tragique de la répétition des fautes humaines.",
+        "anecdote": "Le tournage fut stoppé par le gouvernement communiste polonais en 1977 et les décors détruits. Żuławski ne put monter le film que dix ans plus tard en comblant les manques par une voix off.",
         "tags": [
-          "Philosophie",
-          "Zone",
-          "Poésie"
+          "Opéra Baroque",
+          "Film Maudit",
+          "Philosophique"
         ],
         "ratings": [
           {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Une expérience spirituelle et esthétique ultime qui suspend le temps du spectateur.",
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "excerpt": "Un opéra baroque et halluciné, chef-d'œuvre visuel maudit du cinéma polonais.",
             "iconName": "film.fill"
           },
           {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "excerpt": "Un sommet absolu du cinéma d'art et d'essai, fascinant de beauté et de rigueur.",
+            "source": "SensCritique",
+            "score": "7.8/10",
+            "excerpt": "Une expérience cinématographique totale, furieuse et visuellement incandescente.",
             "iconName": "star.fill"
           },
           {
-            "source": "SensCritique",
-            "score": "8.3/10",
-            "excerpt": "Un poème cinématographique hypnotique et inégalé sur la conscience et le désir.",
-            "iconName": "newspaper.fill"
+            "source": "Télérama",
+            "score": "TTTT",
+            "excerpt": "Une fresque dantesque et monstre unique en son genre, sauvée des censures d'État.",
+            "iconName": "quote.bubble.fill"
           }
         ],
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Stalker",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Sur%20le%20globe%20d%27argent",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Stalker",
+            "urlString": "https://www.allocine.fr/recherche/?q=Sur%20le%20globe%20d%27argent",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Stalker",
+            "urlString": "https://www.canalplus.com/recherche?q=Sur%20le%20globe%20d%27argent",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Replica",
-        "creator": "Oneohtrix Point Never",
-        "year": "2011",
-        "genre": "Plunderphonics / Ambient / Avant-Garde",
-        "origin": "États-Unis",
-        "formatMetric": "10 titres",
-        "accessibility": "Nerd & Expérimental",
-        "quote": "Sampling audio from 80s TV commercials to build a new consciousness.",
-        "aiSummary": "Daniel Lopatin construit un univers sonore surréaliste en découpant et manipulant des échantillons d'audio tirés de publicités télévisées américaines des années 1980.",
-        "thematicAnalysis": "Une archéologie des médias jetables où les débris de la culture de consommation deviennent les matériaux d'une méditation ambient poignante sur la mémoire et la perte.",
-        "anecdote": "Lopatin a sélectionné les échantillons sonores en écoutant des vhs de pubs oubliées achetées au kilo auprès de collectionneurs sur des forums.",
+        "title": "Zeit",
+        "creator": "Tangerine Dream",
+        "year": "1972",
+        "genre": "Dark Ambient / Krautrock",
+        "origin": "Allemagne",
+        "formatMetric": "4 titres",
+        "accessibility": "Exigeant & Expérimental",
+        "quote": "Un voyage immobile au centre du néant.",
+        "aiSummary": "Sous-titré 'Un poème sonore pour l'espace', cet double album conceptuel déploie des plages de drones sombres et de cordes étirées sans aucun rythme ni mélodie conventionnelle.",
+        "thematicAnalysis": "Zeit incarne la naissance du 'Kosmische Musik'. En étirant le temps musical jusqu'à l'immobilité, Tangerine Dream fait ressentir physiquement le vide, le froid et le silence de la création cosmique.",
+        "anecdote": "L'ouverture de l'album réunit un quatuor de violoncelles auquel participe Florian Fricke, le fondateur du groupe Popol Vuh.",
         "tags": [
-          "Sampling",
-          "Echoculture",
-          "Avant-Garde"
+          "Kosmische Musik",
+          "Drone",
+          "Minimalisme"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "8.8/10",
-            "excerpt": "A stunning collage of audio plunderphonics and electronic nostalgia.",
+            "score": "8.5/10",
+            "excerpt": "L'acte fondateur du son avant-gardiste allemand, étiré jusqu'aux limites du vide.",
             "iconName": "music.note"
           },
           {
             "source": "AllMusic",
-            "score": "4/5",
-            "excerpt": "An inventive electronica release built on television samples and haunting synths.",
+            "score": "5/5",
+            "excerpt": "Quatre mouvements abyssaux qui incarnent la matière et le silence même des nébuleuses.",
             "iconName": "star.fill"
           },
           {
             "source": "Les Inrockuptibles",
-            "score": "Expérimental",
-            "excerpt": "Une exploration sonore captivante qui sublime les ruines de la pop culture.",
+            "score": "Indispensable",
+            "excerpt": "Une immersion sensorielle radicale affranchie de tout rythme terrestre.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0a/2e/53/0a2e532a-9179-be31-6456-f773dd1527e0/184923201062.png/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/58/b5/5d/58b55dbc-877d-a8c0-8470-f568f9fecdeb/5013929052024.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Andro",
-            "duration": "3:54",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/39/cd/a9/39cda9a7-0141-adb1-3515-0797d99df608/mzaf_1069513996663154923.plus.aac.p.m4a"
+            "title": "Birth of Liquid Plejades",
+            "duration": "19:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9e/75/90/9e759056-1133-9211-2144-69b1302b1910/mzaf_8193650943647221048.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Power of Persuasion",
-            "duration": "3:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d5/d0/7f/d5d07f6f-7b19-1f38-25e4-93d43c11f5b7/mzaf_11282145120553699418.plus.aac.p.m4a"
+            "title": "Nebulous Dawn",
+            "duration": "17:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/d2/2c/27d22c95-5f5a-a586-fb89-20d1b9845a65/mzaf_13386491612397591168.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Sleep Dealer",
-            "duration": "3:10",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/65/17/4a/65174a95-caf5-612d-9b1a-13535ad878d6/mzaf_12356752689850143890.plus.aac.p.m4a"
+            "title": "Origin of Supernatural Probabilities",
+            "duration": "19:36",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a8/ad/c4/a8adc4db-e06b-8ddd-0ba9-a615540309d3/mzaf_9211221036597568660.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Remember",
-            "duration": "3:23",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/25/46/1c/25461ce3-1f76-840c-7f0e-c7820df7dc64/mzaf_253367136494471105.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Replica",
-            "duration": "4:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8a/8d/b0/8a8db08d-2226-f292-1832-1aa1776f50d5/mzaf_10066475329150626618.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Nassau",
-            "duration": "4:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/0a/79/eb/0a79ebc7-d710-ada2-d3f0-1175fd6b47cd/mzaf_9677924400972551790.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Submersible",
-            "duration": "3:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/71/5c/c5/715cc590-40b2-d1e1-1b92-a608e909316d/mzaf_5082891266403214070.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Up",
-            "duration": "3:56",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e0/62/26/e0622691-59e8-5218-4b9f-76e2c190be6a/mzaf_8793428211003297459.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Child Soldier",
-            "duration": "3:13",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/12/c0/25/12c02558-1c49-a691-1a65-a836e667ef06/mzaf_150716083490937619.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Explain",
-            "duration": "6:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3b/99/10/3b9910da-6b38-c0f7-30da-c0328d7662b6/mzaf_296585102906347299.plus.aac.p.m4a"
+            "title": "Zeit",
+            "duration": "17:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/02/e5/81/02e58126-7d11-c3c0-7096-9862d14f0272/mzaf_15200018830600308604.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Replica%20Oneohtrix%20Point%20Never",
+            "urlString": "https://open.spotify.com/search/Zeit%20Tangerine%20Dream",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/replica/1714487173?uo=4",
+            "urlString": "https://music.apple.com/fr/album/zeit/1504490042?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Replica%20Oneohtrix%20Point%20Never",
+            "urlString": "https://www.deezer.com/search/Zeit%20Tangerine%20Dream",
             "iconName": "play.circle.fill"
           }
         ]
