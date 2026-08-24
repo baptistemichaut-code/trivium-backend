@@ -13,19 +13,20 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Recherche de Couverture Google Books Robuste (Multi-Niveaux)
+# MARK: - Enrichisseur Livres (Google Books + OpenLibrary Fallback)
 
 def fetch_book_metadata(title: str, author: str):
-    """Recherche la jaquette avec replis automatiques pour garantir un visuel."""
-    queries = [
-        f"intitle:{title} inauthor:{author}",
-        f"{title} {author}",
-        f"{title}"
-    ]
-    
+    """Récupère la couverture via Google Books puis OpenLibrary si nécessaire."""
     image_url = None
     page_count = None
     published_year = None
+
+    # 1. Tentative Google Books
+    queries = [
+        f"{title} {author}",
+        f"intitle:{title} inauthor:{author}",
+        title
+    ]
 
     for q in queries:
         encoded_q = urllib.parse.quote(q)
@@ -37,37 +38,74 @@ def fetch_book_metadata(title: str, author: str):
             )
             with urllib.request.urlopen(req, timeout=6) as response:
                 data = json.loads(response.read().decode())
-                items = data.get("items", [])
-                for item in items:
+                for item in data.get("items", []):
                     info = item.get("volumeInfo", {})
                     images = info.get("imageLinks", {})
+                    img = images.get("extraLarge") or images.get("large") or images.get("medium") or images.get("thumbnail") or images.get("smallThumbnail")
                     
-                    found_img = images.get("extraLarge") or images.get("large") or images.get("medium") or images.get("thumbnail") or images.get("smallThumbnail")
-                    if found_img:
-                        image_url = found_img.replace("http://", "https://")
-                        # Forcer un affichage plus net si le paramètre zoom est présent
-                        if "&zoom=" in image_url:
-                            image_url = image_url.replace("&zoom=5", "&zoom=1").replace("&zoom=0", "&zoom=1")
-                    
+                    if img:
+                        secure_img = img.replace("http://", "https://")
+                        if "&edge=curl" in secure_img:
+                            secure_img = secure_img.replace("&edge=curl", "")
+                        image_url = secure_img
+
                     if not page_count and info.get("pageCount"):
                         page_count = info.get("pageCount")
-                    
-                    if not published_year:
-                        pub_date = info.get("publishedDate", "")
-                        if len(pub_date) >= 4:
-                            published_year = pub_date[:4]
+                    if not published_year and len(info.get("publishedDate", "")) >= 4:
+                        published_year = info.get("publishedDate", "")[:4]
 
                     if image_url:
                         break
         except Exception:
-            continue
+            pass
 
         if image_url:
             break
 
+    # 2. Repli OpenLibrary si Google Books n'a pas renvoyé d'image
+    if not image_url:
+        try:
+            q_ol = urllib.parse.quote(f"{title} {author}")
+            ol_url = f"https://openlibrary.org/search.json?q={q_ol}&limit=1"
+            req = urllib.request.Request(ol_url, headers={"User-Agent": "TriviumApp/2.1"})
+            with urllib.request.urlopen(req, timeout=6) as response:
+                ol_data = json.loads(response.read().decode())
+                docs = ol_data.get("docs", [])
+                if docs and "cover_i" in docs[0]:
+                    cover_id = docs[0]["cover_i"]
+                    image_url = f"https://covers.openlibrary.org/b/id/{cover_id}-L.jpg"
+                if docs and not published_year and "first_publish_year" in docs[0]:
+                    published_year = str(docs[0]["first_publish_year"])
+        except Exception:
+            pass
+
     return image_url, page_count, published_year
 
-# MARK: - Enrichisseur Apple Music
+# MARK: - Enrichisseur Films (Affiches HD officielles iTunes Movies)
+
+def fetch_film_metadata(title: str, director: str):
+    """Récupère l'affiche HD officielle du film sur iTunes Movie Search."""
+    image_url = None
+    queries = [f"{title} {director}", title]
+
+    for q in queries:
+        encoded_q = urllib.parse.quote(q)
+        url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=1&country=fr"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
+            with urllib.request.urlopen(req, timeout=6) as response:
+                data = json.loads(response.read().decode())
+                if data.get("resultCount", 0) > 0:
+                    raw_art = data["results"][0].get("artworkUrl100", "")
+                    if raw_art:
+                        image_url = raw_art.replace("100x100bb", "1000x1000bb")
+                        break
+        except Exception:
+            pass
+
+    return image_url
+
+# MARK: - Enrichisseur Albums (Pochettes HD 600x600 & Pistes Apple Music)
 
 def fetch_album_metadata(album_title: str, artist: str):
     query = urllib.parse.quote(f"{album_title} {artist}")
@@ -108,7 +146,7 @@ def fetch_album_metadata(album_title: str, artist: str):
             pass
     return image_url, tracks
 
-# MARK: - Liens Directs & Utiles (Sans Letterboxd ni Babelio)
+# MARK: - Liens Directs Utiles (Sans Letterboxd ni Babelio)
 
 def build_safe_platform_links(item_type: str, title: str, creator: str):
     encoded_query = urllib.parse.quote(f"{title} {creator}".strip())
@@ -161,7 +199,7 @@ def build_safe_platform_links(item_type: str, title: str, creator: str):
             }
         ]
 
-# MARK: - Prompt Éditorial
+# MARK: - Prompt Éditorial & IA
 
 SYSTEM_PROMPT = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
@@ -173,7 +211,7 @@ Ta mission est de concevoir l'édition du jour avec UNE THÉMATIQUE COMMUNE FORT
 Chaque profil doit contenir EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
 
 RÈGLE STRICTE POUR LA REVUE DE PRESSE :
-Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") provenant de 3 MÉDIAS DISTINCTS et reconnus (exemples : Le Monde, Télérama, Les Inrockuptibles, Libération, Cahiers du Cinéma, Pitchfork, The Guardian, Rolling Stone...).
+Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") provenant de 3 MÉDIAS DISTINCTS et reconnus (exemples : Le Monde, Télérama, Les Inrockuptibles, Libération, Cahiers du Cinéma, Pitchfork, Rolling Stone, The Guardian...).
 
 Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 {
@@ -191,12 +229,12 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
         "accessibility": "Pop Culture",
         "formatMetric": "320 pages",
         "quote": "Citation clé marquante",
-        "anecdote": "Anecdote surprenante sur la genèse",
+        "anecdote": "Anecdote surprenante sur la genèse de l'œuvre",
         "tags": ["Tag1", "Tag2"],
         "ratings": [
           {"source": "Le Monde", "score": "5/5", "iconName": "star.fill", "excerpt": "Une œuvre magistrale."},
           {"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Un regard bouleversant."},
-          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une densité rare."}
+          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une écriture d'une grande finesse."}
         ],
         "aiSummary": "Résumé captivant en 2 phrases.",
         "thematicAnalysis": "Analyse du lien profond avec la thématique du triptyque."
@@ -209,6 +247,9 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 """
 
 def generate_daily_edition():
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    print(f"🚀 Génération de l'édition du {today_str}...")
+
     model = genai.GenerativeModel(
         model_name="gemini-3.6-flash",
         generation_config={"response_mime_type": "application/json", "temperature": 0.7},
@@ -226,23 +267,35 @@ def generate_daily_edition():
             title = item.get("title", "")
             creator = item.get("creator", "")
 
+            # Liens plateformes nettoyés
             item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
 
+            # Enrichissement médias réels
             if item_type == "LIVRE":
                 img, pages, pub_year = fetch_book_metadata(title, creator)
-                if img: item["imageURL"] = img
-                if pages and not item.get("formatMetric"): item["formatMetric"] = f"{pages} pages"
-                if pub_year: item["year"] = pub_year
+                if img:
+                    item["imageURL"] = img
+                if pages and not item.get("formatMetric"):
+                    item["formatMetric"] = f"{pages} pages"
+                if pub_year:
+                    item["year"] = pub_year
+
+            elif item_type == "FILM":
+                img = fetch_film_metadata(title, creator)
+                if img:
+                    item["imageURL"] = img
 
             elif item_type == "ALBUM":
                 img, tracks = fetch_album_metadata(title, creator)
-                if img: item["imageURL"] = img
-                if tracks: item["tracks"] = tracks
+                if img:
+                    item["imageURL"] = img
+                if tracks:
+                    item["tracks"] = tracks
 
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print("✅ today.json généré avec succès avec 3 revues de presse par œuvre et couvertures optimisées.")
+    print("✅ today.json généré avec succès (images livres, affiches films et pochettes albums intégrées).")
 
 if __name__ == "__main__":
     generate_daily_edition()
