@@ -7,6 +7,7 @@ import urllib.parse
 import requests
 
 def get_previously_used_titles():
+    """Scanne et extrait 100 % des œuvres et artistes déjà parus dans les archives."""
     used = set()
     files = glob.glob("archive/*.json")
     if os.path.exists("today.json"):
@@ -145,12 +146,13 @@ def generate_daily_edition():
     if not api_key:
         raise ValueError("GEMINI_API_KEY manquant.")
 
+    # Récupération de l'historique intégral sans aucune coupure
     used_titles = get_previously_used_titles()
     exclusion_block = ""
     if used_titles:
-        exclusion_list = "\n".join([f"- {t}" for t in used_titles[-90:]])
+        exclusion_list = "\n".join([f"- {t}" for t in used_titles])
         exclusion_block = f"""
-LISTE D'EXCLUSION STRICTE (ŒUVRES ET ARTISTES DÉJÀ PROPOSÉS - NE JAMAIS LES RÉPÉTER) :
+LISTE D'EXCLUSION STRICTE (TOUTES LES ŒUVRES CI-DESSOUS ONT DÉJÀ ÉTÉ PROPOSÉES, INTERDICTION FORMELLE DE LES RÉPÉTER) :
 {exclusion_list}
 """
 
@@ -168,7 +170,7 @@ Pour chaque œuvre sélectionnée, fournis impérativement 3 critiques AUTHENTIQ
 - LIVRES : citer de vraies revues parmi *Le Monde des Livres*, *Télérama*, *Libération*, *Babelio*, *Le Figaro Littéraire*, *Lire Magazine*.
 - FILMS : citer les vraies notes avec leur système de notation réel parmi *Télérama* (notations réelles : T, TT, TTT, TTTT), *Cahiers du Cinéma*, *Allociné Presse* (/5), *SensCritique* (/10), *Rotten Tomatoes* (%).
 - ALBUMS : citer la note exacte parmi *Pitchfork* (note réelle à un chiffre après la virgule, ex: 8.4/10), *Rolling Stone* (/5), *Les Inrockuptibles*, *The Guardian*, *AllMusic*.
-- AUCUNE INVENTION : chaque extrait ("excerpt") doit fidèlement synthétiser la position critique réelle du média.
+- AUCUNE INVENTION : chaque extrait ("excerpt") doit fidèlement synthétiser la position critique réelle du média lors de sa parution.
 
 Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```json) respectant scrupuleusement ce schéma :
 {{
