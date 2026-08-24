@@ -1,707 +1,549 @@
 {
   "accessible": {
-    "themeTitle": "Fabriquer l'Obsession : Quand la Création Devient Piège",
-    "themeSubtitle": "De la quête de la note parfaite aux dérives de l'esprit, ces chefs-d'œuvre auscultent la folie créatrice.",
+    "themeTitle": "Les Labyrinthes du Temps",
+    "themeSubtitle": "Quand le temps s'amuse à tourner en rond dans la pop culture",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Misery",
+        "title": "22/11/63",
         "creator": "Stephen King",
-        "year": "1987",
-        "genre": "Thriller psychologique",
+        "year": "2011",
         "origin": "États-Unis",
-        "formatMetric": "440 pages",
-        "accessibility": "Populaire & Immédiat",
-        "quote": "Je suis votre admiratrice numéro un.",
-        "aiSummary": "Après un grave accident de voiture dans le Colorado, l'écrivain célèbre Paul Sheldon est recueilli par Annie Wilkes, une ancienne infirmière fanatique. Découvrant que l'auteur a tué son personnage romanesque préféré dans son dernier manuscrit, elle le séquestre et le contraint, sous la torture, à rédiger une suite sur mesure.",
-        "thematicAnalysis": "Stephen King transforme la relation entre l'auteur et sa muse en une métaphore cauchemardesque de la création artistique sous contrainte. L'obsession d'Annie Wilkes incarne les exigences tyranniques du public, tandis que Paul Sheldon doit trouver dans l'acte d'écrire la seule arme pour survivre à sa propre œuvre.",
-        "anecdote": "Stephen King a révélé plus tard que le personnage d'Annie Wilkes et son emprise physique représentaient en réalité son propre combat secret contre la dépendance aux drogues et à l'alcool au milieu des années 1980.",
+        "genre": "Science-Fiction / Thriller",
+        "accessibility": "Pop Culture",
+        "formatMetric": "1048 pages",
+        "quote": "Le passé est obstiné. Il ne veut pas être changé.",
+        "anecdote": "Stephen King avait eu l'idée de ce roman dès 1972, mais il a estimé que l'événement de l'assassinat de JFK était encore trop récent et douloureux pour être traité correctement.",
         "tags": [
-          "Littérature",
-          "Huis Clos",
-          "Névrose"
+          "Voyage dans le temps",
+          "Histoire alternative",
+          "Suspense"
         ],
         "ratings": [
           {
-            "source": "Babelio",
-            "score": "4.3/5",
-            "excerpt": "Un huis clos d'une tension psychologique inouïe sur le rapport névrotique entre l'écrivain et sa création.",
-            "iconName": "star.fill"
-          },
-          {
             "source": "Télérama",
-            "score": "TTT",
-            "excerpt": "King livre une allégorie terrifiante et brillante de l'addiction et du processus d'écriture sous contrainte.",
-            "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "Le Monde des Livres",
-            "score": "Indispensable",
-            "excerpt": "Une réflexion féroce sur le pouvoir dévorant des histoires et la servitude littéraire.",
-            "iconName": "newspaper.fill"
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un grand roman d'amour et d'aventure temporelle maîtrisé de bout en bout."
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/8259296-L.jpg",
+        "aiSummary": "Un professeur de français découvre un passage secret menant en 1958 dans la réserve d'un diner. Il se lance alors dans une mission périlleuse : empêcher l'assassinat de John F. Kennedy.",
+        "thematicAnalysis": "Stephen King aborde le labyrinthe temporel sous l'angle du suspense populaire, où modifier une seconde du passé déclenche un effet papillon cataclysmique.",
         "platformLinks": [
           {
             "name": "Les Libraires",
-            "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Misery%20Stephen%20King",
-            "iconName": "books.vertical.fill"
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=22/11/63%20Stephen%20King",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Babelio",
+            "category": "Critiques & Extraits",
+            "urlString": "https://www.babelio.com/recherche.php?Recherche=22/11/63",
+            "iconName": "quote.bubble.fill"
           },
           {
             "name": "Fnac",
-            "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Misery%20Stephen%20King",
-            "iconName": "book.closed.fill"
-          },
-          {
-            "name": "Audible",
-            "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Misery%20Stephen%20King",
-            "iconName": "headphones"
+            "category": "Achat livre",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=22/11/63%20Stephen%20King",
+            "iconName": "bag.fill"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Whiplash",
-        "creator": "Damien Chazelle",
-        "year": "2014",
-        "genre": "Drame musical",
+        "title": "Un jour sans fin",
+        "creator": "Harold Ramis",
+        "year": "1993",
         "origin": "États-Unis",
-        "formatMetric": "1h 47m",
-        "accessibility": "Culte & Grand Public",
-        "quote": "Il n'y a pas de mots plus nocifs dans la langue française que 'c'est bien'.",
-        "aiSummary": "Andrew Neiman, un jeune batteur de jazz plein d'ambition, intègre le prestigieux conservatoire Shaffer de New York. Il y rencontre Terence Fletcher, un professeur légendaire et tyrannique qui pousse ses élèves dans leurs ultimes retranchements physiques et mentaux pour faire émerger le génie.",
-        "thematicAnalysis": "Le film questionne le prix de la perfection artistique : jusqu'où peut-on sacrifier son humanité et sa santé mentale pour devenir un virtuose ? Damien Chazelle filme les répétitions de jazz comme un film de guerre ou un combat de boxe, où le sang sur les cymbales devient l'unique mesure du dévouement.",
-        "anecdote": "Pour rendre les scènes d'entraînement réalistes, Miles Teller jouait réellement de la batterie jusqu'à l'épuisement, au point que ses véritables ampoules et le sang sur ses baguettes ont été conservés au montage final.",
+        "genre": "Comédie Fantastique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "101 minutes",
+        "quote": "Et s'il n'y avait pas de lendemain ? Aujourd'hui, par exemple, il n'y en avait pas !",
+        "anecdote": "Le tournage a été si éprouvant en raison du froid glacial à Punxsutawney que Bill Murray s'est fait mordre deux fois par la marmotte du film.",
         "tags": [
-          "Jazz",
-          "Perfectionnisme",
-          "Pression"
+          "Boucle temporelle",
+          "Comédie culte",
+          "Rédemption"
         ],
         "ratings": [
           {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Un duel haletant sur le prix à payer pour atteindre la grandeur artistique.",
-            "iconName": "film.fill"
-          },
-          {
-            "source": "Allociné Presse",
-            "score": "4.4/5",
-            "excerpt": "Une mise en scène sous tension électrique qui transforme un apprentissage musical en film d'action psychologique.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "94%",
-            "excerpt": "Un travail de montage virtuose complété par des performances stupéfiantes.",
-            "iconName": "newspaper.fill"
+            "source": "Allociné",
+            "score": "4.2/5",
+            "iconName": "star.fill",
+            "excerpt": "La comédie existentielle ultime, devenue le mètre étalon du genre."
           }
         ],
+        "aiSummary": "Un présentateur météo hautain se retrouve condamné à revivre indéfiniment la même journée du 2 février dans une petite ville de province. Il va devoir apprendre l'altruisme pour espérer briser la boucle.",
+        "thematicAnalysis": "Ce chef-d'œuvre de la comédie transforme la prison du temps répétitif en un chemin initiatique drôle et profondément humain.",
         "platformLinks": [
           {
-            "name": "JustWatch",
-            "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Whiplash",
-            "iconName": "tv.fill"
+            "name": "JustWatch (Streaming & VOD)",
+            "category": "Disponibilité légale",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Un%20jour%20sans%20fin%20Harold%20Ramis",
+            "iconName": "play.tv.fill"
           },
           {
-            "name": "Allociné",
-            "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Whiplash",
+            "name": "Letterboxd",
+            "category": "Fiche & Critiques",
+            "urlString": "https://letterboxd.com/search/Un%20jour%20sans%20fin%20Harold%20Ramis/",
             "iconName": "film.fill"
           },
           {
-            "name": "Canal+ VOD",
-            "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Whiplash",
-            "iconName": "play.tv.fill"
+            "name": "Apple TV",
+            "category": "Location & Achat",
+            "urlString": "https://tv.apple.com/fr/search?term=Un%20jour%20sans%20fin",
+            "iconName": "apple.logo"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Wall",
-        "creator": "Pink Floyd",
-        "year": "1979",
-        "genre": "Rock progressif",
-        "origin": "Royaume-Uni",
-        "formatMetric": "26 titres",
-        "accessibility": "Écoute Immédiate",
-        "quote": "Is there anybody out there?",
-        "aiSummary": "Opéra-rock monumental, cet album conceptuel retrace l'histoire de Pink, une star du rock désabusée qui construit progressivement un mur métaphorique entre lui et le reste du monde pour se protéger du traumatisme, de la célébrité et des contraintes du spectacle.",
-        "thematicAnalysis": "Conçu par Roger Waters alors qu'il ressentait un dégoût croissant pour les foules des stades, l'album explore la rupture psychique provoquée par la célébrité et l'enfer de l'auto-isolation créative. Le mur symbolise l'enfermement mental où l'artiste finit par devenir le propre bourreau de sa raison.",
-        "anecdote": "Lors de la tournée de promotion, un mur de briques en carton de plus de douze mètres de haut était réellement construit sur scène entre le groupe et le public au fil du concert, isolant complètement la formation à la fin du spectacle.",
+        "title": "Discovery",
+        "creator": "Daft Punk",
+        "year": "2001",
+        "origin": "France",
+        "genre": "French Touch / Synth-Pop",
+        "accessibility": "Pop Culture",
+        "formatMetric": "14 titres",
+        "quote": "One more time, we're gonna celebrate.",
+        "anecdote": "L'album a servi de bande-son intégrale au film d'animation japonais *Interstella 5555*, réalisé sous la supervision du légendaire Leiji Matsumoto.",
         "tags": [
-          "Opéra Rock",
-          "Alienation",
-          "Concept Album"
+          "Nostalgie",
+          "Futurisme",
+          "Électro"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "9.0/10",
-            "excerpt": "L'apogée conceptuel d'un groupe au bord du gouffre, emmené par le génie obsessionnel de Roger Waters.",
-            "iconName": "music.note"
-          },
-          {
-            "source": "Rolling Stone",
-            "score": "5/5",
-            "excerpt": "Une fresque monumentale et aliénante sur l'isolement de l'artiste.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "AllMusic",
-            "score": "5/5",
-            "excerpt": "Un opéra-rock cathartique qui dissèque magistralement la névrose et la célébrité.",
-            "iconName": "quote.bubble.fill"
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre absolu de la musique pop moderne qui transcende les générations."
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "In the Flesh?",
-            "duration": "3:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9e/00/ce/9e00ce3f-e24b-c933-2906-57c9c6adbe64/mzaf_8206572726959166944.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "The Thin Ice",
-            "duration": "2:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/0e/d6/ee0ed6b1-9b7b-2315-f352-0a484e2ffc7a/mzaf_6534653370309112636.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Another Brick In the Wall, Pt. 1",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/0a/b2/7f0ab2de-c58f-ab90-aaa7-69e76ea1614e/mzaf_13903338154361109472.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "The Happiest Days of Our Lives",
-            "duration": "1:51",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6a/94/bc/6a94bcd6-8a5a-c7cb-d633-e1152dfcdd34/mzaf_17081166823592607777.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Another Brick In the Wall, Pt. 2",
-            "duration": "3:58",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f8/a2/cd/f8a2cd4a-2af9-f34f-3684-89e3304c102c/mzaf_376000686139681175.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Mother",
-            "duration": "5:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/fa/a1/0afaa116-5108-ebf2-f2b3-9d7e0afa9075/mzaf_6396232943440433611.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Goodbye Blue Sky",
-            "duration": "2:47",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/6b/90/cd6b902b-58d6-92e3-23b8-73806ead85c4/mzaf_15564784983603777155.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Empty Spaces",
-            "duration": "2:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f1/a2/39/f1a239f0-19f3-9138-f3da-27ec91af1c73/mzaf_17079476583582930162.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Young Lust",
-            "duration": "3:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/74/a1/61/74a1613a-0538-afd8-d425-b7e3a2d87815/mzaf_15083185785106020855.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "One of My Turns",
-            "duration": "3:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/63/c6/b5/63c6b591-b046-38c1-79a3-cffa63239875/mzaf_16319769771609696767.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Don't Leave Me Now",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/41/35/3b41359c-ec27-06f7-139d-3bf1f5f2f47b/mzaf_14306272745913211721.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Another Brick In the Wall, Pt. 3",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0b/48/c6/0b48c6b4-f3a3-7158-ad4e-cfb3b71cc5aa/mzaf_10533122211583635152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Goodbye Cruel World",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/f8/31/cff831d2-a0f5-b767-72d2-da5b7e193a15/mzaf_10120418368130687063.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 14,
-            "title": "Hey You",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/fd/c8/b9fdc82e-07a0-56b7-40d2-ca30540b1516/mzaf_18128670058523403289.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 15,
-            "title": "Is There Anybody Out There?",
-            "duration": "2:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/37/99/6f379960-0ba0-5be6-ba71-701616aa1053/mzaf_14770994261006181754.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 16,
-            "title": "Nobody Home",
-            "duration": "3:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/44/7b/b1447b54-a08e-9219-4f27-08cf827f77b3/mzaf_15898104863874072273.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 17,
-            "title": "Vera",
-            "duration": "1:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/40/d4/1e/40d41ef9-208b-2269-15d6-36342f192dfc/mzaf_12749720877812999437.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 18,
-            "title": "Bring the Boys Back Home",
-            "duration": "1:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/13/ed/f113ed1f-a553-8d58-8217-9973b54e1693/mzaf_1006567261111392294.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 19,
-            "title": "Comfortably Numb",
-            "duration": "6:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fe/44/11/fe441140-ff52-28ef-d7c4-d87b3084d959/mzaf_9494577035851753023.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 20,
-            "title": "The Show Must Go On",
-            "duration": "1:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/4a/f8/574af864-88a4-16d4-c64e-d9857adc8b9a/mzaf_12375970921451753152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 21,
-            "title": "In the Flesh",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1f/77/03/1f7703d5-4adf-b207-69a1-92e2523a14b7/mzaf_8141171389362838363.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 22,
-            "title": "Run Like Hell",
-            "duration": "4:23",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/58/03/cf/5803cfbc-f27f-a1ef-a55b-dd4bc0993dbc/mzaf_14125362445130198402.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 23,
-            "title": "Waiting for the Worms",
-            "duration": "3:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/85/71/8f857136-3285-d9c2-18f3-9fc11c99b5b2/mzaf_18212995088536362482.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 24,
-            "title": "Stop",
-            "duration": "0:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/b3/23/7eb32303-9966-9fff-e74b-d812db4afe06/mzaf_872179588633858960.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 25,
-            "title": "The Trial",
-            "duration": "5:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/8a/4e/be8a4eb9-fc0b-3695-d8c8-d7a86fcb410a/mzaf_16711526069530791059.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 26,
-            "title": "Outside the Wall",
-            "duration": "1:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/b4/45/1db445f0-5657-189d-07de-c0794b7bcd2f/mzaf_13560913112561824223.plus.aac.p.m4a"
-          }
-        ],
+        "aiSummary": "Second album du duo casqué français, *Discovery* réinvente les sonorités disco et pop des années 80 avec un regard futuriste. Un voyage musical euphorique et intemporel.",
+        "thematicAnalysis": "En échantillonnant le passé pour créer le son du futur, Daft Punk boucle le temps musical et capture la nostalgie de l'enfance.",
         "platformLinks": [
           {
+            "name": "Apple Music",
+            "category": "Écoute intégrale",
+            "urlString": "https://music.apple.com/fr/search?term=Discovery%20Daft%20Punk",
+            "iconName": "apple.logo"
+          },
+          {
             "name": "Spotify",
-            "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/The%20Wall%20Pink%20Floyd",
+            "category": "Streaming audio",
+            "urlString": "https://open.spotify.com/search/Discovery%20Daft%20Punk",
             "iconName": "waveform"
           },
           {
-            "name": "Apple Music",
-            "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/the-wall/1065975633?uo=4",
-            "iconName": "music.note"
+            "name": "Discogs",
+            "category": "Édition vinyle & CD",
+            "urlString": "https://www.discogs.com/fr/search/?q=Discovery%20Daft%20Punk&type=release",
+            "iconName": "opticaldisc.fill"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/600x600bb.jpg",
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "One More Time",
+            "duration": "5:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/98/96/f6/9896f638-8b47-3f76-c47e-19e43b53677c/mzaf_15900001332254520801.plus.aac.p.m4a"
           },
           {
-            "name": "Deezer",
-            "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/The%20Wall%20Pink%20Floyd",
-            "iconName": "play.circle.fill"
+            "trackNumber": 2,
+            "title": "Aerodynamic",
+            "duration": "3:32",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/0e/b2/23/0eb22374-414f-2bd4-50b9-edbd6b41a16e/mzaf_8302881708192750211.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Digital Love",
+            "duration": "5:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/9a/10/16/9a101659-7e2b-2af5-47ca-2399aa11d41d/mzaf_2308252532029859970.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Harder Better Faster Stronger",
+            "duration": "3:44",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/bf/a6/1b/bfa61b15-a797-ec2d-ef44-bf9bfb9fab10/mzaf_9377760837375603436.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Crescendolls",
+            "duration": "3:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/64/e0/f2/64e0f2f7-8c9a-e2b4-40aa-7a051d558d60/mzaf_17550447273687955962.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Nightvision",
+            "duration": "1:44",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/80/8f/7d/808f7dde-6737-1678-0d64-16f554f681c5/mzaf_187437002049237760.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Superheroes",
+            "duration": "3:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/bf/76/3d/bf763d96-5dc3-6ec3-6b85-ec7ddade8f0c/mzaf_15320734566807277964.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "High Life",
+            "duration": "3:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f5/8a/5b/f58a5bb2-082b-cace-b11c-20f7ba6415e3/mzaf_15032347005168408464.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Something About Us",
+            "duration": "3:52",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/7b/be/42/7bbe42b9-f4a1-4c5e-b040-6ecdefa3eef6/mzaf_1812693728187480506.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Voyager",
+            "duration": "3:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/49/e1/5a/49e15a80-105a-47b4-93ec-9b61de570ab8/mzaf_10178128080488329667.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Veridis Quo",
+            "duration": "5:45",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/7a/f8/4d/7af84d3a-fc7b-1569-766b-8adf13dab451/mzaf_3503155761614342520.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Short Circuit",
+            "duration": "3:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8c/e5/e6/8ce5e689-e1d3-dd67-2059-fc666fc9b039/mzaf_9648785342086081660.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Face to Face",
+            "duration": "4:00",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/b4/ca/18/b4ca1857-d0f4-8818-d7bc-cbe567361143/mzaf_16338450435535811929.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 14,
+            "title": "Too Long",
+            "duration": "10:00",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ce/eb/b9/ceebb941-941c-b087-d24a-3d220c5b8eb6/mzaf_17412505801318878666.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
   "intermediate": {
-    "themeTitle": "Le Sacrifice du Génie : Les Pythies du Chef-d'Œuvre",
-    "themeSubtitle": "Quand l'ambition esthétique dévore la réalité, la création se transforme en abîme.",
+    "themeTitle": "Les Labyrinthes du Temps",
+    "themeSubtitle": "Une déconstruction fascinante de notre perception linéaire de l'existence",
     "items": [
       {
         "type": "LIVRE",
-        "title": "L'Œuvre",
-        "creator": "Émile Zola",
-        "year": "1886",
-        "genre": "Roman naturaliste",
-        "origin": "France",
-        "formatMetric": "512 pages",
-        "accessibility": "Littéraire & Exigeant",
-        "quote": "L'art est un incube qui lui suce le sang, un monstre dévorant sa chair.",
-        "aiSummary": "Claude Lantier, peintre idéaliste et passionné du mouvement impressionniste à Paris, tente de révolutionner la peinture académique. Hanté par la création d'un chef-d'œuvre monumental qu'il ne parvient jamais à achever, il s'enfonce peu à peu dans la misère, l'isolement et la folie.",
-        "thematicAnalysis": "Zola dresse un portrait saisissant de la névrose créatrice du XIXe siècle. Claude Lantier incarna le tiraillement tragique entre le désir d'absolu artistique et l'impuissance technique, illustrant comment l'obsession de la beauté idéale peut détruire la vie sociale et la raison de l'artisan.",
-        "anecdote": "Ce roman fut perçu par Paul Cézanne, ami d'enfance de Zola, comme une caricature insultante de son propre parcours pictural. La parution du livre mit un terme définitif à leur amitié de plus de trente ans.",
+        "title": "Abattoir 5",
+        "creator": "Kurt Vonnegut",
+        "year": "1969",
+        "origin": "États-Unis",
+        "genre": "Science-Fiction / Satire",
+        "accessibility": "Curieux",
+        "formatMetric": "256 pages",
+        "quote": "C'est comme ça.",
+        "anecdote": "Kurt Vonnegut s'est inspiré de sa propre expérience de prisonnier de guerre ayant survécu au bombardement tragique de Dresde en 1945.",
         "tags": [
-          "Peinture",
-          "Impressionnisme",
-          "Naturalisme"
+          "Non-linéaire",
+          "Anti-guerre",
+          "Absurde"
         ],
         "ratings": [
           {
-            "source": "Le Figaro Littéraire",
-            "score": "Remarquable",
-            "excerpt": "Zola peint avec une précision cruelle le drame de la création moderne et la hantise du chef-d'œuvre irréalisable.",
-            "iconName": "newspaper.fill"
-          },
-          {
-            "source": "Babelio",
-            "score": "4.2/5",
-            "excerpt": "Un roman fascinant sur la folie picturale et l'autodestruction par la quête d'absolu.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "Télérama",
-            "score": "TTT",
-            "excerpt": "La tragédie grandiose d'un peintre dévoré par la toile qu'il ne peut achever.",
-            "iconName": "quote.bubble.fill"
+            "source": "The Guardian",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une satire poignante et désopilante sur le traumatisme et la mémoire."
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/3124992-L.jpg",
+        "aiSummary": "Billy Pilgrim est 'décollé du temps' : il voyage de manière imprévisible entre sa naissance, le traumatisme du bombardement de Dresde et son enlèvement par des extraterrestres.",
+        "thematicAnalysis": "Le roman brise la chronologie pour exprimer l'incapacité du cerveau humain à traiter le traumatisme de la guerre autrement que par un temps fragmenté.",
         "platformLinks": [
           {
             "name": "Les Libraires",
-            "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27%C5%92uvre%20%C3%89mile%20Zola",
-            "iconName": "books.vertical.fill"
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Abattoir%205%20Kurt%20Vonnegut",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Babelio",
+            "category": "Critiques & Extraits",
+            "urlString": "https://www.babelio.com/recherche.php?Recherche=Abattoir%205",
+            "iconName": "quote.bubble.fill"
           },
           {
             "name": "Fnac",
-            "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27%C5%92uvre%20%C3%89mile%20Zola",
-            "iconName": "book.closed.fill"
-          },
-          {
-            "name": "Audible",
-            "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=L%27%C5%92uvre%20%C3%89mile%20Zola",
-            "iconName": "headphones"
+            "category": "Achat livre",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Abattoir%205%20Kurt%20Vonnegut",
+            "iconName": "bag.fill"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Synecdoche, New York",
-        "creator": "Charlie Kaufman",
-        "year": "2008",
-        "genre": "Drame existentialiste",
+        "title": "Premier Contact",
+        "creator": "Denis Villeneuve",
+        "year": "2016",
         "origin": "États-Unis",
-        "formatMetric": "2h 04m",
-        "accessibility": "Cinéma d'auteur captivant",
-        "quote": "Ce qui semblait être le début n'était en fait que le milieu, et le temps manque.",
-        "aiSummary": "Caden Cotard, un metteur en scène de théâtre hypocondriaque et abandonné par sa femme, reçoit une bourse prestigieuse. Il décide de créer une pièce de théâtre d'un réalisme absolu en faisant construire une réplique grandeur nature de la ville de New York à l'intérieur d'un entrepôt désaffecté.",
-        "thematicAnalysis": "Premier film réalisé par le scénariste Charlie Kaufman, cette œuvre labyrinthe explore le vertige d'un créateur qui tente de remplacer la vie réelle par son équivalent artistique. L'œuvre grossit jusqu'à engloutir son auteur, brouillant les frontières entre la mise en scène et la décomposition de son propre corps.",
-        "anecdote": "Philip Seymour Hoffman jouait le rôle principal en portant plusieurs prothèses faciales évolutives pour vieillir au fur et à mesure du film, reflétant la détérioration physique du personnage sur une période fictive de plus de quarante ans.",
+        "genre": "Science-Fiction",
+        "accessibility": "Curieux",
+        "formatMetric": "116 minutes",
+        "quote": "Si vous pouviez voir votre vie du début à la fin, en changeriez-vous quoi que ce soit ?",
+        "anecdote": "La linguiste Jessica Coon a collaboré étroitement avec la production pour concevoir une véritable grammaire visuelle et cohérente pour les symboles extraterrestres.",
         "tags": [
-          "Théâtre",
-          "Mise en Abyme",
-          "Existentialisme"
+          "Linguistique",
+          "Temps circulaire",
+          "Émotion"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "excerpt": "Un vertige baroque absolument gigantesque sur le théâtre de la vie et le dédoublement de l'artiste.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "SensCritique",
-            "score": "7.8/10",
-            "excerpt": "Une œuvre labyrinthe fascinante et poignante sur la tentative désespérée de répliquer l'existence.",
-            "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Kaufman réalise une fresque mélancolique intemporelle sur l'illusion créatrice.",
-            "iconName": "film.fill"
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre visuelle saisissante qui élève le cinéma de science-fiction."
           }
         ],
+        "aiSummary": "Une linguiste est recrutée par l'armée américaine pour déchiffrer le langage de visiteurs extraterrestres venus sur Terre. En apprenant leur langue, sa perception du temps change radicalement.",
+        "thematicAnalysis": "Villeneuve montre comment le langage peut transformer notre conscience, révélant un temps simultané plutôt que successif.",
         "platformLinks": [
           {
-            "name": "JustWatch",
-            "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Synecdoche%2C%20New%20York",
-            "iconName": "tv.fill"
+            "name": "JustWatch (Streaming & VOD)",
+            "category": "Disponibilité légale",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Premier%20Contact%20Denis%20Villeneuve",
+            "iconName": "play.tv.fill"
           },
           {
-            "name": "Allociné",
-            "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Synecdoche%2C%20New%20York",
+            "name": "Letterboxd",
+            "category": "Fiche & Critiques",
+            "urlString": "https://letterboxd.com/search/Premier%20Contact%20Denis%20Villeneuve/",
             "iconName": "film.fill"
           },
           {
-            "name": "Canal+ VOD",
-            "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Synecdoche%2C%20New%20York",
-            "iconName": "play.tv.fill"
+            "name": "Apple TV",
+            "category": "Location & Achat",
+            "urlString": "https://tv.apple.com/fr/search?term=Premier%20Contact",
+            "iconName": "apple.logo"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Trout Mask Replica",
-        "creator": "Captain Beefheart & His Magic Band",
-        "year": "1969",
-        "genre": "Avant-rock / Blues déstructuré",
-        "origin": "États-Unis",
-        "formatMetric": "28 titres",
-        "accessibility": "Déconcertant & Cultissime",
-        "quote": "Fast and bulbous! That's right, The Mascara Snake!",
-        "aiSummary": "Sous la conduite tyrannique de Don Van Vliet (Captain Beefheart), le groupe s'isole pendant des mois dans une maison en Californie pour répéter quatorze heures par jour des compositions polyrythmiques d'une complexité inouïe, fusionnant blues déconstruit, free jazz et poésie dadaïste.",
-        "thematicAnalysis": "Conçu dans un climat d'enfermement sectaire et sous une dictature artistique totale, cet album réinvente la grammaire du rock. La quête de réinvention sonore du Captain s'est faite au prix de la santé mentale de ses musiciens, produisant une musique sauvage, dissonante mais étrangement rigoureuse.",
-        "anecdote": "Pendant la période d'enfermement dans la maison de Woodland Hills, le groupe n'était pas autorisé à sortir et vivait dans une précarité extrême, au point de se nourrir presque exclusivement d'un sac de soja pendant des semaines.",
+        "title": "Kid A",
+        "creator": "Radiohead",
+        "year": "2000",
+        "origin": "Royaume-Uni",
+        "genre": "Rock Expérimental / Électronique",
+        "accessibility": "Curieux",
+        "formatMetric": "10 titres",
+        "quote": "Everything in its right place.",
+        "anecdote": "Pour casser leurs réflexes de composition habituels, les membres du groupe ont pioché des phrases découpées dans un chapeau pour écrire les paroles de plusieurs morceaux.",
         "tags": [
-          "Avant-Garde",
-          "Free Blues",
-          "Expérimental"
+          "Avant-garde",
+          "Déconstruction",
+          "Atmosphérique"
         ],
         "ratings": [
           {
-            "source": "Pitchfork",
-            "score": "10.0/10",
-            "excerpt": "Un monument d'avant-garde né dans l'enfermement tyrannique et l'obsession compositionnelle.",
-            "iconName": "music.note"
-          },
-          {
             "source": "Les Inrockuptibles",
-            "score": "Indispensable",
-            "excerpt": "Une déconstruction géniale et féroce du blues, sommet d'expérimentation sonore.",
-            "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "AllMusic",
             "score": "5/5",
-            "excerpt": "L'un des albums les plus audacieux et influents de l'histoire du rock.",
-            "iconName": "star.fill"
+            "iconName": "star.fill",
+            "excerpt": "Un virage esthétique audacieux qui a redéfini le rock du XXIe siècle."
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music/13/da/c8/mzi.ceqfrmvd.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Tarotplane",
-            "duration": "19:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/68/10/166810da-7ae2-d623-ed0f-d9ea90bc8d6d/mzaf_17236188156445393574.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "25th Century Quaker",
-            "duration": "9:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/65/c4/fd/65c4fd08-c547-445a-84e9-27c532196cb0/mzaf_4873741074571300836.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Mirror Man",
-            "duration": "15:45",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/da/f0/fa/daf0fa72-f3b1-f305-9392-85c1018becf5/mzaf_2360955886417668770.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Kandy Korn",
-            "duration": "8:05",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/84/f2/88/84f288fc-7442-c5f7-25c6-5775c6f6dea3/mzaf_9064664345918518073.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Trust Us (Take 6)",
-            "duration": "7:13",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e5/1e/96/e51e9632-5e7a-381d-d693-357e2af7051d/mzaf_7069702221583961714.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Safe As Milk (Take 12)",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/89/39/20/893920ed-a42a-7f5d-b1ca-9cb88c66eef5/mzaf_885301440357652163.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Beatle Bones 'N' Smokin' Stones",
-            "duration": "3:10",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e0/19/e1/e019e1a9-de71-82ea-2fc4-8b466ff8244b/mzaf_2977824732044717225.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Moody Liz",
-            "duration": "4:31",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/a9/c5/dfa9c570-461b-0f5b-cdee-2d1a32a300f3/mzaf_649796846078123538.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Gimme Dat Harp Boy",
-            "duration": "3:32",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/98/f3/ad/98f3ad9c-67fa-40e0-3f96-ab7a64e6ea7d/mzaf_15658130920079416203.plus.aac.p.m4a"
-          }
-        ],
+        "aiSummary": "En rupture totale avec le son guitare de *OK Computer*, Radiohead plonge dans l'électronique abstraite, le jazz déstructuré et les textures hypnotiques.",
+        "thematicAnalysis": "L'album déstructure les mesures traditionnelles pour créer une musique en apesanteur, où le temps semble étiré et suspendu.",
         "platformLinks": [
           {
+            "name": "Apple Music",
+            "category": "Écoute intégrale",
+            "urlString": "https://music.apple.com/fr/search?term=Kid%20A%20Radiohead",
+            "iconName": "apple.logo"
+          },
+          {
             "name": "Spotify",
-            "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Trout%20Mask%20Replica%20Captain%20Beefheart%20%26%20His%20Magic%20Band",
+            "category": "Streaming audio",
+            "urlString": "https://open.spotify.com/search/Kid%20A%20Radiohead",
             "iconName": "waveform"
           },
           {
-            "name": "Apple Music",
-            "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/the-mirror-man-sessions/284001765?uo=4",
-            "iconName": "music.note"
+            "name": "Discogs",
+            "category": "Édition vinyle & CD",
+            "urlString": "https://www.discogs.com/fr/search/?q=Kid%20A%20Radiohead&type=release",
+            "iconName": "opticaldisc.fill"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/8e/13/bd8e1358-b367-a689-cb84-cebd0b067dc4/634904078263.png/600x600bb.jpg",
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Everything In Its Right Place",
+            "duration": "4:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bd/05/e4/bd05e458-59dc-d46d-ea33-ea9c44523f57/mzaf_3986687910331329159.plus.aac.p.m4a"
           },
           {
-            "name": "Deezer",
-            "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Trout%20Mask%20Replica%20Captain%20Beefheart%20%26%20His%20Magic%20Band",
-            "iconName": "play.circle.fill"
+            "trackNumber": 2,
+            "title": "Kid A",
+            "duration": "4:44",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dd/17/5b/dd175b86-947b-2833-a955-526977f5c4ba/mzaf_310731774401592456.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "The National Anthem",
+            "duration": "5:51",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e3/dc/d8/e3dcd8c9-3687-de34-61ab-8b286a493d90/mzaf_16249265476549684137.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "How to Disappear Completely",
+            "duration": "5:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ba/c2/10/bac210fb-77c0-43c5-22fc-16c4c071f55d/mzaf_13607765750791747786.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Treefingers",
+            "duration": "3:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/4d/91/ee/4d91ee83-c657-a65b-b0eb-cc08da6586eb/mzaf_3924922006052002449.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Optimistic",
+            "duration": "5:15",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/56/64/40566449-4548-62cd-e678-3e7b3822cd44/mzaf_11494473252875252484.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "In Limbo",
+            "duration": "3:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4f/9a/30/4f9a30e5-0741-6f5a-69fa-8fd10bf54bef/mzaf_12996542171304534758.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Idioteque",
+            "duration": "5:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b9/8c/60/b98c60b8-154b-0e41-5fdf-deda24f997e4/mzaf_17204055347562714250.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Morning Bell",
+            "duration": "4:35",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/4a/e0/af4ae03c-3d6e-32e6-db95-7ac36920a97b/mzaf_8717728254581075254.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Motion Picture Soundtrack",
+            "duration": "3:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/54/4f/62544f47-6dcf-f1c6-94aa-6c33a56bd254/mzaf_7303879598402754582.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Untitled",
+            "duration": "0:52",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/b2/8e/f2b28ef6-bb07-7eea-c758-f908cb471892/mzaf_382587313713436863.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
   "expert": {
-    "themeTitle": "Aux Frontières de l'Absolu : La Dissolution dans l'Art",
-    "themeSubtitle": "Des démarches artistiques extrêmes où la frontière entre création et folie s'efface définitivement.",
+    "themeTitle": "Les Labyrinthes du Temps",
+    "themeSubtitle": "Déconstruction radicale, éternel retour et mémoire en décomposition",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Le Naufragé",
-        "creator": "Thomas Bernhard",
-        "year": "1983",
-        "genre": "Monologue littéraire",
-        "origin": "Autriche",
-        "formatMetric": "192 pages",
-        "accessibility": "Exigeant & Radical",
-        "quote": "Glenn Gould avait atteint la perfection absolue dans le jeu pianistique, et par là même notre ruine.",
-        "aiSummary": "Le narrateur se remémore ses études musicales à Salzbourg aux côtés de son ami Wertheimer et du pianiste virtuose Glenn Gould. La découverte de la perfection surhumaine de Gould dans l'interprétation des Variations Goldberg brise net les ambitions des deux autres élèves, menant Wertheimer à la dépression et au suicide.",
-        "thematicAnalysis": "Bernhard déploie une prose incantatoire composée de répétitions obsessionnelles pour analyser la confrontation mortelle du talent moyen face au génie absolu. La perfection artistique de Gould y est décrite comme une force destructrice qui anéantit la raison de ceux qui gravitent autour d'elle.",
-        "anecdote": "Thomas Bernhard, qui avait lui-même suivi une formation de chant classique au Mozarteum de Salzbourg avant d'abandonner la musique, insère dans le récit des éléments fictifs mêlés à la véritable vie de Glenn Gould.",
+        "title": "Fictions",
+        "creator": "Jorge Luis Borges",
+        "year": "1944",
+        "origin": "Argentine",
+        "genre": "Nouvelles / Philosophie",
+        "accessibility": "Initié",
+        "formatMetric": "224 pages",
+        "quote": "Le temps est un fleuve qui m'entraîne, mais je suis le fleuve.",
+        "anecdote": "La nouvelle 'Le Jardin aux sentiers qui se bifurquent' anticipe de plusieurs décennies le concept de l'hypertexte moderne et la théorie des mondes multiples en physique quantique.",
         "tags": [
-          "Piano",
-          "Virtuosité",
-          "Monologue"
+          "Labyrinthe",
+          "Métaphysique",
+          "Oulipo"
         ],
         "ratings": [
           {
-            "source": "Le Monde des Livres",
-            "score": "Chef-d'œuvre",
-            "excerpt": "Un monologue obsédant et virtuose sur la hantise de la perfection musicale et le renoncement.",
-            "iconName": "newspaper.fill"
-          },
-          {
-            "source": "Libération",
-            "score": "Incisif",
-            "excerpt": "La prose incantatoire de Bernhard pousse la jalousie et la passion artistique dans leurs retranchements les plus sombres.",
-            "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Une méditation grandiose sur le génie foudroyant de Glenn Gould et l'impossibilité de rivaliser avec l'absolu.",
-            "iconName": "star.fill"
+            "source": "Le Monde",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Sommet absolu de la littérature mondiale du XXe siècle."
           }
         ],
+        "aiSummary": "Un recueil de nouvelles étourdissant où Borges explore les notions d'infini, de miroirs, de livres sans fin et de temps parallèles sous la forme de faux essais littéraires.",
+        "thematicAnalysis": "Borges conçoit le temps non pas comme une ligne, mais comme une toile infinie de choix simultanés et de bifurcations vertigineuses.",
         "platformLinks": [
           {
             "name": "Les Libraires",
-            "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Naufrag%C3%A9%20Thomas%20Bernhard",
-            "iconName": "books.vertical.fill"
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Fictions%20Jorge%20Luis%20Borges",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Babelio",
+            "category": "Critiques & Extraits",
+            "urlString": "https://www.babelio.com/recherche.php?Recherche=Fictions",
+            "iconName": "quote.bubble.fill"
           },
           {
             "name": "Fnac",
-            "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Naufrag%C3%A9%20Thomas%20Bernhard",
-            "iconName": "book.closed.fill"
-          },
-          {
-            "name": "Audible",
-            "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Le%20Naufrag%C3%A9%20Thomas%20Bernhard",
-            "iconName": "headphones"
+            "category": "Achat livre",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Fictions%20Jorge%20Luis%20Borges",
+            "iconName": "bag.fill"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "L'Hypothèse du tableau volé",
-        "creator": "Raúl Ruiz",
-        "year": "1978",
-        "genre": "Essai cinématographique",
+        "title": "La Jetée",
+        "creator": "Chris Marker",
+        "year": "1962",
         "origin": "France",
-        "formatMetric": "1h 06m",
-        "accessibility": "Avant-garde & Cérébral",
-        "quote": "Chaque tableau est une énigme dont le sens véritable réside dans la peinture absente.",
-        "aiSummary": "Un collectionneur d'art commente une série de toiles du XIXe siècle peintes par un artiste méconnu. Pour percer le secret ésotérique caché dans les toiles, il fait reconstituer chaque peinture sous forme de tableaux vivants interprétés par des acteurs immobiles, cherchant désespérément une toile manquante.",
-        "thematicAnalysis": "Raúl Ruiz réalise une enquête hermétique captivante sur la folie de l'interprétation critique. L'obsession du collectionneur transforme l'art en un labyrinthe paranoïaque où chaque détail visuel devient le signe d'un complot intellectuel mystique.",
-        "anecdote": "Le scénario s'inspire directement de l'œuvre théorique et romanesque de l'écrivain Pierre Klossowski, frère du peintre Balthus, qui joue lui-même le rôle du collectionneur dans le film.",
+        "genre": "Photo-roman / Avant-Garde",
+        "accessibility": "Initié",
+        "formatMetric": "28 minutes",
+        "quote": "Ceci est l'histoire d'un homme marqué par une image d'enfance.",
+        "anecdote": "Le film est composé presque exclusivement de photographies fixes en noir et blanc, à l'exception d'un unique plan très court où une femme ouvre les yeux.",
         "tags": [
-          "Peinture",
-          "Tableaux Vivants",
-          "Hermétisme"
+          "Nouvelle Vague",
+          "Mémoire",
+          "Photographie"
         ],
         "ratings": [
           {
-            "source": "Cahiers du Cinéma",
+            "source": "Critikat",
             "score": "5/5",
-            "excerpt": "Un chef-d'œuvre de logique spéculative et une mise en scène magistrale des tableaux vivants.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "SensCritique",
-            "score": "7.6/10",
-            "excerpt": "Une enquête hermétique grandiose sur le pouvoir obsessionnel du regard et de la critique d'art.",
-            "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "Allociné Presse",
-            "score": "4.1/5",
-            "excerpt": "Une œuvre intellectuelle fascinante où le cinéma réinvente la peinture et ses mystères.",
-            "iconName": "film.fill"
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre poétique inégalé sur le pouvoir fixé du souvenir."
           }
         ],
+        "aiSummary": "Dans un Paris dévasté après la Troisième Guerre mondiale, des scientifiques envoient un prisonnier dans le passé grâce à la puissance d'une image obsessionnelle gravée dans sa mémoire.",
+        "thematicAnalysis": "Chris Marker questionne la nature fixe du cinéma et l'impossibilité d'échapper à la boucle temporelle formée par nos propres traumatismes.",
         "platformLinks": [
           {
-            "name": "JustWatch",
-            "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Hypoth%C3%A8se%20du%20tableau%20vol%C3%A9",
-            "iconName": "tv.fill"
+            "name": "JustWatch (Streaming & VOD)",
+            "category": "Disponibilité légale",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=La%20Jet%C3%A9e%20Chris%20Marker",
+            "iconName": "play.tv.fill"
           },
           {
-            "name": "Allociné",
-            "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=L%27Hypoth%C3%A8se%20du%20tableau%20vol%C3%A9",
+            "name": "Letterboxd",
+            "category": "Fiche & Critiques",
+            "urlString": "https://letterboxd.com/search/La%20Jet%C3%A9e%20Chris%20Marker/",
             "iconName": "film.fill"
           },
           {
-            "name": "Canal+ VOD",
-            "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=L%27Hypoth%C3%A8se%20du%20tableau%20vol%C3%A9",
-            "iconName": "play.tv.fill"
+            "name": "Apple TV",
+            "category": "Location & Achat",
+            "urlString": "https://tv.apple.com/fr/search?term=La%20Jet%C3%A9e",
+            "iconName": "apple.logo"
           }
         ]
       },
@@ -710,37 +552,45 @@
         "title": "The Disintegration Loops",
         "creator": "William Basinski",
         "year": "2002",
-        "genre": "Musique minimale / Drone",
         "origin": "États-Unis",
+        "genre": "Ambient / Musique Spectrale",
+        "accessibility": "Initié",
         "formatMetric": "4 titres",
-        "accessibility": "Expérimental & Immergé",
-        "quote": "I was watching the life go out of these tapes as they recorded.",
-        "aiSummary": "Au début des années 2000, le compositeur William Basinski entreprend de numériser de vieilles bandes magnétiques enregistrées dans les années 1980. Durant le processus, la bande physique s'effrite à chaque passage sur les têtes de lecture, enregistrant la décomposition irréversible du son original.",
-        "thematicAnalysis": "Cette œuvre capturée au moment exact où la matière physique détruit la création représente une méditation sonore sur le temps et la fragilité. L'obsession d'immortaliser le passé produit un chant de cygne où la décomposition du support devient le matériau même de l'art.",
-        "anecdote": "Basinski acheva la numérisation de la dernière bande le matin du 11 septembre 2001 à Brooklyn, puis observa la fumée des tours du World Trade Center depuis son toit en écoutant cette musique, lui donnant sa charge symbolique mondiale.",
+        "quote": "La musique s'effritait littéralement sous mes yeux en passant dans la tête de lecture.",
+        "anecdote": "Basinski numérisait d'anciennes bandes magnétiques pastorales lorsque le magnétophone a commencé à détruire le ruban. Il a achevé le projet à New York le 11 septembre 2001.",
         "tags": [
-          "Ambient",
-          "Bande Magnétique",
-          "Décomposition"
+          "Minimalisme",
+          "Érosion",
+          "Avant-Garde"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "10.0/10",
-            "excerpt": "Une œuvre conceptuelle d'une beauté tragique où la matière sonore s'effrite en direct.",
-            "iconName": "music.note"
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "Une méditation sublime et poignante sur la mortalité de la matière."
+          }
+        ],
+        "aiSummary": "Un enregistrement en boucle de motifs musicaux mélancoliques qui se désintègrent progressivement au fil des répétitions en raison de l'usure physique de la bande.",
+        "thematicAnalysis": "L'œuvre matérialise le passage destructeur du temps : le motif répété ne demeure jamais identique et meurt en direct sous l'oreille de l'auditeur.",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale",
+            "urlString": "https://music.apple.com/fr/search?term=The%20Disintegration%20Loops%20William%20Basinski",
+            "iconName": "apple.logo"
           },
           {
-            "source": "Les Inrockuptibles",
-            "score": "Indispensable",
-            "excerpt": "Le chant de cygne électroacoustique le plus poignant jamais gravé sur disque.",
-            "iconName": "quote.bubble.fill"
+            "name": "Spotify",
+            "category": "Streaming audio",
+            "urlString": "https://open.spotify.com/search/The%20Disintegration%20Loops%20William%20Basinski",
+            "iconName": "waveform"
           },
           {
-            "source": "AllMusic",
-            "score": "4.5/5",
-            "excerpt": "Une expérience d'écoute transcendante fascinante sur le temps, le déclin et la mémoire.",
-            "iconName": "star.fill"
+            "name": "Discogs",
+            "category": "Édition vinyle & CD",
+            "urlString": "https://www.discogs.com/fr/search/?q=The%20Disintegration%20Loops%20William%20Basinski&type=release",
+            "iconName": "opticaldisc.fill"
           }
         ],
         "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/3e/ea/08/3eea0811-b27e-6e92-9d2a-561bfce9107c/cover.jpg/600x600bb.jpg",
@@ -756,26 +606,6 @@
             "title": "Dlp 2.1",
             "duration": "10:50",
             "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/a4/c7/c3a4c7a9-279c-8f8b-7ed3-09da0bc90db4/mzaf_7369710717981805827.plus.aac.p.m4a"
-          }
-        ],
-        "platformLinks": [
-          {
-            "name": "Spotify",
-            "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/The%20Disintegration%20Loops%20William%20Basinski",
-            "iconName": "waveform"
-          },
-          {
-            "name": "Apple Music",
-            "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/the-disintegration-loops-remastered/908005350?uo=4",
-            "iconName": "music.note"
-          },
-          {
-            "name": "Deezer",
-            "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/The%20Disintegration%20Loops%20William%20Basinski",
-            "iconName": "play.circle.fill"
           }
         ]
       }
