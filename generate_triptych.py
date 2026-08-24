@@ -188,7 +188,7 @@ Réponds STRICTEMENT sous la forme d'un objet JSON valide :
 
 def generate_daily_edition():
     model = genai.GenerativeModel(
-        model_name="gemini-2.5-flash",
+        model_name="gemini-3.6-flash",
         generation_config={"response_mime_type": "application/json", "temperature": 0.7},
         system_instruction=SYSTEM_PROMPT
     )
