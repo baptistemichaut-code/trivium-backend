@@ -18,14 +18,14 @@ genai.configure(api_key=GEMINI_API_KEY)
 # MARK: - Nettoyeurs de Titres & Encodage d'URL
 
 def clean_search_title(title: str) -> str:
-    t = re.sub(r"\(.*?\)", "", title)
+    t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
         t = t.split(":")[0]
     return t.strip()
 
 def safe_url_encode(text: str) -> str:
-    return urllib.parse.quote(text.strip(), safe="")
+    return urllib.parse.quote(str(text).strip(), safe="")
 
 # MARK: - Gestion de l'Historique & Déduplication
 
@@ -56,14 +56,13 @@ def load_history_exclusions():
 
     return list(used_themes), list(used_titles)
 
-# MARK: - Enrichisseur Livres
+# MARK: - Enrichisseurs Médias
 
 def fetch_book_metadata(title: str, author: str):
     image_url = None
     page_count = None
     clean_t = clean_search_title(title)
 
-    # 1. Apple Books
     try:
         q_apple = safe_url_encode(f"{clean_t} {author}")
         apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=1"
@@ -77,13 +76,8 @@ def fetch_book_metadata(title: str, author: str):
     except Exception:
         pass
 
-    # 2. Google Books
     if not image_url:
-        queries = [
-            f"intitle:{clean_t} inauthor:{author}",
-            f"{clean_t} {author}",
-            clean_t
-        ]
+        queries = [f"intitle:{clean_t} inauthor:{author}", f"{clean_t} {author}", clean_t]
         for q in queries:
             encoded_q = safe_url_encode(q)
             url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=2&printType=books"
@@ -95,16 +89,10 @@ def fetch_book_metadata(title: str, author: str):
                         info = item.get("volumeInfo", {})
                         images = info.get("imageLinks", {})
                         img = images.get("extraLarge") or images.get("large") or images.get("medium") or images.get("thumbnail") or images.get("smallThumbnail")
-                        
                         if img:
-                            secure_img = img.replace("http://", "https://")
-                            if "&edge=curl" in secure_img:
-                                secure_img = secure_img.replace("&edge=curl", "")
-                            image_url = secure_img
-
+                            image_url = img.replace("http://", "https://").replace("&edge=curl", "")
                         if not page_count and info.get("pageCount"):
                             page_count = info.get("pageCount")
-
                         if image_url:
                             break
             except Exception:
@@ -112,24 +100,7 @@ def fetch_book_metadata(title: str, author: str):
             if image_url:
                 break
 
-    # 3. OpenLibrary
-    if not image_url:
-        try:
-            q_ol = safe_url_encode(f"{clean_t} {author}")
-            ol_url = f"https://openlibrary.org/search.json?q={q_ol}&limit=1"
-            req = urllib.request.Request(ol_url, headers={"User-Agent": "TriviumApp/2.1"})
-            with urllib.request.urlopen(req, timeout=5) as response:
-                ol_data = json.loads(response.read().decode())
-                docs = ol_data.get("docs", [])
-                if docs and "cover_i" in docs[0]:
-                    cover_id = docs[0]["cover_i"]
-                    image_url = f"https://covers.openlibrary.org/b/id/{cover_id}-L.jpg"
-        except Exception:
-            pass
-
     return image_url, page_count
-
-# MARK: - Enrichisseur Films
 
 def fetch_film_metadata(title: str, director: str):
     image_url = None
@@ -147,14 +118,11 @@ def fetch_film_metadata(title: str, director: str):
                     if data.get("resultCount", 0) > 0:
                         raw_art = data["results"][0].get("artworkUrl100", "")
                         if raw_art:
-                            image_url = raw_art.replace("100x100bb", "1000x1000bb")
-                            return image_url
+                            return raw_art.replace("100x100bb", "1000x1000bb")
             except Exception:
                 pass
 
     return image_url
-
-# MARK: - Enrichisseur Albums (Apple Music Direct URL, Jaquette & Pistes)
 
 def fetch_album_metadata(album_title: str, artist: str):
     clean_t = clean_search_title(album_title)
@@ -182,15 +150,14 @@ def fetch_album_metadata(album_title: str, artist: str):
             req = urllib.request.Request(lookup_url, headers={"User-Agent": "TriviumApp/2.1"})
             with urllib.request.urlopen(req, timeout=8) as response:
                 song_data = json.loads(response.read().decode())
-                results = song_data.get("results", [])
-                for r in results:
+                for r in song_data.get("results", []):
                     if r.get("wrapperType") == "track":
                         millis = r.get("trackTimeMillis", 0)
                         seconds = (millis // 1000) % 60
                         minutes = (millis // (1000 * 60))
                         tracks.append({
                             "trackNumber": r.get("trackNumber", len(tracks) + 1),
-                            "title": r.get("trackName", "Piste inconnue"),
+                            "title": r.get("trackName", "Piste"),
                             "duration": f"{minutes}:{seconds:02d}",
                             "previewURL": r.get("previewUrl")
                         })
@@ -199,96 +166,103 @@ def fetch_album_metadata(album_title: str, artist: str):
 
     return image_url, tracks, direct_url
 
-# MARK: - Liens Plateformes Utiles (Apple Music Direct & Deezer)
-
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
-    search_term = f"{clean_t} {creator}".strip()
-    encoded_search = safe_url_encode(search_term)
+    encoded_search = safe_url_encode(f"{clean_t} {creator}".strip())
     encoded_title = safe_url_encode(clean_t.strip())
     
-    t = item_type.upper()
+    t = str(item_type).upper()
     if t == "FILM":
         return [
-            {
-                "name": "JustWatch",
-                "category": "Disponibilité légale & Streaming",
-                "urlString": f"https://www.justwatch.com/fr/recherche?q={encoded_search}",
-                "iconName": "play.tv.fill"
-            },
-            {
-                "name": "Apple TV",
-                "category": "Location & Achat VOD",
-                "urlString": f"https://tv.apple.com/fr/search?term={encoded_title}",
-                "iconName": "apple.logo"
-            }
+            {"name": "JustWatch", "category": "Disponibilité légale & Streaming", "urlString": f"https://www.justwatch.com/fr/recherche?q={encoded_search}", "iconName": "play.tv.fill"},
+            {"name": "Apple TV", "category": "Location & Achat VOD", "urlString": f"https://tv.apple.com/fr/search?term={encoded_title}", "iconName": "apple.logo"}
         ]
     elif t == "LIVRE":
         return [
-            {
-                "name": "Les Libraires",
-                "category": "Librairies indépendantes",
-                "urlString": f"https://www.leslibraires.fr/recherche/?q={encoded_search}",
-                "iconName": "book.fill"
-            },
-            {
-                "name": "Fnac",
-                "category": "Achat livre & Ebook",
-                "urlString": f"https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search={encoded_search}",
-                "iconName": "bag.fill"
-            }
+            {"name": "Les Libraires", "category": "Librairies indépendantes", "urlString": f"https://www.leslibraires.fr/recherche/?q={encoded_search}", "iconName": "book.fill"},
+            {"name": "Fnac", "category": "Achat livre & Ebook", "urlString": f"https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search={encoded_search}", "iconName": "bag.fill"}
         ]
-    else:  # ALBUM
+    else:
         apple_link = direct_apple_url if direct_apple_url else f"https://music.apple.com/fr/search?term={encoded_search}"
         return [
-            {
-                "name": "Apple Music",
-                "category": "Écoute intégrale & Lossless",
-                "urlString": apple_link,
-                "iconName": "apple.logo"
-            },
-            {
-                "name": "Deezer",
-                "category": "Streaming audio & HiFi",
-                "urlString": f"https://www.deezer.com/search/{encoded_search}",
-                "iconName": "music.note"
-            }
+            {"name": "Apple Music", "category": "Écoute intégrale & Lossless", "urlString": apple_link, "iconName": "apple.logo"},
+            {"name": "Deezer", "category": "Streaming audio & HiFi", "urlString": f"https://www.deezer.com/search/{encoded_search}", "iconName": "music.note"}
         ]
 
-# MARK: - Prompt Éditorial avec Barèmes Critiques Authentiques
+# MARK: - Sanitizer / Garant de Structure Anti-Crash
+
+def sanitize_and_fill_defaults(data: dict) -> dict:
+    """Garantit qu'aucune clé attendue par Swift n'est manquante ou nulle."""
+    sanitized = {}
+    tiers = ["accessible", "intermediate", "expert"]
+    default_theme = {"themeTitle": "Édition du jour", "themeSubtitle": "Trois œuvres reliées par un fil invisible", "items": []}
+
+    for tier in tiers:
+        t_data = data.get(tier, default_theme)
+        if not isinstance(t_data, dict):
+            t_data = default_theme
+
+        sanitized[tier] = {
+            "themeTitle": str(t_data.get("themeTitle") or "Édition du jour"),
+            "themeSubtitle": str(t_data.get("themeSubtitle") or "Trois œuvres, un fil invisible."),
+            "items": []
+        }
+
+        for item in t_data.get("items", []):
+            if not isinstance(item, dict):
+                continue
+            
+            s_item = {
+                "type": str(item.get("type") or "LIVRE").upper(),
+                "title": str(item.get("title") or "Titre"),
+                "creator": str(item.get("creator") or "Auteur"),
+                "year": str(item.get("year") or "2000"),
+                "origin": str(item.get("origin") or "France"),
+                "genre": str(item.get("genre") or "Culture"),
+                "accessibility": str(item.get("accessibility") or "Pop Culture"),
+                "formatMetric": str(item.get("formatMetric") or ""),
+                "quote": str(item.get("quote") or ""),
+                "anecdote": str(item.get("anecdote") or ""),
+                "tags": item.get("tags") if isinstance(item.get("tags"), list) else ["Classique"],
+                "ratings": [],
+                "aiSummary": str(item.get("aiSummary") or ""),
+                "thematicAnalysis": str(item.get("thematicAnalysis") or ""),
+                "imageURL": item.get("imageURL") or None,
+                "platformLinks": item.get("platformLinks") or [],
+                "tracks": item.get("tracks") or []
+            }
+
+            for r in item.get("ratings", []):
+                if isinstance(r, dict):
+                    s_item["ratings"].append({
+                        "source": str(r.get("source") or "Presse"),
+                        "score": str(r.get("score") or "5/5"),
+                        "iconName": str(r.get("iconName") or "star.fill"),
+                        "excerpt": str(r.get("excerpt") or "")
+                    })
+
+            sanitized[tier]["items"].append(s_item)
+
+    return sanitized
+
+# MARK: - Prompt Éditorial
 
 def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
     prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
-LANGUE STRICTE : L'intégralité du contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE (y compris les citations et extraits de presse traduits si la source originale est étrangère).
+LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
 
 CALIBRATION TRÈS STRICTE DES 3 PROFILS CULTURELS :
-1. "accessible" (Pop Culture) : UNIQUEMENT des monuments culturels et chefs-d'œuvre universellement connus (ex. musique : Queen, Daft Punk, The Beatles, Pink Floyd, Nirvana, Michael Jackson ; cinéma : Le Parrain, Interstellar, Alien, Le Seigneur des Anneaux ; littérature : Le Petit Prince, 1984, Stephen King).
-2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs (Radiohead, Sufjan Stevens, Arcade Fire), littérature contemporaine forte.
-3. "expert" (Initié) : Avant-garde, expérimentations pointues, cinéma d'art et essai exigeant, raretés littéraires et musicales.
+1. "accessible" (Pop Culture) : Monuments culturels et chefs-d'œuvre universellement connus (ex. musique : Queen, Daft Punk, The Beatles, Pink Floyd, Nirvana ; cinéma : Le Parrain, Interstellar, Alien ; livres : Le Petit Prince, 1984, Stephen King).
+2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
+3. "expert" (Initié) : Avant-garde, expérimentations, cinéma d'art et essai exigeant.
 
-Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE de l'œuvre.
-
-RÈGLE D'EXACTITUDE CRITIQUE & DES BARÈMES DE PRESSE (STRICT) :
-Pour CHAQUE œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") de 3 sources distinctes, en respectant impérativement leurs barèmes authentiques et leur réception historique réelle :
-
-1. MUSIQUE :
-   - Pitchfork : Note SUR 10 obligatoire (ex. "9.3/10", "10/10", "8.5/10").
-   - Rolling Stone / AllMusic / The Guardian / NME : Note SUR 5 (ex. "5/5", "4.5/5", "4/5").
-   - Les Inrockuptibles / Télérama : Note SUR 5 ou appréciation officielle.
-
-2. CINÉMA :
-   - Télérama / Première / Positif / Les Inrockuptibles / Le Monde : Note SUR 5 (ex. "5/5", "4/5", "3/5").
-   - Cahiers du Cinéma : Respecter l'avis réel historique des Cahiers (s'ils ont détesté un blockbuster hollywoodien, attribuer une note réaliste comme "1/5" ou "2/5" plutôt qu'un 5/5 automatique).
-   - Rotten Tomatoes : Score en POURCENTAGE (ex. "94%").
-   - Metacritic : Score SUR 100 (ex. "88/100").
-
-3. LITTÉRATURE :
-   - Le Monde des Livres / Le Figaro / Libération / Télérama / The New York Times : Note SUR 5 représentative ou barème officiel ("5/5", "4.5/5").
-   - Pour les œuvres classiques parues avant la création du média, l'extrait doit refléter l'analyse rétrospective ou patrimoniale réelle du journal.
+Chaque profil contient EXACTEMENT : 1 LIVRE, 1 FILM, 1 ALBUM réels et existants.
+Pour le champ "year", renseigne TOUJOURS L'ANNÉE DE CRÉATION ORIGINALE.
+Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") de 3 médias distincts avec leurs barèmes réels (Pitchfork sur 10, Télérama sur 5, etc.).
 
 RÈGLE D'UNICITÉ :
-Interdiction formelle de réutiliser un thème ou une œuvre passés.
+Interdiction de réutiliser des thèmes ou œuvres passés.
 """
     if excluded_themes:
         prompt += f"\nTHÈMES BANNIS :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
@@ -296,31 +270,31 @@ Interdiction formelle de réutiliser un thème ou une œuvre passés.
         prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
 
     prompt += """
-Format JSON attendu :
+Format JSON STRICT à renvoyer :
 {
   "accessible": {
-    "themeTitle": "Titre du thème inédit",
-    "themeSubtitle": "Sous-titre poétique expliquant le fil invisible reliant les 3 œuvres",
+    "themeTitle": "Titre du thème",
+    "themeSubtitle": "Sous-titre poétique",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Titre exact",
-        "creator": "Nom de l'auteur",
-        "year": "1949",
-        "origin": "Royaume-Uni",
-        "genre": "Roman / Dystopie",
+        "title": "Titre",
+        "creator": "Auteur",
+        "year": "1952",
+        "origin": "États-Unis",
+        "genre": "Roman",
         "accessibility": "Pop Culture",
-        "formatMetric": "328 pages",
-        "quote": "Citation clé marquante",
-        "anecdote": "Anecdote surprenante sur la genèse de l'œuvre",
-        "tags": ["Dystopie", "Totalitarisme", "Classique"],
+        "formatMetric": "128 pages",
+        "quote": "Citation clé",
+        "anecdote": "Une anecdote captivante",
+        "tags": ["Classique"],
         "ratings": [
-          {"source": "Le Monde des Livres", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre prophétique absolu du XXe siècle."},
-          {"source": "The Times", "score": "5/5", "iconName": "star.fill", "excerpt": "Une mise en garde magistrale qui traverse les époques."},
-          {"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une analyse glaçante de la manipulation du langage."}
+          {"source": "Le Monde des Livres", "score": "5/5", "iconName": "star.fill", "excerpt": "Chef-d'œuvre."},
+          {"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Poignant."},
+          {"source": "Les Inrockuptibles", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Brillant."}
         ],
-        "aiSummary": "Résumé captivant en 2 phrases.",
-        "thematicAnalysis": "Analyse du lien profond avec la thématique du triptyque."
+        "aiSummary": "Résumé en 2 phrases.",
+        "thematicAnalysis": "Analyse du lien avec le thème."
       }
     ]
   },
@@ -347,16 +321,18 @@ def generate_daily_edition():
         system_instruction=system_prompt
     )
 
-    response = model.generate_content("Génère un triptyque 100% inédit et calibré en français avec les barèmes de notation authentiques pour chaque média.")
-    data = json.loads(response.text)
+    response = model.generate_content("Génère un triptyque 100% inédit et calibré en français.")
+    raw_data = json.loads(response.text)
 
+    # 1. Sécurisation & Remplissage automatique des champs obligatoires
+    data = sanitize_and_fill_defaults(raw_data)
+
+    # 2. Enrichissement des médias
     for tier in ["accessible", "intermediate", "expert"]:
-        if tier not in data:
-            continue
-        for item in data[tier].get("items", []):
-            item_type = item.get("type", "").upper()
-            title = item.get("title", "")
-            creator = item.get("creator", "")
+        for item in data[tier]["items"]:
+            item_type = item["type"]
+            title = item["title"]
+            creator = item["creator"]
 
             if item_type == "LIVRE":
                 item["platformLinks"] = build_safe_platform_links(item_type, title, creator)
@@ -375,6 +351,7 @@ def generate_daily_edition():
                 if img: item["imageURL"] = img
                 if tracks: item["tracks"] = tracks
 
+    # 3. Enregistrement sécurisé
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -382,7 +359,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Édition enregistrée avec barèmes stricts et archivée dans {archive_path}.")
+    print(f"✅ Édition validée et enregistrée sans aucune clé manquante.")
 
 if __name__ == "__main__":
     generate_daily_edition()
