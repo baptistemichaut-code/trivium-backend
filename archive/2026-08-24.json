@@ -1,103 +1,103 @@
 {
   "accessible": {
-    "themeTitle": "Embrasures et Révoltes : Les Visages du Refus",
-    "themeSubtitle": "Quand l'individu s'insurge contre la mécanique du monde",
+    "themeTitle": "Les Réalités Synthétiques",
+    "themeSubtitle": "Quand le monde réel bascule dans l'illusion et la matrice",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Fahrenheit 451",
-        "creator": "Ray Bradbury",
-        "year": "1953",
-        "genre": "Science-Fiction Dystopique",
+        "title": "Dune",
+        "creator": "Frank Herbert",
+        "year": "1965",
+        "genre": "Science-Fiction / Épopée",
         "origin": "États-Unis",
-        "formatMetric": "240 pages",
+        "formatMetric": "680 pages",
         "accessibility": "Populaire & Immédiat",
-        "quote": "Il y a des crimes pires que de brûler des livres. L'un d'eux est de ne pas les lire.",
-        "aiSummary": "Dans une société dystopique où la pensée critique est proscrite et où les pompiers ont pour mission d'allumer des incendies pour détruire les livres, Guy Montag accomplit son devoir sans ciller. Sa rencontre avec la jeune Clarisse McClellan va pourtant ébranler ses certitudes et l'éveiller à la puissance subversive de la littérature.",
-        "thematicAnalysis": "Le roman explore la résistance de l'esprit humain face à l'anesthésie culturelle télévisuelle et à la censure institutionnalisée. Bradbury n'y dénonce pas seulement le pouvoir politique tyrannique, mais la complaisance des citoyens à abandonner leur pensée complexe au profit de distractions superficielles.",
-        "anecdote": "Ray Bradbury a écrit la première version du roman, intitulée *The Fireman*, dans le sous-sol de la bibliothèque Powell de l'UCLA, en louant une machine à écrire payante pour 10 cents les trente minutes, lui coûtant un total de 9,80 dollars.",
+        "quote": "Je ne dois pas avoir peur. La peur est le tueur d'esprit.",
+        "aiSummary": "Sur Arrakis, planète désertique recélant l'Épice nécessaire aux voyages spatiaux, Paul Atréides se retrouve au cœur d'une lutte féodale et mystique pour le contrôle de l'univers.",
+        "thematicAnalysis": "Herbert interroge le messianisme, la manipulation politique et le contrôle des ressources dans un univers où le pouvoir repose sur le contrôle d'une substance altérant la conscience.",
+        "anecdote": "Frank Herbert a trouvé l'inspiration pour Dune en étudiant le suivi écologique des dunes de sable de Florence, dans l'Oregon, pour le ministère américain de l'Agriculture.",
         "tags": [
-          "Dystopie",
-          "Censure",
-          "Résistance"
+          "Messie",
+          "Écologie",
+          "Empire"
         ],
         "ratings": [
           {
-            "source": "Le Monde des Livres",
-            "score": "Indispensable",
-            "excerpt": "Une fable prophétique et lumineuse sur la mémoire collective et le pouvoir de la littérature.",
-            "iconName": "newspaper.fill"
-          },
-          {
             "source": "Babelio",
-            "score": "4.3/5",
-            "excerpt": "Un classique absolu d'une pertinence terrifiante à l'ère des écrans omniprésents.",
+            "score": "4.5/5",
+            "excerpt": "Une fresque cosmique intemporelle où la politique et l'écologie s'entrelacent avec génie.",
             "iconName": "star.fill"
           },
           {
             "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Un chef-d'œuvre visionnaire où la poésie du verbe résiste au feu du totalitarisme.",
+            "score": "TTT",
+            "excerpt": "Le chef-d'œuvre absolu de la science-fiction moderne, visionnaire et envoûtant.",
             "iconName": "quote.bubble.fill"
+          },
+          {
+            "source": "Le Figaro Littéraire",
+            "score": "5/5",
+            "excerpt": "Un roman fondateur d'une densité psychologique et mythologique inégalée.",
+            "iconName": "newspaper.fill"
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/12993656-L.jpg",
+        "imageURL": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Fahrenheit%20451%20Ray%20Bradbury",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Dune%20Frank%20Herbert",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Fahrenheit%20451%20Ray%20Bradbury",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Dune%20Frank%20Herbert",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=Fahrenheit%20451%20Ray%20Bradbury",
+            "urlString": "https://www.audible.fr/search?keywords=Dune%20Frank%20Herbert",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Fight Club",
-        "creator": "David Fincher",
+        "title": "The Matrix",
+        "creator": "Lana et Lilly Wachowski",
         "year": "1999",
-        "genre": "Thriller psychologique",
+        "genre": "Science-Fiction / Action",
         "origin": "États-Unis",
-        "formatMetric": "2h 19m",
+        "formatMetric": "2h 16m",
         "accessibility": "Culte & Grand Public",
-        "quote": "C'est seulement quand on a tout perdu qu'on est libre de faire tout ce qu'on veut.",
-        "aiSummary": "Un employé de bureau anonyme, aliéné par la société de consommation et souffrant d'insomnie chronique, rencontre Tyler Durden, un vendeur de savon charismatique à la philosophie anarchiste. Ensemble, ils créent le Fight Club, un cercle clandestin où des hommes libèrent leurs pulsions primales.",
-        "thematicAnalysis": "Le film déconstruit la crise de la masculinité moderne et l'aliénation marchande de la fin du XXe siècle. Par une mise en scène virtuose et subversive, Fincher illustre la frontière poreuse entre le besoin de reconquête de soi et la dérive fascisante des mouvements de masse.",
-        "anecdote": "Pour préparer leurs rôles, Brad Pitt et Edward Norton ont suivi des cours intensifs de boxe, de taekwondo et de grappling, tout en apprenant réellement les techniques de fabrication du savon.",
+        "quote": "Prends la pilule rouge et tu restes au Pays des Merveilles, et je te montre jusqu'où va le terrier du lapin.",
+        "aiSummary": "Un hacker nommé Neo découvre que la réalité humaine n'est qu'une simulation informatique créée par des machines intelligentes pour asservir l'humanité.",
+        "thematicAnalysis": "Le film démocratise l'allégorie de la caverne de Platon et la critique baudrillardienne du simulacre à travers une esthétique cyberpunk révolutionnaire.",
+        "anecdote": "Les sœurs Wachowski ont exigé que les acteurs principaux lisent l'ouvrage 'Simulacres et Simulation' du philosophe Jean Baudrillard avant le début du tournage.",
         "tags": [
-          "Satire",
-          "Aliénation",
-          "Double"
+          "Cyberpunk",
+          "Illusion",
+          "Philosophie"
         ],
         "ratings": [
           {
-            "source": "SensCritique",
-            "score": "8.3/10",
-            "excerpt": "Une satire au vitriol de la société de consommation doublée d'une claque visuelle virtuose.",
-            "iconName": "star.fill"
-          },
-          {
-            "source": "Allociné Presse",
-            "score": "3.8/5",
-            "excerpt": "David Fincher orchestre un thriller psychologique fulgurant et profondément dérangeant.",
+            "source": "Télérama",
+            "score": "TTT",
+            "excerpt": "Un monument visuel et métaphysique qui a redéfini le cinéma d'action du XXIe siècle.",
             "iconName": "film.fill"
           },
           {
+            "source": "Cahiers du Cinéma",
+            "score": "4/5",
+            "excerpt": "Une œuvre visuellement inventive qui marie virtuosité des combats et réflexions existentialistes.",
+            "iconName": "star.fill"
+          },
+          {
             "source": "Rotten Tomatoes",
-            "score": "79%",
-            "excerpt": "Anarchique, stylisé et provocateur, un film générationnel au rythme effréné.",
+            "score": "83%",
+            "excerpt": "Un savant mélange de philosophie stimulante et de scènes d'action révolutionnaires.",
             "iconName": "newspaper.fill"
           }
         ],
@@ -105,237 +105,159 @@
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Fight%20Club",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=The%20Matrix",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Fight%20Club",
+            "urlString": "https://www.allocine.fr/recherche/?q=The%20Matrix",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Fight%20Club",
+            "urlString": "https://www.canalplus.com/recherche?q=The%20Matrix",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "genre": "Rock progressif",
-        "origin": "Royaume-Uni",
-        "formatMetric": "10 titres",
+        "title": "Random Access Memories",
+        "creator": "Daft Punk",
+        "year": "2013",
+        "genre": "French Touch / Disco-Funk",
+        "origin": "France",
+        "formatMetric": "13 titres",
         "accessibility": "Écoute Immédiate",
-        "quote": "And then one day you find ten years have got behind you.",
-        "aiSummary": "Album concept majeur de l'histoire de la musique enregistrée, cet opus scrute les tensions fondamentales de l'existence humaine : le temps qui passe, la folie, la cupidité, le conflit armé et la mort, portés par des innovations en studio inédites pour l'époque.",
-        "thematicAnalysis": "Pink Floyd transcende le rock progressif en signant un cycle méditatif sur la fragilité de la santé mentale et le matérialisme oppressant. L'utilisation d'interviews parlées, de bruits du quotidien et de synthétiseurs novateurs crée une continuité sonore immersive au propos universel.",
-        "anecdote": "Les voix parlées entendues en arrière-plan tout au long de l'album sont les réponses enregistrées d'employés des studios Abbey Road et de membres de l'équipe technique à des questions posées sur des cartes, comme 'Quand avez-vous été violent pour la dernière fois ?'.",
+        "quote": "Give life back to music.",
+        "aiSummary": "Un voyage organique et méticuleux enregistré avec des musiciens de légende pour redonner une âme humaine à la musique électronique moderne.",
+        "thematicAnalysis": "L'album matérialise le désir de robots musiciens devenant humains par la réappropriation du son analogique et de la mémoire musicale des années 70-80.",
+        "anecdote": "Pour enregistrer la voix du producteur Giorgio Moroder sur 'Giorgio by Moroder', le duo a utilisé trois microphones d'époques différentes retraçant les étapes de sa vie.",
         "tags": [
-          "Rock Progressif",
-          "Concept Album",
-          "Psychédélique"
+          "Funk",
+          "Analogique",
+          "Légende"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "9.3/10",
-            "excerpt": "Un sommet d'ingénierie sonore et d'exploration existentielle qui n'a rien perdu de sa puissance.",
+            "score": "8.8/10",
+            "excerpt": "A monument to the grandeur of disco and analog recording, executed with perfection.",
             "iconName": "music.note"
           },
           {
             "source": "Rolling Stone",
-            "score": "5/5",
-            "excerpt": "L'album concept ultime, un voyage immersif à la perfection technique inégalée.",
+            "score": "4.5/5",
+            "excerpt": "Un hommage flamboyant au funk et au disco porté par une production somptueuse.",
             "iconName": "star.fill"
           },
           {
-            "source": "AllMusic",
-            "score": "5/5",
-            "excerpt": "Une production révolutionnaire alliée à une écriture pop psychédélique d'une clarté absolue.",
+            "source": "Les Inrockuptibles",
+            "score": "Indispensable",
+            "excerpt": "Un album magistral, d'une générosité sonore inouïe et d'une précision chirurgicale.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "In the Flesh?",
-            "duration": "3:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9e/00/ce/9e00ce3f-e24b-c933-2906-57c9c6adbe64/mzaf_8206572726959166944.plus.aac.p.m4a"
+            "title": "Give Life Back to Music",
+            "duration": "4:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ce/15/b1/ce15b154-2b27-9d65-4d12-7736f3e029c2/mzaf_15463046040604482889.plus.aac.p.m4a"
           },
           {
-            "trackNumber": 1,
-            "title": "Hey You",
+            "trackNumber": 2,
+            "title": "The Game of Love",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f3/11/1e/f3111e28-8777-de11-ce9a-b68cbbd482e5/mzaf_9503836792087302865.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Giorgio by Moroder",
+            "duration": "9:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/88/e4/40/88e440e7-8baa-6cc0-acbe-ceaa7f240a51/mzaf_1985242177805063708.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Within",
+            "duration": "3:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/56/90/11/56901128-5f5e-67ff-f760-2cf14e00b04c/mzaf_4629559715078327006.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Instant Crush",
+            "duration": "5:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1a/3b/90/1a3b90d2-b984-b042-1822-e19f388524e0/mzaf_7080651603608009369.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Lose Yourself to Dance",
+            "duration": "5:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/20/4d/92204d1e-e9d5-0062-36e9-3671d508f34c/mzaf_12660190147806239384.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Touch",
+            "duration": "8:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/5e/9c/23/5e9c23a8-51d4-3158-63a9-3c17c17e1aad/mzaf_5833810091814140078.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Get Lucky",
+            "duration": "6:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/d3/1e/d4d31eb4-7405-b806-8346-3c52ad5b4cf4/mzaf_8095545455942962509.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Beyond",
+            "duration": "4:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/81/bf/80/81bf80c3-6edf-2231-7f38-4e10f81ef4b0/mzaf_13454620304668252238.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Motherboard",
+            "duration": "5:41",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ad/fa/a3/adfaa33c-7b60-1a59-233d-e398492977c9/mzaf_6457343133066990041.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Fragments of Time",
             "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/fd/c8/b9fdc82e-07a0-56b7-40d2-ca30540b1516/mzaf_18128670058523403289.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "The Thin Ice",
-            "duration": "2:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/0e/d6/ee0ed6b1-9b7b-2315-f352-0a484e2ffc7a/mzaf_6534653370309112636.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Is There Anybody Out There?",
-            "duration": "2:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/37/99/6f379960-0ba0-5be6-ba71-701616aa1053/mzaf_14770994261006181754.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Another Brick In the Wall, Pt. 1",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/0a/b2/7f0ab2de-c58f-ab90-aaa7-69e76ea1614e/mzaf_13903338154361109472.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Nobody Home",
-            "duration": "3:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/44/7b/b1447b54-a08e-9219-4f27-08cf827f77b3/mzaf_15898104863874072273.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "The Happiest Days of Our Lives",
-            "duration": "1:51",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6a/94/bc/6a94bcd6-8a5a-c7cb-d633-e1152dfcdd34/mzaf_17081166823592607777.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Vera",
-            "duration": "1:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/40/d4/1e/40d41ef9-208b-2269-15d6-36342f192dfc/mzaf_12749720877812999437.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Another Brick In the Wall, Pt. 2",
-            "duration": "3:58",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f8/a2/cd/f8a2cd4a-2af9-f34f-3684-89e3304c102c/mzaf_376000686139681175.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Bring the Boys Back Home",
-            "duration": "1:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/13/ed/f113ed1f-a553-8d58-8217-9973b54e1693/mzaf_1006567261111392294.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Mother",
-            "duration": "5:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/fa/a1/0afaa116-5108-ebf2-f2b3-9d7e0afa9075/mzaf_6396232943440433611.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Comfortably Numb",
-            "duration": "6:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fe/44/11/fe441140-ff52-28ef-d7c4-d87b3084d959/mzaf_9494577035851753023.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Goodbye Blue Sky",
-            "duration": "2:47",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/6b/90/cd6b902b-58d6-92e3-23b8-73806ead85c4/mzaf_15564784983603777155.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "The Show Must Go On",
-            "duration": "1:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/4a/f8/574af864-88a4-16d4-c64e-d9857adc8b9a/mzaf_12375970921451753152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Empty Spaces",
-            "duration": "2:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f1/a2/39/f1a239f0-19f3-9138-f3da-27ec91af1c73/mzaf_17079476583582930162.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "In the Flesh",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1f/77/03/1f7703d5-4adf-b207-69a1-92e2523a14b7/mzaf_8141171389362838363.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Young Lust",
-            "duration": "3:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/74/a1/61/74a1613a-0538-afd8-d425-b7e3a2d87815/mzaf_15083185785106020855.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Run Like Hell",
-            "duration": "4:23",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/58/03/cf/5803cfbc-f27f-a1ef-a55b-dd4bc0993dbc/mzaf_14125362445130198402.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "One of My Turns",
-            "duration": "3:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/63/c6/b5/63c6b591-b046-38c1-79a3-cffa63239875/mzaf_16319769771609696767.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Waiting for the Worms",
-            "duration": "3:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/85/71/8f857136-3285-d9c2-18f3-9fc11c99b5b2/mzaf_18212995088536362482.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Don't Leave Me Now",
-            "duration": "4:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/41/35/3b41359c-ec27-06f7-139d-3bf1f5f2f47b/mzaf_14306272745913211721.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Stop",
-            "duration": "0:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/b3/23/7eb32303-9966-9fff-e74b-d812db4afe06/mzaf_872179588633858960.plus.aac.p.m4a"
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b6/ae/f9/b6aef99e-356b-aa20-a4cd-80bc16836ab6/mzaf_269882820879606569.plus.aac.p.m4a"
           },
           {
             "trackNumber": 12,
-            "title": "Another Brick In the Wall, Pt. 3",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0b/48/c6/0b48c6b4-f3a3-7158-ad4e-cfb3b71cc5aa/mzaf_10533122211583635152.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "The Trial",
-            "duration": "5:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/8a/4e/be8a4eb9-fc0b-3695-d8c8-d7a86fcb410a/mzaf_16711526069530791059.plus.aac.p.m4a"
+            "title": "Doin' it Right",
+            "duration": "4:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9b/0a/bf/9b0abf51-0e93-8770-f270-7dfda1afa1a2/mzaf_9717678664204193733.plus.aac.p.m4a"
           },
           {
             "trackNumber": 13,
-            "title": "Goodbye Cruel World",
-            "duration": "1:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/f8/31/cff831d2-a0f5-b767-72d2-da5b7e193a15/mzaf_10120418368130687063.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Outside the Wall",
-            "duration": "1:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/b4/45/1db445f0-5657-189d-07de-c0794b7bcd2f/mzaf_13560913112561824223.plus.aac.p.m4a"
+            "title": "Contact",
+            "duration": "6:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/12/2c/10/122c10fd-7f36-f4a2-5543-ae8e5dd357c6/mzaf_5198969030385154956.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "urlString": "https://open.spotify.com/search/Random%20Access%20Memories%20Daft%20Punk",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/the-wall/1065975633?uo=4",
+            "urlString": "https://music.apple.com/fr/album/random-access-memories/617154241?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/The%20Dark%20Side%20of%20the%20Moon%20Pink%20Floyd",
+            "urlString": "https://www.deezer.com/search/Random%20Access%20Memories%20Daft%20Punk",
             "iconName": "play.circle.fill"
           }
         ]
@@ -343,104 +265,104 @@
     ]
   },
   "intermediate": {
-    "themeTitle": "Traversées et Résonances Intérieures",
-    "themeSubtitle": "Les itinéraires secrets du deuil, du souffle et de la mémoire",
+    "themeTitle": "La Mélancolie des Mégapoles",
+    "themeSubtitle": "Errances urbaines, néons et solitudes croisées",
     "items": [
       {
         "type": "LIVRE",
-        "title": "La Horde du Contrevent",
-        "creator": "Alain Damasio",
-        "year": "2004",
-        "genre": "Science-Fiction / Fantasy philosophique",
-        "origin": "France",
-        "formatMetric": "704 pages",
-        "accessibility": "Exigeant mais Accessible",
-        "quote": "Nous sommes faits de l'étoffe dont on fait les vents.",
-        "aiSummary": "Dans un monde balayé par des vents continus et dévastateurs, la 34e Horde poursuit une quête séculaire : remonter à pied d'ouest en est jusqu'à l'Extrême-Amont, la source mythique du vent. Vingt-trois compagnons d'élite unissent leurs compétences pour faire face à l'adversité physique et existentielle.",
-        "thematicAnalysis": "Damasio déploie une réflexion poétique et politique sur l'effort collectif, le mouvement permanent et la vitalité. Par une mise en page typographique singulière où chaque personnage possède son propre symbole de ponctuation, le roman transforme l'écriture en un corps à corps dynamique avec le souffle.",
-        "anecdote": "Le livre était initialement vendu avec un disque compact contenant la bande originale du roman composée par Arno Alyvan, conçue pour accompagner l'immersion du lecteur dans l'univers sonore du vent.",
+        "title": "Kafka sur le rivage",
+        "creator": "Haruki Murakami",
+        "year": "2002",
+        "genre": "Réalisme magique",
+        "origin": "Japon",
+        "formatMetric": "640 pages",
+        "accessibility": "Exigeant mais accessible",
+        "quote": "Quand la tempête sera passée, tu ne te rappelleras pas comment tu as fait pour traverser.",
+        "aiSummary": "Les destins croisés de Kafka Tamura, un adolescent de 15 ans en fuite, et de Nakata, un vieil homme amnésique capable de parler aux chats.",
+        "thematicAnalysis": "Murakami tresse des ponts entre mythes de la Grèce antique et errance urbaine contemporaine, explorant l'inconscient collectif à travers une atmosphère onirique.",
+        "anecdote": "Haruki Murakami a écrit ce roman en écoutant continuellement le Trio des esprits d'Archiduc de Beethoven et des albums du saxophoniste John Coltrane.",
         "tags": [
-          "Polyphonie",
-          "Épopée",
-          "Philosophie"
+          "Onirisme",
+          "Quête",
+          "Destin"
         ],
         "ratings": [
           {
-            "source": "Télérama",
-            "score": "TTTT",
-            "excerpt": "Une épopée philosophique et polyphonique d'une virtuosité linguistique vertigineuse.",
-            "iconName": "quote.bubble.fill"
-          },
-          {
             "source": "Babelio",
-            "score": "4.4/5",
-            "excerpt": "Un monument de la SF française, porté par une invention verbale d'une densité rare.",
+            "score": "4.2/5",
+            "excerpt": "Un voyage labyrinthique fascinant aux frontières troublantes du rêve et de la réalité.",
             "iconName": "star.fill"
           },
           {
-            "source": "Libération",
+            "source": "Le Monde des Livres",
             "score": "Incontournable",
-            "excerpt": "Damasio souffle une tempête de mots qui réinvente les codes de la littérature d'imagination.",
+            "excerpt": "Un grand roman métaphysique où la musique, les mythes et la solitude s'entremêlent.",
             "iconName": "newspaper.fill"
+          },
+          {
+            "source": "Télérama",
+            "score": "TTT",
+            "excerpt": "Murakami orchestre une symphonie poétique d'une beauté captivante.",
+            "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/6670450-L.jpg",
+        "imageURL": "https://covers.openlibrary.org/b/id/4982600-L.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Horde%20du%20Contrevent%20Alain%20Damasio",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Horde%20du%20Contrevent%20Alain%20Damasio",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=La%20Horde%20du%20Contrevent%20Alain%20Damasio",
+            "urlString": "https://www.audible.fr/search?keywords=Kafka%20sur%20le%20rivage%20Haruki%20Murakami",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Drive My Car",
-        "creator": "Ryusuke Hamaguchi",
-        "year": "2021",
-        "genre": "Drame",
-        "origin": "Japon",
-        "formatMetric": "2h 59m",
-        "accessibility": "Cinéma d'auteur accessible",
-        "quote": "Ceux qui restent doivent continuer à vivre.",
-        "aiSummary": "Yusuke Kafuku, metteur en scène et comédien de théâtre endeuillé par la mort soudaine de son épouse, accepte d'adapter 'Oncle Vania' à Hiroshima. On lui impose une jeune chauffesse réservée, Misaki. Au fil de leurs trajets quotidiens en voiture, des confidences émergent, pansant leurs blessures respectives.",
-        "thematicAnalysis": "Librement adapté d'une nouvelle de Haruki Murakami, le film explore l'incommunicabilité, la culpabilité et la catharsis par l'art. La Saab 900 rouge devient un sanctuaire mobile où le dialogue silencieux et l'écoute attentive permettent aux traumatismes enfouis d'émerger doucement.",
-        "anecdote": "Dans la nouvelle originale de Murakami, la voiture était un cabriolet jaune, mais Hamaguchi a préféré un modèle rouge avec un toit rigide afin de mieux capturer l'intimité acoustique des conversations au sein de l'habitacle.",
+        "title": "In the Mood for Love",
+        "creator": "Wong Kar-wai",
+        "year": "2000",
+        "genre": "Drame romantique",
+        "origin": "Hong Kong",
+        "formatMetric": "1h 38m",
+        "accessibility": "Esthétique & Captivant",
+        "quote": "C'était une époque troublée, les souvenirs semblaient voilés de poussière.",
+        "aiSummary": "À Hong Kong en 1962, un homme et une femme découvrent que leurs conjoints respectifs ont une liaison ensemble et nouent un lien pudique et étouffé.",
+        "thematicAnalysis": "Une méditation sublime sur l'absence, le désir refoulé et la mémoire à travers une mise en scène au ralenti rythmée par les violons et le motif des cheongsams.",
+        "anecdote": "Wong Kar-wai a tourné sans scénario définitif pendant plus de 15 mois, accumulant des centaines d'heures de rushs retouchées au montage pendant des mois.",
         "tags": [
-          "Deuil",
-          "Théâtre",
-          "Intimité"
+          "Désir",
+          "Hong Kong",
+          "Mélancolie"
         ],
         "ratings": [
           {
             "source": "Télérama",
             "score": "TTTT",
-            "excerpt": "Une méditation sublime et bouleversante sur le deuil, l'art et la communication.",
+            "excerpt": "Un poème visuel envoûtant sur le temps perdu, le regret et le désir inassouvi.",
             "iconName": "film.fill"
           },
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
-            "excerpt": "Hamaguchi signe une œuvre chorégraphiée avec une précision d'orfèvre et un souffle immense.",
+            "excerpt": "La quintessence du romantisme moderne et un sommet absolu d'élégance plastique.",
             "iconName": "star.fill"
           },
           {
-            "source": "Rotten Tomatoes",
-            "score": "97%",
-            "excerpt": "Un drame intime d'une richesse romanesque rare, captivant de bout en bout.",
+            "source": "SensCritique",
+            "score": "8.2/10",
+            "excerpt": "Chaque plan est une peinture somptueuse au service d'une passion étouffée.",
             "iconName": "newspaper.fill"
           }
         ],
@@ -448,153 +370,159 @@
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Drive%20My%20Car",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=In%20the%20Mood%20for%20Love",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Drive%20My%20Car",
+            "urlString": "https://www.allocine.fr/recherche/?q=In%20the%20Mood%20for%20Love",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Drive%20My%20Car",
+            "urlString": "https://www.canalplus.com/recherche?q=In%20the%20Mood%20for%20Love",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Disintegration",
-        "creator": "The Cure",
-        "year": "1989",
-        "genre": "Cold Wave / Rock gothique",
+        "title": "Untrue",
+        "creator": "Burial",
+        "year": "2007",
+        "genre": "Dubstep / Ambient / UK Garage",
         "origin": "Royaume-Uni",
-        "formatMetric": "12 titres",
-        "accessibility": "Mélancolique & Culot",
-        "quote": "However far away, I will always love you.",
-        "aiSummary": "Conçu par Robert Smith à l'approche de la trentaine dans un climat de doute et de crise personnelle, cet album déploie une atmosphère ténébreuse, majestueuse et introspective, marquée par de longues pièces instrumentales et une sensibilité romantique exacerbée.",
-        "thematicAnalysis": "Œuvre charnière de la cold wave, l'album transforme la dépression et l'angoisse du temps qui passe en une esthétique sonore expansive. La superposition de guitares scintillantes, de basses lourdes et de claviers atmosphériques bâtit une cathédrale de mélancolie lumineuse.",
-        "anecdote": "La maison de disques américaine Elektra craignait un 'suicide commercial' en découvrant l'album, le jugeant trop sombre, avant que celui-ci ne devienne le plus grand succès commercial de l'histoire du groupe.",
+        "formatMetric": "13 titres",
+        "accessibility": "Atmosphérique & Sombre",
+        "quote": "It's about when you're walking home alone in the rain.",
+        "aiSummary": "Un chef-d'œuvre de musique électronique urbaine composé de bruits de pluie, de craquements de vinyle et d'échantillons vocaux R&B découpés et réinventés.",
+        "thematicAnalysis": "Burial capture la nostalgie nocturne des métropoles britanniques désertes, inventant une musique fantomatique hantée par le souvenir de la culture rave.",
+        "anecdote": "William Bevan (Burial) a composé l'intégralité de l'album dans la pénombre sur un logiciel rudimentaire sans aucune grille de temps (Sound Forge).",
         "tags": [
-          "Cold Wave",
-          "Mélancolie",
-          "Post-Punk"
+          "Nocturne",
+          "Dubstep",
+          "Fantômes"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "10/10",
-            "excerpt": "Le chef-d'œuvre gothique définitif, d'une mélancolie majestueuse et cinématographique.",
+            "score": "9.0/10",
+            "excerpt": "The most important electronic album of the late 2000s, deeply moving and spectral.",
             "iconName": "music.note"
           },
           {
-            "source": "Rolling Stone",
+            "source": "The Guardian",
             "score": "5/5",
-            "excerpt": "Un somptueux monument de romantisme sombre où chaque morceau atteint des sommets d'émotion.",
+            "excerpt": "A haunting masterpiece of night-time urban melancholia and fractured soul.",
             "iconName": "star.fill"
           },
           {
             "source": "AllMusic",
-            "score": "5/5",
-            "excerpt": "Une immersion totale dans un son dense, hypnotique et sombrement poétique.",
+            "score": "4.5/5",
+            "excerpt": "An evocative sonic landscape built from crackles, rain, and nocturnal warmth.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/e4/c9/e0e4c982-1faa-c619-95ed-3fd1920eac8c/09UMGIM40204.rgb.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d3/05/10/d3051051-937f-e7c4-636e-7e1950d60a7b/5024545486520.png/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Plainsong",
-            "duration": "5:17",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a5/b6/f7/a5b6f7ca-1aa0-6d29-e96e-2bedeff93903/mzaf_4360289477472221557.plus.aac.p.m4a"
+            "title": "Untitled",
+            "duration": "0:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c7/34/bc/c734bce4-bbe4-cfea-bbf1-e7210107cd1b/mzaf_6978245255794965431.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Pictures of You",
-            "duration": "7:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f8/4b/00/f84b00fe-7078-d85b-1e3a-7e4590c72f02/mzaf_5151352994754658238.plus.aac.p.m4a"
+            "title": "Archangel",
+            "duration": "4:00",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/4a/4e/eb4a4e30-2eea-45eb-82c8-196e04bb9f1b/mzaf_14445404194350280558.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Closedown",
-            "duration": "4:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/66/0f/52660f33-f5c5-437c-62ea-693fbbec5eff/mzaf_18226439169595830932.plus.aac.p.m4a"
+            "title": "Near Dark",
+            "duration": "3:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/d6/2c/6bd62c3e-bd79-1684-d5da-d493e93f782a/mzaf_2940695367981810938.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Lovesong",
-            "duration": "3:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/73/6c/b1/736cb1f5-9004-7751-6ba0-82aacc5b0e0f/mzaf_8904549412708544781.plus.aac.p.m4a"
+            "title": "Ghost Hardware",
+            "duration": "4:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/83/88/50/8388505c-9a37-f5f5-cbee-5c239979b836/mzaf_18070933849808140382.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Last Dance",
-            "duration": "4:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c7/40/a8/c740a8fc-cb8a-cb0b-0d39-a1a65ebf5b2f/mzaf_12163028616762642878.plus.aac.p.m4a"
+            "title": "Endorphin",
+            "duration": "2:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/a4/1f/32a41f52-3c4d-0d73-4b9b-5499f7af43dd/mzaf_3455066683769537185.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Lullaby",
-            "duration": "4:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/63/fc/2b/63fc2b48-aaf7-857a-e6c5-a228f6249687/mzaf_8723540860348786449.plus.aac.p.m4a"
+            "title": "Etched Headplate",
+            "duration": "6:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/39/2a/24392a51-2f75-ffc8-08e0-9ad44a03286d/mzaf_17912408937548901523.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Fascination Street",
-            "duration": "5:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/76/90/a2/7690a2f8-1936-1ab2-93c4-c4135b7d1134/mzaf_13354371921549905962.plus.aac.p.m4a"
+            "title": "In McDonalds",
+            "duration": "2:06",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/97/84/1697845d-d47c-cf31-d65c-24b9c741fbca/mzaf_4290146884410528734.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Prayers for Rain",
-            "duration": "6:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/20/0e/2a/200e2a69-7898-3427-fd25-9f7c1dec39b4/mzaf_556259823120160869.plus.aac.p.m4a"
+            "title": "Untrue",
+            "duration": "6:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/2f/da/0a2fdadb-f708-ff7b-0f78-7eb31464d434/mzaf_12554970205513415094.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "The Same Deep Water As You",
-            "duration": "9:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/33/5e/01335e8c-a39a-fc2f-3a8e-8c2e20938ffa/mzaf_10859196155825482350.plus.aac.p.m4a"
+            "title": "Shell of Light",
+            "duration": "4:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/1a/84/fa1a84d6-cd6d-7c2a-2893-c240d5b061dc/mzaf_5968605937481531629.plus.aac.p.m4a"
           },
           {
             "trackNumber": 10,
-            "title": "Disintegration",
-            "duration": "8:19",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b0/20/75/b02075d7-3c54-27f8-33d8-622568518267/mzaf_15547787541254918486.plus.aac.p.m4a"
+            "title": "Dog Shelter",
+            "duration": "3:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/4e/ee/934eee43-cfa1-6459-9ef0-2fcdbaa6ca79/mzaf_52806888402312650.plus.aac.p.m4a"
           },
           {
             "trackNumber": 11,
-            "title": "Homesick",
-            "duration": "7:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ac/77/9f/ac779f79-5090-c54c-9334-6be0c829e879/mzaf_1244152191636042450.plus.aac.p.m4a"
+            "title": "Homeless",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/18/72/7a/18727a21-75c7-0d32-4b17-a1950432ffa5/mzaf_3815225615373388241.plus.aac.p.m4a"
           },
           {
             "trackNumber": 12,
-            "title": "Untitled",
-            "duration": "6:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/79/d7/e9/79d7e9c2-3a61-6a47-f499-1bc3f10fcfb3/mzaf_3741631111434555030.plus.aac.p.m4a"
+            "title": "UK",
+            "duration": "1:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/c3/f4/5ec3f42f-c68f-749b-3164-343c65a13bf0/mzaf_15183943598924545354.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Raver",
+            "duration": "4:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/23/d7/a123d73a-99d4-35e3-0b0c-98ea0c457bea/mzaf_8036385620354622979.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Disintegration%20The%20Cure",
+            "urlString": "https://open.spotify.com/search/Untrue%20Burial",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/disintegration-remastered/1440785740?uo=4",
+            "urlString": "https://music.apple.com/fr/album/untrue/1056902908?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Disintegration%20The%20Cure",
+            "urlString": "https://www.deezer.com/search/Untrue%20Burial",
             "iconName": "play.circle.fill"
           }
         ]
@@ -602,324 +530,246 @@
     ]
   },
   "expert": {
-    "themeTitle": "Les Abîmes de la Structure et de la Répétition",
-    "themeSubtitle": "Explorations labyrinthiques, géométries mentales et temps suspendu",
+    "themeTitle": "L'Espace du Silence et la Déconstruction",
+    "themeSubtitle": "Formes radicales, quêtes spirituelles et structures fragmentées",
     "items": [
       {
         "type": "LIVRE",
-        "title": "La Maison des feuilles",
-        "creator": "Mark Z. Danielewski",
-        "year": "2000",
-        "genre": "Roman expérimental / Horreur psychologique",
-        "origin": "États-Unis",
-        "formatMetric": "752 pages",
-        "accessibility": "Pointe d'Avant-Garde",
-        "quote": "Ce livre n'est pas pour vous.",
-        "aiSummary": "Un photojournaliste emménage dans une maison en apparence banale avec sa famille, avant de découvrir que les dimensions intérieures du bâtiment sont supérieures à ses dimensions extérieures. Une porte s'ouvre sur un labyrinthe sombre et infini, engendrant une étude documentaire obsessionnelle au récit enchâssé.",
-        "thematicAnalysis": "Ce roman érudit et expérimental déconstruit la forme littéraire classique à travers une typographie échevelée, des notes de bas de page sans fin et des fausses références académiques. Il interroge la folie de la sur-interprétation, la béance de la mémoire et la claustrophobie textuelle.",
-        "anecdote": "Avant sa publication sous forme d'ouvrage physique, le texte a circulé pendant plusieurs années sous la forme de fragments manuscrits et de fichiers PDF piratés échangés dans les réseaux underground d'Internet.",
+        "title": "Marelle",
+        "creator": "Julio Cortázar",
+        "year": "1963",
+        "genre": "Roman expérimental",
+        "origin": "Argentine",
+        "formatMetric": "600 pages",
+        "accessibility": "Avant-garde exigeante",
+        "quote": "Au fond, qu'est-ce que la poésie, sinon une façon de regarder le monde sous un autre angle ?",
+        "aiSummary": "Un roman anti-traditionnel retraçant la vie de Horacio Oliveira entre Paris et Buenos Aires, que le lecteur peut lire de manière linéaire ou selon un ordre interchangeable de chapitres.",
+        "thematicAnalysis": "Cortázar déconstruit le roman bourgeois en proposant un 'livre-jeu' qui transforme le lecteur en co-créateur actif de l'œuvre et du sens existentialiste.",
+        "anecdote": "Cortázar appelait ce livre un 'anti-roman' et a inclus un 'tableau de conduite' au début de l'ouvrage proposant deux parcours de lecture distincts.",
         "tags": [
-          "Ergodique",
-          "Labyrinthe",
-          "Méta-récit"
+          "Oulipo",
+          "Jazz",
+          "Déconstruction"
         ],
         "ratings": [
           {
+            "source": "Babelio",
+            "score": "4.3/5",
+            "excerpt": "Une expérience littéraire vertigineuse et ludique qui révolutionne la forme romanesque.",
+            "iconName": "star.fill"
+          },
+          {
             "source": "Le Monde des Livres",
             "score": "Chef-d'œuvre",
-            "excerpt": "Un labyrinthe typographique vertigineux qui déconstruit avec génie l'objet roman.",
+            "excerpt": "Un monument de l'avant-garde latino-américaine d'une liberté formelle absolue.",
             "iconName": "newspaper.fill"
           },
           {
             "source": "Télérama",
             "score": "TTTT",
-            "excerpt": "Une expérience littéraire terrifiante et inégalée, véritable puits sans fond de la psyché.",
+            "excerpt": "Un labyrinthe poétique et philosophique génial qui réinvente l'acte de lire.",
             "iconName": "quote.bubble.fill"
-          },
-          {
-            "source": "Babelio",
-            "score": "4.2/5",
-            "excerpt": "Un objet littéraire non identifié fascinant qui hante le lecteur bien après la dernière page.",
-            "iconName": "star.fill"
           }
         ],
-        "imageURL": "https://covers.openlibrary.org/b/id/6450442-L.jpg",
+        "imageURL": "https://covers.openlibrary.org/b/id/1047466-L.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairie indépendante",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Maison%20des%20feuilles%20Mark%20Z.%20Danielewski",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Marelle%20Julio%20Cort%C3%A1zar",
             "iconName": "books.vertical.fill"
           },
           {
             "name": "Fnac",
             "category": "Format papier & ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Maison%20des%20feuilles%20Mark%20Z.%20Danielewski",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Marelle%20Julio%20Cort%C3%A1zar",
             "iconName": "book.closed.fill"
           },
           {
             "name": "Audible",
             "category": "Livre audio",
-            "urlString": "https://www.audible.fr/search?keywords=La%20Maison%20des%20feuilles%20Mark%20Z.%20Danielewski",
+            "urlString": "https://www.audible.fr/search?keywords=Marelle%20Julio%20Cort%C3%A1zar",
             "iconName": "headphones"
           }
         ]
       },
       {
         "type": "FILM",
-        "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
-        "creator": "Chantal Akerman",
-        "year": "1975",
-        "genre": "Cinéma d'art et d'essai / Minimalisme",
-        "origin": "Belgique",
-        "formatMetric": "3h 21m",
-        "accessibility": "Haute Exigence Éditrice",
-        "quote": "On s'organise toujours pour ne pas penser.",
-        "aiSummary": "Pendant trois jours, le film suit le quotidien hyper-ritualisé d'une veuve bruxelloise : préparer les repas, faire le ménage, s'occuper de son fils et se prostituer l'après-midi chez elle. Lorsqu'un micro-détail vient perturber son emploi du temps rigide, toute l'ordonnance de sa vie se dérègle.",
-        "thematicAnalysis": "Akerman invente une grammaire cinématographique féministe et monumentale en filmant en plans fixes et en temps réel le travail domestique invisible. La répétition méthodique des gestes construit une tension dramatique inouïe, où le moindre manquement devient un séisme esthétique et politique.",
-        "anecdote": "L'équipe de tournage du film était très majoritairement féminine, un choix délibéré et pionnier opéré par Chantal Akerman alors âgée de seulement 25 ans au moment de la réalisation.",
+        "title": "Stalker",
+        "creator": "Andrei Tarkovski",
+        "year": "1979",
+        "genre": "Science-Fiction philosophique",
+        "origin": "Union Soviétique",
+        "formatMetric": "2h 42m",
+        "accessibility": "Art & Essai radical",
+        "quote": "La faiblesse est grande, la force est insignifiante. Quand l'homme naît, il est faible et flexible.",
+        "aiSummary": "Un passeur guidé par la foi conduit un Écrivain et un Professeur à travers 'La Zone', un territoire mystérieux abritant une chambre exauçant les désirs les plus intimes.",
+        "thematicAnalysis": "Tarkovski déploie un cinéma d'immersion contemplative et métaphysique où la Zone devient un miroir de l'âme humaine et de la crise de la foi moderne.",
+        "anecdote": "Le film a dû être entièrement retourné car la première pellicule Kodak utilisée lors des mois de tournage initiaux fut détruite lors du développement au laboratoire.",
         "tags": [
-          "Minimalisme",
-          "Féminisme",
-          "Temps Réel"
+          "Philosophie",
+          "Zone",
+          "Poésie"
         ],
         "ratings": [
           {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "excerpt": "Un chef-d'œuvre radical du cinéma moderne, étalant la violence feutrée de l'aliénation domestique.",
-            "iconName": "star.fill"
-          },
-          {
             "source": "Télérama",
             "score": "TTTT",
-            "excerpt": "Une rigueur hypnotique de la mise en scène qui révolutionne la saisie du temps au cinéma.",
+            "excerpt": "Une expérience spirituelle et esthétique ultime qui suspend le temps du spectateur.",
             "iconName": "film.fill"
           },
           {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "excerpt": "Un sommet absolu du cinéma d'art et d'essai, fascinant de beauté et de rigueur.",
+            "iconName": "star.fill"
+          },
+          {
             "source": "SensCritique",
-            "score": "8.1/10",
-            "excerpt": "Un monument féministe au découpage méticuleux où chaque geste répétitif prend une ampleur tragique.",
-            "iconName": "quote.bubble.fill"
+            "score": "8.3/10",
+            "excerpt": "Un poème cinématographique hypnotique et inégalé sur la conscience et le désir.",
+            "iconName": "newspaper.fill"
           }
         ],
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Où voir en streaming / VOD",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Jeanne%20Dielman%2C%2023%2C%20quai%20du%20Commerce%2C%201080%20Bruxelles",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Stalker",
             "iconName": "tv.fill"
           },
           {
             "name": "Allociné",
             "category": "Fiche & séances",
-            "urlString": "https://www.allocine.fr/recherche/?q=Jeanne%20Dielman%2C%2023%2C%20quai%20du%20Commerce%2C%201080%20Bruxelles",
+            "urlString": "https://www.allocine.fr/recherche/?q=Stalker",
             "iconName": "film.fill"
           },
           {
             "name": "Canal+ VOD",
             "category": "Location / Achat",
-            "urlString": "https://www.canalplus.com/recherche?q=Jeanne%20Dielman%2C%2023%2C%20quai%20du%20Commerce%2C%201080%20Bruxelles",
+            "urlString": "https://www.canalplus.com/recherche?q=Stalker",
             "iconName": "play.tv.fill"
           }
         ]
       },
       {
         "type": "ALBUM",
-        "title": "Geogaddi",
-        "creator": "Boards of Canada",
-        "year": "2002",
-        "genre": "IDM / Ambient / Hauntologie",
-        "origin": "Écosse",
-        "formatMetric": "23 titres",
-        "accessibility": "Underground & Expérimental",
-        "quote": "A horizon made of noise.",
-        "aiSummary": "Projet énigmatique de musique électronique pastorale et angoissante, cet album entrelace mélodies analogiques dégradées, échantillons de voix d'enfants, numérologie occulte et enregistrements de documentaires éducatifs des années 1970.",
-        "thematicAnalysis": "Boards of Canada façonne une esthétique hauntologique majeure, explorant la nostalgie trafiquée et le sentiment d'étrangeté enfantine. Sous la douceur apparente des textures synthétiques vintage affleure une sous-couche cryptique et ésotérique au magnétisme envoûtant.",
-        "anecdote": "La durée totale précise de l'album sur le support disque est de 66 minutes, 6 secondes et 666 millisecondes, un clin d'œil délibéré aux spéculations ésotériques entourant le duo écossais.",
+        "title": "Replica",
+        "creator": "Oneohtrix Point Never",
+        "year": "2011",
+        "genre": "Plunderphonics / Ambient / Avant-Garde",
+        "origin": "États-Unis",
+        "formatMetric": "10 titres",
+        "accessibility": "Nerd & Expérimental",
+        "quote": "Sampling audio from 80s TV commercials to build a new consciousness.",
+        "aiSummary": "Daniel Lopatin construit un univers sonore surréaliste en découpant et manipulant des échantillons d'audio tirés de publicités télévisées américaines des années 1980.",
+        "thematicAnalysis": "Une archéologie des médias jetables où les débris de la culture de consommation deviennent les matériaux d'une méditation ambient poignante sur la mémoire et la perte.",
+        "anecdote": "Lopatin a sélectionné les échantillons sonores en écoutant des vhs de pubs oubliées achetées au kilo auprès de collectionneurs sur des forums.",
         "tags": [
-          "Hauntologie",
-          "IDM",
-          "Électronique"
+          "Sampling",
+          "Echoculture",
+          "Avant-Garde"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "8.6/10",
-            "excerpt": "Un chef-d'œuvre de musique électronique ésotérique, saturé d'images nostalgiques et d'ombres cryptiques.",
+            "score": "8.8/10",
+            "excerpt": "A stunning collage of audio plunderphonics and electronic nostalgia.",
             "iconName": "music.note"
           },
           {
             "source": "AllMusic",
-            "score": "4.5/5",
-            "excerpt": "Une tapisserie sonore aussi fascinante que dérangeante, jouant sur le subconscient.",
+            "score": "4/5",
+            "excerpt": "An inventive electronica release built on television samples and haunting synths.",
             "iconName": "star.fill"
           },
           {
-            "source": "Rolling Stone",
-            "score": "4/5",
-            "excerpt": "Une plongée envoûtante dans une musique ambiante complexe aux strates infinies.",
+            "source": "Les Inrockuptibles",
+            "score": "Expérimental",
+            "excerpt": "Une exploration sonore captivante qui sublime les ruines de la pop culture.",
             "iconName": "quote.bubble.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2e/77/7c/2e777c13-60e3-c231-8be0-b0d43dc91598/mzi.yseuvnlj.jpg/600x600bb.jpg",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0a/2e/53/0a2e532a-9179-be31-6456-f773dd1527e0/184923201062.png/600x600bb.jpg",
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Ready Let's Go",
-            "duration": "0:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/08/8b/6a/088b6afa-cdcc-45a6-e05e-e40985ae962a/mzaf_16665727230938058105.plus.aac.p.m4a"
+            "title": "Andro",
+            "duration": "3:54",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/39/cd/a9/39cda9a7-0141-adb1-3515-0797d99df608/mzaf_1069513996663154923.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Music Is Math",
-            "duration": "5:21",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9a/4c/63/9a4c6345-e1f9-a1bd-d436-60b521afab36/mzaf_15929486305414415845.plus.aac.p.m4a"
+            "title": "Power of Persuasion",
+            "duration": "3:28",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d5/d0/7f/d5d07f6f-7b19-1f38-25e4-93d43c11f5b7/mzaf_11282145120553699418.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Beware the Friendly Stranger",
-            "duration": "0:37",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5d/7c/42/5d7c4298-aa26-0de0-0745-8fc712465c7d/mzaf_15023177098007788463.plus.aac.p.m4a"
+            "title": "Sleep Dealer",
+            "duration": "3:10",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/65/17/4a/65174a95-caf5-612d-9b1a-13535ad878d6/mzaf_12356752689850143890.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Gyroscope",
-            "duration": "3:34",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9a/d6/7b/9ad67b40-13d8-a961-c79b-bcba4fcedb81/mzaf_14855186323058112795.plus.aac.p.m4a"
+            "title": "Remember",
+            "duration": "3:23",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/25/46/1c/25461ce3-1f76-840c-7f0e-c7820df7dc64/mzaf_253367136494471105.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Dandelion",
-            "duration": "1:15",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e1/8a/10/e18a108a-07d6-27d3-de46-b752a30c723f/mzaf_2794803409626132257.plus.aac.p.m4a"
+            "title": "Replica",
+            "duration": "4:35",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8a/8d/b0/8a8db08d-2226-f292-1832-1aa1776f50d5/mzaf_10066475329150626618.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Sunshine Recorder",
-            "duration": "6:12",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/02/5a/6e025ad9-091e-b7ff-1e7b-74308b41a10b/mzaf_811055485711166439.plus.aac.p.m4a"
+            "title": "Nassau",
+            "duration": "4:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/0a/79/eb/0a79ebc7-d710-ada2-d3f0-1175fd6b47cd/mzaf_9677924400972551790.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "In the Annexe",
-            "duration": "1:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/eb/23/92/eb2392b6-3651-b8b1-1723-7b07b2aec5d6/mzaf_15234329337975143933.plus.aac.p.m4a"
+            "title": "Submersible",
+            "duration": "3:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/71/5c/c5/715cc590-40b2-d1e1-1b92-a608e909316d/mzaf_5082891266403214070.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Julie and Candy",
-            "duration": "5:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6a/f8/2c/6af82c6a-6440-24a0-fab4-eb8a082abb3b/mzaf_9756122301506520468.plus.aac.p.m4a"
+            "title": "Up",
+            "duration": "3:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e0/62/26/e0622691-59e8-5218-4b9f-76e2c190be6a/mzaf_8793428211003297459.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "The Smallest Weird Number",
-            "duration": "1:17",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/80/3e/15/803e1585-3604-454e-2327-22c88fd56778/mzaf_16722149310363004307.plus.aac.p.m4a"
+            "title": "Child Soldier",
+            "duration": "3:13",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/12/c0/25/12c02558-1c49-a691-1a65-a836e667ef06/mzaf_150716083490937619.plus.aac.p.m4a"
           },
           {
             "trackNumber": 10,
-            "title": "1969",
-            "duration": "4:20",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/67/be/1d67be8f-90d0-7fe5-a1a0-007216bc519a/mzaf_1808849044529603444.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Energy Warning",
-            "duration": "0:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/e8/68/60e86801-cfaa-a934-c1c0-d01c2187ea4a/mzaf_17044780386412980587.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "The Beach at Redpoint",
-            "duration": "4:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3e/13/1b/3e131b88-df90-36c5-3cbf-24d8dbb81872/mzaf_15531911884625236044.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Opening the Mouth",
-            "duration": "1:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/b4/ee/ecb4ee3c-2e51-b42e-08dd-0fb36c3592dd/mzaf_18420020729562876010.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 14,
-            "title": "Alpha and Omega",
-            "duration": "7:02",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/36/71/7b/36717b76-f9b2-0211-8014-83bc70e95605/mzaf_2026873432918684448.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 15,
-            "title": "I Saw Drones",
-            "duration": "0:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7e/7d/5e/7e7d5e06-aae9-86c9-6525-c8deb97e2e4d/mzaf_14676454256900125354.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 16,
-            "title": "The Devil Is In the Details",
-            "duration": "3:53",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2a/ff/e6/2affe69d-f18d-4df5-d156-22a9f95c7861/mzaf_10172451988649537680.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 17,
-            "title": "A Is to B As B Is to C",
-            "duration": "1:40",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/bd/eb/7fbdebba-e74a-9eab-c329-3ff1c8835a90/mzaf_5442911239925303459.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 18,
-            "title": "Over the Horizon Radar",
-            "duration": "1:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/9f/82/e69f8264-3623-46cd-c019-2c6f43ced7cf/mzaf_12620879758591462961.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 19,
-            "title": "Dawn Chorus",
-            "duration": "3:55",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/56/6f/a7/566fa7b2-b214-1ff7-dc12-ae3290f8a6c5/mzaf_17668196616494516360.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 20,
-            "title": "Diving Station",
-            "duration": "1:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/bd/e8/f0bde800-bc69-0429-93ed-319298a43d88/mzaf_10991887148657069425.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 21,
-            "title": "You Could Feel the Sky",
-            "duration": "5:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/85/34/7b/85347b52-b1b4-12c7-6dc4-285fb8061ad9/mzaf_2853033017075176583.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 22,
-            "title": "Corsair",
-            "duration": "2:52",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cb/52/a6/cb52a6e6-66d9-b236-28a8-570c3d93d117/mzaf_3119023560468132204.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 23,
-            "title": "Magic Window",
-            "duration": "1:46",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/94/f0/3f94f0fc-820d-ffcf-f3e0-48961aff2c26/mzaf_7360250060512274827.plus.aac.p.m4a"
+            "title": "Explain",
+            "duration": "6:43",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3b/99/10/3b9910da-6b38-c0f7-30da-c0328d7662b6/mzaf_296585102906347299.plus.aac.p.m4a"
           }
         ],
         "platformLinks": [
           {
             "name": "Spotify",
             "category": "Écouter sur Spotify",
-            "urlString": "https://open.spotify.com/search/Geogaddi%20Boards%20of%20Canada",
+            "urlString": "https://open.spotify.com/search/Replica%20Oneohtrix%20Point%20Never",
             "iconName": "waveform"
           },
           {
             "name": "Apple Music",
             "category": "Écouter sur Apple Music",
-            "urlString": "https://music.apple.com/fr/album/geogaddi/281208446?uo=4",
+            "urlString": "https://music.apple.com/fr/album/replica/1714487173?uo=4",
             "iconName": "music.note"
           },
           {
             "name": "Deezer",
             "category": "Écouter sur Deezer",
-            "urlString": "https://www.deezer.com/search/Geogaddi%20Boards%20of%20Canada",
+            "urlString": "https://www.deezer.com/search/Replica%20Oneohtrix%20Point%20Never",
             "iconName": "play.circle.fill"
           }
         ]
