@@ -1,12 +1,12 @@
 import os
 import glob
 import json
+import time
 import datetime
 import urllib.parse
 import requests
 
 def get_previously_used_titles():
-    """Scanne les archives pour dresser la liste noire des œuvres déjà sorties."""
     used = set()
     files = glob.glob("archive/*.json")
     if os.path.exists("today.json"):
@@ -164,11 +164,11 @@ Crée aujourd'hui 3 éditions thématiques TOTALEMENT INÉDITES selon 3 niveaux 
 {exclusion_block}
 
 EXIGENCE CRITIQUE STRICTE & FACTUELLE (REVUES DE PRESSE VÉRIFIÉES) :
-Pour chaque œuvre sélectionnée, fournis impérativement 3 ou 4 critiques AUTHENTIQUES et VÉRIFIÉES issues de médias de référence ayant réellement chroniqué l'œuvre :
-- Pour les LIVRES : citer de vraies revues parmi *Le Monde des Livres*, *Télérama*, *Libération*, *Babelio*, *Le Figaro Littéraire*, *Lire Magazine*, *The Guardian*.
-- Pour les FILMS : citer les vraies notes avec leur système de notation réel parmi *Télérama* (utiliser les vrais 'T' : T, TT, TTT, TTTT), *Cahiers du Cinéma*, *Allociné Presse* (/5), *SensCritique* (/10), *Rotten Tomatoes* (%).
-- Pour les ALBUMS : citer la note exacte et réelle parmi *Pitchfork* (note réelle à un chiffre après la virgule, ex: 8.4/10), *Rolling Stone* (/5), *Les Inrockuptibles*, *The Guardian*, *AllMusic*.
-- INTERDICTION FORMELLE D'INVENTER UNE NOTE OU UN AVIS : chaque extrait ("excerpt") doit fidèlement synthétiser la position critique réelle du média concerné lors de la sortie ou de la postérité de l'œuvre.
+Pour chaque œuvre sélectionnée, fournis impérativement 3 critiques AUTHENTIQUES issues de médias reconnus :
+- LIVRES : citer de vraies revues parmi *Le Monde des Livres*, *Télérama*, *Libération*, *Babelio*, *Le Figaro Littéraire*, *Lire Magazine*.
+- FILMS : citer les vraies notes avec leur système de notation réel parmi *Télérama* (notations réelles : T, TT, TTT, TTTT), *Cahiers du Cinéma*, *Allociné Presse* (/5), *SensCritique* (/10), *Rotten Tomatoes* (%).
+- ALBUMS : citer la note exacte parmi *Pitchfork* (note réelle à un chiffre après la virgule, ex: 8.4/10), *Rolling Stone* (/5), *Les Inrockuptibles*, *The Guardian*, *AllMusic*.
+- AUCUNE INVENTION : chaque extrait ("excerpt") doit fidèlement synthétiser la position critique réelle du média.
 
 Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```json) respectant scrupuleusement ce schéma :
 {{
@@ -182,12 +182,13 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```
         "quote": "Citation authentique", "aiSummary": "Résumé captivant", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique",
         "tags": ["Tag1", "Tag2"],
         "ratings": [
-          {{"source": "Le Figaro Littéraire", "score": "5/5", "excerpt": "Synthèse de la vraie réception critique.", "iconName": "newspaper.fill"}},
-          {{"source": "Babelio", "score": "4.4/5", "excerpt": "Consensus des lecteurs et critiques littéraires.", "iconName": "star.fill"}}
+          {{"source": "Le Figaro Littéraire", "score": "5/5", "excerpt": "Synthèse critique.", "iconName": "newspaper.fill"}},
+          {{"source": "Babelio", "score": "4.4/5", "excerpt": "Consensus des lecteurs.", "iconName": "star.fill"}},
+          {{"source": "Télérama", "score": "TTT", "excerpt": "Regard sur le style.", "iconName": "quote.bubble.fill"}}
         ]
       }},
-      {{ "type": "FILM", "title": "Titre exact", "creator": "Réalisateur", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "2h 05m", "accessibility": "Culte & Grand Public", "quote": "Réplique culte", "aiSummary": "Synopsis", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Télérama", "score": "TTTT", "excerpt": "Synthèse de la critique.", "iconName": "film.fill"}}] }},
-      {{ "type": "ALBUM", "title": "Titre exact", "creator": "Artiste", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "10 titres", "accessibility": "Écoute Immédiate", "quote": "Citation", "aiSummary": "Présentation", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Pitchfork", "score": "8.8/10", "excerpt": "Synthèse du test réel.", "iconName": "music.note"}}] }}
+      {{ "type": "FILM", "title": "Titre exact", "creator": "Réalisateur", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "2h 05m", "accessibility": "Culte & Grand Public", "quote": "Réplique culte", "aiSummary": "Synopsis", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Télérama", "score": "TTTT", "excerpt": "Synthèse critique.", "iconName": "film.fill"}}, {{"source": "Cahiers du Cinéma", "score": "5/5", "excerpt": "Mise en scène.", "iconName": "star.fill"}}, {{"source": "Première", "score": "4/5", "excerpt": "Jeu d'acteur.", "iconName": "newspaper.fill"}}] }},
+      {{ "type": "ALBUM", "title": "Titre exact", "creator": "Artiste", "year": "Année", "genre": "Genre", "origin": "Pays", "formatMetric": "10 titres", "accessibility": "Écoute Immédiate", "quote": "Citation", "aiSummary": "Présentation", "thematicAnalysis": "Analyse de résonance", "anecdote": "Anecdote véridique", "tags": ["Tag1", "Tag2"], "ratings": [{{"source": "Pitchfork", "score": "8.8/10", "excerpt": "Synthèse du test.", "iconName": "music.note"}}, {{"source": "Rolling Stone", "score": "5/5", "excerpt": "Puissance des morceaux.", "iconName": "star.fill"}}, {{"source": "Les Inrockuptibles", "score": "Indispensable", "excerpt": "Inventivité.", "iconName": "quote.bubble.fill"}}] }}
     ]
   }},
   "intermediate": {{
@@ -210,15 +211,27 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```
     headers = {"Content-Type": "application/json"}
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "tools": [{"google_search": {}}],
         "generationConfig": {
             "temperature": 0.7,
             "topP": 0.95
         }
     }
 
-    print("Génération du triptyque vérifié avec Google Search Grounding...")
-    response = requests.post(url, headers=headers, json=payload, timeout=120)
+    max_retries = 3
+    response = None
+    for attempt in range(1, max_retries + 1):
+        print(f"Tentative de génération {attempt}/{max_retries}...")
+        response = requests.post(url, headers=headers, json=payload, timeout=90)
+        if response.status_code == 200:
+            break
+        elif response.status_code == 429:
+            wait_time = 15 * attempt
+            print(f"Quota temporaire atteint (429). Pause de {wait_time}s...")
+            time.sleep(wait_time)
+        else:
+            print(f"Erreur API: {response.text}")
+            response.raise_for_status()
+
     response.raise_for_status()
 
     result = response.json()
@@ -242,7 +255,7 @@ Renvoie UNIQUEMENT un objet JSON valide (texte brut, aucun balisage markdown ```
 
     with open("today.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print("today.json authentifié et enregistré.")
+    print("today.json généré et enregistré avec succès.")
 
     os.makedirs("archive", exist_ok=True)
     today_str = datetime.date.today().strftime("%Y-%m-%d")
