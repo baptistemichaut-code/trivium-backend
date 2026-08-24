@@ -1,742 +1,415 @@
 {
   "accessible": {
-    "themeTitle": "La Fureur de Vivre",
-    "themeSubtitle": "Trois œuvres immortelles où la passion et la quête de liberté bravent le destin.",
+    "themeTitle": "L'Odyssée des Étoiles et des Hommes",
+    "themeSubtitle": "Quand l'Humanité contemple l'immensité pour se confronter à sa propre fragilité existentialiste",
     "items": [
       {
         "type": "LIVRE",
-        "title": "1984",
-        "creator": "George Orwell",
-        "year": "1949",
-        "origin": "Royaume-Uni",
-        "genre": "Roman / Dystopie",
+        "title": "Le Petit Prince",
+        "creator": "Antoine de Saint-Exupéry",
+        "year": "1943",
+        "origin": "France",
+        "genre": "Conte philosophique",
         "accessibility": "Pop Culture",
-        "formatMetric": "328 pages",
-        "quote": "Tant qu’ils ne seront pas devenus conscients, ils ne se révolteront jamais.",
-        "anecdote": "Orwell a rédigé le manuscrit final isolé sur la sauvage île de Jura en Écosse, en luttant contre les accès sévères de la tuberculose qui allait l'emporter peu après.",
+        "formatMetric": "96 pages",
+        "quote": "On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux.",
+        "anecdote": "Les premières illustrations à l'aquarelle ont été dessinées par Saint-Exupéry lui-même alors qu'il était en exil à New York durant la Seconde Guerre mondiale.",
         "tags": [
-          "Dystopie",
-          "Liberté",
-          "Culte"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre absolu qui continue de façonner notre vision de la liberté."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une prophétie effrayante portée par une puissance littéraire intacte."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Le roman ultime sur le contrôle social et l'insoumission."
-          }
-        ],
-        "aiSummary": "Dans un monde dystopique écrasé par la surveillance permanente de Big Brother, Winston Smith tente de préserver son autonomie de pensée. Sa rencontre avec Julia l'entraîne dans une rébellion intime et clandestine contre le régime.",
-        "thematicAnalysis": "Ce roman incarne la lutte fondamentale de l'esprit humain désireux d'exister et d'aimer face à un système totalitaire concu pour annihiler l'individu.",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=1984%20George%20Orwell",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984%20George%20Orwell",
-            "iconName": "bag.fill"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/99/e0/01/99e0015c-4cc8-fc9e-87a5-839709de8bf5/9782818708293-001-x.jpeg/800x800bb.jpg"
-      },
-      {
-        "type": "FILM",
-        "title": "Gladiator",
-        "creator": "Ridley Scott",
-        "year": "2000",
-        "origin": "États-Unis",
-        "genre": "Péplum / Action",
-        "accessibility": "Pop Culture",
-        "formatMetric": "2h 35m",
-        "quote": "Ce que nous faisons dans la vie résonne dans l'éternité.",
-        "anecdote": "L'acteur Oliver Reed est décédé pendant le tournage à Malte, obligeant la production à créer l'une des premières doublures numériques majeures du cinéma.",
-        "tags": [
-          "Péplum",
-          "Vengeance",
-          "Héroïsme"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Un souffle mythologique d'une puissance visuelle impressionnante."
-          },
-          {
-            "source": "Le Figaro",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un spectacle monumental qui a ressuscité le genre du péplum avec maestria."
-          },
-          {
-            "source": "Télérama",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Russell Crowe incarne la fureur et la dignité avec une force mémorable."
-          }
-        ],
-        "aiSummary": "Trahi par l'ambitieux Commode après le meurtre de sa famille, le général romain Maximus est réduit en esclavage et devient gladiateur. Sa quête de justice dans l'arène va ébranler les fondations mêmes de l'Empire.",
-        "thematicAnalysis": "Ridley Scott dépeint la résilience héroïque d'un homme qui transforme son deuil et sa déchéance en un combat universel pour la liberté et l'honneur.",
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Gladiator%20Ridley%20Scott",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Gladiator",
-            "iconName": "apple.logo"
-          }
-        ]
-      },
-      {
-        "type": "ALBUM",
-        "title": "Born to Run",
-        "creator": "Bruce Springsteen",
-        "year": "1975",
-        "origin": "États-Unis",
-        "genre": "Heartland Rock",
-        "accessibility": "Pop Culture",
-        "formatMetric": "8 titres",
-        "quote": "Tramps like us, baby, we were born to run.",
-        "anecdote": "Bruce Springsteen a passé plus de six mois à perfectionner la seule chanson-titre, obsédé par l'idée d'obtenir le son d'opéra rock grandiose qu'il entendait dans sa tête.",
-        "tags": [
-          "Rock",
-          "Évasion",
-          "Monument"
-        ],
-        "ratings": [
-          {
-            "source": "Rolling Stone",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "L'album américain ultime sur la jeunesse et l'échappée belle."
-          },
-          {
-            "source": "Pitchfork",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un opéra rock lyrique et grandiose, vibrant d'une urgence vitale."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une décharge d'énergie romantique au souffle inépuisable."
-          }
-        ],
-        "aiSummary": "Troisième album du Boss, *Born to Run* est un hymne cinématographique aux ruelles prolétaires, aux ruées nocturnes et aux espoirs d'évasion. Entre envolées de saxophones et guitares rageuses, l'album scelle le mythe du rock américain.",
-        "thematicAnalysis": "Ce disque capture l'élan désespéré et magnifique d'une jeunesse prête à tout brûler pour échapper au destin tout tracé d'un quotidien étouffant.",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/born-to-run/310730204?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Born%20to%20Run%20Bruce%20Springsteen",
-            "iconName": "music.note"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/02/f7/0a02f7a1-ca2a-c0d7-7192-50314971721f/884977157031.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Thunder Road",
-            "duration": "4:49",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/50/f8/73/50f87350-f4ea-0c0e-29fe-414250dbe921/mzaf_10874294733181406437.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Tenth Avenue Freeze-Out",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/73/d8/57/73d857d3-7795-38e5-970a-b71364ece700/mzaf_6384113238720606061.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Night",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/86/91/57/86915712-aff1-75c1-21a7-c351ec7b045b/mzaf_11198797217499344289.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Backstreets",
-            "duration": "6:31",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b5/1d/44/b51d4446-82c2-2b03-14e1-8661acdb6739/mzaf_17373544808725237563.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Born to Run",
-            "duration": "4:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/fa/74/c0fa74e3-d6e0-e921-a3d7-f3510642e384/mzaf_13658789004299075799.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "She's the One",
-            "duration": "4:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/9a/40/fb9a4064-d427-845c-c7fa-76a45d6480fb/mzaf_13214157385162555611.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Meeting Across the River",
-            "duration": "3:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/8b/81/338b8183-f5dc-5744-d005-c2c44ce2f5df/mzaf_5721957081814608383.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Jungleland",
-            "duration": "9:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c5/57/7f/c5577fb2-0216-b93f-1c23-1e7400465206/mzaf_7081282549680441249.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "intermediate": {
-    "themeTitle": "Les Labyrinthes de l'Intimité",
-    "themeSubtitle": "Trois œuvres poignantes sur l'isolement moderne et la beauté fugitive des reconnexions.",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "L'Attrape-cœurs",
-        "creator": "J.D. Salinger",
-        "year": "1951",
-        "origin": "États-Unis",
-        "genre": "Roman d'apprentissage",
-        "accessibility": "Curieux",
-        "formatMetric": "250 pages",
-        "quote": "C'est la vérité, je ne sais pas trop ce que ça veut dire, mais c'est comme ça.",
-        "anecdote": "Salinger a conservé les premiers chapitres de ce roman dans sa poche pendant qu'il participait au débarquement en Normandie en 1944.",
-        "tags": [
-          "Adolescence",
-          "Mélancolie",
+          "Philosophie",
+          "Poésie",
           "Incontournable"
         ],
         "ratings": [
           {
-            "source": "Le Monde",
-            "score": "4.5/5",
+            "source": "Le Monde des Livres",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une voix inoubliable sur la beauté fragile et les tourments de la jeunesse."
+            "excerpt": "Un chef-d'œuvre universel dont la simplicité apparente masque une métaphysique d'une profondeur bouleversante."
+          },
+          {
+            "source": "The New York Times",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une parabole poétique brillante sur l'amour, la perte et la redécouverte de l'émerveillement enfantin."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de sincérité et d'ironie amère face au monde adulte."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Le roman fondamental sur le sentiment d'aliénation moderne."
+            "excerpt": "Un récit fondateur qui traverse les générations sans jamais perdre de son pouvoir de fascination."
           }
         ],
-        "aiSummary": "Exclu de son lycée, l'adolescent Holden Caulfield erre pendant trois jours dans un New York hivernal. À travers son regard corrosif et vulnérable, il exprime son rejet de l'hypocrisie des adultes et son désir de protéger l'innocence.",
-        "thematicAnalysis": "L'œuvre explore avec une justesse intemporelle la fracture entre le monde intérieur d'un individu en quête de vérité et la rigidité de la société.",
+        "aiSummary": "Un aviateur échoué dans le désert rencontre un jeune prince venu d'un astéroïde lointain. À travers le récit de ses voyages d'une planète à l'autre, le garçon délivre une leçon d'humanité inoubliable.",
+        "thematicAnalysis": "Inaugure le triptyque en explorant la solitude humaine à l'échelle cosmologique, révélant que la quête des étoiles ramène inévitablement aux liens affectifs les plus intimes.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Attrape-c%C5%93urs%20J.D.%20Salinger",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Petit%20Prince%20Antoine%20de%20Saint-Exup%C3%A9ry",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Attrape-c%C5%93urs%20J.D.%20Salinger",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Petit%20Prince%20Antoine%20de%20Saint-Exup%C3%A9ry",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/52/08/94/520894fa-5f0a-f1d9-3862-9e996bc7fe85/9782511026953.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/0e/b4/1a/0eb41ac2-ddfa-004e-2f36-1486d87d2009/9782072431258.jpg/800x800bb.jpg"
       },
       {
-        "type": "FILM",
-        "title": "Lost in Translation",
-        "creator": "Sofia Coppola",
-        "year": "2003",
+        "type": "CINÉMA",
+        "title": "Interstellar",
+        "creator": "Christopher Nolan",
+        "year": "2014",
         "origin": "États-Unis",
-        "genre": "Comédie dramatique",
-        "accessibility": "Curieux",
-        "formatMetric": "1h 42m",
-        "quote": "Plus vous savez qui vous êtes et ce que vous voulez, moins vous laissez les choses vous perturber.",
-        "anecdote": "Sofia Coppola a écrit le rôle spécialement pour Bill Murray et l'a traqué pendant des mois sans savoir s'il se présenterait véritablement sur le plateau à Tokyo.",
+        "genre": "Science-Fiction / Drame",
+        "accessibility": "Pop Culture",
+        "formatMetric": "2h49",
+        "quote": "L'amour est la seule chose qui dépasse le temps et l'espace.",
+        "anecdote": "L'astrophysicien Kip Thorne, prix Nobel de physique, a supervisé les équations scientifiques du film, permettant de modéliser pour la première fois un trou noir scientifiquement exact.",
         "tags": [
-          "Solitude",
-          "Tokyo",
-          "Poétique"
+          "Espace",
+          "Temps",
+          "Spectaculaire"
         ],
         "ratings": [
           {
-            "source": "Cahiers du Cinéma",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre délicate et nocturne d'une grâce mélancolique étincelante."
+            "source": "Rotten Tomatoes",
+            "score": "87%",
+            "iconName": "percent",
+            "excerpt": "Une épopée visuellement stupéfiante et émotionnellement vibrante qui réinvente la science-fiction moderne."
+          },
+          {
+            "source": "Metacritic",
+            "score": "74/100",
+            "iconName": "chart.bar.fill",
+            "excerpt": "Une ambition folle portée par une partition grandiose d'Hans Zimmer et une maîtrise technique exemplaire."
           },
           {
             "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "La rencontre miraculeuse de deux âmes égarées dans le vertige urbain."
-          },
-          {
-            "source": "Libération",
             "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Un film suspendu qui capture avec une immense finesse le décalage horaire et intime."
+            "excerpt": "Nolan marie virtuosité spectaculaire et mélodrame familial dans un vertige cosmique impressionnant."
           }
         ],
-        "aiSummary": "Bob, un acteur américain sur le retour, et Charlotte, une jeune femme délaissée par son mari, se croisent dans le bar d'un grand hôtel tokyoïte. Ensemble, ils apprivoisent l'insomnie et tissent un lien d'une tendresse inoubliable.",
-        "thematicAnalysis": "Sofia Coppola met en scène l'isolement urbain pour mieux révéler la beauté des parenthèses humaines qui éclairent nos existences.",
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Lost%20in%20Translation%20Sofia%20Coppola",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Lost%20in%20Translation",
-            "iconName": "apple.logo"
-          }
-        ]
+        "aiSummary": "Dans un futur proche où la Terre se meurt, un groupe d'explorateurs franchit un trou de ver pour trouver une nouvelle planète habitable. Un voyage au-delà du temps où l'amour paternel devient l'ultime force de gravité.",
+        "thematicAnalysis": "Prolonge le thème cosmique en confrontant la survie matérielle de l'espèce à l'irréductibilité de l'amour à travers le temps et la gravité."
       },
       {
-        "type": "ALBUM",
-        "title": "OK Computer",
-        "creator": "Radiohead",
-        "year": "1997",
+        "type": "MUSIQUE",
+        "title": "The Dark Side of the Moon",
+        "creator": "Pink Floyd",
+        "year": "1973",
         "origin": "Royaume-Uni",
-        "genre": "Art Rock",
-        "accessibility": "Curieux",
-        "formatMetric": "12 titres",
-        "quote": "Fitter, happier, more productive...",
-        "anecdote": "L'album a été enregistré en grande partie dans un manoir historique du XVe siècle appartenu à la comédienne Jane Seymour, conférant une réverbération naturelle unique aux morceaux.",
+        "genre": "Rock Progressif",
+        "accessibility": "Pop Culture",
+        "formatMetric": "10 titres • 43 min",
+        "quote": "And then one day you find ten years have got behind you. No one told you when to run, you missed the starting gun.",
+        "anecdote": "Les voix parlées en arrière-plan sont les réponses de techniciens du studio Abbey Road et de membres du staff à des cartes de questions posées par Roger Waters.",
         "tags": [
-          "Art Rock",
-          "Aliénation",
-          "Visionnaire"
+          "Concept-Album",
+          "Psychédélique",
+          "Monument"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "5/5",
+            "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Un sommet d'une intuition prophétique sur les dérives du monde numérique."
+            "excerpt": "Un chef-d'œuvre absolu de la production studio qui a redéfini les possibilités de la musique populaire."
           },
           {
             "source": "Rolling Stone",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Le chef-d'œuvre définitif du rock alternatif des années 1990."
+            "excerpt": "Une méditation fascinante sur la folie, le temps et la mortalité, portée par des arrangements somptueux."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un disque saisissant d'une beauté tragique et visionnaire."
+            "excerpt": "L'album ultime de la culture rock, dont la perfection sonore n'a pas pris une seule ride."
           }
         ],
-        "aiSummary": "Monument de la musique moderne, *OK Computer* capture l'angoisse de l'aube du nouveau millénaire face à la mondialisation et la technologie. Radiohead y déploie des textures guitaristiques et électroniques d'une complexité somptueuse.",
-        "thematicAnalysis": "Le groupe exprime le vertige d'une humanité prise au piège des rouages automatisés et de l'isolement technologique.",
+        "aiSummary": "Fresque sonore monumentale abordant les pressions de la vie moderne : le temps qui passe, l'argent, la folie et la mort. Un voyage immersif novateur qui demeure l'un des albums les plus vendus de tous les temps.",
+        "thematicAnalysis": "Clôture ce triptyque en apportant une bande-son cathartique aux peurs existentielles et au sentiment d'isolement face à la grandeur de l'univers."
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "Les Résonances du Silencieux",
+    "themeSubtitle": "Traversée mélancolique d'un monde désenchanté à la recherche d'une lumière résiduelle",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "La Route",
+        "creator": "Cormac McCarthy",
+        "year": "2006",
+        "origin": "États-Unis",
+        "genre": "Roman post-apocalyptique",
+        "accessibility": "Curieux",
+        "formatMetric": "256 pages",
+        "quote": "Tu dois porter le feu. Je ne sais pas comment faire. Si, tu sais. C'est à l'intérieur de toi.",
+        "anecdote": "Cormac McCarthy a dédié ce roman poignant à son jeune fils John Francis, avec qui il avait imaginé le paysage dévasté de la ville de El Paso lors d'un voyage.",
+        "tags": [
+          "Post-Apocalyptique",
+          "Paternité",
+          "Épuré"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une écriture biblique, d'une sobriété magistrale, qui transforme la noirceur absolue en hymne à la tendresse."
+          },
+          {
+            "source": "The New York Times",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre dévastateur sur l'amour inconditionnel au milieu des ruines de la civilisation."
+          },
+          {
+            "source": "Télérama",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "McCarthy livre une métaphore poignante de la transmission et de l'espoir tenace."
+          }
+        ],
+        "aiSummary": "Un père et son fils arpentent une Amérique dévastée couverte de cendres, poussant un caddie vers l'océan. Face à la barbarie ambiante, ils tentent d'endurer le froid en préservant leur humanité.",
+        "thematicAnalysis": "Pose la première pierre du thème en montrant la résistance de la bonté humaine au sein d'un univers désertique et mutique.",
         "platformLinks": [
           {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/ok-computer/1097861387?uo=4",
-            "iconName": "apple.logo"
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Route%20Cormac%20McCarthy",
+            "iconName": "book.fill"
           },
           {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/OK%20Computer%20Radiohead",
-            "iconName": "music.note"
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Route%20Cormac%20McCarthy",
+            "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg",
-        "tracks": [
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/a7/27/0f/a7270f21-cd55-3f48-1e58-0eabb2fc70d1/9782823620399.jpg/800x800bb.jpg"
+      },
+      {
+        "type": "CINÉMA",
+        "title": "Drive",
+        "creator": "Nicolas Winding Refn",
+        "year": "2011",
+        "origin": "États-Unis",
+        "genre": "Neo-Noir / Thriller",
+        "accessibility": "Curieux",
+        "formatMetric": "1h40",
+        "quote": "I drive. That's what I do. Nothing else.",
+        "anecdote": "Ryan Gosling et le réalisateur se sont rencontrés lors d'un dîner catastrophique jusqu'à ce qu'ils chantent ensemble du REO Speedwagon en voiture, scellant la vision néon du film.",
+        "tags": [
+          "Neo-Noir",
+          "Synthwave",
+          "Stylisé"
+        ],
+        "ratings": [
           {
-            "trackNumber": 1,
-            "title": "Airbag",
-            "duration": "4:47",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/df/b0/bedfb055-c0be-4fc5-0626-fe763667c47c/mzaf_796757830115551221.plus.aac.p.m4a"
+            "source": "Cahiers du Cinéma",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un exercice de style hypnotique où le mutisme du héros devient le vecteur d'une poésie romantique brutale."
           },
           {
-            "trackNumber": 2,
-            "title": "Paranoid Android",
-            "duration": "6:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/22/d6/7022d661-b3e0-9c64-5e18-dd6edaaa53d2/mzaf_12758650973786995732.plus.aac.p.m4a"
+            "source": "Rotten Tomatoes",
+            "score": "93%",
+            "iconName": "percent",
+            "excerpt": "Un mélange hyper-stylisé de violence hyper-réaliste, de romance éthérée et de musique synthétique inoubliable."
           },
           {
-            "trackNumber": 3,
-            "title": "Subterranean Homesick Alien",
-            "duration": "4:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/54/3f/ef543f99-1764-147b-ceb6-7e55ae9c6532/mzaf_5965456906361221510.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Exit Music (For a Film)",
-            "duration": "4:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7a/0d/da/7a0ddafc-b83b-bc77-2f34-db75caca92c1/mzaf_9668535207056622280.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Let Down",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/66/13/3c/66133c2c-59a6-f17b-0b88-7f61e1edc181/mzaf_12936594904953407247.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Karma Police",
-            "duration": "4:24",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/d7/8b/95d78bf8-aa46-9d40-ce93-0652918bc68f/mzaf_12066288776609103708.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Fitter Happier",
-            "duration": "1:57",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/64/b6/cd/64b6cd1c-d34a-964e-a865-33aab903d0f8/mzaf_13414360376847120372.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Electioneering",
-            "duration": "3:50",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/03/93/64/039364b9-45f8-61ef-8401-48e924bdc756/mzaf_10716685903999219088.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Climbing Up the Walls",
-            "duration": "4:45",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fa/6f/e3/fa6fe319-595c-0be8-e119-40508f7ee374/mzaf_6422518418551646344.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "No Surprises",
-            "duration": "3:49",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/02/b7/ef02b776-f887-f1f0-acfb-e7d9776ba503/mzaf_2515606267255808294.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Lucky",
-            "duration": "4:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/97/ef/2f97ef48-6a08-806c-5edd-386fd3e6fa9e/mzaf_16840656227165538105.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "The Tourist",
-            "duration": "5:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b6/b5/f6/b6b5f6a1-0813-38b0-e444-4f06f082739c/mzaf_16880295430908667853.plus.aac.p.m4a"
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un conte féérique noir baigné de néons, couronné par un prix de la mise en scène amplement mérité à Cannes."
           }
-        ]
+        ],
+        "aiSummary": "Un cascadeur silencieux et mécanicien le jour sert de chauffeur pour le banditisme la nuit. Lorsqu'il tente de protéger sa voisine et son fils d'un gang féroce, son quotidien bascule dans la violence purificatrice.",
+        "thematicAnalysis": "Explore la figure d'un solitaire laconique évoluant dans un paysage urbain nocturne, agissant par pur instinct moral salvateur."
+      },
+      {
+        "type": "MUSIQUE",
+        "title": "Funeral",
+        "creator": "Arcade Fire",
+        "year": "2004",
+        "origin": "Canada",
+        "genre": "Rock Indépendant",
+        "accessibility": "Curieux",
+        "formatMetric": "10 titres • 48 min",
+        "quote": "If the children wiped the tears from your eyes, I'd try to squeeze the storm from the sky.",
+        "anecdote": "L'album tire son nom du fait que plusieurs membres du groupe ont perdu de proches parents durant sa création, infusant le disque d'une urgence émotionnelle brute.",
+        "tags": [
+          "Indie Rock",
+          "Catharsis",
+          "Émotion"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.7/10",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre d'une honnêteté foudroyante qui a redéfini le paysage du rock indépendant des années 2000."
+          },
+          {
+            "source": "NME",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un premier album incandescent et triomphant, transformant le deuil en une célébration éperdue de la vie."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une électricité orchestrale magistrale portée par un chant d'une ferveur absolue."
+          }
+        ],
+        "aiSummary": "Écrit dans un contexte de deuil partagé, ce premier album d'Arcade Fire est un cri du cœur symphonique d'une rare intensité indé, mêlant violons lyriques, guitares rageuses et chœurs cathartiques.",
+        "thematicAnalysis": "Couronne le triptyque en transformant la douleur du silence et du manque en une célébration musicale orchestrale éclatante."
       }
     ]
   },
   "expert": {
-    "themeTitle": "La Déconstruction des Formes",
-    "themeSubtitle": "Trois jalons d'avant-garde qui réinventent le langage, le temps et la matière sonore.",
+    "themeTitle": "Archéologie de la Perception",
+    "themeSubtitle": "Déconstruction des structures formelles pour explorer les vertiges de la mémoire et du temps",
     "items": [
       {
         "type": "LIVRE",
-        "title": "L'Innommable",
-        "creator": "Samuel Beckett",
-        "year": "1953",
-        "origin": "France / Irlande",
-        "genre": "Roman d'avant-garde",
+        "title": "La Jalousie",
+        "creator": "Alain Robbe-Grillet",
+        "year": "1957",
+        "origin": "France",
+        "genre": "Nouveau Roman",
         "accessibility": "Initié",
-        "formatMetric": "200 pages",
-        "quote": "Il faut continuer, je ne peux pas continuer, je vais continuer.",
-        "anecdote": "Beckett a choisi de rédiger ce livre directement en français plutôt que dans sa langue maternelle anglaise pour dépouiller son style de tout ornement artificiel.",
+        "formatMetric": "224 pages",
+        "quote": "Maintenant la ombre du poteau divise en deux parties égales l'angle du soubassement.",
+        "anecdote": "Le titre joue sur un double sens typiquement français : la jalousie comme passion maladive et la 'jalousie' comme store à volets orientables à travers lequel le narrateur invisible observe.",
         "tags": [
-          "Existentialisme",
-          "Minimalisme",
-          "Radical"
+          "Nouveau Roman",
+          "Avant-Garde",
+          "Géométrie"
         ],
         "ratings": [
           {
-            "source": "Le Monde",
+            "source": "Le Monde des Livres",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un sommet d'audace formelle qui repousse les frontières de la prose."
+            "excerpt": "Un monument du Nouveau Roman qui transforme la description objective en un piège obsessionnel fascinant."
+          },
+          {
+            "source": "Libération",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience de lecture radicale où la précision millimétrique du regard révèle une folie sous-jacente."
           },
           {
             "source": "Télérama",
-            "score": "4.5/5",
+            "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Une plongée vertigineuse aux limites de la voix narrative et du néant."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "L'épuration absolue et radicale de l'art romanesque."
+            "excerpt": "Une déconstruction virtuose de la narration traditionnelle au profit d'une pure géométrie des sentiments."
           }
         ],
-        "aiSummary": "Sans corps identifiable ni repère temporel, une voix monologue sans fin pour tenter de cerner son propre être. Dans cette ultime partie de sa trilogie, Beckett pousse le langage littéraire dans ses retranchements les plus absolus.",
-        "thematicAnalysis": "Une exploration sans concession de l'acte de création, où la parole persiste obstinément malgré la dissolution de toutes les certitudes narratives.",
+        "aiSummary": "Sur une plantation bananière tropicale, un narrateur jamais nommé décrit de manière obsessionnelle et clinique les moindres gestes de sa femme A... et de leur voisin. Une mécanique de la suspicion géométrique sans équivalent.",
+        "thematicAnalysis": "Ouvre la réflexion pointue en réduisant le récit à une observation purement phénoménologique de l'espace pour matérialiser une obsession interne.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Innommable%20Samuel%20Beckett",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Jalousie%20Alain%20Robbe-Grillet",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Innommable%20Samuel%20Beckett",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Jalousie%20Alain%20Robbe-Grillet",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication69/v4/8c/ea/f2/8ceaf27c-94e0-8358-7fcc-ae1a1c9258cd/9782707325549.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/93/aa/5f/93aa5fe7-9b0f-20fa-e381-f328fa4348f9/9782707324146.jpg/800x800bb.jpg"
       },
       {
-        "type": "FILM",
-        "title": "L'Année dernière à Marienbad",
-        "creator": "Alain Resnais",
-        "year": "1961",
-        "origin": "France",
-        "genre": "Avant-garde / Drame",
+        "type": "CINÉMA",
+        "title": "Stalker",
+        "creator": "Andreï Tarkovski",
+        "year": "1979",
+        "origin": "URSS",
+        "genre": "Science-Fiction Métaphysique",
         "accessibility": "Initié",
-        "formatMetric": "1h 34m",
-        "quote": "Marienbad, où nous nous sommes rencontrés l'année dernière...",
-        "anecdote": "Le découpage écrit par l'écrivain Alain Robbe-Grillet était si millimétré que le réalisateur Alain Resnais l'a suivi presque exactement au plan près.",
+        "formatMetric": "2h42",
+        "quote": "Que leur foi se réalise. Qu'ils croient. Et qu'ils rient de leurs passions.",
+        "anecdote": "La première version du film sur pellicule Kodak a été détruite lors du développement dans un laboratoire moscovite, obligeant Tarkovski à refilmer l'intégralité du métrage avec un budget réduit.",
         "tags": [
-          "Labyrinthe",
-          "Onirique",
-          "Rupture"
+          "Contemplatif",
+          "Poétique",
+          "Philosophique"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une révolution esthétique majeure qui réinvente l'espace et le temps cinématographiques."
+            "excerpt": "Une œuvre fondamentale où la matière même de la pellicule devient le lieu d'une quête spirituelle transcendante."
           },
           {
-            "source": "Le Monde",
+            "source": "Rotten Tomatoes",
+            "score": "96%",
+            "iconName": "percent",
+            "excerpt": "Un voyage hypnotique à travers des paysages industriels en ruines, offrant une expérience cinématographique quasi mystique."
+          },
+          {
+            "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un poème visuel d'une rigueur formelle et d'une beauté hypnotiques."
-          },
-          {
-            "source": "Positif",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un dédale envoûtant sur les trompe-l'œil de la mémoire et du désir."
+            "excerpt": "Un poème visuel magistral sur le désir, la croyance et la solitude de l'âme humaine."
           }
         ],
-        "aiSummary": "Dans un hôtel monumental aux jardins géométriques, un homme tente d'interpeller une femme en lui affirmant qu'ils ont eu une liaison l'année précédente. La mémoire se dissout dans une architecture baroque aux miroirs trompeurs.",
-        "thematicAnalysis": "Resnais déconstruit le récit linéaire pour matérialiser les trompe-l'œil du souvenir et l'architecture mouvante de la mémoire humaine.",
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad%20Alain%20Resnais",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
-            "iconName": "apple.logo"
-          }
-        ]
+        "aiSummary": "Un passeur guidé par sa foi mène un Écrivain et un Professeur à travers la 'Zone', un territoire mystérieux et dangereux abritant une chambre censée exaucer les désirs les plus intimes de l'être humain.",
+        "thematicAnalysis": "Questionne les limites de la perception et du désir à travers une exploration quasi-rituelle d'un espace géographique déroutant."
       },
       {
-        "type": "ALBUM",
-        "title": "Trout Mask Replica",
-        "creator": "Captain Beefheart & His Magic Band",
-        "year": "1969",
+        "type": "MUSIQUE",
+        "title": "Music for 18 Musicians",
+        "creator": "Steve Reich",
+        "year": "1978",
         "origin": "États-Unis",
-        "genre": "Avant-Garde / Experimental Rock",
+        "genre": "Minimalisme / Musique Contemporaine",
         "accessibility": "Initié",
-        "formatMetric": "28 titres",
-        "quote": "A squid eating dough in the polyethylene bag is fast and bulbous.",
-        "anecdote": "Frank Zappa a produit cet album après que Beefheart a contraint ses musiciens à vivre et répéter en reclusion quasi totale pendant huit mois dans un pavillon californien.",
+        "formatMetric": "11 mouvements • 56 min",
+        "quote": "Le processus musical doit être assimilable directement par l'écoute attentive.",
+        "anecdote": "Le rythme respiratoire des instrumentistes à vent et des choristes dicte directement la durée de certaines notes, intégrant la physiologie humaine au cœur même de la structure minimale.",
         "tags": [
-          "Expérimental",
-          "Free Blues",
-          "Radical"
+          "Minimalisme",
+          "Pulsation",
+          "Avant-Garde"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "L'un des plus grands chefs-d'œuvre du XXe siècle, une cathédrale sonore aux ondulations temporelles infinies."
+          },
+          {
+            "source": "AllMusic",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre d'anarchie sonore scrupuleusement composée."
+            "excerpt": "Un sommet de la musique répétitive américaine, créant un état de transe extatique par un contrôle formel absolu."
           },
           {
-            "source": "Rolling Stone",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un maelström d'une audace inouïe qui a redéfini les possibilités du rock."
-          },
-          {
-            "source": "Les Inrockuptibles",
+            "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'album le plus énigmatique et fascinant de l'histoire du rock expérimental."
+            "excerpt": "Une expérience acoustique enveloppante qui transforme la perception du temps en un flux organique."
           }
         ],
-        "aiSummary": "Album d'une radicalité légendaire, *Trout Mask Replica* fusionne free jazz, blues déconstruit et poésie dadaïste. Ses polyrythmies complexes et ses structures atonales cassent tous les repères habituels de la musique populaire.",
-        "thematicAnalysis": "Une œuvre phare qui fait éclater les conventions esthétiques établies pour fonder un nouveau vocabulaire musical totalement libre et affranchi.",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/safe-as-milk/290334563?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Trout%20Mask%20Replica%20Captain%20Beefheart%20%26%20His%20Magic%20Band",
-            "iconName": "music.note"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/3e/aa/59/3eaa5989-cc54-abed-b6b3-56956353834a/dj.eypesrwn.jpg/600x600bb.jpg",
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Sure 'Nuff 'n' Yes, I Do",
-            "duration": "2:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e8/22/b3/e822b31f-7b2e-45e3-e245-e4343c4f2668/mzaf_506347355893995999.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Zig Zag Wanderer",
-            "duration": "2:38",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/61/d0/7a61d09d-855e-51d9-6307-b5d647866f83/mzaf_9456913458813425999.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Call On Me",
-            "duration": "2:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/48/33/f64833ba-fa84-fa27-bbe9-4a4d739d9b78/mzaf_16901645870253932287.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Dropout Boogie",
-            "duration": "2:31",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a4/e1/59/a4e1592a-f18c-65fc-2241-9d657dd92788/mzaf_14719932559761869527.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "I'm Glad",
-            "duration": "3:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/64/a2/4264a296-b028-b0da-17a4-fbd1961a5950/mzaf_16995888360221133357.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Electricity",
-            "duration": "3:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/0d/b4/270db4f1-d220-8783-46c1-1a9753ab9574/mzaf_3502894137578768820.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "Yellow Brick Road",
-            "duration": "2:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6c/60/f3/6c60f327-a4be-5f8d-b067-4df50ad3123e/mzaf_17553156710418501075.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Abba Zaba",
-            "duration": "2:43",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5a/64/8c/5a648c6a-77c5-69cf-c5a2-9f3409f93bee/mzaf_2158272604009873142.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Plastic Factory",
-            "duration": "3:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/9e/ac/829eac37-f3fb-749f-d59c-4e2eceaa0d00/mzaf_10453160616861092774.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Where There's Woman",
-            "duration": "2:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/15/c4/7d/15c47da4-f10f-1e23-e4d2-27a26521a682/mzaf_10650367342038851290.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Grown So Ugly",
-            "duration": "2:27",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/52/aa/7b/52aa7b2f-21d9-28ad-3634-5cf15a7026ca/mzaf_3626615415779584282.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "Autumn's Child",
-            "duration": "4:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/df/fb/1edffbd5-7564-076b-8dcf-60c6a5798bee/mzaf_13487708110478315421.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Safe As Milk (Take 5)",
-            "duration": "4:13",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3b/f8/b7/3bf8b76d-cac7-7f79-e4e7-e39879609f0b/mzaf_5397254181167155933.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 14,
-            "title": "On Tomorrow (Instrumental)",
-            "duration": "6:55",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b6/42/e0/b642e0f5-51a8-5e83-c89f-cb1af8632328/mzaf_16488956067034401777.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 15,
-            "title": "Big Black Baby Shoes (Instrumental Version)",
-            "duration": "4:49",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/b2/05/0eb205b7-1a9c-79fd-159e-d396a51ba7ef/mzaf_16023724771773692432.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 16,
-            "title": "Flower Pot",
-            "duration": "3:54",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4f/d3/98/4fd39889-6c1e-14ff-425e-fe1c4138cdac/mzaf_16368558833001568899.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 17,
-            "title": "Dirty Blue Gene (Instrumental Version)",
-            "duration": "2:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/72/e7/55/72e75563-49b3-5078-5fde-79f8ecd91535/mzaf_6187166688166133219.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 18,
-            "title": "Trust Us (Take 9)",
-            "duration": "7:21",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/81/3c/e4813c59-26cf-a9cf-f5a1-79c4ab34b098/mzaf_16751721683483365558.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 19,
-            "title": "Korn Ring Finger",
-            "duration": "7:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/d1/36/add1369c-f5bf-15e0-a3e8-835e19a4fbbe/mzaf_16030324072573110262.plus.aac.p.m4a"
-          }
-        ]
+        "aiSummary": "Œuvre maîtresse de la musique répétitive, cette composition pour vélos d'harmonies, violons, marimbas et voix repose sur 11 cycles d'accords. Les micro-décalages rythmiques engendrent un état de transe envoûtant.",
+        "thematicAnalysis": "Achevait le triptyque en dissolvant la notion linéaire du temps musical grâce à une structure d'accumulations subtiles et de variations infinies."
       }
     ]
   }
