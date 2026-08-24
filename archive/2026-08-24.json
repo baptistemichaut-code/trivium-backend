@@ -1,415 +1,457 @@
 {
   "accessible": {
-    "themeTitle": "L'Odyssée des Étoiles et des Hommes",
-    "themeSubtitle": "Quand l'Humanité contemple l'immensité pour se confronter à sa propre fragilité existentialiste",
+    "themeTitle": "L'Écho des Futurs Rêvés",
+    "themeSubtitle": "Quand la création anticipe la fragilité des mondes modernes et façonne la mémoire collective",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Le Petit Prince",
-        "creator": "Antoine de Saint-Exupéry",
-        "year": "1943",
-        "origin": "France",
-        "genre": "Conte philosophique",
+        "title": "Fahrenheit 451",
+        "creator": "Ray Bradbury",
+        "year": "1953",
+        "origin": "États-Unis",
+        "genre": "Roman / Dystopie",
         "accessibility": "Pop Culture",
-        "formatMetric": "96 pages",
-        "quote": "On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux.",
-        "anecdote": "Les premières illustrations à l'aquarelle ont été dessinées par Saint-Exupéry lui-même alors qu'il était en exil à New York durant la Seconde Guerre mondiale.",
+        "formatMetric": "224 pages",
+        "quote": "Il n'y a pas besoin de brûler des livres pour détruire une culture. Juste de faire en sorte que les gens arrêtent de les lire.",
+        "anecdote": "Bradbury a écrit le premier jet du livre sur des machines à écrire payantes dans la bibliothèque de l'UCLA, dépensant dix cents toutes me trente minutes.",
         "tags": [
-          "Philosophie",
-          "Poésie",
-          "Incontournable"
+          "Dystopie",
+          "Censure",
+          "Classique"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre universel dont la simplicité apparente masque une métaphysique d'une profondeur bouleversante."
+            "excerpt": "Une fable étincelante sur la résistance poétique face à la tyrannie de l'immédiat."
           },
           {
             "source": "The New York Times",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une parabole poétique brillante sur l'amour, la perte et la redécouverte de l'émerveillement enfantin."
+            "excerpt": "Un cri d'alarme immortel en faveur de la pensée libre et de l'imaginaire."
           },
           {
             "source": "Télérama",
-            "score": "5/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un récit fondateur qui traverse les générations sans jamais perdre de son pouvoir de fascination."
+            "excerpt": "Une prose incandescente qui n'a rien perdu de sa puissance prophétique."
           }
         ],
-        "aiSummary": "Un aviateur échoué dans le désert rencontre un jeune prince venu d'un astéroïde lointain. À travers le récit de ses voyages d'une planète à l'autre, le garçon délivre une leçon d'humanité inoubliable.",
-        "thematicAnalysis": "Inaugure le triptyque en explorant la solitude humaine à l'échelle cosmologique, révélant que la quête des étoiles ramène inévitablement aux liens affectifs les plus intimes.",
+        "aiSummary": "Dans une société futuriste où la lecture est proscrite, Guy Montag est un pompier dont le travail consiste à brûler les livres. Sa rencontre avec une jeune voisine idéaliste va ébranler ses certitudes et le pousser à la rébellion.",
+        "thematicAnalysis": "Le roman incarne la prise de conscience initiale face à un avenir déshumanisé, posant la transmission culturelle comme ultime bastion de liberté.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Le%20Petit%20Prince%20Antoine%20de%20Saint-Exup%C3%A9ry",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Fahrenheit%20451%20Ray%20Bradbury",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le%20Petit%20Prince%20Antoine%20de%20Saint-Exup%C3%A9ry",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Fahrenheit%20451%20Ray%20Bradbury",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/0e/b4/1a/0eb41ac2-ddfa-004e-2f36-1486d87d2009/9782072431258.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/98/88/f0/9888f03c-b8d2-268b-4f46-0e3347675cc4/9782207170809.jpg/800x800bb.jpg"
       },
       {
-        "type": "CINÉMA",
-        "title": "Interstellar",
-        "creator": "Christopher Nolan",
-        "year": "2014",
+        "type": "FILM",
+        "title": "Blade Runner",
+        "creator": "Ridley Scott",
+        "year": "1982",
         "origin": "États-Unis",
-        "genre": "Science-Fiction / Drame",
+        "genre": "Cinéma / Science-Fiction",
         "accessibility": "Pop Culture",
-        "formatMetric": "2h49",
-        "quote": "L'amour est la seule chose qui dépasse le temps et l'espace.",
-        "anecdote": "L'astrophysicien Kip Thorne, prix Nobel de physique, a supervisé les équations scientifiques du film, permettant de modéliser pour la première fois un trou noir scientifiquement exact.",
+        "formatMetric": "1h 57m",
+        "quote": "Tous ces moments se perdront dans l'oubli, comme des larmes dans la pluie.",
+        "anecdote": "Le célèbre monologue final de Rutger Hauer n'était pas entièrement dans le script : l'acteur a réécrit la scène lui-même la veille du tournage.",
         "tags": [
-          "Espace",
-          "Temps",
-          "Spectaculaire"
+          "Cyberpunk",
+          "Neo-Noir",
+          "Culte"
         ],
         "ratings": [
           {
+            "source": "Cahiers du Cinéma",
+            "score": "3/5",
+            "iconName": "star.fill",
+            "excerpt": "Un exercice de style visuel fascinant qui privilégie le décor à la psychologie."
+          },
+          {
             "source": "Rotten Tomatoes",
-            "score": "87%",
+            "score": "89%",
             "iconName": "percent",
-            "excerpt": "Une épopée visuellement stupéfiante et émotionnellement vibrante qui réinvente la science-fiction moderne."
+            "excerpt": "Un sommet visuel et thématique du cinéma de science-fiction moderne."
           },
           {
             "source": "Metacritic",
-            "score": "74/100",
+            "score": "84/100",
             "iconName": "chart.bar.fill",
-            "excerpt": "Une ambition folle portée par une partition grandiose d'Hans Zimmer et une maîtrise technique exemplaire."
-          },
-          {
-            "source": "Télérama",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Nolan marie virtuosité spectaculaire et mélodrame familial dans un vertige cosmique impressionnant."
+            "excerpt": "Un chef-d'œuvre d'atmosphère qui a redéfini le design urbain au cinéma."
           }
         ],
-        "aiSummary": "Dans un futur proche où la Terre se meurt, un groupe d'explorateurs franchit un trou de ver pour trouver une nouvelle planète habitable. Un voyage au-delà du temps où l'amour paternel devient l'ultime force de gravité.",
-        "thematicAnalysis": "Prolonge le thème cosmique en confrontant la survie matérielle de l'espèce à l'irréductibilité de l'amour à travers le temps et la gravité."
+        "aiSummary": "Dans un Los Angeles dystopique et poisseux de 2019, l'ancien policier Rick Deckard est chargé de traquer quatre androïdes synthétiques rebelles. Sa traque se transforme en une méditation mélancolique sur ce qui définit l'humanité.",
+        "thematicAnalysis": "En projetant la solitude urbaine dans une métropole asphyxiée, le film prolonge la réflexion de Bradbury sur la perte de l'âme moderne.",
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Blade%20Runner%20Ridley%20Scott",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Blade%20Runner",
+            "iconName": "apple.logo"
+          }
+        ]
       },
       {
         "type": "MUSIQUE",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "origin": "Royaume-Uni",
-        "genre": "Rock Progressif",
+        "title": "Discovery",
+        "creator": "Daft Punk",
+        "year": "2001",
+        "origin": "France",
+        "genre": "Musique / French Touch",
         "accessibility": "Pop Culture",
-        "formatMetric": "10 titres • 43 min",
-        "quote": "And then one day you find ten years have got behind you. No one told you when to run, you missed the starting gun.",
-        "anecdote": "Les voix parlées en arrière-plan sont les réponses de techniciens du studio Abbey Road et de membres du staff à des cartes de questions posées par Roger Waters.",
+        "formatMetric": "14 titres, 60 min",
+        "quote": "One more time, we're gonna celebrate, oh yeah, all right, don't stop the dancing.",
+        "anecdote": "L'album a servi de bande-son intégrale au film d'animation Interstella 5555, réalisé en collaboration avec le légendaire mangaka Leiji Matsumoto.",
         "tags": [
-          "Concept-Album",
-          "Psychédélique",
-          "Monument"
+          "Electropop",
+          "French Touch",
+          "Nostalgie"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
             "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre absolu de la production studio qui a redéfini les possibilités de la musique populaire."
+            "excerpt": "Un chef-d'œuvre conceptuel audacieux qui transcende les genres et les générations."
           },
           {
             "source": "Rolling Stone",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une méditation fascinante sur la folie, le temps et la mortalité, portée par des arrangements somptueux."
+            "excerpt": "Une symphonie disco-futuriste étincelante et d'une inventivité intemporelle."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'album ultime de la culture rock, dont la perfection sonore n'a pas pris une seule ride."
+            "excerpt": "La réinvention géniale de la pop moderne par la magie du synthétiseur."
           }
         ],
-        "aiSummary": "Fresque sonore monumentale abordant les pressions de la vie moderne : le temps qui passe, l'argent, la folie et la mort. Un voyage immersif novateur qui demeure l'un des albums les plus vendus de tous les temps.",
-        "thematicAnalysis": "Clôture ce triptyque en apportant une bande-son cathartique aux peurs existentielles et au sentiment d'isolement face à la grandeur de l'univers."
+        "aiSummary": "Deuxième album studio du duo casqué, Discovery fusionne house, synthpop et envolées disco réinventées. C'est une odyssée sonore lumineuse qui explore la nostalgie de l'enfance et la magie du son synthétique.",
+        "thematicAnalysis": "L'album offre une résolution euphorique aux dystopies visuelles et littéraires, sublimant la technologie pour en faire un vecteur d'émotion pure."
       }
     ]
   },
   "intermediate": {
-    "themeTitle": "Les Résonances du Silencieux",
-    "themeSubtitle": "Traversée mélancolique d'un monde désenchanté à la recherche d'une lumière résiduelle",
+    "themeTitle": "La Géographie des Intimités",
+    "themeSubtitle": "Traverser la solitude contemporaine et trouver un ancrage dans l'errance",
     "items": [
       {
         "type": "LIVRE",
-        "title": "La Route",
-        "creator": "Cormac McCarthy",
-        "year": "2006",
-        "origin": "États-Unis",
-        "genre": "Roman post-apocalyptique",
-        "accessibility": "Curieux",
-        "formatMetric": "256 pages",
-        "quote": "Tu dois porter le feu. Je ne sais pas comment faire. Si, tu sais. C'est à l'intérieur de toi.",
-        "anecdote": "Cormac McCarthy a dédié ce roman poignant à son jeune fils John Francis, avec qui il avait imaginé le paysage dévasté de la ville de El Paso lors d'un voyage.",
-        "tags": [
-          "Post-Apocalyptique",
-          "Paternité",
-          "Épuré"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde des Livres",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une écriture biblique, d'une sobriété magistrale, qui transforme la noirceur absolue en hymne à la tendresse."
-          },
-          {
-            "source": "The New York Times",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre dévastateur sur l'amour inconditionnel au milieu des ruines de la civilisation."
-          },
-          {
-            "source": "Télérama",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "McCarthy livre une métaphore poignante de la transmission et de l'espoir tenace."
-          }
-        ],
-        "aiSummary": "Un père et son fils arpentent une Amérique dévastée couverte de cendres, poussant un caddie vers l'océan. Face à la barbarie ambiante, ils tentent d'endurer le froid en préservant leur humanité.",
-        "thematicAnalysis": "Pose la première pierre du thème en montrant la résistance de la bonté humaine au sein d'un univers désertique et mutique.",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Route%20Cormac%20McCarthy",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Route%20Cormac%20McCarthy",
-            "iconName": "bag.fill"
-          }
-        ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/a7/27/0f/a7270f21-cd55-3f48-1e58-0eabb2fc70d1/9782823620399.jpg/800x800bb.jpg"
-      },
-      {
-        "type": "CINÉMA",
-        "title": "Drive",
-        "creator": "Nicolas Winding Refn",
-        "year": "2011",
-        "origin": "États-Unis",
-        "genre": "Neo-Noir / Thriller",
-        "accessibility": "Curieux",
-        "formatMetric": "1h40",
-        "quote": "I drive. That's what I do. Nothing else.",
-        "anecdote": "Ryan Gosling et le réalisateur se sont rencontrés lors d'un dîner catastrophique jusqu'à ce qu'ils chantent ensemble du REO Speedwagon en voiture, scellant la vision néon du film.",
-        "tags": [
-          "Neo-Noir",
-          "Synthwave",
-          "Stylisé"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Un exercice de style hypnotique où le mutisme du héros devient le vecteur d'une poésie romantique brutale."
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "93%",
-            "iconName": "percent",
-            "excerpt": "Un mélange hyper-stylisé de violence hyper-réaliste, de romance éthérée et de musique synthétique inoubliable."
-          },
-          {
-            "source": "Télérama",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Un conte féérique noir baigné de néons, couronné par un prix de la mise en scène amplement mérité à Cannes."
-          }
-        ],
-        "aiSummary": "Un cascadeur silencieux et mécanicien le jour sert de chauffeur pour le banditisme la nuit. Lorsqu'il tente de protéger sa voisine et son fils d'un gang féroce, son quotidien bascule dans la violence purificatrice.",
-        "thematicAnalysis": "Explore la figure d'un solitaire laconique évoluant dans un paysage urbain nocturne, agissant par pur instinct moral salvateur."
-      },
-      {
-        "type": "MUSIQUE",
-        "title": "Funeral",
-        "creator": "Arcade Fire",
-        "year": "2004",
-        "origin": "Canada",
-        "genre": "Rock Indépendant",
-        "accessibility": "Curieux",
-        "formatMetric": "10 titres • 48 min",
-        "quote": "If the children wiped the tears from your eyes, I'd try to squeeze the storm from the sky.",
-        "anecdote": "L'album tire son nom du fait que plusieurs membres du groupe ont perdu de proches parents durant sa création, infusant le disque d'une urgence émotionnelle brute.",
-        "tags": [
-          "Indie Rock",
-          "Catharsis",
-          "Émotion"
-        ],
-        "ratings": [
-          {
-            "source": "Pitchfork",
-            "score": "9.7/10",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre d'une honnêteté foudroyante qui a redéfini le paysage du rock indépendant des années 2000."
-          },
-          {
-            "source": "NME",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un premier album incandescent et triomphant, transformant le deuil en une célébration éperdue de la vie."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une électricité orchestrale magistrale portée par un chant d'une ferveur absolue."
-          }
-        ],
-        "aiSummary": "Écrit dans un contexte de deuil partagé, ce premier album d'Arcade Fire est un cri du cœur symphonique d'une rare intensité indé, mêlant violons lyriques, guitares rageuses et chœurs cathartiques.",
-        "thematicAnalysis": "Couronne le triptyque en transformant la douleur du silence et du manque en une célébration musicale orchestrale éclatante."
-      }
-    ]
-  },
-  "expert": {
-    "themeTitle": "Archéologie de la Perception",
-    "themeSubtitle": "Déconstruction des structures formelles pour explorer les vertiges de la mémoire et du temps",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "La Jalousie",
-        "creator": "Alain Robbe-Grillet",
-        "year": "1957",
+        "title": "Vernon Subutex 1",
+        "creator": "Virginie Despentes",
+        "year": "2015",
         "origin": "France",
-        "genre": "Nouveau Roman",
-        "accessibility": "Initié",
-        "formatMetric": "224 pages",
-        "quote": "Maintenant la ombre du poteau divise en deux parties égales l'angle du soubassement.",
-        "anecdote": "Le titre joue sur un double sens typiquement français : la jalousie comme passion maladive et la 'jalousie' comme store à volets orientables à travers lequel le narrateur invisible observe.",
+        "genre": "Roman / Littérature Contemporaine",
+        "accessibility": "Curieux",
+        "formatMetric": "400 pages",
+        "quote": "On croit qu'on a le temps, et puis un jour on s'aperçoit qu'on a passé le cap.",
+        "anecdote": "Le personnage principal doit son nom au médicament Subutex, utilisé dans le traitement de la dépendance aux opiacés.",
         "tags": [
-          "Nouveau Roman",
-          "Avant-Garde",
-          "Géométrie"
+          "Société",
+          "Rock",
+          "Chronique Urbaine"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un monument du Nouveau Roman qui transforme la description objective en un piège obsessionnel fascinant."
+            "excerpt": "Une Comédie humaine foudroyante de notre époque, portée par un souffle punk."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un roman social d'une justesse effrayante sur le déclassement et la précarité."
           },
           {
             "source": "Libération",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience de lecture radicale où la précision millimétrique du regard révèle une folie sous-jacente."
-          },
-          {
-            "source": "Télérama",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Une déconstruction virtuose de la narration traditionnelle au profit d'une pure géométrie des sentiments."
+            "excerpt": "Une fresque parisienne électrique où la musique reste le dernier abri."
           }
         ],
-        "aiSummary": "Sur une plantation bananière tropicale, un narrateur jamais nommé décrit de manière obsessionnelle et clinique les moindres gestes de sa femme A... et de leur voisin. Une mécanique de la suspicion géométrique sans équivalent.",
-        "thematicAnalysis": "Ouvre la réflexion pointue en réduisant le récit à une observation purement phénoménologique de l'espace pour matérialiser une obsession interne.",
+        "aiSummary": "Ancien disquaire parisien expulsé de son appartement, Vernon Subutex devient un SDF itinérant hébergé par ses anciens proches. À travers sa dérive, le roman brosse le portrait incisif d'une société en décomposition.",
+        "thematicAnalysis": "Vernon incarne le naufrage de l'individu moderne au cœur de la jungle urbaine, cherchant dans le lien humain une échappatoire à la marginalité.",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La%20Jalousie%20Alain%20Robbe-Grillet",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Vernon%20Subutex%201%20Virginie%20Despentes",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La%20Jalousie%20Alain%20Robbe-Grillet",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Vernon%20Subutex%201%20Virginie%20Despentes",
             "iconName": "bag.fill"
           }
         ],
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/93/aa/5f/93aa5fe7-9b0f-20fa-e381-f328fa4348f9/9782707324146.jpg/800x800bb.jpg"
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/86/33/d3/8633d35a-dd1c-4533-3d74-9f88b70375bd/9782246857716-X.jpg/800x800bb.jpg"
       },
       {
-        "type": "CINÉMA",
-        "title": "Stalker",
-        "creator": "Andreï Tarkovski",
-        "year": "1979",
-        "origin": "URSS",
-        "genre": "Science-Fiction Métaphysique",
-        "accessibility": "Initié",
-        "formatMetric": "2h42",
-        "quote": "Que leur foi se réalise. Qu'ils croient. Et qu'ils rient de leurs passions.",
-        "anecdote": "La première version du film sur pellicule Kodak a été détruite lors du développement dans un laboratoire moscovite, obligeant Tarkovski à refilmer l'intégralité du métrage avec un budget réduit.",
+        "type": "FILM",
+        "title": "Lost in Translation",
+        "creator": "Sofia Coppola",
+        "year": "2003",
+        "origin": "États-Unis",
+        "genre": "Cinéma / Drame",
+        "accessibility": "Curieux",
+        "formatMetric": "1h 42m",
+        "quote": "Plus on sait qui on est et ce qu'on veut, moins on laisse les choses nous bouleverser.",
+        "anecdote": "Sofia Coppola a écrit le rôle de Bob Harris spécialement pour Bill Murray et a passé des mois à le traquer avant qu'il n'accepte le rôle sans contrat signé.",
         "tags": [
-          "Contemplatif",
-          "Poétique",
-          "Philosophique"
+          "Melancolie",
+          "Tokyo",
+          "Rencontre"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une étude délicate des corps décalés et du dépaysement sentimental."
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "95%",
+            "iconName": "percent",
+            "excerpt": "Une œuvre envoûtante qui capture avec grâce le sentiment d'isolement."
+          },
+          {
+            "source": "Metacritic",
+            "score": "89/100",
+            "iconName": "chart.bar.fill",
+            "excerpt": "Un équilibre parfait entre mélancolie sourde et comédie feutrée."
+          }
+        ],
+        "aiSummary": "Dans un hôtel de luxe à Tokyo, un acteur américain sur le déclin et une jeune mariée délaissée lient une amitié fugace mais profonde. Leurs insomnies partagées deviennent le théâtre d'une parenthèse hors du temps.",
+        "thematicAnalysis": "Le film fait écho à la dérive urbaine de Despentes en capturant l'isolement intime au milieu de la frénésie d'une mégapole étrangère.",
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Lost%20in%20Translation%20Sofia%20Coppola",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Lost%20in%20Translation",
+            "iconName": "apple.logo"
+          }
+        ]
+      },
+      {
+        "type": "MUSIQUE",
+        "title": "Illinois",
+        "creator": "Sufjan Stevens",
+        "year": "2005",
+        "origin": "États-Unis",
+        "genre": "Musique / Indie Folk",
+        "accessibility": "Curieux",
+        "formatMetric": "22 titres, 74 min",
+        "quote": "Even in default, God made a place for us.",
+        "anecdote": "L'album faisait partie d'un projet titanesque abandonné de l'artiste : composer un album dédié à chacun des cinquante États américains.",
+        "tags": [
+          "Folk Baroque",
+          "Orchestral",
+          "Concept"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.2/10",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre d'orchestration amoureuse et de récits intimes foisonnants."
+          },
+          {
+            "source": "The Guardian",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une fresque folk luxuriante, à la fois ambitieuse, tendre et tragique."
+          },
+          {
+            "source": "Rolling Stone",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un voyage musical bouleversant au cœur de la psyché américaine."
+          }
+        ],
+        "aiSummary": "Inspiré par les légendes, les faits divers et l'histoire de l'État de l'Illinois, Sufjan Stevens tisse une fresque baroque majestueuse. L'album oscille entre fanfares éclatantes et ballades acoustiques poignantes.",
+        "thematicAnalysis": "Stevens transforme la géographie en territoire émotionnel, offrant une terre d'accueil spirituelle aux solitudes croisées dans ce triptyque."
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "La Dissonance du Temporel",
+    "themeSubtitle": "Déstructurer le récit, le son et le temps pour atteindre l'essence du réel",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Marelle",
+        "creator": "Julio Cortázar",
+        "year": "1963",
+        "origin": "Argentine",
+        "genre": "Roman / Avant-Garde",
+        "accessibility": "Initié",
+        "formatMetric": "608 pages",
+        "quote": "Au fond, qu'est-ce que l'écriture ? Un acte d'amour manqué, un rendez-vous manqué avec soi-même.",
+        "anecdote": "Le livre propose deux ordres de lecture : une lecture linéaire classique s'arrêtant au chapitre 56, ou un parcours sautant selon un tableau d'orientation fourni par l'auteur.",
+        "tags": [
+          "Oulipo",
+          "Déconstruction",
+          "Paris"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un monument de la littérature mondiale qui réinvente radicalement l'acte de lire."
+          },
+          {
+            "source": "The New York Times",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience littéraire éblouissante, ludique et profondément existentielle."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une traversée labyrinthique d'une intelligence formelle étourdissante."
+          }
+        ],
+        "aiSummary": "À Paris puis à Buenos Aires, Horacio Oliveira déambule à la recherche de la Maga et du sens de l'existence. Ce 'anti-roman' se compose comme un jeu d'assemblage infini où le lecteur devient co-créateur de l'œuvre.",
+        "thematicAnalysis": "Marelle rompt radicalement avec la linéarité du récit, inaugurant une quête où la déconstruction de la forme devient l'unique moyen d'explorer l'âme.",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Marelle%20Julio%20Cort%C3%A1zar",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Marelle%20Julio%20Cort%C3%A1zar",
+            "iconName": "bag.fill"
+          }
+        ],
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/6c/7b/45/6c7b45da-6f54-206e-8724-b5054335ef3d/9782072118036.jpg/800x800bb.jpg"
+      },
+      {
+        "type": "FILM",
+        "title": "L'Année dernière à Marienbad",
+        "creator": "Alain Resnais",
+        "year": "1961",
+        "origin": "France",
+        "genre": "Cinéma / Nouveau Roman",
+        "accessibility": "Initié",
+        "formatMetric": "1h 34m",
+        "quote": "Il me semblait que c'était hier... ou il y a cent ans.",
+        "anecdote": "Le scénario a été rédigé par Alain Robbe-Grillet, figure majeure du Nouveau Roman, qui a minutieusement décrit chaque plan et mouvement de caméra avant le tournage.",
+        "tags": [
+          "Nouveau Roman",
+          "Labyrinthe",
+          "Lion d'Or"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une œuvre fondamentale où la matière même de la pellicule devient le lieu d'une quête spirituelle transcendante."
+            "excerpt": "Une révolution purement cinématographique de la perception et du temps."
           },
           {
             "source": "Rotten Tomatoes",
-            "score": "96%",
+            "score": "94%",
             "iconName": "percent",
-            "excerpt": "Un voyage hypnotique à travers des paysages industriels en ruines, offrant une expérience cinématographique quasi mystique."
+            "excerpt": "Un rêve éveillé hypnotique et formellement sublime qui défie toute logique narrative."
           },
           {
-            "source": "Télérama",
-            "score": "5/5",
+            "source": "Positif",
+            "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Un poème visuel magistral sur le désir, la croyance et la solitude de l'âme humaine."
+            "excerpt": "Une œuvre d'art plastique et poétique exigeante, fascinante comme un miroir sans fin."
           }
         ],
-        "aiSummary": "Un passeur guidé par sa foi mène un Écrivain et un Professeur à travers la 'Zone', un territoire mystérieux et dangereux abritant une chambre censée exaucer les désirs les plus intimes de l'être humain.",
-        "thematicAnalysis": "Questionne les limites de la perception et du désir à travers une exploration quasi-rituelle d'un espace géographique déroutant."
+        "aiSummary": "Dans un hôtel baroque monumental, un homme tente de convaincre une femme qu'ils se sont rencontrés et aimés l'année précédente à Marienbad. Le film s'égare délibérément dans les méandres de la mémoire et du désir.",
+        "thematicAnalysis": "Resnais applique au cinéma le principe de fragmentation de Cortázar, transformant le décor en un labyrinthe temporel où le passé et le présent se confondent.",
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad%20Alain%20Resnais",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e%20derni%C3%A8re%20%C3%A0%20Marienbad",
+            "iconName": "apple.logo"
+          }
+        ]
       },
       {
         "type": "MUSIQUE",
-        "title": "Music for 18 Musicians",
-        "creator": "Steve Reich",
-        "year": "1978",
-        "origin": "États-Unis",
-        "genre": "Minimalisme / Musique Contemporaine",
+        "title": "F♯ A♯ ∞",
+        "creator": "Godspeed You! Black Emperor",
+        "year": "1997",
+        "origin": "Canada",
+        "genre": "Musique / Post-Rock",
         "accessibility": "Initié",
-        "formatMetric": "11 mouvements • 56 min",
-        "quote": "Le processus musical doit être assimilable directement par l'écoute attentive.",
-        "anecdote": "Le rythme respiratoire des instrumentistes à vent et des choristes dicte directement la durée de certaines notes, intégrant la physiologie humaine au cœur même de la structure minimale.",
+        "formatMetric": "3 titres, 63 min",
+        "quote": "The car is on fire, and there's no driver at the wheel.",
+        "anecdote": "La première édition vinyle contenait des éléments insérés à la main dans la pochette : une pièce de monnaie écrasée par un train, une photo originale et un schéma explicatif.",
         "tags": [
-          "Minimalisme",
-          "Pulsation",
-          "Avant-Garde"
+          "Post-Rock",
+          "Apocalyptique",
+          "Field Recordings"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "10/10",
+            "score": "9.3/10",
             "iconName": "star.fill",
-            "excerpt": "L'un des plus grands chefs-d'œuvre du XXe siècle, une cathédrale sonore aux ondulations temporelles infinies."
+            "excerpt": "Un monument orchestral sombre et terrifiant qui a redéfini le paysage du post-rock."
           },
           {
             "source": "AllMusic",
-            "score": "5/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un sommet de la musique répétitive américaine, créant un état de transe extatique par un contrôle formel absolu."
+            "excerpt": "Une musique cinématographique dévastatrice, oscillant entre désespoir et lumière cathartique."
           },
           {
-            "source": "Télérama",
+            "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience acoustique enveloppante qui transforme la perception du temps en un flux organique."
+            "excerpt": "Une messe noire instrumentale d'une beauté vertigineuse et résolument prophétique."
           }
         ],
-        "aiSummary": "Œuvre maîtresse de la musique répétitive, cette composition pour vélos d'harmonies, violons, marimbas et voix repose sur 11 cycles d'accords. Les micro-décalages rythmiques engendrent un état de transe envoûtant.",
-        "thematicAnalysis": "Achevait le triptyque en dissolvant la notion linéaire du temps musical grâce à une structure d'accumulations subtiles et de variations infinies."
+        "aiSummary": "À travers de longs mouvements instrumentaux étirés, des collages sonores et des samples parlés dystopiques, cet album fondateur du post-rock dessine les contours d'un monde en ruine en quête d'une délivrance.",
+        "thematicAnalysis": "Par sa structure étirée et ses crescendo telluriques, l'album achève ce triptyque en traduisant en matière sonore le vertige temporel et l'abstraction formelle."
       }
     ]
   }
