@@ -2,17 +2,12 @@ name: Generate Daily Triptych
 
 on:
   schedule:
-    # 02h17 UTC = 04h17 heure de Paris
-    - cron: '17 2 * * *'
+    - cron: '0 6 * * *'
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,11 +16,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: ''
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install google-generativeai
 
       - name: Run generation script
         env:
@@ -36,5 +32,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add today.json archive/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generate daily triptych [skip ci]" && git push)
+          git add today.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Update daily triptych [skip ci]" && git push)
