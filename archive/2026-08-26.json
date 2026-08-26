@@ -1,58 +1,57 @@
 {
   "accessible": {
-    "themeTitle": "Les Métamorphoses du Pouvoir",
-    "themeSubtitle": "Quand les ambitions individuelles façonnent le destin des empires et des âmes",
+    "themeTitle": "Les Odyssées de l'Artifice",
+    "themeSubtitle": "Quand l'illusion redessine les contours de l'humanité",
     "items": [
       {
         "type": "LIVRE",
-        "title": "1984",
-        "creator": "George Orwell",
-        "year": "1949",
+        "title": "Le Meilleur des mondes",
+        "creator": "Aldous Huxley",
+        "year": "1932",
         "origin": "Royaume-Uni",
         "genre": "Dystopie",
         "accessibility": "Pop Culture",
-        "formatMetric": "328 pages",
-        "quote": "Big Brother vous regarde.",
-        "anecdote": "Orwell a rédigé ce chef-d'œuvre alors qu'il était gravement malade de la tuberculose, isolé dans une ferme sur l'île écossaise de Jura.",
+        "formatMetric": "285 pages",
+        "quote": "Pourtant, le bonheur n'est jamais grandiose.",
+        "anecdote": "Huxley a écrit ce roman fondateur en seulement quatre mois dans le sud de la France pour parodyer les utopies technologiques d'H.G. Wells.",
         "tags": [
-          "Classique",
           "Dystopie",
-          "Politique"
+          "Classique"
         ],
         "ratings": [
           {
             "source": "Le Figaro Littéraire",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une prémonition terrifiante et un classique absolu."
+            "excerpt": "Une vision prophétique et grinçante du monde moderne."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'œuvre fondatrice de la pensée critique moderne."
+            "excerpt": "Un chef-d'œuvre absolu d'anticipation politique."
           },
           {
             "source": "The Guardian",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Le roman le plus influent du XXe siècle."
+            "excerpt": "Une œuvre majeure du XXe siècle au constat saisissant."
           }
         ],
-        "aiSummary": "Dans une société totalitaire régie par le Parti unique et la surveillance constante de Big Brother, Winston Smith tente de préserver son libre arbitre et sa capacité d'aimer. Sa quête de vérité le mène vers une rébellion intime au prix de sa sécurité.",
-        "thematicAnalysis": "Ce roman incarne la forme ultime du pouvoir politique total : la tentative d'annihiler la psyché individuelle pour maintenir un contrôle absolu.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/99/e0/01/99e0015c-4cc8-fc9e-87a5-839709de8bf5/9782818708293-001-x.jpeg/800x800bb.jpg",
+        "aiSummary": "Dans une société future hyper-conditionnée où le bonheur artificiel est imposé par la technologie, l'arrivée d'un individu élevé hors du système remet en cause l'ordre établi. Ce récit offre un miroir percutant à nos propres dérives contemporaines.",
+        "thematicAnalysis": "Le roman interroge le prix à payer pour la tranquillité collective face au renoncement de la liberté individuelle.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/bd/cd/63/bdcd6320-59e0-f264-d9ee-8f0e0452a3a4/e17013b7-a5a3-4bce-9967-18a19ef1c3f7_cover_image.png/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=1984+George+Orwell",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le+Meilleur+des+mondes+Aldous+Huxley",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984+George+Orwell",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le+Meilleur+des+mondes+Aldous+Huxley",
             "iconName": "bag.fill"
           }
         ],
@@ -60,54 +59,53 @@
       },
       {
         "type": "FILM",
-        "title": "Le Parrain",
-        "creator": "Francis Ford Coppola",
-        "year": "1972",
+        "title": "Blade Runner",
+        "creator": "Ridley Scott",
+        "year": "1982",
         "origin": "États-Unis",
-        "genre": "Drame / Crime",
+        "genre": "Science-Fiction / Neo-Noir",
         "accessibility": "Pop Culture",
-        "formatMetric": "2h 55m",
-        "quote": "Je vais lui faire une offre qu'il ne pourra pas refuser.",
-        "anecdote": "Marlon Brando portait des prothèses dentaires spécialement conçues pour donner à Don Corleone sa mâchoire de bulldog emblématique.",
+        "formatMetric": "1h 57m",
+        "quote": "Tous ces moments se perdront dans l'oubli, comme des larmes dans la pluie.",
+        "anecdote": "La fameuse tirade finale de Rutger Hauer a été partiellement improvisée par l'acteur la nuit même du tournage.",
         "tags": [
-          "Chef-d'œuvre",
-          "Mafia",
-          "Cinéma"
+          "Cyberpunk",
+          "Culte"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une fresque tragique d'une maestria visuelle totale."
+            "excerpt": "Un univers visuel qui a redéfini la science-fiction."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'opéra crépusculaire de la famille et du pouvoir."
+            "excerpt": "Un polar futuriste mélancolique et majestueux."
           },
           {
             "source": "Rotten Tomatoes",
-            "score": "97%",
+            "score": "89%",
             "iconName": "star.fill",
-            "excerpt": "Le sommet inégalé du cinéma américain moderne."
+            "excerpt": "Un chef-d'œuvre esthétique et philosophique."
           }
         ],
-        "aiSummary": "À New York, dans les années 1940, la famille Corleone règne sur le crime organisé. Lorsque le patriarche Vito échappe de peu à un attentat, son plus jeune fils Michael, jusqu'alors en retrait, bascule irrémédiablement dans la spirale de la violence et de la succession.",
-        "thematicAnalysis": "Le film illustre la corruption morale de l'individu confronté aux nécessités brutales du pouvoir familial et financier.",
+        "aiSummary": "Dans un Los Angeles futuriste et pluvieux, un détective chevronné est chargé de traquer des répliquants synthétiques rebelles en quête d'immortalité. Sa traque va le pousser à questionner la nature de sa propre identité.",
+        "thematicAnalysis": "Le métrage matérialise la frontière troublante entre l'artificiel et l'humain à travers une atmosphère plastique inoubliable.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Le+Parrain+Francis+Ford+Coppola",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Blade+Runner+Ridley+Scott",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Le+Parrain",
+            "urlString": "https://tv.apple.com/fr/search?term=Blade+Runner",
             "iconName": "apple.logo"
           }
         ],
@@ -115,563 +113,634 @@
       },
       {
         "type": "ALBUM",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "origin": "Royaume-Uni",
-        "genre": "Rock Progressif",
-        "accessibility": "Pop Culture",
-        "formatMetric": "42 minutes, 10 titres",
-        "quote": "There is no dark side in the moon, really. As a matter of fact it's all dark.",
-        "anecdote": "Les voix parlées en arrière-plan sont des enregistrements spontanés de membres de l'équipe du studio, dont le gardien d'Abbey Road.",
-        "tags": [
-          "Culte",
-          "Rock",
-          "Psychédélique"
-        ],
-        "ratings": [
-          {
-            "source": "Rolling Stone",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de production et de profondeur conceptuelle."
-          },
-          {
-            "source": "Pitchfork",
-            "score": "9.3/10",
-            "iconName": "star.fill",
-            "excerpt": "Une perfection sonore qui définit l'ambition du rock."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un monument psychédélique à l'épreuve du temps."
-          }
-        ],
-        "aiSummary": "Véritable fresque sonore sur la folie, le temps, la cupidité et la mort, cet album offre une expérience d'écoute immersive inégalée grâce à l'usage avant-gardiste des synthétiseurs et des bruitages.",
-        "thematicAnalysis": "Les textes explorent l'emprise des structures modernes — l'argent, le temps, le conflit — sur la psyché humaine.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/54/d0/62/54d06230-1196-0bd0-93b3-1bd3eef2b43d/cover_-.jpg/600x600bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/dark-side-of-the-moon-ep/1499069229?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/The+Dark+Side+of+the+Moon+Pink+Floyd",
-            "iconName": "music.note"
-          }
-        ],
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Eclipse",
-            "duration": "3:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/d0/72/8fd072cb-33a5-7d2f-e07b-57c3f6c56b17/mzaf_4109419127039493519.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Mirror",
-            "duration": "3:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/12/b9/e412b90c-58ae-82e3-177a-c759daa235e9/mzaf_15237875496945978788.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Iljido",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/da/a0/2adaa034-eaff-f483-75bd-efcaadc2fd26/mzaf_17460350461865147188.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Moon Movie",
-            "duration": "3:38",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/bf/57/79bf5782-3267-05a6-9f1a-e648415ca161/mzaf_3779374774565150604.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Snow",
-            "duration": "3:24",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/ff/73/e6ff73c0-5522-45fd-1b7f-ad72cda84bb2/mzaf_4822830383156239578.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "intermediate": {
-    "themeTitle": "Vertiges d'un Monde Parallèle",
-    "themeSubtitle": "L'exploration des franges invisibles du quotidien et de la réalité décalée",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "L'Invention de Morel",
-        "creator": "Adolfo Bioy Casares",
-        "year": "1940",
-        "origin": "Argentine",
-        "genre": "Roman fantastique",
-        "accessibility": "Curieux",
-        "formatMetric": "120 pages",
-        "quote": "Mon empire est une île sans nom où la réalité répète indéfiniment ses reflets.",
-        "anecdote": "Cette novella à la précision mathématique a directement inspiré le scénario du film 'L'Année dernière à Marienbad'.",
-        "tags": [
-          "Fantastique",
-          "Illusion",
-          "Énigme"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un engrenage parfait de l'imaginaire fantastique."
-          },
-          {
-            "source": "Télérama",
-            "score": "4/5",
-            "iconName": "star.fill",
-            "excerpt": "Un bijou d'érudition et de poésie énigmatique."
-          },
-          {
-            "source": "Babelio",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une réflexion vertigineuse sur l'immortalité et l'image."
-          }
-        ],
-        "aiSummary": "Un fuyard se réfugie sur une île déserte réputée mortelle. Il y découvre des vacanciers tirés à quatre épingles qui semblent l'ignorer totalement et rejouent sans cesse les mêmes scènes.",
-        "thematicAnalysis": "L'œuvre interroge la frontière poreuse entre existence réelle et enregistrement technologique de la présence.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/2a/90/7d/2a907d19-8cdd-8145-0c2b-b07888e4f770/9782221280744.jpg/800x800bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Invention+de+Morel+Adolfo+Bioy+Casares",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Invention+de+Morel+Adolfo+Bioy+Casares",
-            "iconName": "bag.fill"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "FILM",
-        "title": "Drive My Car",
-        "creator": "Ryusuke Hamaguchi",
-        "year": "2021",
-        "origin": "Japon",
-        "genre": "Drame",
-        "accessibility": "Curieux",
-        "formatMetric": "2h 59m",
-        "quote": "Ceux qui survivent continuent de penser aux morts. D'une façon ou d'une autre, cela doit continuer.",
-        "anecdote": "Une part importante des répétitions théâtrales du film réunit des acteurs s'exprimant en différentes langues, dont la langue des signes coréenne.",
-        "tags": [
-          "Intime",
-          "Deuil",
-          "Théâtre"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un film d'une délicatesse formelle et dramatique inouïe."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une méditation sublime sur l'art, le deuil et le langage."
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "96%",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre d'une profondeur poignante et captivante."
-          }
-        ],
-        "aiSummary": "Un metteur en scène de théâtre encore endeuillé par la mort soudaine de sa femme se rend à Hiroshima pour monter la pièce 'Oncle Vania'. Il y rencontre une jeune chauffeur taciturne avec qui il tisse un lien salvateur.",
-        "thematicAnalysis": "Un trajet automobile devient l'espace intermédiaire où se libèrent les secrets enfouis et la parole libératrice.",
-        "imageURL": null,
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Drive+My+Car+Ryusuke+Hamaguchi",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Drive+My+Car",
-            "iconName": "apple.logo"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "ALBUM",
-        "title": "Untrue",
-        "creator": "Burial",
-        "year": "2007",
-        "origin": "Royaume-Uni",
-        "genre": "Dubstep / Ambient",
-        "accessibility": "Curieux",
-        "formatMetric": "50 minutes, 13 titres",
-        "quote": "I fell in love with a ghost, and the city became a memory of someone I never met.",
-        "anecdote": "William Bevan (Burial) a composé l'album dans l'anonymat complet sur un logiciel d'édition audio très rudimentaire, sans séquenceur traditionnel.",
-        "tags": [
-          "Mélancolie",
-          "Nocturne",
-          "Électronique"
-        ],
-        "ratings": [
-          {
-            "source": "Pitchfork",
-            "score": "9.0/10",
-            "iconName": "star.fill",
-            "excerpt": "L'album ultime de la musique urbaine crépusculaire."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre fantomatique qui a redéfini l'électro britannique."
-          },
-          {
-            "source": "Resident Advisor",
-            "score": "4.8/5",
-            "iconName": "star.fill",
-            "excerpt": "Un classique instantané de la musique nocturne moderniste."
-          }
-        ],
-        "aiSummary": "Bâti à partir de crépitements de vinyle, d'échantillons vocaux hyper-pitchés et de rythmiques garage syncopées, cet album évoque l'atmosphère mélancolique d'un Londres pluvieux au petit matin.",
-        "thematicAnalysis": "Cet album capture la solitude contemporaine en transformant des bribes du quotidien en lamentations poétiques.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d3/05/10/d3051051-937f-e7c4-636e-7e1950d60a7b/5024545486520.png/600x600bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/untrue/1056902908?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Untrue+Burial",
-            "iconName": "music.note"
-          }
-        ],
-        "tracks": [
-          {
-            "trackNumber": 1,
-            "title": "Untitled",
-            "duration": "0:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c7/34/bc/c734bce4-bbe4-cfea-bbf1-e7210107cd1b/mzaf_6978245255794965431.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 2,
-            "title": "Archangel",
-            "duration": "4:00",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/4a/4e/eb4a4e30-2eea-45eb-82c8-196e04bb9f1b/mzaf_14445404194350280558.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 3,
-            "title": "Near Dark",
-            "duration": "3:56",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/d6/2c/6bd62c3e-bd79-1684-d5da-d493e93f782a/mzaf_2940695367981810938.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 4,
-            "title": "Ghost Hardware",
-            "duration": "4:55",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/83/88/50/8388505c-9a37-f5f5-cbee-5c239979b836/mzaf_18070933849808140382.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 5,
-            "title": "Endorphin",
-            "duration": "2:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/a4/1f/32a41f52-3c4d-0d73-4b9b-5499f7af43dd/mzaf_3455066683769537185.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 6,
-            "title": "Etched Headplate",
-            "duration": "6:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/39/2a/24392a51-2f75-ffc8-08e0-9ad44a03286d/mzaf_17912408937548901523.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 7,
-            "title": "In McDonalds",
-            "duration": "2:06",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/97/84/1697845d-d47c-cf31-d65c-24b9c741fbca/mzaf_4290146884410528734.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 8,
-            "title": "Untrue",
-            "duration": "6:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/2f/da/0a2fdadb-f708-ff7b-0f78-7eb31464d434/mzaf_12554970205513415094.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 9,
-            "title": "Shell of Light",
-            "duration": "4:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/1a/84/fa1a84d6-cd6d-7c2a-2893-c240d5b061dc/mzaf_5968605937481531629.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 10,
-            "title": "Dog Shelter",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/4e/ee/934eee43-cfa1-6459-9ef0-2fcdbaa6ca79/mzaf_52806888402312650.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 11,
-            "title": "Homeless",
-            "duration": "5:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/18/72/7a/18727a21-75c7-0d32-4b17-a1950432ffa5/mzaf_3815225615373388241.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 12,
-            "title": "UK",
-            "duration": "1:42",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/c3/f4/5ec3f42f-c68f-749b-3164-343c65a13bf0/mzaf_15183943598924545354.plus.aac.p.m4a"
-          },
-          {
-            "trackNumber": 13,
-            "title": "Raver",
-            "duration": "4:59",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/23/d7/a123d73a-99d4-35e3-0b0c-98ea0c457bea/mzaf_8036385620354622979.plus.aac.p.m4a"
-          }
-        ]
-      }
-    ]
-  },
-  "expert": {
-    "themeTitle": "La Déconstruction de la Matière",
-    "themeSubtitle": "Expérimentations radicales aux frontières du langage, de la forme et du son",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "La Vie mode d'emploi",
-        "creator": "Georges Perec",
-        "year": "1978",
+        "title": "Random Access Memories",
+        "creator": "Daft Punk",
+        "year": "2013",
         "origin": "France",
-        "genre": "Roman expérimental",
-        "accessibility": "Initié",
-        "formatMetric": "600 pages",
-        "quote": "Regarde de tous tes yeux, regarde.",
-        "anecdote": "La structure entière de ce roman repose sur l'application stricte du problème mathématique du cavalier sur un échiquier de 10x10.",
+        "genre": "Disco / Funk",
+        "accessibility": "Pop Culture",
+        "formatMetric": "74 minutes, 13 titres",
+        "quote": "Give life back to music.",
+        "anecdote": "Pour renouer avec la chaleur organique, le duo masqué a enregistré presque exclusivement des instruments acoustiques dans les studios mythiques de Los Angeles.",
         "tags": [
-          "OuLiPo",
-          "Aventure formelle",
-          "Chef-d'œuvre"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Le monument inégalé de la littérature combinatoire."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un labyrinthe romanesque étourdissant et génial."
-          },
-          {
-            "source": "En attendant Nadeau",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une somme littéraire d'une virtuosité absolue."
-          }
-        ],
-        "aiSummary": "À travers la coupe transversale d'un immeuble parisien, le roman décrit minutieusement chaque pièce, chaque objet et les histoires entremêlées de tous ses habitants à un instant précis.",
-        "thematicAnalysis": "Une exploration encyclopédique où la forme contraignante libère une abondance de récits baroques.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/06/c1/8c/06c18c32-cee9-74f2-7473-1f58153c041b/9782213674063-X.jpg/800x800bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La+Vie+mode+d%27emploi+Georges+Perec",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La+Vie+mode+d%27emploi+Georges+Perec",
-            "iconName": "bag.fill"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "FILM",
-        "title": "L'Année dernière à Marienbad",
-        "creator": "Alain Resnais",
-        "year": "1961",
-        "origin": "France / Italie",
-        "genre": "Avant-garde / Drame",
-        "accessibility": "Initié",
-        "formatMetric": "1h 34m",
-        "quote": "Nous nous sommes déjà rencontrés quelque part, vous ne vous en souvenez pas ?",
-        "anecdote": "Dans les jardins de Munich où le film a été tourné, les ombres des arbres ont été peintes directement sur le sol pour un effet d'irréalité perturbant.",
-        "tags": [
-          "Nouveau Roman",
-          "Labyrinthe",
-          "Avant-garde"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un manifeste absolu de la modernité cinématographique."
-          },
-          {
-            "source": "Positif",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une fascination plastique et mentale sans équivalent."
-          },
-          {
-            "source": "Rotten Tomatoes",
-            "score": "93%",
-            "iconName": "star.fill",
-            "excerpt": "Un puzzle hypnotique au charme vaporeux."
-          }
-        ],
-        "aiSummary": "Dans un grand hôtel baroque, un homme tente de convaincre une femme qu'ils se sont aimés l'année précédente à Marienbad, tandis qu'elle prétend ne jamais l'avoir rencontré.",
-        "thematicAnalysis": "Le film déconstruit la chronologie linéaire pour créer une architecture purement mentale où temps et espace se confondent.",
-        "imageURL": null,
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e+derni%C3%A8re+%C3%A0+Marienbad+Alain+Resnais",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e+derni%C3%A8re+%C3%A0+Marienbad",
-            "iconName": "apple.logo"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "ALBUM",
-        "title": "Confield",
-        "creator": "Autechre",
-        "year": "2001",
-        "origin": "Royaume-Uni",
-        "genre": "IDM / Électronique expérimentale",
-        "accessibility": "Initié",
-        "formatMetric": "62 minutes, 9 titres",
-        "quote": "Sound is not an object to be shaped, but an autonomous system of endless self-generation.",
-        "anecdote": "Le duo britannique a développé ses propres algorithmes génératifs sous Max/MSP pour cet album, laissant la machine improviser certaines structures.",
-        "tags": [
-          "Avant-garde",
-          "Algorithmique",
-          "IDM"
+          "Musique Électronique",
+          "Pop"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
             "score": "8.8/10",
             "iconName": "star.fill",
-            "excerpt": "Une déconstruction fascinante et complexe de la musique électronique."
+            "excerpt": "Une célébration magistrale du patrimoine disco et funk."
           },
           {
-            "source": "Resident Advisor",
-            "score": "4.5/5",
+            "source": "Rolling Stone",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un sommet d'abstraction algorithmique exigeant."
+            "excerpt": "Une ambition folle au service d'un son étincelant."
           },
           {
-            "source": "Stylus Magazine",
-            "score": "A",
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de rigueur futuriste et texturale."
+            "excerpt": "L'album pop ultime qui fait le pont entre hier et demain."
           }
         ],
-        "aiSummary": "Album charnière où le groupe abandonne les structures rythmiques traditionnelles au profit de textures froides, de micro-rythmes chaotiques et d'architectures sonores mouvantes.",
-        "thematicAnalysis": "Une dissolution complète des repères mélodiques au profit d'une expérience purement organique et technologique.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8e/a4/62/8ea46280-312e-3e2e-eaa1-fc85ef7d7f6d/0801061012830.png/600x600bb.jpg",
+        "aiSummary": "Un voyage musical rétrofuturiste mêlant virtuosité acoustique et sonorités synthétiques vintages. Cet album culte célèbre le groove avec une minutie de production inégalée.",
+        "thematicAnalysis": "L'album réinsuffle de l'âme et du souffle humain au cœur même des machines électroniques.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/86/b1/92/86b192cf-ceb6-6e51-9361-dc4a35e95d22/196589921154.jpg/600x600bb.jpg",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/confield/282571770?uo=4",
+            "urlString": "https://music.apple.com/fr/album/random-access-memories-10th-anniversary-edition/1673536063?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Confield+Autechre",
+            "urlString": "https://www.deezer.com/search/Random+Access+Memories+Daft+Punk",
             "iconName": "music.note"
           }
         ],
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "VI Scose Poise",
-            "duration": "6:56",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ee/e1/b3/eee1b3fe-e45e-4aba-f81a-d35eb178ce02/mzaf_4743078864620751393.plus.aac.p.m4a"
+            "title": "Give Life Back to Music",
+            "duration": "4:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/7f/49/a67f4928-fa77-8bab-fbc1-64e0db29e890/mzaf_11570231507585519471.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Cfern",
-            "duration": "6:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/2f/ca/23/2fca2322-d73a-7ac8-7426-7c3b9f18698b/mzaf_10107313276653820076.plus.aac.p.m4a"
+            "title": "The Game of Love",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/72/4a/a8724ad1-3331-d972-00d3-6cdeab07a149/mzaf_20896314889425413.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Pen Expers",
-            "duration": "7:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/fb/81/5c/fb815c9e-d1f9-de7f-2cf0-259c26d010ad/mzaf_7434726010844851834.plus.aac.p.m4a"
+            "title": "Giorgio by Moroder",
+            "duration": "9:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/85/48/0b8548e3-5af0-0d22-82f3-fd6cbc239e4d/mzaf_5657748619346669156.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Sim Gishel",
-            "duration": "7:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/2b/5a/ce/2b5acec1-4096-b500-763f-e54e0ab36a71/mzaf_16851489664736934761.plus.aac.p.m4a"
+            "title": "Within",
+            "duration": "3:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/47/c0/a547c0cf-1148-a2f4-ad16-f2acf9b2e564/mzaf_18210390073705807957.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Parhelic Triangle",
-            "duration": "6:03",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/bd/43/e3/bd43e30c-75a2-95d4-87f8-e8efad54c1fd/mzaf_15545431639967806141.plus.aac.p.m4a"
+            "title": "Instant Crush",
+            "duration": "5:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/f4/d1/a5f4d1e7-796f-cd03-7972-3e1460bfaf5c/mzaf_9392534358066706018.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Bine",
-            "duration": "4:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b1/23/e8/b123e84e-4c0b-b2a8-c40e-6c437e162fcc/mzaf_9508561149713097551.plus.aac.p.m4a"
+            "title": "Lose Yourself to Dance",
+            "duration": "5:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/2f/a0/5b2fa0a1-daf9-8c24-c39a-5940e704ea9f/mzaf_5183821254261153993.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Eidetic Casein",
-            "duration": "6:12",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/97/de/4b/97de4b8d-bf22-5a39-2807-79a993abe9ea/mzaf_492734397897850521.plus.aac.p.m4a"
+            "title": "Touch",
+            "duration": "8:19",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/d5/82/a1d5822c-4b34-b1be-5dd9-883a5501c13b/mzaf_14604177887029151390.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Uviol",
-            "duration": "8:35",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/83/18/44/831844f3-b56b-f52b-a5d2-d56d633de45e/mzaf_12753936074460942302.plus.aac.p.m4a"
+            "title": "Get Lucky",
+            "duration": "6:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/53/10/725310b8-0e82-9d20-8898-0f1fc47b4cd9/mzaf_13147817334462660235.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Lentic Catachresis",
-            "duration": "8:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/dd/4d/48/dd4d48c9-611c-9870-4365-61ddb70668ba/mzaf_15592983069816585248.plus.aac.p.m4a"
+            "title": "Beyond",
+            "duration": "4:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/ed/47/0ded478a-10e0-ffb3-70ee-f3b46db9f981/mzaf_9554394004115812399.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Motherboard",
+            "duration": "5:41",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/98/dd/4a98ddaa-9887-61a3-5528-ecb4240b1553/mzaf_10110263181530073023.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Fragments of Time",
+            "duration": "4:39",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/a6/ec/c5a6ec3a-188a-45ba-7705-6ef6489fbb02/mzaf_16185854173868348127.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Doin' it Right",
+            "duration": "4:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/67/06/8b6706f0-2fe4-f027-551d-0b74a380ecd3/mzaf_2894866473823034699.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Contact",
+            "duration": "6:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/05/22/24052258-d5d4-fada-d336-9a864660c7ae/mzaf_9968794474504327545.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 1,
+            "title": "Horizon Ouverture",
+            "duration": "2:07",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/6d/f9/7c6df9ed-7b84-0434-6445-6dd601c5cd9f/mzaf_11224198388784568031.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Horizon (Japan CD)",
+            "duration": "4:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/fb/66/14fb66d4-e034-5e9e-ee4d-96ce5d0716f2/mzaf_10996231086448706404.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "GLBTM (Studio Outtakes)",
+            "duration": "6:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/f0/a3/4ff0a3a0-80ee-7a38-6371-a5ec1433d1f0/mzaf_17254549635285577800.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Infinity Repeating (2013 Demo)",
+            "duration": "3:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/15/1d/6a151d89-14c3-9f01-e538-a75041565110/mzaf_10085285322422153925.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "GL (Early Take)",
+            "duration": "0:32",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/46/cc/f046cc0d-7e71-834c-0ab3-18049f728c52/mzaf_13489347439681545052.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Prime (2012 Unfinished)",
+            "duration": "4:46",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/87/8b/be878bb5-b381-ba50-30f4-6e3a7b09a4a6/mzaf_14509971788724748548.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "LYTD (Vocoder Tests)",
+            "duration": "2:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/cd/c2/6bcdc28e-1427-3265-92b4-32aef80c4b9a/mzaf_5328007381593470454.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "The Writing of Fragments of Time",
+            "duration": "8:17",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/96/d8/f996d811-ec1c-c9c3-d74d-ca78f2841f06/mzaf_14553426271256308609.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Touch (2021 Epilogue)",
+            "duration": "2:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/6b/ca/226bcac2-e542-54e8-f595-65f990cf8d4e/mzaf_6468167198906378377.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "Les Géométries du Désir",
+    "themeSubtitle": "L'exploration intime de mondes intérieurs en mutation",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Chronique d'une mort annoncée",
+        "creator": "Gabriel García Márquez",
+        "year": "1981",
+        "origin": "Colombie",
+        "genre": "Réalisme Magique",
+        "accessibility": "Curieux",
+        "formatMetric": "120 pages",
+        "quote": "Le jour où on allait le tuer, Santiago Nasar se leva à cinq heures et demie du matin.",
+        "anecdote": "L'auteur a attendu près de trente ans avant de pouvoir retranscrire ce fait divers tragique survenu dans son village natal.",
+        "tags": [
+          "Réalisme Magique",
+          "Roman"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une mécanique narrative à la fatalité foudroyante."
+          },
+          {
+            "source": "Télérama",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un roman court qui dissèque le poids du silence collectif."
+          },
+          {
+            "source": "The New York Times",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une prose chatoyante d'une précision chirurgicale."
+          }
+        ],
+        "aiSummary": "Dans un village caraïbe, chacun sait que Santiago Nasar va être exécuté pour venger l'honneur familial, hormis l'intéressé lui-même. Le récit retrace minute par minute le déroulement inéluctable d'un drame annoncé.",
+        "thematicAnalysis": "L'auteur met à nu la paralysie de toute une communauté prisonnière de ses propres règles morales.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/94/c9/48/94c94894-9bc3-bad8-b8cb-513229c939f7/9782246819547-001-x.jpeg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Chronique+d%27une+mort+annonc%C3%A9e+Gabriel+Garc%C3%ADa+M%C3%A1rquez",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Chronique+d%27une+mort+annonc%C3%A9e+Gabriel+Garc%C3%ADa+M%C3%A1rquez",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Mulholland Drive",
+        "creator": "David Lynch",
+        "year": "2001",
+        "origin": "États-Unis",
+        "genre": "Thriller Psychologique",
+        "accessibility": "Curieux",
+        "formatMetric": "2h 27m",
+        "quote": "Silencio... todo es una ilusión.",
+        "anecdote": "Initialement pensé comme un pilote de série rejeté par les chaînes télévisées, le projet fut sauvé par des producteurs français pour devenir un long-métrage.",
+        "tags": [
+          "Onirique",
+          "Mystery"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un vertige cinématographique majeur du XXIe siècle."
+          },
+          {
+            "source": "Positif",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un dédale envoûtant à la beauté vénéneuse."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un puzzle somptueux sur les fantômes d'Hollywood."
+          }
+        ],
+        "aiSummary": "Une actrice aspirante débarque à Hollywood et rencontre une femme mystérieuse devenue amnésique après un accident de voiture. Ensemble, elles s'enfoncent dans un labyrinthe urbain où la réalité se dérobe sous leurs pas.",
+        "thematicAnalysis": "Le film déconstruit le mythe hollywoodien pour sonder les fêlures du désir et du regret inconscient.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Mulholland+Drive+David+Lynch",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Mulholland+Drive",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Loveless",
+        "creator": "My Bloody Valentine",
+        "year": "1991",
+        "origin": "Irlande",
+        "genre": "Shoegaze",
+        "accessibility": "Curieux",
+        "formatMetric": "48 minutes, 11 titres",
+        "quote": "Wake up, don't fall asleep.",
+        "anecdote": "Le processus d'enregistrement s'est étalé sur plus de deux ans dans dix studios différents, mettant au bord de la faillite la maison de disques Creation Records.",
+        "tags": [
+          "Shoegaze",
+          "Indie"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "Un monument sonore qui a réinventé la guitare électrique."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une cathédrale de larsen au romantisme ravageur."
+          },
+          {
+            "source": "Rolling Stone",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience physique et sensorielle inouïe."
+          }
+        ],
+        "aiSummary": "Un raz-de-marée de guitares saturées et de voix murmurées qui crée un cocon sonore aussi agressif que mélancolique. Un disque fondateur qui a donné ses lettres de noblesse au courant shoegaze.",
+        "thematicAnalysis": "La saturation extrême y devient le vecteur paradoxal d'une intimité émotionnelle d'une grande délicatesse.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/e1/51/4ce15131-7ac5-daf5-bf62-0202f27d691d/887830015998.png/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/loveless/1556921230?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Loveless+My+Bloody+Valentine",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "only shallow",
+            "duration": "4:16",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/70/ea/6c/70ea6cbe-1a53-8611-840c-7d0a59e67f99/mzaf_10754500313813200284.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "loomer",
+            "duration": "2:38",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/ca/bc/63cabcd7-0dfe-cd50-fe5b-a3ce3f259347/mzaf_18025411499566806756.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "touched",
+            "duration": "0:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e6/86/50/e686506f-5dd1-0eae-4ea5-a39dfe6c5671/mzaf_10275355809366302032.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "to here knows when",
+            "duration": "5:30",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/6a/81/b6/6a81b6eb-b0cf-0a92-f01a-7dee3b09e3dc/mzaf_5304791094221775973.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "when you sleep",
+            "duration": "4:11",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3c/a9/74/3ca97440-57c1-5471-9cb8-b94ae1bcb8cc/mzaf_10714938283434744218.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "i only said",
+            "duration": "5:34",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c5/c5/f1/c5c5f147-0ff6-f1c4-60a8-cd6b96f2c4a5/mzaf_11220978569859293819.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "come in alone",
+            "duration": "3:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/dc/6c/48/dc6c4825-8d6e-1177-ccc0-fac88f8a6a3b/mzaf_12778653428900829124.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "sometimes",
+            "duration": "5:19",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/0e/35/d1/0e35d1af-b7f3-cdae-83f5-b3e84a8fc959/mzaf_568578228690113670.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "blown a wish",
+            "duration": "3:36",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/fc/a3/32/fca3329e-107a-8221-64ff-77a79f984f17/mzaf_7646766077649358580.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "what you want",
+            "duration": "5:33",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/04/7b/f4/047bf476-39e0-e249-cd2a-1bd0ca153c58/mzaf_3720246647032365915.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "soon",
+            "duration": "6:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/66/60/6a/66606a40-64ee-1617-b218-9a0f6ca9dde4/mzaf_11188566305545158291.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "Les Territoires de l'Abstraction",
+    "themeSubtitle": "À la lisière du silence, du chaos et de la rupture formelle",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Ulysse",
+        "creator": "James Joyce",
+        "year": "1922",
+        "origin": "Irlande",
+        "genre": "Modernisme",
+        "accessibility": "Initié",
+        "formatMetric": "730 pages",
+        "quote": "Amor matris, subjectif et objectif génitif, avec la vie entière liée à cela.",
+        "anecdote": "Publié à Paris par Sylvia Beach le jour du 40e anniversaire de Joyce, le livre a été censuré aux États-Unis pour obscénité pendant plus de dix ans.",
+        "tags": [
+          "Modernisme",
+          "Avant-Garde"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "La plus grande odyssée stylistique de la littérature moderne."
+          },
+          {
+            "source": "Libération",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un monument linguistique d'une inventivité intarissable."
+          },
+          {
+            "source": "The Times Literary Supplement",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une somme monumentale de la prose occidentale."
+          }
+        ],
+        "aiSummary": "Une traversée d'une journée ordinaire dans la ville de Dublin à travers la conscience de Leopold Bloom. Ce roman d'une complexité stylistique inouïe redéfinit les frontières du langage et de la narration.",
+        "thematicAnalysis": "Joyce pulvérise la structure narrative traditionnelle pour capter le flux brut et chaotique de la pensée humaine.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/7e/56/41/7e5641c9-4bf5-07f0-d29d-443503cf7f59/30.png/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Ulysse+James+Joyce",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Ulysse+James+Joyce",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+        "creator": "Chantal Akerman",
+        "year": "1975",
+        "origin": "Belgique",
+        "genre": "Drame Minimaliste",
+        "accessibility": "Initié",
+        "formatMetric": "3h 21m",
+        "quote": "Je ne suis pas folle, j'ordonne les choses.",
+        "anecdote": "Réalisé alors qu'Akerman n'avait que 25 ans, le film a été élu meilleur film de tous les temps par la prestigieuse revue Sight & Sound en 2022.",
+        "tags": [
+          "Minimalisme",
+          "Art & Essai"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une révolution temporelle et politique majeure du septième art."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une rigueur plastique étourdissante qui métamorphose le quotidien."
+          },
+          {
+            "source": "Positif",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience radicale et inoubliable."
+          }
+        ],
+        "aiSummary": "Le portrait méticuleux et en temps réel d'une veuve consacrant ses journées aux tâches ménagères et à la prostitution d'ordre hygiénique. La rupture d'un détail imperceptible dans sa routine va faire basculer ce système milimétré.",
+        "thematicAnalysis": "L'utilisation étirée de la durée et la fixité du cadre révèlent la violence sous-jacente de l'aliénation domestique.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Jeanne+Dielman%2C+23%2C+quai+du+Commerce%2C+1080+Bruxelles+Chantal+Akerman",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Jeanne+Dielman%2C+23%2C+quai+du+Commerce%2C+1080+Bruxelles",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Tago Mago",
+        "creator": "Can",
+        "year": "1971",
+        "origin": "Allemagne",
+        "genre": "Krautrock",
+        "accessibility": "Initié",
+        "formatMetric": "73 minutes, 7 titres",
+        "quote": "Halleluwah.",
+        "anecdote": "Enregistré dans un château loué près de Cologne, cet album fut conçu à partir de sessions d'improvisation nocturnes ensuite découpées et collées sur bande magnétique.",
+        "tags": [
+          "Krautrock",
+          "Expérimental"
+        ],
+        "ratings": [
+          {
+            "source": "The Wire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "L'acte de naissance suprême du rock d'avant-garde européen."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "9.3/10",
+            "iconName": "star.fill",
+            "excerpt": "Une épopée polyrythmique d'une modernité absolue."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un sommet absolu de transe musicale et de liberté créative."
+          }
+        ],
+        "aiSummary": "Un double album hypnotique mêlant rythmes vaudous, funk déconstruit et collages sonores hallucinés. Une œuvre séminale qui a inspiré l'émergence du post-punk et des musiques électroniques.",
+        "thematicAnalysis": "Le groupe dissout les formes canoniques de la chanson pour explorer le pouvoir hypnotique de la transe et de l'improvisation.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/91/a5/de/91a5deb0-de1a-995d-875a-7431d09f344d/cover.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/tago-mago-remastered/711465663?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Tago+Mago+Can",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Paperhouse (Remastered)",
+            "duration": "7:28",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0a/57/80/0a57800e-8778-0871-26d3-0b74656bb048/mzaf_7762063953637680606.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Mushroom (Remastered)",
+            "duration": "4:03",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/b8/9b/3fb89b5b-b169-17d6-2143-cd107759add7/mzaf_15035184989093941745.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Oh Yeah (Remastered)",
+            "duration": "7:23",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/78/ad/e0/78ade072-b0bf-2d43-0ad3-1710885e1aac/mzaf_11646241589175405750.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Halleluhwah (Remastered)",
+            "duration": "18:32",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/66/55/f5/6655f5f4-0ce5-df9b-4e18-d4a2f788d4ca/mzaf_14255061211470344516.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Aumgn (Remastered)",
+            "duration": "17:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/f6/65/f2/f665f276-5ea1-58ce-08dc-a19351d4996e/mzaf_9116047156364285013.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Peking O (Remastered)",
+            "duration": "11:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/2d/1f/a3/2d1fa3cb-84cf-9cf1-484c-11caeb9221b9/mzaf_2711923273236061405.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Bring Me Coffee or Tea (Remastered)",
+            "duration": "6:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/72/86/b972869d-8c4e-08b6-9674-f16dd38e6f68/mzaf_7872719437989052692.plus.aac.p.m4a"
           }
         ]
       }
