@@ -15,10 +15,10 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Utilitaires de Recherche & Normalisation
+# MARK: - Utilitaires de Normalisation
 
 def clean_search_title(title: str) -> str:
-    """Nettoie parenthèses, crochets et sous-titres superflus."""
+    """Supprime les parenthèses, crochets et sous-titres superflus."""
     t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
@@ -34,7 +34,7 @@ def normalize_text(text: str) -> str:
 def safe_url_encode(text: str) -> str:
     return urllib.parse.quote_plus(str(text).strip())
 
-# MARK: - Gestion de l'Historique & Déduplication Absolue
+# MARK: - Gestion de l'Historique & Déduplication
 
 def load_history_exclusions():
     used_themes = set()
@@ -152,12 +152,18 @@ def fetch_film_metadata(title: str, director: str):
     return None
 
 def fetch_album_metadata(album_title: str, artist: str):
+    """Recherche avec verrouillage strict Titre ET Artiste."""
     clean_t = clean_search_title(album_title)
     clean_a = clean_search_title(artist)
     norm_title = normalize_text(clean_t)
     norm_artist = normalize_text(clean_a)
 
-    queries = [f"{clean_t} {clean_a}", clean_t]
+    queries = [
+        f"{clean_t} {clean_a}",
+        f"{clean_a} {clean_t}",
+        clean_t
+    ]
+
     best_match = None
 
     for country in ["fr", "us", "gb"]:
@@ -165,34 +171,49 @@ def fetch_album_metadata(album_title: str, artist: str):
             break
         for q in queries:
             encoded_q = safe_url_encode(q)
-            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&limit=10&country={country}"
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&limit=25&country={country}"
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
                 with urllib.request.urlopen(req, timeout=6) as response:
                     data = json.loads(response.read().decode())
                     results = data.get("results", [])
-                    
+
+                    # 1. Vérification stricte : le TITRE ET l'ARTISTE doivent correspondre
                     for item in results:
                         col_name = normalize_text(item.get("collectionName", ""))
-                        if norm_title in col_name or col_name in norm_title:
+                        art_name = normalize_text(item.get("artistName", ""))
+
+                        title_matches = (norm_title in col_name) or (col_name in norm_title)
+                        artist_matches = (norm_artist in art_name) or (art_name in norm_artist)
+
+                        # Tolérance pour les variantes d'artistes (ex. "Pink Floyd Records")
+                        if not artist_matches:
+                            a_words = [w for w in norm_artist.split() if len(w) > 2]
+                            if a_words and all(w in art_name for w in a_words):
+                                artist_matches = True
+
+                        if title_matches and artist_matches:
                             best_match = item
                             break
-                    
-                    if not best_match:
-                        title_words = [w for w in norm_title.split() if len(w) > 2]
-                        for item in results:
-                            col_name = normalize_text(item.get("collectionName", ""))
-                            if title_words and all(w in col_name for w in title_words):
-                                best_match = item
-                                break
 
-                    if not best_match:
-                        for item in results:
-                            art_name = normalize_text(item.get("artistName", ""))
-                            col_name = normalize_text(item.get("collectionName", ""))
-                            if (norm_artist in art_name or art_name in norm_artist) and any(w in col_name for w in norm_title.split() if len(w) > 3):
-                                best_match = item
-                                break
+                    if best_match:
+                        break
+
+                    # 2. Vérification par mots-clés : tous les mots significatifs du titre ET de l'artiste
+                    title_words = [w for w in norm_title.split() if len(w) > 2]
+                    artist_words = [w for w in norm_artist.split() if len(w) > 2]
+
+                    for item in results:
+                        col_name = normalize_text(item.get("collectionName", ""))
+                        art_name = normalize_text(item.get("artistName", ""))
+
+                        has_title_words = any(w in col_name for w in title_words) if title_words else False
+                        has_artist_words = any(w in art_name for w in artist_words) if artist_words else False
+
+                        if has_title_words and has_artist_words:
+                            best_match = item
+                            break
+
             except Exception:
                 pass
             if best_match:
@@ -312,42 +333,30 @@ def sanitize_and_fill_defaults(data: dict) -> dict:
             sanitized[tier]["items"].append(s_item)
             total_items += 1
 
-    print(f"📊 Nombre total d'œuvres structurées : {total_items}/9 (accessible: {len(sanitized['accessible']['items'])}, intermediate: {len(sanitized['intermediate']['items'])}, expert: {len(sanitized['expert']['items'])})")
+    print(f"📊 Nombre total d'œuvres structurées : {total_items}/9")
     return sanitized
 
-# MARK: - Prompt Éditorial Strict (9 Œuvres Complètes)
+# MARK: - Prompt Éditorial Strict
 
-def build_system_prompt(excluded_themes: list, excluded_titles: list) -> str:
-    prompt = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
+SYSTEM_PROMPT_TEMPLATE = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
-LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE (citations et critiques traduites si besoin).
+LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
 
 RÈGLE ABSOLUE SUR LE VOLUME (TRÈS STRICT) :
-Tu DOIS générer EXACTEMENT 9 ŒUVRES AU TOTAL réparties ainsi :
-- Profil "accessible" (Pop Culture) : EXACTEMENT 3 œuvres (1 LIVRE, 1 FILM, 1 ALBUM).
-- Profil "intermediate" (Curieux) : EXACTEMENT 3 œuvres (1 LIVRE, 1 FILM, 1 ALBUM).
-- Profil "expert" (Initié) : EXACTEMENT 3 œuvres (1 LIVRE, 1 FILM, 1 ALBUM).
-Chaque profil possède son propre thème ou sous-thème reliant harmonieusement ses 3 œuvres.
+Tu DOIS GÉNÉRER EXACTEMENT 9 ŒUVRES AU TOTAL (3 profils x 3 œuvres) :
+1. "accessible" (Pop Culture) : 1 LIVRE, 1 FILM, 1 ALBUM.
+2. "intermediate" (Curieux) : 1 LIVRE, 1 FILM, 1 ALBUM.
+3. "expert" (Initié) : 1 LIVRE, 1 FILM, 1 ALBUM.
 
 CALIBRATION DES 3 PROFILS :
-1. "accessible" (Pop Culture) : Grands classiques universels et monuments populaires (musique : Pink Floyd, Daft Punk, Queen, The Beatles ; cinéma : Miyazaki, Star Wars, Le Parrain ; littérature : Alice au pays des merveilles, 1984, Stephen King).
+1. "accessible" (Pop Culture) : Monuments populaires et universels (ex. Pink Floyd, Daft Punk, The Beatles, Star Wars, Le Parrain, 1984).
 2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
-3. "expert" (Initié) : Avant-garde, expérimentations, cinéma d'art et essai exigeant.
+3. "expert" (Initié) : Avant-garde, expérimentations pointues, raretés artistiques.
 
-RÈGLE DES CRITIQUES & BARÈMES :
-Pour CHAQUE œuvre sans exception, fournis EXACTEMENT 3 critiques comparées ("ratings") de 3 médias distincts avec leurs barèmes réels (Pitchfork sur 10, Télérama sur 5, Rotten Tomatoes en %, etc.).
+Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") avec leurs barèmes réels (Pitchfork sur 10, Télérama sur 5, Rotten Tomatoes en %, etc.).
 Pour "year", indique l'année de création originale de l'œuvre.
 
-RÈGLE D'UNICITÉ :
-Interdiction de réutiliser des thèmes ou œuvres passés.
-"""
-    if excluded_themes:
-        prompt += f"\nTHÈMES BANNIS :\n- " + "\n- ".join(excluded_themes[-50:]) + "\n"
-    if excluded_titles:
-        prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(excluded_titles[-150:]) + "\n"
-
-    prompt += """
-FORMAT JSON STRICT ATTENDU (AVEC TOUTES LES 9 ŒUVRES) :
+Réponds STRICTEMENT avec ce format JSON complet :
 {
   "accessible": {
     "themeTitle": "Titre du thème Pop Culture",
@@ -357,104 +366,107 @@ FORMAT JSON STRICT ATTENDU (AVEC TOUTES LES 9 ŒUVRES) :
         "type": "LIVRE",
         "title": "Titre exact",
         "creator": "Nom de l'auteur",
-        "year": "1865",
+        "year": "1949",
         "origin": "Royaume-Uni",
-        "genre": "Littérature fantastique",
+        "genre": "Dystopie",
         "accessibility": "Pop Culture",
-        "formatMetric": "192 pages",
-        "quote": "Citation clé marquante",
-        "anecdote": "Une anecdote captivante sur la genèse",
-        "tags": ["Classique", "Merveilleux"],
+        "formatMetric": "328 pages",
+        "quote": "Citation clé",
+        "anecdote": "Une anecdote captivante",
+        "tags": ["Classique"],
         "ratings": [
           {"source": "Le Figaro Littéraire", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre intemporel."},
-          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Une folie littéraire sublime."},
-          {"source": "The Guardian", "score": "5/5", "iconName": "star.fill", "excerpt": "Une œuvre fondatrice."}
+          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Une merveille visionnaire."},
+          {"source": "The Times", "score": "5/5", "iconName": "star.fill", "excerpt": "Un monument universel."}
         ],
-        "aiSummary": "Résumé en 2 phrases.",
+        "aiSummary": "Résumé captivant en 2 phrases.",
         "thematicAnalysis": "Analyse du lien avec le thème."
       },
       {
         "type": "FILM",
         "title": "Titre du film",
         "creator": "Nom du réalisateur",
-        "year": "2001",
-        "origin": "Japon",
-        "genre": "Animation / Fantastique",
+        "year": "1972",
+        "origin": "États-Unis",
+        "genre": "Drame / Crime",
         "accessibility": "Pop Culture",
-        "formatMetric": "2h 05m",
+        "formatMetric": "2h 55m",
         "quote": "Citation clé",
         "anecdote": "Anecdote de tournage",
-        "tags": ["Animation", "Chef-d'œuvre"],
+        "tags": ["Culte"],
         "ratings": [
-          {"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Un sommet du cinéma mondial."},
-          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Un voyage initiatique inoubliable."},
-          {"source": "Rotten Tomatoes", "score": "97%", "iconName": "star.fill", "excerpt": "Une merveille absolue de poésie visuelle."}
+          {"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Un sommet de mise en scène."},
+          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Une tragédie shakespearienne moderne."},
+          {"source": "Rotten Tomatoes", "score": "97%", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre absolu."}
         ],
-        "aiSummary": "Résumé captivant du film.",
+        "aiSummary": "Résumé du film.",
         "thematicAnalysis": "Lien avec le thème."
       },
       {
         "type": "ALBUM",
-        "title": "Titre de l'album",
-        "creator": "Nom de l'artiste",
+        "title": "The Dark Side of the Moon",
+        "creator": "Pink Floyd",
         "year": "1973",
         "origin": "Royaume-Uni",
-        "genre": "Rock Psychédélique",
+        "genre": "Rock Progressif",
         "accessibility": "Pop Culture",
         "formatMetric": "42 minutes, 10 titres",
-        "quote": "Parole ou citation clé",
-        "anecdote": "Anecdote d'enregistrement",
-        "tags": ["Rock", "Culte"],
+        "quote": "Citation clé",
+        "anecdote": "Anecdote de studio",
+        "tags": ["Rock"],
         "ratings": [
-          {"source": "Rolling Stone", "score": "5/5", "iconName": "star.fill", "excerpt": "Le monument ultime du rock conceptuel."},
-          {"source": "Pitchfork", "score": "9.3/10", "iconName": "star.fill", "excerpt": "Une perfection formelle inégalée."},
-          {"source": "Les Inrockuptibles", "score": "5/5", "iconName": "star.fill", "excerpt": "Un album d'une puissance intacte."}
+          {"source": "Rolling Stone", "score": "5/5", "iconName": "star.fill", "excerpt": "Un disque monumental."},
+          {"source": "Pitchfork", "score": "9.3/10", "iconName": "star.fill", "excerpt": "Une perfection sonore absolue."},
+          {"source": "Les Inrockuptibles", "score": "5/5", "iconName": "star.fill", "excerpt": "Un monument de la musique."}
         ],
-        "aiSummary": "Résumé de l'œuvre musicale.",
-        "thematicAnalysis": "Lien avec le triptyque."
+        "aiSummary": "Résumé de l'album.",
+        "thematicAnalysis": "Lien avec le thème."
       }
     ]
   },
   "intermediate": {
     "themeTitle": "Titre du thème Curieux",
-    "themeSubtitle": "Sous-titre poétique reliant les 3 œuvres",
+    "themeSubtitle": "Sous-titre poétique",
     "items": [
-      { "type": "LIVRE", ... },
-      { "type": "FILM", ... },
-      { "type": "ALBUM", ... }
+      { "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "250 pages", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Roman"], "ratings": [{"source": "Le Monde des Livres", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Brillant."},{"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Poignant."},{"source": "Les Inrocks", "score": "4/5", "iconName": "star.fill", "excerpt": "Audacieux."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "1h 45m", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Drame"], "ratings": [{"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Sublime."},{"source": "Positif", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Magistral."},{"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Envoutant."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "45 minutes", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Indie"], "ratings": [{"source": "Pitchfork", "score": "8.5/10", "iconName": "star.fill", "excerpt": "Captivant."},{"source": "Les Inrocks", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Incontournable."},{"source": "The Guardian", "score": "4/5", "iconName": "star.fill", "excerpt": "Remarquable."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." }
     ]
   },
   "expert": {
     "themeTitle": "Titre du thème Initié",
-    "themeSubtitle": "Sous-titre poétique reliant les 3 œuvres",
+    "themeSubtitle": "Sous-titre poétique",
     "items": [
-      { "type": "LIVRE", ... },
-      { "type": "FILM", ... },
-      { "type": "ALBUM", ... }
+      { "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Initié", "formatMetric": "200 pages", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Essai"], "ratings": [{"source": "Le Monde des Livres", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Exigeant."},{"source": "Libération", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Radical."},{"source": "Les Inrocks", "score": "4/5", "iconName": "star.fill", "excerpt": "Novateur."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Initié", "formatMetric": "2h 10m", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Art & Essai"], "ratings": [{"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Une claque visuelle."},{"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Inoubliable."},{"source": "Positif", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Fascinant."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Initié", "formatMetric": "50 minutes", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Expérimental"], "ratings": [{"source": "The Wire", "score": "5/5", "iconName": "star.fill", "excerpt": "Une expérimentation sonore totale."},{"source": "Pitchfork", "score": "8.7/10", "iconName": "star.fill", "excerpt": "Hypnotique et brut."},{"source": "Les Inrocks", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une intensité rare."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." }
     ]
   }
 }
 """
-    return prompt
 
-# MARK: - Fonction Principale (gemini-3.6-flash)
+# MARK: - Fonction Principale
 
 def generate_daily_edition():
     today_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"🚀 Génération de l'édition du {today_str} avec gemini-3.6-flash...")
+    print(f"🚀 Génération de l'édition du {today_str}...")
 
     os.makedirs("archive", exist_ok=True)
     past_themes, past_titles = load_history_exclusions()
 
-    system_prompt = build_system_prompt(past_themes, past_titles)
+    prompt = SYSTEM_PROMPT_TEMPLATE
+    if past_themes:
+        prompt += f"\nTHÈMES BANNIS :\n- " + "\n- ".join(past_themes[-50:]) + "\n"
+    if past_titles:
+        prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(past_titles[-150:]) + "\n"
 
     model = genai.GenerativeModel(
         model_name="gemini-3.6-flash",
         generation_config={"response_mime_type": "application/json", "temperature": 0.75},
-        system_instruction=system_prompt
+        system_instruction=prompt
     )
 
-    response = model.generate_content("Génère l'édition complète du jour : 3 profils contenant chacun EXACTEMENT 3 œuvres (Livre, Film, Album), soit 9 œuvres au total.")
+    response = model.generate_content("Génère l'édition complète avec 3 œuvres (Livre, Film, Album) pour accessible, 3 pour intermediate et 3 pour expert.")
     raw_data = json.loads(response.text)
 
     data = sanitize_and_fill_defaults(raw_data)
@@ -489,7 +501,7 @@ def generate_daily_edition():
     with open(archive_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ 9 œuvres enrichies et archivées avec succès dans {archive_path}.")
+    print(f"✅ Édition validée et archivée avec succès dans {archive_path}.")
 
 if __name__ == "__main__":
     generate_daily_edition()
