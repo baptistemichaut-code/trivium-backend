@@ -3,7 +3,6 @@ name: Generate Daily Triptych
 on:
   schedule:
     # 03:17 UTC = 05:17 en France (CEST) / 04:17 en hiver (CET)
-    # L'heure décalée (:17) évite les saturations de serveurs GitHub
     - cron: '17 3 * * *'
   workflow_dispatch:
 
@@ -18,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: setup-python@v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
