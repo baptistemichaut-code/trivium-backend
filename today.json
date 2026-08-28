@@ -1,58 +1,58 @@
 {
   "accessible": {
-    "themeTitle": "Échos de la Rébellion",
-    "themeSubtitle": "Quand l'individu s'élève contre l'emprise de l'ordre établi",
+    "themeTitle": "Les Illusions du Quotidien",
+    "themeSubtitle": "Quand le masque du réel se fissure pour révéler une vérité plus profonde",
     "items": [
       {
         "type": "LIVRE",
-        "title": "1984",
-        "creator": "George Orwell",
-        "year": "1949",
-        "origin": "Royaume-Uni",
-        "genre": "Dystopie",
+        "title": "Ne tirez pas sur l'oiseau moqueur",
+        "creator": "Harper Lee",
+        "year": "1960",
+        "origin": "États-Unis",
+        "genre": "Roman d'apprentissage",
         "accessibility": "Pop Culture",
-        "formatMetric": "328 pages",
-        "quote": "Le Big Brother vous regarde.",
-        "anecdote": "George Orwell a écrit une grande partie du roman alors qu'il souffrait sévèrement de la tuberculose sur l'île isolée de Jura en Écosse.",
+        "formatMetric": "384 pages",
+        "quote": "Vous ne comprenez vraiment une personne que lorsque vous considérez les choses de son point de vue.",
+        "anecdote": "Harper Lee a écrit ce chef-d'œuvre grâce à un cadeau de ses amis qui lui ont offert une année de salaire pour qu'elle puisse écrire à temps plein.",
         "tags": [
-          "Classique",
-          "Totalitarisme",
-          "Engagé"
+          "Incontournable",
+          "Justice",
+          "Enfance"
         ],
         "ratings": [
           {
             "source": "Le Figaro Littéraire",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une lucidité terrifiante qui traverse les époques sans rien perdre de sa force."
+            "excerpt": "Un roman lumineux et bouleversant sur l'innocence face aux préjugés."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Le roman dystopique absolu, chef-d'œuvre de la littérature politique."
+            "excerpt": "Un classique américain d'une humanité désarmante."
           },
           {
-            "source": "The Times",
+            "source": "The New York Times",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un monument d'anticipation sociale d'une précision prophétique."
+            "excerpt": "Une leçon d'empathie gravée dans la littérature universelle."
           }
         ],
-        "aiSummary": "Winston Smith vit sous le joug d'un régime totalitaire omniprésent dirigé par Big Brother. En secret, il commence à rédiger un journal intime, premier geste de dissidence contre la falsification de la vérité.",
-        "thematicAnalysis": "Ce roman incarne la lutte fondamentale de la pensée libre contre l'oppression systémique et la surveillance généralisée.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/99/e0/01/99e0015c-4cc8-fc9e-87a5-839709de8bf5/9782818708293-001-x.jpeg/800x800bb.jpg",
+        "aiSummary": "Dans une petite ville de l'Alabama marquée par le racisme, la jeune Scout observe son père, l'avocat Atticus Finch, défendre un homme noir injustement accusé. Ce récit à hauteur d'enfant mêle fraîcheur narrative et combat universel pour la justice.",
+        "thematicAnalysis": "Le roman explore comment le regard naïf d'une enfant parvient à percer l'illusion du vernis moral d'une communauté pour en révéler l'hypocrisie sous-jacente.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/8e/df/bc/8edfbc0e-59a6-ad3e-848d-768c2317fe2c/9782246857747-001-X.jpeg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=1984+George+Orwell",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Ne+tirez+pas+sur+l%27oiseau+moqueur+Harper+Lee",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=1984+George+Orwell",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Ne+tirez+pas+sur+l%27oiseau+moqueur+Harper+Lee",
             "iconName": "bag.fill"
           }
         ],
@@ -60,54 +60,54 @@
       },
       {
         "type": "FILM",
-        "title": "Taxi Driver",
-        "creator": "Martin Scorsese",
-        "year": "1976",
+        "title": "The Truman Show",
+        "creator": "Peter Weir",
+        "year": "1998",
         "origin": "États-Unis",
-        "genre": "Drame / Thriller",
+        "genre": "Comédie dramatique / Anticipation",
         "accessibility": "Pop Culture",
-        "formatMetric": "1h 54m",
-        "quote": "C'est à moi que tu parles ?",
-        "anecdote": "La fameuse scène du miroir interprétée par Robert De Niro était entièrement improvisée, le scénario indiquant seulement 'Travis se regarde dans la glace'.",
+        "formatMetric": "1h 43m",
+        "quote": "Au cas où on ne se revoirait pas : bonjour, bonsoir et bonne nuit !",
+        "anecdote": "Le dôme gigantesque abritant la ville artificielle de Seahaven a été inspiré par des projets architecturaux réels de cités entièrement sous serre.",
         "tags": [
           "Culte",
-          "New York",
-          "Solitude"
+          "Médias",
+          "Existentiel"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
-            "score": "5/5",
+            "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Une plongée hypnotique et foudroyante dans l'aliénation urbaine."
+            "excerpt": "Une satire visionnaire de la télé-réalité portée par un Jim Carrey magistral."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un opéra urbain magistral porté par un Robert De Niro incandescent."
+            "excerpt": "Fable philosophique brillante et prémonitoire sur la société du spectacle."
           },
           {
             "source": "Rotten Tomatoes",
-            "score": "96%",
+            "score": "95%",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de tension psychologique et un portrait sans concession."
+            "excerpt": "Un chef-d'œuvre divertissant qui pousse à questionner notre propre réalité."
           }
         ],
-        "aiSummary": "Travis Bickle, vétéran du Vietnam insomniaque, devient chauffeur de taxi nocturne dans un New York décadent. Observateur amer de la misère morale qui l'entoure, il bascule progressivement dans un désir purificateur de violence.",
-        "thematicAnalysis": "Le film explore le glissement d'une solitude extrême vers une révolte désespérée contre la pourriture perçue d'un monde urbain.",
+        "aiSummary": "Truman Burbank mène une vie paisible et idéale sans savoir que son monde entier est un décor de studio et que chaque seconde de son existence est diffusée en direct à la télévision. Peu à peu, des indices étranges lui font soupçonner l'imposture.",
+        "thematicAnalysis": "Ce film emblématique met en scène le moment vertigineux où un individu réalise que le décor harmonieux de son quotidien n'est qu'une cage dorée fabriquée de toutes pièces.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Taxi+Driver+Martin+Scorsese",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=The+Truman+Show+Peter+Weir",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Taxi+Driver",
+            "urlString": "https://tv.apple.com/fr/search?term=The+Truman+Show",
             "iconName": "apple.logo"
           }
         ],
@@ -115,341 +115,170 @@
       },
       {
         "type": "ALBUM",
-        "title": "Nevermind",
-        "creator": "Nirvana",
-        "year": "1991",
+        "title": "Thriller",
+        "creator": "Michael Jackson",
+        "year": "1982",
         "origin": "États-Unis",
-        "genre": "Grunge / Rock Alternatif",
+        "genre": "Pop / Funk",
         "accessibility": "Pop Culture",
-        "formatMetric": "42 minutes, 12 titres",
-        "quote": "With the lights out, it's less dangerous.",
-        "anecdote": "Le bébé sur la pochette, Spencer Elden, a été photographié dans une piscine à l'âge de 4 mois et l'hameçon avec le billet d'un dollar a été rajouté au montage.",
+        "formatMetric": "42 minutes, 9 titres",
+        "quote": "It's close to midnight and something evil's lurking in the dark...",
+        "anecdote": "Eddie Van Halen a enregistré le solo de guitare légendaire de 'Beat It' gratuitement, en deux prises seulement, sans être crédité à l'origine.",
         "tags": [
-          "Iconique",
-          "Années 90",
-          "Génération X"
+          "Légendaire",
+          "Pop",
+          "Iconique"
         ],
         "ratings": [
           {
             "source": "Rolling Stone",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "L'album qui a redéfini le paysage du rock moderne en une déflagration sonore."
+            "excerpt": "L'album ultime de la pop moderne, d'une efficacité inégalée."
           },
           {
             "source": "Pitchfork",
             "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Une canalisation parfaite du malaise adolescent et de l'énergie punk."
+            "excerpt": "Une production révolutionnaire qui a redéfini les contours de l'industrie musicale."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un raz-de-marée viscéral qui reste gravé au fer rouge dans l'histoire de la musique."
+            "excerpt": "Un raz-de-marée sonore et culturel d'une perfection technique totale."
           }
         ],
-        "aiSummary": "Propulsé par le single planétaire 'Smells Like Teen Spirit', cet album marie l'urgence abrasive du punk à des mélodies pop irrésistibles. Il est devenu l'hymne de toute une génération en rupture de ban.",
-        "thematicAnalysis": "L'œuvre de Kurt Cobain exprime avec fureur le rejet des attentes sociétales et le cri d'une jeunesse désenchantée.",
-        "imageURL": null,
+        "aiSummary": "Porté par des tubes interplanétaires comme 'Billie Jean' et 'Beat It', cet album fusionne la pop, le funk, le rock et la soul avec une précision chirurgicale. Il s'agit de l'album le plus vendu de tous les temps.",
+        "thematicAnalysis": "Derrière ses rythmes irrésistibles et son éclat commercial, l'album joue constamment avec les thèmes de la paranoïa, du travestissement et du fantastique.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/search?term=Nevermind+Nirvana",
+            "urlString": "https://music.apple.com/fr/album/thriller/269572838?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Nevermind+Nirvana",
-            "iconName": "music.note"
-          }
-        ],
-        "tracks": []
-      }
-    ]
-  },
-  "intermediate": {
-    "themeTitle": "L'Ombre de la Mégapole",
-    "themeSubtitle": "Errances mélancoliques et poésie urbaine au cœur de la modernité",
-    "items": [
-      {
-        "type": "LIVRE",
-        "title": "Cité de verre",
-        "creator": "Paul Auster",
-        "year": "1985",
-        "origin": "États-Unis",
-        "genre": "Métafiction / Roman noir",
-        "accessibility": "Curieux",
-        "formatMetric": "210 pages",
-        "quote": "New York était un espace inépuisable, un labyrinthe de pas sans fin.",
-        "anecdote": "Premier volet de la célèbre 'Trilogie de New York', ce roman a d'abord été refusé par 17 éditeurs avant de devenir un succès littéraire mondial.",
-        "tags": [
-          "Labyrinthe",
-          "Identité",
-          "Existentiel"
-        ],
-        "ratings": [
-          {
-            "source": "Le Monde des Livres",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une déconstruction virtuose du roman policier en dédale métaphysique."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une œuvre vertigineuse sur la perte du sens et les dérives du langage."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une flânerie envoûtante au cœur de la géométrie secrète de Manhattan."
-          }
-        ],
-        "aiSummary": "Un auteur de romans policiers reçoit un coup de téléphone nocturne destiné à un détective privé nommé Paul Auster. En acceptant de se faire passer pour lui, il s'enfonce dans une enquête obsédante à travers New York.",
-        "thematicAnalysis": "L'œuvre transforme la ville moderne en un labyrinthe miroir où le personnage perd peu à peu les repères de sa propre identité.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/25/e7/52/25e7529a-3499-2602-6c53-e9bfe592f1b1/front_cover.jpg/800x800bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Les Libraires",
-            "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Cit%C3%A9+de+verre+Paul+Auster",
-            "iconName": "book.fill"
-          },
-          {
-            "name": "Fnac",
-            "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Cit%C3%A9+de+verre+Paul+Auster",
-            "iconName": "bag.fill"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "FILM",
-        "title": "Lost in Translation",
-        "creator": "Sofia Coppola",
-        "year": "2003",
-        "origin": "États-Unis",
-        "genre": "Drame / Comédie dramatique",
-        "accessibility": "Curieux",
-        "formatMetric": "1h 42m",
-        "quote": "Plus vous savez qui vous êtes et ce que vous voulez, moins les choses vous atteignent.",
-        "anecdote": "Sofia Coppola a écrit le rôle principal spécialement pour Bill Murray et a passé des mois à le poursuivre sans agent pour obtenir son accord définitif.",
-        "tags": [
-          "Mélancolie",
-          "Tokyo",
-          "Incommunicabilité"
-        ],
-        "ratings": [
-          {
-            "source": "Cahiers du Cinéma",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une délicate étude du décalage horaire des âmes dans un Tokyo brumeux."
-          },
-          {
-            "source": "Positif",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une comédie mélancolique d'une grâce rare sur les rencontres éphémères."
-          },
-          {
-            "source": "Télérama",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un bijou d'atmosphère aux émotions suspendues."
-          }
-        ],
-        "aiSummary": "Deux Américains déboussolés, un acteur d'âge mûr en déclin et une jeune mariée délaissée, se croisent dans le bar d'un grand hôtel de Tokyo. Entre eux se tisse une complicité intime teintée d'isolement partagé.",
-        "thematicAnalysis": "Sofia Coppola capte avec poésie le sentiment d'étrangeté au sein d'une métropole hyperactive et hyper-connectée.",
-        "imageURL": null,
-        "platformLinks": [
-          {
-            "name": "JustWatch",
-            "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Lost+in+Translation+Sofia+Coppola",
-            "iconName": "play.tv.fill"
-          },
-          {
-            "name": "Apple TV",
-            "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Lost+in+Translation",
-            "iconName": "apple.logo"
-          }
-        ],
-        "tracks": []
-      },
-      {
-        "type": "ALBUM",
-        "title": "Blue Lines",
-        "creator": "Massive Attack",
-        "year": "1991",
-        "origin": "Royaume-Uni",
-        "genre": "Trip-Hop / Soul électronique",
-        "accessibility": "Curieux",
-        "formatMetric": "45 minutes, 9 titres",
-        "quote": "Love, love is a verb, love is a doing word.",
-        "anecdote": "Pendant la guerre du Golfe au moment de la sortie du disque, le groupe a temporairement raccourci son nom en 'Massive' sur ordre des radios de la BBC.",
-        "tags": [
-          "Pionnier",
-          "Nocturne",
-          "Bristol"
-        ],
-        "ratings": [
-          {
-            "source": "Pitchfork",
-            "score": "9.0/10",
-            "iconName": "star.fill",
-            "excerpt": "L'acte de naissance fondateur d'un son nocturne, poisseux et élégant."
-          },
-          {
-            "source": "Les Inrockuptibles",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une fusion magistrale de hip-hop, de dub et de soul mélancolique."
-          },
-          {
-            "source": "The Guardian",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un album essentiel qui a redéfini les contours de la musique urbaine des années 90."
-          }
-        ],
-        "aiSummary": "Fusionnant basses dub oppressantes, rythmes hip-hop ralentis et voix soul feutrées, cet album fondateur invente le son trip-hop de Bristol. Un voyage sonore sombre et enveloppant.",
-        "thematicAnalysis": "L'album retranscrit parfaitement l'ambiance nocturne et contemplative des déambulations dans les artères sombres de la cité.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e5/f7/c0/e5f7c07d-2182-e732-8ad6-be03814fe93c/13UABIM04453.rgb.jpg/600x600bb.jpg",
-        "platformLinks": [
-          {
-            "name": "Apple Music",
-            "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/blue-lines-2012-mix-master/715864097?uo=4",
-            "iconName": "apple.logo"
-          },
-          {
-            "name": "Deezer",
-            "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Blue+Lines+Massive+Attack",
+            "urlString": "https://www.deezer.com/search/Thriller+Michael+Jackson",
             "iconName": "music.note"
           }
         ],
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Safe From Harm (feat. Shara Nelson) [2012 Mix/Master]",
-            "duration": "5:19",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9d/88/82/9d88823d-f00b-90eb-6ea9-d8778a0206f5/mzaf_2302062545294028574.plus.aac.p.m4a"
+            "title": "Wanna Be Startin' Somethin'",
+            "duration": "6:03",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/9a/e4/819ae4ff-12b7-35c4-6fca-2923fb16852c/mzaf_10788836398273150393.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "One Love (feat. Horace Andy) [2012 Mix/Master]",
-            "duration": "4:48",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/02/19/af/0219aff1-0715-eb4c-6d7b-0e40cd278e90/mzaf_14850730936325769970.plus.aac.p.m4a"
+            "title": "Baby Be Mine",
+            "duration": "4:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/9c/8b/b39c8b6b-7a9f-8944-25c2-1348eaadeaac/mzaf_2663676543764471086.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Blue Lines (feat. Tricky) [2012 Mix/Master]",
-            "duration": "4:21",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d8/2f/8b/d82f8bdf-54b5-f0f5-5617-c4d7adc6e9bc/mzaf_10461587387786477818.plus.aac.p.m4a"
+            "title": "The Girl Is Mine (with Paul McCartney)",
+            "duration": "3:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/38/1e/2d381e88-68e9-2bb9-7b00-d0c6366f8db6/mzaf_12594152365957446372.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Be Thankful For What You've Got (feat. Tony Bryan) [2012 Mix/Master]",
-            "duration": "4:09",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8a/81/ba/8a81ba35-5f74-7081-958e-ce02cacae719/mzaf_8283974455362094132.plus.aac.p.m4a"
+            "title": "Thriller",
+            "duration": "5:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/8c/cb/588ccb9a-ab79-4a38-43b5-d4c24ea42859/mzaf_2083607504726567992.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Five Man Army (feat. Horace Andy & Tricky) [2012 Mix/Master]",
-            "duration": "6:04",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/17/94/50/179450a7-fcf9-0feb-4e96-0316a765e79e/mzaf_16251037639596709854.plus.aac.p.m4a"
+            "title": "Beat It",
+            "duration": "4:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/cd/46/88cd46bd-dba7-1dc2-a63b-e8c111ac4fc3/mzaf_4042555053237612653.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Unfinished Sympathy (feat. Shara Nelson) [2012 Mix/Master]",
-            "duration": "5:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/28/6b/72/286b72c8-e388-c791-b75e-1bcaed1ebac2/mzaf_12512470290971497615.plus.aac.p.m4a"
+            "title": "Billie Jean",
+            "duration": "4:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Daydreaming (feat. Shara Nelson & Tricky) [2012 Mix/Master]",
-            "duration": "4:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/79/9f/cf799f4e-c465-f668-d8f7-cb4ba6d0971c/mzaf_13676257704728150006.plus.aac.p.m4a"
+            "title": "Human Nature",
+            "duration": "4:05",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/4c/2a/ba4c2a0a-18ff-1350-4ec6-c4e75e053600/mzaf_9049310839196982005.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Lately (feat. Shara Nelson) [2012 Mix/Master]",
-            "duration": "4:26",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f9/be/39/f9be3912-6f74-b9fa-6249-1f17e9b93835/mzaf_10829834816471830748.plus.aac.p.m4a"
+            "title": "P.Y.T. (Pretty Young Thing)",
+            "duration": "3:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/b4/24/b4b42455-0fcc-7e16-52ad-f896de9bc88d/mzaf_14227056241100382943.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Hymn Of The Big Wheel (feat. Horace Andy) [2012 Mix/Master]",
-            "duration": "6:22",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/6d/80/336d8039-ab7d-ff0d-b942-7c33b7bdb92f/mzaf_14230041608353997906.plus.aac.p.m4a"
+            "title": "The Lady in My Life",
+            "duration": "4:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/1d/f9/c11df9ff-ae6a-7c39-9102-62e0b83b14b4/mzaf_10649929995235674377.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
-  "expert": {
-    "themeTitle": "Radicalité du Sens",
-    "themeSubtitle": "Incursions expérimentales aux frontières des structures narratives et sonores",
+  "intermediate": {
+    "themeTitle": "Les Territoires Intérieurs",
+    "themeSubtitle": "Explorer la frontière ténue entre réalité physique et obsession psychologique",
     "items": [
       {
         "type": "LIVRE",
-        "title": "La Maison des feuilles",
-        "creator": "Mark Z. Danielewski",
-        "year": "2000",
-        "origin": "États-Unis",
-        "genre": "Roman expérimental / Horreur psychologique",
-        "accessibility": "Initié",
-        "formatMetric": "752 pages",
-        "quote": "Ceci n'est pas pour vous.",
-        "anecdote": "La mise en page est un labyrinthe visuel : certains mots écrivent des spirales, plusieurs calques de notes de bas de page s'entrecroisent et la couleur bleue est strictement réservée au mot 'maison'.",
+        "title": "L'Invention de Morel",
+        "creator": "Adolfo Bioy Casares",
+        "year": "1940",
+        "origin": "Argentine",
+        "genre": "Fantastique / Science-Fiction",
+        "accessibility": "Curieux",
+        "formatMetric": "160 pages",
+        "quote": "Mon île est une machine pour fabriquer de l'immortalité.",
+        "anecdote": "Jorge Luis Borges, ami intime de l'auteur, a qualifié la trame de ce livre d'intrigue 'parfaite' dans sa célèbre préface.",
         "tags": [
-          "Typographie",
-          "Vertige",
-          "Avangarde"
+          "Roman",
+          "Immortalité",
+          "Illusion"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un objet littéraire non identifié qui réinvente la relation physique du lecteur au livre."
+            "excerpt": "Un joyau de la littérature sud-américaine aux vertiges métaphysiques."
           },
           {
-            "source": "Libération",
+            "source": "Télérama",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience de lecture éprouvante, fascinante et totalement inédite."
+            "excerpt": "Un roman court, envoûtant et d'une précision mécanique fascinante."
           },
           {
             "source": "Les Inrockuptibles",
-            "score": "5/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un piège littéraire monstrueux d'une intelligence diabolique."
+            "excerpt": "Une méditation sublime sur le désir, l'image et l'éternité."
           }
         ],
-        "aiSummary": "Une famille emménage dans une maison dont les dimensions intérieures sont mystérieusement plus grandes que ses mesures extérieures. Le récit se déploie à travers un manuscrit trouvé, truffé d'analyses érudites et de bifurcations typographiques.",
-        "thematicAnalysis": "Ce livre radical repousse les limites du support imprimé en matérialisant le vertige mental par une architecture textuelle complexe.",
-        "imageURL": "https://covers.openlibrary.org/b/id/6450442-L.jpg",
+        "aiSummary": "Un fugitif s'réfugie sur une île déserte réputée mortelle, où apparaissent soudain des estivants élégants qui semblent ne pas le voir. Il découvre qu'ils sont le produit d'une machine capable de reproduire éternellement des enregistrements tridimensionnels du passé.",
+        "thematicAnalysis": "L'œuvre interroge la nature des spectres technologiques et la façon dont l'esprit humain peut tomber amoureux de simples reflets du monde.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/2a/90/7d/2a907d19-8cdd-8145-0c2b-b07888e4f770/9782221280744.jpg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=La+Maison+des+feuilles+Mark+Z.+Danielewski",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Invention+de+Morel+Adolfo+Bioy+Casares",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La+Maison+des+feuilles+Mark+Z.+Danielewski",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Invention+de+Morel+Adolfo+Bioy+Casares",
             "iconName": "bag.fill"
           }
         ],
@@ -457,54 +286,54 @@
       },
       {
         "type": "FILM",
-        "title": "Uncle Boonmee, celui qui se souvient de ses vies antérieures",
-        "creator": "Apichatpong Weerasethakul",
-        "year": "2010",
-        "origin": "Thaïlande",
-        "genre": "Drame fantastique / Poétique",
-        "accessibility": "Initié",
-        "formatMetric": "1h 53m",
-        "quote": "Les esprits ne sont pas attachés aux lieux, mais aux vivants.",
-        "anecdote": "Lauréat de la Palme d'Or en 2010, le film intègre des méditations sur la réincarnation, des esprits aux yeux rouges lumineux et une scène mémorable impliquant un poisson-chat.",
+        "title": "Grizzly Man",
+        "creator": "Werner Herzog",
+        "year": "2005",
+        "origin": "États-Unis",
+        "genre": "Documentaire",
+        "accessibility": "Curieux",
+        "formatMetric": "1h 43m",
+        "quote": "Ce n'est pas tant le monde sauvage qui me fascine, mais la folie des hommes qui s'y projettent.",
+        "anecdote": "Werner Herzog a écouté l'enregistrement audio des dernières secondes de Timothy Treadwell en privé, conseillant face caméra à son amie de ne jamais l'écouter et de le détruire.",
         "tags": [
-          "Palme d'Or",
-          "Animisme",
-          "Sensoriel"
+          "Nature",
+          "Obsession",
+          "Portrait"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience spirituelle d'une beauté pure, renouvelant le langage cinématographique."
-          },
-          {
-            "source": "Télérama",
-            "score": "4.5/5",
-            "iconName": "star.fill",
-            "excerpt": "Un conte hypnotique où le monde des morts et des vivants se confond avec douceur."
+            "excerpt": "Un documentaire saisissant sur la frontière entre ferveur poétique et folie."
           },
           {
             "source": "Positif",
-            "score": "5/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un cinéma d'immersion totale, mystique et magistral."
+            "excerpt": "Herzog sublime des archives personnelles pour offrir un essai existentialiste percutant."
+          },
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un autoportrait tragique et fascinant d'un homme face à la brutalité du monde réel."
           }
         ],
-        "aiSummary": "Atteint d'une insuffisance rénale aiguë, l'oncle Boonmee passe ses derniers jours dans la jungle auprès de ses proches. Les fantômes de sa femme défunte et de son fils disparu réapparaissent pour l'accompagner vers sa prochaine incarnation.",
-        "thematicAnalysis": "Le cinéaste thaïlandais déconstruit le récit linéaire pour offrir une méditation animiste et sensorielle sur le passage du temps et de la mémoire.",
+        "aiSummary": "Ce documentaire retrace la vie et la mort de Timothy Treadwell, un passionné qui a passé treize étés au milieu des ours grizlis en Alaska avant d'être dévoré par l'un d'eux. Herzog assemble ses extraordinaires images personnelles tout en analysant son obsession romantique.",
+        "thematicAnalysis": "Le film met en lumière le choc entre une vision anthropomorphique idéalisée de la nature et l'indifférence glaciale et réelle du monde sauvage.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Uncle+Boonmee%2C+celui+qui+se+souvient+de+ses+vies+ant%C3%A9rieures+Apichatpong+Weerasethakul",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Grizzly+Man+Werner+Herzog",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Uncle+Boonmee%2C+celui+qui+se+souvient+de+ses+vies+ant%C3%A9rieures",
+            "urlString": "https://tv.apple.com/fr/search?term=Grizzly+Man",
             "iconName": "apple.logo"
           }
         ],
@@ -512,58 +341,381 @@
       },
       {
         "type": "ALBUM",
-        "title": "Lift Your Skinny Fists Like Antennas to Heaven",
-        "creator": "Godspeed You! Black Emperor",
-        "year": "2000",
-        "origin": "Canada",
-        "genre": "Post-Rock / Musique Instrumentale",
-        "accessibility": "Initié",
-        "formatMetric": "87 minutes, 4 titres",
-        "quote": "They don't sleep anymore on the beach.",
-        "anecdote": "L'album se compose de quatre mouvements ininterrompus de plus de 20 minutes chacun, entrecoupés de voix field recording captées sur des bandes magnétiques trouvées.",
+        "title": "Untrue",
+        "creator": "Burial",
+        "year": "2007",
+        "origin": "Royaume-Uni",
+        "genre": "Dubstep / Ambient",
+        "accessibility": "Curieux",
+        "formatMetric": "50 minutes, 13 titres",
+        "quote": "It's about when you're waiting for someone, just listening to the rain fall...",
+        "anecdote": "L'artiste William Bevan a composé cet album culte presque entièrement sur un logiciel audio obsolète (Sound Forge) sans utiliser de séquençeur traditionnel.",
         "tags": [
-          "Post-Rock",
-          "Épique",
-          "Apocalyptique"
+          "Nocturne",
+          "Mélancolie",
+          "Électronique"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
             "score": "9.0/10",
             "iconName": "star.fill",
-            "excerpt": "Une symphonie moderne monumentale, entre noirceur absolue et beauté rédemptrice."
-          },
-          {
-            "source": "The Wire",
-            "score": "5/5",
-            "iconName": "star.fill",
-            "excerpt": "Une fresque orchestrale d'une intensité émotionnelle quasi insoutenable."
+            "excerpt": "Un chef-d'œuvre de musique électronique nocturne et spectrale."
           },
           {
             "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "La bande-son poignante d'une Angleterre urbaine brumeuse et mélancolique."
+          },
+          {
+            "source": "The Guardian",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un manifeste instrumental grandiose contre la marchandisation du monde."
+            "excerpt": "Une immersion sensorielle unique, faite de vinyles crépitants et de voix fantomatiques."
           }
         ],
-        "aiSummary": "Double album orchestral sans aucune voix chantée, cette œuvre navigue entre d'immenses montées de tension, des crescendos dévastateurs et des plages de silence habillées d'enregistrements de terrain.",
-        "thematicAnalysis": "Une exploration sonore extrême qui pousse l'expérimentation instrumentale jusqu'à l'émotion pure et la catharsis.",
-        "imageURL": null,
+        "aiSummary": "Construit à partir de crépitements de vinyles, de bruits de pluie et d'échantillons vocaux de R&B hachés, cet album incarne l'esthétique du paysage urbain désert au milieu de la nuit. C'est une œuvre maîtresse de la musique électronique britannique du XXIe siècle.",
+        "thematicAnalysis": "Untrue dresse la carte sonore de l'isolement intime au cœur de la métropole, transformant la solitude urbaine en un sanctuaire poétique.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d3/05/10/d3051051-937f-e7c4-636e-7e1950d60a7b/5024545486520.png/600x600bb.jpg",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/search?term=Lift+Your+Skinny+Fists+Like+Antennas+to+Heaven+Godspeed+You%21+Black+Emperor",
+            "urlString": "https://music.apple.com/fr/album/untrue/1056902908?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Lift+Your+Skinny+Fists+Like+Antennas+to+Heaven+Godspeed+You%21+Black+Emperor",
+            "urlString": "https://www.deezer.com/search/Untrue+Burial",
             "iconName": "music.note"
           }
         ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Untitled",
+            "duration": "0:48",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c7/34/bc/c734bce4-bbe4-cfea-bbf1-e7210107cd1b/mzaf_6978245255794965431.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Archangel",
+            "duration": "4:00",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/4a/4e/eb4a4e30-2eea-45eb-82c8-196e04bb9f1b/mzaf_14445404194350280558.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Near Dark",
+            "duration": "3:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/d6/2c/6bd62c3e-bd79-1684-d5da-d493e93f782a/mzaf_2940695367981810938.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Ghost Hardware",
+            "duration": "4:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/83/88/50/8388505c-9a37-f5f5-cbee-5c239979b836/mzaf_18070933849808140382.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Endorphin",
+            "duration": "2:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/a4/1f/32a41f52-3c4d-0d73-4b9b-5499f7af43dd/mzaf_3455066683769537185.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Etched Headplate",
+            "duration": "6:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/39/2a/24392a51-2f75-ffc8-08e0-9ad44a03286d/mzaf_17912408937548901523.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "In McDonalds",
+            "duration": "2:06",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/97/84/1697845d-d47c-cf31-d65c-24b9c741fbca/mzaf_4290146884410528734.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Untrue",
+            "duration": "6:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/2f/da/0a2fdadb-f708-ff7b-0f78-7eb31464d434/mzaf_12554970205513415094.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Shell of Light",
+            "duration": "4:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/1a/84/fa1a84d6-cd6d-7c2a-2893-c240d5b061dc/mzaf_5968605937481531629.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Dog Shelter",
+            "duration": "3:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/4e/ee/934eee43-cfa1-6459-9ef0-2fcdbaa6ca79/mzaf_52806888402312650.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Homeless",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/18/72/7a/18727a21-75c7-0d32-4b17-a1950432ffa5/mzaf_3815225615373388241.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "UK",
+            "duration": "1:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/c3/f4/5ec3f42f-c68f-749b-3164-343c65a13bf0/mzaf_15183943598924545354.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "Raver",
+            "duration": "4:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/23/d7/a123d73a-99d4-35e3-0b0c-98ea0c457bea/mzaf_8036385620354622979.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "La Désarticulation du Réel",
+    "themeSubtitle": "Déconstruire le langage et l'image pour faire surgir l'invisible",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "La Disparition",
+        "creator": "Georges Perec",
+        "year": "1969",
+        "origin": "France",
+        "genre": "Roman expérimental / Oulipo",
+        "accessibility": "Initié",
+        "formatMetric": "312 pages",
+        "quote": "Un mot sans 'e' n'a pas plus de poids qu'un ombre sans corps.",
+        "anecdote": "Le roman est un lipogramme absolu : il a été entièrement écrit sans jamais utiliser la lettre 'e', la plus fréquente de la langue française.",
+        "tags": [
+          "Oulipo",
+          "Langage",
+          "Prodese"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une prouesse formelle inouïe qui transforme une contrainte absurde en vertige littéraire."
+          },
+          {
+            "source": "Libération",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un tour de force brillant où l'absence devient le sujet même de l'écriture."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une démonstration éclatante du pouvoir créateur de la contrainte oulipienne."
+          }
+        ],
+        "aiSummary": "Dans ce roman policier métaphorique, Anton Voyl disparaît mystérieusement. Ses amis partent à sa recherche et tentent d'élucider une énigme où la disparition de la lettre 'e' incarne un vide existentiel et historique douloureux.",
+        "thematicAnalysis": "Perec déconstruit la structure même du langage pour matérialiser l'absence, faisant du manque formel l'expression du traumatisme ineffable.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/f5/4f/c0/f54fc080-c77d-2dc7-9dbe-548bc171c65f/9782072219382.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=La+Disparition+Georges+Perec",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=La+Disparition+Georges+Perec",
+            "iconName": "bag.fill"
+          }
+        ],
         "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Sans Soleil",
+        "creator": "Chris Marker",
+        "year": "1983",
+        "origin": "France",
+        "genre": "Essai cinématographique",
+        "accessibility": "Initié",
+        "formatMetric": "1h 44m",
+        "quote": "Je lui ai écrit que la poésie est une façon d'apprivoiser l'oubli.",
+        "anecdote": "Chris Marker a utilisé les premières images synthétiques générées par l'un des premiers synthétiseurs vidéo (le 'Zone') pour traiter le thème du souvenir altéré.",
+        "tags": [
+          "Avant-Garde",
+          "Mémoire",
+          "Voyage"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un sommet du cinéma-essai, d'une liberté formelle et d'une intelligence éblouissantes."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un poème visuel hypnotique sur le temps, le Japon et la mémoire des hommes."
+          },
+          {
+            "source": "Positif",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre labyrinthe d'une richesse philosophique inépuisable."
+          }
+        ],
+        "aiSummary": "Une voix féminine lit les lettres envoyées par un cameraman voyageur qui parcourt le monde, du Japon à la Guinée-Bissau. Ce film-montage médite sur la mémoire, l'histoire, la perception du temps et le pouvoir des images.",
+        "thematicAnalysis": "Le film démonte l'illusion du temps linéaire pour composer une mosaïque où le souvenir devient une matière malléable et poétique.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Sans+Soleil+Chris+Marker",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Sans+Soleil",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Virgins",
+        "creator": "Tim Hecker",
+        "year": "2013",
+        "origin": "Canada",
+        "genre": "Ambient / Électroacoustique",
+        "accessibility": "Initié",
+        "formatMetric": "48 minutes, 11 titres",
+        "quote": "Une architecture sonore d'une densité physique absolue.",
+        "anecdote": "L'album a été enregistré dans des églises islandaises et des studios d'avant-garde en utilisant des instruments acoustiques retravaillés jusqu'à l'abstraction.",
+        "tags": [
+          "Expérimental",
+          "Textural",
+          "Bruitisme"
+        ],
+        "ratings": [
+          {
+            "source": "The Wire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une exploration magistrale des limites entre harmonie classique et chaos digital."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "8.7/10",
+            "iconName": "star.fill",
+            "excerpt": "Un album d'une beauté féroce et d'une intensité physique remarquable."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une sculpture sonore complexe et fascinante, d'une spiritualité sombre."
+          }
+        ],
+        "aiSummary": "Virgins mêle enregistrements de pleyel, clarinettes et orgues à des traitements numériques violents et saturés. Le résultat est une suite de cathédrales sonores en décomposition, oscillant entre sérénité et tension extrême.",
+        "thematicAnalysis": "En réduisant les instruments traditionnels en pièces, l'œuvre interroge le sacré et la ruine sonore à l'ère du traitement informatique.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Features4/v4/52/31/c3/5231c34d-8566-0e12-73fa-6be28ff4ed7e/dj.qeqrsvxx.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/virgins/699511308?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Virgins+Tim+Hecker",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Prism",
+            "duration": "2:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1a/6a/b4/1a6ab4cf-baff-bf44-d1de-528dd0664445/mzaf_7426007900769986620.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Virginal I",
+            "duration": "6:16",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/5b/c1/d95bc1b3-aea1-783c-21ef-1f605846be3b/mzaf_6610088533582615143.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Radiance",
+            "duration": "3:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/80/79/36/8079366f-5b31-754a-bbba-81a6cfdd6aee/mzaf_12559607872774951151.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Live Room",
+            "duration": "7:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/cf/87/32cf8759-f376-60aa-a32c-2f3d8d6a061b/mzaf_10695577036210344226.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Live Room Out",
+            "duration": "2:37",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/87/54/bd/8754bdb2-ba64-739c-a329-2eccffd1e14f/mzaf_2003921229965713185.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Virginal II",
+            "duration": "5:23",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3b/e0/00/3be0002c-4b25-4b06-db18-9f67348cbb7f/mzaf_1660922608455841322.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Black Refraction",
+            "duration": "3:33",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/e7/e0/36e7e00c-d285-30a6-d149-1f322f3dd664/mzaf_1649372413152153818.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Incense at Abu Ghraib",
+            "duration": "1:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c7/57/d7/c757d705-23db-7d2f-fc49-6473959bfff3/mzaf_11501292181667981112.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Amps, Drugs, Harmonium",
+            "duration": "3:03",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b3/a5/3b/b3a53b8b-df15-ba60-4cb9-2473fd0e051d/mzaf_18300695794251106704.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Stigmata I",
+            "duration": "2:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a2/32/71/a23271f5-038f-283d-1fa3-049635243433/mzaf_1902129058575107601.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Stigmata II",
+            "duration": "3:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3c/d3/61/3cd3611a-dcf0-792c-9de7-7332ad6bcd4a/mzaf_7981699402081025882.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Stab Variation",
+            "duration": "6:30",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/98/00/e2/9800e23c-36fb-07b1-c82d-8f2aebde844f/mzaf_17448525178163409001.plus.aac.p.m4a"
+          }
+        ]
       }
     ]
   }
