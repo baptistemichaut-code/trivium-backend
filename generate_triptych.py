@@ -16,7 +16,9 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Utilitaires de Normalisation & Matching Strict
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+
+# MARK: - Normalisation & Filtrage Textuel
 
 STOP_WORDS = {
     "the", "a", "an", "and", "of", "in", "on", "at", "to", "for", "with", "by",
@@ -24,7 +26,7 @@ STOP_WORDS = {
 }
 
 def clean_search_title(title: str) -> str:
-    """Supprime parenthèses, crochets et sous-titres superflus."""
+    """Nettoie parenthèses, crochets et mentions superflues."""
     t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
@@ -38,39 +40,41 @@ def normalize_text(text: str) -> str:
     return " ".join(t.split())
 
 def extract_significant_words(text: str) -> set:
-    """Extrait les mots clés distinctifs en éliminant les mots vides."""
+    """Extrait les mots clés en éliminant les mots vides."""
     words = normalize_text(text).split()
     return {w for w in words if w not in STOP_WORDS and len(w) > 1}
 
 def safe_url_encode(text: str) -> str:
     return urllib.parse.quote_plus(str(text).strip())
 
-# MARK: - Gestion de l'Historique & Déduplication
+# MARK: - Déduplication & Historique Renforcé
 
 def load_history_exclusions():
     used_themes = set()
     used_titles = set()
     
-    archive_dir = "archive"
-    if os.path.exists(archive_dir):
-        for filepath in glob.glob(f"{archive_dir}/*.json"):
-            try:
-                with open(filepath, "r", encoding="utf-8") as f:
-                    past_data = json.load(f)
-                    for tier in ["accessible", "intermediate", "expert"]:
-                        if tier in past_data:
-                            theme = past_data[tier].get("themeTitle")
-                            if theme:
-                                used_themes.add(theme.strip())
-                            for item in past_data[tier].get("items", []):
-                                title = item.get("title")
-                                creator = item.get("creator")
-                                if title and creator:
-                                    used_titles.add(f"{title.strip()} ({creator.strip()})")
-                                elif title:
-                                    used_titles.add(title.strip())
-            except Exception:
-                pass
+    files_to_check = glob.glob("archive/*.json")
+    if os.path.exists("today.json"):
+        files_to_check.append("today.json")
+
+    for filepath in files_to_check:
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                past_data = json.load(f)
+                for tier in ["accessible", "intermediate", "expert"]:
+                    if tier in past_data and isinstance(past_data[tier], dict):
+                        theme = past_data[tier].get("themeTitle")
+                        if theme:
+                            used_themes.add(theme.strip())
+                        for item in past_data[tier].get("items", []):
+                            title = item.get("title")
+                            creator = item.get("creator")
+                            if title and creator:
+                                used_titles.add(f"{title.strip()} par {creator.strip()}")
+                            elif title:
+                                used_titles.add(title.strip())
+        except Exception:
+            pass
 
     return list(used_themes), list(used_titles)
 
@@ -85,7 +89,7 @@ def fetch_book_metadata(title: str, author: str):
     try:
         q_apple = safe_url_encode(f"{clean_t} {author}")
         apple_url = f"https://itunes.apple.com/search?term={q_apple}&entity=ebook&country=fr&limit=3"
-        req = urllib.request.Request(apple_url, headers={"User-Agent": "TriviumApp/2.1"})
+        req = urllib.request.Request(apple_url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=5) as response:
             data = json.loads(response.read().decode())
             for item in data.get("results", []):
@@ -103,7 +107,7 @@ def fetch_book_metadata(title: str, author: str):
             encoded_q = safe_url_encode(q)
             url = f"https://www.googleapis.com/books/v1/volumes?q={encoded_q}&maxResults=3&printType=books"
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
                 with urllib.request.urlopen(req, timeout=5) as response:
                     data = json.loads(response.read().decode())
                     for item in data.get("items", []):
@@ -126,7 +130,7 @@ def fetch_book_metadata(title: str, author: str):
         try:
             q_ol = safe_url_encode(f"{clean_t} {author}")
             ol_url = f"https://openlibrary.org/search.json?q={q_ol}&limit=1"
-            req = urllib.request.Request(ol_url, headers={"User-Agent": "TriviumApp/2.1"})
+            req = urllib.request.Request(ol_url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=5) as response:
                 ol_data = json.loads(response.read().decode())
                 docs = ol_data.get("docs", [])
@@ -148,14 +152,13 @@ def fetch_film_metadata(title: str, director: str):
             encoded_q = safe_url_encode(q)
             url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=8&country={country}"
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
+                req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
                 with urllib.request.urlopen(req, timeout=5) as response:
                     data = json.loads(response.read().decode())
                     for item in data.get("results", []):
                         candidate_name = item.get("trackName", "")
                         candidate_words = extract_significant_words(candidate_name)
                         
-                        # Correspondance forte sur les mots clés du film
                         if target_words and target_words.issubset(candidate_words):
                             raw_art = item.get("artworkUrl100", "")
                             if raw_art:
@@ -165,8 +168,49 @@ def fetch_film_metadata(title: str, director: str):
 
     return None
 
+def fetch_album_deezer_fallback(album_title: str, artist: str):
+    """Secours Deezer API pour garantir l'affiche HD et les extraits audio."""
+    clean_t = clean_search_title(album_title)
+    clean_a = clean_search_title(artist)
+    q = safe_url_encode(f"{clean_t} {clean_a}")
+    
+    url = f"https://api.deezer.com/search/album?q={q}&limit=5"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode())
+            results = data.get("data", [])
+            if not results:
+                return None, [], None
+            
+            first = results[0]
+            image_url = first.get("cover_xl") or first.get("cover_big")
+            album_id = first.get("id")
+            direct_url = first.get("link")
+            tracks = []
+
+            if album_id:
+                track_url = f"https://api.deezer.com/album/{album_id}/tracks"
+                req_t = urllib.request.Request(track_url, headers={"User-Agent": USER_AGENT})
+                with urllib.request.urlopen(req_t, timeout=5) as resp_t:
+                    t_data = json.loads(resp_t.read().decode())
+                    for idx, tr in enumerate(t_data.get("data", []), start=1):
+                        dur = tr.get("duration", 0)
+                        minutes = dur // 60
+                        seconds = dur % 60
+                        tracks.append({
+                            "trackNumber": idx,
+                            "title": tr.get("title", f"Piste {idx}"),
+                            "duration": f"{minutes}:{seconds:02d}",
+                            "previewURL": tr.get("preview")
+                        })
+
+            return image_url, tracks, direct_url
+    except Exception:
+        return None, [], None
+
 def fetch_album_metadata(album_title: str, artist: str):
-    """Recherche avec calcul de score strict et validation croisée titre/artiste."""
+    """Recherche iTunes avec tolérance titres courts + fallback Deezer automatique."""
     clean_t = clean_search_title(album_title)
     clean_a = clean_search_title(artist)
 
@@ -175,6 +219,7 @@ def fetch_album_metadata(album_title: str, artist: str):
 
     queries = [
         f"{clean_t} {clean_a}",
+        f"{clean_a} {clean_t}",
         clean_t
     ]
 
@@ -182,13 +227,13 @@ def fetch_album_metadata(album_title: str, artist: str):
     best_score = 0.0
 
     for country in ["fr", "us", "gb"]:
-        if best_score >= 0.85:
+        if best_score >= 0.80:
             break
         for q in queries:
             encoded_q = safe_url_encode(q)
-            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&limit=15&country={country}"
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&media=music&limit=20&country={country}"
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
+                req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
                 with urllib.request.urlopen(req, timeout=6) as response:
                     data = json.loads(response.read().decode())
                     results = data.get("results", [])
@@ -200,28 +245,25 @@ def fetch_album_metadata(album_title: str, artist: str):
                         cand_title_words = extract_significant_words(cand_title)
                         cand_artist_words = extract_significant_words(cand_artist)
 
-                        # 1. Vérification Artiste : au moins un mot distinctif de l'artiste obligatoire
+                        # Validation obligatoire de l'artiste
                         artist_overlap = target_artist_words.intersection(cand_artist_words)
                         if not artist_overlap and target_artist_words:
-                            continue  # Rejet immédiat si l'artiste n'a rien à voir
+                            continue
 
-                        # 2. Vérification Titre : pourcentage de mots clés du titre cible présents
+                        # Validation du titre
                         if not target_title_words:
                             title_word_ratio = 1.0
                         else:
                             title_overlap = target_title_words.intersection(cand_title_words)
                             title_word_ratio = len(title_overlap) / len(target_title_words)
 
-                        # 3. Similarité textuelle globale (SequenceMatcher)
                         norm_target = normalize_text(clean_t)
-                        norm_cand = normalize_text(clean_title_only(cand_title))
+                        norm_cand = normalize_text(cand_title.split("(")[0].split("-")[0])
                         text_ratio = difflib.SequenceMatcher(None, norm_target, norm_cand).ratio()
 
-                        score = (title_word_ratio * 0.7) + (text_ratio * 0.3)
-
-                        # Si tous les mots clés sont présents (ex: "dark", "side", "moon")
+                        score = (title_word_ratio * 0.6) + (text_ratio * 0.4)
                         if target_title_words.issubset(cand_title_words):
-                            score += 0.3
+                            score += 0.35
 
                         if score > best_score:
                             best_score = score
@@ -229,51 +271,46 @@ def fetch_album_metadata(album_title: str, artist: str):
 
             except Exception:
                 pass
-            if best_score >= 0.85:
+            if best_score >= 0.80:
                 break
 
-    # Seuil strict de validation pour éviter d'associer un mauvais album
-    if not best_match or best_score < 0.70:
-        print(f"⚠️ Aucun album Apple Music parfaitement concordant trouvé pour '{album_title}' de '{artist}' (score: {best_score:.2f})")
-        return None, [], None
+    # Si iTunes a trouvé le bon album
+    if best_match and best_score >= 0.65:
+        raw_art = best_match.get("artworkUrl100", "")
+        image_url = raw_art.replace("100x100bb", "600x600bb") if raw_art else None
+        collection_id = best_match.get("collectionId")
+        direct_url = best_match.get("collectionViewUrl")
+        tracks = []
 
-    raw_art = best_match.get("artworkUrl100", "")
-    image_url = raw_art.replace("100x100bb", "600x600bb") if raw_art else None
-    collection_id = best_match.get("collectionId")
-    direct_url = best_match.get("collectionViewUrl")
-    tracks = []
+        if collection_id:
+            for country in ["fr", "us"]:
+                lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&country={country}"
+                try:
+                    req = urllib.request.Request(lookup_url, headers={"User-Agent": USER_AGENT})
+                    with urllib.request.urlopen(req, timeout=6) as response:
+                        song_data = json.loads(response.read().decode())
+                        for r in song_data.get("results", []):
+                            if r.get("wrapperType") == "track":
+                                millis = r.get("trackTimeMillis", 0)
+                                seconds = (millis // 1000) % 60
+                                minutes = (millis // (1000 * 60))
+                                tracks.append({
+                                    "trackNumber": r.get("trackNumber", len(tracks) + 1),
+                                    "title": r.get("trackName", "Piste"),
+                                    "duration": f"{minutes}:{seconds:02d}",
+                                    "previewURL": r.get("previewUrl")
+                                })
+                    if tracks:
+                        break
+                except Exception:
+                    pass
 
-    if collection_id:
-        for country in ["fr", "us"]:
-            lookup_url = f"https://itunes.apple.com/lookup?id={collection_id}&entity=song&country={country}"
-            try:
-                req = urllib.request.Request(lookup_url, headers={"User-Agent": "TriviumApp/2.1"})
-                with urllib.request.urlopen(req, timeout=6) as response:
-                    song_data = json.loads(response.read().decode())
-                    for r in song_data.get("results", []):
-                        if r.get("wrapperType") == "track":
-                            millis = r.get("trackTimeMillis", 0)
-                            seconds = (millis // 1000) % 60
-                            minutes = (millis // (1000 * 60))
-                            tracks.append({
-                                "trackNumber": r.get("trackNumber", len(tracks) + 1),
-                                "title": r.get("trackName", "Piste"),
-                                "duration": f"{minutes}:{seconds:02d}",
-                                "previewURL": r.get("previewUrl")
-                            })
-                if tracks:
-                    break
-            except Exception:
-                pass
+        if image_url:
+            return image_url, tracks, direct_url
 
-    return image_url, tracks, direct_url
-
-def clean_title_only(text: str) -> str:
-    """Élimine les suffixes type '(Remastered)' ou '- EP'."""
-    t = re.sub(r"\(.*?\)", "", text)
-    t = re.sub(r"\[.*?\]", "", t)
-    t = t.split("-")[0]
-    return t.strip()
+    # Fallback Deezer si iTunes a échoué
+    print(f"🔄 Relais Deezer activé pour '{album_title}' de '{artist}'...")
+    return fetch_album_deezer_fallback(album_title, artist)
 
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
@@ -298,7 +335,7 @@ def build_safe_platform_links(item_type: str, title: str, creator: str, direct_a
             {"name": "Deezer", "category": "Streaming audio & HiFi", "urlString": f"https://www.deezer.com/search/{encoded_search}", "iconName": "music.note"}
         ]
 
-# MARK: - Sanitizer / Garant de Structure Complète (9 Œuvres)
+# MARK: - Sanitizer / Structure Garantie (9 Œuvres)
 
 def sanitize_and_fill_defaults(data: dict) -> dict:
     sanitized = {}
@@ -358,27 +395,28 @@ def sanitize_and_fill_defaults(data: dict) -> dict:
     print(f"📊 Nombre total d'œuvres structurées : {total_items}/9")
     return sanitized
 
-# MARK: - Prompt Éditorial Strict
+# MARK: - Prompt Éditorial Sans Noms Fixes
 
 SYSTEM_PROMPT_TEMPLATE = """Tu es le curateur en chef de TRIVIUM, une application d'élite de recommandation culturelle quotidienne.
 
 LANGUE STRICTE : Tout le contenu généré DOIT ÊTRE EN FRANÇAIS IMPECCABLE.
 
-RÈGLE ABSOLUE SUR LE VOLUME (TRÈS STRICT) :
-Tu DOIS GÉNÉRER EXACTEMENT 9 ŒUVRES AU TOTAL (3 profils x 3 œuvres) :
+RÈGLE DU VOLUME :
+GÉNÈRE EXACTEMENT 9 ŒUVRES AU TOTAL (3 profils x 3 œuvres) :
 1. "accessible" (Pop Culture) : 1 LIVRE, 1 FILM, 1 ALBUM.
 2. "intermediate" (Curieux) : 1 LIVRE, 1 FILM, 1 ALBUM.
 3. "expert" (Initié) : 1 LIVRE, 1 FILM, 1 ALBUM.
 
-CALIBRATION DES 3 PROFILS :
-1. "accessible" (Pop Culture) : Monuments populaires et universels (ex. Pink Floyd, Daft Punk, The Beatles, Star Wars, Le Parrain, 1984).
-2. "intermediate" (Curieux) : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
-3. "expert" (Initié) : Avant-garde, expérimentations pointues, raretés artistiques.
+CALIBRATION DES PROFILS :
+1. "accessible" : Grands chefs-d'œuvre célèbres et accessibles au grand public.
+2. "intermediate" : Pépites indé acclamées, cinéma d'auteur marquant, albums cultes alternatifs.
+3. "expert" : Avant-garde, raretés artistiques et œuvres d'essai exigeantes.
 
-Pour chaque œuvre, fournis EXACTEMENT 3 critiques comparées ("ratings") avec leurs barèmes réels (Pitchfork sur 10, Télérama sur 5, Rotten Tomatoes en %, etc.).
-Pour "year", indique l'année de création originale de l'œuvre.
+RÈGLE CRITIQUE :
+Fournis 3 critiques de presse réelles par œuvre ("ratings") avec leurs vrais barèmes (Télérama sur 5, Pitchfork sur 10, Rotten Tomatoes en %, etc.).
+Indique l'année de création originale pour "year".
 
-Réponds STRICTEMENT avec ce format JSON complet :
+Format JSON STRICT à respecter :
 {
   "accessible": {
     "themeTitle": "Titre du thème Pop Culture",
@@ -386,60 +424,60 @@ Réponds STRICTEMENT avec ce format JSON complet :
     "items": [
       {
         "type": "LIVRE",
-        "title": "Titre exact",
+        "title": "Titre exact du livre",
         "creator": "Nom de l'auteur",
-        "year": "1949",
-        "origin": "Royaume-Uni",
-        "genre": "Dystopie",
+        "year": "1960",
+        "origin": "Pays",
+        "genre": "Genre littéraire",
         "accessibility": "Pop Culture",
-        "formatMetric": "328 pages",
-        "quote": "Citation clé",
-        "anecdote": "Une anecdote captivante",
+        "formatMetric": "350 pages",
+        "quote": "Citation marquante",
+        "anecdote": "Une anecdote de création",
         "tags": ["Classique"],
         "ratings": [
-          {"source": "Le Figaro Littéraire", "score": "5/5", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre intemporel."},
-          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Une merveille visionnaire."},
-          {"source": "The Times", "score": "5/5", "iconName": "star.fill", "excerpt": "Un monument universel."}
+          {"source": "Le Figaro Littéraire", "score": "5/5", "iconName": "star.fill", "excerpt": "Critique élogieuse."},
+          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Analyse critique."},
+          {"source": "The Times", "score": "5/5", "iconName": "star.fill", "excerpt": "Éloge international."}
         ],
         "aiSummary": "Résumé captivant en 2 phrases.",
         "thematicAnalysis": "Analyse du lien avec le thème."
       },
       {
         "type": "FILM",
-        "title": "Titre du film",
+        "title": "Titre exact du film",
         "creator": "Nom du réalisateur",
-        "year": "1972",
-        "origin": "États-Unis",
-        "genre": "Drame / Crime",
+        "year": "1980",
+        "origin": "Pays",
+        "genre": "Genre cinématographique",
         "accessibility": "Pop Culture",
-        "formatMetric": "2h 55m",
-        "quote": "Citation clé",
+        "formatMetric": "2h 10m",
+        "quote": "Réplique culte",
         "anecdote": "Anecdote de tournage",
         "tags": ["Culte"],
         "ratings": [
-          {"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Un sommet de mise en scène."},
-          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Une tragédie shakespearienne moderne."},
-          {"source": "Rotten Tomatoes", "score": "97%", "iconName": "star.fill", "excerpt": "Un chef-d'œuvre absolu."}
+          {"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Mise en scène magistrale."},
+          {"source": "Télérama", "score": "5/5", "iconName": "star.fill", "excerpt": "Un film essentiel."},
+          {"source": "Rotten Tomatoes", "score": "95%", "iconName": "star.fill", "excerpt": "Plébiscite de la critique."}
         ],
         "aiSummary": "Résumé du film.",
         "thematicAnalysis": "Lien avec le thème."
       },
       {
         "type": "ALBUM",
-        "title": "The Dark Side of the Moon",
-        "creator": "Pink Floyd",
-        "year": "1973",
-        "origin": "Royaume-Uni",
-        "genre": "Rock Progressif",
+        "title": "Titre exact de l'album",
+        "creator": "Nom de l'artiste ou groupe",
+        "year": "1995",
+        "origin": "Pays",
+        "genre": "Genre musical",
         "accessibility": "Pop Culture",
-        "formatMetric": "42 minutes, 10 titres",
-        "quote": "Citation clé",
+        "formatMetric": "45 minutes, 11 titres",
+        "quote": "Parole ou citation clé",
         "anecdote": "Anecdote de studio",
         "tags": ["Rock"],
         "ratings": [
-          {"source": "Rolling Stone", "score": "5/5", "iconName": "star.fill", "excerpt": "Un disque monumental."},
-          {"source": "Pitchfork", "score": "9.3/10", "iconName": "star.fill", "excerpt": "Une perfection sonore absolue."},
-          {"source": "Les Inrockuptibles", "score": "5/5", "iconName": "star.fill", "excerpt": "Un monument de la musique."}
+          {"source": "Rolling Stone", "score": "5/5", "iconName": "star.fill", "excerpt": "Un disque majeur."},
+          {"source": "Pitchfork", "score": "9.5/10", "iconName": "star.fill", "excerpt": "Production impeccable."},
+          {"source": "Les Inrockuptibles", "score": "5/5", "iconName": "star.fill", "excerpt": "Un incontournable."}
         ],
         "aiSummary": "Résumé de l'album.",
         "thematicAnalysis": "Lien avec le thème."
@@ -450,24 +488,24 @@ Réponds STRICTEMENT avec ce format JSON complet :
     "themeTitle": "Titre du thème Curieux",
     "themeSubtitle": "Sous-titre poétique",
     "items": [
-      { "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "250 pages", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Roman"], "ratings": [{"source": "Le Monde des Livres", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Brillant."},{"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Poignant."},{"source": "Les Inrocks", "score": "4/5", "iconName": "star.fill", "excerpt": "Audacieux."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
-      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "1h 45m", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Drame"], "ratings": [{"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Sublime."},{"source": "Positif", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Magistral."},{"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Envoutant."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
-      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "45 minutes", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Indie"], "ratings": [{"source": "Pitchfork", "score": "8.5/10", "iconName": "star.fill", "excerpt": "Captivant."},{"source": "Les Inrocks", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Incontournable."},{"source": "The Guardian", "score": "4/5", "iconName": "star.fill", "excerpt": "Remarquable."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." }
+      { "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "2005", "origin": "Pays", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "280 pages", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Roman"], "ratings": [{"source": "Le Monde des Livres", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Brillant."},{"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Poignant."},{"source": "Les Inrocks", "score": "4/5", "iconName": "star.fill", "excerpt": "Audacieux."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "2010", "origin": "Pays", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "1h 50m", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Drame"], "ratings": [{"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Sublime."},{"source": "Positif", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Magistral."},{"source": "Télérama", "score": "4/5", "iconName": "star.fill", "excerpt": "Envoutant."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "2015", "origin": "Pays", "genre": "Genre", "accessibility": "Curieux", "formatMetric": "48 minutes", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Indie"], "ratings": [{"source": "Pitchfork", "score": "8.5/10", "iconName": "star.fill", "excerpt": "Captivant."},{"source": "Les Inrocks", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Incontournable."},{"source": "The Guardian", "score": "4/5", "iconName": "star.fill", "excerpt": "Remarquable."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." }
     ]
   },
   "expert": {
     "themeTitle": "Titre du thème Initié",
     "themeSubtitle": "Sous-titre poétique",
     "items": [
-      { "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Initié", "formatMetric": "200 pages", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Essai"], "ratings": [{"source": "Le Monde des Livres", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Exigeant."},{"source": "Libération", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Radical."},{"source": "Les Inrocks", "score": "4/5", "iconName": "star.fill", "excerpt": "Novateur."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
-      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Initié", "formatMetric": "2h 10m", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Art & Essai"], "ratings": [{"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Une claque visuelle."},{"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Inoubliable."},{"source": "Positif", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Fascinant."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
-      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "2000", "origin": "France", "genre": "Genre", "accessibility": "Initié", "formatMetric": "50 minutes", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Expérimental"], "ratings": [{"source": "The Wire", "score": "5/5", "iconName": "star.fill", "excerpt": "Une expérimentation sonore totale."},{"source": "Pitchfork", "score": "8.7/10", "iconName": "star.fill", "excerpt": "Hypnotique et brut."},{"source": "Les Inrocks", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une intensité rare."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." }
+      { "type": "LIVRE", "title": "Titre", "creator": "Auteur", "year": "1975", "origin": "Pays", "genre": "Genre", "accessibility": "Initié", "formatMetric": "210 pages", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Essai"], "ratings": [{"source": "Le Monde des Livres", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Exigeant."},{"source": "Libération", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Radical."},{"source": "Les Inrocks", "score": "4/5", "iconName": "star.fill", "excerpt": "Novateur."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "FILM", "title": "Titre", "creator": "Réalisateur", "year": "1985", "origin": "Pays", "genre": "Genre", "accessibility": "Initié", "formatMetric": "2h 20m", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Art & Essai"], "ratings": [{"source": "Cahiers du Cinéma", "score": "5/5", "iconName": "star.fill", "excerpt": "Une claque visuelle."},{"source": "Télérama", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Inoubliable."},{"source": "Positif", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Fascinant."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." },
+      { "type": "ALBUM", "title": "Titre", "creator": "Artiste", "year": "1998", "origin": "Pays", "genre": "Genre", "accessibility": "Initié", "formatMetric": "52 minutes", "quote": "Citation", "anecdote": "Anecdote", "tags": ["Expérimental"], "ratings": [{"source": "The Wire", "score": "5/5", "iconName": "star.fill", "excerpt": "Une expérimentation sonore totale."},{"source": "Pitchfork", "score": "8.8/10", "iconName": "star.fill", "excerpt": "Hypnotique et brut."},{"source": "Les Inrocks", "score": "4.5/5", "iconName": "star.fill", "excerpt": "Une intensité rare."}], "aiSummary": "Résumé.", "thematicAnalysis": "Analyse." }
     ]
   }
 }
 """
 
-# MARK: - Fonction Principale
+# MARK: - Exécution Principale
 
 def generate_daily_edition():
     today_str = datetime.now().strftime("%Y-%m-%d")
@@ -478,17 +516,19 @@ def generate_daily_edition():
 
     prompt = SYSTEM_PROMPT_TEMPLATE
     if past_themes:
-        prompt += f"\nTHÈMES BANNIS :\n- " + "\n- ".join(past_themes[-50:]) + "\n"
+        prompt += f"\n\nTHÈMES STRICTEMENT BANNIS (NE PAS RÉUTILISER) :\n- " + "\n- ".join(past_themes[-60:])
     if past_titles:
-        prompt += f"\nŒUVRES BANNIES :\n- " + "\n- ".join(past_titles[-150:]) + "\n"
+        prompt += f"\n\nŒUVRES STRICTEMENT BANNIES (NE PAS RÉUTILISER) :\n- " + "\n- ".join(past_titles[-250:])
+
+    prompt += "\n\nRÈGLE DE RENOUVELLEMENT ABSOLUE : Tu DOIS proposer des œuvres, artistes et auteurs TOTALEMENT DIFFÉRENTS de la liste ci-dessus."
 
     model = genai.GenerativeModel(
         model_name="gemini-3.6-flash",
-        generation_config={"response_mime_type": "application/json", "temperature": 0.75},
+        generation_config={"response_mime_type": "application/json", "temperature": 0.85},
         system_instruction=prompt
     )
 
-    response = model.generate_content("Génère l'édition complète avec 3 œuvres (Livre, Film, Album) pour accessible, 3 pour intermediate et 3 pour expert.")
+    response = model.generate_content("Génère l'édition complète avec 3 œuvres uniques pour accessible, 3 pour intermediate et 3 pour expert.")
     raw_data = json.loads(response.text)
 
     data = sanitize_and_fill_defaults(raw_data)
