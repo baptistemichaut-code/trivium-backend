@@ -2,6 +2,7 @@ import os
 import re
 import glob
 import json
+import difflib
 import urllib.parse
 import urllib.request
 from datetime import datetime
@@ -15,10 +16,15 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# MARK: - Utilitaires de Normalisation
+# MARK: - Utilitaires de Normalisation & Matching Strict
+
+STOP_WORDS = {
+    "the", "a", "an", "and", "of", "in", "on", "at", "to", "for", "with", "by",
+    "le", "la", "les", "un", "une", "des", "du", "de", "d", "et", "en", "au", "aux", "par", "sur"
+}
 
 def clean_search_title(title: str) -> str:
-    """Supprime les parenthèses, crochets et sous-titres superflus."""
+    """Supprime parenthèses, crochets et sous-titres superflus."""
     t = re.sub(r"\(.*?\)", "", str(title))
     t = re.sub(r"\[.*?\]", "", t)
     if ":" in t:
@@ -26,10 +32,15 @@ def clean_search_title(title: str) -> str:
     return t.strip()
 
 def normalize_text(text: str) -> str:
-    """Minuscules et suppression des caractères spéciaux pour comparaison."""
-    t = text.lower()
-    t = re.sub(r"[^\w\s]", "", t)
+    """Minuscules et suppression des caractères spéciaux."""
+    t = str(text).lower()
+    t = re.sub(r"[^\w\s]", " ", t)
     return " ".join(t.split())
+
+def extract_significant_words(text: str) -> set:
+    """Extrait les mots clés distinctifs en éliminant les mots vides."""
+    words = normalize_text(text).split()
+    return {w for w in words if w not in STOP_WORDS and len(w) > 1}
 
 def safe_url_encode(text: str) -> str:
     return urllib.parse.quote_plus(str(text).strip())
@@ -129,20 +140,23 @@ def fetch_book_metadata(title: str, author: str):
 
 def fetch_film_metadata(title: str, director: str):
     clean_t = clean_search_title(title)
-    norm_target = normalize_text(clean_t)
+    target_words = extract_significant_words(clean_t)
     queries = [clean_t, f"{clean_t} {director}"]
 
     for country in ["fr", "us"]:
         for q in queries:
             encoded_q = safe_url_encode(q)
-            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=5&country={country}"
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=movie&limit=8&country={country}"
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
                 with urllib.request.urlopen(req, timeout=5) as response:
                     data = json.loads(response.read().decode())
                     for item in data.get("results", []):
-                        name = normalize_text(item.get("trackName", ""))
-                        if norm_target in name or name in norm_target:
+                        candidate_name = item.get("trackName", "")
+                        candidate_words = extract_significant_words(candidate_name)
+                        
+                        # Correspondance forte sur les mots clés du film
+                        if target_words and target_words.issubset(candidate_words):
                             raw_art = item.get("artworkUrl100", "")
                             if raw_art:
                                 return raw_art.replace("100x100bb", "1000x1000bb")
@@ -152,74 +166,75 @@ def fetch_film_metadata(title: str, director: str):
     return None
 
 def fetch_album_metadata(album_title: str, artist: str):
-    """Recherche avec verrouillage strict Titre ET Artiste."""
+    """Recherche avec calcul de score strict et validation croisée titre/artiste."""
     clean_t = clean_search_title(album_title)
     clean_a = clean_search_title(artist)
-    norm_title = normalize_text(clean_t)
-    norm_artist = normalize_text(clean_a)
+
+    target_title_words = extract_significant_words(clean_t)
+    target_artist_words = extract_significant_words(clean_a)
 
     queries = [
         f"{clean_t} {clean_a}",
-        f"{clean_a} {clean_t}",
         clean_t
     ]
 
     best_match = None
+    best_score = 0.0
 
     for country in ["fr", "us", "gb"]:
-        if best_match:
+        if best_score >= 0.85:
             break
         for q in queries:
             encoded_q = safe_url_encode(q)
-            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&limit=25&country={country}"
+            url = f"https://itunes.apple.com/search?term={encoded_q}&entity=album&limit=15&country={country}"
             try:
                 req = urllib.request.Request(url, headers={"User-Agent": "TriviumApp/2.1"})
                 with urllib.request.urlopen(req, timeout=6) as response:
                     data = json.loads(response.read().decode())
                     results = data.get("results", [])
 
-                    # 1. Vérification stricte : le TITRE ET l'ARTISTE doivent correspondre
                     for item in results:
-                        col_name = normalize_text(item.get("collectionName", ""))
-                        art_name = normalize_text(item.get("artistName", ""))
+                        cand_title = item.get("collectionName", "")
+                        cand_artist = item.get("artistName", "")
 
-                        title_matches = (norm_title in col_name) or (col_name in norm_title)
-                        artist_matches = (norm_artist in art_name) or (art_name in norm_artist)
+                        cand_title_words = extract_significant_words(cand_title)
+                        cand_artist_words = extract_significant_words(cand_artist)
 
-                        # Tolérance pour les variantes d'artistes (ex. "Pink Floyd Records")
-                        if not artist_matches:
-                            a_words = [w for w in norm_artist.split() if len(w) > 2]
-                            if a_words and all(w in art_name for w in a_words):
-                                artist_matches = True
+                        # 1. Vérification Artiste : au moins un mot distinctif de l'artiste obligatoire
+                        artist_overlap = target_artist_words.intersection(cand_artist_words)
+                        if not artist_overlap and target_artist_words:
+                            continue  # Rejet immédiat si l'artiste n'a rien à voir
 
-                        if title_matches and artist_matches:
+                        # 2. Vérification Titre : pourcentage de mots clés du titre cible présents
+                        if not target_title_words:
+                            title_word_ratio = 1.0
+                        else:
+                            title_overlap = target_title_words.intersection(cand_title_words)
+                            title_word_ratio = len(title_overlap) / len(target_title_words)
+
+                        # 3. Similarité textuelle globale (SequenceMatcher)
+                        norm_target = normalize_text(clean_t)
+                        norm_cand = normalize_text(clean_title_only(cand_title))
+                        text_ratio = difflib.SequenceMatcher(None, norm_target, norm_cand).ratio()
+
+                        score = (title_word_ratio * 0.7) + (text_ratio * 0.3)
+
+                        # Si tous les mots clés sont présents (ex: "dark", "side", "moon")
+                        if target_title_words.issubset(cand_title_words):
+                            score += 0.3
+
+                        if score > best_score:
+                            best_score = score
                             best_match = item
-                            break
-
-                    if best_match:
-                        break
-
-                    # 2. Vérification par mots-clés : tous les mots significatifs du titre ET de l'artiste
-                    title_words = [w for w in norm_title.split() if len(w) > 2]
-                    artist_words = [w for w in norm_artist.split() if len(w) > 2]
-
-                    for item in results:
-                        col_name = normalize_text(item.get("collectionName", ""))
-                        art_name = normalize_text(item.get("artistName", ""))
-
-                        has_title_words = any(w in col_name for w in title_words) if title_words else False
-                        has_artist_words = any(w in art_name for w in artist_words) if artist_words else False
-
-                        if has_title_words and has_artist_words:
-                            best_match = item
-                            break
 
             except Exception:
                 pass
-            if best_match:
+            if best_score >= 0.85:
                 break
 
-    if not best_match:
+    # Seuil strict de validation pour éviter d'associer un mauvais album
+    if not best_match or best_score < 0.70:
+        print(f"⚠️ Aucun album Apple Music parfaitement concordant trouvé pour '{album_title}' de '{artist}' (score: {best_score:.2f})")
         return None, [], None
 
     raw_art = best_match.get("artworkUrl100", "")
@@ -252,6 +267,13 @@ def fetch_album_metadata(album_title: str, artist: str):
                 pass
 
     return image_url, tracks, direct_url
+
+def clean_title_only(text: str) -> str:
+    """Élimine les suffixes type '(Remastered)' ou '- EP'."""
+    t = re.sub(r"\(.*?\)", "", text)
+    t = re.sub(r"\[.*?\]", "", t)
+    t = t.split("-")[0]
+    return t.strip()
 
 def build_safe_platform_links(item_type: str, title: str, creator: str, direct_apple_url: str = None):
     clean_t = clean_search_title(title)
