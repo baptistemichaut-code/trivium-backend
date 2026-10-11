@@ -1,0 +1,716 @@
+{
+  "accessible": {
+    "themeTitle": "L'Appel de la Légende",
+    "themeSubtitle": "Trois récits fondateurs gravés dans le cœur de la culture populaire.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Dracula",
+        "creator": "Bram Stoker",
+        "year": "1897",
+        "origin": "Royaume-Uni",
+        "genre": "Roman gothique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "416 pages",
+        "quote": "Bienvenue dans ma demeure. Entrez librement et de votre propre volonté !",
+        "anecdote": "Bram Stoker a passé sept ans à étudier le folklore de l'Europe de l'Est et les histoires de vampires avant de rédiger son chef-d'œuvre épistolaire.",
+        "tags": [
+          "Gothique",
+          "Mythe",
+          "Classique"
+        ],
+        "ratings": [
+          {
+            "source": "Le Figaro Littéraire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre d'atmosphère qui a façonné la mythologie moderne."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une tension narrative brillante portée par une structure épistolaire magistrale."
+          },
+          {
+            "source": "The Guardian",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le roman ultime sur l'angoisse victorienne et le désir refoulé."
+          }
+        ],
+        "aiSummary": "À travers des journaux intimes et des lettres, le roman retrace l'affrontement entre le comte Dracula et un groupe mené par le professeur Van Helsing. Un voyage sombre de la Transylvanie à Londres.",
+        "thematicAnalysis": "Ce roman établit le modèle universel du monstre séducteur et terrifiant, inscrivant à jamais la figure du vampire au sommet du folklore mondial.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/c9/0a/13/c90a1346-c64c-c73e-1b5a-9b5e2ea6584e/PD_Dracula-Adj.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Dracula+Bram+Stoker",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Dracula+Bram+Stoker",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "E.T. l'extra-terrestre",
+        "creator": "Steven Spielberg",
+        "year": "1982",
+        "origin": "États-Unis",
+        "genre": "Science-fiction",
+        "accessibility": "Pop Culture",
+        "formatMetric": "1h 55m",
+        "quote": "E.T. maison téléphone.",
+        "anecdote": "La voix emblématique d'E.T. a été créée en combinant les voix de Pat Welsh, une habitante de Californie fumant deux paquets par jour, et de divers bruits d'animaux.",
+        "tags": [
+          "Enfance",
+          "Culte",
+          "Émotion"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une merveille d'émerveillement et de maîtrise cinématographique."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un conte moderne universel d'une tendresse inouïe."
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "99%",
+            "iconName": "star.fill",
+            "excerpt": "Un classique instantané de la culture populaire mondiale."
+          }
+        ],
+        "aiSummary": "Un jeune garçon nommé Elliott se lie d'amitié avec un extraterrestre abandonné sur Terre. Il va tout faire pour l'aider à regagner sa planète tout en le protégeant du gouvernement.",
+        "thematicAnalysis": "Spielberg touche à l'essence même de l'empathie humaine et de l'imaginaire enfantin face à l'inconnu, créant un phare poétique pour des générations.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=E.T.+l%27extra-terrestre+Steven+Spielberg",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=E.T.+l%27extra-terrestre",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Abbey Road",
+        "creator": "The Beatles",
+        "year": "1969",
+        "origin": "Royaume-Uni",
+        "genre": "Pop Rock",
+        "accessibility": "Pop Culture",
+        "formatMetric": "47 minutes, 17 titres",
+        "quote": "And in the end, the love you take is equal to the love you make.",
+        "anecdote": "La célèbre pochette montrant le groupe sur le passage piéton a été photographiée en seulement dix minutes, le temps de bloquer brièvement la circulation.",
+        "tags": [
+          "Légende",
+          "Rock",
+          "Harmonie"
+        ],
+        "ratings": [
+          {
+            "source": "Rolling Stone",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le testament parfait du plus grand groupe de tous les temps."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "Une suite de chansons et un medley final d'une perfection inégalée."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une apothéose mélodique d'une richesse éternelle."
+          }
+        ],
+        "aiSummary": "Dernier album enregistré ensemble par les quatre garçons de Liverpool, Abbey Road alterne tubes intemporels et un medley symphonique devenu légendaire en face B.",
+        "thematicAnalysis": "Symbole absolu de la pop moderne, ce disque immortalise une synergie créative au sommet de son art juste avant sa dissolution.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/53/43/485343e3-dd6a-0034-faec-f4b6403f8108/13UMGIM63890.rgb.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/abbey-road-2019-mix/1474815798?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Abbey+Road+The+Beatles",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Come Together (2019 Mix)",
+            "duration": "4:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/b5/e4/97b5e459-d7e7-9806-2a87-96a760eca8ea/mzaf_16460868857902969803.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Something (2019 Mix)",
+            "duration": "3:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/7f/fe/557ffe43-d824-a8a0-5103-3c7dd14f3cb6/mzaf_7875382923244631250.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Maxwell's Silver Hammer (2019 Mix)",
+            "duration": "3:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/eb/3d/50eb3d46-f4c7-1d5c-de44-0afa5f2a6412/mzaf_5811039510386245014.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Oh! Darling (2019 Mix)",
+            "duration": "3:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/f1/e2/b3f1e21d-bd25-8651-5c76-86e7cdd9477c/mzaf_6540308084326367590.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Octopus's Garden (2019 Mix)",
+            "duration": "2:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/ad/c6/c3adc69e-3f5f-1b48-a976-968646de1a38/mzaf_17540787884956133736.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "I Want You (She's So Heavy) [2019 Mix]",
+            "duration": "7:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/75/f5/cf75f550-6a92-a71d-d7b7-982353eebfab/mzaf_11197924861025522154.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Here Comes the Sun (2019 Mix)",
+            "duration": "3:05",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/a4/e5/59a4e513-0f03-a024-9df2-b2e3c2e7113a/mzaf_14197174444155795121.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Because (2019 Mix)",
+            "duration": "2:45",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/98/5a/f8985a90-9730-8ef3-9055-0e4b5a703588/mzaf_17718906172543866962.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "You Never Give Me Your Money (2019 Mix)",
+            "duration": "4:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/f7/20/33f720ce-153d-e875-0152-ed8acfb19091/mzaf_3089545544883907838.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Sun King (2019 Mix)",
+            "duration": "2:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/8b/09/4b8b0929-04f7-b1ad-8b3a-c310adfc8b61/mzaf_12248504497038264564.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Mean Mr. Mustard (2019 Mix)",
+            "duration": "1:06",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/b9/89/aab98977-628b-cd1a-2476-f9711e032522/mzaf_3219485397259380191.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 12,
+            "title": "Polythene Pam (2019 Mix)",
+            "duration": "1:12",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/e7/c8/06e7c8f8-626b-6d22-61cf-8cb6a820a952/mzaf_13432230441124752852.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 13,
+            "title": "She Came In Through the Bathroom Window (2019 Mix)",
+            "duration": "1:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/7d/78/1c7d7860-2143-a1f1-52b2-a58dfceb20b4/mzaf_18115840505977285360.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 14,
+            "title": "Golden Slumbers (2019 Mix)",
+            "duration": "1:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/03/e1/6203e1f0-3884-e99d-532e-933a104d0ab5/mzaf_18155091852386725526.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 15,
+            "title": "Carry That Weight (2019 Mix)",
+            "duration": "1:36",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/20/a5/8120a5f2-cbe2-80f8-44f2-34211a0760b0/mzaf_6826182279786823151.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 16,
+            "title": "The End (2019 Mix)",
+            "duration": "2:21",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/be/ee/53beee30-6ad0-17df-a0aa-982a750ed9c9/mzaf_7247084361358546149.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 17,
+            "title": "Her Majesty (2019 Mix)",
+            "duration": "0:25",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/51/66/87516639-173d-98a4-d5fd-ba1250a8d273/mzaf_9361950334601807674.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "L'Envers du Miroir",
+    "themeSubtitle": "Entre quête intime et vérités décalées, l'exploration des marges.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "L'Aveuglement",
+        "creator": "José Saramago",
+        "year": "1995",
+        "origin": "Portugal",
+        "genre": "Roman allégorique",
+        "accessibility": "Curieux",
+        "formatMetric": "350 pages",
+        "quote": "Je pense que nous ne sommes pas devenus aveugles, je pense que nous le sommes.",
+        "anecdote": "José Saramago utilise une ponctuation très particulière, évitant les guillemets et imbriquant les dialogues directement dans le fil des paragraphes.",
+        "tags": [
+          "Dystopie",
+          "Humanité",
+          "Nobel"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une fable politique terrifiante et lucide sur la condition humaine."
+          },
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience de lecture troublante qui interroge nos instincts les plus profonds."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Saramago pousse l'allégorie sociale à son point de rupture."
+          }
+        ],
+        "aiSummary": "Une épidémie d'aveuglement blanc frappe brutalement une ville sans nom. Les personnes atteintes sont isolées dans un asile où l'ordre social s'effondre rapidement.",
+        "thematicAnalysis": "Le roman explore la fragilité des structures morales quotidiennes lorsqu'elles sont confrontées à une crise existentielle collective.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/ae/45/a7/ae45a71f-7861-5f34-8780-35fab36a8348/9782806268235.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Aveuglement+Jos%C3%A9+Saramago",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Aveuglement+Jos%C3%A9+Saramago",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Lost in Translation",
+        "creator": "Sofia Coppola",
+        "year": "2003",
+        "origin": "États-Unis / Japon",
+        "genre": "Comédie dramatique",
+        "accessibility": "Curieux",
+        "formatMetric": "1h 42m",
+        "quote": "Plus vous savez qui vous êtes et ce que vous voulez, moins vous laissez les choses vous perturber.",
+        "anecdote": "Une grande partie des scènes de déambulation de Bill Murray et Scarlett Johansson dans Tokyo a été tournée en caméra cachée sans autorisations formelles.",
+        "tags": [
+          "Mélancolie",
+          "Tokyo",
+          "Intimiste"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une étude impressionniste du décalage horaire et des âmes en peine."
+          },
+          {
+            "source": "Positif",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une grâce poétique rare suspendue au-dessus d'une mégapole électrique."
+          },
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un film nocturne, délicat et inoubliable sur l'amitié éphémère."
+          }
+        ],
+        "aiSummary": "Deux Américains désorientés se croisent dans un grand hôtel de Tokyo. Entre un acteur sur le retour et une jeune mariée délaissée naît une complicité tendre et suspended.",
+        "thematicAnalysis": "Sofia Coppola capte la beauté paradoxale de l'isolement au milieu de la foule, offrant un regard tendre sur la recherche de sens.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Lost+in+Translation+Sofia+Coppola",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Lost+in+Translation",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Dummy",
+        "creator": "Portishead",
+        "year": "1994",
+        "origin": "Royaume-Uni",
+        "genre": "Trip-hop",
+        "accessibility": "Curieux",
+        "formatMetric": "49 minutes, 11 titres",
+        "quote": "Give me a reason to love you...",
+        "anecdote": "Pour obtenir le son vinyle authentique et usé, le groupe enregistrait ses propres parties instrumentales sur vinyle avant de les piétiner sur le sol du studio et de les sampler.",
+        "tags": [
+          "Trip-hop",
+          "Cinématique",
+          "Mélancolie"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "9.5/10",
+            "iconName": "star.fill",
+            "excerpt": "L'album définitif du trip-hop, alliant tension cinématographique et blues moderne."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une voix déchirante posée sur des rythmiques sombres et vénéneuses."
+          },
+          {
+            "source": "The Guardian",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une atmosphère nocturne hypnotique qui n'a pas pris une ride."
+          }
+        ],
+        "aiSummary": "Subtil mélange de scratches, de cordes dramatiques et de la voix envoûtante de Beth Gibbons, cet album fondateur pose les bases du son trip-hop de Bristol.",
+        "thematicAnalysis": "Dummy sonde les noirceurs du sentiment amoureux avec un esthétisme sonore sombre et envoûtant, redéfinissant la pop des années 90.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c1/71/93/c1719342-df7d-e9c5-c87c-53dae5afb289/00042282855329.rgb.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/dummy/1440653096?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Dummy+Portishead",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Mysterons",
+            "duration": "5:05",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/a8/96/4da89648-aab8-f129-983c-88eadbc41127/mzaf_10046411872083790441.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Sour Times",
+            "duration": "4:12",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/f6/e3/7ef6e383-ff78-f34f-4824-78be29bc7aae/mzaf_2959336855850238077.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Strangers",
+            "duration": "3:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/ee/e7/a8eee7c5-b311-a657-ce85-6448c43c787a/mzaf_16776633165317330451.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "It Could Be Sweet",
+            "duration": "4:17",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/78/82/987882c0-5b71-8e93-2baa-0483aa4aa25f/mzaf_15168525430095011375.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Wandering Star",
+            "duration": "4:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/e8/5d/89e85d4c-6631-fe68-7c4e-a3e84dd03ee0/mzaf_6423228021913800423.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "It's a Fire",
+            "duration": "3:46",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/dd/1b/a5dd1b66-d89e-0e1c-9c71-473f262c304f/mzaf_15608238577360154209.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Numb",
+            "duration": "3:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/8d/42/8a8d42dc-9bb4-14e1-ff97-1cc5c72cffb9/mzaf_14671208066758137299.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Roads",
+            "duration": "5:03",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/94/3f/f4943f50-be3b-629b-3612-68e32a1a7c8f/mzaf_12088733510844922268.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Pedestal",
+            "duration": "3:40",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/79/0a/de790a43-e116-ba7f-7720-357f1a60505e/mzaf_2285304572877661197.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Biscuit",
+            "duration": "5:02",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/df/1c/badf1c88-c5e4-40d8-b14c-65b4801d0711/mzaf_8837222660693281886.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Glory Box",
+            "duration": "5:08",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/b2/a4/40b2a45b-eacf-818f-7af6-f7f8b3885230/mzaf_16256497095178600689.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "L'Archipel des Abstractions",
+    "themeSubtitle": "Une déconstruction radicale du récit, de l'image et du son.",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Le Chiendent",
+        "creator": "Raymond Queneau",
+        "year": "1933",
+        "origin": "France",
+        "genre": "Roman d'avant-garde",
+        "accessibility": "Initié",
+        "formatMetric": "320 pages",
+        "quote": "S'il n'y a rien, c'est qu'il n'y a rien. Mais qu'est-ce que ce rien ?",
+        "anecdote": "Construit selon une structure mathématique rigoureuse inspirée de Descartes, le roman se divise en 91 sections correspondant à un schéma combinatoire précis.",
+        "tags": [
+          "Oulipo",
+          "Philosophie",
+          "Langage"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une révolution stylistique hilarante et profondément métaphysique."
+          },
+          {
+            "source": "Libération",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "La naissance du langage parlé en littérature dans une architecture vertigineuse."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre de virtuosité formelle et d'esprit frondeur."
+          }
+        ],
+        "aiSummary": "Un petit employé de banque commence soudainement à exister pleinement lorsqu'un inconnu remarque sa présence. S'ensuit une quête burlesque et philosophique autour d'une porte peinte.",
+        "thematicAnalysis": "Queneau bouscule la tradition romanesque en injectant la langue parlée dans une ossature formelle d'une précision mathématique absolue.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication5/v4/79/97/22/79972258-ae26-8cfe-d176-08ce3fbcc81a/cover.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le+Chiendent+Raymond+Queneau",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le+Chiendent+Raymond+Queneau",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "L'Année dernière à Marienbad",
+        "creator": "Alain Resnais",
+        "year": "1961",
+        "origin": "France / Italie",
+        "genre": "Drame expérimental",
+        "accessibility": "Initié",
+        "formatMetric": "1h 34m",
+        "quote": "Une fois de plus, j'avance, une fois de plus, le long de ces couloirs...",
+        "anecdote": "Écrit par Alain Robbe-Grillet, le scénario ne précise jamais si les deux protagonistes se sont réellement rencontrés l'année précédente, laissant le film complètement ouvert aux interprétations.",
+        "tags": [
+          "Nouveau Roman",
+          "Labyrinthe",
+          "Mémoire"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un labyrinthe psychique et plastique d'une beauté pure."
+          },
+          {
+            "source": "Télérama",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un sommet du cinéma moderne où le temps s'abolit dans les miroirs."
+          },
+          {
+            "source": "Positif",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une recherche esthétique absolue qui réinvente le montage cinématographique."
+          }
+        ],
+        "aiSummary": "Dans un grand hôtel baroque, un homme tente de convaincre une femme qu'ils se sont rencontrés l'année précédente à Marienbad et qu'elle lui avait promis de s'enfuir avec lui.",
+        "thematicAnalysis": "Resnais conçoit une architecture cinématographique hypnotique où les rêves, les souvenirs et le présent se confondent sans cesse.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e+derni%C3%A8re+%C3%A0+Marienbad+Alain+Resnais",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e+derni%C3%A8re+%C3%A0+Marienbad",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "The Ascension",
+        "creator": "Glenn Branca",
+        "year": "1981",
+        "origin": "États-Unis",
+        "genre": "No Wave / Rock expérimental",
+        "accessibility": "Initié",
+        "formatMetric": "40 minutes, 5 titres",
+        "quote": "Le son à l'état pur comme architecture sacrée.",
+        "anecdote": "L'album rassemble quatre guitares électriques accordées de manière microtonale non conventionnelle, créant des harmoniques fantômes d'une puissance inouïe.",
+        "tags": [
+          "Avant-Garde",
+          "Guitare",
+          "No Wave"
+        ],
+        "ratings": [
+          {
+            "source": "The Wire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un monument de la musique d'avant-garde new-yorkaise."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "9.3/10",
+            "iconName": "star.fill",
+            "excerpt": "Une symphonie de guitares saturées d'une ferveur transcendantale."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une onde de choc minimale et répétitive d'une beauté cataclysmique."
+          }
+        ],
+        "aiSummary": "Composé pour un ensemble de guitares électriques, de basse et de batterie, The Ascension tresse des couches de saturation microtonale pour créer des cathédrales de son répétitives.",
+        "thematicAnalysis": "Branca fait pont entre le minimalisme académique et l'énergie brute du punk, étirant le timbre de la guitare vers des sommets monolithiques.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/89/51/0f/89510f86-ca65-bc3c-79b2-5a3104d89eae/677517200225.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/the-ascension/885232946?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/The+Ascension+Glenn+Branca",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Lesson No. 2",
+            "duration": "4:55",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/ec/51/7bec51c0-90fd-a798-2997-23465f5ab414/mzaf_10374735014317556789.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "The Spectacular Commodity",
+            "duration": "12:38",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/c8/35/35c83554-165b-95e8-8304-13d93058cbb7/mzaf_16173666835143237174.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Structure",
+            "duration": "3:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/7d/f1/e77df102-2bb4-55c9-0474-60af765ff0dd/mzaf_13280442152784350221.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Light Field (In Consonance)",
+            "duration": "8:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/c0/42/1cc0422f-a307-dcbc-54bf-b3101a3588a8/mzaf_10642194075298497614.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "The Ascension",
+            "duration": "13:09",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/d2/7d/64d27d2d-8301-f24d-e0ef-b4a3939f2caa/mzaf_2324522016318262163.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  }
+}
