@@ -1,0 +1,665 @@
+{
+  "accessible": {
+    "themeTitle": "L'Empreinte de la Passion",
+    "themeSubtitle": "Quand les désirs ardents redessinent la trajectoire d'une vie entière",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Gatsby le Magnifique",
+        "creator": "F. Scott Fitzgerald",
+        "year": "1925",
+        "origin": "États-Unis",
+        "genre": "Roman classique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "220 pages",
+        "quote": "C'est ainsi que nous luttons, barques contre le courant, ramenés sans cesse vers le passé.",
+        "anecdote": "Fitzgerald voyait dans la couverture originale de Francis Cugat l'inspiration directe pour le regard mélancolique des yeux de TJ Eckleburg surplombant le récit.",
+        "tags": [
+          "Classique",
+          "Roaring Twenties"
+        ],
+        "ratings": [
+          {
+            "source": "Le Figaro Littéraire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Le portrait incandescent d'un rêve américain brisé avec une élégance absolue."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une écriture étincelante qui capte la tragédie derrière le luxe."
+          },
+          {
+            "source": "The New York Times",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre inégalé de la littérature du XXe siècle."
+          }
+        ],
+        "aiSummary": "Dans les années 1920, le mystérieux milliardaire Jay Gatsby organise d'extravagantes fêtes dans l'espoir de reconquérir Daisy Buchanan, son amour de jeunesse. À travers le regard du narrateur Nick Carraway, le roman explore l'illusion du statut et la nostalgie des idéaux perdus.",
+        "thematicAnalysis": "Ce roman incarne la passion comme une quête temporelle vaine, où le désir devient une force poétique irrésistible mais destructrice face à la réalité.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/c6/7a/ba/c67abab2-1fb2-cecc-d08e-1a4e95e73e08/9782072460982.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Gatsby+le+Magnifique+F.+Scott+Fitzgerald",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Gatsby+le+Magnifique+F.+Scott+Fitzgerald",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Casablanca",
+        "creator": "Michael Curtiz",
+        "year": "1942",
+        "origin": "États-Unis",
+        "genre": "Drame romantique",
+        "accessibility": "Pop Culture",
+        "formatMetric": "1h 42m",
+        "quote": "Nous aurons toujours Paris.",
+        "anecdote": "Le scénario était réécrit au jour le jour durant le tournage, et Ingrid Bergman ignorait jusqu'à la scène finale avec quel homme son personnage repartirait.",
+        "tags": [
+          "Âge d'or",
+          "Culte"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "L'équilibre parfait entre romantisme hollywoodien et tension politique."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Des dialogues immortels portés par un duo d'acteurs au sommet de leur art."
+          },
+          {
+            "source": "Rotten Tomatoes",
+            "score": "99%",
+            "iconName": "star.fill",
+            "excerpt": "Un monument du septième art universellement plébiscité."
+          }
+        ],
+        "aiSummary": "Pendant la Seconde Guerre mondiale, Rick Blaine gère un club réputé à Casablanca où se croisent réfugiés et espions. Son passé le rattrape brusquement lorsque son ancien amour, Ilsa Lund, franchit la porte flanquée de son mari résistant.",
+        "thematicAnalysis": "Le film met en scène le tiraillement entre l'amour passionnel absolu et le devoir moral d'abnégation dans un monde en plein chaos.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Casablanca+Michael+Curtiz",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Casablanca",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Grace",
+        "creator": "Jeff Buckley",
+        "year": "1994",
+        "origin": "États-Unis",
+        "genre": "Rock alternatif",
+        "accessibility": "Pop Culture",
+        "formatMetric": "51 minutes, 10 titres",
+        "quote": "My kingdom for a kiss upon her shoulder.",
+        "anecdote": "La reprise mythique de 'Hallelujah' a été enregistrée en une seule prise intimiste avec sa guitare Fender Telecaster branchée dans un ampli à lampes.",
+        "tags": [
+          "Incontournable",
+          "Vocal"
+        ],
+        "ratings": [
+          {
+            "source": "Rolling Stone",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une performance vocale d'une grâce et d'une puissance émotionnelle brutes."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "9.5/10",
+            "iconName": "star.fill",
+            "excerpt": "Un album majestueux où le folk se gorge d'envolées lyriques impétueuses."
+          },
+          {
+            "source": "Les Inrockuptibles",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un coup de foudre musical immortel, habité d'une ferveur sacrée."
+          }
+        ],
+        "aiSummary": "Seul album studio publié de son vivant, 'Grace' déploie un rock romantique aux confins du jazz, du folk et du lyrisme vocal. Porté par une voix exceptionnelle aux envolées angéliques, l'album explore la vulnérabilité, le désir et le deuil.",
+        "thematicAnalysis": "Buckley insuffle une passion viscérale dans chaque note, transformant la beauté mélodique en une véritable catharsis spirituelle.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/26/d6/e3/26d6e339-a7a9-d61e-1b5f-0852a5515a55/886445517880.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/grace/1046187510?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Grace+Jeff+Buckley",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Mojo Pin",
+            "duration": "5:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/a9/4b/67a94bdc-7461-0f7d-a517-80c66027d3b8/mzaf_12850345661374360873.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Grace",
+            "duration": "5:22",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/55/e1/7055e1c1-2523-5892-5156-67a04dfe9f29/mzaf_13450393832761670773.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Last Goodbye",
+            "duration": "4:35",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/74/3e/05/743e0513-5cb5-623c-574a-d0275014c382/mzaf_18382697113497960163.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Lilac Wine",
+            "duration": "4:32",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/59/89/49598934-1fd9-a218-f6e0-080f677e2980/mzaf_14844478689984034018.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "So Real",
+            "duration": "4:43",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/f8/3c/f0f83ce9-0785-d3b8-96fb-fe8ba53a67b3/mzaf_3904594632816436469.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Hallelujah",
+            "duration": "6:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/f9/7f/3df97f47-c0a4-bdf8-53fa-19e99fa891f1/mzaf_16433687184189443153.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Lover, You Should've Come Over",
+            "duration": "6:44",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/0c/4e/db0c4edc-9daa-e262-55b9-89984c3f6aa6/mzaf_16142695276315265640.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Corpus Christi Carol",
+            "duration": "2:56",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/fd/dc/e7fddc72-8887-7a4d-421e-802db15769ec/mzaf_660300130156086181.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Eternal Life",
+            "duration": "4:52",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/cd/17/2dcd17b7-4c37-e77d-e87a-528fda3b3abf/mzaf_15994185001791041440.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 10,
+            "title": "Dream Brother",
+            "duration": "5:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/d6/93/d2d693d0-240b-4990-68cf-2b75d6f82fba/mzaf_9242513814437449414.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 11,
+            "title": "Forget Her",
+            "duration": "5:14",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/22/e5/9922e5e7-fa32-21c6-5714-a49e2098eca2/mzaf_15269119448834441811.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "intermediate": {
+    "themeTitle": "L'Archipel des Ombres",
+    "themeSubtitle": "Une immersion captivante dans les méandres secrets de la condition humaine",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Les Dépossédés",
+        "creator": "Ursula K. Le Guin",
+        "year": "1974",
+        "origin": "États-Unis",
+        "genre": "Science-fiction spéculative",
+        "accessibility": "Curieux",
+        "formatMetric": "420 pages",
+        "quote": "Le changement est la vraie condition de la liberté.",
+        "anecdote": "Ursula K. Le Guin a élaboré une grammaire complète pour la langue anarresienne, débarrassée des pronoms possessifs pour refléter une société anarchiste.",
+        "tags": [
+          "Utopie",
+          "Philosophie"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une réflexion politique d'une grande finesse narrative et intellectuelle."
+          },
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Un chef-d'œuvre de la science-fiction sociale qui interroge nos modèles."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre d'une hauteur de vue prodigieuse sur l'altérité et la liberté."
+          }
+        ],
+        "aiSummary": "Shevek, un physicien d'Anarres, une lune anarchiste et austère, voyage vers Urras, la planète mère capitaliste et opulente. Ce roman confronte deux modèles de société opposés à travers la quête de vérité d'un homme idéaliste.",
+        "thematicAnalysis": "L'œuvre explore les failles et les lumières des constructions sociétales, confrontant l'individu aux zones d'ombre de ses propres utopies.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/c2/52/f6/c252f608-2bd2-8358-f09d-ee04d0423e1e/9782221260739.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Les+D%C3%A9poss%C3%A9d%C3%A9s+Ursula+K.+Le+Guin",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Les+D%C3%A9poss%C3%A9d%C3%A9s+Ursula+K.+Le+Guin",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "First Reformed",
+        "creator": "Paul Schrader",
+        "year": "2017",
+        "origin": "États-Unis",
+        "genre": "Drame psychologique",
+        "accessibility": "Curieux",
+        "formatMetric": "1h 53m",
+        "quote": "Le désespoir est l'ultime développement de l'orgueil.",
+        "anecdote": "Paul Schrader a employé un cadrage au format 1.37:1 et banni tout mouvement de caméra inutile pour imiter la rigueur ascétique du cinéma de Robert Bresson.",
+        "tags": [
+          "Cinéma d'auteur",
+          "Existentiel"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un sommet de rigueur formelle et de puissance métaphysique."
+          },
+          {
+            "source": "Positif",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Ethan Hawke livre une prestation époustouflante en prêtre tourmenté."
+          },
+          {
+            "source": "Télérama",
+            "score": "4/5",
+            "iconName": "star.fill",
+            "excerpt": "Une étude austère mais bouleversante de la crise environnementale et spirituelle."
+          }
+        ],
+        "aiSummary": "Ernst Toller, pasteur d'une petite communauté historique, traverse une crise de foi profonde en accompagnant un militant écologiste radical. Confronté à la corruption du monde et à son mal-être, il bascule vers un mysticisme inquiétant.",
+        "thematicAnalysis": "Schrader dissèque l'isolement contemporain et la dérive vers l'extrémisme spirituel lorsque le doute ronge l'âme humaine.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=First+Reformed+Paul+Schrader",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=First+Reformed",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Laughing Stock",
+        "creator": "Talk Talk",
+        "year": "1991",
+        "origin": "Royaume-Uni",
+        "genre": "Post-rock",
+        "accessibility": "Curieux",
+        "formatMetric": "43 minutes, 6 titres",
+        "quote": "La musique commence là où s'arrêtent le silence et l'évidence.",
+        "anecdote": "L'album a été enregistré dans le studio Wessex totalement assombri et éclairé uniquement par des bougies, sans tempo préétabli pour privilégier l'improvisation.",
+        "tags": [
+          "Expérimental",
+          "Culminant"
+        ],
+        "ratings": [
+          {
+            "source": "Pitchfork",
+            "score": "10/10",
+            "iconName": "star.fill",
+            "excerpt": "L'acte fondateur du post-rock moderniste, d'une spiritualité inouïe."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un monument de retenue sonore et d'improvisation géniale."
+          },
+          {
+            "source": "The Guardian",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une œuvre mystique qui révolutionna le langage de la musique populaire."
+          }
+        ],
+        "aiSummary": "Éloigné des succès pop de leurs débuts, Talk Talk érige avec cet album un chef-d'œuvre de patience et de textures organiques. Entre silences pesants, cuivres crépusculaires et guitares saturées, le disque propose une expérience sonore contemplative.",
+        "thematicAnalysis": "L'album sculpte les ombres du silence pour faire émerger une beauté poignante du dépouillement le plus total.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/81/4d/38814db4-bce6-3132-e33a-a44ee497de7c/00602517623088.rgb.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/laughing-stock/1442531159?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Laughing+Stock+Talk+Talk",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Myrrhman",
+            "duration": "5:33",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/c1/45/14c1452a-f43f-e7ab-00a5-055210d4ef3c/mzaf_4626068384846814941.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "Ascension Day",
+            "duration": "6:00",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/b9/15/04b915ba-5c3e-268c-8b15-f72906666162/mzaf_17737467041944806405.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "After the Flood",
+            "duration": "9:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/8b/cc/0d8bcc8e-a033-0564-e02b-f9fbdb6bd0a4/mzaf_4011045293434375347.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Taphead",
+            "duration": "7:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/ef/3c/1fef3c57-d1c2-1272-0bf7-909c9ec5137e/mzaf_5039744104063912087.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "New Grass",
+            "duration": "9:46",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/d4/bf/44d4bf62-187f-7f1d-35c0-d4c73f00cf76/mzaf_6074910384046746314.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Runeii",
+            "duration": "4:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/4a/8e/bd4a8ee4-84a3-db6b-9baf-65cbcbfa7f25/mzaf_13854698499208627600.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "expert": {
+    "themeTitle": "Les Géométries de l'Inaudible",
+    "themeSubtitle": "Quand la forme se dissipe pour laisser émerger l'épure pure du sensible",
+    "items": [
+      {
+        "type": "LIVRE",
+        "title": "Molloy",
+        "creator": "Samuel Beckett",
+        "year": "1951",
+        "origin": "France / Irlande",
+        "genre": "Nouveau Roman",
+        "accessibility": "Initié",
+        "formatMetric": "240 pages",
+        "quote": "Dire c'est inventer. On invente faux, ce n'est pas grave, on invente toujours.",
+        "anecdote": "Beckett a choisi d'écrire Molloy directement en français plutôt que dans sa langue maternelle anglaise pour s'affranchir de tout effet de style superflu.",
+        "tags": [
+          "Avant-Garde",
+          "Absurde"
+        ],
+        "ratings": [
+          {
+            "source": "Le Monde des Livres",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une déconstruction radicale du récit moderne par un géant de la littérature."
+          },
+          {
+            "source": "Libération",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une comédie tragique et grinçante sur la décomposition du langage."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un texte hypnotique où l'errance devient l'essence même de l'écriture."
+          }
+        ],
+        "aiSummary": "Dividé en deux monologues parallèles, le roman suit d'abord l'errance physique de Molloy à la recherche de sa mère, puis la traque menée par l'agent Moran pour retrouver ce même Molloy. La narration se désagrège à mesure que les identités se confondent.",
+        "thematicAnalysis": "Beckett orchestre la dissolution des repères littéraires traditionnels pour mieux explorer la mécanique mise à nu de l'existence humaine.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication69/v4/1e/df/65/1edf65e9-e2d4-2684-3722-be40de563997/9782707325501.jpg/800x800bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Les Libraires",
+            "category": "Librairies indépendantes",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Molloy+Samuel+Beckett",
+            "iconName": "book.fill"
+          },
+          {
+            "name": "Fnac",
+            "category": "Achat livre & Ebook",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Molloy+Samuel+Beckett",
+            "iconName": "bag.fill"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "FILM",
+        "title": "Le Miroir",
+        "creator": "Andrei Tarkovsky",
+        "year": "1975",
+        "origin": "URSS",
+        "genre": "Cinéma poétique",
+        "accessibility": "Initié",
+        "formatMetric": "1h 48m",
+        "quote": "Les souvenirs sont la seule chose qui nous préserve de l'oubli absolu.",
+        "anecdote": "Tarkovsky utilise dans la bande-son de véritables poèmes récités par son père Arseni Tarkovski, liant intimement mémoire familiale et histoire collective.",
+        "tags": [
+          "Poétique",
+          "Chef-d'œuvre"
+        ],
+        "ratings": [
+          {
+            "source": "Cahiers du Cinéma",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une expérience sensorielle pure, libre de toute chronologie linéaire."
+          },
+          {
+            "source": "Télérama",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un poème visuel envoûtant où l'intime rejoint la grande histoire soviétique."
+          },
+          {
+            "source": "Positif",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "L'une des œuvres les plus radicales et plastiquement sublimées du cinéma."
+          }
+        ],
+        "aiSummary": "Un homme mourant se remémore son enfance au milieu des campagnes russes, son adolescence sous la guerre et l'éclatement de sa famille. Mêlant archives historiques et visions oniriques, le film abolit la frontière entre passé et présent.",
+        "thematicAnalysis": "Tarkovsky construit une grammaire visuelle fluide et presque hypnotique pour faire ressentir la nature impalpable du temps et du souvenir.",
+        "imageURL": null,
+        "platformLinks": [
+          {
+            "name": "JustWatch",
+            "category": "Disponibilité légale & Streaming",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Le+Miroir+Andrei+Tarkovsky",
+            "iconName": "play.tv.fill"
+          },
+          {
+            "name": "Apple TV",
+            "category": "Location & Achat VOD",
+            "urlString": "https://tv.apple.com/fr/search?term=Le+Miroir",
+            "iconName": "apple.logo"
+          }
+        ],
+        "tracks": []
+      },
+      {
+        "type": "ALBUM",
+        "title": "Sunset Mission",
+        "creator": "Bohren & der Club of Gore",
+        "year": "2000",
+        "origin": "Allemagne",
+        "genre": "Dark Ambient Jazz",
+        "accessibility": "Initié",
+        "formatMetric": "70 minutes, 9 titres",
+        "quote": "Un jazz au ralenti extrême, suspendu entre la nuit et le néant.",
+        "anecdote": "Issus du milieu métal hardcore, les musiciens ont délibérément ralenti leurs tempos jusqu'à l'extrême pour inventer ce genre singulier qualifié de 'doom jazz'.",
+        "tags": [
+          "Ambient",
+          "Jazz Noir"
+        ],
+        "ratings": [
+          {
+            "source": "The Wire",
+            "score": "5/5",
+            "iconName": "star.fill",
+            "excerpt": "Une immersion fascinante dans un minimalisme nocturne urbain."
+          },
+          {
+            "source": "Pitchfork",
+            "score": "8.7/10",
+            "iconName": "star.fill",
+            "excerpt": "Un paysage sonore cinématographique d'une lenteur somptueuse."
+          },
+          {
+            "source": "Les Inrocks",
+            "score": "4.5/5",
+            "iconName": "star.fill",
+            "excerpt": "Un album d'une atmosphère ténébreuse captivante et obsédante."
+          }
+        ],
+        "aiSummary": "Dépliant des rythmes étirés jusqu'à l'immobilité, cet album mêle piano Fender Rhodes, saxophone feutré et contrebasse caverneuse. Il installe une ambiance nocturne étouffante évoquant les ruelles désertes d'un film noir imaginaire.",
+        "thematicAnalysis": "Le groupe sculpte l'espace musical en jouant avec la suspension du temps et la résonance du vide, invitant à une méditation crépusculaire.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0a/08/08/0a08084a-baf5-85c7-1919-1911e04f0387/5414939949548_cover.jpg/600x600bb.jpg",
+        "platformLinks": [
+          {
+            "name": "Apple Music",
+            "category": "Écoute intégrale & Lossless",
+            "urlString": "https://music.apple.com/fr/album/sunset-mission/1161075107?uo=4",
+            "iconName": "apple.logo"
+          },
+          {
+            "name": "Deezer",
+            "category": "Streaming audio & HiFi",
+            "urlString": "https://www.deezer.com/search/Sunset+Mission+Bohren+%26+der+Club+of+Gore",
+            "iconName": "music.note"
+          }
+        ],
+        "tracks": [
+          {
+            "trackNumber": 1,
+            "title": "Prowler",
+            "duration": "5:04",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/e4/ac/0ce4ac9c-a671-afc7-5e81-b6e29457ed10/mzaf_4309389047181230937.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 2,
+            "title": "On Demon Wings",
+            "duration": "7:01",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/d5/50/c8d55079-f09e-6c68-3ecf-a9c37bc98350/mzaf_12214876143609020163.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Midnight Walker",
+            "duration": "7:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/88/1e/62881ea9-344e-f25a-ea67-ad62803a5e1f/mzaf_3254579114045378021.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Street Tattoo",
+            "duration": "9:51",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/6f/9b/ac6f9b19-f638-ce03-340e-52e7a3c9b827/mzaf_16128110807585533871.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Painless Steel",
+            "duration": "5:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/63/c3/3063c38a-a878-05ab-b493-37a610fc5bae/mzaf_6717925341667433204.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 6,
+            "title": "Darkstalker",
+            "duration": "5:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fd/6b/c0/fd6bc078-a4e0-9690-5f2c-236a80addbf7/mzaf_12480713686000904140.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 7,
+            "title": "Nightwolf",
+            "duration": "16:31",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/c5/42/b2c5429b-3535-ed85-6855-31ce496652f9/mzaf_12393051408863668359.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 8,
+            "title": "Black City Skyline",
+            "duration": "5:51",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/02/49/0002498a-e86b-82aa-6eec-13ea918e1a49/mzaf_16718016620803511785.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "Dead End Angels",
+            "duration": "10:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/4e/52/8f4e52bd-caef-2b18-c583-de7a1be0f5c4/mzaf_15057777422116492562.plus.aac.p.m4a"
+          }
+        ]
+      }
+    ]
+  }
+}
