@@ -1,58 +1,58 @@
 {
   "accessible": {
-    "themeTitle": "L'Éclat des Grands Horizons",
-    "themeSubtitle": "Quand la passion et la quête de liberté défient le destin des hommes",
+    "themeTitle": "L'Éveil des Passions",
+    "themeSubtitle": "Quand l'ambition et le désir façonnent les destinées exceptionnelles",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Frankenstein",
-        "creator": "Mary Shelley",
-        "year": "1818",
-        "origin": "Royaume-Uni",
-        "genre": "Roman gothique",
+        "title": "Le Comte de Monte-Cristo",
+        "creator": "Alexandre Dumas",
+        "year": "1844",
+        "origin": "France",
+        "genre": "Roman d'aventures",
         "accessibility": "Pop Culture",
-        "formatMetric": "280 pages",
-        "quote": "Prenez garde, car je suis sans peur et par conséquent puissant.",
-        "anecdote": "L'idée du roman est née durant le pluvieux été 1816 près du lac Léman, lors d'un concours de récits d'épouvante entre Lord Byron, Percy Shelley et l'autrice.",
+        "formatMetric": "1300 pages",
+        "quote": "Attendre et espérer !",
+        "anecdote": "Alexandre Dumas s'est inspiré d'un fait divers réel puisé dans les mémoires d'un archiviste de la police de Paris pour construire la vengeance d'Edmond Dantès.",
         "tags": [
           "Classique",
-          "Gothique",
-          "Science-Fiction"
+          "Vengeance",
+          "Aventure"
         ],
         "ratings": [
           {
             "source": "Le Figaro Littéraire",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre fondateur de la littérature moderne."
+            "excerpt": "Le roman d'aventures ultime, d'une générosité narrative inépuisable."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une réflexion poignante sur la solitude et la création."
+            "excerpt": "Un souffle romanesque magistral qui ne faiblit jamais au fil des pages."
           },
           {
-            "source": "The Guardian",
+            "source": "The Times",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un mythe impérissable de la condition humaine."
+            "excerpt": "Une fresque monumentale sur la justice humaine et le destin."
           }
         ],
-        "aiSummary": "Le savant Victor Frankenstein insuffle la vie à un être composé de chairs d'assaut. Rejeté par son créateur, le monstre s'enfonce dans une vengeance dévastatrice.",
-        "thematicAnalysis": "L'œuvre explore les limites de l'ambition humaine et les conséquences d'un désir d'absolu face à la démesure de la nature.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication62/v4/b5/e5/89/b5e589cf-abcc-6260-0dfa-df00b44c09ba/mzm.msozworv.jpg/800x800bb.jpg",
+        "aiSummary": "Injustement emprisonné au château d'If le jour de ses fiançailles, le jeune marin Edmond Dantès s'évade après quatorze ans de captivité. Devenu fabuleusement riche sous le nom du Comte de Monte-Cristo, il orchestre une vengeance méthodique contre ceux qui l'ont trahi.",
+        "thematicAnalysis": "Chef-d'œuvre de la culture populaire, ce roman incarne la passion dévorante de la justice transformée en obsession, interrogeant les limites morales de la destinée.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/97/73/21/97732192-1702-3256-f28e-6c0ef0980bde/cover.jpg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Frankenstein+Mary+Shelley",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le+Comte+de+Monte-Cristo+Alexandre+Dumas",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Frankenstein+Mary+Shelley",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le+Comte+de+Monte-Cristo+Alexandre+Dumas",
             "iconName": "bag.fill"
           }
         ],
@@ -60,54 +60,54 @@
       },
       {
         "type": "FILM",
-        "title": "Gladiator",
-        "creator": "Ridley Scott",
-        "year": "2000",
+        "title": "Pulp Fiction",
+        "creator": "Quentin Tarantino",
+        "year": "1994",
         "origin": "États-Unis",
-        "genre": "Péplum",
+        "genre": "Neo-noir / Comédie noire",
         "accessibility": "Pop Culture",
-        "formatMetric": "2h 35m",
-        "quote": "Mon nom est Maximus Decimus Meridius, commandant des armées du Nord.",
-        "anecdote": "L'acteur Oliver Reed est décédé pendant le tournage à Malte, obligeant l'équipe à réécrire des scènes et à utiliser les premiers effets numériques d'incrustation faciale.",
+        "formatMetric": "2h 34m",
+        "quote": "La démarche d'un homme vertueux est semée d'obstacles...",
+        "anecdote": "La fameuse mallette au contenu lumineux contenait simplement une petite ampoule orange reliée à une batterie cachée sous le décor.",
         "tags": [
           "Culte",
-          "Péplum",
-          "Action"
+          "Dialogue",
+          "Non-linéaire"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
-            "score": "4/5",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Le spectacle grandiose d'une tragédie antique réinventée."
+            "excerpt": "Une réinvention jubilatoire et déstructurée du cinéma de genre."
           },
           {
             "source": "Télérama",
-            "score": "4/5",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une fresque épique servie par un Russell Crowe magistral."
+            "excerpt": "Un feu d'artifice de dialogues ciselés et de scènes devenues instantanément mythiques."
           },
           {
             "source": "Rotten Tomatoes",
-            "score": "87%",
+            "score": "92%",
             "iconName": "star.fill",
-            "excerpt": "Un triomphe de mise en scène et d'émotion brute."
+            "excerpt": "Un sommet du cinéma indépendant des années 90."
           }
         ],
-        "aiSummary": "Le général romain Maximus est trahi par l'héritier du trône Commode et réduit à l'esclavage. Devenu gladiateur, il gravit les échelons de l'arène pour venger sa famille.",
-        "thematicAnalysis": "Un récit flamboyant de résilience où le dépassement de soi transcende la tyrannie dans un cadre visuel spectaculaire.",
+        "aiSummary": "À Los Angeles, plusieurs histoires de pègres s'entrecroisent : deux tueurs à gages décalés, un boxeur en fuite et un couple de braqueurs d'occasion. Le récit déconstruit la chronologie classique pour offrir un puzzle stylistique unique.",
+        "thematicAnalysis": "Ce film emblématique montre comment l'ambition démesurée et le choc des désirs personnels provoquent des trajectoires explosives dans un univers pop rafraîchissant.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Gladiator+Ridley+Scott",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Pulp+Fiction+Quentin+Tarantino",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Gladiator",
+            "urlString": "https://tv.apple.com/fr/search?term=Pulp+Fiction",
             "iconName": "apple.logo"
           }
         ],
@@ -115,164 +115,170 @@
       },
       {
         "type": "ALBUM",
-        "title": "Born to Run",
-        "creator": "Bruce Springsteen",
-        "year": "1975",
+        "title": "Thriller",
+        "creator": "Michael Jackson",
+        "year": "1982",
         "origin": "États-Unis",
-        "genre": "Heartland Rock",
+        "genre": "Pop / Pop-Funk",
         "accessibility": "Pop Culture",
-        "formatMetric": "39 minutes, 8 titres",
-        "quote": "In the day we sweat it out on the streets of a runaway american dream.",
-        "anecdote": "Springsteen a passé plus de six mois à peaufiner le morceau-titre, obsédé par l'idée de récréer le 'Wall of Sound' de Phil Spector.",
+        "formatMetric": "42 minutes, 9 titres",
+        "quote": "Cause this is thriller, thriller night...",
+        "anecdote": "Eddie Van Halen a enregistré le solo de guitare légendaire du titre Beat It gratuitement et en deux prises seulement, sans être crédité au départ sur la pochette.",
         "tags": [
-          "Rock",
-          "Americana",
-          "Culte"
+          "Légendaire",
+          "Funk",
+          "Pop"
         ],
         "ratings": [
           {
             "source": "Rolling Stone",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un monument absolu du rock américain."
+            "excerpt": "L'album ultime de la pop moderne, parfait de bout en bout."
           },
           {
             "source": "Pitchfork",
             "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "L'incarnation lyrique et romantique des espoirs de la jeunesse."
+            "excerpt": "Un chef-d'œuvre de production qui a redéfini les contours de la musique populaire globale."
           },
           {
             "source": "Les Inrockuptibles",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une épopée sonore aux envolées inoubliables."
+            "excerpt": "Une succession ininterrompue de tubes intemporels."
           }
         ],
-        "aiSummary": "À travers huit hymnes passionnés, Bruce Springsteen chante l'urgence d'échapper à la monotonie ouvrière. Un album épique au souffle orchestrale saisissant.",
-        "thematicAnalysis": "Ce disque incarne la quête éperdue de grands horizons et l'aspiration irrésistible à rompre avec le quotidien.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/02/f7/0a02f7a1-ca2a-c0d7-7192-50314971721f/884977157031.jpg/600x600bb.jpg",
+        "aiSummary": "Produit par Quincy Jones, Thriller synthétise la pop, le funk, le rock et la soul dans neuf titres à l'efficacité redoutable. Cet album est devenu le plus vendu de tous les temps grâce à des arrangements impeccables et une énergie inégalée.",
+        "thematicAnalysis": "Porté par la passion créative et la quête de perfection de son auteur, cet album illustre le sommet absolu du désir de conquête culturelle universelle.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/born-to-run/310730204?uo=4",
+            "urlString": "https://music.apple.com/fr/album/thriller/269572838?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Born+to+Run+Bruce+Springsteen",
+            "urlString": "https://www.deezer.com/search/Thriller+Michael+Jackson",
             "iconName": "music.note"
           }
         ],
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Thunder Road",
-            "duration": "4:49",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/18/b5/3918b543-6684-d355-3bba-20d53961d33c/mzaf_16542914008395016473.plus.aac.p.m4a"
+            "title": "Wanna Be Startin' Somethin'",
+            "duration": "6:03",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/9a/e4/819ae4ff-12b7-35c4-6fca-2923fb16852c/mzaf_10788836398273150393.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Tenth Avenue Freeze-Out",
-            "duration": "3:11",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/c5/41/01c541f1-2194-d1a0-6bba-a1cfbb5d3219/mzaf_4241788943026916467.plus.aac.p.m4a"
+            "title": "Baby Be Mine",
+            "duration": "4:20",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/9c/8b/b39c8b6b-7a9f-8944-25c2-1348eaadeaac/mzaf_2663676543764471086.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "Night",
-            "duration": "3:01",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f5/9c/14/f59c1447-932c-d3a9-8f92-33d800386bd8/mzaf_15491326904475750652.plus.aac.p.m4a"
+            "title": "The Girl Is Mine (with Paul McCartney)",
+            "duration": "3:42",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/38/1e/2d381e88-68e9-2bb9-7b00-d0c6366f8db6/mzaf_12594152365957446372.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Backstreets",
-            "duration": "6:31",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/3f/ea/da3fea23-0907-36fc-d7df-734ef83ddc3e/mzaf_9785061471041843262.plus.aac.p.m4a"
+            "title": "Thriller",
+            "duration": "5:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/8c/cb/588ccb9a-ab79-4a38-43b5-d4c24ea42859/mzaf_2083607504726567992.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Born to Run",
-            "duration": "4:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/64/14/0e641426-f2ba-95fd-c61d-bc03168a5a1c/mzaf_15664454903423188652.plus.aac.p.m4a"
+            "title": "Beat It",
+            "duration": "4:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/cd/46/88cd46bd-dba7-1dc2-a63b-e8c111ac4fc3/mzaf_4042555053237612653.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "She's the One",
-            "duration": "4:30",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/8a/5a/fd8a5ac9-863d-2809-0dda-721bc41a27fa/mzaf_17274335969715723022.plus.aac.p.m4a"
+            "title": "Billie Jean",
+            "duration": "4:53",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Meeting Across the River",
-            "duration": "3:18",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/86/d6/8686d600-c615-0a89-889e-db3df29a5bb9/mzaf_4572529428841888180.plus.aac.p.m4a"
+            "title": "Human Nature",
+            "duration": "4:05",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/4c/2a/ba4c2a0a-18ff-1350-4ec6-c4e75e053600/mzaf_9049310839196982005.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "Jungleland",
-            "duration": "9:33",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/a6/c0/09a6c0ae-e439-2ba7-2308-290d8ecbfb71/mzaf_9371847323515009611.plus.aac.p.m4a"
+            "title": "P.Y.T. (Pretty Young Thing)",
+            "duration": "3:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/b4/24/b4b42455-0fcc-7e16-52ad-f896de9bc88d/mzaf_14227056241100382943.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 9,
+            "title": "The Lady in My Life",
+            "duration": "4:58",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/1d/f9/c11df9ff-ae6a-7c39-9102-62e0b83b14b4/mzaf_10649929995235674377.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
   "intermediate": {
-    "themeTitle": "Le Sillon des Chimères",
-    "themeSubtitle": "Entre la poésie des gestes secrets et les failles douces-amères des sentiments",
+    "themeTitle": "L'Envers du Décor",
+    "themeSubtitle": "Explorer les coulisses fragiles de nos vérités ordinaires",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Soie",
-        "creator": "Alessandro Baricco",
-        "year": "1996",
-        "origin": "Italie",
-        "genre": "Roman conte",
+        "title": "L'Aveuglement",
+        "creator": "José Saramago",
+        "year": "1995",
+        "origin": "Portugal",
+        "genre": "Fable dystopique",
         "accessibility": "Curieux",
-        "formatMetric": "140 pages",
-        "quote": "C'était un de ces hommes qui aiment assister à leur propre vie, estimant toute ambition inappropriée.",
-        "anecdote": "Écrit avec une économie de mots proche du haïku, le livre a été traduit dans plus de trente langues et adapté au théâtre dans le monde entier.",
+        "formatMetric": "350 pages",
+        "quote": "Je pense que nous ne sommes pas devenus aveugles, je pense que nous le sommes.",
+        "anecdote": "Dans ce roman, aucun personnage ne possède de nom propre : ils sont uniquement désignés par leur fonction ou une caractéristique physique.",
         "tags": [
-          "Voyage",
-          "Sensualité",
-          "Poétique"
+          "Dystopie",
+          "Prix Nobel",
+          "Allégorie"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une écriture cristalline d'une rare délicatesse."
+            "excerpt": "Une méditation terrifiante et brillante sur la fragilité de la civilisation."
           },
           {
             "source": "Télérama",
             "score": "4/5",
             "iconName": "star.fill",
-            "excerpt": "Un récit hypnotique comme une mélodie obsédante."
+            "excerpt": "Un style poignant et sans concession qui bouscule nos repères."
           },
           {
             "source": "Les Inrocks",
-            "score": "4/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un petit joyau d'épure et de mystère."
+            "excerpt": "Une allégorie politique et humaine d'une force saisissante."
           }
         ],
-        "aiSummary": "Au XIXe siècle, Hervé Joncour quitte la France pour acquérir des œufs de vers à soie dans un Japon hermétique. Il y croise le regard d'une femme mystérieuse qui va bouleverser son existence.",
-        "thematicAnalysis": "Une méditation épurée sur le désir inexprimé et le pouvoir fascinant des illusions que l'on cultive.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/11/72/d1/1172d15c-e4f1-729c-65e2-6a47c8a5fec3/9782072495021.jpg/800x800bb.jpg",
+        "aiSummary": "Une épidémie soudaine et inexplicable d'aveuglement blanc frappe les habitants d'une ville sans nom. Seule la femme d'un médecin conserve la vue, devenant le témoin lucide de la détérioration des structures sociales et de l'humanité.",
+        "thematicAnalysis": "Saramago déchire le voile des certitudes du quotidien pour révéler ce qui subsiste sous la surface de nos conventions morales lorsque tout s'effondre.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/ae/45/a7/ae45a71f-7861-5f34-8780-35fab36a8348/9782806268235.jpg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Soie+Alessandro+Baricco",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=L%27Aveuglement+Jos%C3%A9+Saramago",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Soie+Alessandro+Baricco",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=L%27Aveuglement+Jos%C3%A9+Saramago",
             "iconName": "bag.fill"
           }
         ],
@@ -280,54 +286,54 @@
       },
       {
         "type": "FILM",
-        "title": "Une affaire de famille",
-        "creator": "Hirokazu Kore-eda",
-        "year": "2018",
-        "origin": "Japon",
-        "genre": "Drame",
+        "title": "Mulholland Drive",
+        "creator": "David Lynch",
+        "year": "2001",
+        "origin": "États-Unis",
+        "genre": "Thriller psychologique / Néo-noir",
         "accessibility": "Curieux",
-        "formatMetric": "2h 01m",
-        "quote": "Choisir sa propre famille vous donne un lien bien plus fort.",
-        "anecdote": "Le film a remporté la Palme d'Or au Festival de Cannes 2018, s'inspirant de faits divers réels au Japon concernant des fraudes à la retraite.",
+        "formatMetric": "2h 27m",
+        "quote": "Silencio...",
+        "anecdote": "Le projet était à l'origine conçu comme le pilote d'une série télévisée rejeté par la chaîne ABC, avant que Lynch ne tourne de nouvelles scènes pour en faire un long-métrage.",
         "tags": [
-          "Famille",
-          "Palme d'Or",
-          "Humaniste"
+          "Onirique",
+          "Mystery",
+          "Hollywood"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "La consécration d'un grand maître du cinéma intime."
+            "excerpt": "Un monument de cinéma labyrinthique et hypnotique."
           },
           {
             "source": "Positif",
-            "score": "4.5/5",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une grâce bouleversante dans le regard porté sur les marginalisés."
+            "excerpt": "Une mise en abyme vertigineuse de l'usine à rêves hollywoodienne."
           },
           {
             "source": "Télérama",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Subtil, drôle et profondément poignant."
+            "excerpt": "Un puzzle sensoriel magistral qui hante l'esprit bien après le générique."
           }
         ],
-        "aiSummary": "Une communauté de marginaux vivant de petites rapines accueille une fillette maltraitée. Malgré la précarité, un amour sincère unit cette famille de fortune avant qu'un secret ne survienne.",
-        "thematicAnalysis": "Kore-eda interroge la nature des liens affectifs en proposant une définition poétique et émouvante du foyer.",
+        "aiSummary": "À Los Angeles, une jeune comédienne naïve aide une femme amnésique échappée d'un accident sur Mulholland Drive. Leur quête d'identité bascule progressivement dans une fantasmagorie troublante aux frontières du rêve et du cauchemar.",
+        "thematicAnalysis": "Le film explore les abysses dissimulés sous les paillettes de l'illusion hollywoodienne, dévoilant l'envers douloureux des désirs inaboutis.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=Une+affaire+de+famille+Hirokazu+Kore-eda",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Mulholland+Drive+David+Lynch",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=Une+affaire+de+famille",
+            "urlString": "https://tv.apple.com/fr/search?term=Mulholland+Drive",
             "iconName": "apple.logo"
           }
         ],
@@ -335,188 +341,188 @@
       },
       {
         "type": "ALBUM",
-        "title": "Vespertine",
-        "creator": "Björk",
-        "year": "2001",
-        "origin": "Islande",
-        "genre": "Art Pop / Folktronica",
+        "title": "OK Computer",
+        "creator": "Radiohead",
+        "year": "1997",
+        "origin": "Royaume-Uni",
+        "genre": "Rock alternatif / Art rock",
         "accessibility": "Curieux",
-        "formatMetric": "55 minutes, 12 titres",
-        "quote": "I'm on a mission to find where my limit lies.",
-        "anecdote": "Björk a voulu composer une musique intime adaptée aux écouteurs en intégrant des sons du quotidien comme le froissement du papier ou le bruit de la neige craquante.",
+        "formatMetric": "53 minutes, 12 titres",
+        "quote": "Fitter, happier, more productive...",
+        "anecdote": "L'album a été enregistré en grande partie dans un manoir du XVe siècle appartenant à l'acteur Jane Birkin, offrant une résonance acoustique unique.",
         "tags": [
-          "Électronique",
-          "Intimiste",
-          "Avant-Pop"
+          "Anticipation",
+          "Art Rock",
+          "Culte"
         ],
         "ratings": [
           {
             "source": "Pitchfork",
-            "score": "9.2/10",
+            "score": "10/10",
             "iconName": "star.fill",
-            "excerpt": "Un chef-d'œuvre de sensualité intime et de textures délicates."
+            "excerpt": "L'album phare du passage au nouveau millénaire, visionnaire et poignant."
           },
           {
-            "source": "Les Inrockuptibles",
+            "source": "Les Inrocks",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une féerie acoustique et électronique inégalée."
+            "excerpt": "Une cathédrale sonore combinant mélancolie poignante et expérimentation."
           },
           {
             "source": "The Guardian",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une cathédrale de sons fragiles et enchanteurs."
+            "excerpt": "Une œuvre prophétique sur l'aliénation du monde moderne."
           }
         ],
-        "aiSummary": "En mêlant chœurs de femmes, harpes luxuriantes et percussions minuscules, Björk conçoit un micro-monde musical enveloppant d'une beauté pure.",
-        "thematicAnalysis": "Un pèlerinage au cœur du cocon domestique où la sensibilité se transforme en une expérience sonore féerique.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/34/f3/e2/34f3e209-81a0-1f2e-03dd-62f26a24e455/5016958995102.png/600x600bb.jpg",
+        "aiSummary": "Marqué par une aliénation face à la technologie et à la société de consommation, OK Computer marie mélodies somptueuses et textures électroniques pionnières. C'est le chef-d'œuvre critique du rock de la fin du XXe siècle.",
+        "thematicAnalysis": "Radiohead sonde les failles cachées sous le vernis de la modernité, capturant l'angoisse d'un monde connecté mais profondément isolé.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/600x600bb.jpg",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/vespertine/1726654492?uo=4",
+            "urlString": "https://music.apple.com/fr/album/ok-computer/1097861387?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/Vespertine+Bj%C3%B6rk",
+            "urlString": "https://www.deezer.com/search/OK+Computer+Radiohead",
             "iconName": "music.note"
           }
         ],
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "Hidden Place",
-            "duration": "5:29",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/8d/50/768d5050-196a-5db8-562c-1131b366adf4/mzaf_15698919333538179265.plus.aac.p.m4a"
+            "title": "Airbag",
+            "duration": "4:47",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/ed/05/f1ed0562-876c-a84a-c4ff-70613135b818/mzaf_18061085714629562351.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "Cocoon",
-            "duration": "4:28",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/db/57/48db5789-97e1-3eb7-a9c1-aaa72a96ad06/mzaf_4579857315661328703.plus.aac.p.m4a"
+            "title": "Paranoid Android",
+            "duration": "6:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/6c/04/676c04b5-624a-6101-2d63-dc9c971e2a4e/mzaf_680078368934998544.plus.aac.p.m4a"
           },
           {
             "trackNumber": 3,
-            "title": "It's Not up to You",
-            "duration": "5:08",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/40/a0/e240a009-5985-5bf9-f1a1-b37425289c4b/mzaf_16304634793350578723.plus.aac.p.m4a"
+            "title": "Subterranean Homesick Alien",
+            "duration": "4:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/df/e2/dfdfe241-6d58-6a34-fc81-a453a5326761/mzaf_18084054940491833362.plus.aac.p.m4a"
           },
           {
             "trackNumber": 4,
-            "title": "Undo",
-            "duration": "5:38",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/05/11/65051165-899d-2a79-a2a8-5bdf8a00f9d2/mzaf_9204027645764818484.plus.aac.p.m4a"
+            "title": "Exit Music (For a Film)",
+            "duration": "4:27",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/12/e3/f912e3f3-41a6-28f7-251f-dffb260ff0a2/mzaf_563254257801619937.plus.aac.p.m4a"
           },
           {
             "trackNumber": 5,
-            "title": "Pagan Poetry",
-            "duration": "5:14",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/64/5f/b6/645fb677-5a15-7a01-f12b-03503f36a703/mzaf_12189499332725865825.plus.aac.p.m4a"
+            "title": "Let Down",
+            "duration": "4:59",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/65/58/cd6558df-2ba2-6f8e-25a0-d2db94494f74/mzaf_5583409847288875892.plus.aac.p.m4a"
           },
           {
             "trackNumber": 6,
-            "title": "Frosti",
-            "duration": "1:41",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/d0/ff/cbd0ff0d-3c8b-4fac-4fd8-1996fd5d3df8/mzaf_8533003879344882244.plus.aac.p.m4a"
+            "title": "Karma Police",
+            "duration": "4:24",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/21/35/46213520-da4a-1806-0c59-5ca6ad008b4e/mzaf_5277404092043261430.plus.aac.p.m4a"
           },
           {
             "trackNumber": 7,
-            "title": "Aurora",
-            "duration": "4:39",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/4c/d4/9f4cd42a-0312-a6a8-beca-48efb0fd1ce6/mzaf_12667656621009633785.plus.aac.p.m4a"
+            "title": "Fitter Happier",
+            "duration": "1:57",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/d3/e7/94d3e7b7-114d-eec6-c49f-dbfacda39f4d/mzaf_16212809807809660895.plus.aac.p.m4a"
           },
           {
             "trackNumber": 8,
-            "title": "An Echo a Stain",
-            "duration": "4:04",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/23/f5/db/23f5db66-d4f4-3774-83eb-bcade0afcfd7/mzaf_16398059961423941405.plus.aac.p.m4a"
+            "title": "Electioneering",
+            "duration": "3:50",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/5d/c8/c75dc855-dd12-b6dd-2b7a-0803e0aac773/mzaf_7132161904352090350.plus.aac.p.m4a"
           },
           {
             "trackNumber": 9,
-            "title": "Sun in My Mouth",
-            "duration": "2:40",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/6e/f6/c56ef618-b8e8-d9fe-77b3-96ab2137e666/mzaf_8408767239381017586.plus.aac.p.m4a"
+            "title": "Climbing Up the Walls",
+            "duration": "4:45",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/fc/ec/4bfcec15-2b59-ac96-dfef-65938884e9f6/mzaf_4029879807839275652.plus.aac.p.m4a"
           },
           {
             "trackNumber": 10,
-            "title": "Heirloom",
-            "duration": "5:12",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/c2/a5/89c2a58e-99e3-d77a-a194-d90fa57f5d41/mzaf_12260859859012113378.plus.aac.p.m4a"
+            "title": "No Surprises",
+            "duration": "3:49",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/2a/fa/f02afaad-0a7f-9ceb-1236-55ef3d388061/mzaf_10063872040766906863.plus.aac.p.m4a"
           },
           {
             "trackNumber": 11,
-            "title": "Harm of Will",
-            "duration": "4:36",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/31/0a/54310a6a-8bc7-3aeb-fe1f-4b5a5b73e8fd/mzaf_8009369648842215086.plus.aac.p.m4a"
+            "title": "Lucky",
+            "duration": "4:18",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/b0/76/3eb076b1-25e9-5b07-dbf3-d654c2c902ba/mzaf_16629801581257486081.plus.aac.p.m4a"
           },
           {
             "trackNumber": 12,
-            "title": "Unison",
-            "duration": "6:47",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/60/34/c26034ae-af34-30f1-0203-4a2024b193dd/mzaf_11662072585274009742.plus.aac.p.m4a"
+            "title": "The Tourist",
+            "duration": "5:26",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/84/2b/52842b8e-a190-3cfd-fc8a-863c67705ed7/mzaf_11101446159470150368.plus.aac.p.m4a"
           }
         ]
       }
     ]
   },
   "expert": {
-    "themeTitle": "La Géométrie des Ombrages",
-    "themeSubtitle": "Déconstructions formelles et méditations radicales sur la mémoire et la structure",
+    "themeTitle": "Les Geôles de l'Inexprimable",
+    "themeSubtitle": "Quand le langage et le son se confrontent aux limites de l'expérience",
     "items": [
       {
         "type": "LIVRE",
-        "title": "Nadja",
-        "creator": "André Breton",
-        "year": "1928",
+        "title": "Le Rivage des Syrtes",
+        "creator": "Julien Gracq",
+        "year": "1951",
         "origin": "France",
-        "genre": "Récit surréaliste",
+        "genre": "Littérature contemplative",
         "accessibility": "Initié",
-        "formatMetric": "160 pages",
-        "quote": "La beauté sera CONVULSIVE ou ne sera pas.",
-        "anecdote": "Le livre intègre des photographies de Jacques-André Boiffard, rompant volontairement avec les descriptions littéraires traditionnelles pour ancrer le récit dans la réalité urbaine.",
+        "formatMetric": "320 pages",
+        "quote": "Tout dormait, mais d'un sommeil qui semblait retenir son souffle.",
+        "anecdote": "Julien Gracq refusa le prestigieux prix Goncourt attribué à ce roman en 1951, fidèle à ses positions critiques contre la commercialisation de la littérature.",
         "tags": [
-          "Surréalisme",
-          "Avant-Garde",
-          "Essai"
+          "Attente",
+          "Poétique",
+          "Symbolisme"
         ],
         "ratings": [
           {
             "source": "Le Monde des Livres",
-            "score": "4.5/5",
+            "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un manifeste poétique majeur qui a réinventé le récit moderne."
+            "excerpt": "Une prose magistrale à la hauteur des plus beaux monuments de la langue française."
           },
           {
             "source": "Libération",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une déambulation hypnotique au cœur du hasard parisien."
+            "excerpt": "Un roman de l'immobilité vibrante et du pressentiment poétique."
           },
           {
             "source": "Les Inrocks",
-            "score": "4/5",
+            "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une tentative fascinante de fusion entre art et vie."
+            "excerpt": "Une immersion envoutante au cœur d'un paysage spirituel inédit."
           }
         ],
-        "aiSummary": "À travers sa rencontre fortuite dans Paris avec Nadja, une jeune femme libre et illuminée, Breton retrace dix jours de fascination mutuelle au bord de la folie.",
-        "thematicAnalysis": "L'ouvrage bouleverse les codes de la prose littéraire pour faire de la coïncidence et du vagabondage mental le véritable moteur du récit.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication117/v4/c2/0a/82/c20a82a7-cd9d-c334-c720-216c683092a4/9782072446870.jpg/800x800bb.jpg",
+        "aiSummary": "Sur les frontières maritimes de l'Orsenna, en paix depuis des siècles avec la contrée voisine du Farghestan, le jeune Aldo est envoyé en poste d'observation. Dans ce paysage immobile, il cède peu à peu à la fascination d'un conflit imminent.",
+        "thematicAnalysis": "Gracq explore l'inexprimable tension de l'attente tragique, où les mots suggèrent l'imminence d'une métamorphose sans jamais en dévoiler le terme.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/b0/85/b4/b085b468-25b1-3809-98a5-d497c71d55df/9782852292185.jpg/800x800bb.jpg",
         "platformLinks": [
           {
             "name": "Les Libraires",
             "category": "Librairies indépendantes",
-            "urlString": "https://www.leslibraires.fr/recherche/?q=Nadja+Andr%C3%A9+Breton",
+            "urlString": "https://www.leslibraires.fr/recherche/?q=Le+Rivage+des+Syrtes+Julien+Gracq",
             "iconName": "book.fill"
           },
           {
             "name": "Fnac",
             "category": "Achat livre & Ebook",
-            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Nadja+Andr%C3%A9+Breton",
+            "urlString": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0&Search=Le+Rivage+des+Syrtes+Julien+Gracq",
             "iconName": "bag.fill"
           }
         ],
@@ -524,54 +530,54 @@
       },
       {
         "type": "FILM",
-        "title": "L'Année dernière à Marienbad",
-        "creator": "Alain Resnais",
-        "year": "1961",
-        "origin": "France",
-        "genre": "Cinéma d'avant-garde",
+        "title": "Les Harmonies Werckmeister",
+        "creator": "Béla Tarr",
+        "year": "2000",
+        "origin": "Hongrie",
+        "genre": "Cinéma contemplatif / Drame",
         "accessibility": "Initié",
-        "formatMetric": "1h 34m",
-        "quote": "Il se peut que nous nous soyons déjà rencontrés l'an dernier.",
-        "anecdote": "Écrit par Alain Robbe-Grillet, le film utilise des ombres peintes directement sur le sol du parc du château de Nymphenburg pour créer une atmosphère irréelle.",
+        "formatMetric": "2h 25m",
+        "quote": "Et pourtant, l'ordre de l'univers reste intact.",
+        "anecdote": "Le film se compose de seulement 39 plans-séquences d'une virtuosité technique prodigieuse, chorégraphiés au millimètre près.",
         "tags": [
-          "Nouveau Roman",
-          "Lion d'Or",
-          "Expérimental"
+          "Noir et Blanc",
+          "Plans-séquences",
+          "Apocalyptique"
         ],
         "ratings": [
           {
             "source": "Cahiers du Cinéma",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Une expérience visuelle révolutionnaire et labyrinthique."
+            "excerpt": "Une expérience plastique et métaphysique à couper le souffle."
           },
           {
             "source": "Télérama",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un vertige hypnotique sur les méandres du souvenir."
+            "excerpt": "Un poème en noir et blanc d'une beauté sombre et obsédante."
           },
           {
             "source": "Positif",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Un sommet de la modernité cinématographique."
+            "excerpt": "Un cinéma de l'extrême exigence, magistral et radical."
           }
         ],
-        "aiSummary": "Dans un grand hôtel baroque, un homme tente de convaincre une femme qu'ils se sont aimés l'année précédente. La mémoire se perd dans les miroirs et les couloirs infinis.",
-        "thematicAnalysis": "Resnais déstructure le temps et l'espace cinématographique pour faire de l'architecture du décor un labyrinthe mental abstrait.",
+        "aiSummary": "Dans une petite ville hongroise glacée, l'arrivée d'un cirque mystérieux exposant une baleine empaillée déclenche un climat de démence collective. Un jeune homme naïf contemple impuissant l'effondrement du monde civique autour de lui.",
+        "thematicAnalysis": "Par un esthétisme hypnotique, Béla Tarr saisit la bascule d'une communauté dans un mutisme tragique face au chaos de la condition humaine.",
         "imageURL": null,
         "platformLinks": [
           {
             "name": "JustWatch",
             "category": "Disponibilité légale & Streaming",
-            "urlString": "https://www.justwatch.com/fr/recherche?q=L%27Ann%C3%A9e+derni%C3%A8re+%C3%A0+Marienbad+Alain+Resnais",
+            "urlString": "https://www.justwatch.com/fr/recherche?q=Les+Harmonies+Werckmeister+B%C3%A9la+Tarr",
             "iconName": "play.tv.fill"
           },
           {
             "name": "Apple TV",
             "category": "Location & Achat VOD",
-            "urlString": "https://tv.apple.com/fr/search?term=L%27Ann%C3%A9e+derni%C3%A8re+%C3%A0+Marienbad",
+            "urlString": "https://tv.apple.com/fr/search?term=Les+Harmonies+Werckmeister",
             "iconName": "apple.logo"
           }
         ],
@@ -579,69 +585,87 @@
       },
       {
         "type": "ALBUM",
-        "title": "E2-E4",
-        "creator": "Manuel Göttsching",
-        "year": "1984",
-        "origin": "Allemagne",
-        "genre": "Minimalisme / Ambient",
+        "title": "Space Is the Place",
+        "creator": "Sun Ra",
+        "year": "1973",
+        "origin": "États-Unis",
+        "genre": "Avant-garde Jazz / Afrofuturisme",
         "accessibility": "Initié",
-        "formatMetric": "58 minutes, 2 titres",
-        "quote": "Une improvisation unique enregistrée en une seule prise directe.",
-        "anecdote": "Enregistré en décembre 1981 lors d'une session improvisée pour s'occuper pendant un voyage en train, cet album posa les bases de la culture techno et house des décennies suivantes.",
+        "formatMetric": "43 minutes, 5 titres",
+        "quote": "There is no other day, processing reality...",
+        "anecdote": "Sun Ra affirmait venir de la planète Saturne et intégrait dans ses enregistrements des incantations kabbalistiques et des théories cosmiques sur la musique.",
         "tags": [
-          "Krautrock",
-          "Minimalisme",
-          "Pionnier"
+          "Free Jazz",
+          "Afrofuturisme",
+          "Expérimental"
         ],
         "ratings": [
           {
             "source": "The Wire",
             "score": "5/5",
             "iconName": "star.fill",
-            "excerpt": "Un pilier absolu de la musique électronique contemporaine."
+            "excerpt": "Une pierre angulaire du jazz d'avant-garde cosmique."
           },
           {
             "source": "Pitchfork",
-            "score": "9.5/10",
+            "score": "8.9/10",
             "iconName": "star.fill",
-            "excerpt": "Une boucle hypnotique monumentale de 58 minutes."
+            "excerpt": "Une épopée avant-gardiste d'une densité spirituelle absolue."
           },
           {
             "source": "Les Inrocks",
             "score": "4.5/5",
             "iconName": "star.fill",
-            "excerpt": "Une odyssée répétitive et fascinante."
+            "excerpt": "Un voyage mystique au-delà des cadres conventionnels de l'harmonie."
           }
         ],
-        "aiSummary": "Un motif répétitif de synthétiseur évolue subtilement sur près d'une heure, soutenu par des solos de guitare éthérés et un rythme électronique métronomique.",
-        "thematicAnalysis": "L'œuvre pousse le minimalisme formel à son paroxysme, prouvant la richesse poétique de la répétition continue.",
-        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/a8/62/f5a86222-242d-df92-31f9-bede6ea43bd0/4251804193849_3000.jpg/600x600bb.jpg",
+        "aiSummary": "Accompagné par son Arkestra, le visionnaire Sun Ra livre une suite jazz avant-gardiste mêlant percussions incantatoires, cuivres dissonants et chants cosmiques. Cet album constitue le manifeste fondateur de l'afrofuturisme.",
+        "thematicAnalysis": "L'œuvre transcende les structures classiques du son pour exprimer une spiritualité libre, repoussant les limites de ce qui peut être formulé par la musique.",
+        "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e7/31/78/e731786e-eba2-2d1c-6ff6-ff6e2354d48c/00011105024921.rgb.jpg/600x600bb.jpg",
         "platformLinks": [
           {
             "name": "Apple Music",
             "category": "Écoute intégrale & Lossless",
-            "urlString": "https://music.apple.com/fr/album/e2-e4-a-reference-to-e2-e4-by-manuel-gottsching-ep/1761147832?uo=4",
+            "urlString": "https://music.apple.com/fr/album/space-is-the-place/1443831739?uo=4",
             "iconName": "apple.logo"
           },
           {
             "name": "Deezer",
             "category": "Streaming audio & HiFi",
-            "urlString": "https://www.deezer.com/search/E2-E4+Manuel+G%C3%B6ttsching",
+            "urlString": "https://www.deezer.com/search/Space+Is+the+Place+Sun+Ra",
             "iconName": "music.note"
           }
         ],
         "tracks": [
           {
             "trackNumber": 1,
-            "title": "E2-E4 (A reference to E2-E4 by Manuel Gottsching)",
-            "duration": "12:21",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/da/26/1cda2648-4ec8-69c5-54d3-ac7734173121/mzaf_13043958930131662643.plus.aac.p.m4a"
+            "title": "Space Is the Place",
+            "duration": "21:14",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/eb/70/32eb70e3-c824-8a5c-95e5-acca8285ae7d/mzaf_1705128630410297862.plus.aac.p.m4a"
           },
           {
             "trackNumber": 2,
-            "title": "E2-E4 (A reference to E2-E4 by Manuel Gottsching) [Mad Professor's Qantas Crazy Remix]",
-            "duration": "12:07",
-            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/e0/75/29e0753d-c124-3bd4-513e-3b3113e65f36/mzaf_1392981483913524567.plus.aac.p.m4a"
+            "title": "Images",
+            "duration": "6:16",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/bb/b2/2fbbb296-513f-0635-e03d-381a7a7fce44/mzaf_15730906847863582213.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 3,
+            "title": "Discipline",
+            "duration": "4:52",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/c2/05/6bc205e0-fdfb-1095-a214-da6dc85de04d/mzaf_9110017030158012607.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 4,
+            "title": "Sea of Sounds",
+            "duration": "7:41",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/3f/65/553f65ac-428d-88b4-e850-9914762d891d/mzaf_3120758419237668607.plus.aac.p.m4a"
+          },
+          {
+            "trackNumber": 5,
+            "title": "Rocket Number Nine",
+            "duration": "2:54",
+            "previewURL": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/2c/77/842c776e-700e-077a-8358-f872738f8783/mzaf_2631794129515305469.plus.aac.p.m4a"
           }
         ]
       }
